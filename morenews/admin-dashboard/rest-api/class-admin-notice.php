@@ -218,7 +218,7 @@ class AdminNotice
 			<div class="aft-documentation-links">
 				<div>
 					<a href="https://docs.afthemes.com/morenews/" target="_blank"><span aria-hidden="true" class="dashicons dashicons-external"></span>%3$s</a>
-					<a href="https://www.youtube.com/watch?v=W8NeOsnBK_A&list=PL8nUD79gscmjvGYgtQfVKgJMsBLIspJ1A" target="_blank"><span aria-hidden="true" class="dashicons dashicons-external"></span>%4$s</a>
+					<a href="https://www.youtube.com/watch?v=Z5MdDCRhxz4&list=PL8nUD79gscmgfXEtuVz1as47b6RcSXPr6" target="_blank"><span aria-hidden="true" class="dashicons dashicons-external"></span>%4$s</a>
 					<a href="https://afthemes.com/blog/" target="_blank"><span aria-hidden="true" class="dashicons dashicons-external"></span>%5$s</a>
 				</div>
 				<div>

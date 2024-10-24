@@ -14,7 +14,7 @@
 
 ?>
 <div class="archive-list-post list-style">
-    <?php do_action('morenews_action_loop_list', $post->ID, 'medium', 0, true, true, $morenews_show_excerpt, true, $morenews_content_view); ?>
+    <?php do_action('morenews_action_loop_list', $post->ID, 'medium_large', 0, true, true, $morenews_show_excerpt, true, $morenews_content_view); ?>
     <?php
         wp_link_pages(array(
             'before' => '<div class="page-links">' . esc_html__('Pages:', 'morenews'),

@@ -133,12 +133,12 @@ if (!function_exists('morenews_post_item_meta')) :
                     <i class="far fa-clock" aria-hidden="true"></i>
                     <?php
                     // Get the post's date components (year, month, day) for building the archive link
-                    $year  = get_the_time('Y');
-                    $month = get_the_time('m');
-                    $day   = get_the_time('d');
+                    // $year  = get_the_time('Y');
+                    // $month = get_the_time('m');
+                    // $day   = get_the_time('d');
 
                     // Generate the URL for the date archive
-                    $date_archive_link = get_day_link($year, $month, $day);
+                    // $date_archive_link = get_day_link($year, $month, $day);
 
                     if ($morenews_date_display_setting == 'default-date') {
                         // Wrap the date in an anchor tag pointing to the archive
@@ -146,16 +146,16 @@ if (!function_exists('morenews_post_item_meta')) :
                         $posted_on_text = sprintf(__('Posted on %s', 'morenews'), get_the_time($date_format));
 
                         // Create the link with translation-ready attributes
-                        echo '<a href="' . esc_url($date_archive_link) . '" aria-label="' . esc_attr($posted_on_text) . '">';
+                        // echo '<a href="' . esc_url($date_archive_link) . '" aria-label="' . esc_attr($posted_on_text) . '">';
                         the_time($date_format); // This outputs the formatted date
-                        echo '</a>';
+                        // echo '</a>';
                     } else {
                         $time_ago = human_time_diff(get_the_time('U'), current_time('timestamp'));
                         $time_ago_text = sprintf(__('Posted on %s %s', 'morenews'), $time_ago, __('ago', 'morenews'));
 
-                        echo '<a href="' . esc_url($date_archive_link) . '" aria-label="' . esc_attr($time_ago_text) . '">';
+                        // echo '<a href="' . esc_url($date_archive_link) . '" aria-label="' . esc_attr($time_ago_text) . '">';
                         echo esc_html($time_ago_text);
-                        echo '</a>';
+                        // echo '</a>';
                     }
                     ?>
                 </span>

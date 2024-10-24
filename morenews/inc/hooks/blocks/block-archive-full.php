@@ -5,7 +5,7 @@
  * @package MoreNews
  */
 
-$morenews_thumbnail_size = 'morenews-featured';
+$morenews_thumbnail_size = 'large';
 $morenews_grid_design = 'grid-design-default';
 $morenews_title_position = 'bottom';
 

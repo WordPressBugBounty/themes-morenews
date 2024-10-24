@@ -27,7 +27,7 @@ if (!function_exists('morenews_post_thumbnail')) :
             $morenews_post_class = !empty($morenews_post_image_alignment) ? $morenews_post_image_alignment : $morenews_theme_class;
 
             if ($morenews_post_class != 'no-image') :
-                ?>
+?>
                 <div class="post-thumbnail <?php echo esc_attr($morenews_post_class); ?>">
                     <?php echo morenews_the_post_thumbnail('morenews-featured', $post->ID); ?>
                 </div>
@@ -38,13 +38,13 @@ if (!function_exists('morenews_post_thumbnail')) :
             $morenews_archive_image = ($morenews_archive_layout == 'archive-layout-list') ? 'medium' : (($morenews_archive_layout == 'archive-layout-full') ? 'morenews-medium' : 'post-thumbnail');
             $morenews_archive_class = ($morenews_archive_layout == 'archive-layout-list') ? morenews_get_option('archive_image_alignment') : '';
 
-            ?>
+        ?>
             <div class="post-thumbnail <?php echo esc_attr($morenews_archive_class); ?>">
                 <a href="<?php the_permalink(); ?>" aria-hidden="true">
                     <?php echo morenews_the_post_thumbnail($morenews_archive_image, $post->ID); ?>
                 </a>
             </div>
-        <?php endif;
+            <?php endif;
     }
 endif;
 
@@ -59,9 +59,9 @@ if (!function_exists('morenews_the_post_thumbnail')) :
      */
     function morenews_the_post_thumbnail($morenews_thumbnail_size, $morenews_post_id, $return = false)
     {
-        
+
         $morenews_fetch_content_image = morenews_get_option('global_fetch_content_image_setting');
-        if($morenews_fetch_content_image == 'enable'){
+        if ($morenews_fetch_content_image == 'enable') {
             if (has_post_thumbnail($morenews_post_id)) {
                 if ($return) {
                     return get_the_post_thumbnail($morenews_post_id, $morenews_thumbnail_size);
@@ -72,12 +72,12 @@ if (!function_exists('morenews_the_post_thumbnail')) :
                 // Fallback to first image in content if no thumbnail is set
                 $morenews_post_content = get_post_field('post_content', $morenews_post_id);
                 $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $morenews_post_content, $matches);
-    
+
                 if (isset($matches[1][0])) {
-    
+
                     $morenews_img_id = morenews_find_post_id_from_path($matches[1][0]);
                     $morenews_img_url = wp_get_attachment_image_src($morenews_img_id, $morenews_thumbnail_size);
-    
+
                     if (isset($morenews_img_url[0])) {
                         if ($return) {
                             return wp_get_attachment_image($morenews_img_id, $morenews_thumbnail_size);
@@ -87,21 +87,30 @@ if (!function_exists('morenews_the_post_thumbnail')) :
                     } else {
                         // Check if external image URL is valid and display it
                         if (@getimagesize($matches[1][0])) {
-                            ?>
-                            <img src="<?php echo esc_url($matches[1][0]); ?>" alt="<?php echo esc_attr(basename($matches[1][0])); ?>" />
+                            if ($return) {
+                                ob_start();
+            ?>
+                                <img src="<?php echo esc_url($matches[1][0]); ?>" alt="<?php echo esc_attr(basename($matches[1][0])); ?>" />
                             <?php
+                                $morenews_img_html = ob_get_contents();
+                                ob_end_clean();
+                                return $morenews_img_html;
+                            } else {
+                            ?>
+                                <img src="<?php echo esc_url($matches[1][0]); ?>" alt="<?php echo esc_attr(basename($matches[1][0])); ?>" />
+<?php
+                            }
                         }
                     }
                 }
             }
-        }else{
+        } else {
             if ($return) {
                 return get_the_post_thumbnail($morenews_post_id, $morenews_thumbnail_size);
             } else {
                 the_post_thumbnail($morenews_thumbnail_size);
             }
         }
-        
     }
 endif;
 
@@ -158,7 +167,7 @@ function morenews_alt_text_optimized($attributes, $attachment, $size)
     }
 
     // Set 'loading' attribute for better performance
-    
+
     $morenews_image_loading = morenews_get_option('global_toggle_image_lazy_load_setting');
     if ($morenews_image_loading == 'enable') {
         $attributes['loading'] = 'lazy';
@@ -185,3 +194,24 @@ function morenews_get_image_alt_from_filename($image_url)
     // Get the filename from the image URL and sanitize it for alt text usage.
     return esc_attr(pathinfo($image_url, PATHINFO_FILENAME));
 }
+
+function morenews_add_img_attributes($allowedtags)
+{
+    if (isset($allowedtags['img'])) {
+        // Add additional attributes that plugins or core updates may introduce
+        $allowedtags['img']['decoding'] = true;
+        $allowedtags['img']['srcset'] = true;
+        $allowedtags['img']['sizes'] = true;
+        $allowedtags['img']['loading'] = true;
+        $allowedtags['img']['data-*'] = true; // Support data-* attributes
+        $allowedtags['img']['aria-*'] = true; // Support aria-* attributes for accessibility
+        $allowedtags['img']['role'] = true;
+        $allowedtags['img']['longdesc'] = true;
+        $allowedtags['img']['usemap'] = true;
+        $allowedtags['img']['referrerpolicy'] = true;
+        $allowedtags['img']['style'] = true; // In case some plugins add inline styles
+        $allowedtags['img']['crossorigin'] = true;
+    }
+    return $allowedtags;
+}
+add_filter('wp_kses_allowed_html', 'morenews_add_img_attributes');

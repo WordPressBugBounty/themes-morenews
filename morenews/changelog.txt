@@ -1,3 +1,8 @@
+### 2.9.0 - Oct 24 2024
+* New - No Featured image improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 2.8.12 - Oct 23 2024
 * Update - Texts readability improvement
 * Update - Block Style improvement

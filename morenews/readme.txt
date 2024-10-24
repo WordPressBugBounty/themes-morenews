@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.6
-Stable tag: 2.8.12
+Stable tag: 2.9.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
@@ -57,6 +57,11 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 2.9.0 - Oct 24 2024 =
+* New - No Featured image improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 = 2.8.12 - Oct 23 2024 =
 * Update - Texts readability improvement
 * Update - Block Style improvement

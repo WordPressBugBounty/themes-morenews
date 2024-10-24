@@ -251,8 +251,6 @@ function morenews_preload_google_fonts()
 }
 add_action('wp_head', 'morenews_preload_google_fonts', 1);
 
-
-
 /**
  * Enqueue the Google Fonts stylesheet in the theme's front-end.
  */
@@ -265,6 +263,8 @@ function morenews_enqueue_fonts()
   }
 }
 add_action('wp_enqueue_scripts', 'morenews_enqueue_fonts');
+
+
 
 
 
@@ -319,6 +319,7 @@ function morenews_style_files()
   wp_enqueue_style('morenews-style', get_template_directory_uri() . '/style' . $min . '.css', array(), $morenews_version);
   wp_add_inline_style('morenews-style', morenews_custom_style());
 }
+
 
 
 /**

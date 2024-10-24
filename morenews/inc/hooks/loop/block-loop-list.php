@@ -1,10 +1,9 @@
 <?php
 if (!function_exists('morenews_loop_list')) :
     /**
-     * Banner Slider
+     * Post List Display
      *
      * @since Newsical 1.0.0
-     *
      */
     function morenews_loop_list($morenews_post_id, $morenews_thumbnail_size = 'thumbnail', $morenews_count = 0, $show_cat = false, $show_meta = true, $show_excerpt = false, $big_img = false, $archive_content_view = 'archive-content-excerpt' )
     {
@@ -13,13 +12,25 @@ if (!function_exists('morenews_loop_list')) :
             $morenews_post_display = 'spotlight-post';
         }
 
+        // Get the post thumbnail and check if it exists
+        $morenews_post_thumbnail = morenews_the_post_thumbnail($morenews_thumbnail_size, $morenews_post_id, true);
+        $morenews_no_thumbnail_class = "has-post-image";
+        if (!isset($morenews_post_thumbnail) || empty($morenews_post_thumbnail)) {
+            $morenews_no_thumbnail_class = "no-post-image";
+        }
+
         ?>
-        <div class="af-double-column list-style clearfix aft-list-show-image">
+        <div class="af-double-column list-style clearfix aft-list-show-image <?php echo esc_attr($morenews_no_thumbnail_class); ?>">
             <div class="read-single color-pad">
                 <div class="col-3 float-l pos-rel read-img read-bg-img">
                     <a class="aft-post-image-link"
                        href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <?php morenews_the_post_thumbnail($morenews_thumbnail_size, $morenews_post_id); ?>
+                    <?php 
+                    // Display the post thumbnail if available
+                    if ($morenews_post_thumbnail) {                        
+                        echo wp_kses_post($morenews_post_thumbnail);
+                    }
+                    ?>
                     <?php if (absint($morenews_count) > 0): ?>
                         <span class="trending-no"><?php echo esc_html($morenews_count); ?></span>
                     <?php endif; ?>
@@ -78,3 +89,4 @@ if (!function_exists('morenews_loop_list')) :
     }
 endif;
 add_action('morenews_action_loop_list', 'morenews_loop_list', 10, 8);
+?>

@@ -6,7 +6,7 @@
      */
     
     global $post;
-    $morenews_img_url = morenews_get_freatured_image_url($post->ID, 'morenews-featured');
+    $morenews_img_url = morenews_get_freatured_image_url($post->ID, 'large');
     $morenews_img_thumb_id = get_post_thumbnail_id($post->ID);
     $morenews_show_excerpt = morenews_get_option('archive_content_view');
 ?>
