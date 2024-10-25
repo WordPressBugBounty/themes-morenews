@@ -55,15 +55,14 @@ body.rtl .morenews-widget div.sharedaddy .sd-content ul li{
 	margin-right: 0;
 	margin-left: 5px;
 }
-body.rtl.widget-title-border-center .widget-title .heading-line-after{
-	/* margin-left: 0;
-	margin-right: 10px; */
+body.rtl .archive-image-right .af-double-column.list-style.no-post-image .cat-links li:first-child:last-child,
+body.rtl .archive-image-right .af-double-column.list-style.no-post-image .cat-links li:last-child {
+	margin-left: 0;
 }
-/* body.rtl.widget-title-border-center .widget-title .heading-line-before, */
 body.rtl .featured-posts.morenews-customizer .no-post-image .read-img span.min-read, 
 body.rtl .grid-layout.morenews-customizer .no-post-image .read-img span.min-read, 
 body.rtl .latest-posts-grid .no-post-image .read-img span.min-read,
-body.rtl .archive-layout-list .af-double-column.list-style.no-post-image .read-img span.min-read,
+body.rtl .aft-archive-wrapper.archive-layout-list .af-double-column.list-style.no-post-image .read-img span.min-read,
 body.rtl div.custom-menu-link i,
 body.rtl .aft-popular-taxonomies-lists strong,
 body.rtl .header-layout-compressed-full .off-cancas-panel,
@@ -161,8 +160,8 @@ body.rtl .header-layout-side .af-middle-container .logo {
 	padding-left: 10px;
 }
 
-body.rtl .archive-layout-list .af-double-column.list-style.no-post-image .read-bg-img, 
-body.rtl .archive-layout-list .af-double-column.list-style.no-post-image .read-details{
+body.rtl .aft-archive-wrapper.archive-layout-list .af-double-column.list-style.no-post-image .read-bg-img, 
+body.rtl .aft-archive-wrapper.archive-layout-list .af-double-column.list-style.no-post-image .read-details{
 	padding-left: 0;
 	padding-right: 0;
 }

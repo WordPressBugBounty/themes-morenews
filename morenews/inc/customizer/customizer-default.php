@@ -35,7 +35,7 @@ function morenews_get_default_theme_options() {
     $defaults['global_show_home_menu_border']    = 'show-menu-border';
     $defaults['global_site_mode_setting']    = 'aft-default-mode';
     $defaults['aft_language_switcher']           = '';
-    $defaults['show_primary_menu_desc']           = 1;
+    $defaults['show_primary_menu_desc']           = 0;
     $defaults['show_watch_online_section']           = 1;
     $defaults['aft_custom_icon']           = 'fas fa-play';
     $defaults['aft_custom_title']           = __('Live', 'morenews');
