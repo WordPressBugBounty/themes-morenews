@@ -1,3 +1,14 @@
+### 2.9.2 - Oct 28 2024
+* New - Post List Patterns with Background
+* New - Post List Patterns with Dark Background
+* New - Post Grid Patterns with Background
+* New - Post Grid Patterns with Dark Background
+* New - 3 Column Post Grid Patterns with Background
+* New - 3 Column Post Grid Patterns with Dark Background
+* New - Large Post Patterns with Background
+* New - Large Post Patterns with Dark Background
+* Fixed - Some styling glitch
+
 ### 2.9.1 - Oct 25 2024
 * Update - Block Style improvement
 * Fixed - Some styling glitch

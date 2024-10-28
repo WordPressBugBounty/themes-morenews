@@ -46,6 +46,14 @@ function morenews_register_patterns()
     
     // Add default theme patterns after Blockspare patterns
     $patterns = array_merge($patterns, [
+        'bg-post-list',
+        'dbg-post-list',
+        'bg-post-grid-3-col',
+        'dbg-post-grid-3-col',
+        'bg-post-grid',
+        'dbg-post-grid',
+        'bg-large-post',
+        'dbg-large-post',        
         'theme-block-10',
         'theme-block-10-2',
         'theme-block-9',
