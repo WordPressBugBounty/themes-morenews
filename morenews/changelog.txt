@@ -1,3 +1,7 @@
+### 2.9.3 - Oct 30 2024
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 2.9.2 - Oct 28 2024
 * New - Post List Patterns with Background
 * New - Post List Patterns with Dark Background

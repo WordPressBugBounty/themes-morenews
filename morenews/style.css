@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 2.9.2
+Version: 2.9.3
 Requires PHP: 5.6
 Tested up to: 6.6
 License: GNU General Public License v2 or later
@@ -3345,6 +3345,7 @@ body:not(.full-width-content) #secondary .morenews_express_posts_grid_widget .af
     font-size: 16px;
     margin: 5px 0;
     line-height: 1.4;
+    word-break: break-word;
 }
 
 .read-title h3 a,
@@ -6032,6 +6033,7 @@ h1.page-title{margin-top: 0;margin-bottom: 20px;}
 }
 body.single-post .entry-title {
     margin:10px 0; 
+    word-break: break-word;
 }
 body.single-post .aft-image-caption {
     color: #fff;
@@ -6403,6 +6405,10 @@ div.wp-block .editor-rich-text__editable code {
 }
 
 
+.entry-content .wp-block-cover .wp-block-cover__background, 
+.entry-content .wp-block-cover .wp-block-cover__gradient-background, 
+.entry-content .wp-block-cover-image .wp-block-cover__background, 
+.entry-content .wp-block-cover-image .wp-block-cover__gradient-background, 
 .entry-content .wp-block-spacer,
 .entry-content .wp-block-media-text .wp-block-media-text__media,
 .entry-content .wp-block-search__inside-wrapper .wp-block-search__input,
@@ -6412,6 +6418,7 @@ div.wp-block .editor-rich-text__editable code {
 .entry-content .wp-block-cover:last-child, 
 .entry-content .wp-block-cover-image:last-child,
 .entry-content p:last-child,
+.entry-content .wp-block-navigation-item [class^="wp-block-"],
 .entry-content [class^="wp-block-"]:last-child {
     margin-bottom: 0;
 }
@@ -6425,7 +6432,8 @@ div.wp-block .editor-rich-text__editable code {
 .entry-content ol:not([class*="wp-"]) ,
 .entry-content ul:not([class*="wp-"]):not(.awpa-contact-info) {
     padding-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     list-style-position: inside;
 }
 .entry-content ol:not([class*="wp-"]).alignwide ,
@@ -6446,19 +6454,8 @@ div.wp-block .editor-rich-text__editable code {
 }
 .entry-content ol:not([class*="wp-"]) li,
 .entry-content ul:not([class*="wp-"]) li{
-    padding-bottom: 15px;
-    padding-top: 0px;
-}
-
-.entry-content ol:not([class*="wp-"]) ol,
-.entry-content ol:not([class*="wp-"]) ul,
-.entry-content ul:not([class*="wp-"]) ol,
-.entry-content ul:not([class*="wp-"]) ul{
-    margin-bottom: 0;
-}
-.entry-content ol:not([class*="wp-"]) li:last-child,
-.entry-content ul:not([class*="wp-"]) li:last-child{
-    /* padding-bottom: 0; */
+    padding-bottom: 0px;
+    padding-top: 5px;
 }
 
 p.has-drop-cap:not(:focus):first-letter {
@@ -6754,6 +6751,21 @@ div.wp-block-categories.wp-block-categories-dropdown {
 div.wp-block-archives.wp-block-archives-dropdown label,
 div.wp-block-categories.wp-block-categories-dropdown label {
   display: none;
+}
+
+ul.wp-block-categories-list.wp-block-categories li, 
+ul.wp-block-archives-list.wp-block-archives li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+ul.wp-block-categories-list.wp-block-categories li:last-child, 
+ul.wp-block-archives-list.wp-block-archives li:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 /** === Block widget archive and category=== */
 /** === Block latest comments=== */
@@ -7528,6 +7540,8 @@ ul.trail-items li:last-child:after {
 .post-navigation{
     overflow: visible;
     padding: 10px 0;
+    clear: both;
+    word-break: break-word;
 }
 
 .prev-post-info, .next-post-info {
