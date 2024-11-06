@@ -1,3 +1,9 @@
+### 2.10.0 - Nov 06 2024
+* Update - Dark Mode Style improvement
+* Update - WooCommerce Style improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 2.9.3 - Oct 30 2024
 * Update - Block Style improvement
 * Fixed - Some styling glitch

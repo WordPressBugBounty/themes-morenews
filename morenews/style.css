@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 2.9.3
+Version: 2.10.0
 Requires PHP: 5.6
 Tested up to: 6.6
 License: GNU General Public License v2 or later
@@ -1176,6 +1176,12 @@ a:hover, a:focus, a:active {
     color: #007ACC ;
     outline: 0;
     text-decoration: none;
+}
+
+.aft-dark-mode div.custom-menu-link > a:hover,
+.aft-dark-mode .main-navigation ul li a:hover,
+.aft-dark-mode .site-title a:hover {
+    color: #fff;
 }
 
 a:focus {
@@ -6929,7 +6935,7 @@ body.full-width-content .alignfull{
     width: 100vw;
 }
 body.full-width-content .alignwide {
-    max-width : 100vw;
+    /* max-width : 100vw; */
 }
 
 body.single-content-mode-boxed:not(.full-width-content) article.af-single-article .entry-content .alignwide .alignwide,
@@ -9952,6 +9958,10 @@ body .reply a,
     color: #ffffff;
 }
 
+.aft-default-mode button.wp-block-navigation__responsive-container-close,
+.aft-dark-mode button.wp-block-navigation__responsive-container-close,
+.aft-default-mode button.wp-block-navigation__responsive-container-open,
+.aft-dark-mode button.wp-block-navigation__responsive-container-open,
 .aft-dark-mode a.wc-block-components-product-name,
 .aft-default-mode .wc-block-components-panel__button,
 .aft-dark-mode .wc-block-components-panel__button,

@@ -246,6 +246,15 @@ body.aft-dark-mode .woocommerce-ordering select option {
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
 	margin-bottom: 3.8%;
 }
+.woocommerce p.stars a {
+	border: none;
+}
+body.aft-dark-mode.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
+	color: #fff;
+}
+.wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
+	padding: 0;
+}
 /* ------- newly additional css ----- */
 
 
@@ -276,11 +285,13 @@ body.aft-dark-mode .woocommerce-Tabs-panel h2,
 body.aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{
 	color: #fff;
 }
+body.aft-dark-mode .wc-block-components-quantity-selector .wc-block-components-quantity-selector__button,
 body.aft-dark-mode.woocommerce-account .addresses .title .edit,
 body.aft-dark-mode .woocommerce-ordering select,
 body.aft-dark-mode .select2-container--default .select2-selection--single{
 	background-color: rgba(255, 255, 255, 0.1);
 }
+body.aft-dark-mode.woocommerce #reviews #comments ol.commentlist li .comment-text,
 body.aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
 body.aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs::before,
 body.aft-dark-mode #add_payment_method .cart-collaterals .cart_totals tr td, 
@@ -310,6 +321,7 @@ body.aft-dark-mode.woocommerce-checkout #payment{
 	background: rgba(255, 255, 255, 0.1);
 }
 /*darrk mode====*/
+
 
 .woocommerce div.product{
     padding: 20px;
