@@ -77,6 +77,8 @@ if (!function_exists('morenews_custom_style')) {
             .woocommerce input.button.alt,
             .woocommerce-account .addresses .title .edit,
 
+            body .wc-block-components-button,
+
             .widget-title-fill-and-border .wp-block-search__label,
             .widget-title-fill-and-border .wp-block-group .wp-block-heading,
             .widget-title-fill-and-no-border .wp-block-search__label,
@@ -251,6 +253,8 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .woocommerce-loop-product__title:hover,
             a:hover,
             p a,
+            .stars a:active,
+            .stars a:focus,
             .morenews-widget.widget_text a,
             body.aft-default-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             body.aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
