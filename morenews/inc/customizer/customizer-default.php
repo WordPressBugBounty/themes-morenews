@@ -137,7 +137,7 @@ function morenews_get_default_theme_options() {
     $defaults['select_trending_post_tag'] = 0;
     $defaults['trending_post_number_of_slides'] = 5;
 
-    $defaults['main_popular_news_section_title'] = __('Popular', 'morenews');    ;
+    $defaults['main_popular_news_section_title'] = __('Popular', 'morenews');
     $defaults['select_popular_post_filterby'] = 'comment';
     $defaults['select_popular_post_category'] = 0;
     $defaults['select_popular_post_tag'] = 0;
