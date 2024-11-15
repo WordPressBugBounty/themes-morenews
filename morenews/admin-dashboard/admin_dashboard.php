@@ -58,12 +58,24 @@ if (!class_exists('AF_themes_info')) {
 
     function morenews_body_classes($classes)
     {
+
       $classes = explode(' ', $classes);
       $classes = array_merge($classes, [
         'aft-admin-dashboard-notice'
       ]);
+      if (is_admin() && isset($_GET['page'])) {
+
+        $page = sanitize_text_field($_GET['page']);
+        if ($page === 'aft-block-patterns' || $page === 'aft-template-kits' || $page === $this->theme_slug || $page === 'explore-more') {
+
+          $classes = array_merge($classes, [
+            'aft-theme-admin-menu-dashboard'
+          ]);
+        }
+      }
       return implode(' ', array_unique($classes));
     }
+
     public function morenews_register_info_page()
     {
 
@@ -129,8 +141,8 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Settings', 'morenews'), // Page title.
-        __('Settings', 'morenews'), // Menu title.
+        __('Dashboard', 'morenews'), // Page title.
+        __('Dashboard', 'morenews'), // Menu title.
         'manage_options', // Capability.
         'explore-more', // Menu slug.
         array($this, 'morenews_render_page'), // Callback function.

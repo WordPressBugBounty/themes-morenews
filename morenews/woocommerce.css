@@ -134,27 +134,52 @@ body.woocommerce form > p:last-child {
 body .entry-content .woocommerce ul.woocommerce-error {
     margin-left: 0;
 }
-.woocommerce-account .addresses .title .edit,
-.woocommerce-active a.added_to_cart ,
-.woocommerce a.added_to_cart {
+.wc-block-components-button,
+.woocommerce-Button,
+.woocommerce-account .addresses .title .edit{
 	display: inline-block;
 	padding: .618em 1em;
 	line-height: 1;
 	font-weight: 700;
 	margin-top: 1em;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.woocommerce a.added_to_cart,
+.woocommerce-active a.added_to_cart ,
+a.woocommerce-button,
+.woocommerce-info .button{
+	padding: .618em 1em;
+	line-height: 1;
+	font-weight: 700;
 }
 .woocommerce-active a.added_to_cart ,
 .woocommerce a.added_to_cart {
 	color: #fff;
 	background-color: #101010;
 }
+.woocommerce ul.products li.product .added_to_cart,
+.woocommerce ul.products li.product .button{
+	font-size: 14px;
+   text-transform: uppercase;
+ }
 .wc-block-components-button,
 .woocommerce-account .addresses .title .edit{
 	background-color: #007ACC;
 	color: #fff;
 }
+.wc-block-components-button {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.woocommerce-Button,
 .woocommerce-account .addresses .title .edit:hover{
 	border: none;
+}
+.woocommerce-account .addresses .title .edit {
+	float: left;
+	clear: left;
 }
 .wc-block-components-button:hover,
 .woocommerce #respond input#submit.alt:hover, 
@@ -430,6 +455,12 @@ body.aft-dark-mode .woocommerce-loop-product__title{
 }
 nav.woocommerce-MyAccount-navigation ul li {
     padding: 15px 20px;
+}
+
+.woocommerce form .show-password-input, 
+.woocommerce-page form .show-password-input {
+	right: 10px;
+    top: 5px;
 }
 
 @media screen and (max-width: 768px) {
