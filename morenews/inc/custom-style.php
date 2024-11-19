@@ -112,6 +112,7 @@ if (!function_exists('morenews_custom_style')) {
             .aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-background), 
             .aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-background),
 
+            a.comment-reply-link,
             body.aft-default-mode .reply a,
             body.aft-dark-mode .reply a,
             .aft-popular-taxonomies-lists span::before ,

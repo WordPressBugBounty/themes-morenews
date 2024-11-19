@@ -50,11 +50,22 @@ if (!class_exists('AF_themes_info')) {
       add_action('admin_enqueue_scripts', array($this, 'morenews_register_backend_scripts'));
       add_action('init', array($this, 'morenews_load_files'));
       add_filter('admin_body_class', array($this, 'morenews_body_classes'));
-
+      add_action('admin_head', array($this, 'morenews_make_upgrade_link_external'));
 
       $current_user = wp_get_current_user();
       $this->current_user_name = $current_user->user_login;
     }
+
+
+    function morenews_make_upgrade_link_external() {
+      ?>
+      <script type="text/javascript">
+        jQuery(document).ready( function($) {   
+            $('#aft-upgrade-menu-item').parent().attr('target','_blank');               
+        });
+    </script>
+      <?php
+  }
 
     function morenews_body_classes($classes)
     {
@@ -141,12 +152,22 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Dashboard', 'morenews'), // Page title.
-        __('Dashboard', 'morenews'), // Menu title.
+        __('Settings', 'morenews'), // Page title.
+        __('Settings', 'morenews'), // Menu title.
         'manage_options', // Capability.
         'explore-more', // Menu slug.
         array($this, 'morenews_render_page'), // Callback function.
         // $get_started_order
+      );
+
+      // Our getting started page.
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Upgrade', 'morenews'), // Page title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'morenews') .'</span>', // Menu title.
+        capability: 'manage_options', // Capability.
+        menu_slug: esc_url('https://afthemes.com/products/morenews-pro/') // Menu slug.
+        
       );
     }
 

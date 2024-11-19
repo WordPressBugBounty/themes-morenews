@@ -563,7 +563,7 @@ if (!function_exists('morenews_main_banner_2_col_section_status')) :
     function morenews_main_banner_2_col_section_status($control)
     {
 
-        if (('layout-5' == $control->manager->get_setting('select_main_banner_layout_section')->value())) {
+        if (('layout-4' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-5' == $control->manager->get_setting('select_main_banner_layout_section')->value())) {
             return true;
         } else {
             return false;
@@ -902,7 +902,7 @@ if (!function_exists('morenews_main_banner_layout_editor_picks_status')) :
     function morenews_main_banner_layout_editor_picks_status($control)
     {
 
-        if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+        if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-4' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
             return true;
         } else {
             return false;
@@ -962,6 +962,32 @@ if (!function_exists('morenews_editors_picks_section_filterby_tag_status')) :
     }
 
 endif;
+
+
+if (!function_exists('morenews_main_banner_layout_tabs_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_main_banner_layout_tabs_status($control)
+    {
+
+        if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value()|| 'layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-5' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+endif;
+
 
 
 
