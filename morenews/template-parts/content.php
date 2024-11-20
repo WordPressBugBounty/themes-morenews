@@ -34,9 +34,7 @@
             <?php
             the_post_navigation(array(
                 'prev_text' => __('<span class="em-post-navigation">Previous:</span> %title', 'morenews'),
-                'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'morenews'),
-                'in_same_term' => true,
-                'taxonomy' => __('category', 'morenews'),
+                'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'morenews'),                
                 'screen_reader_text' => __('Continue Reading', 'morenews'),
             ));
             ?>

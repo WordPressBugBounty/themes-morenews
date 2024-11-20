@@ -44,7 +44,7 @@ if (!function_exists('morenews_setup')) :
          * If you're building a theme based on MoreNews, use a find and replace
          * to change 'morenews' to the name of your theme in all the template files.
          */
-    load_theme_textdomain('morenews', get_template_directory() . '/languages');
+    // load_theme_textdomain('morenews', get_template_directory() . '/languages');
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support('automatic-feed-links');
@@ -475,9 +475,9 @@ function morenews_print_pre($args)
   }
 }
 
-add_action('after_setup_theme', 'morenews_transltion_init');
+add_action('init', 'morenews_transltion_init');
 
 function morenews_transltion_init()
 {
-  load_theme_textdomain('morenews', false, get_template_directory()  . '/languages');
+  load_theme_textdomain('morenews', get_template_directory()  . '/languages');
 }
