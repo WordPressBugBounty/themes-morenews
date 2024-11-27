@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.0.4
+Version: 3.1.0
 Requires at least: 5.3
 WC requires at least: 3.0
 WC tested up to: 9.3
@@ -4118,6 +4118,7 @@ article.aft-first-post-full .post-item-metadata.entry-meta + .read-img.read-bg-i
 .grid-layout .read-single:hover .read-img .af-post-format + span.min-read{
     opacity: 1;
 }
+.read-details .entry-meta > span,
 .read-details .entry-meta.author-links > span,
 .read-details .entry-meta span.min-read{
     padding-right: 10px;
@@ -5157,6 +5158,7 @@ body.aft-dark-mode .aft-masonry-archive-posts .no-post-image .read-img,
 body.aft-dark-mode .af-reated-posts.morenews-customizer .no-post-image .read-img.read-bg-img{
     background: transparent;
 }
+
 article.latest-posts-full .no-post-image .read-img,
 .full-width-content article.latest-posts-full .no-post-image .read-img {
     height: unset !important;
@@ -6453,6 +6455,10 @@ div.wp-block .editor-rich-text__editable code {
     margin-bottom: 0;
 }
 
+.entry-content .wp-block-button:last-child{
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 480px){
     .entry-content .wp-block-media-text .wp-block-media-text__media {
         margin-bottom: 15px;
@@ -7541,6 +7547,7 @@ ul.trail-items li a{
     opacity: 0.7;
     transition: all 1244ms cubic-bezier(.215,.610,.355,1);
     color: #fff;
+    word-break: break-word;
 }
 ul.trail-items li a:hover{
     opacity: 1;
@@ -8114,6 +8121,13 @@ body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover{
 .aft-default-mode .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore,
 .aft-dark-mode .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore{
     border-color: rgba(255,255,255,0.5);
+}
+body.aft-dark-mode footer .morenews-widget .af-slick-navcontrols,
+body.aft-default-mode footer .morenews-widget .af-slick-navcontrols{
+    background-color: transparent;
+}
+body.aft-default-mode footer .af-slick-navcontrols .slide-icon{
+    color: #fff;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -9847,6 +9861,20 @@ article.latest-posts-grid .read-title h3,
         width: 100%;
         justify-content: center;
     }
+    .reply, 
+    .comment div#respond, 
+    .comment-content,
+    .comment .children {
+        margin-left: 50px;
+    }
+    .comment-author img {
+        width: 30px;
+    }
+    .comment .children .children .reply, 
+    .comment .children .children .comment-content, 
+    .comment .children .children .children .children{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -10176,8 +10204,8 @@ body a.wc-block-components-button {
 }
 
 /* Full width adjustments for the specific template */
-body.full-width-content .morenews-full-width-content .site-main>.alignwide ,
-.morenews-full-width-content .site-main>.alignwide {
+body.full-width-content .aft-pagebuilder-full-width-content .site-main>.alignwide ,
+.aft-pagebuilder-full-width-content .site-main>.alignwide {
     max-width: 1280px; /* Same as blank canvas */
     margin-left: auto;
     margin-right: auto;
@@ -10186,29 +10214,37 @@ body.full-width-content .morenews-full-width-content .site-main>.alignwide ,
     width: 100%;
 }
 
-.morenews-full-width-content .site-main>.aligncenter,
-.morenews-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+.aft-pagebuilder-full-width-content .site-main>.aligncenter,
+.aft-pagebuilder-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
     max-width: 740px; /* Same as blank canvas */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-
-.morenews-full-width-content .site-main>.rz-root__container,
-.morenews-full-width-content .site-main>.fl-builder-content {
+body .aft-pagebuilder-page-section > .vce-row-container{
+    max-width: 1280px;
+}
+.fl-builder .aft-pagebuilder-page-section > .fl-builder-content ,
+.aft-pagebuilder-full-width-content .site-main>.rz-root__container,
+.aft-pagebuilder-full-width-content .site-main>.fl-builder-content {
     max-width: unset;
 }
 
-.elementor-page .morenews-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) ,
-.elementor-default .morenews-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+.vcwb button,
+.fl-builder button{
+    height: unset;
+}
+
+.elementor-page .aft-pagebuilder-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) ,
+.elementor-default .aft-pagebuilder-full-width-content .site-main>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
     max-width: 100%;
     padding-right: 20px;
     padding-left: 20px;
 }
 
 /* Blank Canvas adjustments */
-body.full-width-content.morenews-blank-canvas .morenews-page-section>.alignwide,
-.morenews-blank-canvas .morenews-page-section>.alignwide {
+body.full-width-content.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide,
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -10217,8 +10253,8 @@ body.full-width-content.morenews-blank-canvas .morenews-page-section>.alignwide,
     width: 100%;
 }
 
-.morenews-blank-canvas .morenews-page-section>.aligncenter,
-.morenews-blank-canvas .morenews-page-section>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.aligncenter,
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;

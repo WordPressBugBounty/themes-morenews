@@ -118,10 +118,29 @@ function morenews_body_classes($classes)
 
   if ($page_layout == 'align-content-right') {
     if (is_front_page() && !is_home()) {
-      if (is_active_sidebar('home-sidebar-widgets')) {
-        $classes[] = 'align-content-right';
+
+
+
+      if (class_exists('WooCommerce')) {
+        if (is_shop()) {
+          if (is_active_sidebar('sidebar-1')) {
+            $classes[] = 'align-content-right';
+          } else {
+            $classes[] = 'full-width-content';
+          }
+        } else {
+          if (is_active_sidebar('home-sidebar-widgets')) {
+            $classes[] = 'align-content-right';
+          } else {
+            $classes[] = 'full-width-content';
+          }
+        }
       } else {
-        $classes[] = 'full-width-content';
+        if (is_active_sidebar('home-sidebar-widgets')) {
+          $classes[] = 'align-content-right';
+        } else {
+          $classes[] = 'full-width-content';
+        }
       }
     } else {
       if (is_active_sidebar('sidebar-1')) {
@@ -134,10 +153,27 @@ function morenews_body_classes($classes)
     $classes[] = 'full-width-content';
   } else {
     if (is_front_page() && !is_home()) {
-      if (is_active_sidebar('home-sidebar-widgets')) {
-        $classes[] = 'align-content-left';
+
+      if (class_exists('WooCommerce')) {
+        if (is_shop()) {
+          if (is_active_sidebar('sidebar-1')) {
+            $classes[] = 'align-content-left';
+          } else {
+            $classes[] = 'full-width-content';
+          }
+        } else {
+          if (is_active_sidebar('home-sidebar-widgets')) {
+            $classes[] = 'align-content-left';
+          } else {
+            $classes[] = 'full-width-content';
+          }
+        }
       } else {
-        $classes[] = 'full-width-content';
+        if (is_active_sidebar('home-sidebar-widgets')) {
+          $classes[] = 'align-content-left';
+        } else {
+          $classes[] = 'full-width-content';
+        }
       }
     } else {
       if (is_active_sidebar('sidebar-1')) {
@@ -195,7 +231,7 @@ add_action('wp_head', 'morenews_pingback_header');
  *
  * @since MoreNews 1.0.0
  */
-if (!function_exists('morenews_get_posts')):
+if (!function_exists('morenews_get_posts')) :
   function morenews_get_posts($number_of_posts, $tax_id = '0', $filterby = 'cat')
   {
 
@@ -237,7 +273,7 @@ endif;
  *
  * @since  MoreNews 1.0.0
  */
-if (!function_exists('morenews_post_format')):
+if (!function_exists('morenews_post_format')) :
   function morenews_post_format($post_id)
   {
     $post_format = get_post_format($post_id);
@@ -466,7 +502,8 @@ if (!function_exists('morenews_get_the_excerpt')) :
    *
    * @since 1.0.0
    */
-  function morenews_get_the_excerpt($post_id) {
+  function morenews_get_the_excerpt($post_id)
+  {
 
     if (empty($post_id)) {
       return;
@@ -474,7 +511,7 @@ if (!function_exists('morenews_get_the_excerpt')) :
 
     // Get the default excerpt for the post.
     $morenews_default_excerpt = get_the_excerpt($post_id);
-    
+
     // Retrieve the "Read More" text from theme options.
     $morenews_global_read_more_texts = morenews_get_option('global_read_more_texts');
 
@@ -564,7 +601,7 @@ if (!function_exists('morenews_count_content_words')) :
 
       if (absint($morenews_word_per_min) > 0) {
         $word_count_strings = sprintf(__("%s min read", 'morenews'), number_format_i18n($morenews_word_per_min));
-        if ('post' == get_post_type($post_id)):
+        if ('post' == get_post_type($post_id)) :
           echo '<span class="min-read">';
           echo esc_html($word_count_strings);
           echo '</span>';
@@ -596,15 +633,15 @@ function morenews_list_popular_taxonomies($taxonomy = 'post_tag', $title = "Popu
 
   $html = '';
 
-  if (isset($popular_taxonomies) && !empty($popular_taxonomies)):
+  if (isset($popular_taxonomies) && !empty($popular_taxonomies)) :
     $html .= '<div class="aft-popular-taxonomies-lists clearfix">';
-    if (!empty($title)):
+    if (!empty($title)) :
       $html .= '<span>';
       $html .= esc_html($title);
       $html .= '</span>';
     endif;
     $html .= '<ul>';
-    foreach ($popular_taxonomies as $tax_term):
+    foreach ($popular_taxonomies as $tax_term) :
       $html .= '<li>';
       $html .= '<a href="' . esc_url(get_term_link($tax_term)) . '">';
       $html .= $tax_term->name;
@@ -643,7 +680,7 @@ function morenews_get_freatured_image_url($post_id, $size = 'morenews-featured')
 
 //Get attachment alt tag
 
-if (!function_exists('morenews_get_img_alt')):
+if (!function_exists('morenews_get_img_alt')) :
   function morenews_get_img_alt($attachment_ID)
   {
     // Get ALT
@@ -695,9 +732,9 @@ function morenews_get_comments_views_share($post_id)
   <span class="aft-comment-view-share">
     <?php
     $show_comment_count = $section_mode = morenews_get_option('global_show_comment_count');
-    if ($show_comment_count == 'yes'):
+    if ($show_comment_count == 'yes') :
       $comment_count = get_comments_number($post_id);
-      if (absint($comment_count) > 1):
+      if (absint($comment_count) > 1) :
     ?>
         <span class="aft-comment-count">
           <a href="<?php the_permalink(); ?>">
@@ -722,11 +759,11 @@ function morenews_get_comments_views_share($post_id)
  */
 function morenews_archive_social_share_icons($post_id)
 {
-  if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')):
-    if (function_exists('sharing_display')):
+  if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')) :
+    if (function_exists('sharing_display')) :
       $sharer = new Sharing_Service();
       $global = $sharer->get_global_options();
-      if (in_array('index', $global['show']) && (is_home() || is_front_page() || is_archive() || is_search() || in_array(get_post_type(), $global['show']))):
+      if (in_array('index', $global['show']) && (is_home() || is_front_page() || is_archive() || is_search() || in_array(get_post_type(), $global['show']))) :
   ?>
         <div class="aft-comment-view-share">
           <span class="aft-jpshare">
@@ -744,7 +781,7 @@ function morenews_archive_social_share_icons($post_id)
 
 function morenews_single_post_social_share_icons()
 {
-  if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')):
+  if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')) :
 
     $social_share_icon_opt = morenews_get_option('single_post_social_share_view');
 
@@ -773,9 +810,9 @@ function morenews_single_post_commtents_view($post_id)
   <div class="aft-comment-view-share">
     <?php
     $show_comment_count = $section_mode = morenews_get_option('global_show_comment_count');
-    if ($show_comment_count == 'yes'):
+    if ($show_comment_count == 'yes') :
       $comment_count = get_comments_number($post_id);
-      if (absint($comment_count) > 1):
+      if (absint($comment_count) > 1) :
     ?>
         <span class="aft-comment-count">
           <a href="<?php the_permalink(); ?>">

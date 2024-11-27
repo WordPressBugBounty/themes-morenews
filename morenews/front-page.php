@@ -17,9 +17,9 @@ if ('posts' == get_option('show_on_front')) {
 
     </head>
 
-    <body <?php body_class('morenews-blank-canvas'); ?>>
+    <body <?php body_class('aft-pagebuilder-blank-canvas'); ?>>
 
-        <div class="morenews-page-section">
+        <div class="aft-pagebuilder-page-section">
             <?php
             // Output the page builder content
             if (have_posts()) :
@@ -42,7 +42,7 @@ if ('posts' == get_option('show_on_front')) {
 
     get_header(); ?>
 
-    <div id="primary" class="content-area morenews-full-width-content">
+    <div id="primary" class="content-area aft-pagebuilder-full-width-content">
         <main id="main" class="site-main" role="main">
             <?php
             if (have_posts()) :

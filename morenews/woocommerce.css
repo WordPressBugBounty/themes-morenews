@@ -112,6 +112,10 @@ body.woocommerce form > p:last-child {
 }
 
 /* ------- new additional css ----- */
+body.home .woocommerce-products-header{
+	display: none;
+}
+
 .woocommerce table .label {
 	color: inherit;
 	font-size: 100%;

@@ -475,7 +475,7 @@ function morenews_print_pre($args)
   }
 }
 
-add_action('init', 'morenews_transltion_init');
+add_action('init', 'morenews_transltion_init', 99);
 
 function morenews_transltion_init()
 {

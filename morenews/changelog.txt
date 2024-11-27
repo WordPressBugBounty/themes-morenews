@@ -1,3 +1,10 @@
+### 3.1.0 - Nov 27 2024
+* Update - WooCommerce mode improvements
+* Update - Dark mode improvements
+* Update - Page builder improvements
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.0.0 - Nov 19 2024 =
 * New - WP 6.7 Compatibility
 * Update - Dashboard improvements

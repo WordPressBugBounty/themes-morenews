@@ -18,9 +18,9 @@ if (!defined('ABSPATH')) {
         <?php wp_head(); ?>
     </head>
 
-<body <?php body_class('morenews-blank-canvas'); ?>>
+<body <?php body_class('aft-pagebuilder-blank-canvas'); ?>>
 
-<div class="morenews-page-section">
+<div class="aft-pagebuilder-page-section">
 	<?php
 	// Output the page builder content
 	if ( have_posts() ) :

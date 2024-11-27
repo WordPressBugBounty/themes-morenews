@@ -188,7 +188,8 @@ if (!function_exists('morenews_custom_style')) {
             .aft-default-mode #loader {
                 border-bottom-color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
-            
+            footer.site-footer .wp-calendar-nav a:hover,
+            footer.site-footer .wp-block-latest-comments__comment-meta a:hover,
             .aft-dark-mode .tagcloud a:hover, 
             .aft-dark-mode .widget ul.menu >li a:hover, 
             .aft-dark-mode .widget > ul > li a:hover,
@@ -208,6 +209,12 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .af-breadcrumbs a:hover,
             body.aft-dark-mode .af-breadcrumbs a:hover,
             body .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
+
+            body .site-footer .color-pad .read-title h3 a:hover,
+            body.aft-default-mode .site-footer .tagcloud a:hover,
+            body.aft-dark-mode .site-footer .tagcloud a:hover,
+            body.aft-default-mode .site-footer .wp-block-tag-cloud a:hover,
+            body.aft-dark-mode .site-footer .wp-block-tag-cloud a:hover,
 
             body.aft-dark-mode #secondary .morenews-widget ul[class*="wp-block-"] a:hover,
             body.aft-dark-mode #secondary .morenews-widget ol[class*="wp-block-"] a:hover,
@@ -239,16 +246,27 @@ if (!function_exists('morenews_custom_style')) {
             .aft-dark-mode .wp-block-categories-list.wp-block-categories a:not(.has-text-color):hover,
             .aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
 
+            body.aft-default-mode .site-footer .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
+            body.aft-dark-mode .site-footer .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
+            .aft-default-mode .site-footer .wp-block-archives-list.wp-block-archives a:not(.has-text-color):hover,
+            .aft-default-mode .site-footer .wp-block-latest-posts a:not(.has-text-color):hover, 
+            .aft-default-mode .site-footer .wp-block-categories-list.wp-block-categories a:not(.has-text-color):hover,
+            .aft-dark-mode .site-footer .wp-block-archives-list.wp-block-archives a:not(.has-text-color):hover,
+            .aft-dark-mode .site-footer .wp-block-latest-posts a:not(.has-text-color):hover, 
+            .aft-dark-mode .site-footer .wp-block-categories-list.wp-block-categories a:not(.has-text-color):hover,
+
             body.aft-dark-mode .morenews-pagination .nav-links a.page-numbers:hover,
             body.aft-default-mode .morenews-pagination .nav-links a.page-numbers:hover,
+            body .site-footer .secondary-footer a:hover,
             body.aft-default-mode .aft-popular-taxonomies-lists ul li a:hover ,
             body.aft-dark-mode .aft-popular-taxonomies-lists ul li a:hover,
             body.aft-dark-mode .wp-calendar-nav a,
-            body.aft-default-mode .entry-content > .wp-block-heading a:not(.has-link-color),
+            body .entry-content > .wp-block-heading a:not(.has-link-color),
             body .entry-content > ul a,
             body .entry-content > ol a,
             body .entry-content > p a ,
             body.aft-default-mode p.logged-in-as a,
+            body.aft-dark-mode p.logged-in-as a,
             body.aft-dark-mode .woocommerce-loop-product__title:hover,
             body.aft-default-mode .woocommerce-loop-product__title:hover,
             a:hover,
@@ -259,12 +277,20 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             body.aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             .entry-content .wp-block-latest-comments a:not(.has-text-color):hover,
+
             body.aft-default-mode .entry-content h1:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h2:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h3:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h4:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h5:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h6:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h1:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h2:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h3:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h4:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h5:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content h6:not(.has-link-color):not(.wp-block-post-title) a,
+
             body.aft-default-mode .comment-content a,
             body.aft-dark-mode .comment-content a,
             body.aft-default-mode .post-excerpt a,
@@ -308,6 +334,7 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-dark-mode #wp-calendar tbody td#today,
             body.aft-default-mode #wp-calendar tbody td#today,
             body.aft-default-mode .entry-content > .wp-block-heading a:not(.has-link-color),
+            body.aft-dark-mode .entry-content > .wp-block-heading a:not(.has-link-color),
             body .entry-content > ul a, body .entry-content > ul a:visited,
             body .entry-content > ol a, body .entry-content > ol a:visited,
             body .entry-content > p a, body .entry-content > p a:visited

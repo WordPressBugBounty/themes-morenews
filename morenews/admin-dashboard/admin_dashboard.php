@@ -92,7 +92,6 @@ if (!class_exists('AF_themes_info')) {
 
       //Add info page.
 
-      $upgrade_texts = __('Upgrade', 'morenews');
       $starter_template_slug = 'aft-block-patterns';
       $template_kits_slug = 'aft-template-kits';
       $starter_sites_order = 2;
@@ -165,7 +164,7 @@ if (!class_exists('AF_themes_info')) {
       add_submenu_page(
         'morenews', // Parent slug.
         __('Upgrade', 'morenews'), // Page title.
-        '<span id="aft-upgrade-menu-item">' .$upgrade_texts.'</span>', // Menu title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'morenews') .'</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/morenews-pro/') // Menu slug.
         

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area morenews-full-width-content">
+<div id="primary" class="content-area aft-pagebuilder-full-width-content">
     <main id="main" class="site-main" role="main">
         <?php
         if ( have_posts() ) :

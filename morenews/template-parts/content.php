@@ -35,7 +35,7 @@
             the_post_navigation(array(
                 'prev_text' => __('<span class="em-post-navigation">Previous:</span> %title', 'morenews'),
                 'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'morenews'),                
-                'screen_reader_text' => __('Continue Reading', 'morenews'),
+                'screen_reader_text' => __('Continue Reading', 'morenews')
             ));
             ?>
             <?php wp_link_pages(array(
