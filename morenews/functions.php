@@ -202,8 +202,8 @@ function morenews_get_fonts_url()
   // Generate the Google Fonts URL if fonts are available.
   if (!empty($unique_fonts)) {
     $fonts_url = add_query_arg(array(
-      'family'  => urlencode(implode('|', $unique_fonts)),
-      'subset'  => urlencode($subsets),
+      'family'  => implode('|', $unique_fonts), // Concatenate fonts with '|'.
+      'subset'  => ($subsets),
       'display' => 'swap',
     ), 'https://fonts.googleapis.com/css');
   }

@@ -118,9 +118,6 @@ function morenews_body_classes($classes)
 
   if ($page_layout == 'align-content-right') {
     if (is_front_page() && !is_home()) {
-
-
-
       if (class_exists('WooCommerce')) {
         if (is_shop()) {
           if (is_active_sidebar('sidebar-1')) {

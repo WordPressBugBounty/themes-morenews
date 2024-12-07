@@ -4,10 +4,8 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.1.0
+Version: 3.2.0
 Requires at least: 5.3
-WC requires at least: 3.0
-WC tested up to: 9.3
 Requires PHP: 5.6
 Tested up to: 6.7
 License: GNU General Public License v2 or later
@@ -341,7 +339,7 @@ input,
 select,
 optgroup,
 textarea {
-    color: #4a4a4a;
+    color: #404040;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-size: 16px;
@@ -1094,7 +1092,7 @@ body.aft-dark-mode.sidr-open:before {
     content: '';
     width: 13px;
     height: 2px;
-    background-color: #4a4a4a;
+    background-color: #404040;
     position: absolute;
     margin: auto;
     top: 0;
@@ -1156,7 +1154,7 @@ body.aft-dark-mode.sidr-open:before {
 body.aft-default-mode .main-navigation .menu .menu-mobile li a,
 body.aft-default-mode .main-navigation ul.children li a,
 body.aft-default-mode .main-navigation ul .sub-menu li a{
-    color: #4a4a4a;
+    color: #404040;
 }
 /*============-------------for all navigations----------=============*/
 /*--------------------------------------------------------------
@@ -1181,9 +1179,6 @@ a:hover, a:focus, a:active {
     outline: 0;
     text-decoration: none;
 }
-
-.aft-dark-mode .woocommerce-MyAccount-content a:hover,
-.aft-dark-mode .woocommerce-MyAccount-content a:focus,
 .aft-dark-mode .main-navigation .menu ul > li > a:focus,
 .aft-dark-mode a.button:focus,
 .aft-dark-mode div.custom-menu-link > a:hover,
@@ -1312,6 +1307,12 @@ body.full-width-content #primary ,
     width: 100%;
     padding: 0;
 }
+
+
+body.error404 .container-wrapper #primary .page-content > .search-form {
+    max-width: 400px;
+}
+
 .container-wrapper #primary,
 .container-wrapper #secondary {
     float: left;
@@ -2018,9 +2019,6 @@ body.aft-dark-mode .morenews-widget select option {
 .morenews-widget .mc4wp-form-fields {
     position: relative;
 }
-.woocommerce-product-search {
-    display: flex;
-}
 .widget_product_search input.search-field button[type="submit"],
 .morenews-widget .mc4wp-form-fields input[type="submit"] {
     position: absolute;
@@ -2052,17 +2050,6 @@ body.aft-dark-mode .widget input.search-field::placeholder {
     color:rgba(255,255,255,.75);
 }
 
-.woocommerce-product-search button[type="submit"]{
-    background: #e0af00;
-    border: 1px solid #e0af00;
-    border-radius: 0px 3px 3px 0px;
-    color: #fff;
-    padding: 0px;
-    height: 38px;
-    font-size: 13px;
-    width: 25%;
-    margin: 0;
-}
 input.search-submit {
     border: 1px solid #e0af00;
     border-radius: 0px;
@@ -3632,7 +3619,7 @@ section.aft-main-banner-section.data-bg::before {
     height: 520px;
 }
 .af-main-banner-thumb-posts .read-single:not(.af-cat-widget-carousel) .min-read {
-    color: #4a4a4a;
+    color: #404040;
     opacity: 0.75;
     padding: 0;
     background-color: transparent;
@@ -5986,7 +5973,7 @@ article .mailchimp-block {
     width: 100%;
     line-height: 38px;
     padding: 10px 30px;
-    color: #4a4a4a;
+    color: #404040;
     font-size: 14px;
     min-height: 58px;
 }
@@ -7250,7 +7237,7 @@ a img.aligncenter {
     background-color: #eee;
     clip: auto !important;
     clip-path: none;
-    color: #4a4a4a;
+    color: #404040;
     display: block;
     font-size: 1em;
     height: auto;
@@ -7453,7 +7440,7 @@ a img.aligncenter {
 body.aft-default-mode .wp-block-tag-cloud a, 
 body.aft-default-mode .tagcloud a {
     background: rgba(0,0,0,.05);
-    color: #4a4a4a;
+    color: #404040;
 }
 /*----------===tag cloud===---------*/
 /*----------===calendar===---------*/
@@ -7628,6 +7615,7 @@ span.meta-nav {
 }
 /*navigation posts navigation====================*/
 /*mail chimp====================*/
+.mc4wp-form .mc4wp-form-fields label ,
 .widget_mc4wp_form_widget .mc4wp-form-fields label {
     font-size: 0;
     display: block;
@@ -7642,6 +7630,14 @@ span.meta-nav {
     font-size: 14px;
     min-height: 38px;
 }
+.widget_product_search input.search-field, 
+.morenews-widget .mc4wp-form-fields input[type="email"]{
+    background: #fafafa;
+}
+footer .widget_product_search input.search-field, 
+footer .morenews-widget .mc4wp-form-fields input[type="email"]{
+    background: #222222;
+}
 footer .widget_mc4wp_form_widget input, 
 #sidr .widget_mc4wp_form_widget input, 
 #secondary .widget_mc4wp_form_widget input {
@@ -7652,6 +7648,7 @@ footer .widget_mc4wp_form_widget input:not([type="submit"]),
 #secondary .widget_mc4wp_form_widget input:not([type="submit"]) {
     padding-left: 15px;
 }
+.mc4wp-form .mc4wp-form-fields p,
 .widget_mc4wp_form_widget p {
     margin-bottom: 0;
 }
@@ -9920,11 +9917,10 @@ body.morenews-header .aft-small-social-menu ul li a{
 .aft-default-mode ul.trail-items li a,
 .aft-default-mode #sidr,
 .aft-default-mode {
-    color: #4a4a4a;
+    color: #404040;
 }
 a.comment-reply-link,
 body .reply a,
-.aft-default-mode.woocommerce span.onsale,
 .aft-dark-mode input[type="button"],
 .aft-dark-mode input[type="reset"],
 .aft-dark-mode input[type="submit"],
@@ -10224,11 +10220,6 @@ body.full-width-content .aft-pagebuilder-full-width-content .site-main>.alignwid
 body .aft-pagebuilder-page-section > .vce-row-container{
     max-width: 1280px;
 }
-.fl-builder .aft-pagebuilder-page-section > .fl-builder-content ,
-.aft-pagebuilder-full-width-content .site-main>.rz-root__container,
-.aft-pagebuilder-full-width-content .site-main>.fl-builder-content {
-    max-width: unset;
-}
 
 .vcwb button,
 .fl-builder button{
@@ -10243,6 +10234,7 @@ body .aft-pagebuilder-page-section > .vce-row-container{
 }
 
 /* Blank Canvas adjustments */
+.elementor-default .aft-pagebuilder-full-width-content .site-main>.alignwide,
 body.full-width-content.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide,
 .aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide {
     max-width: 1280px;
@@ -10259,6 +10251,20 @@ body.full-width-content.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-secti
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+.aft-pagebuilder-page-section > .elementor,
+.fl-builder .aft-pagebuilder-page-section > .fl-builder-content ,
+.aft-pagebuilder-full-width-content .site-main>.rz-root__container,
+.aft-pagebuilder-full-width-content .site-main>.fl-builder-content {
+    max-width: unset;
+}
+
+.brz .brz-root__container.brz-reset-all {
+    padding: 0;
+}
+
+.aft-pagebuilder-full-width-content + footer.site-footer {
+    margin-top: 0;
 }
 
 .blockspare-social-links li,
@@ -10314,7 +10320,8 @@ div.wpforms-container-full button[type=submit]:not(:hover):not(:active) {
 }
 
 /* header promotion background remove*/
-body .header-promotion .morenews-widget {
+body.aft-dark-mode .header-promotion .morenews-widget ,
+body.aft-default-mode .header-promotion .morenews-widget {
     background: transparent;
 }
 .wp-block-post-title:not(.has-link-color) {
@@ -10422,4 +10429,78 @@ body .site-footer .secondary-footer a:hover{
 body .site-footer .aft-readmore-wrapper a.aft-readmore {
     color: #fff;
     border-color: rgb(255, 255, 255,.3);
+}
+
+body .hustle-button,
+body .hustle-button:hover{
+    background-color: #007ACC;
+    color: #fff;
+}
+body .hustle-button:hover{
+    opacity: .75;
+}
+body .hustle-ui.module_id_1 .hustle-layout .hustle-content .hustle-content-wrap {
+    padding: 0;
+}
+body .splw-main-wrapper {
+    margin: 0 !important;
+}
+body .wp-block-embed.wp-block-embed-youtube{
+    margin: 0;
+}
+
+body .gt_float_switcher .gt-selected .gt-current-lang {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+body .gt_float_switcher img {
+    width: 20px;
+    border-radius: 0;
+}
+body .gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow {
+    height: 20px;
+}
+body .gt_float_switcher .gt_options {
+    font-size: 14px;
+}
+body .splw-lite-wrapper.lw-preloader-wrapper {
+    border-radius: 0 !important;
+}
+@media screen and (min-width: 783px) {
+    body .hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {
+        margin: 0 0 20px;
+    }
+}
+body .hustle-ui.module_id_1 .hustle-layout .hustle-subtitle {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+body .gt_options.gt-open {
+    max-width: unset !important;
+}
+#gt_float_wrapper,
+li.menu-item.menu-item-gtranslate {
+    display: flex !important;
+    align-items: center;
+}
+span.hustle-title {
+    font-family: Source Sans Pro, sans-serif !important;
+    font-weight: 700 !important;
+}
+#sidr .widget_product_search input.search-field button[type="submit"], 
+#sidr .morenews-widget .mc4wp-form-fields input[type="submit"],
+.site-footer .widget_product_search input.search-field button[type="submit"], 
+.site-footer .morenews-widget .mc4wp-form-fields input[type="submit"],
+#secondary .widget_product_search input.search-field button[type="submit"], 
+#secondary .morenews-widget .mc4wp-form-fields input[type="submit"]{
+    position: relative;
+    width: 100%;
+}
+#sidr .widget_product_search input.search-field, 
+#sidr .morenews-widget .mc4wp-form-fields input[type="email"],
+.site-footer .widget_product_search input.search-field, 
+.site-footer .morenews-widget .mc4wp-form-fields input[type="email"],
+#secondary .widget_product_search input.search-field, 
+#secondary .morenews-widget .mc4wp-form-fields input[type="email"]{
+    width: 100%;
 }

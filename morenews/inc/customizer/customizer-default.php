@@ -364,13 +364,15 @@ function morenews_get_default_theme_options() {
 //font options additional value
     global $morenews_google_fonts;
     $morenews_google_fonts = array(
+        'Jost:200,300,400,500,600,700,900'          => 'Jost',
         'Lato:400,300,400italic,900,700'            => 'Lato',
+        'Noto+Serif:400,400italic,700'              => 'Noto Serif',
         'Open+Sans:400,400italic,600,700'           => 'Open Sans',
         'Oswald:300,400,700'                        => 'Oswald',
         'Raleway:400,300,500,600,700,900'           => 'Raleway',
-        'Roboto:100,300,400,500,700'                => 'Roboto',
-        'Source+Sans+Pro:400,400i,700,700i' => 'Source Sans Pro',
+        'Roboto:100,300,400,500,700'                => 'Roboto',        
         'Roboto+Slab:400,300,700'                   => 'Roboto Slab',
+        'Source+Sans+Pro:400,400i,700,700i' => 'Source Sans Pro',
     );
 
     //font option

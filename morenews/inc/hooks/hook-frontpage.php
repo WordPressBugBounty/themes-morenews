@@ -18,28 +18,32 @@ if (!function_exists('morenews_front_page_widgets_section')) :
 
         <section class="section-block-upper">
 
-            
 
-                <div id="primary" class="content-area">
-                    <main id="main" class="site-main">
+
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
 
                     <?php
-                        if ($frontpage_content_type == 'frontpage-widgets-and-content') {
-                            while (have_posts()) : the_post();
+                    if ($frontpage_content_type == 'frontpage-widgets-and-content') {
+                        while (have_posts()) : the_post();
 
+                            
+                            $content = trim(get_the_content());
+                            if (!empty($content)) {
                                 get_template_part('template-parts/content', 'page');
+                            }
 
-                            endwhile; // End of the loop.
-                        }
+                        endwhile;
+                    }
 
-                        ?>
-                        <?php if (is_active_sidebar('home-content-widgets')) : ?>
+                    ?>
+                    <?php if (is_active_sidebar('home-content-widgets')) : ?>
                         <?php dynamic_sidebar('home-content-widgets'); ?>
-                        <?php endif; ?>
-                    </main>
-                </div>
+                    <?php endif; ?>
+                </main>
+            </div>
 
-            
+
 
             <?php if (is_active_sidebar('home-sidebar-widgets') && $frontpage_layout != 'full-width-content') : ?>
 

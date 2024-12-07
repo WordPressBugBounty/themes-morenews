@@ -54,7 +54,6 @@ if (!function_exists('morenews_custom_style')) {
             .frm_form_submit_style, 
             .frm_style_formidable-style.with_frm_style .frm-edit-page-btn,
 
-            .woocommerce span.onsale,
             .woocommerce #respond input#submit.disabled, 
             .woocommerce #respond input#submit:disabled, 
             .woocommerce #respond input#submit:disabled[disabled], 
@@ -76,8 +75,18 @@ if (!function_exists('morenews_custom_style')) {
             .woocommerce button.button.alt, 
             .woocommerce input.button.alt,
             .woocommerce-account .addresses .title .edit,
+            :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
+            :root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
+            hustle-button,
 
+            .wp-block-button.wc-block-components-product-button .wp-block-button__link,
+            .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
             body .wc-block-components-button,
+            .wc-block-grid .wp-block-button__link,
+            .woocommerce-notices-wrapper .button,
+            body .woocommerce-notices-wrapper .button:hover,
+            body.woocommerce .single_add_to_cart_button.button:hover,
+            body.woocommerce a.button.add_to_cart_button:hover,
 
             .widget-title-fill-and-border .wp-block-search__label,
             .widget-title-fill-and-border .wp-block-group .wp-block-heading,
@@ -116,11 +125,9 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .reply a,
             body.aft-dark-mode .reply a,
             .aft-popular-taxonomies-lists span::before ,
-            .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
             #loader-wrapper div,
             span.heading-line::before,
             .wp-post-author-wrap .header-after::before,
-            body.aft-default-mode.woocommerce span.onsale,
             body.aft-dark-mode input[type="button"],
             body.aft-dark-mode input[type="reset"],
             body.aft-dark-mode input[type="submit"],
@@ -183,6 +190,7 @@ if (!function_exists('morenews_custom_style')) {
                 border-top-color: <?php morenews_esc_custom_style($secondary_color) ?>;
 
             }
+            .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
             #scroll-up::after,
             .aft-dark-mode #loader,
             .aft-default-mode #loader {
@@ -277,6 +285,7 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             body.aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             .entry-content .wp-block-latest-comments a:not(.has-text-color):hover,
+            .wc-block-grid__product .wc-block-grid__product-link:focus,
 
             body.aft-default-mode .entry-content h1:not(.has-link-color):not(.wp-block-post-title) a,
             body.aft-default-mode .entry-content h2:not(.has-link-color):not(.wp-block-post-title) a,
@@ -376,11 +385,12 @@ if (!function_exists('morenews_custom_style')) {
             .min-read,
             .af-social-contacts .social-widget-menu .screen-reader-text,
             textarea {
-            font-family: <?php morenews_esc_custom_style($primary_font) ?>, sans-serif;
+            font-family: <?php morenews_esc_custom_style($primary_font) ?>;
             }
         <?php endif; ?>
 
         <?php if (!empty($secondary_font)): ?>
+            body span.hustle-title,
             .wp-block-blockspare-blockspare-tabs .bs-tabs-title-list li a.bs-tab-title,
             .navigation.post-navigation .nav-links a,
             div.custom-menu-link > a,
@@ -399,7 +409,7 @@ if (!function_exists('morenews_custom_style')) {
             .wp-block-group ul li a,
             .main-navigation ul li a,
             h1, h2, h3, h4, h5, h6 {
-            font-family: <?php morenews_esc_custom_style($secondary_font) ?> , sans-serif;
+            font-family: <?php morenews_esc_custom_style($secondary_font) ?>;
             }
         <?php endif; ?>
 
