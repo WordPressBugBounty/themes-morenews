@@ -4,9 +4,9 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.2.0
-Requires at least: 5.3
-Requires PHP: 5.6
+Version: 3.2.1
+Requires at least: 4.0
+Requires PHP: 5.3
 Tested up to: 6.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -9600,7 +9600,7 @@ article.latest-posts-grid .read-title h3,
     .morenews-header.header-layout-compressed-full .bottom-bar-flex{flex-flow: row wrap;}
     .morenews-header.header-layout-compressed-full .bottom-bar-flex .logo{text-align: center;}
     .header-layout-compressed-full .main-navigation .toggle-menu {padding-left: 0;}
-    .af-main-banner-thumb-posts .af-sec-post:nth-child(3) .read-single{margin-bottom: 10px;}
+    .af-main-banner-thumb-posts .af-sec-post:nth-child(3) .read-single{margin-bottom: 20px;}
     .aft-banner-layout-0 .af-main-banner-thumb-posts .af-sec-post:nth-child(3) .read-single{margin-bottom: 0;}
 
     .grid-layout-three > .common-grid,
@@ -10027,16 +10027,7 @@ body .reply a,
 .aft-default-mode button.wp-block-navigation__responsive-container-close,
 .aft-dark-mode button.wp-block-navigation__responsive-container-close,
 .aft-default-mode button.wp-block-navigation__responsive-container-open,
-.aft-dark-mode button.wp-block-navigation__responsive-container-open,
-.aft-dark-mode a.wc-block-components-product-name,
-.aft-default-mode .wc-block-components-panel__button,
-.aft-dark-mode .wc-block-components-panel__button,
-
-.aft-default-mode .wc-block-components-address-card__edit ,
-.aft-dark-mode .wc-block-components-address-card__edit {
-    color: inherit;
-}
-body a.wc-block-components-button {
+.aft-dark-mode button.wp-block-navigation__responsive-container-open{
     color: #fff;
 }
 

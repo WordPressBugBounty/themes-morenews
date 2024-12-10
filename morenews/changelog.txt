@@ -1,3 +1,9 @@
+### 3.2.1 - Dec 10 2024
+* Update - WooCommerce compatibility improvement
+* Update - Page buiders compatibility improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.2.0 - Dec 06 2024
 * New - MailChimp for WordPress Plugin Style improvement
 * New - GTranstale Plugin Style improvement
