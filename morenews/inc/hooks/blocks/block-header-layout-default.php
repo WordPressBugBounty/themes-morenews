@@ -68,7 +68,7 @@ $morenews_show_top_header_section = morenews_get_option('show_top_header_section
             <?php do_action('morenews_load_off_canvas'); ?>
           </div>
           <div id="sidr" class="primary-background">
-            <a class="sidr-class-sidr-button-close" href="#sidr-nav"></a>
+            <a class="sidr-class-sidr-button-close" aria-label="<?php esc_attr_e('Open Off-Canvas Navigation', 'morenews') ?>" href="#sidr"></a>
             <?php dynamic_sidebar('express-off-canvas-panel'); ?>
           </div>
         <?php endif; ?>

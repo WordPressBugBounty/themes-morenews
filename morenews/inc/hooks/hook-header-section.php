@@ -69,8 +69,8 @@ if (!function_exists('morenews_load_search_form_section')):
   {
   ?>
     <div class="af-search-wrap">
-      <div class="search-overlay">
-        <a href="#" title="Search" class="search-icon">
+      <div class="search-overlay" aria-label="<?php esc_attr_e('Open search form', 'morenews') ?>">
+        <a href="#" title="Search" class="search-icon" aria-label="<?php esc_attr_e('Open search form', 'morenews') ?>">
           <i class="fa fa-search"></i>
         </a>
         <div class="af-search-form">
@@ -100,9 +100,11 @@ if (!function_exists('morenews_load_watch_online_section')):
       if (!empty($morenews_aft_custom_title)):
     ?>
         <div class="custom-menu-link">
-          <a href="<?php echo esc_url($morenews_aft_custom_link); ?>">
+          <a href="<?php echo esc_url($morenews_aft_custom_link); ?>" aria-label="<?php echo esc_attr('View ' . $morenews_aft_custom_title, 'morenews'); ?>">
+
             <?php if (!empty($morenews_aft_custom_icon)): ?>
-              <i class="<?php echo esc_attr($morenews_aft_custom_icon); ?>" aria-hidden="true"></i>
+
+              <i class="<?php echo esc_attr($morenews_aft_custom_icon); ?>"></i>
             <?php endif; ?>
             <?php echo esc_html($morenews_aft_custom_title); ?>
           </a>

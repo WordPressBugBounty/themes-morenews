@@ -357,6 +357,15 @@ nav.woocommerce-MyAccount-navigation ul li {
 
 
 /* Woo Block and Normalize css */
+.wc-block-grid__product .wc-block-grid__product-add-to-cart,
+.wp-block-group ul.wc-block-grid__products {
+    margin-bottom: 0;
+}
+.wp-block-group ul li.wc-block-grid__product{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
 .aft-dark-mode a.wc-block-components-product-name,
 .aft-default-mode .wc-block-components-panel__button,
 .aft-dark-mode .wc-block-components-panel__button,
@@ -370,6 +379,9 @@ body a.wc-block-components-button {
 :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link){
 	background-color: #007ACC;
 	color: #fff;
+}
+body .wp-block-woocommerce-checkout {
+    padding-top: 0;
 }
 .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input{
 	padding: 0 !important;
@@ -390,6 +402,7 @@ body a.wc-block-components-button {
 body.woocommerce-js .label {
 	color: inherit;
 }
+.wc-block-checkout .wp-block-button__link,
 :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
 :root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
 .woocommerce-notices-wrapper .button,
@@ -407,6 +420,7 @@ body.woocommerce-js .label {
     text-transform: uppercase;
     font-weight: 700;
 }
+.wc-block-checkout .wp-block-button__link:hover,
 .woocommerce-notices-wrapper .button:hover,
 .wc-block-grid .wp-block-button__link:hover,
 .wp-block-button.wc-block-components-product-button .wp-block-button__link:hover,
