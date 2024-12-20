@@ -81,9 +81,12 @@
 
 
             ?>
+            <div class="aft-main-breadcrumb-wrapper container-wrapper">
+                <?php do_action('morenews_action_get_breadcrumb'); ?>
+            </div>
             <div id="content" class="container-wrapper">
             <?php
-            do_action('morenews_action_get_breadcrumb');
+
         }
         if (is_single()) {
             $single_post_title_view = morenews_get_option('single_post_title_view');

@@ -70,8 +70,12 @@ if (!function_exists('morenews_the_post_thumbnail')) :
         }
       } else {
         // Fallback to first image in content if no thumbnail is set
-        $morenews_post_content = get_post_field('post_content', $morenews_post_id);
+        // $morenews_post_content = get_post_field('post_content', $morenews_post_id);
+        // $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $morenews_post_content, $matches);
+
+        $morenews_post_content = substr(get_post_field('post_content', $morenews_post_id), 0, 3000);
         $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $morenews_post_content, $matches);
+
 
         if (isset($matches[1][0])) {
 

@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.2.2
+Version: 3.2.3
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
@@ -856,12 +856,13 @@ body.sidr-open:before {
     -webkit-transition: visibility 0s, opacity 0.4s linear;
     transition: visibility 0s, opacity 0.4s linear;
     visibility: visible;
-    opacity: .75;
-    background-color: #fff;
+    background-color: rgba(255,255,255,.75);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 body.aft-dark-mode #af-preloader,
 body.aft-dark-mode.sidr-open:before {
-    background-color: rgb(33, 32, 27);
+    background-color: rgba(33, 32, 27,.75);
 }
 /* off canvas css here */
 
@@ -1375,6 +1376,7 @@ body.error404 #content.container-wrapper .container {
 
 .entry-content{margin: 15px 0;}
 
+.entry-summary,
 .entry-content, .entry-header .post-excerpt {
     font-size: 18px;
 }
@@ -7588,7 +7590,7 @@ body.aft-default-mode .tagcloud a {
 /*----------===calendar===---------*/
 /*breadcrumb---------*/
 .af-breadcrumbs {
-    margin: 0px 0px 20px;
+    margin: 20px 0px 0px;
     padding: 15px 20px;
 }
 body.aft-single-full-header .af-breadcrumbs {
@@ -8329,9 +8331,14 @@ body .primary-footer-area:first-child:nth-last-child(3) ~ .primary-footer-area .
 /*--------------------------------------------------------------
 ##plugin
 --------------------------------------------------------------*/
+/* weather forecast------ */
+body .splw-main-wrapper .splw-weather-title {
+    margin: 0 !important;
+}
 div[id*="splw-location-weather"].splw-main-wrapper {
     max-width: unset !important;
 }
+
 .wp-post-author-shortcode{
     border-color: rgba(0, 0, 0, 0.1);
 }
@@ -9555,6 +9562,7 @@ article.latest-posts-grid .read-title h3,
     body h1.page-title{
         font-size: 20px;
     }
+    .entry-summary,
     .entry-content, .entry-header .post-excerpt {
         font-size: 16px;
     }
@@ -9968,6 +9976,7 @@ article.latest-posts-grid .read-title h3,
     body .af-banner-carousel .read-title h3 {
         font-size: 16px;
     }
+    .entry-summary,
     .entry-content, .entry-header .post-excerpt ,
     .aft-trending-posts.list-part .af-double-column.list-style .read-title h3,
     .af-trending-posts .aft-trending-posts.list-part .af-double-column.list-style .read-title h3,
@@ -10279,7 +10288,10 @@ body .above-footer-widget-section > div:not(:first-child) {
 	padding-bottom: 0;
 }
 .blockspare-blank-canvas .blockspare-page-section>.alignwide {
-    max-width: 1240px;
+    max-width: 1260px;
+}
+.is-layout-constrained > .alignwide {
+    padding: 0 20px;
 }
 
 /* Full width adjustments for the specific template */
