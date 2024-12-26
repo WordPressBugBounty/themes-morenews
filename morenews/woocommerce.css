@@ -586,16 +586,16 @@ body.aft-dark-mode :where(.wp-block-woocommerce-mini-cart-contents) {
 }
 .wc-block-components-sidebar-layout.wc-block-checkout,
 .wc-block-cart {
-    padding: 20px !important;
+    /* padding: 20px !important;
     margin-top: 20px;
     background: #fff;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%);
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%); */
 }
 
 .aft-dark-mode .blockspare-page-section .woocommerce,
 .aft-dark-mode .wc-block-components-sidebar-layout.wc-block-checkout,
 .aft-dark-mode .wc-block-cart {
-  background: #252525
+  /* background: #252525 */
 }
 
 .wc-block-components-address-card address .wc-block-components-address-card__address-section {

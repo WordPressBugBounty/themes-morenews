@@ -499,16 +499,16 @@
         n.SlickTrendingVerticalCarousel(),
         n.SlickWidgetTrendingVerticalCarousel();
     }),
-    e(window).scroll(function () {
+    e(window).on('scroll', function () {
       n.show_hide_scroll_top();
     }),
-    e(window).load(function () {
+    e(window).on('load', function () {
       // n.DataBackground(),
       n.searchReveal(),
         // n.Preloader(),
         n.Search();
     }),
-    e(window).resize(function () {
+    e(window).on('resize', function () {
       n.mobileMenu.menuMobile();
     });
 })(jQuery);

@@ -78,7 +78,8 @@ if (!function_exists('morenews_custom_style')) {
             :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
             :root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
             hustle-button,
-
+            button.wc-block-mini-cart__button,
+            .wc-block-checkout .wp-block-button__link,
             .wp-block-button.wc-block-components-product-button .wp-block-button__link,
             .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
             body .wc-block-components-button,
@@ -366,7 +367,7 @@ if (!function_exists('morenews_custom_style')) {
                     background-color: <?php morenews_esc_custom_style($secondary_color) ?>;
                 }
             }
-        <?php endif; ?>   
+        <?php endif; ?>  
 
 
         <?php if (!empty($site_title_font)): ?>
