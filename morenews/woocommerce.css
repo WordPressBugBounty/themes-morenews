@@ -63,7 +63,9 @@
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit{
 	border-radius: 0;
 }
-
+.woocommerce #respond input#submit{
+	font-size: 14px;
+}
 .woocommerce-Reviews p.comment-form-cookies-consent {
     display: flex;
     align-items: center;
@@ -429,6 +431,8 @@ body.woocommerce-js .label {
     font-weight: 700;
 }
 .wc-block-checkout .wp-block-button__link:hover,
+:root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link):hover,
+:root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link):hover,
 .woocommerce-notices-wrapper .button:hover,
 .wc-block-grid .wp-block-button__link:hover,
 .wp-block-button.wc-block-components-product-button .wp-block-button__link:hover,
@@ -514,6 +518,11 @@ a.woocommerce-button,
 	margin-bottom: 5px;
 	line-height: normal;
 }
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button.wc-forward:hover,
+.woocommerce .button.woocommerce-Button:hover,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce div.product form.cart .button:hover,
 .wc-block-components-button,
 .woocommerce-account .addresses .title .edit{
 	background-color: #007ACC;
@@ -531,7 +540,16 @@ a.woocommerce-button,
 .woocommerce-account .addresses .title .edit {
 	float: left;
 	clear: left;
+	padding: .8em 1.2em;
+	margin-bottom: 1em;
 }
+button.woocommerce-Button[type="submit"] {
+    font-size: 14px;
+}
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button.wc-forward:hover,
+.woocommerce .button.woocommerce-Button:hover,
+.woocommerce ul.products li.product .button:hover,
 .order-again .button:hover,
 .woocommerce a.button.add_to_cart_button:hover,
 .woocommerce-Address .edit:hover,
@@ -543,7 +561,7 @@ a.woocommerce-button,
 .woocommerce input.button.alt:hover,
 .woocommerce-active a.added_to_cart :hover,
 .woocommerce a.added_to_cart:hover {
-	opacity: .95;
+	opacity: .75;
 	color: #fff;
 }
 .woocommerce-button.view {
@@ -583,19 +601,6 @@ body.aft-dark-mode .wc-block-components-address-card{
 
 body.aft-dark-mode :where(.wp-block-woocommerce-mini-cart-contents) {
     background: rgba(0, 0, 0, 1) !important;
-}
-.wc-block-components-sidebar-layout.wc-block-checkout,
-.wc-block-cart {
-    /* padding: 20px !important;
-    margin-top: 20px;
-    background: #fff;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%); */
-}
-
-.aft-dark-mode .blockspare-page-section .woocommerce,
-.aft-dark-mode .wc-block-components-sidebar-layout.wc-block-checkout,
-.aft-dark-mode .wc-block-cart {
-  /* background: #252525 */
 }
 
 .wc-block-components-address-card address .wc-block-components-address-card__address-section {
