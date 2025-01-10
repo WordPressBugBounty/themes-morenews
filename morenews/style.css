@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.2.5
+Version: 3.2.6
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
@@ -1358,9 +1358,11 @@ body.align-content-right .container-wrapper #secondary {
 /*--------------------------------------------------------------
 ## grid
 --------------------------------------------------------------*/
-
-body #content.container-wrapper{
+body .aft-main-breadcrumb-wrapper + #content.container-wrapper{
     margin-top: 20px;
+}
+body.home .aft-main-breadcrumb-wrapper + #content.container-wrapper{
+    margin-top: 0px;
 }
 
 body.af-boxed-layout #content.container-wrapper {
@@ -9255,7 +9257,11 @@ article.latest-posts-grid .read-title h3,
     }
     body.align-content-right .container-wrapper #secondary,
     body.align-content-left .container-wrapper #secondary{
-        margin-top: 20px;
+        /* margin-top: 20px; */
+    }
+    .aft-dark-mode.home main.site-main,
+    .aft-default-mode.home main.site-main {
+        margin-bottom: 20px;
     }
     .af-youtube-video-list .secondary-video,
     .af-youtube-video-list .primary-video{width: 100%;}
@@ -9662,6 +9668,14 @@ article.latest-posts-grid .read-title h3,
     .af-boxed-layout .aft-main-banner-section.morenews-customizer .container-wrapper{
         padding-left: 0;
         padding-right: 0;
+    }
+    .above-footer-widget-section .morenews-customizer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .above-footer-widget-section .morenews-customizer .container-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 @media screen and (max-width: 480px) {
