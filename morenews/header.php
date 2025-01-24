@@ -77,13 +77,13 @@
         ?>
 
             <?php endif; ?>
-            <?php // Get the current page template
+            <?php
+            if (!is_front_page() && !is_home()) : ?>
+                <div class="aft-main-breadcrumb-wrapper container-wrapper">
+                    <?php do_action('morenews_action_get_breadcrumb'); ?>
+                </div>
+            <?php endif; ?>
 
-
-            ?>
-            <div class="aft-main-breadcrumb-wrapper container-wrapper">
-                <?php do_action('morenews_action_get_breadcrumb'); ?>
-            </div>
             <div id="content" class="container-wrapper">
             <?php
 

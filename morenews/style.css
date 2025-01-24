@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.2.6
+Version: 3.2.7
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
@@ -1362,7 +1362,7 @@ body .aft-main-breadcrumb-wrapper + #content.container-wrapper{
     margin-top: 20px;
 }
 body.home .aft-main-breadcrumb-wrapper + #content.container-wrapper{
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 body.af-boxed-layout #content.container-wrapper {
@@ -2942,6 +2942,10 @@ body:not(.full-width-content) #primary .af-youtube-video-list .entry-header-yt-v
 .morenews_posts_slider_widget .read-single .read-img.read-bg-img {
     height: 550px;
 }
+.morenews_posts_slider_widget .af-posts-slider {
+    max-height: 550px;
+    overflow: hidden;
+}
 .morenews_posts_slider_widget .read-single .read-details {
     position: absolute;
     bottom: 0;
@@ -3272,6 +3276,10 @@ body:not(.full-width-content) #secondary .morenews_featured_posts_widget .col-4.
 #sidr .morenews_posts_slider_widget .read-single .read-img.read-bg-img,
 #secondary .morenews_posts_slider_widget .read-single .read-img.read-bg-img {
     height: 220px;
+}
+#sidr .morenews_posts_slider_widget .af-posts-slider,
+#secondary .morenews_posts_slider_widget .af-posts-slider {
+    max-height: 220px;
 }
 .site-footer .morenews-widget.morenews_posts_lists_widget .af-list-post .col-2 ,
 #sidr .morenews-widget.morenews_posts_lists_widget .af-list-post .col-2 ,
@@ -5610,6 +5618,7 @@ div.sharedaddy .sd-content ul li a.sd-button{
 
 /*official colors*/
 div.sharedaddy .sd-content ul li.share-facebook a.sd-button{background: #3b5998;}
+div.sharedaddy .sd-content ul li.share-x a.sd-button{background: #000;}
 div.sharedaddy .sd-content ul li.share-twitter a.sd-button{background: #000;}
 div.sharedaddy .sd-content ul li.share-threads a.sd-button{background: #000;}
 div.sharedaddy .sd-content ul li.share-linkedin a.sd-button{background: #0077b5;}
@@ -5698,6 +5707,7 @@ div.sharedaddy .sd-social-official ul li > a{
 
 div.sharedaddy .sd-social-official ul li:before{content: "\f096";}
 div.sharedaddy .sd-social-official ul li.share-facebook:before{content: "\f09a";}
+div.sharedaddy .sd-social-official ul li.share-x:before{content: "\e61b";}
 div.sharedaddy .sd-social-official ul li.share-twitter:before{content: "\e61b";}
 div.sharedaddy .sd-social-official ul li.share-threads:before{content: "\e618";}
 div.sharedaddy .sd-social-official ul li.share-jetpack-whatsapp:before{content: "\f232";}
@@ -6142,11 +6152,15 @@ body .mailchimp-block .block-title {
 }
 article .promotionspace{
     margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+article .promotionspace .morenews-customizer {
+    margin-bottom: 0;
 }
 
 article .mailchimp-block {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .entry-content form.mc4wp-form,
@@ -9209,6 +9223,9 @@ article.latest-posts-grid .read-title h3,
     #secondary .morenews_posts_slider_widget .read-single .read-img.read-bg-img{
         height: 435px;
     }
+    #secondary .morenews_posts_slider_widget .af-posts-slider {
+        max-height: 435px;
+    }
     body:not(.full-width-content) #secondary .morenews_express_posts_grid_widget .af-express-grid-wrap {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -9409,6 +9426,9 @@ article.latest-posts-grid .read-title h3,
     .aft-main-banner-section.aft-banner-layout-3 .af-banner-carousel .read-img.read-bg-img,
     .af-banner-carousel .read-img.read-bg-img {
         height: 500px;
+    }
+    .morenews_posts_slider_widget .af-posts-slider {
+        max-height: 500px;
     }
     .af-youtube-video-list .primary-video.af-youtube-video-carousel iframe.entry-header-yt-iframe, 
     .af-youtube-video-list .primary-video.af-youtube-video-carousel .entry-header-yt-video-wrapper{
@@ -9926,7 +9946,11 @@ article.latest-posts-grid .read-title h3,
     .aft-banner-layout-7 .af-banner-carousel.af-carousel-1 .read-img.read-bg-img{
         height: 260px;
     }
-
+    #sidr .morenews_posts_slider_widget .af-posts-slider,
+    #secondary .morenews_posts_slider_widget .af-posts-slider,
+    .morenews_posts_slider_widget .af-posts-slider {
+        max-height: 260px;
+    }
     .af-banner-wrapper .af-banner-carousel .slick-slide{padding: 0;}
     
     .header-layout-centered .top-bar-right .aft-small-social-menu ul li a{
@@ -10108,6 +10132,11 @@ article.latest-posts-grid .read-title h3,
     .aft-banner-layout-7 .af-banner-carousel.af-carousel-2 .read-img.read-bg-img,
     .aft-banner-layout-7 .af-banner-carousel.af-carousel-1 .read-img.read-bg-img{
         height: 200px;
+    }
+    #sidr .morenews_posts_slider_widget .af-posts-slider,
+    #secondary .morenews_posts_slider_widget .af-posts-slider,
+    .morenews_posts_slider_widget .af-posts-slider {
+        max-height: 200px;
     }
     .header-layout-side .top-bar-flex {
         flex-wrap: wrap;
@@ -10402,7 +10431,7 @@ body .above-footer-widget-section > div:not(:first-child) {
 }
 .af-wide-layout .elementor-section.elementor-section-boxed > .elementor-container,
 .af-boxed-layout .elementor-section.elementor-section-boxed > .elementor-container{
-    max-width: 1260px;
+    max-width: 1300px;
 }
 .af-boxed-layout.elementor-page #content.container-wrapper .af-breadcrumbs,
 .af-boxed-layout.elementor-default #content.container-wrapper .af-breadcrumbs{
@@ -10412,7 +10441,7 @@ body .above-footer-widget-section > div:not(:first-child) {
 }
 .af-wide-layout.elementor-page #content.container-wrapper .af-breadcrumbs,
 .af-wide-layout.elementor-default #content.container-wrapper .af-breadcrumbs {
-    max-width: 1260px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10423,6 +10452,7 @@ body .above-footer-widget-section > div:not(:first-child) {
     box-sizing: content-box;
     max-width: 1260px;
 }
+
 .elementor-page .container-wrapper > *,
 .elementor-default .container-wrapper > * {
     -webkit-box-sizing: border-box;
@@ -10453,7 +10483,7 @@ body .above-footer-widget-section > div:not(:first-child) {
 	padding-bottom: 0;
 }
 .blockspare-blank-canvas .blockspare-page-section>.alignwide {
-    max-width: 1260px;
+    max-width: 1300px;
 }
 .is-layout-constrained > .alignwide {
     padding: 0 20px;
