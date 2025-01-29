@@ -27,6 +27,15 @@
                 $popular_category = morenews_get_option('select_popular_post_category');
             }
 
+            $update_title = morenews_get_option('main_update_news_section_title');
+            $update_post_filterby = morenews_get_option('select_update_post_filterby');
+            $update_category = 0;
+            if ($update_post_filterby == 'tag') {
+                $update_category = morenews_get_option('select_update_post_tag');
+            } elseif ($update_post_filterby == 'cat') {
+                $update_category = morenews_get_option('select_update_post_category');
+            }
+
             $number_of_posts = 4;
 
             $latest_color_class = '';
@@ -45,7 +54,15 @@
                 $popular_color_class = ($term_meta) ? $term_meta['color_class_term_meta'] : 'category-color-1';
             }
 
-            morenews_render_tabbed_posts($tab_id, $latest_title, $latest_post_filterby, $latest_category, $latest_color_class, $popular_title, $popular_post_filterby, $popular_category, $latest_color_class, $number_of_posts);
+            $update_color_class = '';
+            if (absint($update_category) > 0) {
+                $color_id = "category_color_" . $update_category;
+                // retrieve the existing value(s) for this meta field. This returns an array
+                $term_meta = get_option($color_id);
+                $update_color_class = ($term_meta) ? $term_meta['color_class_term_meta'] : 'category-color-1';
+            }
+
+            morenews_render_tabbed_posts($tab_id, $latest_title, $latest_post_filterby, $latest_category, $latest_color_class, $popular_title, $popular_post_filterby, $popular_category, $popular_color_class, $update_title, $update_post_filterby, $update_category, $update_color_class, $number_of_posts);
             ?>
         </div>
     </div>

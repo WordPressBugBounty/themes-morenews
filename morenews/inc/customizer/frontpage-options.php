@@ -995,6 +995,170 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
 ));
 
 
+/**
+ * Update Post Section
+ * */
+
+//section title
+$wp_customize->add_setting(
+    'update_post_panel_section_title',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+
+$wp_customize->add_control(
+    new MoreNews_Section_Title(
+        $wp_customize,
+        'update_post_panel_section_title',
+        array(
+            'label' => esc_html__("Update Section", 'morenews'),
+            'section' => 'frontpage_main_banner_section_settings',
+            'priority' => 100,
+            'active_callback' => function ($control) {
+                return (
+                    morenews_main_banner_section_status($control)
+                    &&
+                    morenews_main_banner_layout_tabs_status($control)
+
+                );
+            },
+        )
+    )
+);
+
+
+$wp_customize->add_setting(
+    'main_update_news_section_title',
+    array(
+        'default' => $morenews_default['main_update_news_section_title'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+$wp_customize->add_control(
+    'main_update_news_section_title',
+    array(
+        'label' => esc_html__('Section Title ', 'morenews'),
+        'section' => 'frontpage_main_banner_section_settings',
+        'type' => 'text',
+        'priority' => 100,
+        'active_callback' => function ($control) {
+            return (
+                morenews_main_banner_section_status($control)
+                &&
+                morenews_main_banner_layout_tabs_status($control)
+            );
+        },
+
+    )
+
+);
+
+// Setting - select_main_banner_section_mode.
+$wp_customize->add_setting(
+    'select_update_post_filterby',
+    array(
+        'default' => $morenews_default['select_update_post_filterby'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_select',
+    )
+);
+
+$wp_customize->add_control(
+    'select_update_post_filterby',
+    array(
+        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'section' => 'frontpage_main_banner_section_settings',
+        'type' => 'select',
+        'choices' => array(
+            'cat' => esc_html__("Category", 'morenews'),
+            'tag' => esc_html__("Tag", 'morenews'),
+
+        ),
+        'priority' => 100,
+        'active_callback' => function ($control) {
+            return (
+                morenews_main_banner_section_status($control)
+                &&
+                morenews_main_banner_layout_tabs_status($control)
+
+            );
+        },
+    )
+);
+
+
+
+// Setting - drop down category for slider.
+$wp_customize->add_setting(
+    'select_update_post_category',
+    array(
+        'default' => $morenews_default['select_update_post_category'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'absint',
+    )
+);
+
+
+$wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
+    $wp_customize,
+    'select_update_post_category',
+    array(
+        'label' => esc_html__('Select', 'morenews'),
+        'section' => 'frontpage_main_banner_section_settings',
+        'type' => 'dropdown-taxonomies',
+        'taxonomy' => 'category',
+        'priority' => 100,
+        'active_callback' => function ($control) {
+            return (
+                morenews_main_banner_section_status($control)
+                &&
+                morenews_main_banner_layout_tabs_status($control)
+                &&
+                morenews_update_post_section_filterby_cat_status($control)
+
+            );
+        },
+
+    )
+));
+
+// Setting - drop down category for slider.
+$wp_customize->add_setting(
+    'select_update_post_tag',
+    array(
+        'default' => $morenews_default['select_update_post_tag'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'absint',
+    )
+);
+
+
+$wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
+    $wp_customize,
+    'select_update_post_tag',
+    array(
+        'label' => esc_html__('Select Tag', 'morenews'),
+        'section' => 'frontpage_main_banner_section_settings',
+        'type' => 'dropdown-taxonomies',
+        'taxonomy' => 'post_tag',
+        'priority' => 100,
+        'active_callback' => function ($control) {
+            return (
+                morenews_main_banner_section_status($control)
+                &&
+                morenews_main_banner_layout_tabs_status($control)
+                &&
+                morenews_update_post_section_filterby_tag_status($control)
+
+            );
+        },
+
+    )
+));
+
+
 
 //Popular Tags
 // Advertisement Section.

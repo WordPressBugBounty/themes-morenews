@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Customizer callback functions for active_callback.
  *
@@ -25,7 +26,6 @@ if (!function_exists('morenews_frontpage_content_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -51,7 +51,6 @@ if (!function_exists('morenews_header_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -76,7 +75,6 @@ if (!function_exists('morenews_top_header_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -101,13 +99,12 @@ if (!function_exists('morenews_show_date_on_header')) :
         } else {
             return false;
         }
-
     }
 
 endif;
 
 
-    /*select page for morenews_show_date_on_header news*/
+/*select page for morenews_show_date_on_header news*/
 if (!function_exists('global_site_layout_boxed_layout_status')) :
 
     /**
@@ -127,7 +124,6 @@ if (!function_exists('global_site_layout_boxed_layout_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -153,7 +149,56 @@ if (!function_exists('morenews_popular_tags_section_status')) :
         } else {
             return false;
         }
+    }
 
+endif;
+
+
+/*select page for slider*/
+if (!function_exists('morenews_update_post_section_filterby_cat_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_update_post_section_filterby_cat_status($control)
+    {
+
+        if ('cat' == $control->manager->get_setting('select_update_post_filterby')->value()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+endif;
+
+
+/*select page for slider*/
+if (!function_exists('morenews_update_post_section_filterby_tag_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_update_post_section_filterby_tag_status($control)
+    {
+
+        if ('tag' == $control->manager->get_setting('select_update_post_filterby')->value()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 endif;
@@ -179,7 +224,6 @@ if (!function_exists('morenews_flash_posts_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -205,7 +249,6 @@ if (!function_exists('morenews_global_site_mode_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -231,7 +274,6 @@ if (!function_exists('morenews_global_site_mode_dark_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -256,7 +298,6 @@ if (!function_exists('morenews_global_site_mode_light_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -281,7 +322,6 @@ if (!function_exists('morenews_solid_secondary_color_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -307,7 +347,6 @@ if (!function_exists('morenews_gradient_secondary_color_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -333,170 +372,163 @@ if (!function_exists('morenews_main_navigation_background_color_mode_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
-    
-    //morenews_prime_news_section_status
-    
-    //Prime news
-    if (!function_exists('morenews_prime_news_section_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_prime_news_section_status($control)
-        {
-            
-            if (true == $control->manager->get_setting('show_prime_news')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+
+//morenews_prime_news_section_status
+
+//Prime news
+if (!function_exists('morenews_prime_news_section_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_prime_news_section_status($control)
+    {
+
+        if (true == $control->manager->get_setting('show_prime_news')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-    
-    //Youtube section
-    if (!function_exists('morenews_youtube_video_section_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_youtube_video_section_status($control)
-        {
-            
-            if (true == $control->manager->get_setting('show_youtube_video')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+    }
+
+endif;
+
+//Youtube section
+if (!function_exists('morenews_youtube_video_section_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_youtube_video_section_status($control)
+    {
+
+        if (true == $control->manager->get_setting('show_youtube_video')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-        
-        //Express Posts Section
-    
-    
-    if (!function_exists('morenews_express_posts_section_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_express_posts_section_status($control)
-        {
-            
-            if (true == $control->manager->get_setting('show_express_post_section')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+    }
+
+endif;
+
+//Express Posts Section
+
+
+if (!function_exists('morenews_express_posts_section_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_express_posts_section_status($control)
+    {
+
+        if (true == $control->manager->get_setting('show_express_post_section')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-    
-    
-    /*select page for slider*/
-    if (!function_exists('morenews_prime_news_section_filterby_cat_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_prime_news_section_filterby_cat_status($control)
-        {
-            
-            if ('cat' == $control->manager->get_setting('select_prime_news_filterby')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+    }
+
+endif;
+
+
+/*select page for slider*/
+if (!function_exists('morenews_prime_news_section_filterby_cat_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_prime_news_section_filterby_cat_status($control)
+    {
+
+        if ('cat' == $control->manager->get_setting('select_prime_news_filterby')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-    
-    
-    /*select page for slider*/
-    if (!function_exists('morenews_prime_news_section_filterby_tag_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_prime_news_section_filterby_tag_status($control)
-        {
-            
-            if ('tag' == $control->manager->get_setting('select_prime_news_filterby')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+    }
+
+endif;
+
+
+/*select page for slider*/
+if (!function_exists('morenews_prime_news_section_filterby_tag_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_prime_news_section_filterby_tag_status($control)
+    {
+
+        if ('tag' == $control->manager->get_setting('select_prime_news_filterby')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-    
-    //Prime news
-    if (!function_exists('morenews_prime_news_related_section_status')) :
-        
-        /**
-         * Check if slider section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_prime_news_related_section_status($control)
-        {
-            
-            if (true == $control->manager->get_setting('show_prime_news_related_posts')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+    }
+
+endif;
+
+//Prime news
+if (!function_exists('morenews_prime_news_related_section_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_prime_news_related_section_status($control)
+    {
+
+        if (true == $control->manager->get_setting('show_prime_news_related_posts')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
-    
-    
-    
-    /*select page for slider*/
+    }
+
+endif;
+
+
+
+/*select page for slider*/
 if (!function_exists('morenews_main_banner_section_status')) :
 
     /**
@@ -516,7 +548,6 @@ if (!function_exists('morenews_main_banner_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -542,7 +573,6 @@ if (!function_exists('morenews_main_banner_3_col_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -568,7 +598,6 @@ if (!function_exists('morenews_main_banner_2_col_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -596,7 +625,6 @@ if (!function_exists('morenews_main_banner_section_filterby_cat_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -622,7 +650,6 @@ if (!function_exists('morenews_banner_latest_post_section_filterby_cat_status'))
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -648,7 +675,6 @@ if (!function_exists('morenews_banner_latest_post_section_filterby_tag_status'))
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -673,7 +699,6 @@ if (!function_exists('morenews_main_banner_section_filterby_tag_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -692,18 +717,17 @@ if (!function_exists('morenews_main_banner_layout_trending_status')) :
     function morenews_main_banner_layout_trending_status($control)
     {
 
-        if ( 'layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+        if ('layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
 
 
-    /*select page for slider*/
+/*select page for slider*/
 if (!function_exists('morenews_trending_post_section_filterby_cat_status')) :
 
     /**
@@ -723,7 +747,6 @@ if (!function_exists('morenews_trending_post_section_filterby_cat_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -749,7 +772,6 @@ if (!function_exists('morenews_trending_post_section_filterby_tag_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -776,7 +798,6 @@ if (!function_exists('morenews_popular_post_section_filterby_cat_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -802,7 +823,6 @@ if (!function_exists('morenews_popular_post_section_filterby_tag_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -825,12 +845,11 @@ if (!function_exists('morenews_show_watch_online_section_status')) :
     function morenews_show_watch_online_section_status($control)
     {
 
-        if ( true == $control->manager->get_setting('show_watch_online_section')->value()) {
+        if (true == $control->manager->get_setting('show_watch_online_section')->value()) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -857,7 +876,6 @@ if (!function_exists('morenews_sidebar_trending_post_section_filterby_cat_status
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -883,7 +901,6 @@ if (!function_exists('morenews_sidebar_trending_post_section_filterby_tag_status
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -907,7 +924,6 @@ if (!function_exists('morenews_main_banner_layout_editor_picks_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -932,7 +948,6 @@ if (!function_exists('morenews_editors_picks_section_filterby_cat_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -958,7 +973,6 @@ if (!function_exists('morenews_editors_picks_section_filterby_tag_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -978,12 +992,11 @@ if (!function_exists('morenews_main_banner_layout_tabs_status')) :
     function morenews_main_banner_layout_tabs_status($control)
     {
 
-        if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value()|| 'layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-5' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+        if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-5' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1012,7 +1025,6 @@ if (!function_exists('morenews_main_banner_carousel_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1037,7 +1049,6 @@ if (!function_exists('morenews_main_banner_carousel_layout_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1063,7 +1074,6 @@ if (!function_exists('morenews_main_banner_grid_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1089,7 +1099,6 @@ if (!function_exists('morenews_main_banner_grid_carousel_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1115,7 +1124,6 @@ if (!function_exists('morenews_main_banner_slider_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1141,7 +1149,6 @@ if (!function_exists('morenews_banner_mode_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1166,7 +1173,6 @@ if (!function_exists('morenews_tabbed_mode_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1192,7 +1198,6 @@ if (!function_exists('morenews_featured_posts_section')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1217,34 +1222,32 @@ if (!function_exists('morenews_featured_post_list_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
-    
-    if (!function_exists('morenews_featured_post_carousel_section_status')) :
-        
-        /**
-         * Check if ticker section page/post is active.
-         *
-         * @since 1.0.0
-         *
-         * @param WP_Customize_Control $control WP_Customize_Control instance.
-         *
-         * @return bool Whether the control is active to the current preview.
-         */
-        function morenews_featured_post_carousel_section_status($control)
-        {
-            
-            if (true == $control->manager->get_setting('show_post_carousel_section')->value()) {
-                return true;
-            } else {
-                return false;
-            }
-            
+
+if (!function_exists('morenews_featured_post_carousel_section_status')) :
+
+    /**
+     * Check if ticker section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_featured_post_carousel_section_status($control)
+    {
+
+        if (true == $control->manager->get_setting('show_post_carousel_section')->value()) {
+            return true;
+        } else {
+            return false;
         }
-    
-    endif;
+    }
+
+endif;
 
 
 /*select page for slider*/
@@ -1267,7 +1270,6 @@ if (!function_exists('morenews_featured_news_category_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1295,7 +1297,6 @@ if (!function_exists('morenews_featured_news_pages_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1322,7 +1323,6 @@ if (!function_exists('morenews_featured_news_custom_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1347,7 +1347,6 @@ if (!function_exists('morenews_featured_product_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1373,7 +1372,6 @@ if (!function_exists('morenews_display_author_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1399,7 +1397,6 @@ if (!function_exists('morenews_display_date_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1424,14 +1421,13 @@ if (!function_exists('morenews_frontpage_content_alignment_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
 
 
 /*select page for slider*/
-if ( ! function_exists( 'frontpage_sticky_sidebar_status' ) ) :
+if (!function_exists('frontpage_sticky_sidebar_status')) :
 
     /**
      * Check if ticker section page/post is active.
@@ -1442,14 +1438,14 @@ if ( ! function_exists( 'frontpage_sticky_sidebar_status' ) ) :
      *
      * @return bool Whether the control is active to the current preview.
      */
-    function frontpage_sticky_sidebar_status( $control ) {
+    function frontpage_sticky_sidebar_status($control)
+    {
 
-        if ( true == $control->manager->get_setting( 'frontpage_sticky_sidebar' )->value() ) {
+        if (true == $control->manager->get_setting('frontpage_sticky_sidebar')->value()) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1475,7 +1471,6 @@ if (!function_exists('morenews_latest_news_section_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1501,7 +1496,6 @@ if (!function_exists('morenews_archive_image_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1526,7 +1520,6 @@ if (!function_exists('morenews_archive_image_gird_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1551,7 +1544,6 @@ if (!function_exists('morenews_archive_masonry_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1576,7 +1568,6 @@ if (!function_exists('morenews_archive_full_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1602,7 +1593,6 @@ if (!function_exists('morenews_archive_layout_first_post_full_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1627,7 +1617,6 @@ if (!function_exists('morenews_related_posts_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1654,7 +1643,6 @@ if (!function_exists('morenews_mailchimp_subscriptions_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1679,7 +1667,6 @@ if (!function_exists('morenews_footer_instagram_posts_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1705,7 +1692,6 @@ if (!function_exists('morenews_global_show_category_number_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1731,7 +1717,6 @@ if (!function_exists('morenews_global_show_custom_category_number_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1758,7 +1743,6 @@ if (!function_exists('morenews_global_show_minutes_count_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
@@ -1784,8 +1768,6 @@ if (!function_exists('morenews_global_show_view_count_status')) :
         } else {
             return false;
         }
-
     }
 
 endif;
-

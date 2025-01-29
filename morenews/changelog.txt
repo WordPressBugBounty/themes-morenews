@@ -1,3 +1,18 @@
+### 3.3.0 - Jan 29 2025
+* New - Accessibility improvement
+* New - SEO improvement
+* New - "Update" Banner Tabs added
+* New - "Update" Banner Tabs post by category
+* New - "Update" Banner Tabs post by tag
+* Option - Customize > Main Banner Options > Main Bannner
+* Update - Featured Posts Lists category display
+* Update - Gravatar compatibility improvement
+* Update - Breadcrumbs compatibility improvement
+* Update - WooCommerce compatibility improvement
+* Update - Page buiders compatibility improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.2.7 - Jan 24 2025
 * Update - Responsive improvement
 * Update - WooCommerce compatibility improvement

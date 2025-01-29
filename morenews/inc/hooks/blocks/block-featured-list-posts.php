@@ -34,7 +34,7 @@
                                 global $post;
 
                                 ?>
-                                <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, false, true, false); ?>
+                                <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, true, true, false); ?>
                             <?php
                             endwhile;
                         endif;

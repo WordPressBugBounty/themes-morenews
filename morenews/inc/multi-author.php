@@ -31,7 +31,9 @@ if (!function_exists('morenews_by_author')) {
             echo ",";
           }
         }
+        
       } else {
+        
         $author_id = $post->post_author;
         $author_name = get_the_author_meta('display_name', $author_id);
 
@@ -47,10 +49,14 @@ if (!function_exists('morenews_by_author')) {
 
       }
     } else {
+      
       $author_id = $post->post_author;
       $author_name = get_the_author_meta('display_name', $author_id);
       ?>
       <a href="<?php echo esc_url(get_author_posts_url($author_id)) ?>">
+      <?php if ($gravatar == true) {
+            echo get_avatar(get_the_author_meta('user_email', $author_id), 16);
+          } ?>
         <?php echo esc_html($author_name); ?>
       </a>
     <?php }

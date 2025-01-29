@@ -74,11 +74,11 @@ if (!function_exists('morenews_render_posts')):
 endif;
 
 if (!function_exists('morenews_render_tabbed_posts')):
-  function morenews_render_tabbed_posts($tab_id, $latest_title, $latest_post_filterby, $latest_category, $latest_color_class, $popular_title, $popular_post_filterby, $popular_category, $popular_color_class, $number_of_posts)
+  function morenews_render_tabbed_posts($tab_id, $latest_title, $latest_post_filterby, $latest_category, $latest_color_class, $popular_title, $popular_post_filterby, $popular_category, $popular_color_class, $update_title, $update_post_filterby, $update_category, $update_color_class, $number_of_posts)
   {
     $is_recent_active = true;
     ?>
-    <div class="tabbed-container">
+    <div class="tabbed-container three-column-tabs">
       <div class="tabbed-head">
         <ul class="nav nav-tabs af-tabs tab-warpper" role="tablist">
           <li class="tab tab-recent <?php echo esc_attr($latest_color_class); ?>" role="presentation">
@@ -106,6 +106,18 @@ if (!function_exists('morenews_render_tabbed_posts')):
               <span><i class="fas fa-bolt"></i> <?php echo esc_html($popular_title); ?></span>
             </a>
           </li>
+          <li class="tab tab-update <?php echo esc_attr($update_color_class); ?>" role="presentation">
+            <a href="#<?php echo esc_attr($tab_id); ?>-update"
+              aria-label="<?php esc_attr_e('Update', 'morenews'); ?>"
+              role="tab"
+              id="<?php echo esc_attr($tab_id); ?>-update-tab"
+              aria-controls="<?php echo esc_attr($tab_id); ?>-update"
+              aria-selected="<?php echo $is_recent_active ? 'false' : 'true'; ?>"
+              data-toggle="tab"
+              class="font-family-1 <?php echo $is_recent_active ? '' : 'active'; ?>">
+              <span><i class="fas fa-fire"></i> <?php echo esc_html($update_title); ?></span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -124,6 +136,14 @@ if (!function_exists('morenews_render_tabbed_posts')):
           aria-hidden="<?php echo $is_recent_active ? 'true' : 'false'; ?>"
           class="tab-pane <?php echo $is_recent_active ? '' : 'active'; ?>">
           <?php morenews_render_posts($number_of_posts, $popular_category, $popular_post_filterby); ?>
+        </div>
+
+        <div id="<?php echo esc_attr($tab_id); ?>-update"
+          role="tabpanel"
+          aria-labelledby="<?php echo esc_attr($tab_id); ?>-update-tab"
+          aria-hidden="<?php echo $is_recent_active ? 'true' : 'false'; ?>"
+          class="tab-pane <?php echo $is_recent_active ? '' : 'active'; ?>">
+          <?php morenews_render_posts($number_of_posts, $update_category, $update_post_filterby); ?>
         </div>
       </div>
     </div>
