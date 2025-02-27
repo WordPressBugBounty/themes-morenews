@@ -79,6 +79,8 @@
                             if ($morenews_no_of_post) {
                                 $morenews_number_of_posts = $morenews_no_of_post;
                             }
+
+                            
                             $morenews_featured_posts = morenews_get_posts($morenews_number_of_posts, $morenews_category, $morenews_filterby);
                             if ($morenews_featured_posts->have_posts()) :
                                 $morenews_count = 1;

@@ -1,3 +1,9 @@
+### 3.3.2 - Feb 27 2025
+* New - Header Image Position Option
+* Option - Customizing > Header Options > Header Image > Header Image Mode
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.3.0 - Jan 29 2025
 * New - Accessibility improvement
 * New - SEO improvement

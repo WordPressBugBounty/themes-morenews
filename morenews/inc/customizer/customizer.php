@@ -138,8 +138,9 @@ function morenews_customize_register($wp_customize) {
             'section'     => 'header_image',
             'type'        => 'select',
             'choices'               => array(
-                'default' => esc_html__( "Set as Background", 'morenews' ),
-                'full' => esc_html__( "Show Full Image", 'morenews' ),
+                'above' => esc_html__( "Above Site Title", 'morenews' ), 
+                'default' => esc_html__( "Set as Background", 'morenews' ) ,               
+                'full' => esc_html__( "Show Full Image (Background)", 'morenews' ),
             ),
             'priority'    => 50
         ));
@@ -160,6 +161,7 @@ function morenews_customize_register($wp_customize) {
             'section'  => 'header_image',
             'type'     => 'checkbox',
             'priority' => 50,
+            'active_callback' => 'morenews_disable_header_image_tint_overlay_status'
         )
     );
 

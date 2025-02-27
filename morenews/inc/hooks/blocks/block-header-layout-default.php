@@ -6,14 +6,21 @@
  * @package MoreNews
  */
 
+$select_header_image_mode = morenews_get_option('select_header_image_mode');
 $morenews_class = '';
 $morenews_background = '';
 $inline_style = '';
-if (has_header_image()) {
+if (has_header_image()) {  
+
+  
+  if ($select_header_image_mode == 'above') {
+    $morenews_class = 'af-header-image';    
+  } else {
   $morenews_class = 'af-header-image data-bg';
   $morenews_background = get_header_image();
   // Set inline style for background-image
   $inline_style = 'style="background-image: url(' . esc_url($morenews_background) . ');"';
+  }
 }
 $morenews_show_top_header_section = morenews_get_option('show_top_header_section');
 ?>
@@ -38,6 +45,10 @@ $morenews_show_top_header_section = morenews_get_option('show_top_header_section
 <div class="af-middle-header <?php echo esc_attr($morenews_class); ?>"
   <?php echo $inline_style; ?>>
   <div class="container-wrapper">
+
+  <?php if ($select_header_image_mode == 'above') : ?>
+      <img src="<?php echo esc_url(get_header_image()); ?>" alt="<?php echo esc_attr(get_bloginfo('title')); ?>" />
+    <?php endif; ?>
     <div class="af-middle-container">
       <div class="logo">
         <?php do_action('morenews_load_site_branding'); ?>

@@ -1771,3 +1771,28 @@ if (!function_exists('morenews_global_show_view_count_status')) :
     }
 
 endif;
+
+
+/*select page for slider*/
+if (!function_exists('morenews_disable_header_image_tint_overlay_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_disable_header_image_tint_overlay_status($control)
+    {
+
+        if (('default' == $control->manager->get_setting('select_header_image_mode')->value()) || ('full' == $control->manager->get_setting('select_header_image_mode')->value())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+endif;
