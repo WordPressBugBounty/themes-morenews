@@ -42,9 +42,12 @@ function morenews_body_classes($classes)
     $classes[] = 'aft-' . $header_layout;
   }
 
+
   $select_header_image_mode = morenews_get_option('select_header_image_mode');
   if ($select_header_image_mode == 'full') {
     $classes[] = 'header-image-full';
+  } elseif ($select_header_image_mode == 'above') {
+    $classes[] = 'header-image-above';
   } else {
     $classes[] = 'header-image-default';
   }

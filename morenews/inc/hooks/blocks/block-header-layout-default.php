@@ -46,7 +46,7 @@ $morenews_show_top_header_section = morenews_get_option('show_top_header_section
   <?php echo $inline_style; ?>>
   <div class="container-wrapper">
 
-  <?php if ($select_header_image_mode == 'above') : ?>
+  <?php if (has_header_image() && $select_header_image_mode == 'above') : ?>
     <div class="header-image-above-site-title">
         <img src="<?php echo esc_url(get_header_image()); ?>" alt="<?php echo esc_attr(get_bloginfo('title')); ?>" />
         </div>
