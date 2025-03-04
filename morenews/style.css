@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.3.4
+Version: 3.3.5
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.7
@@ -3668,17 +3668,19 @@ section.aft-main-banner-section.data-bg::before {
     display: flex;
     align-items: center;
 }
+@media screen and (min-width: 1025px){
+    .af-main-banner-thumb-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img,
+    .af-main-banner-tabbed-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img{
+        height: 85px;
+        max-width: 85px;
+    }
+    .af-main-banner-tabbed-posts .af-double-column.list-style .read-details.pad {
+        max-height: 85px;
+        width: calc(100% - 85px);
+        overflow: hidden;
+    }
+}
 
-.af-main-banner-thumb-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img,
-.af-main-banner-tabbed-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img{
-    height: 85px;
-    max-width: 85px;
-}
-.af-main-banner-tabbed-posts .af-double-column.list-style .read-details.pad {
-    max-height: 85px;
-    width: calc(100% - 85px);
-    overflow: hidden;
-}
 .aft-banner-layout-5 .af-main-banner-tabbed-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img{
     height: 115px;
     max-width: 115px;
@@ -3712,16 +3714,18 @@ section.aft-main-banner-section.data-bg::before {
     width: 45%;
 }
 
-.aft-banner-layout-9 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-bg-img,
-.aft-banner-layout-2 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-bg-img {
-    height: 85px;
-    width: 85px;
-}
-.aft-banner-layout-9 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-details,
-.aft-banner-layout-2 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-details {
-    max-height: 85px;
-    overflow: hidden;
-    width: calc(100% - 85px);
+@media screen and (min-width: 1025px){
+    .aft-banner-layout-9 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-bg-img,
+    .aft-banner-layout-2 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-bg-img {
+        height: 85px;
+        width: 85px;
+    }
+    .aft-banner-layout-9 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-details,
+    .aft-banner-layout-2 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-details {
+        max-height: 85px;
+        overflow: hidden;
+        width: calc(100% - 85px);
+    }
 }
 
 /*banner trending now*/
@@ -4296,6 +4300,7 @@ article.aft-first-post-full .post-item-metadata.entry-meta + .read-img.read-bg-i
 .grid-layout .read-single:hover .read-img .af-post-format + span.min-read{
     opacity: 1;
 }
+.read-details .entry-meta span.item-metadata.posts-author,
 .read-details .entry-meta > span,
 .read-details .entry-meta.author-links > span,
 .read-details .entry-meta span.min-read{
@@ -4306,16 +4311,11 @@ article.aft-first-post-full .post-item-metadata.entry-meta + .read-img.read-bg-i
 .entry-meta span.posts-author a i {
     margin-right: 3px;
 }
-.read-details .entry-meta span.posts-date,
-.read-details .entry-meta span.aft-comment-view-share{
-    /* opacity: 0.75; */
-}
 
 /*widget title===============*/
 .header-after1,
 .widget-title{
     margin-top: 0px;
-    /* margin-bottom: 10px; */
     position: relative;
 }
 
@@ -4401,6 +4401,7 @@ h4.af-author-display-name {
     /* margin-top: 0; */
     width: fit-content !important;
     margin-left: 0 !important;
+    margin-bottom: 20px;
 }
 .widget-title-border-center form.wp-block-search,
 .widget-title-border-bottom form.wp-block-search,
@@ -8969,6 +8970,14 @@ article.latest-posts-grid .read-title h3,
     font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    .af-reated-posts .read-title h3,
+    .af-main-banner-latest-posts .read-title h3,
+    .af-main-banner-featured-posts .read-title h3{
+        font-size: 20px;
+    }
+}
+
 /*general post title*/
 .four-col-masonry article.col-3 .read-title h3, 
 .four-col-masonry article.latest-posts-grid.col-3 .read-title h3,
@@ -9036,6 +9045,11 @@ article.latest-posts-grid .read-title h3,
     }
 }
 @media screen and (max-width: 1024px) {
+    .aft-posts-tabs-panel .nav-tabs>li>a, 
+    .header-after1, 
+    .widget-title{
+        font-size: 20px;
+    }
     .aft-featured-category-section.af-list-post .af-widget-body:not(.clearfix),
     .af-main-banner-categorized-posts.express-posts .col-3 .af-widget-body,
     .aft-posts-tabs-panel ul.article-tabbed-list {
@@ -9160,7 +9174,7 @@ article.latest-posts-grid .read-title h3,
         text-align: left;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 481px) {
+@media screen and (max-width: 1024px){
     .af-main-banner-tabbed-posts .read-single:not(.af-cat-widget-carousel) .read-img.read-bg-img,
     .aft-main-banner-section.aft-banner-layout-3 .banner-vertical-slider .aft-trending-posts.list-part .af-double-column.list-style .read-bg-img{
         height: 110px;
@@ -9182,6 +9196,12 @@ article.latest-posts-grid .read-title h3,
         max-height: 100px;
         width: calc(100% - 100px);
     }
+    .aft-banner-layout-0 .aft-editors-and-trending-part .slick-list {
+        margin: 0 -10px;
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
     .af-main-banner-tabbed-posts .af-sec-post:nth-child(3) .read-single {
         margin-bottom: 0;
     }
@@ -9191,9 +9211,7 @@ article.latest-posts-grid .read-title h3,
     .aft-main-banner-wrapper .banner-vertical-slider .read-single {
         margin: 0;
     }
-    .aft-banner-layout-0 .aft-editors-and-trending-part .slick-list {
-        margin: 0 -10px;
-    }
+    
 }
 @media screen and (max-width: 992px) {
     .aft-banner-layout-4 .af-main-banner-thumb-posts .af-sec-post .read-img.read-bg-img {
@@ -9395,14 +9413,30 @@ article.latest-posts-grid .read-title h3,
         height: 200px;
     }
 }
+@media screen and (min-width: 1025px){
+    .aft-featured-category-section.featured-cate-sec.morenews-customizer .featured-category-item.morenews-customizer {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .aft-featured-category-section .featured-category-item{
+        width: 100%;
+    }
+    .aft-featured-category-section.featured-cate-sec.morenews-customizer .featured-category-item.morenews-customizer:last-child {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 481px)  {
+    .aft-featured-category-section.af-list-post .af-widget-body > .list-style{
+        width: calc(50% - 7.5px);
+    }
+}
 @media only screen and (max-width: 768px) and (min-width: 481px)  {
     #secondary .morenews_express_posts_list_widget .col-2.af-sec-post,
     body:not(.full-width-content) #secondary .morenews_featured_posts_widget .col-4.pad{
         width: 50%;
     }
-    .aft-featured-category-section.af-list-post .af-widget-body > .list-style{
-        width: calc(50% - 7.5px);
-    }
+    
     .af-main-banner-categorized-posts.express-posts .col-3 .af-sec-post.list-part{
         width: calc(50% - 7.5px);
     }
@@ -9446,11 +9480,6 @@ article.latest-posts-grid .read-title h3,
         height: 180px;
     }
 }
-@media screen and (min-width: 769px){
-    .aft-featured-category-section.featured-cate-sec.morenews-customizer .featured-category-item.morenews-customizer {
-        margin-bottom: 0;
-    }
-}
 @media screen and (max-width: 768px) {
     .aft-banner-layout-7 .af-banner-carousel,
     .aft-banner-layout-4 .af-banner-carousel,
@@ -9460,6 +9489,9 @@ article.latest-posts-grid .read-title h3,
     .aft-banner-layout-3 .banner-vertical-slider,
     .aft-banner-layout-3 .af-banner-carousel{
         max-height: unset;
+    }
+    .exclusive-posts {
+        font-size: 16px;
     }
     .exclusive-posts .exclusive-now span {
         /* display: none; */
@@ -9482,9 +9514,6 @@ article.latest-posts-grid .read-title h3,
     }
     .mailchimp-block{
         padding: 80px 0;
-    }
-    .aft-featured-category-section.featured-cate-sec.morenews-customizer .featured-category-item.morenews-customizer:last-child {
-        margin-bottom: 0;
     }
     .af-boxed-layout .af-whole-wrapper{max-width: 700px;}
     /*featuredposts*/
@@ -9562,7 +9591,6 @@ article.latest-posts-grid .read-title h3,
     }
     /*featuredposts*/
     body:not(.full-width-content) .morenews_posts_lists_widget .af-double-column.list-style.col-3,
-    .aft-featured-category-section .featured-category-item,
     .aft-main-banner-section.aft-banner-layout-2 .aft-slider-part,
     .af-main-banner-categorized-posts.express-posts.layout-1 .col-66.small-grid-style,
     .af-main-banner-categorized-posts.express-posts.layout-1 .col-3.small-grid-style,
@@ -9718,16 +9746,16 @@ article.latest-posts-grid .read-title h3,
     .morenews_tabbed_posts_widget .af-double-column.list-style .read-bg-img ,
     .trending-posts-vertical .af-double-column.list-style .read-bg-img ,
     .af-double-column.list-style .read-bg-img {
-        height: 85px;
+        /* height: 85px;
         width: 40%;
-        max-width: 85px;
+        max-width: 85px; */
     }
     .morenews_tabbed_posts_widget .af-double-column.list-style .read-details ,
     .trending-posts-vertical .af-double-column.list-style .read-details ,
     .af-double-column.list-style .read-details {
-        max-height: 85px;
+        /* max-height: 85px;
         overflow: hidden;
-        width: calc(100% - 85px);
+        width: calc(100% - 85px); */
     }
     .archive-image-right .af-double-column.list-style .read-details.pad{
         padding-right: 0;
@@ -10012,7 +10040,7 @@ article.latest-posts-grid .read-title h3,
     .morenews_posts_lists_widget .af-double-column.list-style .read-single .read-categories,
     .morenews_popular_news_widget .af-double-column.list-style .read-single .read-categories,
     .morenews_trending_news_widget .af-double-column.list-style .read-single .read-categories{
-        display: none;
+        /* display: none; */
     }
     .aft-small-social-menu{
         padding: 5px 0;
@@ -10039,7 +10067,6 @@ article.latest-posts-grid .read-title h3,
     /*featuredposts*/
 
     /*banner grid layouts*/
-
     .primary-footer-area:first-child:nth-last-child(1),
     .primary-footer-area:first-child:nth-last-child(2),
     .primary-footer-area:first-child:nth-last-child(2) ~ .primary-footer-area,

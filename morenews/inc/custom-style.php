@@ -29,7 +29,7 @@ if (!function_exists('morenews_custom_style')) {
 ?>
 
 <?php if (!empty($dark_background_color)): ?>
-        body.aft-dark-mode #sidr,
+    body.aft-dark-mode #sidr,
         body.aft-dark-mode,
         body.aft-dark-mode.custom-background,
         body.aft-dark-mode #af-preloader {
