@@ -372,7 +372,7 @@ if (!function_exists('morenews_custom_style')) {
 
         <?php if (!empty($site_title_font)): ?>
             .site-title {
-            font-family: <?php morenews_esc_custom_style($site_title_font) ?> , sans-serif;
+            font-family: <?php morenews_esc_custom_style($site_title_font) ?>;
             }
         <?php endif; ?>
 

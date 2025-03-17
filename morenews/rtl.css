@@ -652,7 +652,7 @@ body.rtl .aft-small-social-menu ul li:not(:first-child) {
 }
 @media screen and (max-width: 480px) {
 	body.rtl .af-double-column.list-style .read-details.pad{
-		padding-right: 0;
+		/* padding-right: 0; */
 	}
 	body.rtl article.archive-image-alternate:nth-of-type(even) .list-style .read-details, 
 	body.rtl article.archive-image-right .list-style .read-details,

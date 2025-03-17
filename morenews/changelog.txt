@@ -1,3 +1,17 @@
+### 3.3.7 - Mar 17 2025
+* Update - Header Image Position
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
+### 3.3.5 - Mar 04 2025
+* Update - Header Image Position
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
+### 3.3.3 - Feb 28 2025
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.3.2 - Feb 28 2025
 * Update - Block Style improvement
 * Fixed - Some styling glitch
