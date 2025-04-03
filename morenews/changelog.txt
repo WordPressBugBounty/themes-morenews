@@ -1,4 +1,12 @@
-### 3.6.6 - Mar 24 2025
+### 3.3.9 - Apr 03 2025
+* Update - Header advertisement area improvement
+* Update - Mobile site title improvement
+* Update - Page buiders compatibility improvement
+* Update - Typography improvement
+* Update - Block Style improvement
+* Fixed - General Styling improvement
+
+### 3.3.8 - Mar 24 2025
 * Update - Tagcloud hover css optimize
 * Update - Site footer hover colors improvement
 * Update - Elementor Page buiders compatibility improvement

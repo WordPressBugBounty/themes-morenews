@@ -48,7 +48,7 @@ if (!function_exists('morenews_loop_grid')) :
 
         <?php if ($morenews_grid_design == 'grid-design-default'): ?>
           <div class="category-min-read-wrap">
-            <div class="read-categories">
+            <div class="read-categories categories-inside-image">
               <?php morenews_post_categories(); ?>
             </div>
           </div>
@@ -58,7 +58,7 @@ if (!function_exists('morenews_loop_grid')) :
 
       <div class="pad read-details color-tp-pad">
         <?php if ($morenews_grid_design == 'grid-design-texts-over-image'): ?>
-          <div class="read-categories">
+          <div class="read-categories categories-inside-image">
             <?php morenews_post_categories(); ?>
           </div>
         <?php endif; ?>

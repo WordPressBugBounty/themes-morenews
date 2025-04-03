@@ -85,17 +85,17 @@ if (!function_exists('morenews_header_style')) :
 
             @media only screen and (max-width: 640px) {
                 .site-branding .site-title {
-                    font-size: 40px;
+                    font-size: 2.75rem;
 
                 }
               }   
 
-           @media only screen and (max-width: 375px) {
+           /* @media only screen and (max-width: 375px) {
                     .site-branding .site-title {
                         font-size: 32px;
 
                     }
-                }
+                } */
 
             <?php endif; ?>
 

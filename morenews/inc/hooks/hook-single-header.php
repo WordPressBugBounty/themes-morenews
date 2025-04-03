@@ -16,7 +16,7 @@ if (!function_exists('morenews_single_header')) :
                 <div class="entry-header-details af-cat-widget-carousel">
                     <?php if ('post' === get_post_type()) : ?>
 
-                        <div class="figure-categories read-categories figure-categories-bg ">
+                        <div class="figure-categories read-categories figure-categories-bg categories-inside-image">
                             <?php morenews_post_format($post->ID); ?>
                             <?php morenews_post_categories(true); ?>
                         </div>

@@ -40,7 +40,7 @@ if (!function_exists('morenews_loop_list')) :
                 <?php morenews_post_format($morenews_post_id); ?>
                 <?php morenews_count_content_words($morenews_post_id); ?>
               </div>
-              <div class="read-categories">
+              <div class="read-categories categories-inside-image">
                 <?php morenews_post_categories(); ?>
               </div>
             </div>
