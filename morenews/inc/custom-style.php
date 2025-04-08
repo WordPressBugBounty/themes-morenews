@@ -401,12 +401,12 @@ if (!function_exists('morenews_custom_style')) {
             }
         <?php endif; ?>
 
-        .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
+        <!-- .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
         .elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
         .elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
         .elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
         max-width: 1300px;
-        }
+        } -->
 
         .container-wrapper .elementor {
         max-width: 100%;
