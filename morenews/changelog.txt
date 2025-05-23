@@ -1,3 +1,8 @@
+### 3.4.1 - May 23 2025 =
+* Update - Layout improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.4.0 - May 22 2025
 * Update - Layout improvement
 * Update - Image Display improvement

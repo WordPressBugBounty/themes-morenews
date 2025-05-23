@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.4.0
+Version: 3.4.1
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.8
@@ -8979,7 +8979,7 @@ article.latest-posts-grid .read-title h3,
 .aft-main-banner-section.aft-banner-layout-2 .af-main-banner-thumb-posts .af-sec-post .read-title h3,
 .af-main-banner-categorized-posts.express-carousel .af-sec-post .read-title h3,
 .af-main-banner-featured-posts .read-title h3{
-    font-size: 20px;
+    font-size: 18px;
 }
 .four-col-masonry article.col-3 .read-title h3,
 .four-col-masonry article.latest-posts-grid.col-3 .read-title h3{
@@ -9010,7 +9010,7 @@ article.latest-posts-grid .read-title h3,
     .two-col-masonry article.latest-posts-grid.col-3 .read-title h3, 
     .af-main-banner-categorized-posts.express-posts .af-sec-post:not(.list-part) .read-title h3,
     .af-main-banner-categorized-posts.express-posts .af-sec-post:first-child .read-title h3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .morenews_express_posts_grid_widget .af-express-grid-wrap .read-single .read-title h3,
     .af-main-banner-categorized-posts.express-carousel .af-sec-post .read-title h3,
@@ -9021,7 +9021,7 @@ article.latest-posts-grid .read-title h3,
     .af-reated-posts .read-title h3,
     .af-main-banner-latest-posts .read-title h3,
     .af-main-banner-featured-posts .read-title h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -9072,7 +9072,7 @@ article.latest-posts-grid .read-title h3,
 .morenews_posts_double_columns_widget .af-widget-body .af-double-column.list-style .read-title h3,
 .morenews_popular_news_widget .banner-vertical-slider .af-double-column.list-style .read-title h3,
 .af-main-banner-categorized-posts.express-posts .af-sec-post.list-part .read-title h3{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .wp-block-latest-comments li.wp-block-latest-comments__comment,
