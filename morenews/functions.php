@@ -118,7 +118,8 @@ if (!function_exists('morenews_setup')) :
       'flex-width' => true,
       'flex-height' => true,
     ));
-
+    // Add AMP support
+    add_theme_support('amp');
 
     /** 
      * Add theme support for gutenberg block
@@ -135,6 +136,12 @@ if (!function_exists('morenews_setup')) :
   }
 endif;
 add_action('after_setup_theme', 'morenews_setup');
+
+
+function morenews_is_amp()
+{
+  return function_exists('is_amp_endpoint') && is_amp_endpoint();
+}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -233,8 +240,12 @@ add_filter('wp_resource_hints', 'morenews_add_preconnect_links', 10, 2);
 /**
  * Preload Google Fonts stylesheets in the <head> for performance.
  */
+
 function morenews_preload_google_fonts()
 {
+  if (morenews_is_amp()) {
+    return;
+  }
   $fonts_url = morenews_get_fonts_url();
 
   if ($fonts_url) {
@@ -250,6 +261,7 @@ function morenews_preload_google_fonts()
   }
 }
 add_action('wp_head', 'morenews_preload_google_fonts', 1);
+
 
 /**
  * Enqueue the Google Fonts stylesheet in the theme's front-end.
@@ -285,8 +297,9 @@ function morenews_style_files()
   $morenews_version = wp_get_theme()->get('Version');
   // wp_enqueue_style('font-awesome-v5', get_template_directory_uri() . '/assets/font-awesome/css/all' . $min . '.css');
   wp_enqueue_style('aft-icons', get_template_directory_uri() . '/assets/icons/style.css', array());
+
   wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap' . $min . '.css');
-  wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/slick/css/slick' . $min . '.css');
+  wp_enqueue_style('slick', get_template_directory_uri() . '/assets/slick/css/slick' . $min . '.css');
 
   wp_enqueue_style('sidr', get_template_directory_uri() . '/assets/sidr/css/jquery.sidr.dark.css');
 
@@ -315,6 +328,7 @@ function morenews_style_files()
   }
 
 
+
   // wp_enqueue_style('morenews-style', get_stylesheet_uri());
   wp_enqueue_style('morenews-style', get_template_directory_uri() . '/style' . $min . '.css', array(), $morenews_version);
   wp_add_inline_style('morenews-style', morenews_custom_style());
@@ -329,13 +343,16 @@ function morenews_style_files()
 function morenews_scripts()
 {
 
+  // if (morenews_is_amp()) {
+  //   return;
+  // }
   $min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
   $morenews_version = wp_get_theme()->get('Version');
   wp_enqueue_script('jquery');
   wp_enqueue_script('morenews-background-script', get_template_directory_uri() . '/assets/background-script.js', array('jquery'), $morenews_version);
   wp_enqueue_script('morenews-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $morenews_version, true);
   wp_enqueue_script('morenews-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), $morenews_version, true);
-  wp_enqueue_script('slick-js', get_template_directory_uri() . '/assets/slick/js/slick' . $min . '.js', array('jquery'), $morenews_version, true);
+  wp_enqueue_script('slick', get_template_directory_uri() . '/assets/slick/js/slick' . $min . '.js', array('jquery'), $morenews_version, true);
   wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap' . $min . '.js', array('jquery'), $morenews_version, array(
     'in_footer' => true, // Because involves header.
     'strategy'  => 'defer',
@@ -414,6 +431,12 @@ require get_template_directory() . '/inc/init.php';
 
 
 
+/**
+ * Functions which enhance AMP Compatibility
+ */
+
+require get_template_directory() . '/inc/class-amp-compatible.php';
+require get_template_directory() . '/inc/class-walker-menu.php';
 
 /**
  * Load Jetpack compatibility file.

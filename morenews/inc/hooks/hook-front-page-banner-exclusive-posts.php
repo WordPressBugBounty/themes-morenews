@@ -70,6 +70,7 @@ if (!function_exists('morenews_banner_exclusive_posts')):
                 <div class='marquee <?php echo esc_attr($morenews_em_ticker_news_mode); ?>' data-speed='80000'
                   data-gap='0' data-duplicated='true' data-direction="<?php echo esc_attr($morenews_dir); ?>">
                   <?php
+
                   while ($morenews_all_posts->have_posts()) : $morenews_all_posts->the_post();
                     global $post;
                     $morenews_img_url = morenews_get_freatured_image_url($post->ID, 'thumbnail');

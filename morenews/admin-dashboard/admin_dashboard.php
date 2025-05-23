@@ -36,6 +36,7 @@ if (!class_exists('AF_themes_info')) {
      * @since 1.0.0
      */
     private $theme_slug;
+    private $config;
 
     function __construct()
     {
@@ -57,15 +58,16 @@ if (!class_exists('AF_themes_info')) {
     }
 
 
-    function morenews_make_upgrade_link_external() {
-      ?>
+    function morenews_make_upgrade_link_external()
+    {
+?>
       <script type="text/javascript">
-        jQuery(document).ready( function($) {   
-            $('#aft-upgrade-menu-item').parent().attr('target','_blank');               
+        jQuery(document).ready(function($) {
+          $('#aft-upgrade-menu-item').parent().attr('target', '_blank');
         });
-    </script>
-      <?php
-  }
+      </script>
+    <?php
+    }
 
     function morenews_body_classes($classes)
     {
@@ -110,8 +112,8 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Starter Sites', 'morenews'), // Page title.
-        __('Starter Sites', 'morenews'), // Menu title.
+        __('Starter Demo Sites', 'morenews'), // Page title.
+        __('Starter Demo Sites', 'morenews'), // Menu title.
         'manage_options', // Capability.
         'morenews', // Menu slug.
         array($this, 'morenews_render_starter_sites'), // Callback function.
@@ -120,23 +122,25 @@ if (!class_exists('AF_themes_info')) {
 
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Block Patterns', 'morenews'), // Page title.
-        __('Block Patterns', 'morenews'), // Menu title.
+        __('Template Kits', 'morenews'), // Page title.
+        __('Template Kits', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        $template_kits_slug, // Menu slug.
+        array($this, 'morenews_render_templates_kits'), // Callback function.
+        $starter_sites_order
+      );
+
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Gutenberg Patterns', 'morenews'), // Page title.
+        __('Gutenberg Patterns', 'morenews'), // Menu title.
         'manage_options', // Capability.
         $starter_template_slug, // Menu slug.
         array($this, 'morenews_render_starter_templates'), // Callback function.
         $starter_sites_order
       );
 
-      add_submenu_page(
-        'morenews', // Parent slug.
-        __('Elementor Kits', 'morenews'), // Page title.
-        __('Elementor Kits', 'morenews'), // Menu title.
-        'manage_options', // Capability.
-        $template_kits_slug, // Menu slug.
-        array($this, 'morenews_render_templates_kits'), // Callback function.
-        $starter_sites_order
-      );
+      
 
       // Our getting started page.
       add_submenu_page(
@@ -164,10 +168,10 @@ if (!class_exists('AF_themes_info')) {
       add_submenu_page(
         'morenews', // Parent slug.
         __('Upgrade', 'morenews'), // Page title.
-        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'morenews') .'</span>', // Menu title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'morenews') . '</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/morenews-pro/') // Menu slug.
-        
+
       );
     }
 
@@ -221,7 +225,7 @@ if (!class_exists('AF_themes_info')) {
       ?>
         <div id="templatespare-plugin-install-activate" data-class=<?php echo $class; ?>
           current-theme=<?php echo esc_attr($this->theme_slug) ?> install=<?php echo json_encode($install); ?>
-          activate=<?php echo json_encode($activate); ?> page='<?php echo $this->page_slug; ?>'
+          activate=<?php echo json_encode($activate); ?> data-plugin-page='<?php echo $this->page_slug; ?>'
           message='<?php echo $message; ?>' ispro=''></div>
       <?php
       }
@@ -295,7 +299,7 @@ if (!class_exists('AF_themes_info')) {
 
       ?>
         <div id="templatespare-plugin-install-activate" data-class="<?php echo $class; ?>" current-theme='blockspare'
-          install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> page="aft-block-patterns"
+          install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> data-plugin-page="aft-block-patterns"
           message='<?php echo $message; ?>' isPro='<?php echo esc_attr($morenews_blockspare_status); ?>'></div>
 <?php
       }
@@ -366,7 +370,7 @@ if (!class_exists('AF_themes_info')) {
         $class = (!empty($morenews_elespare_verison) && $morenews_elespare_active && $morenews_elespare_verison < $morenews_elespare_old_version)
           ? admin_url('plugins.php')
           : 'false';
-        echo '<div id="templatespare-plugin-install-activate" data-class="' . esc_attr($class) . '" current-theme="elespare" install="' . esc_attr(json_encode($install)) . '" activate="' . esc_attr(json_encode($activate)) . '" page="aft-template-kits" message="' . esc_attr($message) . '" isPro="' . esc_attr($morenews_elespare_status) . '"></div>';
+        echo '<div id="templatespare-plugin-install-activate" data-class="' . esc_attr($class) . '" current-theme="elespare" install="' . esc_attr(json_encode($install)) . '" activate="' . esc_attr(json_encode($activate)) . '" data-plugin-page="aft-template-kits" message="' . esc_attr($message) . '" isPro="' . esc_attr($morenews_elespare_status) . '"></div>';
       }
     }
 

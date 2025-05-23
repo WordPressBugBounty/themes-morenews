@@ -28,7 +28,7 @@ if (!function_exists('morenews_custom_style')) {
         ob_start();
 ?>
 
-        <?php if (!empty($dark_background_color)) : ?>
+<?php if (!empty($dark_background_color)) : ?>
             body.aft-dark-mode #sidr,
             body.aft-dark-mode,
             body.aft-dark-mode.custom-background,
@@ -357,7 +357,7 @@ if (!function_exists('morenews_custom_style')) {
 
 
         <?php if (!empty($site_title_font)) : ?>
-            .site-title {
+            .site-branding .site-title {
             font-family: <?php morenews_esc_custom_style($site_title_font) ?>;
             }
         <?php endif; ?>
@@ -401,7 +401,14 @@ if (!function_exists('morenews_custom_style')) {
             }
         <?php endif; ?>
 
-       .container-wrapper .elementor {
+        <!-- .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
+        .elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
+        .elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
+        .elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
+        max-width: 1300px;
+        } -->
+
+        .container-wrapper .elementor {
         max-width: 100%;
         }
         .full-width-content .elementor-section-stretched,

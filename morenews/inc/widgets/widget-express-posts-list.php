@@ -93,7 +93,7 @@ if (!class_exists('MoreNews_Express_Posts_List')) :
                                             </div>
                                         <?php else: ?>
                                             <div class="col-2 pad float-l list-part af-sec-post">
-                                                <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, false, true, false); ?>
+                                                <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, true, true, false); ?>
                                             </div>
                                         <?php endif; ?>
                                         <?php

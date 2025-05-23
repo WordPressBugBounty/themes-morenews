@@ -98,7 +98,7 @@ if (!class_exists('MoreNews_Express_Posts_Double_Column')) :
                                                 <?php do_action('morenews_action_loop_grid', $post->ID, 'grid-design-default', 'morenews-medium'); ?>
                                             </div>
                                         <?php else: ?>
-                                            <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, false, true, false); ?>
+                                            <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, true, true, false); ?>
                                         <?php
                                         endif;
                                         $morenews_count++;

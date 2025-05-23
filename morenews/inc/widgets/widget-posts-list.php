@@ -81,7 +81,7 @@ if (!class_exists('MoreNews_Posts_lists')) :
 
                                     ?>
                                     <div class="pad float-l col-2">
-                                        <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, false, true, false); ?>
+                                        <?php do_action('morenews_action_loop_list', $post->ID, 'thumbnail', 0, true, true, false); ?>
                                     </div>
                                 <?php
                                 endwhile;

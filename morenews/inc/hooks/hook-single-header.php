@@ -36,7 +36,7 @@ if (!function_exists('morenews_single_header')) :
                             <?php endif; ?>
                         <?php endif; ?>
 
-                        <div class="entry-meta">
+                        <div class="entry-meta author-links">
 
                             <?php morenews_post_item_meta(); ?>
                             <?php morenews_count_content_words($post->ID); ?>

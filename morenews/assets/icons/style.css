@@ -35,7 +35,7 @@
 .em-post-format .fa-image,
 [class^="aft-icon-"], [class*=" aft-icon-"], .elegant-widget [class*=" fa-arrow-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'aft-icons' !important;
+  font-family: 'aft-icons';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

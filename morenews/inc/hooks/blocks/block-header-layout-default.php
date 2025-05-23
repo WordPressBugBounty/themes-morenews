@@ -79,15 +79,18 @@ $morenews_show_top_header_section = morenews_get_option('show_top_header_section
   <div class="container-wrapper">
     <div class="bottom-bar-flex">
       <div class="offcanvas-navigaiton">
-        <?php if (is_active_sidebar('express-off-canvas-panel')) : ?>
-          <div class="off-cancas-panel">
-            <?php do_action('morenews_load_off_canvas'); ?>
-          </div>
-          <div id="sidr" class="primary-background">
-            <a class="sidr-class-sidr-button-close" aria-label="<?php esc_attr_e('Open Off-Canvas Navigation', 'morenews') ?>" href="#sidr"></a>
-            <?php dynamic_sidebar('express-off-canvas-panel'); ?>
-          </div>
-        <?php endif; ?>
+        <?php
+        if (!morenews_is_amp()) {
+          if (is_active_sidebar('express-off-canvas-panel')) : ?>
+            <div class="off-cancas-panel">
+              <?php do_action('morenews_load_off_canvas'); ?>
+            </div>
+            <div id="sidr" class="primary-background">
+              <a class="sidr-class-sidr-button-close" aria-label="<?php esc_attr_e('Open Off-Canvas Navigation', 'morenews') ?>" href="#sidr"></a>
+              <?php dynamic_sidebar('express-off-canvas-panel'); ?>
+            </div>
+        <?php endif;
+        } ?>
         <div class="af-bottom-head-nav">
           <?php do_action('morenews_action_main_menu_nav'); ?>
         </div>

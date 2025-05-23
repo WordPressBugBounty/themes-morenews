@@ -79,7 +79,7 @@ if (!function_exists('morenews_load_search_form_section')):
       </div>
     </div>
 
-    <?php }
+    <?php } 
 
 endif;
 add_action('morenews_load_search_form', 'morenews_load_search_form_section');

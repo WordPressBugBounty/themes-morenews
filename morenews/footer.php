@@ -93,9 +93,9 @@ if ($page_template !== 'page-templates/full-width.php') {
         ?>
             <div class="secondary-footer">
                 <div class="container-wrapper">
-                    <div class="af-container-row clearfix af-flex-container">
+                    <div class="af-container-row af-flex-container">
                         <?php if (has_nav_menu('aft-footer-nav')) : ?>
-                            <div class="float-l pad color-pad <?php echo esc_attr($class); ?>">
+                            <div class="pad color-pad <?php echo esc_attr($class); ?>">
                                 <div class="footer-nav-wrapper">
                                     <?php
                                     wp_nav_menu(array(
@@ -109,7 +109,7 @@ if ($page_template !== 'page-templates/full-width.php') {
                             </div>
                         <?php endif; ?>
                         <?php if (has_nav_menu('aft-social-nav')) : ?>
-                            <div class="float-l pad color-pad <?php echo esc_attr($class); ?>">
+                            <div class="pad color-pad <?php echo esc_attr($class); ?>">
                                 <div class="footer-social-wrapper">
                                     <div class="aft-small-social-menu">
                                         <?php
@@ -132,7 +132,7 @@ if ($page_template !== 'page-templates/full-width.php') {
     <?php endif; ?>
     <div class="site-info">
         <div class="container-wrapper">
-            <div class="af-container-row">
+            <!-- <div class="af-container-row"> -->
                 <div class="col-1 color-pad">
                     <?php $morenews_copy_right = morenews_get_option('footer_copyright_text'); ?>
                     <?php if (!empty($morenews_copy_right)) : ?>
@@ -147,7 +147,7 @@ if ($page_template !== 'page-templates/full-width.php') {
                         ?>
                     <?php endif; ?>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 </footer>
