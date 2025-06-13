@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.4.1
+Version: 3.4.2
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.8
@@ -53,6 +53,37 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*-----------------------------------------------------------
 # Normalize
 -----------------------------------------------------------*/
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    src: url('assets/fonts/oswald/oswald-regular.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-style: normal;
+    src: url('assets/fonts/oswald/oswald-700.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('assets/fonts/open-sans/open-sans-regular.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('assets/fonts/open-sans/open-sans-700.woff2') format('woff2');
+    font-display: swap;
+  }
+  
+  
+
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
@@ -364,7 +395,7 @@ div.custom-menu-link > a,
 .exclusive-posts .exclusive-now,
 .aft-posts-tabs-panel .nav-tabs>li>a,
 .aft-main-banner-wrapper .nav-tabs>li>a{
-    font-family: 'Roboto', serif;
+    font-family: 'Oswald', serif;
 }
 .cat-links li a{
     font-family: 'Open Sans', sans-serif;
@@ -377,7 +408,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', serif;
+    font-family: 'Oswald', serif;
     font-weight: 700;
 }
 
@@ -7538,7 +7569,7 @@ a img.aligncenter {
 .widget ul.menu >li ,
 .widget ul ul li,
 .widget > ul > li {
-    font-family: 'Roboto', serif;
+    font-family: 'Oswald', serif;
 }
 .widget > ul > li .comment-author-link,
 .widget:not(.morenews_social_contacts_widget) ul.menu >li a,
@@ -10707,7 +10738,7 @@ li.menu-item.menu-item-gtranslate {
     align-items: center;
 }
 span.hustle-title {
-    font-family: Source Sans Pro, sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     font-weight: 700 !important;
 }
 #sidr .widget_product_search input.search-field button[type="submit"], 

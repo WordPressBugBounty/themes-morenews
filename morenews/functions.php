@@ -162,123 +162,140 @@ add_action('after_setup_theme', 'morenews_content_width', 0);
  * @param string $font The font string (e.g., "Lato:400,300,400italic,900,700").
  * @return string Filtered font string with only the allowed variants.
  */
-function morenews_filter_font_variants($font)
-{
+
+/**
+ * Filter allowed font variants.
+ */
+function morenews_filter_font_variants($font) {
   if (strpos($font, ':') === false) {
     return $font;
   }
 
   list($font_name, $variants) = explode(':', $font);
 
-  // Define allowed variants to reduce file size and improve performance.
-  $allowed_variants = array('400', '700'); // Adjust as needed.
+  $allowed_variants = array('400', '700');
   $font_variants = explode(',', $variants);
-
   $filtered_variants = array_intersect($font_variants, $allowed_variants);
 
   return !empty($filtered_variants) ? $font_name . ':' . implode(',', $filtered_variants) : $font_name;
 }
 
 /**
- * Generate the Google Fonts URL based on theme options.
- *
- * @return string Google Fonts URL or empty string if no fonts are required.
+ * Get Google Fonts URL based on theme settings.
  */
-function morenews_get_fonts_url()
-{
+function morenews_get_fonts_url() {
+  static $cached_url = null;
+  if ($cached_url !== null) {
+    return $cached_url;
+  }
+
   $fonts_url = '';
-  $subsets = 'latin'; // Include only the Latin subset by default.
+  $subsets = 'latin';
   $theme_fonts = array();
 
-  // Fetch theme options for fonts.
   $site_title_font = morenews_get_option('site_title_font');
-  $primary_font = morenews_get_option('primary_font');
-  $secondary_font = morenews_get_option('secondary_font');
+  $primary_font    = morenews_get_option('primary_font');
+  $secondary_font  = morenews_get_option('secondary_font');
 
-  // Collect and filter font variants using the filter function.
-  $theme_fonts = array_map('morenews_filter_font_variants', array($site_title_font, $primary_font, $secondary_font));
+  $all_fonts = array($site_title_font, $primary_font, $secondary_font);
 
-  // Remove any font marked as 'off' or empty entries.
-  $theme_fonts = array_filter($theme_fonts, function ($font) {
-    return !empty($font) && _x('on', '%s font: on or off', 'morenews') !== 'off';
-  });
+  // Filter out Open Sans & Oswald (they're local)
+  $theme_fonts = array_filter(array_map(function ($font) {
+    if (empty($font)) return '';
+    if (stripos($font, 'Open+Sans') !== false || stripos($font, 'Oswald') !== false) {
+      return null;
+    }
+    return morenews_filter_font_variants($font);
+  }, $all_fonts));
 
-  // Remove duplicate fonts to avoid unnecessary requests.
   $unique_fonts = array_unique($theme_fonts);
 
-  // Generate the Google Fonts URL if fonts are available.
   if (!empty($unique_fonts)) {
     $fonts_url = add_query_arg(array(
-      'family'  => implode('|', $unique_fonts), // Concatenate fonts with '|'.
-      'subset'  => ($subsets),
+      'family'  => implode('|', $unique_fonts),
+      'subset'  => $subsets,
       'display' => 'swap',
     ), 'https://fonts.googleapis.com/css');
   }
 
+  $cached_url = $fonts_url;
   return $fonts_url;
 }
 
 /**
- * Add preconnect links for Google Fonts domains to improve performance.
- *
- * @param array  $urls          URLs to print for resource hints.
- * @param string $relation_type The relation type of the URLs (e.g., 'preconnect').
- * @return array Filtered URLs.
+ * Add preconnect for Google Fonts domains (only if used).
  */
-function morenews_add_preconnect_links($urls, $relation_type)
-{
+function morenews_add_preconnect_links($urls, $relation_type) {
   if ('preconnect' === $relation_type) {
-    // Preconnect to Google Fonts domains.
-    $urls[] = 'https://fonts.googleapis.com';
-    $urls[] = 'https://fonts.gstatic.com';
+    $fonts_url = morenews_get_fonts_url();
+    if ($fonts_url) {
+      $urls[] = 'https://fonts.googleapis.com';
+      $urls[] = 'https://fonts.gstatic.com';
+    }
   }
-
   return $urls;
 }
 add_filter('wp_resource_hints', 'morenews_add_preconnect_links', 10, 2);
 
 /**
- * Preload Google Fonts stylesheets in the <head> for performance.
+ * Preload fonts (Google or local) in <head>.
  */
-
-function morenews_preload_google_fonts()
-{
+function morenews_preload_google_fonts() {
   if (morenews_is_amp()) {
     return;
   }
+
   $fonts_url = morenews_get_fonts_url();
 
+  $site_title_font = morenews_get_option('site_title_font');
+  $primary_font    = morenews_get_option('primary_font');
+  $secondary_font  = morenews_get_option('secondary_font');
+
+  $fonts_in_use = array($site_title_font, $primary_font, $secondary_font);
+
+  $load_oswald     = false;
+  $load_open_sans  = false;
+
+  foreach ($fonts_in_use as $font) {
+    $font_clean = strtolower($font);
+    if (strpos($font_clean, 'oswald') !== false) {
+      $load_oswald = true;
+    }
+    if (strpos($font_clean, 'open+sans') !== false || strpos($font_clean, 'open sans') !== false) {
+      $load_open_sans = true;
+    }
+  }
+
   if ($fonts_url) {
-    // Add a preload link for the font stylesheet.
     printf(
       "<link rel='preload' href='%s' as='style' onload=\"this.onload=null;this.rel='stylesheet'\" type='text/css' media='all' crossorigin='anonymous'>\n",
       esc_url($fonts_url)
     );
+  }
 
-    // Preconnect to Google Fonts origins.
-    echo "<link rel='preconnect' href='https://fonts.googleapis.com' crossorigin='anonymous'>\n";
-    echo "<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous'>\n";
+  // Local font preload
+  $base = get_template_directory_uri() . '/assets/fonts/';
+  if ($load_oswald) {
+    echo "<link rel='preload' href='{$base}oswald/oswald-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    echo "<link rel='preload' href='{$base}oswald/oswald-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+  }
+  if ($load_open_sans) {
+    echo "<link rel='preload' href='{$base}open-sans/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    echo "<link rel='preload' href='{$base}open-sans/open-sans-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
   }
 }
 add_action('wp_head', 'morenews_preload_google_fonts', 1);
 
-
 /**
- * Enqueue the Google Fonts stylesheet in the theme's front-end.
+ * Enqueue Google Fonts (only if needed).
  */
-function morenews_enqueue_fonts()
-{
+function morenews_enqueue_fonts() {
   $fonts_url = morenews_get_fonts_url();
-
   if ($fonts_url) {
     wp_enqueue_style('morenews-google-fonts', $fonts_url, array(), null);
   }
 }
 add_action('wp_enqueue_scripts', 'morenews_enqueue_fonts');
-
-
-
-
 
 /**
  * Load Init for Hook files.
