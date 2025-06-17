@@ -1,3 +1,6 @@
+### 3.4.4 - June 16 2025
+* Update - Improved admin panel
+
 ### 3.4.3 - June 13 2025
 * Update - Improved font loading logic for performance and AMP compatibility
 * Update - Switched Oswald and Open Sans to preload from local assets
@@ -7,9 +10,9 @@
 * Fixed - Duplicate or unnecessary Google Fonts loading in certain cases
 
 ### 3.4.1 - May 23 2025 =
- 	* Update - Layout improvement
- 	* Update - Block Style improvement
- 	* Fixed - Some styling glitch
+* Update - Layout improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
 
 ### 3.4.0 - May 22 2025
 * Update - Layout improvement
