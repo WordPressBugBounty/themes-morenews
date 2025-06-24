@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MoreNews 3.3.6\n"
+"Project-Id-Version: MoreNews 3.4.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/morenews\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-17T10:01:10+00:00\n"
+"POT-Creation-Date: 2025-06-24T06:46:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: morenews\n"
@@ -43,92 +43,93 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:46
-#: admin-dashboard/admin_dashboard.php:47
-msgid "%s"
+#: admin-dashboard/admin_dashboard.php:115
+#: admin-dashboard/admin_dashboard.php:116
+msgid "Dashboard"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:113
-#: admin-dashboard/admin_dashboard.php:114
-msgid "Starter Sites"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:123
-#: admin-dashboard/admin_dashboard.php:124
-msgid "Block Patterns"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:133
-#: admin-dashboard/admin_dashboard.php:134
-msgid "Elementor Kits"
-msgstr ""
-
-#: admin-dashboard/admin_dashboard.php:144
-#: admin-dashboard/admin_dashboard.php:145
+#: admin-dashboard/admin_dashboard.php:127
+#: admin-dashboard/admin_dashboard.php:128
 msgid "Customize"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:155
-#: admin-dashboard/admin_dashboard.php:156
-msgid "Settings"
+#: admin-dashboard/admin_dashboard.php:139
+#: admin-dashboard/admin_dashboard.php:140
+msgid "Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:166
-#: admin-dashboard/admin_dashboard.php:167
-msgid "Upgrade"
+#: admin-dashboard/admin_dashboard.php:149
+#: admin-dashboard/admin_dashboard.php:150
+msgid "Elementor Kits"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:216
+#: admin-dashboard/admin_dashboard.php:159
+#: admin-dashboard/admin_dashboard.php:160
+msgid "Block Patterns"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:172
+#: admin-dashboard/src/components/json/dashboard-content.js:26
+#: admin-dashboard/src/components/json/freepro-content.js:318
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:173
+#: inc/customizer/customizer.php:182
+msgid "Upgrade Now"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:222
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:219
+#: admin-dashboard/admin_dashboard.php:225
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:288
+#: admin-dashboard/admin_dashboard.php:294
 msgid "Blockspare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:293
+#: admin-dashboard/admin_dashboard.php:299
 msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:364
+#: admin-dashboard/admin_dashboard.php:370
 msgid "Elespare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:365
+#: admin-dashboard/admin_dashboard.php:371
 msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:439
+#: admin-dashboard/admin_dashboard.php:446
 msgid "Are you sure you want to install this plugin?"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:440
+#: admin-dashboard/admin_dashboard.php:447
 #: admin-dashboard/rest-api/api-request.php:29
 msgid "Install Now"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:441
+#: admin-dashboard/admin_dashboard.php:448
 #: admin-dashboard/rest-api/api-request.php:74
 #: lib/tgm/class-tgm-plugin-activation.php:2726
 msgid "Activate"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:442
+#: admin-dashboard/admin_dashboard.php:449
 #: admin-dashboard/rest-api/api-request.php:70
 msgid "Activated"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:538
+#: admin-dashboard/admin_dashboard.php:545
 #: admin-dashboard/rest-api/api-request.php:104
 #: admin-dashboard/rest-api/class-admin-notice.php:144
 msgid "Get Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:543
+#: admin-dashboard/admin_dashboard.php:550
 #: admin-dashboard/rest-api/class-admin-notice.php:148
 #: admin-dashboard/src/components/blockspare.demo.js:13
 #: admin-dashboard/src/components/elespare-demo.js:13
@@ -136,7 +137,7 @@ msgstr ""
 msgid "Get Started"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:544
+#: admin-dashboard/admin_dashboard.php:551
 #: admin-dashboard/rest-api/class-admin-notice.php:149
 msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
 msgstr ""
@@ -150,23 +151,25 @@ msgid "More Details"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:163
-msgid "Howdy!"
+msgid "👋 Welcome, and Thank You!"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:165
-msgid "%s is now installed and ready to use. We've assembled some links to get you started."
+msgid "%s is now active. We're here to help you turn your ideas into a beautiful, professional website — quickly and confidently."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:197
+msgid "🚀 Start With One Click"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:198
-msgid "Explore Our Pre-Built Starter Websites!"
-msgstr ""
-
-#: admin-dashboard/rest-api/class-admin-notice.php:199
-msgid "Let your imagination soar! Designed with User-Friendly features, incorporating the Latest Trends and SEO-Friendly Markups. We genuinely appreciate you choosing our theme!"
+msgid ""
+"Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
+"      Setup is simple — no coding required."
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:203
-msgid "Demos/product"
+msgid "View Demos"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:205
@@ -174,30 +177,30 @@ msgid "Theme dashboard"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:229
+msgid "🤝 We're Here for You"
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:230
+msgid "Whether you're just starting or customizing your site."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:231
 #: admin-dashboard/src/components/json/sidebar-content.js:4
 msgid "Documentation"
 msgstr ""
 
-#: admin-dashboard/rest-api/class-admin-notice.php:230
-#: admin-dashboard/src/components/json/sidebar-content.js:7
-msgid "Please check our full documentation for detailed information on how to setup and customize the theme."
-msgstr ""
-
-#: admin-dashboard/rest-api/class-admin-notice.php:231
-msgid "Docs"
-msgstr ""
-
 #: admin-dashboard/rest-api/class-admin-notice.php:232
-msgid "Videos"
+msgid "Video Tutorials"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:233
-msgid "Blog"
+#: admin-dashboard/src/components/json/sidebar-content.js:10
+#: admin-dashboard/src/components/json/sidebar-content.js:11
+msgid "Support"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:234
-#: admin-dashboard/src/components/json/dashboard-content.js:21
-msgid "Rate This Theme"
+msgid "⭐ Rate This Theme"
 msgstr ""
 
 #: admin-dashboard/rest-api/class-ajaxcall.php:10
@@ -238,6 +241,7 @@ msgid "%1$s by %2$s."
 msgstr ""
 
 #: functions.php:84
+#: inc/class-amp-compatible.php:145
 #: inc/hooks/hook-header-section.php:40
 msgid "Primary Menu"
 msgstr ""
@@ -250,13 +254,15 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:196
-msgctxt "%s font: on or off"
-msgid "on"
+#: header.php:52
+msgid "Skip to content"
 msgstr ""
 
-#: header.php:49
-msgid "Skip to content"
+#: inc/class-amp-compatible.php:183
+#: inc/class-amp-compatible.php:187
+#: inc/hooks/hook-header-section.php:72
+#: inc/hooks/hook-header-section.php:73
+msgid "Open search form"
 msgstr ""
 
 #: inc/customizer/customizer-control.php:186
@@ -455,10 +461,6 @@ msgstr ""
 msgid "MoreNews Pro"
 msgstr ""
 
-#: inc/customizer/customizer.php:182
-msgid "Upgrade Now"
-msgstr ""
-
 #: inc/customizer/font-color-options.php:23
 msgid "Site Color Mode"
 msgstr ""
@@ -621,7 +623,7 @@ msgstr ""
 #: inc/widgets/widget-posts-grid.php:115
 #: inc/widgets/widget-posts-list.php:118
 #: inc/widgets/widget-posts-single-column.php:118
-#: inc/widgets/widget-trending-posts.php:137
+#: inc/widgets/widget-trending-posts.php:139
 msgid "Select Category"
 msgstr ""
 
@@ -1012,7 +1014,7 @@ msgstr ""
 #: inc/widgets/widget-posts-list.php:117
 #: inc/widgets/widget-posts-single-column.php:117
 #: inc/widgets/widget-posts-slider.php:111
-#: inc/widgets/widget-trending-posts.php:136
+#: inc/widgets/widget-trending-posts.php:138
 msgid "Title"
 msgstr ""
 
@@ -1181,13 +1183,8 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: inc/hooks/blocks/block-header-layout-default.php:84
+#: inc/hooks/blocks/block-header-layout-default.php:88
 msgid "Open Off-Canvas Navigation"
-msgstr ""
-
-#: inc/hooks/hook-header-section.php:72
-#: inc/hooks/hook-header-section.php:73
-msgid "Open search form"
 msgstr ""
 
 #: inc/hooks/hook-meta.php:23
@@ -1253,34 +1250,22 @@ msgid "Select category color class. You can set appropriate categories color on 
 msgstr ""
 
 #: inc/hooks/hook-tgm.php:19
-msgid "AF Companion"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:24
 msgid "Templatespare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:29
+#: inc/hooks/hook-tgm.php:24
 msgid "Elespare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:34
+#: inc/hooks/hook-tgm.php:29
 msgid "Blockspare"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:39
-msgid "Latest Posts Block"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:44
-msgid "Magic Content Box"
-msgstr ""
-
-#: inc/hooks/hook-tgm.php:49
+#: inc/hooks/hook-tgm.php:34
 msgid "WP Post Author"
 msgstr ""
 
-#: inc/hooks/hook-tgm.php:54
+#: inc/hooks/hook-tgm.php:39
 msgid "Free Live Chat using 3CX"
 msgstr ""
 
@@ -2287,6 +2272,19 @@ msgstr ""
 msgid "Welcome to "
 msgstr ""
 
+#: admin-dashboard/src/components/dashboard-content.js:37
+#: admin-dashboard/src/components/nav-content/free-pro.js:10
+msgid "Free"
+msgstr ""
+
+#: admin-dashboard/src/components/dashboard-content.js:49
+msgid "Let's Get Started with Starter Sites"
+msgstr ""
+
+#: admin-dashboard/src/components/dashboard-content.js:56
+msgid "Start Customizing"
+msgstr ""
+
 #: admin-dashboard/src/components/elespare-demo.js:18
 msgid "Update Elespare Pro"
 msgstr ""
@@ -2304,28 +2302,24 @@ msgid "Transform your blog, news, or magazine website with 35+ advanced Elemento
 msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:2
-msgid "We would like to thank you for installing and activating [theme] theme for your precious site. All of the features provided by the theme are now ready to use; Here, we have gathered all of the essential details and helpful links for you and your better experience with [theme]. Once again, Thanks for using our theme!"
+msgid "Thank you for installing [theme] — a fast, flexible, and user-friendly theme for blogs, news sites, and magazines. Get started quickly with our 100+ one-click starter sites — no coding needed."
 msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:9
-msgid "Theme Details"
+msgid "Unlock Pro Features"
 msgstr ""
 
-#: admin-dashboard/src/components/json/dashboard-content.js:13
-msgid "View Demo"
+#: admin-dashboard/src/components/json/dashboard-content.js:14
+msgid "Docs"
 msgstr ""
 
-#: admin-dashboard/src/components/json/dashboard-content.js:17
-msgid "View Documentation"
-msgstr ""
-
-#: admin-dashboard/src/components/json/dashboard-content.js:25
-#: admin-dashboard/src/components/json/freepro-content.js:318
-msgid "Upgrade to Pro"
-msgstr ""
-
-#: admin-dashboard/src/components/json/dashboard-content.js:27
+#: admin-dashboard/src/components/json/dashboard-content.js:18
+#: admin-dashboard/src/components/json/dashboard-content.js:28
 msgid "Need Help?"
+msgstr ""
+
+#: admin-dashboard/src/components/json/dashboard-content.js:22
+msgid "Rate This Theme"
 msgstr ""
 
 #: admin-dashboard/src/components/json/freepro-content.js:4
@@ -2632,9 +2626,8 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: admin-dashboard/src/components/json/sidebar-content.js:10
-#: admin-dashboard/src/components/json/sidebar-content.js:11
-msgid "Support"
+#: admin-dashboard/src/components/json/sidebar-content.js:7
+msgid "Please check our full documentation for detailed information on how to setup and customize the theme."
 msgstr ""
 
 #: admin-dashboard/src/components/json/sidebar-content.js:13
@@ -2653,46 +2646,44 @@ msgstr ""
 msgid "Watch out the videos for an easy learning on Customizing the Theme ."
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:5
+#: admin-dashboard/src/components/json/useful-plugins-content.js:6
+msgid "TemplateSpare - No-Code Website Builder - 1-Click Import/Export and Full Site Migration Tool. Get ready-to-use Starter Sites instantly and build modern websites in minutes."
+msgstr ""
+
+#: admin-dashboard/src/components/json/useful-plugins-content.js:13
+msgid "It has different widgets for post's author, selective author by id and custom author. It also provides shortcodes for the author profile."
+msgstr ""
+
+#: admin-dashboard/src/components/json/useful-plugins-content.js:20
 msgid "Use AF Companion to import live demo content, widgets, and settings swiftly. This plugin gives fundamental layout to build your website and accelerate the development process."
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:12
-msgid "You may design complicated layouts for your website in just a few minutes with our adaptable and inventive blocks."
-msgstr ""
-
-#: admin-dashboard/src/components/json/useful-plugins-content.js:19
-#: admin-dashboard/src/components/json/useful-plugins-content.js:79
-#: admin-dashboard/src/components/json/useful-plugins-content.js:83
-msgid "Get ready-to-use Starter Sites instantly and build modern websites in minutes."
-msgstr ""
-
-#: admin-dashboard/src/components/json/useful-plugins-content.js:26
+#: admin-dashboard/src/components/json/useful-plugins-content.js:27
 msgid "DESIGN PERFECT BLOG, NEWS, OR MAGAZINE WEBSITES Elespare is a simple yet effective WordPress plugin that lets you use Elementor to create fantastic Header, Footer and Contents of websites with highly customization options for FREE. "
 msgstr ""
 
 #: admin-dashboard/src/components/json/useful-plugins-content.js:34
+msgid "You may design complicated layouts for your website in just a few minutes with our adaptable and inventive blocks."
+msgstr ""
+
+#: admin-dashboard/src/components/json/useful-plugins-content.js:42
 msgid "A beautiful collection of latest posts Gutenberg blocks for WordPress, which helps you to design posts grid, posts list, full posts layout, advanced express posts design and tile layouts of your posts."
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:41
+#: admin-dashboard/src/components/json/useful-plugins-content.js:49
 msgid "We build a beautiful series of page section Gutenberg blocks for WordPress content to help you quickly create the website you've always desired."
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:48
-msgid "It has 3 different widgets for post's author, selective author by id and custom author. It also provides shortcodes for the author profile."
-msgstr ""
-
-#: admin-dashboard/src/components/json/useful-plugins-content.js:55
+#: admin-dashboard/src/components/json/useful-plugins-content.js:57
 msgid "This free plugin offers a free live chat solution for your website visitors to contact you via live chat or a live call - all for free! Engage with your customers and increase sales."
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:62
-msgid "A free WordPress Plugin which facilitates with the functionality to submit Posts from frontend with or without logging in with various configurable options."
+#: admin-dashboard/src/components/json/useful-plugins-content.js:68
+msgid "TemplateSpare -   No-Code Website Builder - 1-Click Import/Export and Full Site Migration Tool"
 msgstr ""
 
-#: admin-dashboard/src/components/json/useful-plugins-content.js:69
-msgid "This plugin helps you grow your Mailchimp lists and write better newsletters through various methods. You can create good looking opt-in forms or integrate with any existing form on your site, like your comment, contact or checkout form."
+#: admin-dashboard/src/components/json/useful-plugins-content.js:72
+msgid "Get over 1000 ready-to-import Starter Sites instantly and build modern websites in minutes, not in weeks."
 msgstr ""
 
 #: admin-dashboard/src/components/main.js:54
@@ -2713,10 +2704,6 @@ msgstr ""
 
 #: admin-dashboard/src/components/nav-content/free-pro.js:9
 msgid "Features"
-msgstr ""
-
-#: admin-dashboard/src/components/nav-content/free-pro.js:10
-msgid "Free"
 msgstr ""
 
 #: admin-dashboard/src/components/nav-content/free-pro.js:11

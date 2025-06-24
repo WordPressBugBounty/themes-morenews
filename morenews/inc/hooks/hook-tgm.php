@@ -16,11 +16,6 @@ if ( ! function_exists( 'morenews_recommended_plugins' ) ) :
 
         $plugins = array(
             array(
-                'name'     => esc_html__( 'AF Companion', 'morenews' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
-            array(
                 'name'     => esc_html__( 'Templatespare', 'morenews' ),
                 'slug'     => 'templatespare',
                 'required' => false,
@@ -33,16 +28,6 @@ if ( ! function_exists( 'morenews_recommended_plugins' ) ) :
             array(
                 'name'     => esc_html__( 'Blockspare', 'morenews' ),
                 'slug'     => 'blockspare',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Latest Posts Block', 'morenews' ),
-                'slug'     => 'latest-posts-block-lite',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Magic Content Box', 'morenews' ),
-                'slug'     => 'magic-content-box-lite',
                 'required' => false,
             ),
             array(

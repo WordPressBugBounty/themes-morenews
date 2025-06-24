@@ -1,3 +1,10 @@
+### 3.4.5 - June 24 2025
+* Update - Default admin panel
+* Update - Recommneded plugins
+* Update - Starter Sites links
+* Update - Customize links
+* Update - Other Essentials links
+
 ### 3.4.4 - June 16 2025
 * Update - Improved admin panel
 
@@ -9,7 +16,7 @@
 * Fixed - Local font preloading skipped when Google Fonts were in use
 * Fixed - Duplicate or unnecessary Google Fonts loading in certain cases
 
-### 3.4.1 - May 23 2025 =
+### 3.4.1 - May 23 2025
 * Update - Layout improvement
 * Update - Block Style improvement
 * Fixed - Some styling glitch

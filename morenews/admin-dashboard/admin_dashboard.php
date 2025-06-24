@@ -54,7 +54,7 @@ if (!class_exists('AF_themes_info')) {
       add_action('admin_head', array($this, 'morenews_make_upgrade_link_external'));
 
       $current_user = wp_get_current_user();
-      $this->current_user_name = $current_user->user_login;
+      $this->current_user_name = $current_user->display_name;
     }
 
 
@@ -96,7 +96,7 @@ if (!class_exists('AF_themes_info')) {
 
       $starter_template_slug = 'aft-block-patterns';
       $template_kits_slug = 'aft-template-kits';
-      $starter_sites_order = 2;
+      $starter_sites_order = 1;
       $afthemes_icon = 'data:image/svg+xml;base64,CgkJCTxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCgkJCXdpZHRoPSI0MDUuMDAwMDAwcHQiIGhlaWdodD0iNDAyLjAwMDAwMHB0IiB2aWV3Qm94PSIwIDAgNDA1LjAwMDAwMCA0MDIuMDAwMDAwIgoJCQlwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KCQkgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCw0MDIuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIgoJCSAgIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSI+CgkJICAgPHBhdGggZD0iTTE4MDggMzc3NSBjLTMzMiAtNDUgLTY1MSAtMTg4IC05MTcgLTQxMCAtMjkyIC0yNDMgLTUxMSAtNjEwIC01OTAKCQkgICAtOTkwIC0zNiAtMTcxIC01MSAtNDAwIC0zMyAtNDk5IGw3IC0zOCA2MCA4OCBjMTEwIDE2MyAyMjQgMjY4IDM3OCAzNDkgMjcxCgkJICAgMTQzIDU5OCAxNDkgODgwIDE3IDExOSAtNTYgMTk5IC0xMTMgMjkyIC0yMDYgMTIzIC0xMjQgMjA3IC0yNzEgMjU3IC00NTQgMjEKCQkgICAtNzQgMjIgLTEwNCAyNyAtNjc3IDYgLTY0NCA1IC02MzAgNTcgLTY3NiA1NSAtNDggMTY0IC02NSAyMjIgLTM1IDM3IDE5IDc4CgkJICAgNjUgOTMgMTAxIDggMjMgMTEgMzM1IDkgMTI2MSAtMSAxMTE2IDAgMTIzNyAxNSAxMjk1IDc2IDI5MiAzNzAgNDYwIDY2NCAzNzkKCQkgICA0MCAtMTIgNzYgLTE4IDgwIC0xNCAxMSAxMiAtMTUyIDE1NSAtMjU4IDIyNiAtMTcxIDExNCAtMzM5IDE4OSAtNTQ2IDI0MwoJCSAgIC0yMDUgNTMgLTQ4MyA2OSAtNjk3IDQweiIvPgoJCSAgIDxwYXRoIGQ9Ik0yOTQ1IDI5NjQgYy00NSAtMjMgLTc2IC01NSAtOTYgLTk5IC0xNyAtMzcgLTE5IC03NiAtMTkgLTU4MiBsMAoJCSAgIC01NDMgMjM1IDAgYzI1NiAwIDI3MiAtMyAzMTQgLTU2IDI4IC0zNiA0MyAtOTYgMzUgLTE0MSAtOSAtNDcgLTY2IC0xMTAgLTExMgoJCSAgIC0xMjMgLTIxIC01IC0xMzMgLTEwIC0yNDkgLTEwIGwtMjEzIDAgMCAtNTA1IDAgLTUwNSA1OCAyOSBjMzIgMTYgOTkgNTYgMTQ4CgkJICAgOTAgNDE4IDI3OSA2OTMgNzQ2IDc1NSAxMjgxIDI1IDIyMiAtMiA1MTcgLTY3IDcxNCAtNDYgMTM5IC0xNDQgMzQ2IC0xNjUgMzQ2CgkJICAgLTQgMCAtMyAtMTcgMiAtMzcgNSAtMjEgOSAtNjUgOSAtOTkgMCAtNTcgLTIgLTYzIC0zNyAtOTcgLTQ0IC00NSAtOTYgLTYxCgkJICAgLTE1MyAtNDggLTg4IDIwIC0xMTkgNjEgLTE1MSAxOTkgLTE3IDc4IC0yNyAxMDEgLTU3IDEzNCAtMTkgMjIgLTQ4IDQ2IC02MwoJCSAgIDU0IC0zNyAxOSAtMTM2IDE4IC0xNzQgLTJ6Ii8+CgkJICAgPHBhdGggZD0iTTEwOTAgMjA1OSBjLTIzMyAtMjMgLTQ0OSAtMTgxIC01NDEgLTM5NyAtNTEgLTExNyAtNjYgLTMxNCAtMzQKCQkgICAtNDM3IDQ5IC0xOTEgMTgyIC0zNTUgMzU1IC00MzggMTEyIC01NCAxNzggLTY5IDMwNCAtNjggMjcyIDAgNTAwIDE0NCA2MTEKCQkgICAzODYgNDcgMTAxIDYwIDE2NSA2MCAyOTAgLTEgMTg3IC02NCAzNDIgLTE5MCA0NzAgLTE0NyAxNTAgLTM0MSAyMTYgLTU2NSAxOTR6Ii8+CgkJICAgPHBhdGggZD0iTTE3ODEgNjAwIGMtMTE5IC04OSAtMjQ3IC0xNDggLTQxNSAtMTkwIGwtMTA5IC0yNyA2OSAtMzIgYzIwMCAtOTQKCQkgICA1NDQgLTE3NSA1NDQgLTEyOSAwIDIxIC0zMSA0MDMgLTMzIDQxMSAtMSA0IC0yNiAtMTEgLTU2IC0zM3oiLz4KCQkgICA8L2c+CgkJICAgPC9zdmc+Cg==';
 
       add_menu_page(
@@ -104,7 +104,7 @@ if (!class_exists('AF_themes_info')) {
         $this->menu_name, // Menu Title.
         'edit_posts', // Capability.
         'morenews', // Menu slug.
-        array($this, 'morenews_render_starter_sites'), // Action.
+        array($this, 'morenews_render_page'), // Action.
         $afthemes_icon,
         30
       );
@@ -112,35 +112,14 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Starter Demo Sites', 'morenews'), // Page title.
-        __('Starter Demo Sites', 'morenews'), // Menu title.
+        __('Dashboard', 'morenews'), // Page title.
+        __('Dashboard', 'morenews'), // Menu title.
         'manage_options', // Capability.
         'morenews', // Menu slug.
-        array($this, 'morenews_render_starter_sites'), // Callback function.
-        // $starter_sites_order
+        array($this, 'morenews_render_page'), // Callback function.
+        // $get_started_order
       );
 
-      add_submenu_page(
-        'morenews', // Parent slug.
-        __('Template Kits', 'morenews'), // Page title.
-        __('Template Kits', 'morenews'), // Menu title.
-        'manage_options', // Capability.
-        $template_kits_slug, // Menu slug.
-        array($this, 'morenews_render_templates_kits'), // Callback function.
-        $starter_sites_order
-      );
-
-      add_submenu_page(
-        'morenews', // Parent slug.
-        __('Gutenberg Patterns', 'morenews'), // Page title.
-        __('Gutenberg Patterns', 'morenews'), // Menu title.
-        'manage_options', // Capability.
-        $starter_template_slug, // Menu slug.
-        array($this, 'morenews_render_starter_templates'), // Callback function.
-        $starter_sites_order
-      );
-
-      
 
       // Our getting started page.
       add_submenu_page(
@@ -153,22 +132,45 @@ if (!class_exists('AF_themes_info')) {
 
       );
 
-      // Our getting started page.
-      add_submenu_page(
-        'morenews', // Parent slug.
-        __('Settings', 'morenews'), // Page title.
-        __('Settings', 'morenews'), // Menu title.
-        'manage_options', // Capability.
-        'explore-more', // Menu slug.
-        array($this, 'morenews_render_page'), // Callback function.
-        // $get_started_order
-      );
 
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Upgrade', 'morenews'), // Page title.
-        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'morenews') . '</span>', // Menu title.
+        __('Starter Sites', 'morenews'), // Page title.
+        __('Starter Sites', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        'starter-sites', // Menu slug.
+        array($this, 'morenews_render_starter_sites'), // Callback function.
+        // $starter_sites_order
+      );
+
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Elementor Kits', 'morenews'), // Page title.
+        __('Elementor Kits', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        $template_kits_slug, // Menu slug.
+        array($this, 'morenews_render_templates_kits'), // Callback function.
+        // $starter_sites_order
+      );
+
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Block Patterns', 'morenews'), // Page title.
+        __('Block Patterns', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        $starter_template_slug, // Menu slug.
+        array($this, 'morenews_render_starter_templates'), // Callback function.
+        // $starter_sites_order
+      );
+     
+
+
+      // Our getting started page.
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Upgrade to Pro', 'morenews'), // Page title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade Now', 'morenews') . '</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/morenews-pro/') // Menu slug.
 
@@ -225,7 +227,7 @@ if (!class_exists('AF_themes_info')) {
       ?>
         <div id="templatespare-plugin-install-activate" data-class=<?php echo $class; ?>
           current-theme=<?php echo esc_attr($this->theme_slug) ?> install=<?php echo json_encode($install); ?>
-          activate=<?php echo json_encode($activate); ?> data-plugin-page='<?php echo $this->page_slug; ?>'
+          activate=<?php echo json_encode($activate); ?> data-plugin-page='starter-sites'
           message='<?php echo $message; ?>' ispro=''></div>
       <?php
       }
@@ -414,6 +416,7 @@ if (!class_exists('AF_themes_info')) {
         'afDashboardData',
         [
           'customizer_url' => admin_url('/customize.php?autofocus'),
+          'starter_sites_url' => site_url() . '/wp-admin/admin.php?page=starter-sites',
           'changelog' => $changelog,
           'dahboard_path' => $dahboard_path,
           'siteUrl' => $siteUrl,

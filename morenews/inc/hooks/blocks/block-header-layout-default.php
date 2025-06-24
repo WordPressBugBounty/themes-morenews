@@ -12,7 +12,6 @@ $morenews_background = '';
 $inline_style = '';
 if (has_header_image()) {
 
-
   if ($select_header_image_mode == 'above') {
     $morenews_class = 'af-header-image';
   } else {

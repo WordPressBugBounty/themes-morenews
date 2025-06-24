@@ -31,9 +31,8 @@ if (!function_exists('morenews_by_author')) {
             echo ",";
           }
         }
-        
       } else {
-        
+
         $author_id = $post->post_author;
         $author_name = get_the_author_meta('display_name', $author_id);
 
@@ -49,14 +48,14 @@ if (!function_exists('morenews_by_author')) {
 
       }
     } else {
-      
+
       $author_id = $post->post_author;
       $author_name = get_the_author_meta('display_name', $author_id);
       ?>
       <a href="<?php echo esc_url(get_author_posts_url($author_id)) ?>">
-      <?php if ($gravatar == true) {
-            echo get_avatar(get_the_author_meta('user_email', $author_id), 16);
-          } ?>
+        <?php if ($gravatar == true) {
+          echo get_avatar(get_the_author_meta('user_email', $author_id), 16);
+        } ?>
         <?php echo esc_html($author_name); ?>
       </a>
     <?php }
@@ -66,28 +65,30 @@ if (!function_exists('morenews_by_author')) {
 if (!function_exists('morenews_author_list')) {
   function morenews_author_list($post_id = '', $author_id = '', $author_type = '', $gravatar = false)
   {
-
     if ($author_type == 'default') {
-      $default_author_id = get_post_field('post_author', $post_id);
       $author_name = get_userdata($author_id);
-    ?>
-      <a href="<?php echo esc_url(get_author_posts_url($author_id)) ?>">
-        <?php if ($gravatar == true) {
-          echo get_avatar(get_the_author_meta('user_email', $author_id), 16);
-        } ?>
-        <?php echo esc_html($author_name->display_name); ?>
-      </a>
-    <?php
+      if ($author_name) {
+        ?>
+        <a href="<?php echo esc_url(get_author_posts_url($author_id)); ?>">
+          <?php if ($gravatar == true) {
+            echo get_avatar(get_the_author_meta('user_email', $author_id), 16);
+          } ?>
+          <?php echo esc_html($author_name->display_name); ?>
+        </a>
+        <?php
+      }
     }
+
     if ($author_type == 'guest') {
       $wp_amulti_authors = new WPAMultiAuthors();
       $guest_user_data = $wp_amulti_authors->get_guest_by_id($author_id);
-      if ($gravatar == true) {
-        echo get_avatar($guest_user_data->user_email, 150);
+      if ($guest_user_data) {
+        if ($gravatar == true) {
+          echo get_avatar($guest_user_data->user_email, 150);
+        }
+        echo esc_html($guest_user_data->display_name);
       }
-      echo  esc_html($guest_user_data->display_name); ?>
-    <?php } ?>
-
-<?php
+    }
   }
 }
+

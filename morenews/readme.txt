@@ -57,6 +57,13 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 3.4.5 - June 24 2025 =
+* Update - Default admin panel
+* Update - Recommneded plugins
+* Update - Starter Sites links
+* Update - Customize links
+* Update - Other Essentials links
+
 = 3.4.4 - June 16 2025 =
 * Update - Improved admin panel
 
@@ -69,9 +76,9 @@ MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jet
 * Fixed - Duplicate or unnecessary Google Fonts loading in certain cases
 
 = 3.4.1 - May 23 2025 =
- 	* Update - Layout improvement
- 	* Update - Block Style improvement
- 	* Fixed - Some styling glitch
+* Update - Layout improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
 
 = 3.4.0 - May 22 2025 =
 * Update - Layout improvement

@@ -139,7 +139,7 @@ class AdminNotice
 
     if (empty($activate_plugins) && empty($install_plugin)) {
       $btn_class = '';
-      $morenews_templatespare_url = site_url() . '/wp-admin/admin.php?page=' . $this->page_slug;
+      $morenews_templatespare_url = site_url() . '/wp-admin/admin.php?page=starter-sites';
       //$morenews_templatespare_subtitle = __( 'The "Get Started" action will install/activate the AF Companion and Blockspare plugins for Starter Sites and Templates.', 'morenews' );
       $morenews_templatespare_title = __('Get Starter Sites', 'morenews');
     } else {
