@@ -79,7 +79,7 @@ if (!class_exists('AF_themes_info')) {
       if (is_admin() && isset($_GET['page'])) {
 
         $page = sanitize_text_field($_GET['page']);
-        if ($page === 'aft-block-patterns' || $page === 'aft-template-kits' || $page === $this->theme_slug || $page === 'explore-more') {
+        if ($page === 'aft-block-patterns' || $page === 'aft-template-kits' || $page === $this->theme_slug || $page === 'starter-sites') {
 
           $classes = array_merge($classes, [
             'aft-theme-admin-menu-dashboard'
