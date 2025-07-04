@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
-Version: 3.4.5.2
+Version: 3.4.5.3
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.8
@@ -885,13 +885,10 @@ body.sidr-open:before {
     -webkit-transition: visibility 0s, opacity 0.4s linear;
     transition: visibility 0s, opacity 0.4s linear;
     visibility: visible;
-    background-color: rgba(255,255,255,.75);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0,0,0,.2);
 }
-body.aft-dark-mode #af-preloader,
-body.aft-dark-mode.sidr-open:before {
-    background-color: rgba(33, 32, 27,.75);
+body.aft-dark-mode #af-preloader {
+    background-color: rgba(33, 32, 27,.02);
 }
 /* off canvas css here */
 
@@ -1927,10 +1924,33 @@ body.sidr-open #sidr{
     opacity: 1;
 }
 
+
 .offcanvas:hover .offcanvas-menu span.mbtn-top,
 .offcanvas:hover .offcanvas-menu span.mbtn-bot{
     width: 100%;
 }
+
+
+@media screen and (min-width: 782px) {
+    body.admin-bar #sidr {
+        top:32px
+    }
+
+    body.admin-bar #sidr {
+        padding-bottom: 32px
+    }
+}
+
+@media screen and (max-width: 781px) and (min-width:601px) {
+    body.admin-bar #sidr {
+        top:46px
+    }
+
+    body.admin-bar #sidr {
+        padding-bottom: 46px
+    }
+}
+
 .date-bar-left {
     line-height: 1;
     color: #fff;
@@ -1957,7 +1977,7 @@ body.sidr-open #sidr{
 .search-icon {
     display: block;
     line-height: 38px;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-weight: 700;
     text-align: center;
