@@ -49,6 +49,25 @@ $wp_customize->add_section('header_options_settings',
     )
 );
 
+// Setting - sticky_header_option.
+$wp_customize->add_setting(
+    'disable_sticky_header_option',
+    array(
+        'default'           => $morenews_default['disable_sticky_header_option'],
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_checkbox',
+    )
+);
+$wp_customize->add_control(
+    'disable_sticky_header_option',
+    array(
+        'label'    => esc_html__('Disable Sticky Header', 'morenews'),
+        'section'  => 'header_options_settings',
+        'type'     => 'checkbox',
+        'priority' => 5,
+
+    )
+);
 
 //section title
 $wp_customize->add_setting('show_top_header_section_title',

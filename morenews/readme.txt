@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.8
-Stable tag: 3.4.5.2
+Stable tag: 3.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -20,7 +20,7 @@ MoreNews WordPress Theme, Copyright 2025 AF themes
 MoreNews is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
-MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews.
+MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built for news, magazines, blogs, and business or eCommerce websites that demand performance and flexibility. Designed with modern publishers in mind, it offers 100+ ready-to-import starter sites for Gutenberg and Elementor, making setup effortless and code-free. Featuring over 30 custom widgets, advanced block patterns, flexible header and banner options, and full drag-and-drop support, MoreNews lets you create truly unique layouts in real time. Optimized for SEO, accessibility (WCAG-ready), GDPR compliance, and Core Web Vitals, it ensures top search rankings and a smooth user experience across all devices. With built-in multilingual and RTL support (including demo content in English, Spanish, German, French, Japanese, Chinese, Arabic, and more), MoreNews is fully prepared for a global audience. Integrated WooCommerce compatibility and one-click demo import let you quickly launch a powerful online store or content hub. Light and dark reading modes, translation readiness, and a lightweight, clean codebase make it a future-proof choice for creators who value speed, style, and scalability. Explore all features at https://afthemes.com/products/morenews.
 
 == Installation ==
 
@@ -57,6 +57,18 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 3.5.5 - July 06 2025 =
+* New - Sticky Header Option Added
+* Option - Customize > Header Options > Header Settings > Enable/Disable Sticky Header
+* New - Spanish language file
+* New - Dutch language file
+* New - Russian language file
+* New - Ukranian language file
+* New - Swedish language file
+* Update - Layout improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 = 3.4.5 - June 24 2025 =
 * Update - Default admin panel
 * Update - Recommneded plugins

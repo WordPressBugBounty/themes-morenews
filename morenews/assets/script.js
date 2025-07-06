@@ -135,8 +135,7 @@
         side: 'left',
         displace: false,
       });
-      e('.sidr-class-sidr-button-close').on('click', function (event) {
-        event.preventDefault();
+      e('.sidr-class-sidr-button-close').on('click', function () {
         e.sidr('close', 'sidr');
       });
     }),

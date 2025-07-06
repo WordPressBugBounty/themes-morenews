@@ -19,6 +19,7 @@ function morenews_get_default_theme_options() {
     $defaults = array();
     // Preloader options section
     $defaults['enable_site_preloader'] = 0;
+    $defaults['disable_sticky_header_option'] = 0;
 
     // Header options section
     $defaults['header_layout'] = 'header-layout-side';

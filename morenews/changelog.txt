@@ -1,3 +1,15 @@
+### 3.5.5 - July 06 2025
+* New - Sticky Header Option Added
+* Option - Customize > Header Options > Header Settings > Enable/Disable Sticky Header
+* New - Spanish language file
+* New - Dutch language file
+* New - Russian language file
+* New - Ukranian language file
+* New - Swedish language file
+* Update - Layout improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.4.5 - June 24 2025
 * Update - Default admin panel
 * Update - Recommneded plugins

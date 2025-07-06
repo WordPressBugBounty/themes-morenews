@@ -25,6 +25,12 @@ function morenews_body_classes($classes)
     $classes[] = 'archive-first-post-full';
   }
 
+  $sticky_header = morenews_get_option('disable_sticky_header_option');
+    if ($sticky_header ==  false) {
+        $sticky_header_class = morenews_get_option('sticky_header_direction');
+        $classes[] = $sticky_header_class . ' aft-sticky-header';
+    }
+
 
   $global_site_mode_setting = morenews_get_option('global_site_mode_setting');
 
