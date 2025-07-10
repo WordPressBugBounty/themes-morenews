@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.8
-Stable tag: 3.5.0
+Stable tag: 3.5.1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,7 +57,18 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
-= 3.5.5 - July 06 2025 =
+= 3.5.1 - July 10 2025 =
+* Improvement - Header design refinements and RTL support
+* Improvement - Header sticky behavior for boxed and wide layouts
+* Improvement - Refined slider and carousel overflow handling
+* Improvement - Custom menu background and custom background options
+* Improvement - Social icon line height adjustments
+* Improvement - Off-canvas and mobile menu revamp
+* Fixed - Header z-index and alignment issues
+* Fixed - Responsive adjustments for header site title and banners
+* Fixed - Various minor design glitches
+
+= 3.5.0 - July 06 2025 =
 * New - Sticky Header Option Added
 * Option - Customize > Header Options > Header Settings > Enable/Disable Sticky Header
 * New - Spanish language file
