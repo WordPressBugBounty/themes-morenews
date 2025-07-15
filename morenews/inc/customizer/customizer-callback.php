@@ -1796,3 +1796,52 @@ if (!function_exists('morenews_disable_header_image_tint_overlay_status')) :
     }
 
 endif;
+
+
+/*select page for slider*/
+if (!function_exists('global_font_family_type_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function global_font_family_type_status($control)
+    {
+
+        if ('google' == $control->manager->get_setting('global_font_family_type')->value()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+endif;
+
+/*related posts*/
+if (!function_exists('morenews_featured_image_status')) :
+
+    /**
+     * Check if slider section page/post is active.
+     *
+     * @since 1.0.0
+     *
+     * @param WP_Customize_Control $control WP_Customize_Control instance.
+     *
+     * @return bool Whether the control is active to the current preview.
+     */
+    function morenews_featured_image_status($control)
+    {
+
+        if (true == $control->manager->get_setting('single_show_featured_image')->value()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+endif;

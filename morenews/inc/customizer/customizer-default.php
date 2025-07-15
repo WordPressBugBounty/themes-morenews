@@ -20,6 +20,7 @@ function morenews_get_default_theme_options() {
     // Preloader options section
     $defaults['enable_site_preloader'] = 0;
     $defaults['disable_sticky_header_option'] = 0;
+    $defaults['disable_wp_emoji'] = 0;
 
     // Header options section
     $defaults['header_layout'] = 'header-layout-side';
@@ -254,6 +255,7 @@ function morenews_get_default_theme_options() {
 
     //Related posts
     $defaults['single_show_featured_image'] = 1;
+    $defaults['single_featured_image_view'] = 'original';
     $defaults['global_single_content_mode'] = 'single-content-mode-default';
     $defaults['single_show_tags_list'] = 0;
     $defaults['single_show_mailchimp_subscriptions'] = 1;
@@ -382,7 +384,7 @@ function morenews_get_default_theme_options() {
     );
 
     //font option
-
+    $defaults['global_font_family_type']      = 'google';
     $defaults['site_title_font']      = 'Oswald:300,400,700';
     $defaults['primary_font']      = 'Open+Sans:400,400italic,600,700';
     $defaults['secondary_font']    = 'Oswald:300,400,700';

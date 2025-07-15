@@ -21,9 +21,17 @@ if (!function_exists('morenews_custom_style')) {
         $light_background_color = '#' . $morenews_background_color;
         $dark_background_color = morenews_get_option('dark_background_color');
         $secondary_color = morenews_get_option('secondary_color');
-        $site_title_font = $morenews_google_fonts[morenews_get_option('site_title_font')];
-        $primary_font = $morenews_google_fonts[morenews_get_option('primary_font')];
-        $secondary_font = $morenews_google_fonts[morenews_get_option('secondary_font')];
+
+        $global_font_family_type = morenews_get_option('global_font_family_type');
+        if ($global_font_family_type == 'google') {
+            $site_title_font = $morenews_google_fonts[morenews_get_option('site_title_font')];
+            $primary_font = $morenews_google_fonts[morenews_get_option('primary_font')];
+            $secondary_font = $morenews_google_fonts[morenews_get_option('secondary_font')];
+        } else {
+            $site_title_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+            $primary_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+            $secondary_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+        }
 
         ob_start();
 ?>
@@ -418,7 +426,17 @@ if (!function_exists('morenews_custom_style')) {
         left: 0 !important;
         }
 <?php
-        return ob_get_clean();
+        $css = ob_get_clean();
+
+        // Minify CSS: remove comments, newlines, extra spaces
+        $css = preg_replace('!/\*.*?\*/!s', '', $css);        // Remove comments
+        $css = preg_replace('/\s+/', ' ', $css);             // Collapse whitespace
+        $css = str_replace([' {', '{ ', '; ', ': ', ', '], ['{', '{', ';', ':', ','], $css);
+        $css = trim($css);
+
+        return $css;
+        
+        // return ob_get_clean();
     }
 }
 

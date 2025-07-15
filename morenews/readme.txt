@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.8
-Stable tag: 3.5.1.2
+Stable tag: 3.5.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,6 +57,21 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+
+= 3.6.0 - July 15 2025 =
+* New - Author box with website link and author posts button
+* New - Option to disable WordPress emojis (disable_wp_emoji)
+* New - Global font family type option: Google Fonts or System Fonts
+* Improvement - Author avatar image size adjustments for better display
+* Improvement - Featured image display option for full width and original size
+* Improvement - Block alignment improvements for Blockspare
+* Improvement - Container wrapper gap adjustments in mobile view
+* Improvement - Image path and size optimizations
+* Improvement - Custom CSS output now minified for faster performance
+* Improvement - System fonts integration and cleanup
+* Fixed - Script issues and animation glitches
+* Fixed - Various minor styling and responsive bugs
+
 = 3.5.1 - July 10 2025 =
 * Improvement - Header design refinements and RTL support
 * Improvement - Header sticky behavior for boxed and wide layouts

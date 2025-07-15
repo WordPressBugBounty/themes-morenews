@@ -180,6 +180,32 @@ $wp_customize->add_control(
 
 
 
+// Setting - global content alignment of news.
+$wp_customize->add_setting(
+    'global_font_family_type',
+    array(
+        'default' => $morenews_default['global_font_family_type'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_select',
+    )
+);
+
+$wp_customize->add_control(
+    'global_font_family_type',
+    array(
+        'label' => esc_html__('Global Fonts Family', 'morenews'),
+        'section' => 'font_typo_section',
+        'type' => 'select',
+        'choices' => array(
+            'google' => esc_html__('Google Fonts', 'morenews'),
+            'system' => esc_html__('System Fonts', 'morenews')
+        ),
+        'priority' => 100,
+    )
+);
+
+
+
 // Setting - secondary_font.
 $wp_customize->add_setting('site_title_font',
     array(
@@ -196,6 +222,7 @@ $wp_customize->add_control('site_title_font',
         'type' => 'select',
         'choices' => $morenews_google_fonts,
         'priority' => 100,
+        'active_callback' => 'global_font_family_type_status'
     )
 );
 
@@ -215,6 +242,7 @@ $wp_customize->add_control('primary_font',
         'type' => 'select',
         'choices' => $morenews_google_fonts,
         'priority' => 100,
+        'active_callback' => 'global_font_family_type_status'
     )
 );
 
@@ -234,5 +262,6 @@ $wp_customize->add_control('secondary_font',
         'type' => 'select',
         'choices' => $morenews_google_fonts,
         'priority' => 110,
+        'active_callback' => 'global_font_family_type_status'
     )
 );

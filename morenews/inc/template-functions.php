@@ -26,10 +26,10 @@ function morenews_body_classes($classes)
   }
 
   $sticky_header = morenews_get_option('disable_sticky_header_option');
-    if ($sticky_header ==  false) {
-        $sticky_header_class = morenews_get_option('sticky_header_direction');
-        $classes[] = $sticky_header_class . ' aft-sticky-header';
-    }
+  if ($sticky_header ==  false) {
+    $sticky_header_class = morenews_get_option('sticky_header_direction');
+    $classes[] = $sticky_header_class . ' aft-sticky-header';
+  }
 
 
   $global_site_mode_setting = morenews_get_option('global_site_mode_setting');
@@ -53,7 +53,7 @@ function morenews_body_classes($classes)
     $classes[] = 'header-image-full';
   } elseif ($select_header_image_mode == 'above') {
     $classes[] = 'header-image-above';
-} else {
+  } else {
     $classes[] = 'header-image-default';
   }
 
@@ -667,7 +667,7 @@ function morenews_list_popular_taxonomies($taxonomy = 'post_tag', $title = "Popu
  *
  * @return mixed|string
  */
-function morenews_get_freatured_image_url($post_id, $size = 'morenews-featured')
+function morenews_get_freatured_image_url($post_id, $size = 'large')
 {
   $url = '';
   if (has_post_thumbnail($post_id)) {
@@ -832,7 +832,7 @@ function morenews_single_post_commtents_view($post_id)
 
     ?>
   </div>
-<?php
+  <?php
 }
 
 
@@ -855,3 +855,136 @@ if (!function_exists('morenews_toggle_lazy_load')) :
 endif;
 
 add_action('wp_loaded', 'morenews_toggle_lazy_load');
+
+
+add_action('init', 'morenews_disable_wp_emojis');
+
+
+function morenews_disable_wp_emojis()
+{
+  $disable_emoji = morenews_get_option('disable_wp_emoji');
+  if ($disable_emoji) {
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+    remove_filter('the_content_feed', 'wp_staticize_emoji');
+    remove_filter('comment_text_rss', 'wp_staticize_emoji');
+    remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+    add_filter('tiny_mce_plugins', 'morenews_disable_emojis_tinymce');
+    add_filter('wp_resource_hints', 'morenews_disable_emojis_remove_dns_prefetch', 10, 2);
+  }
+}
+
+function morenews_disable_emojis_tinymce($plugins)
+{
+  if (is_array($plugins)) {
+    return array_diff($plugins, array('wpemoji'));
+  }
+  return array();
+}
+
+function morenews_disable_emojis_remove_dns_prefetch($urls, $relation_type)
+{
+  if ('dns-prefetch' === $relation_type) {
+    $emoji_svg_url = 'https://s.w.org/images/core/emoji/';
+    foreach ($urls as $key => $url) {
+      if (strpos($url, $emoji_svg_url) !== false) {
+        unset($urls[$key]);
+      }
+    }
+  }
+  return $urls;
+}
+
+if (!function_exists('morenews_author_bio_box')) :
+  function morenews_author_bio_box()
+  {
+      if (!is_single()) {
+          return;
+      }
+
+      $allowed_post_types = apply_filters('morenews_author_bio_post_types', array('post'));
+
+      if (!in_array(get_post_type(), $allowed_post_types, true)) {
+          return;
+      }
+
+      $author_id   = get_the_author_meta('ID');
+      $author_name = get_the_author();
+      $author_url  = get_author_posts_url($author_id);
+      $website     = get_the_author_meta('user_url');
+
+      // Get author role (optional)
+      $user = get_userdata($author_id);
+      $roles = $user->roles;
+      $role_name = !empty($roles) ? ucfirst($roles[0]) : '';
+
+  ?>
+      <section class="morenews-author-bio">
+
+          <?php
+
+          
+          $title = esc_html__('About the Author', 'morenews');
+          morenews_render_section_title($title);
+          ?>
+
+
+          <div class="author-box-content">
+              <div class="author-avatar">
+                  <?php echo get_avatar($author_id, 96); ?>
+              </div>
+              <div class="author-info">
+                  <h4 class="author-name">
+                      <a href="<?php echo esc_url($author_url); ?>">
+                          <?php echo esc_html($author_name); ?>
+                      </a>
+                  </h4>
+                  <?php if ($role_name) : ?>
+                      <p class="author-role">
+                          <?php echo esc_html($role_name); ?>
+                      </p>
+                  <?php endif; ?>
+                  <p class="author-description">
+                      <?php echo esc_html(get_the_author_meta('description')); ?>
+                  </p>
+
+                  <div class="author-website-and-posts">
+                  <?php if ($website) : ?>
+                      
+                          <a class="author-website" href="<?php echo esc_url($website); ?>" target="_blank" rel="noopener">
+                              <?php esc_html_e('Author\'s website', 'morenews'); ?>
+                          </a>
+                    
+                  <?php endif; ?>
+
+                  <a href="<?php echo esc_url($author_url); ?>" class="author-posts-link">
+                      <?php esc_html_e('Author\'s posts', 'morenews'); ?>
+                  </a>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+<?php
+  }
+endif;
+
+add_filter('the_content', 'morenews_append_author_bio');
+function morenews_append_author_bio($content)
+{
+  // Check if WP Post Author plugin has its author box active
+  if (has_filter('the_content', 'awpa_add_author')) {
+      return $content;
+  }
+
+  if (is_single() && in_the_loop() && is_main_query()) {
+      ob_start();
+      morenews_author_bio_box();
+      $bio_box = ob_get_clean();
+      return $content . $bio_box;
+  }
+
+  return $content;
+}

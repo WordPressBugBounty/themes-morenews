@@ -273,6 +273,27 @@ $wp_customize->add_control('enable_site_preloader',
 );
 
 
+// Setting - Disable Emoji Script.
+$wp_customize->add_setting(
+    'disable_wp_emoji',
+    array(
+        'default'           => $morenews_default['disable_wp_emoji'],
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_checkbox',
+    )
+);
+
+$wp_customize->add_control(
+    'disable_wp_emoji',
+    array(
+        'label'    => esc_html__('Disable Emoji Script', 'morenews'),
+        'description'       => esc_html__('GDPR friendly & better performance', 'morenews'),
+        'section'  => 'site_layout_settings', // Use your preferred section.
+        'type'     => 'checkbox',
+        'priority' => 10,
+    )
+);
+
 // Setting - global content alignment of news.
 $wp_customize->add_setting('global_content_alignment',
     array(
@@ -722,6 +743,31 @@ $wp_customize->add_control('single_show_featured_image',
     )
 );
 
+
+$wp_customize->add_setting(
+    'single_featured_image_view',
+    array(
+        'default' => $morenews_default['single_featured_image_view'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_select',
+    )
+);
+
+
+$wp_customize->add_control(
+    'single_featured_image_view',
+    array(
+        'label' => esc_html__('Featured Image Width', 'morenews'),
+        'section' => 'site_single_posts_settings',
+        'type' => 'select',
+        'choices' => array(
+            'full' => esc_html__('Full - Default', 'morenews'),
+            'original' => esc_html__('Original', 'morenews')            
+        ),
+        'priority' => 100,
+        'active_callback' => 'morenews_featured_image_status'
+    )
+);
 
 
 // Setting - global content alignment of news.

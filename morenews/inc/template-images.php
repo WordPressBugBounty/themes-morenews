@@ -27,9 +27,10 @@ if (!function_exists('morenews_post_thumbnail')) :
       $morenews_post_class = !empty($morenews_post_image_alignment) ? $morenews_post_image_alignment : $morenews_theme_class;
 
       if ($morenews_post_class != 'no-image') :
+        $single_featured_image_view = morenews_get_option('single_featured_image_view');
 ?>
-        <div class="post-thumbnail <?php echo esc_attr($morenews_post_class); ?>">
-          <?php echo morenews_the_post_thumbnail('morenews-featured', $post->ID); ?>
+        <div class="post-thumbnail <?php echo esc_attr($morenews_post_class); ?> <?php echo esc_attr($single_featured_image_view); ?>">
+          <?php echo morenews_the_post_thumbnail('full', $post->ID); ?>
         </div>
       <?php endif; ?>
 
