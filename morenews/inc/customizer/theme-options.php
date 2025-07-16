@@ -823,6 +823,27 @@ endif;
 
 // Setting - trending posts.
 $wp_customize->add_setting(
+    'single_show_theme_author_bio',
+    array(
+        'default' => $default['single_show_theme_author_bio'],
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'morenews_sanitize_checkbox',
+    )
+);
+
+$wp_customize->add_control(
+    'single_show_theme_author_bio',
+    array(
+        'label' => __('Show Author Bio under Content', 'morenews'),
+        'section' => 'site_single_posts_settings',
+        'settings' => 'single_show_theme_author_bio',
+        'type' => 'checkbox',
+        'priority' => 100,
+    )
+);
+
+// Setting - trending posts.
+$wp_customize->add_setting(
     'single_show_tags_list',
     array(
         'default' => $default['single_show_tags_list'],

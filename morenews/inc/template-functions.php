@@ -736,7 +736,7 @@ function morenews_get_comments_views_share($post_id)
   ?>
   <span class="aft-comment-view-share">
     <?php
-    $show_comment_count = $section_mode = morenews_get_option('global_show_comment_count');
+    $show_comment_count = morenews_get_option('global_show_comment_count');
     if ($show_comment_count == 'yes') :
       $comment_count = get_comments_number($post_id);
       if (absint($comment_count) > 1) :
@@ -814,7 +814,7 @@ function morenews_single_post_commtents_view($post_id)
   ?>
   <div class="aft-comment-view-share">
     <?php
-    $show_comment_count = $section_mode = morenews_get_option('global_show_comment_count');
+    $show_comment_count = morenews_get_option('global_show_comment_count');
     if ($show_comment_count == 'yes') :
       $comment_count = get_comments_number($post_id);
       if (absint($comment_count) > 1) :
@@ -974,6 +974,13 @@ endif;
 add_filter('the_content', 'morenews_append_author_bio');
 function morenews_append_author_bio($content)
 {
+  
+  $single_show_theme_author_bio = morenews_get_option('single_show_theme_author_bio');
+
+  if( $single_show_theme_author_bio == false){
+    return $content;
+  }
+  
   // Check if WP Post Author plugin has its author box active
   if (has_filter('the_content', 'awpa_add_author')) {
       return $content;

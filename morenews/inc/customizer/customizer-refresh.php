@@ -76,3 +76,7 @@ $wp_customize->selective_refresh->add_partial('single_related_posts_title', arra
 $wp_customize->selective_refresh->add_partial('archive_layout', array(
     'selector' => 'div.aft-archive-wrapper',     
 ));
+
+$wp_customize->selective_refresh->add_partial('single_show_theme_author_bio', array(
+    'selector' => 'div.author-box-content',     
+));

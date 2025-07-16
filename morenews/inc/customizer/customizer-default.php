@@ -258,6 +258,7 @@ function morenews_get_default_theme_options() {
     $defaults['single_featured_image_view'] = 'original';
     $defaults['global_single_content_mode'] = 'single-content-mode-default';
     $defaults['single_show_tags_list'] = 0;
+    $defaults['single_show_theme_author_bio'] = 1;
     $defaults['single_show_mailchimp_subscriptions'] = 1;
     $defaults['single_show_trending_post_list'] = 1;
     $defaults['single_post_title_view']     = 'boxed';
