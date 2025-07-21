@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built for news, magazines, blogs, and business or eCommerce websites that demand performance and flexibility. Designed with modern publishers in mind, it offers 100+ ready-to-import starter sites for Gutenberg and Elementor, making setup effortless and code-free. Featuring over 30 custom widgets, advanced block patterns, flexible header and banner options, and full drag-and-drop support, MoreNews lets you create truly unique layouts in real time. Optimized for SEO, accessibility (WCAG-ready), GDPR compliance, and Core Web Vitals, it ensures top search rankings and a smooth user experience across all devices. With built-in multilingual and RTL support (including demo content in English, Spanish, German, French, Japanese, Chinese, Arabic, and more), MoreNews is fully prepared for a global audience. Integrated WooCommerce compatibility and one-click demo import let you quickly launch a powerful online store or content hub. Light and dark reading modes, translation readiness, and a lightweight, clean codebase make it a future-proof choice for creators who value speed, style, and scalability. Explore all features at https://afthemes.com/products/morenews.
-Version: 3.6.1
+Version: 3.6.2
 Requires at least: 4.0
 Requires PHP: 5.3
 Tested up to: 6.8
@@ -6395,6 +6395,14 @@ article.archive-image-right .list-style .read-details{
 article.aft-first-post-full{
     overflow: hidden;
 }
+.home-featured-widgets .morenews-ad-sidebar,
+.morenews-ad-before-content,
+.morenews-ad-archive-before,
+.morenews-ad-archive-after{
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.morenews-ad-archive-between,
 article.latest-posts-grid{
     margin-bottom: 20px;
     overflow: hidden;
@@ -6571,14 +6579,30 @@ article.latest-posts-full .read-descprition.full-item-discription {
 
 .archive-layout-full.full-with-grid article.col-1:nth-of-type(5n+1){width: 100%;}
 
-
+.aft-archive-wrapper.archive-layout-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.archive-layout-grid.clearfix::before,
+.archive-layout-grid.clearfix::after{
+    display: none;
+}
 /*full and grid*/
 
 /*full style posts---*/
 /*masonary style posts---*/
-
+.two-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+.two-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
 .two-col-masonry .col-3{width: 50%;}
+
+.four-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+.four-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
 .four-col-masonry .col-3{width: 25%;}
+
+.three-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+.three-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1{
+    width: 33.33%;
+}
 
 .archive-layout-grid article.col-3 .read-img.read-bg-img {
     height: unset;
@@ -7102,7 +7126,7 @@ body.single .entry-content-wrap .read-img{
     margin: 20px -20px;
 }
 body.single .entry-content-wrap .read-img.morenews-featured-video {
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 #reading-progress-bar {
@@ -7240,16 +7264,6 @@ div.wp-block .editor-rich-text__editable code {
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px){
-    .entry-content .wp-block-latest-comments,
-    .entry-content .wp-block-cover, 
-    .entry-content .wp-block-cover-image,
-    .entry-content p,
-    .entry-content [class^="wp-block-"] {
-        margin-bottom: 15px;
-    }
-}
-
 .entry-content .wp-block-comment-date,
 .entry-content .wp-block-cover .wp-block-cover__background, 
 .entry-content .wp-block-cover .wp-block-cover__gradient-background, 
@@ -7271,6 +7285,17 @@ div.wp-block .editor-rich-text__editable code {
 
 .entry-content .wp-block-button:last-child{
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px){
+    .entry-content .wp-block-button:last-child,
+    .entry-content .wp-block-latest-comments,
+    .entry-content .wp-block-cover, 
+    .entry-content .wp-block-cover-image,
+    .entry-content p,
+    .entry-content [class^="wp-block-"] {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -9925,6 +9950,10 @@ article.latest-posts-grid .read-title h3,
     body.align-content-left .container-wrapper #secondary{
         /* margin-top: 20px; */
     }
+    .container-wrapper #secondary .morenews-ad-after-content,
+    .container-wrapper #primary .morenews-ad-after-content{
+        padding-bottom: 20px;
+    }
     .aft-dark-mode.home main.site-main,
     .aft-default-mode.home main.site-main {
         margin-bottom: 20px;
@@ -10144,6 +10173,8 @@ article.latest-posts-grid .read-title h3,
     }
     .af-boxed-layout .af-whole-wrapper{max-width: 700px;}
     /*featuredposts*/
+    .two-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
+    .four-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
     .full-width-content .af-reated-posts .latest-posts-grid.af-sec-post,
     body:not(.full-width-content) #secondary .morenews_featured_posts_widget .col-4.pad,
     body:not(.full-width-content) .morenews_featured_posts_widget .col-4.pad,
@@ -10165,7 +10196,7 @@ article.latest-posts-grid .read-title h3,
         clear: left;
     }
     .archive-first-post-full .four-col-masonry .col-3:nth-child(2n) {
-        clear: left;
+        /* clear: left; */
     }
     .af-main-banner-featured-posts .af-sec-post.col-4.pad.float-l:nth-child(2n+1),
     .af-reated-posts .latest-posts-grid.af-sec-post:nth-child(2n+1){
@@ -10572,6 +10603,12 @@ article.latest-posts-grid .read-title h3,
         text-align: left;
     }
     /*featuredposts*/
+    .two-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+    .three-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+    .four-col-masonry.aft-masonry-archive-posts .morenews-ad-archive-between.float-l.col-1,
+    .two-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
+    .three-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
+    .four-col-masonry.archive-layout-grid .morenews-ad-archive-between.float-l.col-1,
     body:not(.full-width-content) .morenews_featured_posts_widget .col-4.pad,
     .aft-masonry-archive-posts.three-col-masonry .col-3,
     .two-col-masonry .col-3,
@@ -11411,6 +11448,8 @@ button.morenews-reaction-button img.emoji {
 }
 body .morenews-sponsor {
     color: inherit;
+    margin: 0 0 10px !important;
+    padding: 0 0 10px !important;
 }
 
 body .morenews-source {
@@ -11469,17 +11508,28 @@ body .morenews-source a{
     font-size: 14px;
 }
 
+a.author-button.primary{
+    background-color: #007ACC;
+    border-color: #007ACC;
+    color: #ffffff;
+}
+a.author-button.primary:hover{
+    opacity: .85;
+}
+
+
 .author-website-and-posts {
     display: flex;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
 }
-
+a.author-button,
 a.author-website,
 .author-box-content a.author-posts-link {
     border: 1px solid ;
-    padding: 5px 30px;
+    /* padding: 5px 30px; */
+    padding: 3px 20px;
     display: inline-block;
     color: inherit;
     transition: all 300ms ease-out;

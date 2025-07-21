@@ -1,3 +1,12 @@
+### 3.6.2 - July 21 2025
+* Improvement - Responsive spacing and gap adjustments on homepage, single, and archive views
+* Improvement - Admin dashboard design enhancements
+* Improvement - Better control across widget areas
+* Improvement - Support for full-width and responsive
+* Improvement - Author box design refinements
+* Fixed - Script issues and animation glitches
+* Fixed - Various minor styling and responsive bugs
+
 ### 3.6.0 - July 15 2025
 * New - Author box with website link and author posts button
 * New - Option to disable WordPress emojis (disable_wp_emoji)
