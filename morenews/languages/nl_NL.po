@@ -1,52 +1,27 @@
-#
+# Translation of Themes - MoreNews in Dutch
+# This file is distributed under the same license as the Themes - MoreNews package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Colab Free\n"
-"POT-Creation-Date: 2025-07-21 08:19:39+0000\n"
-"PO-Revision-Date: 2025-07-21 08:19:39+0000\n"
-"Language: nl\n"
+"PO-Revision-Date: 2025-06-25 07:15:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Colab Tool\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: nl\n"
+"Project-Id-Version: Themes - MoreNews\n"
 
 #. Description of the theme
 #: style.css
-msgid ""
-"MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal "
-"for news, blogs, magazines, eCommerce, and business websites. Designed for "
-"high performance, it offers a wide variety of ready-to-import demo sites, "
-"including specialized 60+ starter sites for Gutenberg and Elementor, making "
-"setup fast and hassle-free. Featuring responsive design, SEO optimization, "
-"and fast loading times, MoreNews ensures your site ranks well in search "
-"engines. The theme includes over 30+ customizable widgets, Gutenberg "
-"patterns, drag-and-drop page builder features, and various banner and layout"
-" options. It also supports multilingual sites with demo content in languages"
-" like English, Chinese, Spanish, French, Japanese, and Arabic. Built with "
-"WooCommerce compatibility, you can easily integrate an online store, and the"
-" child theme feature allows for extensive customization. With light/dark "
-"reading modes, RTL support, and translation-ready functionality, MoreNews is"
-" tailored for global audiences. Explore more at "
-"https://afthemes.com/products/morenews."
+#, gp-priority: high
+msgid "MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews."
 msgstr ""
-"Morenews is een dynamisch, lichtgewicht en multifunctioneel WordPress -thema"
-" ideaal voor nieuws, blogs, tijdschriften, e -commerce en zakelijke "
-"websites. Het is ontworpen voor hoge prestaties en biedt een breed scala aan"
-" kant-en-klare demo-sites, waaronder gespecialiseerde 60+ startersites voor "
-"Gutenberg en Elementor, waardoor de opstelling snel en probleemloos wordt. "
-"Met responsief ontwerp, SEO -optimalisatie en snelle laadtijden, zorgt "
-"Morenews ervoor dat uw site goed staat in zoekmachines. Het thema bevat meer"
-" dan 30 aanpasbare widgets, Gutenberg-patronen, pagina-drop-builder-functies"
-" en verschillende banner- en lay-outopties. Het ondersteunt ook meertalige "
-"sites met demo -inhoud in talen zoals Engels, Chinees, Spaans, Frans, Japans"
-" en Arabisch. Gebouwd met WooCommerce -compatibiliteit, kunt u eenvoudig een"
-" online winkel integreren en de functie Child Theme zorgt voor uitgebreide "
-"aanpassing. Met licht/donkere leesmodi, RTL-ondersteuning en functionaliteit"
-" van vertaalklaar, is Morenews afgestemd op het wereldwijde publiek. Ontdek "
-"meer op https://afthemes.com/products/morenews."
+"MoreNews is een dynamisch, lichtgewicht en multifunctioneel WordPress thema dat ideaal is voor nieuws, blogs, tijdschriften, e-commerce en zakelijke sites. Het is ontworpen voor hoge prestaties en biedt een grote verscheidenheid aan kant-en-klare importsites, waaronder gespecialiseerde 60+ starter sites voor Gutenberg en Elementor, waardoor de instelling snel en probleemloos verloopt. Met een responsive design, SEO optimalisatie en snelle laadtijden zorgt MoreNews ervoor dat je site goed scoort in zoekmachines. Het thema bevat meer dan 30+ aanpasbare widgets, Gutenberg patronen, verslepen pagina bouwer functies en verschillende banner en lay-out opties. Het ondersteunt ook meertalige \n"
+"sites met demo inhoud in talen als Engels, Chinees, Spaans, Frans, Japans en Arabisch. Dankzij de compatibiliteit met WooCommerce kun je gemakkelijk een online winkel integreren en met de subthema functie kun je de site uitgebreid customizen. Met leesmodi voor licht/donker, ondersteuning voor RTL en functionaliteit die klaar is voor vertalingen, is MoreNews op maat gemaakt voor een globaal publiek. Ontdek meer op https://afthemes.com/products/morenews."
 
 #. Theme Name of the theme
 #: style.css inc/hooks/hook-patterns.php:15
+#, gp-priority: high
 msgid "MoreNews"
 msgstr "MoreNews"
 
@@ -75,12 +50,8 @@ msgid "🚀 Start With One Click"
 msgstr "🚀 Begin met één klik"
 
 #: admin-dashboard/rest-api/class-admin-notice.php:165
-msgid ""
-"%s is now active. We're here to help you turn your ideas into a beautiful, "
-"professional website — quickly and confidently."
-msgstr ""
-"%s is nu actief. We zijn er om je te helpen je ideeën om te zetten in een "
-"mooie, professionele site - Snel en vol vertrouwen."
+msgid "%s is now active. We're here to help you turn your ideas into a beautiful, professional website — quickly and confidently."
+msgstr "%s is nu actief. We zijn er om je te helpen je ideeën om te zetten in een mooie, professionele site - Snel en vol vertrouwen."
 
 #: admin-dashboard/rest-api/class-admin-notice.php:163
 msgid "👋 Welcome, and Thank You!"
@@ -205,12 +176,8 @@ msgstr "Toon tags onder inhoud"
 
 #: admin-dashboard/admin_dashboard.php:551
 #: admin-dashboard/rest-api/class-admin-notice.php:149
-msgid ""
-"The \"Get Started\" action will install/activate the Templatespare and "
-"Blockspare plugins for Starter Sites and Templates."
-msgstr ""
-"De actie \"Aan de slag\" zal de Templatespare en Blockspare plugins "
-"installeren/activeren voor Starter sites en templates."
+msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
+msgstr "De actie \"Aan de slag\" zal de Templatespare en Blockspare plugins installeren/activeren voor Starter sites en templates."
 
 #: admin-dashboard/admin_dashboard.php:550
 #: admin-dashboard/rest-api/class-admin-notice.php:148
@@ -218,24 +185,16 @@ msgid "Get Started"
 msgstr "Aan de slag"
 
 #: admin-dashboard/admin_dashboard.php:371
-msgid ""
-"One-click Import, Header/Footer Builder, Multilingual Support! Powered by "
-"Elespare."
-msgstr ""
-"Eén-klik import, header/footer bouwer, meertalige ondersteuning! Aangedreven"
-" door Elespare."
+msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
+msgstr "Eén-klik import, header/footer bouwer, meertalige ondersteuning! Aangedreven door Elespare."
 
 #: admin-dashboard/admin_dashboard.php:370
 msgid "Elespare plugin version should be more than %s."
 msgstr "Elespare plugin versie moet meer dan %s zijn."
 
 #: admin-dashboard/admin_dashboard.php:299
-msgid ""
-"One-click Demo Import, Block Editor Ready, No Code Required! Built with "
-"Blockspare."
-msgstr ""
-"Eén-klik demo import, blok-editor klaar, geen code vereist! Gebouwd met "
-"Blockspare."
+msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
+msgstr "Eén-klik demo import, blok-editor klaar, geen code vereist! Gebouwd met Blockspare."
 
 #: admin-dashboard/admin_dashboard.php:294
 msgid "Blockspare plugin version should be more than %s."
@@ -243,9 +202,7 @@ msgstr "Blockspare plugin versie moet meer dan %s zijn."
 
 #: admin-dashboard/admin_dashboard.php:225
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
-msgstr ""
-"Importeer een Starter site, personaliseer, en leef het in 3 eenvoudige "
-"stappen!"
+msgstr "Importeer een Starter site, personaliseer, en leef het in 3 eenvoudige stappen!"
 
 #: admin-dashboard/admin_dashboard.php:222
 msgid "The Templatespare plugin should be updated to the latest version"
@@ -361,16 +318,8 @@ msgid "Post Slider"
 msgstr "Bericht slider"
 
 #: inc/hooks/patterns/full.php:47 inc/hooks/patterns/section-2.php:35
-msgid ""
-"We mainly focus on quality code and elegant design with incredible support. "
-"Our WordPress themes and plugins empower you to create an elegant, "
-"professional, and easy-to-maintain website in no time at all. Even on mobile"
-" and tablet screens, your website will look great"
-msgstr ""
-"We richten ons vooral op kwaliteitscode en een elegant ontwerp met "
-"ongelofelijke ondersteuning. Met onze WordPress thema's en plugins maak je "
-"in een handomdraai een elegante, professionele en eenvoudig te onderhouden "
-"site. Zelfs op mobiele en tabletschermen zie je site er geweldig uit"
+msgid "We mainly focus on quality code and elegant design with incredible support. Our WordPress themes and plugins empower you to create an elegant, professional, and easy-to-maintain website in no time at all. Even on mobile and tablet screens, your website will look great"
+msgstr "We richten ons vooral op kwaliteitscode en een elegant ontwerp met ongelofelijke ondersteuning. Met onze WordPress thema's en plugins maak je in een handomdraai een elegante, professionele en eenvoudig te onderhouden site. Zelfs op mobiele en tabletschermen zie je site er geweldig uit"
 
 #: inc/hooks/patterns/full.php:31 inc/hooks/patterns/section-2.php:19
 msgid "Express Grid"
@@ -437,16 +386,8 @@ msgstr "Claim je korting"
 #. Translators: %1$s current user display name., %2$s this theme name., %3$s
 #. discount coupon code., %4$s discount percentage.
 #: inc/upgrade.php:177
-msgid ""
-"%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit "
-"with an exclusive gift: %4$s premium features! Use code %3$s at checkout. "
-"Wishing you a season filled with joyous holidays and even happier savings! "
-"🎄✨"
-msgstr ""
-"%1$s 🎁 ik hoop dat je van ons gratis %2$s thema houdt! Duik in de "
-"feeststemming met een exclusief cadeau: %4$s premium functies! Gebruik code "
-"%3$s bij afrekenen. We wensen je een seizoen vol vreugdevolle feestdagen en "
-"nog betere besparingen! 🎄✨"
+msgid "%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit with an exclusive gift: %4$s premium features! Use code %3$s at checkout. Wishing you a season filled with joyous holidays and even happier savings! 🎄✨"
+msgstr "%1$s 🎁 ik hoop dat je van ons gratis %2$s thema houdt! Duik in de feeststemming met een exclusief cadeau: %4$s premium functies! Gebruik code %3$s bij afrekenen. We wensen je een seizoen vol vreugdevolle feestdagen en nog betere besparingen! 🎄✨"
 
 #: inc/upgrade.php:73 inc/upgrade.php:93
 msgid "Cheatin&#8217; huh?"
@@ -559,27 +500,17 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Ga door met lezen van <span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Het lijkt erop dat we niet kunnen vinden wat je zoekt. Misschien kan zoeken "
-"helpen."
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Het lijkt erop dat we niet kunnen vinden wat je zoekt. Misschien kan zoeken helpen."
 
 #: template-parts/content-none.php:38
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Er kwam niets overeen met je zoektermen. Probeer het nog eens met wat andere"
-" keywords."
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Er kwam niets overeen met je zoektermen. Probeer het nog eens met wat andere keywords."
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:25
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Klaar om je eerste bericht te publiceren? <a href=\"%1$s\">Ga hier aan de "
-"slag</a>."
+msgstr "Klaar om je eerste bericht te publiceren? <a href=\"%1$s\">Ga hier aan de slag</a>."
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -600,12 +531,8 @@ msgid "All installations have been completed."
 msgstr "Alle installaties zijn afgerond."
 
 #: lib/tgm/class-tgm-plugin-activation.php:3515
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-"Het installatieproces begint. Dit proces kan een tijdje duren op sommige "
-"hosts, dus wees geduldig."
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Het installatieproces begint. Dit proces kan een tijdje duren op sommige hosts, dus wees geduldig."
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: lib/tgm/class-tgm-plugin-activation.php:3512
@@ -623,12 +550,8 @@ msgid "%1$s done."
 msgstr "%1$s gedaan."
 
 #: lib/tgm/class-tgm-plugin-activation.php:3507
-msgid ""
-"The installation and activation process is starting. This process may take a"
-" while on some hosts, so please be patient."
-msgstr ""
-"Het installatie- en activeringsproces is begonnen. Dit proces kan een tijdje"
-" duren op sommige hosts, dus wees geduldig."
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Het installatie- en activeringsproces is begonnen. Dit proces kan een tijdje duren op sommige hosts, dus wees geduldig."
 
 #. translators: 1: plugin name.
 #: lib/tgm/class-tgm-plugin-activation.php:3503
@@ -638,9 +561,7 @@ msgstr "De installatie van %1$s is mislukt."
 #. translators: 1: plugin name, 2: error message.
 #: lib/tgm/class-tgm-plugin-activation.php:3501
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-"Er is een fout opgetreden tijdens het installeren van %1$s: "
-"<strong>%2$s</strong>."
+msgstr "Er is een fout opgetreden tijdens het installeren van %1$s: <strong>%2$s</strong>."
 
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: lib/tgm/class-tgm-plugin-activation.php:3498
@@ -657,14 +578,11 @@ msgstr "Er zijn op dit moment geen plugins beschikbaar om te activeren."
 
 #: lib/tgm/class-tgm-plugin-activation.php:2908
 msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-"Er werden geen plugins geselecteerd om geactiveerd te worden. Geen actie "
-"ondernomen."
+msgstr "Er werden geen plugins geselecteerd om geactiveerd te worden. Geen actie ondernomen."
 
 #: lib/tgm/class-tgm-plugin-activation.php:2802
 msgid "No plugins are available to be updated at this time."
-msgstr ""
-"Er zijn op dit moment geen plugins beschikbaar om te worden geüpdatet."
+msgstr "Er zijn op dit moment geen plugins beschikbaar om te worden geüpdatet."
 
 #: lib/tgm/class-tgm-plugin-activation.php:2800
 msgid "No plugins are available to be installed at this time."
@@ -672,15 +590,11 @@ msgstr "Er zijn op dit moment geen plugins beschikbaar om te installeren."
 
 #: lib/tgm/class-tgm-plugin-activation.php:2759
 msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-"Er zijn geen plugins geselecteerd om te worden geüpdatet. Geen actie "
-"ondernomen."
+msgstr "Er zijn geen plugins geselecteerd om te worden geüpdatet. Geen actie ondernomen."
 
 #: lib/tgm/class-tgm-plugin-activation.php:2757
 msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-"Er werden geen plugins geselecteerd om te worden geïnstalleerd. Geen actie "
-"ondernomen."
+msgstr "Er werden geen plugins geselecteerd om te worden geïnstalleerd. Geen actie ondernomen."
 
 #: admin-dashboard/admin_dashboard.php:448
 #: admin-dashboard/rest-api/api-request.php:74
@@ -761,23 +675,31 @@ msgstr "onbekend"
 #. translators: 1: number of plugins.
 #: lib/tgm/class-tgm-plugin-activation.php:2400
 msgid "To Activate <span class=\"count\">(%s)</span>"
-msgstr ""
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Om er <span class=\"count\">(%s)</span> te activeren"
+msgstr[1] "Om er <span class=\"count\">(%s)</span> te activeren"
 
 #. translators: 1: number of plugins.
 #: lib/tgm/class-tgm-plugin-activation.php:2396
 msgid "Update Available <span class=\"count\">(%s)</span>"
-msgstr ""
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Update beschikbaar <span class=\"count\">(%s)</span>"
+msgstr[1] "Update beschikbaar <span class=\"count\">(%s)</span>"
 
 #. translators: 1: number of plugins.
 #: lib/tgm/class-tgm-plugin-activation.php:2392
 msgid "To Install <span class=\"count\">(%s)</span>"
-msgstr ""
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Om er <span class=\"count\">(%s)</span> te installeren"
+msgstr[1] "Om er <span class=\"count\">(%s)</span> te installeren"
 
 #. translators: 1: number of plugins.
 #: lib/tgm/class-tgm-plugin-activation.php:2388
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
-msgstr ""
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+msgstr[1] "Alle <span class=\"count\">(%s)</span>"
 
 #. translators: 1: install status, 2: update status
 #: lib/tgm/class-tgm-plugin-activation.php:2342
@@ -841,29 +763,17 @@ msgid "and"
 msgstr "en"
 
 #: lib/tgm/class-tgm-plugin-activation.php:937
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-"Het remote plugin pakket bestaat uit meer dan één bestand, maar de bestanden"
-" zijn niet verpakt in een map."
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "Het remote plugin pakket bestaat uit meer dan één bestand, maar de bestanden zijn niet verpakt in een map."
 
 #: lib/tgm/class-tgm-plugin-activation.php:934
 #: lib/tgm/class-tgm-plugin-activation.php:937
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-"Neem contact op met de plugin provider en vraag hen om hun plugin te "
-"verpakken volgens de WordPress richtlijnen."
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Neem contact op met de plugin provider en vraag hen om hun plugin te verpakken volgens de WordPress richtlijnen."
 
 #: lib/tgm/class-tgm-plugin-activation.php:934
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-"Het remote plugin pakket bevat geen map met de gewenste slug en het "
-"hernoemen werkte niet."
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "Het remote plugin pakket bevat geen map met de gewenste slug en het hernoemen werkte niet."
 
 #: lib/tgm/class-tgm-plugin-activation.php:523
 msgid "Update Required"
@@ -878,12 +788,8 @@ msgid "Please contact the administrator of this site for help."
 msgstr "Neem voor hulp contact op met de beheerder van deze site."
 
 #: lib/tgm/class-tgm-plugin-activation.php:396
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-"Er zijn een of meer vereiste of aanbevolen plugins om te installeren, te "
-"updaten of te activeren."
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "Er zijn een of meer vereiste of aanbevolen plugins om te installeren, te updaten of te activeren."
 
 #. translators: 1: dashboard link.
 #: lib/tgm/class-tgm-plugin-activation.php:394
@@ -892,12 +798,8 @@ msgstr "Alle plugins geïnstalleerd en met succes geactiveerd. %1$s"
 
 #. translators: 1: plugin name.
 #: lib/tgm/class-tgm-plugin-activation.php:392
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-"Plugin niet geactiveerd. Voor dit thema is een hogere versie van %s nodig. "
-"Update de plugin."
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "Plugin niet geactiveerd. Voor dit thema is een hogere versie van %s nodig. Update de plugin."
 
 #. translators: 1: plugin name.
 #: lib/tgm/class-tgm-plugin-activation.php:390
@@ -907,7 +809,9 @@ msgstr "Geen actie ondernomen. Plugin %1$s was al actief."
 #: lib/tgm/class-tgm-plugin-activation.php:388
 #: lib/tgm/class-tgm-plugin-activation.php:2952
 msgid "The following plugin was activated successfully:"
-msgstr ""
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "De volgende plugin is succesvol geactiveerd:"
+msgstr[1] "De volgende plugins zijn succesvol geactiveerd:"
 
 #: lib/tgm/class-tgm-plugin-activation.php:387
 #: lib/tgm/class-tgm-plugin-activation.php:3159
@@ -927,47 +831,63 @@ msgstr "Terug naar vereiste plugins installer"
 
 #: lib/tgm/class-tgm-plugin-activation.php:380
 msgid "Begin activating plugin"
-msgstr ""
+msgid_plural "Begin activating plugins"
+msgstr[0] "Begin met het activeren van de plugin"
+msgstr[1] "Begin met het activeren van de plugins"
 
 #: lib/tgm/class-tgm-plugin-activation.php:375
 msgid "Begin updating plugin"
-msgstr ""
+msgid_plural "Begin updating plugins"
+msgstr[0] "Begin met updaten van de plugin"
+msgstr[1] "Begin met het updaten van de plugins"
 
 #: lib/tgm/class-tgm-plugin-activation.php:370
 msgid "Begin installing plugin"
-msgstr ""
+msgid_plural "Begin installing plugins"
+msgstr[0] "Begin met het installeren van de plugin"
+msgstr[1] "Begin met het installeren van de plugins"
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:364
 msgid "The following recommended plugin is currently inactive: %1$s."
-msgstr ""
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "De volgende aanbevolen plugin is momenteel inactief: %1$s."
+msgstr[1] "De volgende aanbevolen plugins zijn momenteel inactief: %1$s."
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:358
 msgid "The following required plugin is currently inactive: %1$s."
-msgstr ""
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "De volgende vereiste plugin is momenteel inactief: %1$s."
+msgstr[1] "De volgende vereiste plugins zijn momenteel inactief: %1$s."
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:352
 msgid "There is an update available for: %1$s."
-msgstr ""
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Er is een update beschikbaar voor: %1$s."
+msgstr[1] "Er zijn updates beschikbaar voor: %1$s."
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:346
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgstr ""
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "De volgende plugin moet geüpdatet worden tot de laatste versie om maximale compatibiliteit met dit thema te verzekeren: %1$s."
+msgstr[1] "De volgende plugins moeten geüpdatet worden tot hun laatste versie om een maximale compatibiliteit met dit thema te verzekeren: %1$s."
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:340
 msgid "This theme recommends the following plugin: %1$s."
-msgstr ""
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Dit thema beveelt de volgende plugin aan: %1$s."
+msgstr[1] "Dit thema beveelt de volgende plugins aan: %1$s."
 
 #. translators: 1: plugin name(s).
 #: lib/tgm/class-tgm-plugin-activation.php:334
 msgid "This theme requires the following plugin: %1$s."
-msgstr ""
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Dit thema vereist de volgende plugin: %1$s."
+msgstr[1] "Dit thema vereist de volgende plugins: %1$s."
 
 #: lib/tgm/class-tgm-plugin-activation.php:333
 msgid "Something went wrong with the plugin API."
@@ -1107,7 +1027,9 @@ msgstr "Blader:"
 #. translators: number of items in the mini cart.
 #: inc/woocommerce.php:258
 msgid "%d item"
-msgstr ""
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d items"
 
 #: inc/woocommerce.php:254
 msgid "View your shopping cart"
@@ -1195,12 +1117,8 @@ msgid "AFTMN Trending News"
 msgstr "AFTMN trending news"
 
 #: inc/widgets/widget-social-contacts.php:67
-msgid ""
-"Social menu is not set. You need to create menu and assign it to Social Menu"
-" on Menu Settings."
-msgstr ""
-"Sociaal menu is niet ingesteld. Je moet een menu maken en het toewijzen aan "
-"sociaal menu in menu instellingen."
+msgid "Social menu is not set. You need to create menu and assign it to Social Menu on Menu Settings."
+msgstr "Sociaal menu is niet ingesteld. Je moet een menu maken en het toewijzen aan sociaal menu in menu instellingen."
 
 #: inc/widgets/widget-social-contacts.php:24
 msgid "AFTMN Social Contacts"
@@ -1340,29 +1258,16 @@ msgstr "Zeker weten"
 
 #. Translators: %1$s current user display name.
 #: inc/review.php:74
-msgid ""
-"Howdy, %1$s! We've noticed that you've been using %2$s for some time now, we"
-" hope you are loving it! We would appreciate it if you can give us "
-"%3$sreview and rating%4$s on WordPress.org! We'll continue to develop "
-"exciting new features for free in the future by sharing the love!"
-msgstr ""
-"Hallo, %1$s! We hebben gemerkt dat je %2$s al een tijdje gebruikt, we hopen "
-"dat je het leuk vindt! We zouden het op prijs stellen als je %3$sons een 5 "
-"sterren waardering geeft%4$s op WordPress.org! We zullen in de toekomst "
-"spannende nieuwe functies gratis blijven ontwikkelen door de liefde te "
-"delen!"
+msgid "Howdy, %1$s! We've noticed that you've been using %2$s for some time now, we hope you are loving it! We would appreciate it if you can give us %3$sreview and rating%4$s on WordPress.org! We'll continue to develop exciting new features for free in the future by sharing the love!"
+msgstr "Hallo, %1$s! We hebben gemerkt dat je %2$s al een tijdje gebruikt, we hopen dat je het leuk vindt! We zouden het op prijs stellen als je %3$sons een 5 sterren waardering geeft%4$s op WordPress.org! We zullen in de toekomst spannende nieuwe functies gratis blijven ontwikkelen door de liefde te delen!"
 
 #: inc/hooks/hook-tgm.php:34
 msgid "WP Post Author"
 msgstr "WP bericht auteur"
 
 #: inc/hooks/hook-meta.php:198 inc/hooks/hook-meta.php:236
-msgid ""
-"Select category color class. You can set appropriate categories color on "
-"\"Categories\" section of the theme customizer."
-msgstr ""
-"Selecteer categorie kleur klasse. Je kunt de juiste categoriekleur instellen"
-" in de sectie \"Categorieën\" van de thema customizer."
+msgid "Select category color class. You can set appropriate categories color on \"Categories\" section of the theme customizer."
+msgstr "Selecteer categorie kleur klasse. Je kunt de juiste categoriekleur instellen in de sectie \"Categorieën\" van de thema customizer."
 
 #: inc/hooks/hook-meta.php:192 inc/hooks/hook-meta.php:220
 msgid "Color Class"
@@ -1719,12 +1624,8 @@ msgid "Default"
 msgstr "Standaard"
 
 #: inc/customizer/theme-options.php:205
-msgid ""
-"Please ensure that you have enabled the plugin's breadcrumbs before choosing"
-" other than Default"
-msgstr ""
-"Zorg ervoor dat je de kruimelpaden van de plugin hebt ingeschakeld voordat "
-"je een andere dan de standaard keuze maakt"
+msgid "Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default"
+msgstr "Zorg ervoor dat je de kruimelpaden van de plugin hebt ingeschakeld voordat je een andere dan de standaard keuze maakt"
 
 #: inc/customizer/theme-options.php:204
 msgid "Select Breadcrumbs"
@@ -1813,8 +1714,7 @@ msgstr "Lijst van berichten"
 #: inc/customizer/frontpage-options.php:1411
 #: inc/customizer/frontpage-options.php:1524
 msgid "Select category to be shown on featured section "
-msgstr ""
-"Selecteer de categorie die getoond moet worden in de uitgelichte sectie "
+msgstr "Selecteer de categorie die getoond moet worden in de uitgelichte sectie "
 
 #: inc/customizer/frontpage-options.php:1410
 msgid "Select "
@@ -1893,8 +1793,7 @@ msgstr "Selecteer tag"
 
 #: inc/customizer/frontpage-options.php:283
 msgid "Select category to be shown on main slider section"
-msgstr ""
-"Selecteer de categorie die moet worden getoond in de hoofd slider sectie"
+msgstr "Selecteer de categorie die moet worden getoond in de hoofd slider sectie"
 
 #: inc/customizer/frontpage-options.php:282
 #: inc/widgets/widget-express-posts-list.php:136
@@ -1977,8 +1876,8 @@ msgstr "Slider, trending en tabs"
 msgid "Select Main Banner Layout"
 msgstr "Selecteer hoofd banner lay-out"
 
-#: inc/customizer/frontpage-options.php:85
-#: inc/customizer/theme-options.php:122 inc/customizer/theme-options.php:1111
+#: inc/customizer/frontpage-options.php:85 inc/customizer/theme-options.php:122
+#: inc/customizer/theme-options.php:1111
 msgid "Recommended Size %1$s px X %2$s px"
 msgstr "Aanbevolen grootte %1$s px X %2$s px"
 
@@ -2032,8 +1931,7 @@ msgstr "Body achtergrondkleur (donkere modus)"
 
 #: inc/customizer/font-color-options.php:66
 msgid "Body Background Color (Dark Mode) will be applied for this mode."
-msgstr ""
-"Body achtergrondkleur (donkere modus) wordt toegepast voor deze modus."
+msgstr "Body achtergrondkleur (donkere modus) wordt toegepast voor deze modus."
 
 #: inc/customizer/font-color-options.php:45
 msgid "Primary Color Section "
@@ -2267,7 +2165,9 @@ msgstr "Reacties zijn gesloten."
 #: comments.php:41
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgstr ""
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s gedachte over &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
 
 #. translators: 1: title.
 #: comments.php:34
@@ -2275,12 +2175,8 @@ msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr "Eén gedachte over &ldquo;%1$s&rdquo;"
 
 #: 404.php:23
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links"
-" below or a search?"
-msgstr ""
-"Het lijkt erop dat er niets is gevonden op deze locatie. Misschien een van "
-"de onderstaande links proberen of een zoekopdracht?"
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Het lijkt erop dat er niets is gevonden op deze locatie. Misschien een van de onderstaande links proberen of een zoekopdracht?"
 
 #: 404.php:19
 msgid "Oops! That page can&rsquo;t be found."
@@ -2288,15 +2184,18 @@ msgstr "Die pagina kan niet worden gevonden."
 
 #. Author URI of the theme
 #: style.css
+#, gp-priority: low
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
 
 #. Author of the theme
 #: style.css
+#, gp-priority: low
 msgid "AF themes"
 msgstr "AF themes"
 
 #. Theme URI of the theme
 #: style.css
+#, gp-priority: low
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
