@@ -954,13 +954,13 @@ if (!function_exists('morenews_author_bio_box')) :
                   <?php if ($website) : ?>
                       
                           <a class="author-website" href="<?php echo esc_url($website); ?>" target="_blank" rel="noopener">
-                              <?php esc_html_e('Author\'s website', 'morenews'); ?>
+                              <?php esc_html_e('Visit Website', 'morenews'); ?>
                           </a>
                     
                   <?php endif; ?>
 
                   <a href="<?php echo esc_url($author_url); ?>" class="author-posts-link">
-                      <?php esc_html_e('Author\'s posts', 'morenews'); ?>
+                      <?php esc_html_e('View All Posts', 'morenews'); ?>
                   </a>
                   </div>
 

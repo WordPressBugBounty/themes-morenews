@@ -26,7 +26,7 @@
                     <?php endif; ?>
 
                 
-                <?php $morenews_all_posts_vertical = morenews_get_posts(2, $morenews_fc[0]); ?>
+                <?php $morenews_all_posts_vertical = morenews_get_posts(4, $morenews_fc[0]); ?>
                 <div class="full-wid-resp af-widget-body">
                     <?php
                         if ($morenews_all_posts_vertical->have_posts()) :
