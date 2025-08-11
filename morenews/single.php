@@ -51,19 +51,17 @@ get_header();
                                 <div class="read-img pos-rel">
                                     <?php morenews_post_thumbnail(); ?>
                                     <?php
-
-                                    if ($aft_image_caption = get_post(get_post_thumbnail_id())->post_excerpt) :
-                                        if (trim($aft_image_caption) !== '') :
+                                    $thumbnail_id = get_post_thumbnail_id();
+                                    if ($thumbnail_id) {
+                                        $thumbnail_post = get_post($thumbnail_id);
+                                        if ($thumbnail_post && !empty(trim($thumbnail_post->post_excerpt))) {
                                     ?>
                                             <span class="aft-image-caption">
-                                                <p>
-                                                    <?php echo esc_html($aft_image_caption); ?>
-                                                </p>
+                                                <p><?php echo esc_html($thumbnail_post->post_excerpt); ?></p>
                                             </span>
                                     <?php
-                                        endif;
-                                    endif;
-
+                                        }
+                                    }
                                     ?>
                                 </div>
 

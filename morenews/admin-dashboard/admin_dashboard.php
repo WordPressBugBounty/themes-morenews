@@ -69,25 +69,32 @@ if (!class_exists('AF_themes_info')) {
     <?php
     }
 
-    function morenews_body_classes($classes)
-    {
-
-      $classes = explode(' ', $classes);
-      $classes = array_merge($classes, [
-        'aft-admin-dashboard-notice'
-      ]);
-      if (is_admin() && isset($_GET['page'])) {
-
-        $page = sanitize_text_field($_GET['page']);
-        if ($page === 'aft-block-patterns' || $page === 'aft-template-kits' || $page === $this->theme_slug || $page === 'starter-sites') {
-
-          $classes = array_merge($classes, [
-            'aft-theme-admin-menu-dashboard'
-          ]);
-        }
+    function morenews_body_classes( $classes ) {
+      if ( ! is_admin() ) {
+          return $classes; // Make sure this only affects admin area
       }
-      return implode(' ', array_unique($classes));
-    }
+  
+      // Convert to array if string
+      if ( ! is_array( $classes ) ) {
+          $classes = explode( ' ', $classes );
+      }
+  
+      // Only add classes for specific admin pages
+      if ( isset( $_GET['page'] ) ) {
+          $page = sanitize_text_field( $_GET['page'] );
+  
+          if ( $page === 'aft-block-patterns' || 
+               $page === 'aft-template-kits' || 
+               $page === $this->theme_slug || 
+               $page === 'starter-sites' ) {
+  
+              $classes[] = 'aft-admin-dashboard-notice';
+              $classes[] = 'aft-theme-admin-menu-dashboard';
+          }
+      }
+  
+      return implode( ' ', array_unique( $classes ) );
+  }
 
     public function morenews_register_info_page()
     {
