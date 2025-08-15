@@ -80,3 +80,7 @@ $wp_customize->selective_refresh->add_partial('archive_layout', array(
 $wp_customize->selective_refresh->add_partial('single_show_theme_author_bio', array(
     'selector' => 'div.author-box-content',     
 ));
+
+$wp_customize->selective_refresh->add_partial('enable_site_mode_switch', array(
+    'selector' => '#aft-dark-light-mode-wrap',     
+));

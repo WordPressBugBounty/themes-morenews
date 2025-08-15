@@ -66,6 +66,7 @@ $wp_customize->add_setting(
     array(
       'label' => esc_html__('Site Mode Switch', 'morenews'),
       'section' => 'header_options_settings',
+      'settings' => 'enable_site_mode_switch',
       'type' => 'select',
       'choices' => array(
         'aft-enable-mode-switch' => esc_html__('Enable', 'morenews'),
