@@ -33,10 +33,10 @@ class MoreNews_Theme_Review_Notice {
      * Set the required option value as needed for theme review notice.
      */
     public function morenews_theme_rating_notice() {
-        // Set or update the installed time in `morenews_theme_installed_time_v2` option table.
-        $option = get_option( 'morenews_theme_installed_time_v2' );
+        // Set or update the installed time in `morenews_theme_installed_time_v3` option table.
+        $option = get_option( 'morenews_theme_installed_time_v3' );
         if ( ! $option ) {
-            update_option( 'morenews_theme_installed_time_v2', time() );
+            update_option( 'morenews_theme_installed_time_v3', time() );
         }
 
         add_action( 'admin_notices', array( $this, 'morenews_theme_review_notice' ), 0 );
@@ -50,11 +50,11 @@ class MoreNews_Theme_Review_Notice {
     public function morenews_theme_review_notice() {
         global $current_user;
         $user_id = $current_user->ID;
-        $ignored_notice = get_user_meta( $user_id, 'morenews_ignore_theme_review_notice_v2', true );
-        $ignored_notice_partially = get_user_meta( $user_id, 'nag_morenews_ignore_theme_review_notice_partially_v2', true );
+        $ignored_notice = get_user_meta( $user_id, 'morenews_ignore_theme_review_notice_v3', true );
+        $ignored_notice_partially = get_user_meta( $user_id, 'nag_morenews_ignore_theme_review_notice_partially_v3', true );
 
         // Return from notice display if conditions are met.
-        if ( ( get_option( 'morenews_theme_installed_time_v2' ) > strtotime( '-5 days' ) ) || ( $ignored_notice_partially > strtotime( '-2 days' ) ) || ( $ignored_notice ) ) {
+        if ( ( get_option( 'morenews_theme_installed_time_v3' ) > strtotime( '-5 days' ) ) || ( $ignored_notice_partially > strtotime( '-2 days' ) ) || ( $ignored_notice ) ) {
             return;
         }
 
@@ -88,12 +88,12 @@ class MoreNews_Theme_Review_Notice {
                     <span><?php esc_html_e( 'Sure thing', 'morenews' ); ?></span>
                 </a>
 
-                <a href="?nag_morenews_ignore_theme_review_notice_partially_v2=0" class="btn button-secondary">
+                <a href="?nag_morenews_ignore_theme_review_notice_partially_v3=0" class="btn button-secondary">
                     <span class="dashicons dashicons-calendar"></span>
                     <span><?php esc_html_e( 'Remind me later', 'morenews' ); ?></span>
                 </a>
 
-                <a href="?nag_morenews_ignore_theme_review_notice_v2=0" class="btn button-secondary">
+                <a href="?nag_morenews_ignore_theme_review_notice_v3=0" class="btn button-secondary">
                     <span class="dashicons dashicons-smiley"></span>
                     <span><?php esc_html_e( 'I\'ve already done.', 'morenews' ); ?></span>
                 </a>
@@ -104,7 +104,7 @@ class MoreNews_Theme_Review_Notice {
                 </a>
             </div>
 
-            <a class="notice-dismiss" style="text-decoration:none;" href="?nag_morenews_ignore_theme_review_notice_v2=0"></a>
+            <a class="notice-dismiss" style="text-decoration:none;" href="?nag_morenews_ignore_theme_review_notice_v3=0"></a>
         </div>
 
         <?php
@@ -118,8 +118,8 @@ class MoreNews_Theme_Review_Notice {
         $user_id = $current_user->ID;
 
         /* If user clicks to ignore the notice, add that to their user meta */
-        if ( isset( $_GET['nag_morenews_ignore_theme_review_notice_v2'] ) && '0' == $_GET['nag_morenews_ignore_theme_review_notice_v2'] ) {
-            add_user_meta( $user_id, 'morenews_ignore_theme_review_notice_v2', 'true', true );
+        if ( isset( $_GET['nag_morenews_ignore_theme_review_notice_v3'] ) && '0' == $_GET['nag_morenews_ignore_theme_review_notice_v3'] ) {
+            add_user_meta( $user_id, 'morenews_ignore_theme_review_notice_v3', 'true', true );
         }
     }
 
@@ -131,8 +131,8 @@ class MoreNews_Theme_Review_Notice {
         $user_id = $current_user->ID;
 
         /* If user clicks to ignore the notice temporarily, update the timestamp */
-        if ( isset( $_GET['nag_morenews_ignore_theme_review_notice_partially_v2'] ) && '0' == $_GET['nag_morenews_ignore_theme_review_notice_partially_v2'] ) {
-            update_user_meta( $user_id, 'nag_morenews_ignore_theme_review_notice_partially_v2', time() );
+        if ( isset( $_GET['nag_morenews_ignore_theme_review_notice_partially_v3'] ) && '0' == $_GET['nag_morenews_ignore_theme_review_notice_partially_v3'] ) {
+            update_user_meta( $user_id, 'nag_morenews_ignore_theme_review_notice_partially_v3', time() );
         }
     }
 
@@ -141,26 +141,26 @@ class MoreNews_Theme_Review_Notice {
      */
     public function morenews_theme_rating_notice_data_remove() {
         $get_all_users = get_users();
-        $theme_installed_time = get_option( 'morenews_theme_installed_time_v2' );
+        $theme_installed_time = get_option( 'morenews_theme_installed_time_v3' );
 
         // Delete options data.
         if ( $theme_installed_time ) {
-            delete_option( 'morenews_theme_installed_time_v2' );
+            delete_option( 'morenews_theme_installed_time_v3' );
         }
 
         // Delete user meta data for theme review notice.
         foreach ( $get_all_users as $user ) {
-            $ignored_notice = get_user_meta( $user->ID, 'morenews_ignore_theme_review_notice_v2', true );
-            $ignored_notice_partially = get_user_meta( $user->ID, 'nag_morenews_ignore_theme_review_notice_partially_v2', true );
+            $ignored_notice = get_user_meta( $user->ID, 'morenews_ignore_theme_review_notice_v3', true );
+            $ignored_notice_partially = get_user_meta( $user->ID, 'nag_morenews_ignore_theme_review_notice_partially_v3', true );
 
             // Delete permanent notice remove data.
             if ( $ignored_notice ) {
-                delete_user_meta( $user->ID, 'morenews_ignore_theme_review_notice_v2' );
+                delete_user_meta( $user->ID, 'morenews_ignore_theme_review_notice_v3' );
             }
 
             // Delete partial notice remove data.
             if ( $ignored_notice_partially ) {
-                delete_user_meta( $user->ID, 'nag_morenews_ignore_theme_review_notice_partially_v2' );
+                delete_user_meta( $user->ID, 'nag_morenews_ignore_theme_review_notice_partially_v3' );
             }
         }
     }

@@ -76,6 +76,12 @@ if (!function_exists('morenews_header_style')) :
         color: #<?php echo esc_attr($morenews_header_text_color); ?>;
       }
 
+      body.aft-dark-mode .site-title a,
+      body.aft-dark-mode .site-header .site-branding .site-title a:visited,
+      body.aft-dark-mode .site-header .site-branding .site-title a:hover,
+      body.aft-dark-mode .site-description {
+        color: #ffffff;
+      }
       .header-layout-3 .site-header .site-branding .site-title,
       .site-branding .site-title {
         font-size: <?php echo esc_attr($morenews_site_title_font_size); ?>px;

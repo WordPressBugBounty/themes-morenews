@@ -34,7 +34,10 @@ function morenews_get_default_theme_options() {
     $defaults['global_show_min_read']           = 'no';
     $defaults['global_show_min_read_number']   = 250;
     $defaults['global_show_categories']           = 'yes';
+    // $defaults['global_show_home_menu_border']    = 'show-menu-border';
     $defaults['global_show_home_menu_border']    = 'show-menu-border';
+    $defaults['enable_site_mode_switch'] = 'aft-enable-mode-switch';
+    $defaults['continue_switched_site_mode'] = 'aft-only-on-switched-page';
     $defaults['global_site_mode_setting']    = 'aft-default-mode';
     $defaults['aft_language_switcher']           = '';
     $defaults['show_primary_menu_desc']           = 0;

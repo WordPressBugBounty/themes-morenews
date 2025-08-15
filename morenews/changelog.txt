@@ -1,3 +1,10 @@
+### 3.6.7 - Aug 15 2025
+* New - Light/Dark mode toggle and dark mode design improvements
+* Options - Customizing > Header Options > Header Settings > Site Mode Switch
+* Update - Admin notice improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 ### 3.6.6 - Aug 11 2025
 * Update - PHP 8+ compatibility improvement
 * Update - Google SEO compatibility improvement

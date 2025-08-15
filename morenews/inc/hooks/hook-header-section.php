@@ -220,3 +220,34 @@ if (!function_exists('morenews_load_site_branding_section')):
 
 endif;
 add_action('morenews_load_site_branding', 'morenews_load_site_branding_section');
+
+
+
+//watch online
+if (!function_exists('morenews_dark_and_light_mode_section')) :
+
+  function morenews_dark_and_light_mode_section()
+  {
+    $morenews_enable_site_mode_switch = morenews_get_option('enable_site_mode_switch');
+    if ($morenews_enable_site_mode_switch == 'aft-enable-mode-switch') :
+      $morenews_global_site_mode_setting = morenews_get_option('global_site_mode_setting');
+
+      if (isset($_COOKIE["morenews-stored-site-mode"])) {
+        $morenews_global_site_mode_setting = $_COOKIE["morenews-stored-site-mode"];
+      } else {
+        if (!empty($morenews_global_site_mode_setting)) {
+          $morenews_global_site_mode_setting = $morenews_global_site_mode_setting;
+        }
+      }
+    ?>
+      <div id="aft-dark-light-mode-wrap">
+        <a href="javascript:void(0)" class="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" data-site-mode="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" id="aft-dark-light-mode-btn">
+          <span class="aft-icon-circle"><?php esc_html_e('Light/Dark Button', 'morenews'); ?></span>
+        </a>
+      </div>
+    <?php
+    endif;
+  }
+
+endif;
+add_action('morenews_dark_and_light_mode', 'morenews_dark_and_light_mode_section');

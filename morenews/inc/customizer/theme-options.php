@@ -49,6 +49,32 @@ $wp_customize->add_section('header_options_settings',
     )
 );
 
+
+
+// Setting - global content alignment of news.
+$wp_customize->add_setting(
+    'enable_site_mode_switch',
+    array(
+      'default' => $morenews_default['enable_site_mode_switch'],
+      'capability' => 'edit_theme_options',
+      'sanitize_callback' => 'morenews_sanitize_select',
+    )
+  );
+  
+  $wp_customize->add_control(
+    'enable_site_mode_switch',
+    array(
+      'label' => esc_html__('Site Mode Switch', 'morenews'),
+      'section' => 'header_options_settings',
+      'type' => 'select',
+      'choices' => array(
+        'aft-enable-mode-switch' => esc_html__('Enable', 'morenews'),
+        'aft-disable-mode-switch' => esc_html__('Disable', 'morenews'),
+      ),
+      'priority' => 5,
+    )
+  );
+
 // Setting - sticky_header_option.
 $wp_customize->add_setting(
     'disable_sticky_header_option',

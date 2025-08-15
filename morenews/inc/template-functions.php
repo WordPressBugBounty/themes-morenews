@@ -33,10 +33,27 @@ function morenews_body_classes($classes)
 
 
   $global_site_mode_setting = morenews_get_option('global_site_mode_setting');
-
-  if (!empty($global_site_mode_setting)) {
-    $classes[] = $global_site_mode_setting;
+  $morenews_enable_site_mode_switch = morenews_get_option('enable_site_mode_switch');
+  if ($morenews_enable_site_mode_switch == 'aft-enable-mode-switch') {
+    if (isset($_COOKIE["morenews-stored-site-mode"])) {
+      $classes[] = $_COOKIE["morenews-stored-site-mode"];
+    } else {
+      if (!empty($global_site_mode_setting)) {
+        $classes[] = $global_site_mode_setting;
+      }
+    }
+  } else {
+    if (!empty($global_site_mode_setting)) {
+      $classes[] = $global_site_mode_setting;
+    }
   }
+
+
+  // $global_site_mode_setting = morenews_get_option('global_site_mode_setting');
+
+  // if (!empty($global_site_mode_setting)) {
+  //   $classes[] = $global_site_mode_setting;
+  // }
 
   $secondary_color_mode = morenews_get_option('secondary_color_mode');
   if (!empty($secondary_color_mode)) {

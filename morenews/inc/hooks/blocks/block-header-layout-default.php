@@ -102,6 +102,7 @@ $morenews_show_top_header_section = morenews_get_option('show_top_header_section
         </div>
       </div>
       <div class="search-watch">
+      <?php do_action('morenews_dark_and_light_mode'); ?>
         <?php do_action('morenews_load_search_form'); ?>
         <?php do_action('morenews_load_watch_online'); ?>
       </div>

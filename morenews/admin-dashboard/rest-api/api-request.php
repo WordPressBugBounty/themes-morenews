@@ -57,10 +57,10 @@ function morenews_get_all_useful_plugins(\WP_REST_Request $request)
     if (!is_wp_error($api)) { // confirm error free
 
       $main_plugin_file = morenews_get_plugin_file($plugin['slug']); // Get main plugin file
-      if ($plugin['slug'] == 'templatespare') {
+      if ($plugin['slug'] == 'templatespare' && !empty($plugin['title'])) {
         $title = $plugin['title'];
       } else {
-        $title = $api->name;
+        $title = $api->name ?? '';
       }
 
       if (morenews_check_file_extension($main_plugin_file)) { // check file extension
@@ -157,6 +157,11 @@ function morenews_get_plugin_file($plugin_slug)
 
 function morenews_check_file_extension($filename)
 {
+  
+  if (empty($filename) || !is_string($filename)) {
+    return false;
+}
+  
   if (substr(strrchr($filename, '.'), 1) === 'php') {
     // has .php exension
     return true;

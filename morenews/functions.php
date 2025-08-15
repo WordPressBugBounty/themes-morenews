@@ -384,6 +384,9 @@ function morenews_scripts()
   $min = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
   $morenews_version = wp_get_theme()->get('Version');
   wp_enqueue_script('jquery');
+  wp_enqueue_script('jquery-cookie', get_template_directory_uri() . '/assets/jquery.cookie.js');
+  wp_enqueue_script('morenews-toggle-script', get_template_directory_uri() . '/assets/toggle-script.js', array('jquery-cookie'), $morenews_version, true);
+
   wp_enqueue_script('morenews-background-script', get_template_directory_uri() . '/assets/background-script.js', array('jquery'), $morenews_version);
   wp_enqueue_script('morenews-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $morenews_version, true);
   wp_enqueue_script('morenews-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), $morenews_version, true);
