@@ -1,3 +1,8 @@
+### 3.6.8 - Aug 21 2025 =
+* Update - Post navigation HTML structure updated for better styling
+* Update - Previous/Next post labels improved for translations (i18n)
+* Update - Screen reader text corrected to "Post navigation" for accessibility
+
 ### 3.6.7 - Aug 15 2025
 * New - Light/Dark mode toggle and dark mode design improvements
 * Options - Customizing > Header Options > Header Settings > Site Mode Switch
