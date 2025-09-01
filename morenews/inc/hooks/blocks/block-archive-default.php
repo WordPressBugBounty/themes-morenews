@@ -32,9 +32,9 @@ $morenews_show_excerpt = morenews_get_option('archive_content_view');
         </div>
       <?php endif; ?>
       <div class="read-title">
-        <?php the_title('<h4 class="entry-title">
+        <?php the_title('<h3 class="entry-title">
                     <a href="' . esc_url(get_permalink()) . '" aria-label="' . esc_attr(get_the_title($morenews_post_id, 'morenews')) . '" rel="bookmark">', '</a>
-                </h4>'); ?>
+                </h3>'); ?>
       </div>
 
       <?php if ('post' === get_post_type()) : ?>

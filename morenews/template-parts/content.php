@@ -32,6 +32,12 @@
                 </div>
             <?php endif; ?>
             <?php
+            // the_post_navigation(array(
+            //     'prev_text' => __('<span class="em-post-navigation">Previous:</span> %title', 'morenews'),
+            //     'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'morenews'),                
+            //     'screen_reader_text' => __('Continue Reading', 'morenews')
+            // ));
+
             the_post_navigation( array(
                 'prev_text' => sprintf(
                     /* translators: %s: Title of the previous post. */
@@ -46,6 +52,7 @@
                 /* translators: Hidden heading for the post navigation section. */
                 'screen_reader_text' => esc_html__( 'Post navigation', 'morenews' ),
             ) );
+            
             ?>
             <?php wp_link_pages(array(
                 'before' => '<div class="page-links">' . esc_html__('Pages:', 'morenews'),

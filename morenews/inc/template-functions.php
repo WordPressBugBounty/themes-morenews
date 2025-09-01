@@ -48,7 +48,6 @@ function morenews_body_classes($classes)
     }
   }
 
-
   // $global_site_mode_setting = morenews_get_option('global_site_mode_setting');
 
   // if (!empty($global_site_mode_setting)) {
@@ -61,8 +60,13 @@ function morenews_body_classes($classes)
   }
 
   $header_layout = morenews_get_option('header_layout');
-  if (!empty($header_layout)) {
-    $classes[] = 'aft-' . $header_layout;
+  $morenews_enable_header_builder = morenews_get_option('athfb_show_checkbox_header');
+  if ($morenews_enable_header_builder) {
+    $classes[] =  'aft-header-layout-side';
+  } else {
+    if (!empty($header_layout)) {
+      $classes[] = 'aft-' . $header_layout;
+    }
   }
 
   $select_header_image_mode = morenews_get_option('select_header_image_mode');

@@ -9,13 +9,17 @@ if (!function_exists('morenews_header_section')) :
   function morenews_header_section()
   {
 
+    // $morenews_header_layout = morenews_get_option('header_layout');
     $morenews_header_layout = morenews_get_option('header_layout');
+
+
 
 
 ?>
 
     <header id="masthead" class="<?php echo esc_attr($morenews_header_layout); ?> morenews-header">
-      <?php morenews_get_block('layout-default', 'header');  ?>
+      <?php morenews_get_block('layout-default', 'header'); ?>
+
     </header>
 
     <!-- end slider-section -->
@@ -24,8 +28,32 @@ if (!function_exists('morenews_header_section')) :
 endif;
 add_action('morenews_action_header_section', 'morenews_header_section', 40);
 
+
+if (!function_exists('morenews_header_section_builder')) :
+  /**
+   * Banner Slider
+   *
+   * @since MoreNews 1.0.0
+   *
+   */
+  function morenews_header_section_builder()
+  {
+
+
+  ?>
+
+    <header id="masthead" class="header-layout-side morenews-header">
+      <?php athfb_render_header_builder(); ?>
+    </header>
+
+    <!-- end slider-section -->
+  <?php
+  }
+endif;
+add_action('morenews_action_header_section_builder', 'morenews_header_section_builder', 40);
+
 //Load main nav menu
-if (!function_exists('morenews_main_menu_nav_section')):
+if (!function_exists('morenews_main_menu_nav_section')) :
 
   function morenews_main_menu_nav_section()
   {
@@ -63,7 +91,7 @@ endif;
 add_action('morenews_action_main_menu_nav', 'morenews_main_menu_nav_section', 40);
 
 //load search form
-if (!function_exists('morenews_load_search_form_section')):
+if (!function_exists('morenews_load_search_form_section')) :
 
   function morenews_load_search_form_section()
   {
@@ -79,30 +107,30 @@ if (!function_exists('morenews_load_search_form_section')):
       </div>
     </div>
 
-    <?php } 
+    <?php }
 
 endif;
 add_action('morenews_load_search_form', 'morenews_load_search_form_section');
 
 
 //watch online
-if (!function_exists('morenews_load_watch_online_section')):
+if (!function_exists('morenews_load_watch_online_section')) :
 
   function morenews_load_watch_online_section()
   {
 
     $morenews_aft_enable_custom_link = morenews_get_option('show_watch_online_section');
-    if ($morenews_aft_enable_custom_link):
+    if ($morenews_aft_enable_custom_link) :
       $morenews_aft_custom_link = morenews_get_option('aft_custom_link');
       $morenews_aft_custom_link = !empty($morenews_aft_custom_link) ? $morenews_aft_custom_link : '#';
       $morenews_aft_custom_icon = morenews_get_option('aft_custom_icon');
       $morenews_aft_custom_title = morenews_get_option('aft_custom_title');
-      if (!empty($morenews_aft_custom_title)):
+      if (!empty($morenews_aft_custom_title)) :
     ?>
         <div class="custom-menu-link">
           <a href="<?php echo esc_url($morenews_aft_custom_link); ?>" aria-label="<?php echo esc_attr('View ' . $morenews_aft_custom_title, 'morenews'); ?>">
 
-            <?php if (!empty($morenews_aft_custom_icon)): ?>
+            <?php if (!empty($morenews_aft_custom_icon)) : ?>
 
               <i class="<?php echo esc_attr($morenews_aft_custom_icon); ?>"></i>
             <?php endif; ?>
@@ -118,7 +146,7 @@ endif;
 add_action('morenews_load_watch_online', 'morenews_load_watch_online_section');
 
 //Load off canvas section
-if (!function_exists('morenews_load_off_canvas_section')):
+if (!function_exists('morenews_load_off_canvas_section')) :
 
   function morenews_load_off_canvas_section()
   {
@@ -142,11 +170,11 @@ endif;
 add_action('morenews_load_off_canvas', 'morenews_load_off_canvas_section');
 
 //load date part
-if (!function_exists('morenews_load_date_section')):
+if (!function_exists('morenews_load_date_section')) :
   function morenews_load_date_section()
   {
     $morenews_show_date = morenews_get_option('show_date_section');
-    if ($morenews_show_date == true): ?>
+    if ($morenews_show_date == true) : ?>
       <span class="topbar-date">
         <?php
         echo wp_kses_post(date_i18n(get_option('date_format')));
@@ -158,14 +186,14 @@ endif;
 add_action('morenews_load_date', 'morenews_load_date_section');
 
 //load social icon menu
-if (!function_exists('morenews_load_social_menu_section')):
+if (!function_exists('morenews_load_social_menu_section')) :
 
   function morenews_load_social_menu_section()
   {
     ?>
     <?php
     $morenews_show_social_menu = morenews_get_option('show_social_menu_section');
-    if (has_nav_menu('aft-social-nav') && $morenews_show_social_menu == true): ?>
+    if (has_nav_menu('aft-social-nav') && $morenews_show_social_menu == true) : ?>
 
       <?php
       wp_nav_menu(array(
@@ -186,7 +214,7 @@ add_action('morenews_load_social_menu', 'morenews_load_social_menu_section');
 
 //Load site branding section
 
-if (!function_exists('morenews_load_site_branding_section')):
+if (!function_exists('morenews_load_site_branding_section')) :
   function morenews_load_site_branding_section()
   {
     $morenews_class = '';
@@ -216,11 +244,10 @@ if (!function_exists('morenews_load_site_branding_section')):
       endif; ?>
     </div>
 
-<?php }
+    <?php }
 
 endif;
 add_action('morenews_load_site_branding', 'morenews_load_site_branding_section');
-
 
 
 //watch online
@@ -245,7 +272,7 @@ if (!function_exists('morenews_dark_and_light_mode_section')) :
           <span class="aft-icon-circle"><?php esc_html_e('Light/Dark Button', 'morenews'); ?></span>
         </a>
       </div>
-    <?php
+<?php
     endif;
   }
 

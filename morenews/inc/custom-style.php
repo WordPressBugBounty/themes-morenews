@@ -129,7 +129,7 @@ if (!function_exists('morenews_custom_style')) {
 
             .aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-background),
             .aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-background),
-
+            #reading-progress-bar,
             a.comment-reply-link,
             body.aft-default-mode .reply a,
             body.aft-dark-mode .reply a,
@@ -156,6 +156,9 @@ if (!function_exists('morenews_custom_style')) {
             body .morenews-pagination .nav-links .page-numbers.current,
             body #scroll-up,
             button,
+            a.author-button.primary,
+            .morenews-reaction-button .reaction-percentage,
+            h3.morenews-subtitle:after,
             body article.sticky .read-single:before,
             .aft-readmore-wrapper a.aft-readmore:hover,
             body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,
@@ -175,13 +178,13 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,
             body.aft-default-mode .aft-readmore-wrapper a.aft-readmore:hover,
 
+            a.author-button.primary,
+            .morenews-post-badge,
             body.single .entry-header .aft-post-excerpt-and-meta .post-excerpt,
             body.aft-dark-mode.single span.tags-links a:hover,
             .morenews-pagination .nav-links .page-numbers.current,
             .aft-readmore-wrapper a.aft-readmore:hover,
-            p.awpa-more-posts a:hover{
-            border-color: <?php morenews_esc_custom_style($secondary_color) ?>;
-            }
+            p.awpa-more-posts a:hover,
             .wp-post-author-meta .wp-post-author-meta-more-posts a.awpa-more-posts:hover{
             border-color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
@@ -277,6 +280,10 @@ if (!function_exists('morenews_custom_style')) {
             .stars a:active,
             .stars a:focus,
             .morenews-widget.widget_text a,
+            a.author-website:hover,
+            .author-box-content a.author-posts-link:hover,
+            body .morenews-sponsor a,
+            body .morenews-source a,
             body.aft-default-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             body.aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
             .entry-content .wp-block-latest-comments a:not(.has-text-color):hover,
@@ -408,13 +415,6 @@ if (!function_exists('morenews_custom_style')) {
             font-family: <?php morenews_esc_custom_style($secondary_font) ?>;
             }
         <?php endif; ?>
-
-        <!-- .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
-        .elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
-        .elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
-        .elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
-        max-width: 1300px;
-        } -->
 
         .container-wrapper .elementor {
         max-width: 100%;

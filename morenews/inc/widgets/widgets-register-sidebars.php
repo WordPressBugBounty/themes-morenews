@@ -62,7 +62,7 @@ function morenews_widgets_init()
     
     
     register_sidebar(array(
-        'name' => esc_html__('Footer First Section', 'morenews'),
+        'name' => esc_html__('Footer Widget 1', 'morenews'),
         'id' => 'footer-first-widgets-section',
         'description' => esc_html__('Displays items on footer first column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
@@ -73,7 +73,7 @@ function morenews_widgets_init()
 
 
     register_sidebar(array(
-        'name' => esc_html__('Footer Second Section', 'morenews'),
+        'name' => esc_html__('Footer Widget 2', 'morenews'),
         'id' => 'footer-second-widgets-section',
         'description' => esc_html__('Displays items on footer second column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
@@ -83,7 +83,7 @@ function morenews_widgets_init()
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Footer Third Section', 'morenews'),
+        'name' => esc_html__('Footer Widget 3', 'morenews'),
         'id' => 'footer-third-widgets-section',
         'description' => esc_html__('Displays items on footer third column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',

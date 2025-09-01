@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.8
-Stable tag: 3.6.8
+Stable tag: 3.7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -20,7 +20,7 @@ MoreNews WordPress Theme, Copyright 2025 AF themes
 MoreNews is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
-MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built for news, magazines, blogs, and business or eCommerce websites that demand performance and flexibility. Designed with modern publishers in mind, it offers 100+ ready-to-import starter sites for Gutenberg and Elementor, making setup effortless and code-free. Featuring over 30 custom widgets, advanced block patterns, flexible header and banner options, and full drag-and-drop support, MoreNews lets you create truly unique layouts in real time. Optimized for SEO, accessibility (WCAG-ready), GDPR compliance, and Core Web Vitals, it ensures top search rankings and a smooth user experience across all devices. With built-in multilingual and RTL support (including demo content in English, Spanish, German, French, Japanese, Chinese, Arabic, and more), MoreNews is fully prepared for a global audience. Integrated WooCommerce compatibility and one-click demo import let you quickly launch a powerful online store or content hub. Light and dark reading modes, translation readiness, and a lightweight, clean codebase make it a future-proof choice for creators who value speed, style, and scalability. Explore all features at https://afthemes.com/products/morenews.
+MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
 
 == Installation ==
 
@@ -57,11 +57,21 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
-
-= 3.6.8 - Aug 21 2025 =
-* Update - Post navigation HTML structure updated for better styling
-* Update - Previous/Next post labels improved for translations (i18n)
-* Update - Screen reader text corrected to "Post navigation" for accessibility
+= 3.7.0 - Sept 01 2025 =
+* New - Header & Footer Builder with drag-and-drop support
+* New - Customizer options for builder elements (menus, social icons, search, logo, ads, promotion, etc.)
+* New - Footer Builder elements: navigation, widgets, custom HTML, dynamic text
+* New - Accessibility enhancements (ARIA labels, focus states, tab index improvements)
+* Option - Disable Sticky Header toggle in Customizer
+* Update - Improved responsive design for Header & Footer Builder
+* Update - Optimized Customizer live preview for builder controls
+* Update - Updated .pot file for translations and added sanitization improvements
+* Update - Builder CSS separated and optimized for frontend
+* Fixed - Sticky header and footer issues in Builder
+* Fixed - JavaScript conflicts with toggle/collapsed states and console errors
+* Fixed - Social menu dropdown, widget alignment, and RTL design issues
+* Fixed - Customizer preview flickering, overflow, and tab index problems
+* Fixed - Sprintf and sanitization warnings
 
 = 3.6.7 - Aug 15 2025 =
 * New - Light/Dark mode toggle and dark mode design improvements
@@ -78,7 +88,6 @@ MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jet
 * Update - Post excerpt improvement
 * Update - Block Style improvement
 * Fixed - Some styling glitch
-
 
 = 3.6.3 - July 25 2025 =
 * New - German language file

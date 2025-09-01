@@ -163,7 +163,8 @@ add_action('after_setup_theme', 'morenews_content_width', 0);
  * @return string Filtered font string with only the allowed variants.
  */
 
- function morenews_is_google_fonts_enabled() {
+function morenews_is_google_fonts_enabled()
+{
   $global_font_type = morenews_get_option('global_font_family_type');
   return $global_font_type === 'google';
 }
@@ -192,47 +193,47 @@ function morenews_filter_font_variants($font)
  */
 function morenews_get_fonts_url()
 {
-    static $cached_url = null;
-    if ($cached_url !== null) {
-        return $cached_url;
+  static $cached_url = null;
+  if ($cached_url !== null) {
+    return $cached_url;
+  }
+
+  // 💡 Check if Google Fonts are enabled
+  if (!morenews_is_google_fonts_enabled()) {
+    $cached_url = '';
+    return '';
+  }
+
+  $fonts_url = '';
+  $subsets = 'latin';
+  $theme_fonts = array();
+
+  $site_title_font = morenews_get_option('site_title_font');
+  $primary_font    = morenews_get_option('primary_font');
+  $secondary_font  = morenews_get_option('secondary_font');
+
+  $all_fonts = array($site_title_font, $primary_font, $secondary_font);
+
+  $theme_fonts = array_filter(array_map(function ($font) {
+    if (empty($font)) return '';
+    if (stripos($font, 'Open+Sans') !== false || stripos($font, 'Oswald') !== false) {
+      return null;
     }
+    return morenews_filter_font_variants($font);
+  }, $all_fonts));
 
-    // 💡 Check if Google Fonts are enabled
-    if (!morenews_is_google_fonts_enabled()) {
-        $cached_url = '';
-        return '';
-    }
+  $unique_fonts = array_unique($theme_fonts);
 
-    $fonts_url = '';
-    $subsets = 'latin';
-    $theme_fonts = array();
+  if (!empty($unique_fonts)) {
+    $fonts_url = add_query_arg(array(
+      'family'  => implode('|', $unique_fonts),
+      'subset'  => $subsets,
+      'display' => 'swap',
+    ), 'https://fonts.googleapis.com/css');
+  }
 
-    $site_title_font = morenews_get_option('site_title_font');
-    $primary_font    = morenews_get_option('primary_font');
-    $secondary_font  = morenews_get_option('secondary_font');
-
-    $all_fonts = array($site_title_font, $primary_font, $secondary_font);
-
-    $theme_fonts = array_filter(array_map(function ($font) {
-        if (empty($font)) return '';
-        if (stripos($font, 'Open+Sans') !== false || stripos($font, 'Oswald') !== false) {
-            return null;
-        }
-        return morenews_filter_font_variants($font);
-    }, $all_fonts));
-
-    $unique_fonts = array_unique($theme_fonts);
-
-    if (!empty($unique_fonts)) {
-        $fonts_url = add_query_arg(array(
-            'family'  => implode('|', $unique_fonts),
-            'subset'  => $subsets,
-            'display' => 'swap',
-        ), 'https://fonts.googleapis.com/css');
-    }
-
-    $cached_url = $fonts_url;
-    return $fonts_url;
+  $cached_url = $fonts_url;
+  return $fonts_url;
 }
 
 
@@ -241,11 +242,11 @@ function morenews_get_fonts_url()
  */
 function morenews_add_preconnect_links($urls, $relation_type)
 {
-    if ('preconnect' === $relation_type && morenews_is_google_fonts_enabled()) {
-        $urls[] = 'https://fonts.googleapis.com';
-        $urls[] = 'https://fonts.gstatic.com';
-    }
-    return $urls;
+  if ('preconnect' === $relation_type && morenews_is_google_fonts_enabled()) {
+    $urls[] = 'https://fonts.googleapis.com';
+    $urls[] = 'https://fonts.gstatic.com';
+  }
+  return $urls;
 }
 
 add_filter('wp_resource_hints', 'morenews_add_preconnect_links', 10, 2);
@@ -255,46 +256,46 @@ add_filter('wp_resource_hints', 'morenews_add_preconnect_links', 10, 2);
  */
 function morenews_preload_google_fonts()
 {
-    if (!morenews_is_google_fonts_enabled() || morenews_is_amp()) {
-        return;
+  if (!morenews_is_google_fonts_enabled() || morenews_is_amp()) {
+    return;
+  }
+
+  $fonts_url = morenews_get_fonts_url();
+  $site_title_font = morenews_get_option('site_title_font');
+  $primary_font    = morenews_get_option('primary_font');
+  $secondary_font  = morenews_get_option('secondary_font');
+
+  $fonts_in_use = array($site_title_font, $primary_font, $secondary_font);
+
+  $load_oswald     = false;
+  $load_open_sans  = false;
+
+  foreach ($fonts_in_use as $font) {
+    $font_clean = strtolower($font);
+    if (strpos($font_clean, 'oswald') !== false) {
+      $load_oswald = true;
     }
-
-    $fonts_url = morenews_get_fonts_url();
-    $site_title_font = morenews_get_option('site_title_font');
-    $primary_font    = morenews_get_option('primary_font');
-    $secondary_font  = morenews_get_option('secondary_font');
-
-    $fonts_in_use = array($site_title_font, $primary_font, $secondary_font);
-
-    $load_oswald     = false;
-    $load_open_sans  = false;
-
-    foreach ($fonts_in_use as $font) {
-        $font_clean = strtolower($font);
-        if (strpos($font_clean, 'oswald') !== false) {
-            $load_oswald = true;
-        }
-        if (strpos($font_clean, 'open+sans') !== false || strpos($font_clean, 'open sans') !== false) {
-            $load_open_sans = true;
-        }
+    if (strpos($font_clean, 'open+sans') !== false || strpos($font_clean, 'open sans') !== false) {
+      $load_open_sans = true;
     }
+  }
 
-    if ($fonts_url) {
-        printf(
-            "<link rel='preload' href='%s' as='style' onload=\"this.onload=null;this.rel='stylesheet'\" type='text/css' media='all' crossorigin='anonymous'>\n",
-            esc_url($fonts_url)
-        );
-    }
+  if ($fonts_url) {
+    printf(
+      "<link rel='preload' href='%s' as='style' onload=\"this.onload=null;this.rel='stylesheet'\" type='text/css' media='all' crossorigin='anonymous'>\n",
+      esc_url($fonts_url)
+    );
+  }
 
-    $base = get_template_directory_uri() . '/assets/fonts/';
-    if ($load_oswald) {
-        echo "<link rel='preload' href='{$base}oswald/oswald-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-        echo "<link rel='preload' href='{$base}oswald/oswald-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-    }
-    if ($load_open_sans) {
-        echo "<link rel='preload' href='{$base}open-sans/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-        echo "<link rel='preload' href='{$base}open-sans/open-sans-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-    }
+  $base = get_template_directory_uri() . '/assets/fonts/';
+  if ($load_oswald) {
+    echo "<link rel='preload' href='{$base}oswald/oswald-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    echo "<link rel='preload' href='{$base}oswald/oswald-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+  }
+  if ($load_open_sans) {
+    echo "<link rel='preload' href='{$base}open-sans/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    echo "<link rel='preload' href='{$base}open-sans/open-sans-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+  }
 }
 
 add_action('wp_head', 'morenews_preload_google_fonts', 1);
@@ -304,14 +305,14 @@ add_action('wp_head', 'morenews_preload_google_fonts', 1);
  */
 function morenews_enqueue_fonts()
 {
-    if (!morenews_is_google_fonts_enabled()) {
-        return; // Do not enqueue if system fonts
-    }
+  if (!morenews_is_google_fonts_enabled()) {
+    return; // Do not enqueue if system fonts
+  }
 
-    $fonts_url = morenews_get_fonts_url();
-    if ($fonts_url) {
-        wp_enqueue_style('morenews-google-fonts', $fonts_url, array(), null);
-    }
+  $fonts_url = morenews_get_fonts_url();
+  if ($fonts_url) {
+    wp_enqueue_style('morenews-google-fonts', $fonts_url, array(), null);
+  }
 }
 
 
@@ -340,7 +341,29 @@ function morenews_style_files()
 
   wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/assets/magnific-popup/magnific-popup.css');
 
+  $show_footer_checkbox = morenews_get_option('athfb_show_checkbox_footer');
+  $show_header_checkbox = morenews_get_option('athfb_show_checkbox_header');
 
+  if ($show_header_checkbox) {
+    wp_register_style(
+      'morenew_header_builder',
+      get_template_directory_uri() . '/assets/css/header-builder.css',
+      array(),
+      null,
+      'all'
+    );
+    wp_enqueue_style('morenew_header_builder');
+  }
+  if ($show_footer_checkbox) {
+    wp_register_style(
+      'morenew_footer_builder',
+      get_template_directory_uri() . '/assets/css/footer-builder.css',
+      array(),
+      null,
+      'all'
+    );
+    wp_enqueue_style('morenew_footer_builder');
+  }
   /**
    * Load WooCommerce compatibility file.
    */
@@ -547,3 +570,52 @@ function morenews_transltion_init()
 {
   load_theme_textdomain('morenews', get_template_directory()  . '/languages');
 }
+
+
+require_once get_template_directory() . '/inc/customizer/builder/options.php';
+function ATHFB_load_files()
+{
+  // Only load in admin or customizer context
+  if (!is_admin() && !is_customize_preview()) {
+    return;
+  }
+
+  // Include files in the correct order
+  require_once get_template_directory() . '/inc/customizer/builder/class-header-footer-builder.php';
+  require_once get_template_directory() . '/inc/customizer/builder/class-header-footer-builder-control.php';
+  require_once get_template_directory() . '/inc/customizer/builder/class-block-toggle.php';
+}
+
+// Load files when WordPress is ready and customizer classes are available
+add_action('customize_register', 'athfb_load_files', 1);
+function athfb_loadFiles()
+{
+  $loadHeader = morenews_get_option('athfb_show_checkbox_header');
+  $loadFooter = morenews_get_option('athfb_show_checkbox_footer');
+  // if ($loadHeader || $loadFooter) {
+  require_once get_template_directory() . '/inc/customizer/builder/builder-structure.php';
+  require_once get_template_directory() . '/inc/customizer/builder/header-builder-structure.php';
+  require_once get_template_directory() . '/inc/customizer/builder/footer-builder-structure.php';
+  // }
+}
+
+
+add_action('init', 'athfb_loadFiles');
+/**
+ * Always load theme integration for frontend
+ */
+
+
+
+
+/**
+ * Initialize the Header Footer Builder
+ */
+function athfb_init()
+{
+  // Only initialize if we're in the right context
+  if (class_exists('Header_Footer_Builder')) {
+    Header_Footer_Builder::get_instance();
+  }
+}
+add_action('init', 'athfb_init');

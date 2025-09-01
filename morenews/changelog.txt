@@ -1,7 +1,18 @@
-### 3.6.8 - Aug 21 2025 =
-* Update - Post navigation HTML structure updated for better styling
-* Update - Previous/Next post labels improved for translations (i18n)
-* Update - Screen reader text corrected to "Post navigation" for accessibility
+### 3.7.0 - Sept 01 2025
+* New - Header & Footer Builder with drag-and-drop support
+* New - Customizer options for builder elements (menus, social icons, search, logo, ads, promotion, etc.)
+* New - Footer Builder elements: navigation, widgets, custom HTML, dynamic text
+* New - Accessibility enhancements (ARIA labels, focus states, tab index improvements)
+* Option - Disable Sticky Header toggle in Customizer
+* Update - Improved responsive design for Header & Footer Builder
+* Update - Optimized Customizer live preview for builder controls
+* Update - Updated .pot file for translations and added sanitization improvements
+* Update - Builder CSS separated and optimized for frontend
+* Fixed - Sticky header and footer issues in Builder
+* Fixed - JavaScript conflicts with toggle/collapsed states and console errors
+* Fixed - Social menu dropdown, widget alignment, and RTL design issues
+* Fixed - Customizer preview flickering, overflow, and tab index problems
+* Fixed - Sprintf and sanitization warnings
 
 ### 3.6.7 - Aug 15 2025
 * New - Light/Dark mode toggle and dark mode design improvements

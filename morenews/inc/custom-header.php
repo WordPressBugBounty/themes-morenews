@@ -69,7 +69,8 @@ if (!function_exists('morenews_header_style')) :
       <?php
       // If the user has set a custom color for the text use that.
       else :
-      ?>.site-title a,
+      ?>
+      .site-title a,
       .site-header .site-branding .site-title a:visited,
       .site-header .site-branding .site-title a:hover,
       .site-description {
@@ -82,6 +83,7 @@ if (!function_exists('morenews_header_style')) :
       body.aft-dark-mode .site-description {
         color: #ffffff;
       }
+
       .header-layout-3 .site-header .site-branding .site-title,
       .site-branding .site-title {
         font-size: <?php echo esc_attr($morenews_site_title_font_size); ?>px;

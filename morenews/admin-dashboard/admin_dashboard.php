@@ -139,6 +139,25 @@ if (!class_exists('AF_themes_info')) {
 
       );
 
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Header Builder', 'morenews'), // Page title.
+        __('Header Builder', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        'customize.php?autofocus[section]=header_builder'
+        //[$this,'morenews_customize_link'] // Callback function.
+
+      );
+      add_submenu_page(
+        'morenews', // Parent slug.
+        __('Footer Builder', 'morenews'), // Page title.
+        __('Footer Builder', 'morenews'), // Menu title.
+        'manage_options', // Capability.
+        'customize.php?autofocus[section]=footer_builder'
+        //[$this,'morenews_customize_link'] // Callback function.
+
+      );
+
 
       // Our getting started page.
       add_submenu_page(

@@ -34,7 +34,6 @@ function morenews_get_default_theme_options() {
     $defaults['global_show_min_read']           = 'no';
     $defaults['global_show_min_read_number']   = 250;
     $defaults['global_show_categories']           = 'yes';
-    // $defaults['global_show_home_menu_border']    = 'show-menu-border';
     $defaults['global_show_home_menu_border']    = 'show-menu-border';
     $defaults['enable_site_mode_switch'] = 'aft-disable-mode-switch';
     $defaults['continue_switched_site_mode'] = 'aft-only-on-switched-page';
@@ -119,7 +118,7 @@ function morenews_get_default_theme_options() {
     $defaults['select_breadcrumb_mode'] = 'default';
 
 
-    // Frontpage Section.
+    // Front-page Section.
     $defaults['show_main_news_section'] = 1;
     $defaults['main_banner_background_section'] = 0;
 

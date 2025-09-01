@@ -10,13 +10,13 @@ $morenews_default = morenews_get_default_theme_options();
 
 
 /**
- * Frontpage options section
+ * Front-page options section
  *
  * @package MoreNews
  */
 
 
-// Add Frontpage Options Panel.
+// Add Front-page Options Panel.
 $wp_customize->add_panel(
     'main_banner_option_panel',
     array(
@@ -82,7 +82,7 @@ $wp_customize->add_control(
         'main_banner_background_section',
         array(
             'label' => esc_html__('Main Banner Background Image', 'morenews'),
-            'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'morenews'), 1024, 800),
+            'description' => esc_html(sprintf(__('Recommended Size %1$s px X %2$s px', 'morenews'), 1024, 800)),
             'section' => 'frontpage_main_banner_section_settings',
             'width' => 1024,
             'height' => 800,
@@ -1314,17 +1314,17 @@ $wp_customize->add_control(new morenews_Dropdown_Taxonomies_Control(
 
 
 /**
- * Frontpage options section
+ * Front-page options section
  *
  * @package MoreNews
  */
 
 
-// Add Frontpage Options Panel.
+// Add Front-page Options Panel.
 $wp_customize->add_panel(
     'frontpage_option_panel',
     array(
-        'title' => esc_html__('Frontpage Options', 'morenews'),
+        'title' => esc_html__('Front-page Options', 'morenews'),
         'priority' => 199,
         'capability' => 'edit_theme_options',
     )
@@ -1534,11 +1534,11 @@ for ($morenews_i = 1; $morenews_i <= 3; $morenews_i++) {
 
 
 
-// Frontpage Layout Section.
+// Front-page Layout Section.
 $wp_customize->add_section(
     'frontpage_layout_settings',
     array(
-        'title' => esc_html__('Frontpage Layout Settings', 'morenews'),
+        'title' => esc_html__('Front-page Layout Settings', 'morenews'),
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -1559,14 +1559,14 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'frontpage_content_type',
     array(
-        'label' => esc_html__('Frontpage Content Display', 'morenews'),
+        'label' => esc_html__('Front-page Content Display', 'morenews'),
         'description' => esc_html__('Select frontpage content display', 'morenews'),
         'section' => 'frontpage_layout_settings',
         'settings' => 'frontpage_content_type',
         'type' => 'select',
         'choices' => array(
-            'frontpage-widgets' => esc_html__('Frontpage Widgets', 'morenews'),
-            'frontpage-widgets-and-content' => esc_html__('Page Contents & Frontpage Widgets', 'morenews'),
+            'frontpage-widgets' => esc_html__('Front-page Widgets', 'morenews'),
+            'frontpage-widgets-and-content' => esc_html__('Page Contents & Front-page Widgets', 'morenews'),
         ),
         'priority' => 10,
     )
@@ -1585,7 +1585,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'frontpage_content_alignment',
     array(
-        'label' => esc_html__('Frontpage Content Alignment', 'morenews'),
+        'label' => esc_html__('Front-page Content Alignment', 'morenews'),
         'description' => esc_html__('Select frontpage content alignment', 'morenews'),
         'section' => 'frontpage_layout_settings',
         'type' => 'select',

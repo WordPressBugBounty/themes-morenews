@@ -1,5 +1,5 @@
 <?php
-// Frontpage
+// Front-page
 
 $wp_customize->selective_refresh->add_partial('show_top_header_section', array(
     'selector' => 'div.top-header div.date-bar-left',     

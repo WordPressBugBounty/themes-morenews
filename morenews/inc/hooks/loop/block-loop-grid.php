@@ -6,7 +6,7 @@ if (!function_exists('morenews_loop_grid')) :
    * @since Newsical 1.0.0
    *
    */
-  function morenews_loop_grid($morenews_post_id, $morenews_grid_design = 'grid-design-default', $morenews_thumbnail_size = 'medium_large', $morenews_show_excerpt = false, $archive_content_view = 'archive-content-excerpt', $morenews_title_position = 'bottom', $morenews_small_grid = false)
+  function morenews_loop_grid($morenews_post_id, $morenews_grid_design = 'grid-design-default', $morenews_thumbnail_size = 'medium_large', $morenews_show_excerpt = false, $archive_content_view = 'archive-content-excerpt', $morenews_title_position = 'bottom', $archive_title_tag = 'h3')
   {
     $morenews_post_display = 'spotlight-post';
     if ($morenews_thumbnail_size == 'medium') {
@@ -92,4 +92,4 @@ if (!function_exists('morenews_loop_grid')) :
 <?php
   }
 endif;
-add_action('morenews_action_loop_grid', 'morenews_loop_grid', 10, 7);
+add_action('morenews_action_loop_grid', 'morenews_loop_grid', 10, 8);
