@@ -102,6 +102,42 @@ header figure.wp-block-image {
     margin-bottom: 0;
 }
 
+.bottom-bar-flex .af-search-wrap,
+.bottom-bar-flex .search-watch,
+.bottom-bar-flex .offcanvas-navigaiton {
+    min-height: 49px;
+}
+.bottom-bar-flex .search-icon {
+    line-height: 49px;
+}
+
+.aft-default-mode .af-middle-header:not(.data-bg)  #aft-dark-light-mode-wrap a {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+body .top-header .aft-small-social-menu ul.menu li a,
+.aft-default-mode .af-middle-header.data-bg .main-navigation .menu-desktop > li > a{
+    color: #fff;
+}
+
+.aft-default-mode .af-middle-header:not(.data-bg) .ham:before,
+.aft-default-mode .af-middle-header:not(.data-bg) .ham:after,
+.aft-default-mode .af-middle-header:not(.data-bg) .ham {
+    background-color: #000;
+}
+
+.aft-default-mode .af-middle-header:not(.data-bg) .ham.exit {
+    background-color: transparent;
+}
+
+.aft-default-mode .af-middle-header:not(.data-bg) .offcanvas-menu span {
+    background-color: #000;
+}
+
+body.aft-default-mode .morenews-header .af-middle-header:not(.data-bg) .search-icon {
+    color: #000;
+}
+
 /* custom html */
 .af-middle-header.data-bg .af-middle-container .aft-header-custom-html a:not(:hover),
 .af-middle-header.data-bg .af-middle-container .aft-header-custom-html {

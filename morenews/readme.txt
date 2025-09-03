@@ -57,7 +57,19 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
-= 3.7.0 - Sept 01 2025 =
+= 3.7.2 - September 3 2025 =
+* New - Header hooks for extended customization and developer flexibility
+* New - Customizer badge design improvements for clearer UI elements
+* Update - Top header social menu icon color customization
+* Update - Top header main menu custom color options
+* Update - Header builder design review for light mode and centered layouts
+* Update - Hamburger menu design refinements, including background adjustments for middle header without background
+* Update - Improved logo handling: full-width logo display when banner advertisement is absent in side header layout
+* Update - Admin menu labels and sidebar naming consistency
+* Update - Template function refinements for better maintainability
+* Fixed - Minor design inconsistencies across merged header builder updates
+
+### 3.7.0 - Sept 01 2025
 * New - Header & Footer Builder with drag-and-drop support
 * New - Customizer options for builder elements (menus, social icons, search, logo, ads, promotion, etc.)
 * New - Footer Builder elements: navigation, widgets, custom HTML, dynamic text
@@ -72,6 +84,7 @@ MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jet
 * Fixed - Social menu dropdown, widget alignment, and RTL design issues
 * Fixed - Customizer preview flickering, overflow, and tab index problems
 * Fixed - Sprintf and sanitization warnings
+* Fixed - Minor layout and description display glitches
 
 = 3.6.7 - Aug 15 2025 =
 * New - Light/Dark mode toggle and dark mode design improvements

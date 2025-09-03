@@ -52,13 +52,13 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'morenews'); ?></a>
 
     <?php
-
     $morenews_enable_header_builder = morenews_get_option('athfb_show_checkbox_header');
     if ($morenews_enable_header_builder) {
       do_action('morenews_action_header_section_builder');
     } else {
       do_action('morenews_action_header_section');
     }
+
 
     $page_template = get_page_template_slug();
     if ($page_template !== 'page-templates/full-width.php') {

@@ -69,32 +69,35 @@ if (!class_exists('AF_themes_info')) {
     <?php
     }
 
-    function morenews_body_classes( $classes ) {
-      if ( ! is_admin() ) {
-          return $classes; // Make sure this only affects admin area
+    function morenews_body_classes($classes)
+    {
+      if (!is_admin()) {
+        return $classes; // Make sure this only affects admin area
       }
-  
+
       // Convert to array if string
-      if ( ! is_array( $classes ) ) {
-          $classes = explode( ' ', $classes );
+      if (!is_array($classes)) {
+        $classes = explode(' ', $classes);
       }
-  
+
       // Only add classes for specific admin pages
-      if ( isset( $_GET['page'] ) ) {
-          $page = sanitize_text_field( $_GET['page'] );
-  
-          if ( $page === 'aft-block-patterns' || 
-               $page === 'aft-template-kits' || 
-               $page === $this->theme_slug || 
-               $page === 'starter-sites' ) {
-  
-              $classes[] = 'aft-admin-dashboard-notice';
-              $classes[] = 'aft-theme-admin-menu-dashboard';
-          }
+      if (isset($_GET['page'])) {
+        $page = sanitize_text_field($_GET['page']);
+
+        if (
+          $page === 'aft-block-patterns' ||
+          $page === 'aft-template-kits' ||
+          $page === $this->theme_slug ||
+          $page === 'starter-sites'
+        ) {
+
+          $classes[] = 'aft-admin-dashboard-notice';
+          $classes[] = 'aft-theme-admin-menu-dashboard';
+        }
       }
-  
-      return implode( ' ', array_unique( $classes ) );
-  }
+
+      return implode(' ', array_unique($classes));
+    }
 
     public function morenews_register_info_page()
     {
@@ -128,6 +131,7 @@ if (!class_exists('AF_themes_info')) {
       );
 
 
+
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
@@ -148,6 +152,7 @@ if (!class_exists('AF_themes_info')) {
         //[$this,'morenews_customize_link'] // Callback function.
 
       );
+      
       add_submenu_page(
         'morenews', // Parent slug.
         __('Footer Builder', 'morenews'), // Page title.
@@ -157,7 +162,6 @@ if (!class_exists('AF_themes_info')) {
         //[$this,'morenews_customize_link'] // Callback function.
 
       );
-
 
       // Our getting started page.
       add_submenu_page(
@@ -189,7 +193,7 @@ if (!class_exists('AF_themes_info')) {
         array($this, 'morenews_render_starter_templates'), // Callback function.
         // $starter_sites_order
       );
-     
+
 
 
       // Our getting started page.
@@ -251,10 +255,7 @@ if (!class_exists('AF_themes_info')) {
           $message = __('Import a Starter Site, Personalize, and Live it in 3 Easy Steps!', 'morenews');
         }
       ?>
-        <div id="templatespare-plugin-install-activate" data-class=<?php echo $class; ?>
-          current-theme=<?php echo esc_attr($this->theme_slug) ?> install=<?php echo json_encode($install); ?>
-          activate=<?php echo json_encode($activate); ?> data-plugin-page='starter-sites'
-          message='<?php echo $message; ?>' ispro=''></div>
+        <div id="templatespare-plugin-install-activate" data-class=<?php echo $class; ?> current-theme=<?php echo esc_attr($this->theme_slug) ?> install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> data-plugin-page='starter-sites' message='<?php echo $message; ?>' ispro=''></div>
       <?php
       }
     }
@@ -326,9 +327,7 @@ if (!class_exists('AF_themes_info')) {
         }
 
       ?>
-        <div id="templatespare-plugin-install-activate" data-class="<?php echo $class; ?>" current-theme='blockspare'
-          install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> data-plugin-page="aft-block-patterns"
-          message='<?php echo $message; ?>' isPro='<?php echo esc_attr($morenews_blockspare_status); ?>'></div>
+        <div id="templatespare-plugin-install-activate" data-class="<?php echo $class; ?>" current-theme='blockspare' install=<?php echo json_encode($install); ?> activate=<?php echo json_encode($activate); ?> data-plugin-page="aft-block-patterns" message='<?php echo $message; ?>' isPro='<?php echo esc_attr($morenews_blockspare_status); ?>'></div>
 <?php
       }
     }
@@ -447,7 +446,7 @@ if (!class_exists('AF_themes_info')) {
           'dahboard_path' => $dahboard_path,
           'siteUrl' => $siteUrl,
           'aflogoUrl' => get_template_directory_uri(),
-          "themeUrl" => (! is_child_theme()) ? get_template_directory_uri() : get_stylesheet_directory_uri(),
+          "themeUrl" => (!is_child_theme()) ? get_template_directory_uri() : get_stylesheet_directory_uri(),
           "themeName" => $this->theme_name,
           "themeVesrion" => $this->theme_version,
           "currentUser" => $this->current_user_name,
