@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 3.7.2
+Version: 3.7.3
 Requires at least: 5.0
 Requires PHP: 5.0
 Tested up to: 6.8
@@ -725,8 +725,14 @@ table#wp-calendar {
 
 body #main-navigation-bar .aft-small-social-menu ul.menu > li > a,
 .top-header .main-navigation .menu > ul > li > a,
-#main-navigation-bar .main-navigation .menu-desktop > li > a {
+#main-navigation-bar #primary-menu > ul:not(.menu-mobile) > li > a{
     color: #fff;
+}
+@media screen and (min-width: 993px) {
+    #main-navigation-bar .main-navigation .menu-desktop > .menu > li > a,
+    #main-navigation-bar .main-navigation .menu-desktop > li > a {
+        color: #fff;
+    }
 }
 
 .main-navigation ul.children li,
@@ -784,6 +790,7 @@ body #main-navigation-bar .aft-small-social-menu ul.menu > li > a,
 .ham.exit {
     background-color: transparent;
 }
+body #main-navigation-bar .ham.exit,
 body.aft-default-mode .ham.exit{background-color:transparent;}
 .ham.exit:before {
     -webkit-transform: translateY(8px) rotateZ(-45deg);

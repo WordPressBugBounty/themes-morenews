@@ -39,10 +39,13 @@ class Header_Footer_Builder
     );
 
     // Add Footer Builder Section
-    $wp_customize->add_section('footer_builder', array(
-      'title' =>  esc_html__('Footer Builder', 'morenews'),
-      'priority' => 50,
-    ));
+    $wp_customize->add_section(
+      'footer_builder',
+      array(
+        'title' =>  esc_html__('Footer Builder', 'morenews'),
+        'priority' => 50,
+      )
+    );
 
     // Header Builder Control
     $wp_customize->add_setting('header_builder_data', array(
@@ -71,7 +74,7 @@ class Header_Footer_Builder
       'transport' => 'refresh',
     ));
     $loadFooter = morenews_get_option('athfb_show_checkbox_footer');
-    //if ($loadFooter) {
+
     $wp_customize->add_control(new Header_Footer_Builder_Control(
       $wp_customize,
       'footer_builder_data',
@@ -81,7 +84,7 @@ class Header_Footer_Builder
         'type' => 'footer_builder_data',
       )
     ));
-    //}
+
 
 
     foreach (['header', 'footer'] as $builder_type) {
@@ -89,23 +92,11 @@ class Header_Footer_Builder
 
 
       if ($builder_type === 'header') {
-        $message = wp_kses_post(__(
-          'Create dynamic header effortlessly with drag-and-drop builder.',
-          'morenews'
-        ));
-        $label = wp_kses_post(__(
-          'Header',
-          'morenews'
-        ));
+        $message = esc_html__('Create dynamic header effortlessly with drag-and-drop builder.', 'morenews');
+        $label = esc_html__('Header', 'morenews');
       } elseif ($builder_type === 'footer') {
-        $message = wp_kses_post(__(
-          'Create dynamic footer effortlessly with drag-and-drop builder.',
-          'morenews'
-        ));
-        $label = wp_kses_post(__(
-          'Footer',
-          'morenews'
-        ));
+        $message = esc_html__('Create dynamic footer effortlessly with drag-and-drop builder.', 'morenews');
+        $label = esc_html__('Footer', 'morenews');
       }
       // Add checkbox control
       $checkbox_setting_id = "athfb_show_checkbox_{$builder_type}";
@@ -120,16 +111,13 @@ class Header_Footer_Builder
       $wp_customize->add_control($checkbox_setting_id, [
         'type' => 'checkbox',
         'section' => "{$builder_type}_builder",
-        'label' =>  esc_html__("Enable {$label} Builder", 'morenews'),
+        'label' =>  esc_html(sprintf(
+          __("Enable %s Builder", 'morenews'),
+          $label
+        )),
         'description' => $message,
         'priority' => 2,
       ]);
-      // $wp_customize->add_control($checkbox_setting_id, [
-      //   'type' => 'hidden',
-      //   'section' => "{$builder_type}_builder",
-      //   'label' =>  esc_html__("Show {$builder_type}", 'morenews'),
-      //   'description' => $message,
-      // ]);
 
       // Element Settings Container Control
       $setting_id = "athfb_element_settings_container_{$builder_type}";
@@ -153,42 +141,6 @@ class Header_Footer_Builder
         ]
       ));
     }
-
-    // Add selective refresh partial for header navigation menu ID
-    if (isset($wp_customize->selective_refresh)) {
-      $wp_customize->selective_refresh->add_partial('athfb_header_navigation_menu_id', [
-        'selector'        => '.athfb-nav-menu',
-        'render_callback' => function () {
-          $menu_id = get_option('athfb_header_navigation_menu_id');
-
-          return wp_nav_menu([
-            'menu_location' => $menu_id,
-            'container' => 'nav',
-            'container_class' => 'athfb-navigation',
-            'menu_class' => 'athfb-nav-menu',
-            'fallback_cb' => false,
-          ]);
-        }
-      ]);
-    }
-
-    // $wp_customize->selective_refresh->add_partial('header_builder_data', [
-    //   'selector' => '#masthead',
-    //   'render_callback' => function () {
-    //     // Get your singleton instance (or however your class is accessed)
-    //     athfb_render_header_builder();  // make sure this echoes the markup
-    //   }
-    // ]);
-
-
-
-    // $wp_customize->selective_refresh->add_partial('footer_builder_data', [
-    //   'selector' => '.site-footer',
-    //   'render_callback' => function () {
-    //     // Get your singleton instance (or however your class is accessed)
-    //     athfb_render_footer_builder();  // make sure this echoes the markup
-    //   }
-    // ]);
 
 
 
@@ -323,11 +275,11 @@ class Header_Footer_Builder
         'settingsMapping' => $settings_mapping,
         'nonce' => wp_create_nonce('athfb_customizer'),
         'strings' => array(
-          'addElement' =>  esc_html__('Add Element', 'morenews'),
-          'removeElement' =>  esc_html__('Remove Element', 'morenews'),
-          'configureElement' =>  esc_html__('Configure Element', 'morenews'),
-          'desktop' =>  esc_html__('Desktop', 'morenews'),
-          'elementSettings' =>  esc_html__('Element Settings', 'morenews'),
+          'addElement' =>  esc_html__("Add Element", "morenews"),
+          'removeElement' =>  esc_html__("Remove Element", 'morenews'),
+          'configureElement' =>  esc_html__("Configure Element", "morenews"),
+          'desktop' =>  esc_html__("Desktop", "morenews"),
+          'elementSettings' =>  esc_html__("Element Settings", "morenews"),
         ),
       )
     );

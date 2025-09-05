@@ -573,7 +573,7 @@ function morenews_transltion_init()
 
 
 require_once get_template_directory() . '/inc/customizer/builder/options.php';
-function ATHFB_load_files()
+function athfb_load_files()
 {
   // Only load in admin or customizer context
   if (!is_admin() && !is_customize_preview()) {
@@ -618,4 +618,4 @@ function athfb_init()
     Header_Footer_Builder::get_instance();
   }
 }
-add_action('init', 'athfb_init');
+add_action('admin_init', 'athfb_init');
