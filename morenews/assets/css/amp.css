@@ -4,6 +4,7 @@
   display: block;
 }
 
+
 .main-navigation ul li.page_item_has_children > a:after, 
 .main-navigation ul li.menu-item-has-children > a:after {
   font-family: 'aft-icons';

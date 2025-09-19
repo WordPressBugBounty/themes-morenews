@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 3.7.3
+Version: 3.7.4
 Requires at least: 5.0
 Requires PHP: 5.0
 Tested up to: 6.8
@@ -9354,7 +9354,7 @@ body.aft-dark-mode pre{
 body.aft-dark-mode .header-layout-centered .bottom-header{
     border-color: #000;
 }
-body.aft-dark-mode .gt_float_switcher .gt_options,
+body.aft-dark-mode .main-navigation .gt_float_switcher .gt_options,
 body.aft-dark-mode .main-navigation .menu .menu-mobile{
     background: #000;
 }
@@ -11318,14 +11318,17 @@ body .gt_options {
 body .menu-item-gtranslate > div {
     position: static !important;
 }
-.gt_float_switcher .gt_options {
+.main-navigation .gt_float_switcher .gt_options {
     position: absolute !important;
     top: 100%;
     font-size: 14px;
 }
-.gt_float_switcher .gt_options a {
+.main-navigation .gt_float_switcher .gt_options a {
     background-color: #fff !important;
     color: #444 !important;
+}
+.aft-default-mode #gt_float_wrapper .gt_float_switcher .gt_options a {
+    color: #444;
 }
 .gt_float_switcher {
     overflow: visible !important;
@@ -11336,6 +11339,24 @@ body .menu-item-gtranslate > div {
 #gt_float_wrapper,
 .menu-item-gtranslate > div {
     min-width: unset !important;
+}
+#gt_float_wrapper .gt_float_switcher .gt_options a {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+.top-navigation .menu li.menu-item.menu-item-gtranslate,
+.social-navigation .menu li.menu-item.menu-item-gtranslate,
+.footer-nav-wrapper .menu li.menu-item.menu-item-gtranslate {
+    display: inline-block !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.social-navigation #gt_float_wrapper .gt_float_switcher .gt_options a{
+    background-color: #fff;
+}
+body .gt_float_switcher .gt-selected .gt-current-lang{
+    text-align: left;
 }
 @media screen and (min-width: 783px) {
     body .hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {

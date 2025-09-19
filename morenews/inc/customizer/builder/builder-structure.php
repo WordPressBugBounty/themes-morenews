@@ -136,8 +136,6 @@ if (!function_exists('athfb_render_logo_element')) {
   {
 
     do_action('morenews_load_site_branding');
-
-    
   }
 }
 
@@ -424,6 +422,9 @@ if (!function_exists('athfb_render_header_date_element')) {
 if (!function_exists('athfb_render_header_site_mode_element')) {
   function athfb_render_header_site_mode_element($element_id, $context)
   {
+    if (morenews_is_amp()) {
+      return;
+    }
 
 
     do_action('morenews_dark_and_light_mode');
