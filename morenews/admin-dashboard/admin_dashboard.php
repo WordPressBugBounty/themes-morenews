@@ -71,18 +71,13 @@ if (!class_exists('AF_themes_info')) {
 
     function morenews_body_classes($classes)
     {
-      if (!is_admin()) {
-        return $classes; // Make sure this only affects admin area
+      // Normalize in case another filter passed an array by mistake
+      if (is_array($classes)) {
+        $classes = implode(' ', $classes);
       }
 
-      // Convert to array if string
-      if (!is_array($classes)) {
-        $classes = explode(' ', $classes);
-      }
-
-      // Only add classes for specific admin pages
       if (isset($_GET['page'])) {
-        $page = sanitize_text_field($_GET['page']);
+        $page = sanitize_text_field(wp_unslash($_GET['page']));
 
         if (
           $page === 'aft-block-patterns' ||
@@ -90,13 +85,11 @@ if (!class_exists('AF_themes_info')) {
           $page === $this->theme_slug ||
           $page === 'starter-sites'
         ) {
-
-          $classes[] = 'aft-admin-dashboard-notice';
-          $classes[] = 'aft-theme-admin-menu-dashboard';
+          $classes .= ' aft-admin-dashboard-notice aft-theme-admin-menu-dashboard';
         }
       }
 
-      return implode(' ', array_unique($classes));
+      return trim($classes);
     }
 
     public function morenews_register_info_page()
@@ -152,7 +145,7 @@ if (!class_exists('AF_themes_info')) {
         //[$this,'morenews_customize_link'] // Callback function.
 
       );
-      
+
       add_submenu_page(
         'morenews', // Parent slug.
         __('Footer Builder', 'morenews'), // Page title.
