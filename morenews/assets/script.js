@@ -488,6 +488,21 @@
           });
       });
     }),
+    (n.CurrentTimeRunner = function () {
+      var topbarTimeElement = document.getElementById('topbar-time');
+      if (topbarTimeElement) {
+        var aftSetInterval = setInterval(function () {
+          aftToLocaleTimeString();
+        }, 100);
+
+        function aftToLocaleTimeString() {
+          var aftDate = new Date();
+          var aftTimeFormat = AFlocalizedTime.format;
+          topbarTimeElement.innerHTML =
+            aftDate.toLocaleTimeString(aftTimeFormat);
+        }
+      }
+    });
     e(document).ready(function () {
       n.mobileMenu.init(),
         n.jQueryMarquee(),
@@ -503,7 +518,7 @@
       n.show_hide_scroll_top();
     }),
     e(window).on('load', function () {
-      // n.DataBackground(),
+      n.CurrentTimeRunner(),
       n.searchReveal(),
         // n.Preloader(),
         n.Search();

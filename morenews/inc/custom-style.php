@@ -22,15 +22,37 @@ if (!function_exists('morenews_custom_style')) {
         $dark_background_color = morenews_get_option('dark_background_color');
         $secondary_color = morenews_get_option('secondary_color');
 
+        
         $global_font_family_type = morenews_get_option('global_font_family_type');
-        if ($global_font_family_type == 'google') {
-            $site_title_font = $morenews_google_fonts[morenews_get_option('site_title_font')];
-            $primary_font = $morenews_google_fonts[morenews_get_option('primary_font')];
-            $secondary_font = $morenews_google_fonts[morenews_get_option('secondary_font')];
+
+        $universal_fallbacks = "'Noto Sans', 'Noto Sans CJK SC', 'Noto Sans JP', 'Noto Sans KR',
+                        system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+                        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'";        
+        $system_stack = 'system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+
+        if ($global_font_family_type === 'google') {
+
+            $site_title_key = morenews_get_option('site_title_font');
+            $primary_key    = morenews_get_option('primary_font');
+            $secondary_key  = morenews_get_option('secondary_font');
+
+            $site_title_font = !empty($morenews_google_fonts[$site_title_key])
+                ? "'" . esc_attr($morenews_google_fonts[$site_title_key]) . "', " . $universal_fallbacks
+                : $universal_fallbacks;
+
+            $primary_font = !empty($morenews_google_fonts[$primary_key])
+                ? "'" . esc_attr($morenews_google_fonts[$primary_key]) . "', " . $universal_fallbacks
+                : $universal_fallbacks;
+
+            $secondary_font = !empty($morenews_google_fonts[$secondary_key])
+                ? "'" . esc_attr($morenews_google_fonts[$secondary_key]) . "', " . $universal_fallbacks
+                : $universal_fallbacks;
         } else {
-            $site_title_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
-            $primary_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
-            $secondary_font = 'system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+
+            $site_title_font = $system_stack;
+            $primary_font    = $system_stack;
+            $secondary_font  = $system_stack;
         }
 
         ob_start();
@@ -97,10 +119,10 @@ if (!function_exists('morenews_custom_style')) {
             body.woocommerce .single_add_to_cart_button.button:hover,
             body.woocommerce a.button.add_to_cart_button:hover,
 
-            .widget-title-fill-and-border .wp-block-search__label,
-            .widget-title-fill-and-border .wp-block-group .wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-search__label,
-            .widget-title-fill-and-no-border .wp-block-group .wp-block-heading,
+            .widget-title-fill-and-border .morenews-widget .wp-block-search__label,
+            .widget-title-fill-and-border .morenews-widget .wp-block-group .wp-block-heading,
+            .widget-title-fill-and-no-border .morenews-widget .wp-block-search__label,
+            .widget-title-fill-and-no-border .morenews-widget .wp-block-group .wp-block-heading,
 
             .widget-title-fill-and-border .wp_post_author_widget .widget-title .header-after,
             .widget-title-fill-and-border .widget-title .heading-line,
@@ -114,15 +136,15 @@ if (!function_exists('morenews_custom_style')) {
             body.widget-title-border-bottom .header-after1 .heading-line-before,
             body.widget-title-border-bottom .widget-title .heading-line-before,
 
-            .widget-title-border-center .wp-block-search__label::after,
-            .widget-title-border-center .wp-block-group .wp-block-heading::after,
+            .widget-title-border-center .morenews-widget .wp-block-search__label::after,
+            .widget-title-border-center .morenews-widget .wp-block-group .wp-block-heading::after,
             .widget-title-border-center .wp_post_author_widget .widget-title .heading-line-before,
             .widget-title-border-center .aft-posts-tabs-panel .nav-tabs>li>a.active::after,
             .widget-title-border-center .wp_post_author_widget .widget-title .header-after::after,
             .widget-title-border-center .widget-title .heading-line-after,
 
-            .widget-title-border-bottom .wp-block-search__label::after,
-            .widget-title-border-bottom .wp-block-group .wp-block-heading::after,
+            .widget-title-border-bottom .morenews-widget .wp-block-search__label::after,
+            .widget-title-border-bottom .morenews-widget .wp-block-group .wp-block-heading::after,
             .widget-title-border-bottom .heading-line::before,
             .widget-title-border-bottom .wp-post-author-wrap .header-after::before,
             .widget-title-border-bottom .aft-posts-tabs-panel .nav-tabs>li>a.active span::after,
@@ -153,6 +175,7 @@ if (!function_exists('morenews_custom_style')) {
             .af-post-format i,
             body .btn-style1 a:visited,
             body .btn-style1 a,
+            body span.post-page-numbers.current,
             body .morenews-pagination .nav-links .page-numbers.current,
             body #scroll-up,
             button,
@@ -194,8 +217,8 @@ if (!function_exists('morenews_custom_style')) {
             body.rtl .aft-popular-taxonomies-lists span::after {
             border-right-color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
-            .widget-title-fill-and-no-border .wp-block-search__label::after,
-            .widget-title-fill-and-no-border .wp-block-group .wp-block-heading::after,
+            .widget-title-fill-and-no-border .morenews-widget .wp-block-search__label::after,
+            .widget-title-fill-and-no-border .morenews-widget .wp-block-group .wp-block-heading::after,
             .widget-title-fill-and-no-border .aft-posts-tabs-panel .nav-tabs>li a.active::after,
             .widget-title-fill-and-no-border .morenews-widget .widget-title::before,
             .widget-title-fill-and-no-border .morenews-customizer .widget-title::before{
@@ -267,10 +290,10 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .aft-popular-taxonomies-lists ul li a:hover ,
             body.aft-dark-mode .aft-popular-taxonomies-lists ul li a:hover,
             body.aft-dark-mode .wp-calendar-nav a,
-            body .entry-content > .wp-block-heading a:not(.has-link-color),
+            body .entry-content > .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
             body .entry-content > ul a,
             body .entry-content > ol a,
-            body .entry-content > p a ,
+            body .entry-content > p:not(.has-link-color) a ,
             body.aft-default-mode p.logged-in-as a,
             body.aft-dark-mode p.logged-in-as a,
             body.aft-dark-mode .woocommerce-loop-product__title:hover,
@@ -289,18 +312,8 @@ if (!function_exists('morenews_custom_style')) {
             .entry-content .wp-block-latest-comments a:not(.has-text-color):hover,
             .wc-block-grid__product .wc-block-grid__product-link:focus,
 
-            body.aft-default-mode .entry-content h1:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-default-mode .entry-content h2:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-default-mode .entry-content h3:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-default-mode .entry-content h4:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-default-mode .entry-content h5:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-default-mode .entry-content h6:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h1:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h2:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h3:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h4:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h5:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content h6:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
 
             body.aft-default-mode .comment-content a,
             body.aft-dark-mode .comment-content a,
@@ -344,20 +357,20 @@ if (!function_exists('morenews_custom_style')) {
             #wp-calendar tbody td a,
             body.aft-dark-mode #wp-calendar tbody td#today,
             body.aft-default-mode #wp-calendar tbody td#today,
-            body.aft-default-mode .entry-content > .wp-block-heading a:not(.has-link-color),
-            body.aft-dark-mode .entry-content > .wp-block-heading a:not(.has-link-color),
+            body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
             body .entry-content > ul a, body .entry-content > ul a:visited,
             body .entry-content > ol a, body .entry-content > ol a:visited,
-            body .entry-content > p a, body .entry-content > p a:visited
+            body .entry-content > p:not(.has-link-color) a, body .entry-content > p:not(.has-link-color) a:visited
             {
             color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
             .woocommerce-product-search button[type="submit"], input.search-submit,
             body.single span.tags-links a:hover,
-            body .entry-content > .wp-block-heading a:not(.has-link-color),
+            body .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
             body .entry-content > ul a, body .entry-content > ul a:visited,
             body .entry-content > ol a, body .entry-content > ol a:visited,
-            body .entry-content > p a, body .entry-content > p a:visited{
+            body .entry-content > p:not(.has-link-color) a, body .entry-content > p:not(.has-link-color) a:visited{
             border-color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
 

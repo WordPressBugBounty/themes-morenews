@@ -20,7 +20,7 @@ $morenews_show_excerpt = morenews_get_option('archive_content_view');
       <a class="aft-post-image-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       <?php morenews_archive_social_share_icons($post->ID); ?>
       <?php morenews_post_format($post->ID); ?>
-      <?php morenews_count_content_words($post->ID); ?>
+      <?php //morenews_count_content_words($post->ID); ?>
 
     </div>
 

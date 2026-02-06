@@ -26,6 +26,8 @@ body.rtl .header-layout-centered .offcanvas-navigaiton .navigation-container:fir
 	margin-right: 0;
 	margin-left: auto;
 }
+body.rtl .footer-nav-wrapper .menu li.menu-item.menu-item-gtranslate,
+body.rtl .top-navigation .menu li.menu-item.menu-item-gtranslate,
 body.rtl .wp-block-search__button,
 body.rtl.widget-title-border-right .header-after1 span:after, 
 body.rtl.widget-title-border-right .widget-title span:after{
@@ -117,6 +119,7 @@ body.rtl [class*="header-layout-side"] .af-middle-container .header-promotion {
 body.rtl .cat-links li a:after{
 	padding: 0 2px 0 0;
 }
+body.rtl li.menu-item.menu-item-gtranslate ,
 body.rtl .topbar-date + .menu,
 body.rtl .af-double-column.list-style .read-details.pad{
 	padding-left: 0;
@@ -142,6 +145,10 @@ body.rtl .read-details .entry-meta span.min-read{
 	padding-left: 5px;
 	padding-right: 0;
 }
+body.rtl .top-navigation li.menu-item.menu-item-gtranslate {
+	padding-left: 0px;
+	padding-right: 5px;
+}
 body.rtl .read-details .posts-author a, 
 body.rtl .read-details .entry-meta span.item-metadata.posts-author, 
 body.rtl .read-details .entry-meta > span, 
@@ -154,6 +161,7 @@ body.rtl.widget-title-border-center .morenews_tabbed_posts_widget.widget .af-tab
 	padding-left: 10px;
 	padding-right: 0px;
 }
+body.rtl .footer-navigation li.menu-item.menu-item-gtranslate,
 body.rtl .header-layout-side .af-middle-container .header-promotion,
 body.rtl .af-post-thumbnail-holder .af-double-column.list-style .read-details.pad, 
 body.rtl .af-banner-thumbnail-holder .af-double-column.list-style .read-details.pad{
@@ -187,6 +195,9 @@ body.rtl.widget-title-fill-and-border .aft-posts-tabs-panel .nav-tabs>li>a,
 body.rtl.widget-title-fill-and-no-border .aft-posts-tabs-panel .nav-tabs>li>a{
 	padding-left: 15px;
 	padding-right: 40px;
+}
+body.rtl .social-navigation .menu li.menu-item.menu-item-gtranslate {
+	padding-right: 3px;
 }
 /*paddings*/
 
@@ -411,7 +422,7 @@ body.rtl tr:last-child td {
 }
 body.rtl.single .entry-header .aft-post-excerpt-and-meta .post-excerpt {
 	border-left: unset;
-	border-right: 3px solid #007ACC;
+	border-right: 3px solid #1665CF;
 }
 
 body.rtl blockquote {
@@ -421,7 +432,7 @@ body.rtl blockquote {
 
 .rtl .aft-popular-taxonomies-lists span::after {
 	border-left-color: transparent;
-	border-right-color: #007ACC;
+	border-right-color: #1665CF;
 	left: unset;
 	right: 100%;
 }

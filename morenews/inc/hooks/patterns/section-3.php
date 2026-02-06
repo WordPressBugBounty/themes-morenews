@@ -37,7 +37,7 @@ return array(
     <h2 class="wp-block-heading alignwide">' . esc_html__( 'Post List', 'morenews' ) . '</h2>
     <!-- /wp:heading -->
     
-    <!-- wp:blockspare/blockspare-latest-posts-list {"uniqueClass":"blockspare-beaa1b5d-2a0d-4","displayPostDate":false,"displayPostAuthor":false,"postTitleFontSize":14,"displayPostCategory":false,"align":"wide","imageSize":"thumbnail","marginTop":0,"marginBottom":28,"backGroundColor":"#ffffff","contentPaddingTop":0,"contentPaddingBottom":0,"enableComment":false,"titleOnHoverColor":"#404040","animation":"AFTfadeInRight","ImageUnit":"75","gutterSpace":15} /--></div>
+    <!-- wp:blockspare/blockspare-latest-posts-list {"uniqueClass":"blockspare-beaa1b5d-2a0d-4","displayPostDate":false,"displayPostAuthor":false,"postTitleFontSize":14,"displayPostCategory":false,"align":"wide","imageSize":"thumbnail","marginTop":0,"marginBottom":28,"backGroundColor":"#ffffff","contentPaddingTop":0,"contentPaddingBottom":0,"enableComment":false,"titleOnHoverColor":"#1f1f1f","animation":"AFTfadeInRight","ImageUnit":"75","gutterSpace":15} /--></div>
     <!-- /wp:group -->
     
     <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->

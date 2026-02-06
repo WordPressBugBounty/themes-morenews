@@ -21,7 +21,7 @@ function morenews_custom_header_setup()
 {
   add_theme_support('custom-header', apply_filters('morenews_custom_header_args', array(
     'default-image' => '',
-    'default-text-color' => '404040',
+    'default-text-color' => '1f1f1f',
     'width' => 1500,
     'height' => 400,
     'flex-height' => true,
@@ -74,7 +74,7 @@ if (!function_exists('morenews_header_style')) :
       .site-header .site-branding .site-title a:visited,
       .site-header .site-branding .site-title a:hover,
       .site-description {
-        color: #<?php echo esc_attr($morenews_header_text_color); ?>;
+        color: #<?php echo esc_attr($morenews_header_text_color); ?>
       }
 
       body.aft-dark-mode .site-title a,

@@ -222,3 +222,102 @@ if (!function_exists('morenews_preload_header_image')) :
     }
 endif;
 add_action('wp_head', 'morenews_preload_header_image');
+
+
+function morenews_live_search_scripts()
+{
+
+    // Check if AJAX search enabled
+    $enable_ajax = morenews_get_option('search_archive_enable_ajax');
+    $limit       = absint(morenews_get_option('search_archive_ajax_results'));
+
+    if ($enable_ajax) {
+
+        wp_enqueue_script(
+            'morenews-live-search',
+            get_template_directory_uri() . '/assets/search-script.js',
+            array('jquery'),
+            null,
+            true
+        );
+
+        wp_localize_script('morenews-live-search', 'afLiveSearch', array(
+            'ajax_url'       => admin_url('admin-ajax.php'),
+            'searching_text' => __('Searching...', 'morenews'),
+            'enabled'        => (bool) $enable_ajax,
+            'results_count'  => $limit > 0 ? $limit : 5,
+            'nonce'          => wp_create_nonce('morenews_live_search'),
+        ));
+    }
+}
+add_action('wp_enqueue_scripts', 'morenews_live_search_scripts');
+
+function morenews_live_search_ajax()
+{
+
+    // Security check
+    if (empty($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'morenews_live_search')) {
+        wp_send_json_error(['message' => __('Invalid security token.', 'morenews')]);
+    }
+
+    // Query text
+    $query = isset($_POST['s']) ? sanitize_text_field(wp_unslash($_POST['s'])) : '';
+
+    // Customizer controls
+    $search_archive_content_view = morenews_get_option('search_archive_content_view');
+    $limit = isset($_POST['limit']) ? absint($_POST['limit']) : absint(morenews_get_option('search_archive_ajax_results'));
+
+    if ($limit < 1) {
+        $limit = 5;
+    }
+
+    // Build query
+    $args = array(
+        's'              => $query,
+        'posts_per_page' => $limit,
+        'post_status'    => 'publish',
+    );
+
+    if ($search_archive_content_view !== 'all') {
+        $args['post_type'] = 'post';
+    }
+
+    $search = new WP_Query($args);
+
+    // Wrapper
+    echo '<div class="af-live-search-results" role="listbox" aria-label="' . esc_attr__('Live search results', 'morenews') . '">';
+
+    if ($search->have_posts()) {
+
+        echo '<ul class="af-live-search-list">';
+
+        while ($search->have_posts()) {
+            $search->the_post();
+
+            echo '<li class="af-live-search-item" role="option" tabindex="-1">';
+            do_action('morenews_action_loop_list', get_the_ID(), 'thumbnail', 0, false, false, false);
+            echo '</li>';
+        }
+
+        echo '</ul>';
+
+        // View all link
+        echo '<div class="af-live-search-more">';
+        echo '<a href="' . esc_url(get_search_link($query)) . '" class="view-all-results" aria-label="' . esc_attr__('View all search results', 'morenews') . '">';
+        printf(esc_html__('View all results for "%s"', 'morenews'), esc_html($query));
+        echo '</a>';
+        echo '</div>';
+    } else {
+
+        echo '<p class="no-results" role="alert">';
+        echo esc_html__('No results found.', 'morenews');
+        echo '</p>';
+    }
+
+    echo '</div>';
+
+    wp_reset_postdata();
+    wp_die();
+}
+add_action('wp_ajax_morenews_live_search', 'morenews_live_search_ajax');
+add_action('wp_ajax_nopriv_morenews_live_search', 'morenews_live_search_ajax');

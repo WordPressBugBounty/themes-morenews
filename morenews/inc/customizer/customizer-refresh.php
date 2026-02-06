@@ -84,3 +84,11 @@ $wp_customize->selective_refresh->add_partial('single_show_theme_author_bio', ar
 $wp_customize->selective_refresh->add_partial('enable_site_mode_switch', array(
     'selector' => '#aft-dark-light-mode-wrap',     
 ));
+
+$wp_customize->selective_refresh->add_partial('global_show_min_read', array(
+    'selector' => '.post-format-and-min-read-wrap span.min-read',     
+));
+
+$wp_customize->selective_refresh->add_partial('global_show_comment_count', array(
+    'selector' => '.aft-comment-count',     
+));

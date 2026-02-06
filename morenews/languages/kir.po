@@ -1,0 +1,2559 @@
+# Translation of Themes - MoreNews in Kyrgyz
+# This file is distributed under the same license as the Themes - MoreNews package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-07-14 14:47:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ky_KG\n"
+"Project-Id-Version: Themes - MoreNews\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews."
+msgstr ""
+
+#. Theme Name of the theme
+#: style.css inc/hooks/hook-patterns.php:15
+#, gp-priority: high
+msgid "MoreNews"
+msgstr "MoreNews"
+
+#: inc/template-tags.php:313
+msgid "No results found."
+msgstr ""
+
+#: inc/template-tags.php:307
+msgid "View all results for \"%s\""
+msgstr ""
+
+#: inc/template-tags.php:306
+msgid "View all search results"
+msgstr ""
+
+#: inc/template-tags.php:288
+msgid "Live search results"
+msgstr ""
+
+#: inc/template-tags.php:260
+msgid "Invalid security token."
+msgstr ""
+
+#: inc/template-tags.php:246
+msgid "Searching..."
+msgstr ""
+
+#: inc/customizer/theme-options.php:1382
+msgid "Ajax Results Dropdown"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1362
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1361
+msgid "All (Pages, Posts, etc)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1357
+msgid "Select search results for archive"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1356
+msgid "Search Results"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1336
+msgid "Search Options"
+msgstr ""
+
+#: inc/template-functions.php:719
+msgid "%s minute read"
+msgid_plural "%s minutes read"
+msgstr[0] ""
+
+#: inc/customizer/theme-options.php:211
+msgid "From WordPress Settings"
+msgstr ""
+
+#: inc/customizer/theme-options.php:210
+msgid "24 hours"
+msgstr ""
+
+#: inc/customizer/theme-options.php:209
+msgid "12 hours"
+msgstr ""
+
+#: inc/customizer/theme-options.php:205
+msgid "Time Format"
+msgstr ""
+
+#: inc/customizer/theme-options.php:184
+msgid "Show Time"
+msgstr ""
+
+#: inc/customizer/theme-options.php:158
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:115
+msgid "Enable %s Builder"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:86
+msgid "Footer Widget 3"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:76
+msgid "Footer Widget 2"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:65
+msgid "Footer Widget 1"
+msgstr ""
+
+#: inc/customizer/theme-options.php:96
+msgid "Sticky header works only with builder at bottom."
+msgstr ""
+
+#: inc/customizer/builder/options.php:587
+msgid "No menu assigned"
+msgstr ""
+
+#: inc/customizer/builder/options.php:488
+#: inc/customizer/builder/options.php:503
+#: inc/customizer/builder/options.php:525
+#: inc/customizer/builder/options.php:546
+#: inc/customizer/builder/options.php:567
+msgid "Beta"
+msgstr ""
+
+#: inc/customizer/builder/options.php:425
+#: inc/customizer/builder/options.php:443
+#: inc/customizer/builder/options.php:464
+msgid "Add widget to display . %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:379
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer/builder/options.php:372
+msgid "Pro"
+msgstr ""
+
+#: inc/customizer/builder/options.php:341
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/builder/options.php:317
+#: inc/customizer/builder/options.php:453
+msgid "Widget 3"
+msgstr ""
+
+#: inc/customizer/builder/options.php:301
+#: inc/customizer/builder/options.php:432
+msgid "Widget 2"
+msgstr ""
+
+#: inc/customizer/builder/options.php:290
+#: inc/customizer/builder/options.php:306
+#: inc/customizer/builder/options.php:322
+#: inc/customizer/builder/options.php:419
+#: inc/customizer/builder/options.php:437
+#: inc/customizer/builder/options.php:458
+msgid "Select Widget"
+msgstr ""
+
+#: inc/customizer/builder/options.php:285
+#: inc/customizer/builder/options.php:414
+msgid "Widget 1"
+msgstr ""
+
+#: inc/customizer/builder/options.php:260
+msgid "live"
+msgstr ""
+
+#: inc/customizer/builder/options.php:257
+msgid "Custom link"
+msgstr ""
+
+#: inc/customizer/builder/options.php:252
+msgid "Custom Link"
+msgstr ""
+
+#: inc/customizer/builder/options.php:243
+msgid "Searc Form"
+msgstr ""
+
+#: inc/customizer/builder/options.php:238
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/builder/options.php:227
+#: inc/customizer/builder/options.php:367
+msgid "HTML Content"
+msgstr ""
+
+#: inc/customizer/builder/options.php:222
+#: inc/customizer/builder/options.php:362
+msgid "Custom HTML"
+msgstr ""
+
+#: inc/customizer/builder/options.php:208
+#: inc/customizer/builder/options.php:213
+msgid "Site Mode"
+msgstr ""
+
+#: inc/customizer/builder/options.php:202
+#: inc/customizer/builder/options.php:232
+#: inc/customizer/builder/options.php:296
+#: inc/customizer/builder/options.php:312
+#: inc/customizer/builder/options.php:328
+msgid "pro"
+msgstr ""
+
+#: inc/customizer/builder/options.php:186
+#: inc/customizer/builder/options.php:551
+msgid "Top Navigation"
+msgstr ""
+
+#: inc/customizer/builder/options.php:180
+msgid "Manage Date"
+msgstr ""
+
+#. translators: %s is a link to manage menus
+#: inc/customizer/builder/options.php:179
+msgid "You can change date from general settings (Settings > General > Date Format). %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:172
+msgid "Choose date format"
+msgstr ""
+
+#: inc/customizer/builder/options.php:167
+msgid "Date"
+msgstr ""
+
+#: inc/customizer/builder/options.php:161
+#: inc/customizer/builder/options.php:199
+#: inc/customizer/builder/options.php:279
+#: inc/customizer/builder/options.php:354
+#: inc/customizer/builder/options.php:405
+#: inc/customizer/builder/options.php:543
+#: inc/customizer/builder/options.php:564
+msgid "Manage menu"
+msgstr ""
+
+#. translators: %s is a link to manage menus
+#. translators: %s is a link to manage menu
+#. translators: %s is a link to the menu panel
+#: inc/customizer/builder/options.php:160
+#: inc/customizer/builder/options.php:198
+#: inc/customizer/builder/options.php:278
+#: inc/customizer/builder/options.php:353
+#: inc/customizer/builder/options.php:404
+#: inc/customizer/builder/options.php:542
+#: inc/customizer/builder/options.php:563
+msgid "You can change Menu from menu panel. %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:153
+#: inc/customizer/builder/options.php:191
+#: inc/customizer/builder/options.php:346
+#: inc/customizer/builder/options.php:535
+#: inc/customizer/builder/options.php:556
+#: inc/customizer/builder/options.php:582
+msgid "Select Menu"
+msgstr ""
+
+#: inc/customizer/builder/options.php:148
+#: inc/customizer/builder/options.php:530
+msgid "Primary menu"
+msgstr ""
+
+#: inc/customizer/builder/options.php:140
+#: inc/customizer/builder/options.php:426
+#: inc/customizer/builder/options.php:444
+#: inc/customizer/builder/options.php:465
+#: inc/customizer/builder/options.php:522
+msgid "Manage widgets"
+msgstr ""
+
+#: inc/customizer/builder/options.php:139
+#: inc/customizer/builder/options.php:521
+msgid "This widget area is used in the mobile off-canvas panel. %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:134
+#: inc/customizer/builder/options.php:516
+msgid "Off Canvas Widget Area"
+msgstr ""
+
+#: inc/customizer/builder/options.php:109
+#: inc/customizer/builder/options.php:114
+#: inc/customizer/builder/options.php:493
+#: inc/customizer/builder/options.php:498
+msgid "Promotion"
+msgstr ""
+
+#. translators: %s is a link to Site Identity panel
+#: inc/customizer/builder/options.php:100
+#: inc/customizer/builder/options.php:484
+msgid "You can change Site Identity from %s."
+msgstr ""
+
+#: inc/customizer/builder/options.php:95 inc/customizer/builder/options.php:101
+#: inc/customizer/builder/options.php:479
+#: inc/customizer/builder/options.php:485
+msgid "Site Identity"
+msgstr ""
+
+#: inc/customizer/builder/options.php:89 inc/customizer/builder/options.php:473
+msgid "Site & Logo"
+msgstr ""
+
+#: inc/customizer/builder/header-builder-structure.php:188
+msgid "close Off-Canvas Navigation"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:282
+msgid "Element Settings"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:281
+msgid "Desktop"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:280
+msgid "Configure Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:279
+msgid "Remove Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:278
+msgid "Add Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:98
+msgid "Create dynamic footer effortlessly with drag-and-drop builder."
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:96
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:95
+msgid "Create dynamic header effortlessly with drag-and-drop builder."
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:82
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:59
+msgid "Close choose element modal"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:57
+msgid "Choose an Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:37
+msgid "Device view controls"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:33
+msgid "Hide Builder"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:31
+msgid "Hide builder panel"
+msgstr ""
+
+#: inc/customizer/builder/class-block-toggle.php:12
+msgid "Click the setting <span class=\"dashicons dashicons-admin-generic\"></span> on each element to customize its settings."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:151
+#: admin-dashboard/admin_dashboard.php:152
+#: inc/customizer/builder/class-header-footer-builder.php:45
+msgid "Footer Builder"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:141
+#: admin-dashboard/admin_dashboard.php:142
+#: inc/customizer/builder/class-header-footer-builder.php:36
+msgid "Header Builder"
+msgstr ""
+
+#. translators: Hidden heading for the post navigation section.
+#: template-parts/content.php:53
+msgid "Post navigation"
+msgstr ""
+
+#. translators: %s: Title of the next post.
+#: template-parts/content.php:49
+msgid "Next: %s"
+msgstr ""
+
+#. translators: %s: Title of the previous post.
+#: template-parts/content.php:44
+msgid "Previous: %s"
+msgstr ""
+
+#: inc/hooks/hook-header-section.php:291
+msgid "Light/Dark Button"
+msgstr ""
+
+#: inc/customizer/theme-options.php:73
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/theme-options.php:68
+msgid "Site Mode Switch"
+msgstr ""
+
+#: inc/template-functions.php:1080
+msgid "View All Posts"
+msgstr ""
+
+#: inc/template-functions.php:1074
+msgid "Visit Website"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1086
+msgid "Show Author Bio under Content"
+msgstr ""
+
+#: inc/template-functions.php:1046
+msgid "About the Author"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1008
+msgid "Original"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1007
+msgid "Full - Default"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1003
+msgid "Featured Image Width"
+msgstr ""
+
+#: inc/customizer/theme-options.php:456
+msgid "GDPR friendly & better performance"
+msgstr ""
+
+#: inc/customizer/theme-options.php:455
+msgid "Disable Emoji Script"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:201
+msgid "System Fonts"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:200
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:196
+msgid "Global Fonts Family"
+msgstr ""
+
+#: inc/customizer/theme-options.php:92
+msgid "Disable Sticky Header"
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:232
+msgid "Video Tutorials"
+msgstr "Видео-сабактар"
+
+#: admin-dashboard/rest-api/class-admin-notice.php:230
+msgid "Whether you're just starting or customizing your site."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:229
+msgid "🤝 We're Here for You"
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:198
+msgid ""
+"Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
+"      Setup is simple — no coding required."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:197
+msgid "🚀 Start With One Click"
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:165
+msgid "%s is now active. We're here to help you turn your ideas into a beautiful, professional website — quickly and confidently."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-admin-notice.php:163
+msgid "👋 Welcome, and Thank You!"
+msgstr ""
+
+#: inc/customizer/customizer.php:156
+msgid "Show Full Image (Background)"
+msgstr "Сүрөттү толугу менен көрсөтүү (фон)"
+
+#: inc/customizer/customizer.php:154
+msgid "Above Site Title"
+msgstr "Сайттын аталышынын үстүндө"
+
+#: inc/customizer/frontpage-options.php:1015
+msgid "Update Section"
+msgstr "Бөлүмдү жаңыртуу"
+
+#: inc/class-amp-compatible.php:190 inc/class-amp-compatible.php:194
+#: inc/hooks/hook-header-section.php:100 inc/hooks/hook-header-section.php:101
+msgid "Open search form"
+msgstr "Издөө формасын ачуу"
+
+#: inc/hooks/blocks/block-header-layout-default.php:82
+msgid "Open Off-Canvas Navigation"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:117
+msgid "Slider and Editors Picks"
+msgstr ""
+
+#: inc/hooks/patterns/dbg-single-post-column.php:9
+msgid "Single Post Column with Dark Background"
+msgstr ""
+
+#: inc/hooks/patterns/dbg-post-list.php:9
+msgid "Post List with Dark Background"
+msgstr ""
+
+#: inc/hooks/patterns/dbg-post-grid.php:9
+msgid "Post Grid with Dark Background"
+msgstr ""
+
+#: inc/hooks/patterns/dbg-post-grid-3-col.php:9
+msgid "3 Columns Post Grid with Dark Background"
+msgstr ""
+
+#: inc/hooks/patterns/dbg-large-post.php:9
+msgid "Large Post with Dark Background"
+msgstr ""
+
+#: inc/hooks/patterns/bg-single-post-column.php:9
+msgid "Single Post Column with Background"
+msgstr ""
+
+#: inc/hooks/patterns/bg-post-list.php:9
+msgid "Post List with Background"
+msgstr ""
+
+#: inc/hooks/patterns/bg-post-grid.php:9
+msgid "Post Grid with Background"
+msgstr ""
+
+#: inc/hooks/patterns/bg-post-grid-3-col.php:9
+msgid "3 Columns Post Grid with Background"
+msgstr ""
+
+#: inc/hooks/patterns/bg-large-post.php:9
+msgid "Large Post with Background"
+msgstr ""
+
+#: inc/customizer/theme-options.php:882
+msgid "Show Primary Menu Description"
+msgstr ""
+
+#: inc/customizer/theme-options.php:862
+msgid "Primary Menu Section"
+msgstr "Негизги меню бөлүмү"
+
+#: inc/widgets/widgets-register-sidebars.php:23
+msgid "Off Canvas Drawer Menu Section"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:11
+msgid "Header Banner Ad Section"
+msgstr ""
+
+#: inc/template-tags.php:154
+msgid "Posted on %s %s"
+msgstr "Жарыяланган %s %s"
+
+#: inc/template-tags.php:146
+msgid "Posted on %s"
+msgstr "Жарыяланган %s"
+
+#: inc/template-functions.php:588 inc/template-functions.php:590
+msgid "Read more about %s"
+msgstr ""
+
+#: inc/customizer/theme-options.php:556
+msgid "Set to enhance rendering speed"
+msgstr ""
+
+#: inc/customizer/theme-options.php:555
+msgid "Image Async Decoding"
+msgstr ""
+
+#: inc/customizer/theme-options.php:529
+msgid "Set for better performance"
+msgstr ""
+
+#: inc/customizer/theme-options.php:502
+msgid "If there is no Post Featured image set"
+msgstr ""
+
+#: inc/customizer/theme-options.php:501
+msgid "Also Show Content Image in Archive"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1107
+msgid "Show Tags under Content"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:569
+#: admin-dashboard/rest-api/class-admin-notice.php:149
+msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:568
+#: admin-dashboard/rest-api/class-admin-notice.php:148
+msgid "Get Started"
+msgstr "Баштоо"
+
+#: admin-dashboard/admin_dashboard.php:389
+msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:388
+msgid "Elespare plugin version should be more than %s."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:319
+msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:314
+msgid "Blockspare plugin version should be more than %s."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:248
+msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:245
+msgid "The Templatespare plugin should be updated to the latest version"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:118
+#: admin-dashboard/admin_dashboard.php:119
+msgid "Dashboard"
+msgstr "Аспап панели"
+
+#: admin-dashboard/admin_dashboard.php:172
+#: admin-dashboard/admin_dashboard.php:173
+msgid "Elementor Kits"
+msgstr "Elementor Kits"
+
+#: admin-dashboard/admin_dashboard.php:182
+#: admin-dashboard/admin_dashboard.php:183
+msgid "Block Patterns"
+msgstr "Блок паттерндери"
+
+#: admin-dashboard/admin_dashboard.php:162
+#: admin-dashboard/admin_dashboard.php:163
+msgid "Starter Sites"
+msgstr "Башталгыч сайттар"
+
+#: inc/hooks/patterns/theme-block-9-2.php:9
+msgid "Single Column - 2"
+msgstr "Жалгыз тилке - 2"
+
+#: inc/hooks/patterns/theme-block-8-2.php:9
+msgid "Large Posts - 2"
+msgstr "Чоң жазуулар - 2"
+
+#: inc/hooks/patterns/theme-block-6.php:9
+msgid "3 Columns Post Grid"
+msgstr ""
+
+#: inc/hooks/patterns/theme-block-6-2.php:9
+msgid "3 Columns Post Grid - 2"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Page Builder Full Width"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blank Canvas"
+msgstr ""
+
+#: inc/hooks/patterns/theme-block-10-2.php:9
+msgid "Post List - 2"
+msgstr "Жазуу тизмеси - 2"
+
+#: inc/hooks/patterns/theme-block-8.php:9
+msgid "Large Posts"
+msgstr "Чоң жазуулар"
+
+#: inc/hooks/patterns/theme-block-7-2.php:9
+msgid "Post Grid - 2"
+msgstr "Жазуу торчосу - 2"
+
+#: inc/hooks/patterns/section-4.php:9
+msgid "Section 4"
+msgstr "Бөлүм 4"
+
+#: inc/hooks/patterns/section-3.php:9
+msgid "Section 3"
+msgstr "Бөлүм 3"
+
+#: inc/hooks/patterns/section-2.php:9
+msgid "Section 2"
+msgstr "Бөлүм 2"
+
+#: inc/hooks/patterns/section-1.php:9
+msgid "Section 1"
+msgstr "Бөлүм 1"
+
+#: inc/hooks/patterns/full.php:188 inc/hooks/patterns/section-4.php:54
+msgid "Categories"
+msgstr "Категориялар"
+
+#: inc/hooks/patterns/full.php:160 inc/hooks/patterns/section-4.php:26
+#: inc/hooks/patterns/theme-block-9.php:9
+msgid "Single Column"
+msgstr "Жалгыз тилке"
+
+#: inc/hooks/patterns/full.php:152 inc/hooks/patterns/section-4.php:18
+msgid "Express Tile"
+msgstr ""
+
+#: inc/hooks/patterns/full.php:130 inc/hooks/patterns/full.php:170
+#: inc/hooks/patterns/section-3.php:83 inc/hooks/patterns/section-4.php:36
+msgid "Advertisement"
+msgstr "Жарнама"
+
+#: inc/hooks/patterns/full.php:92 inc/hooks/patterns/section-3.php:45
+msgid "Connect to Us"
+msgstr "Бизге кайрылыңыз"
+
+#: inc/hooks/patterns/full.php:84 inc/hooks/patterns/section-3.php:37
+#: inc/hooks/patterns/theme-block-10.php:9
+msgid "Post List"
+msgstr "Жазуулар тизмеси"
+
+#: inc/hooks/patterns/full.php:74 inc/hooks/patterns/full.php:180
+#: inc/hooks/patterns/section-3.php:27 inc/hooks/patterns/section-4.php:46
+#: inc/hooks/patterns/theme-block-7.php:9
+msgid "Post Grid"
+msgstr "Жазуу торчосу"
+
+#: inc/hooks/patterns/full.php:66 inc/hooks/patterns/section-3.php:19
+msgid "Post Slider"
+msgstr "Жазуу жүгүртмөсү"
+
+#: inc/hooks/patterns/full.php:47 inc/hooks/patterns/section-2.php:35
+msgid "We mainly focus on quality code and elegant design with incredible support. Our WordPress themes and plugins empower you to create an elegant, professional, and easy-to-maintain website in no time at all. Even on mobile and tablet screens, your website will look great"
+msgstr ""
+
+#: inc/hooks/patterns/full.php:31 inc/hooks/patterns/section-2.php:19
+msgid "Express Grid"
+msgstr "Экспресс-торчо"
+
+#: inc/hooks/patterns/block-5.php:9 inc/hooks/patterns/block-5.php:16
+#: inc/hooks/patterns/full.php:142
+msgid "Post Carousel"
+msgstr "Жазуу айлампасы"
+
+#: inc/hooks/patterns/block-4.php:16 inc/hooks/patterns/full.php:56
+msgid "Three Columns"
+msgstr "Үч тилке"
+
+#: inc/hooks/patterns/block-4.php:9
+msgid "Three Columns Posts"
+msgstr "Үч тилкеде жазуулар"
+
+#: inc/hooks/patterns/block-3.php:9 inc/hooks/patterns/block-3.php:16
+#: inc/hooks/patterns/full.php:20
+msgid "Featured News"
+msgstr "Сунушталган жаңылыктар"
+
+#: inc/hooks/patterns/block-1.php:9
+msgid "Ticker News"
+msgstr "Жаңылыктардын жүгүртмө сабы"
+
+#: inc/customizer/frontpage-options.php:1569
+msgid "Page Contents & Front-page Widgets"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:1568
+msgid "Front-page Widgets"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:1563
+msgid "Select frontpage content display"
+msgstr "Негизги беттин мазмунун кантип көрсөтүүнү тандаңыз"
+
+#: inc/customizer/frontpage-options.php:1562
+msgid "Front-page Content Display"
+msgstr ""
+
+#: inc/upgrade.php:212
+msgid "Have Queries?"
+msgstr "Суроолоруңуз барбы?"
+
+#: inc/upgrade.php:202
+msgid "All Themes Plan"
+msgstr "Бардык темалар үчүн план"
+
+#: inc/upgrade.php:197
+msgid "Power Bundle"
+msgstr ""
+
+#: inc/upgrade.php:207
+msgid "Maybe Later"
+msgstr "Балким кийинчерээк"
+
+#: inc/upgrade.php:192
+msgid "Claim Your Discount"
+msgstr "Арзандатууну сураңыз"
+
+#. Translators: %1$s current user display name., %2$s this theme name., %3$s
+#. discount coupon code., %4$s discount percentage.
+#: inc/upgrade.php:177
+msgid "%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit with an exclusive gift: %4$s premium features! Use code %3$s at checkout. Wishing you a season filled with joyous holidays and even happier savings! 🎄✨"
+msgstr ""
+
+#: inc/upgrade.php:73 inc/upgrade.php:93
+msgid "Cheatin&#8217; huh?"
+msgstr "Бул алдамчылыкпы?"
+
+#: inc/upgrade.php:69 inc/upgrade.php:89
+msgid "Action failed. Please refresh the page and retry."
+msgstr "Ката. Баракты жаңыртып, кайра аракет кылыңыз."
+
+#: inc/hooks/hook-tgm.php:19
+msgid "Templatespare"
+msgstr "Templatespare"
+
+#: inc/hooks/hook-tgm.php:39
+msgid "Free Live Chat using 3CX"
+msgstr ""
+
+#: inc/hooks/hook-tgm.php:29
+msgid "Blockspare"
+msgstr "Blockspare"
+
+#: inc/hooks/hook-tgm.php:24
+msgid "Elespare"
+msgstr "Elespare"
+
+#: admin-dashboard/rest-api/class-ajaxcall.php:72
+msgid "Sorry, you are not allowed to activate plugins on this site."
+msgstr "Кечиресиз, бул сайтта плагиндерди активдештирүүгө укугуңуз жок."
+
+#: admin-dashboard/rest-api/class-ajaxcall.php:18
+#: admin-dashboard/rest-api/class-ajaxcall.php:79
+#: admin-dashboard/rest-api/class-ajaxcall.php:153
+msgid "Error - unable to verify nonce, please try again."
+msgstr ""
+
+#: admin-dashboard/rest-api/class-ajaxcall.php:10
+#: admin-dashboard/rest-api/class-ajaxcall.php:146
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr "Тилекке каршы, бул сайтка плагиндерди орнотууга укугуңуз жок."
+
+#: admin-dashboard/rest-api/class-admin-notice.php:231
+msgid "Documentation"
+msgstr "Документтер"
+
+#: admin-dashboard/rest-api/class-admin-notice.php:205
+msgid "Theme dashboard"
+msgstr "Теманын башкаруу панели"
+
+#: admin-dashboard/rest-api/api-request.php:126
+msgid "More Details"
+msgstr "Дайындар"
+
+#: admin-dashboard/admin_dashboard.php:563
+#: admin-dashboard/rest-api/api-request.php:104
+#: admin-dashboard/rest-api/class-admin-notice.php:144
+msgid "Get Starter Sites"
+msgstr "Башталгыч сайттарды алыңыз"
+
+#: admin-dashboard/rest-api/api-request.php:99
+msgid "By"
+msgstr "Тарабынан"
+
+#: admin-dashboard/admin_dashboard.php:467
+#: admin-dashboard/rest-api/api-request.php:70
+msgid "Activated"
+msgstr "Активдештирилген"
+
+#: admin-dashboard/admin_dashboard.php:465
+#: admin-dashboard/rest-api/api-request.php:29
+msgid "Install Now"
+msgstr "Азыр орнотуу"
+
+#: admin-dashboard/admin_dashboard.php:464
+msgid "Are you sure you want to install this plugin?"
+msgstr "Бул плагинди орнотууга макулсузбу?"
+
+#: inc/customizer/frontpage-options.php:118
+msgid "Slider and Tabs"
+msgstr "Жүгүртмө жана өтмөктөр"
+
+#: inc/customizer/theme-options.php:74 inc/customizer/theme-options.php:507
+#: inc/customizer/theme-options.php:534 inc/customizer/theme-options.php:561
+msgid "Disable"
+msgstr "Өчүрүү"
+
+#: inc/customizer/theme-options.php:506 inc/customizer/theme-options.php:533
+#: inc/customizer/theme-options.php:560
+msgid "Enable "
+msgstr "Күйгүзүү "
+
+#: inc/customizer/theme-options.php:528
+msgid "Image Lazy Loading"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:20
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Окууну улантуу<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Суралган маалымат табылган жок. Балким, сайттан издөө пайдалуу болушу мүмкүн."
+
+#: template-parts/content-none.php:38
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Кечиресиз, издөөңүз боюнча эч нерсе табылган жок. Башка ачкыч сөздөрдү колдонуп көрүңүз."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Биринчи жазууңузду жарыялоого даярсызбы? <a href=\"%1$s\">Бул жерден баштаңыз</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Эч нерсе табылган жок"
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Издөө жыйынтыктары: %s"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:3509
+#: lib/tgm/class-tgm-plugin-activation.php:3517
+msgid "%1$s done."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: lib/tgm/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: lib/tgm/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "%1$s плагинине жаңыртуу (%2$d/%3$d)"
+
+#: lib/tgm/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Плагинди активдештирүү ишке ашкан жок."
+
+#: lib/tgm/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:466
+#: admin-dashboard/rest-api/api-request.php:74
+#: lib/tgm/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Активдештирүү"
+
+#: inc/customizer/customizer-default.php:119
+#: inc/widgets/widgets-common-functions.php:111
+#: lib/tgm/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Жаңыртуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Орнотуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Плагиндин авторунан жаңыртуу жөнүндө билдирүү:"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "%2$s активдештирүү"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "%2$s жаңылоо"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: lib/tgm/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "%2$s орнотуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Абалы"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Нуска"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Түрү"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Булак"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Плагин"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Орнотуу, жаңыртуу же жандыруу үчүн плагиндер жок."
+
+#: lib/tgm/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Жеткиликтүү нускасы:"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Минималдуу талап кылынган нускасы."
+
+#: lib/tgm/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Орнотулган нускасы:"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "белгисиз"
+
+#. translators: 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+
+#. translators: 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Жаңыртуулар жеткиликтүү <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+
+#. translators: 1: number of plugins.
+#: lib/tgm/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Баары <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: lib/tgm/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Жаңыртуу сунушталат"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Жаңыртуу талап кылынат"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Талап кылынган жаңыртуу жеткиликтүү эмес"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Активдүү"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Орнотулган, бирок активдештирилген эмес"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Орнотулган эмес"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Сырткы булак"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "WordPress репозиторий"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Сунушталган"
+
+#: lib/tgm/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Сөзсүз"
+
+#. translators: %s: version number
+#: lib/tgm/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: lib/tgm/class-tgm-plugin-activation.php:1121
+#: lib/tgm/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "жана"
+
+#: lib/tgm/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:934
+#: lib/tgm/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Жаңыртуу талап кылынат"
+
+#: lib/tgm/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: lib/tgm/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:388
+#: lib/tgm/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:387
+#: lib/tgm/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Плагин ийгиликтүү активдештирилди."
+
+#: lib/tgm/class-tgm-plugin-activation.php:386
+#: lib/tgm/class-tgm-plugin-activation.php:827
+#: lib/tgm/class-tgm-plugin-activation.php:2533
+#: lib/tgm/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Башкаруу панелине кайтуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Талап кылынган плагиндер орнотуучусуна кайтуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Плагинди активдештирип баштоо"
+
+#: lib/tgm/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Плагинди жаңыртып баштоо"
+
+#: lib/tgm/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Плагинди орнотуп баштоо"
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+
+#. translators: 1: plugin name(s).
+#: lib/tgm/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+
+#: lib/tgm/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr "Плагин жаңыланууда: %s"
+
+#. translators: %s: plugin name.
+#: lib/tgm/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr "Плагин орнотулууда: %s"
+
+#: lib/tgm/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Плагиндерди орнотуу"
+
+#: lib/tgm/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Керектүү плагиндерди орнотуу"
+
+#: admin-dashboard/admin_dashboard.php:131
+#: admin-dashboard/admin_dashboard.php:132
+msgid "Customize"
+msgstr "Ырастоо"
+
+#: admin-dashboard/rest-api/class-admin-notice.php:234
+msgid "⭐ Rate This Theme"
+msgstr "⭐ Бул темага баа бериңиз"
+
+#: admin-dashboard/rest-api/class-admin-notice.php:203
+msgid "View Demos"
+msgstr "Демону көрүү"
+
+#: admin-dashboard/admin_dashboard.php:195
+msgid "Upgrade to Pro"
+msgstr "Pro нускасына жаңыртуу"
+
+#: admin-dashboard/rest-api/class-admin-notice.php:233
+msgid "Support"
+msgstr "Колдоо"
+
+#: lib/tgm/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Бул эскертмени четке кагуу"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:875
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr "W"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:846
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:1293
+msgctxt "daily archives date format"
+msgid "j"
+msgstr "j"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:845
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:903
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:1289
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr "F"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:844
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:874
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:902
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:930
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:1285
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:827
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr "H"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:809
+msgctxt "minute archives time format"
+msgid "i"
+msgstr "i"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:791
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr "H:i"
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:318
+msgid "Week %s"
+msgstr "%s жумасына"
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:316
+msgid "Minute %s"
+msgstr "%s мүнөтүнө"
+
+#. Translators: %s is the page number.
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:314
+msgid "Comment Page %s"
+msgstr "Талкуу барагы %s"
+
+#. Translators: %s is the page number.
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:312
+msgid "Page %s"
+msgstr "%s барак"
+
+#. Translators: %s is the search query.
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:310
+msgid "Search results for: %s"
+msgstr "Издөө жыйынтыктары: %s"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:308
+msgid "Archives"
+msgstr "Архивдер"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:307
+msgid "404 Not Found"
+msgstr "404 Табылган жок"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:306
+msgid "Home"
+msgstr "Негизги"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:305
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr "Багыттоо тизмектери"
+
+#: lib/breadcrumb-trail/inc/breadcrumbs.php:304
+msgid "Browse:"
+msgstr "Көрүү:"
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:258
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d элемент"
+
+#: inc/woocommerce.php:254
+msgid "View your shopping cart"
+msgstr "Өзүңүздүн себетиңизди караңыз"
+
+#: inc/widgets/widgets-register-sidebars.php:88
+msgid "Displays items on footer third column."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:78
+msgid "Displays items on footer second column."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:67
+msgid "Displays items on footer first column."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:25
+msgid "Add widgets for off-canvas section."
+msgstr ""
+
+#: inc/customizer/builder/options.php:129
+#: inc/customizer/builder/options.php:511
+msgid "Off Canvas"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:13
+msgid "Add widgets for frontpage banner section advertisement."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:55
+msgid "Add widgets to front-page sidebar section."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:53
+msgid "Front-page Sidebar Section"
+msgstr "Негизги беттин каптал тилкесинин бөлүмү"
+
+#: inc/widgets/widgets-register-sidebars.php:45
+msgid "Add widgets to front-page contents section."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:43
+msgid "Front-page Content Section"
+msgstr "Негизги беттин «Мазмун бөлүмү»"
+
+#: inc/widgets/widgets-register-sidebars.php:35
+msgid "Add widgets for main sidebar."
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:33
+msgid "Main Sidebar"
+msgstr "Негизги виджет аймагы"
+
+#: inc/widgets/widgets-common-functions.php:86
+msgid "Recent"
+msgstr "Соңку"
+
+#: inc/widgets/widgets-base.php:235
+msgctxt "Remove"
+msgid "X"
+msgstr "X"
+
+#: inc/widgets/widgets-base.php:224
+msgid "Choose Image"
+msgstr "Сүрөттү тандоо"
+
+#: inc/widgets/widgets-base.php:223
+msgid "Select Image"
+msgstr "Сүрөттү тандаңыз"
+
+#: inc/widgets/widgets-base.php:222
+msgid "Upload"
+msgstr "Жүктөө"
+
+#: inc/widgets/widget-trending-posts.php:34
+msgid "AFTMN Trending News"
+msgstr "AFTMN: тренд жаңылыктар"
+
+#: inc/widgets/widget-social-contacts.php:67
+msgid "Social menu is not set. You need to create menu and assign it to Social Menu on Menu Settings."
+msgstr ""
+
+#: inc/widgets/widget-social-contacts.php:24
+msgid "AFTMN Social Contacts"
+msgstr "AFTMN: Коомдук байланыштар"
+
+#: inc/widgets/widget-social-contacts.php:20
+msgid "Displays social contacts lists from selected settings."
+msgstr "Тандалган жөндөөлөрдөн коомдук байланыш тизмелерин көрсөтүү."
+
+#: inc/widgets/widget-posts-slider.php:113
+msgid "Select category"
+msgstr "Категорияны тандоо"
+
+#: inc/widgets/widget-posts-slider.php:24
+msgid "AFTMN Posts Slider"
+msgstr "AFTMN: жазуулар жүгүртмөсү"
+
+#: inc/widgets/widget-posts-slider.php:20
+msgid "Displays posts slider from selected category."
+msgstr "Тандалган категориядагы жазуулар жүгүртмөсүн көрсөтөт."
+
+#: inc/widgets/widget-posts-single-column.php:32
+msgid "AFTMN Post Single Column"
+msgstr ""
+
+#: inc/widgets/widget-posts-single-column.php:28
+msgid "Displays posts single column from selected categories."
+msgstr ""
+
+#: inc/widgets/widget-posts-list.php:32
+msgid "AFTMN Post List"
+msgstr ""
+
+#: inc/widgets/widget-posts-grid.php:32
+msgid "AFTMN Post Grid"
+msgstr ""
+
+#: inc/widgets/widget-posts-double-column.php:144
+msgid "Select Category 2"
+msgstr "Категорияны тандаңыз 2"
+
+#: inc/widgets/widget-posts-double-column.php:143
+msgid "Select Category 1"
+msgstr "Категорияны тандаңыз 1"
+
+#: inc/widgets/widget-posts-double-column.php:34
+msgid "AFTMN Post Double Columns"
+msgstr ""
+
+#: inc/widgets/widget-posts-double-column.php:30
+#: inc/widgets/widget-posts-grid.php:28 inc/widgets/widget-posts-list.php:28
+#: inc/widgets/widget-trending-posts.php:30
+msgid "Displays grid from selected categories."
+msgstr ""
+
+#: inc/widgets/widget-express-posts-list.php:32
+msgid "AFTMN Express Posts List"
+msgstr ""
+
+#: inc/widgets/widget-express-posts-list.php:28
+msgid "Displays Express Posts from selected categories."
+msgstr ""
+
+#: inc/widgets/widget-author-info.php:146
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/widgets/widget-author-info.php:145
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/widgets/widget-author-info.php:144
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/widgets/widget-author-info.php:143
+msgid "Descriptions"
+msgstr "Сүрөттөмө"
+
+#: inc/widgets/widget-author-info.php:142
+msgid "Name"
+msgstr "Аты"
+
+#: inc/widgets/widget-author-info.php:141
+msgid "Profile image"
+msgstr "Профилдин сүрөтү"
+
+#: inc/hooks/patterns/full.php:41 inc/hooks/patterns/section-2.php:29
+#: inc/widgets/widget-author-info.php:139
+msgid "About Author"
+msgstr "Автор жөнүндө"
+
+#: inc/widgets/widget-author-info.php:24
+msgid "AFTMN Author Info"
+msgstr "AFTMN: автор жөнүндө маалымат"
+
+#: inc/widgets/widget-author-info.php:20
+msgid "Displays author info."
+msgstr "Автор жөнүндө маалыматты көрсөтүү."
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:195 template-parts/content-page.php:41
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Түзөтүү <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/template-tags.php:154
+msgid "ago"
+msgstr "мурун"
+
+#: inc/template-functions.php:633
+msgid "Next"
+msgstr "Кийинки"
+
+#: inc/template-functions.php:632
+msgid "Previous"
+msgstr "Мурунку"
+
+#: inc/review.php:103
+msgid "Got any support queries?"
+msgstr ""
+
+#: inc/review.php:98
+msgid "I've already done."
+msgstr ""
+
+#: inc/review.php:93
+msgid "Remind me later"
+msgstr "Кийинчерээк эстетүү"
+
+#: inc/review.php:88
+msgid "Sure thing"
+msgstr ""
+
+#. Translators: %1$s current user display name.
+#: inc/review.php:74
+msgid "Howdy, %1$s! We've noticed that you've been using %2$s for some time now, we hope you are loving it! We would appreciate it if you can give us %3$sreview and rating%4$s on WordPress.org! We'll continue to develop exciting new features for free in the future by sharing the love!"
+msgstr ""
+
+#: inc/hooks/hook-tgm.php:34
+msgid "WP Post Author"
+msgstr "WP жазуунун автору"
+
+#: inc/hooks/hook-meta.php:196 inc/hooks/hook-meta.php:233
+msgid "Select category color class. You can set appropriate categories color on \"Categories\" section of the theme customizer."
+msgstr "Категория үчүн түс классын тандаңыз. Категориянын керектүү түсүн теманы жөндөө модулунун \"Категориялар\" бөлүмүндө орнотсо болот."
+
+#: inc/hooks/hook-meta.php:190 inc/hooks/hook-meta.php:217
+msgid "Color Class"
+msgstr "Түстүк класс"
+
+#: inc/hooks/hook-meta.php:184 inc/hooks/hook-meta.php:223
+msgid "Category Color 3"
+msgstr "Түс категориясы 3"
+
+#: inc/hooks/hook-meta.php:183 inc/hooks/hook-meta.php:222
+msgid "Category Color 2"
+msgstr "Түс категориясы 2"
+
+#: inc/hooks/hook-meta.php:182 inc/hooks/hook-meta.php:221
+msgid "Category Color 1"
+msgstr "Түс категориясы 1"
+
+#: inc/hooks/hook-meta.php:111
+msgid "Please go to Customize>Front-page Options for Homepage."
+msgstr ""
+
+#: inc/hooks/hook-meta.php:107
+msgid "No Sidebar"
+msgstr "Каптал тилкеси жок"
+
+#: inc/hooks/hook-meta.php:104
+msgid "Primary Sidebar - Content"
+msgstr "Негизги виджет аймагы - Мазмун"
+
+#: inc/hooks/hook-meta.php:101
+msgid "Content - Primary Sidebar"
+msgstr "Мазмун - Негизги виджет аймагы"
+
+#: inc/hooks/hook-meta.php:93
+msgid "Sidebar Options"
+msgstr "Виджет аймагынын жөндөөлөрү"
+
+#: inc/hooks/hook-meta.php:88
+msgid "Please go to Customize>Themes Options for Single Post/Page."
+msgstr ""
+
+#: inc/hooks/hook-meta.php:77 inc/hooks/hook-meta.php:98
+msgid "Set as global layout"
+msgstr ""
+
+#: inc/hooks/hook-meta.php:72
+msgid "Content Options"
+msgstr ""
+
+#: inc/hooks/hook-meta.php:24
+msgid "Layout Options"
+msgstr ""
+
+#: inc/hooks/blocks/block-archive-list.php:20
+#: template-parts/content-page.php:27 template-parts/content.php:58
+msgid "Pages:"
+msgstr "Барактар:"
+
+#: inc/customizer/theme-options.php:1593
+msgid "Hide footer Menu Section"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1571
+msgid "Copyright Text"
+msgstr "Автордук укуктун тексти"
+
+#: inc/customizer/theme-options.php:1546
+msgid "Footer Background Image"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:99
+#: inc/customizer/theme-options.php:1522
+msgid "Footer"
+msgstr "Аякбөлүм"
+
+#: inc/customizer/theme-options.php:1505
+msgid "Posts Section Title"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1485
+msgid "Show Above Footer"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1466
+msgid "You May Have Missed"
+msgstr "Мүмкүн, сиз өткөрүп жибергендирсиз"
+
+#: inc/customizer/theme-options.php:1452
+msgid "Top"
+msgstr "Өйдө"
+
+#: inc/customizer/theme-options.php:1448
+msgid "Sidebar Sticky Position"
+msgstr "Кадалган виджет аймагынын орду"
+
+#: inc/customizer/theme-options.php:1427
+msgid "Make Sidebar Sticky"
+msgstr "Виджет аймагын жабышчаак кылыңыз"
+
+#: inc/customizer/theme-options.php:1406
+msgid "Sidebar Settings"
+msgstr "Виджет аймагынын жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:1324
+msgid "Full Content"
+msgstr "Бардык мазмундар"
+
+#: inc/customizer/theme-options.php:1323
+msgid "Post Excerpt"
+msgstr "Жазуунун үзүндүсү"
+
+#: inc/customizer/theme-options.php:1319
+msgid "Select content view for archive"
+msgstr "Архив үчүн мазмун түрүн тандаңыз"
+
+#: inc/customizer/theme-options.php:1318
+msgid "Content View"
+msgstr "Мазмунду көрүү"
+
+#: inc/customizer/theme-options.php:1297
+msgid "Before Image"
+msgstr "Сүрөткө чейин"
+
+#: inc/customizer/theme-options.php:1296
+msgid "After Image"
+msgstr "Сүрөттөн кийин"
+
+#: inc/customizer/theme-options.php:1292
+msgid "Select full layout for archive"
+msgstr "Архив үчүн толук макетти тандоо"
+
+#: inc/customizer/theme-options.php:1291
+msgid "Select Title Position"
+msgstr "Аталыш ордун тандаңыз"
+
+#: inc/customizer/theme-options.php:1264
+msgid "Select image alignment for archive"
+msgstr "Архив үчүн сүрөттү тегиздөөнү тандоо"
+
+#: inc/customizer/theme-options.php:1263
+msgid "Image Alignment"
+msgstr "Сүрөттү тегиздөө"
+
+#: inc/customizer/theme-options.php:1242 inc/hooks/patterns/full.php:9
+msgid "Full"
+msgstr "Туурасынан"
+
+#: inc/customizer/theme-options.php:1241
+msgid "List"
+msgstr "Тизме"
+
+#: inc/customizer/theme-options.php:1235
+msgid "Select layout for archive"
+msgstr "Архив үчүн макетти тандоо"
+
+#: inc/customizer/theme-options.php:1234
+msgid "Archive layout"
+msgstr "Архивдин макети"
+
+#: inc/customizer/theme-options.php:1213
+msgid "Disable Main Banner on Blog"
+msgstr "Блогдогу негизги баннерди өчүрүү"
+
+#: inc/customizer/theme-options.php:1192
+msgid "Archive Settings"
+msgstr "Архив жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:1151
+msgid "Enable Related Posts"
+msgstr "Окшош жазууларды күйгүзүү"
+
+#: inc/customizer/theme-options.php:1130
+msgid "Related Posts Settings"
+msgstr "Окшош жазуулардын жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:1065 inc/customizer/theme-options.php:1453
+msgid "Bottom"
+msgstr "Ылдый"
+
+#: inc/customizer/theme-options.php:1064
+msgid "Top - Default"
+msgstr "Өйдө - демейки"
+
+#: inc/customizer/theme-options.php:1060
+msgid "Social Share from Jetpack plugin"
+msgstr "Jetpack плагини менен коомдук тармактарда бөлүшүү"
+
+#: inc/customizer/theme-options.php:1059
+msgid "Social Share Option"
+msgstr "Коомдук тармакта бөлүшүү опциясы"
+
+#: inc/customizer/theme-options.php:1035 inc/hooks/hook-meta.php:83
+msgid "Spacious"
+msgstr "Кенен"
+
+#: inc/customizer/theme-options.php:1029
+msgid "Single Content Mode"
+msgstr "Жалгыз мазмун абалы"
+
+#: inc/customizer/theme-options.php:982
+msgid "Show Featured Image"
+msgstr "Жазуунун сүрөтүн көрсөтүү"
+
+#: inc/customizer/theme-options.php:962
+msgid "Single Post"
+msgstr "Жалгыз жазуу"
+
+#: inc/customizer/theme-options.php:946
+msgid "Link"
+msgstr "Шилтеме"
+
+#: inc/customizer/theme-options.php:925 inc/customizer/theme-options.php:1171
+#: inc/widgets/widget-author-info.php:139
+#: inc/widgets/widget-express-posts-list.php:135
+#: inc/widgets/widget-posts-double-column.php:141
+#: inc/widgets/widget-posts-double-column.php:142
+#: inc/widgets/widget-posts-grid.php:114 inc/widgets/widget-posts-list.php:117
+#: inc/widgets/widget-posts-single-column.php:117
+#: inc/widgets/widget-posts-slider.php:111
+#: inc/widgets/widget-trending-posts.php:138
+msgid "Title"
+msgstr "Аталышы"
+
+#: inc/customizer/theme-options.php:902
+msgid "Enable Custom Menu Section"
+msgstr "Кошумча меню бөлүмүн иштетүү"
+
+#: inc/customizer/theme-options.php:839
+msgid "Global Excerpt Read More"
+msgstr "Глобалдуу үзүндү Кененирээк"
+
+#: inc/customizer/theme-options.php:817
+msgid "Excerpt Settings"
+msgstr "Үзүндү жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:778 inc/customizer/theme-options.php:799
+msgid "Minutes Read Count"
+msgstr "Окуу мүнөттөрүн эсептөө"
+
+#: inc/customizer/theme-options.php:764
+msgid "Ago Date Format"
+msgstr "Күн форматы мурун"
+
+#: inc/customizer/theme-options.php:763
+msgid "WordPress Default Date Format"
+msgstr "WordPress демейки күн форматы"
+
+#: inc/customizer/theme-options.php:759
+msgid "Date Format"
+msgstr "Күн форматы"
+
+#: inc/customizer/theme-options.php:738 inc/customizer/theme-options.php:1325
+msgid "None"
+msgstr "Жок"
+
+#: inc/customizer/theme-options.php:737
+msgid "Show Icon"
+msgstr "Сүрөтчөсүн көрсөтүү"
+
+#: inc/customizer/theme-options.php:736
+msgid "Show Gravatar"
+msgstr "Gravatar көрсөтүү"
+
+#: inc/customizer/theme-options.php:732
+msgid "Author Icon"
+msgstr "Автор сүрөтчөсү"
+
+#: inc/customizer/theme-options.php:711
+msgid "Author and Date Settings"
+msgstr "Автор жана дата жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:699
+msgid "Number of Categories"
+msgstr "Категориялардын саны"
+
+#: inc/customizer/theme-options.php:678
+msgid "Top One Category"
+msgstr ""
+
+#: inc/customizer/theme-options.php:677
+msgid "Show All"
+msgstr "Баарын көрсөтүү"
+
+#: inc/customizer/theme-options.php:673
+msgid "Categories to be displayed"
+msgstr "Көрсөтүлө турган категориялар"
+
+#: inc/customizer/theme-options.php:615 inc/customizer/theme-options.php:652
+#: inc/customizer/theme-options.php:804
+msgid "Hide"
+msgstr "Жашыруу"
+
+#: inc/customizer/theme-options.php:614 inc/customizer/theme-options.php:651
+#: inc/customizer/theme-options.php:803
+msgid "Show"
+msgstr "Көрсөтүү"
+
+#: inc/customizer/theme-options.php:647
+msgid "Post Categories"
+msgstr "Жазуу категориялары"
+
+#: inc/customizer/theme-options.php:627
+msgid "Categories Settings"
+msgstr "Категориялардын жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:589 inc/customizer/theme-options.php:1268
+msgid "Left"
+msgstr "Солго"
+
+#: inc/customizer/theme-options.php:588 inc/customizer/theme-options.php:1269
+msgid "Right"
+msgstr "Оңго"
+
+#: inc/customizer/theme-options.php:583
+msgid "Scroll to Top Position"
+msgstr "Жогору жылдыруу орду"
+
+#: inc/customizer/theme-options.php:482
+msgid "Full width content"
+msgstr ""
+
+#: inc/customizer/theme-options.php:481
+msgid "Primary sidebar - Content"
+msgstr "Негизги виджет аймагы - Мазмун"
+
+#: inc/customizer/theme-options.php:480
+msgid "Content - Primary sidebar"
+msgstr "Мазмун - Негизги виджет аймагы"
+
+#: inc/customizer/theme-options.php:476
+msgid "Global Content Alignment"
+msgstr "Глобалдык мазмунду тегиздөө"
+
+#: inc/customizer/theme-options.php:434
+msgid "Enable Preloader"
+msgstr "Жүктөө анимациясын иштетүү"
+
+#: inc/customizer/theme-options.php:413
+msgid "Global Settings"
+msgstr "Глобалдык жөндөөлөр"
+
+#: inc/customizer/theme-options.php:394
+msgid "NavXT"
+msgstr "NavXT"
+
+#: inc/customizer/theme-options.php:393
+msgid "Rank Math"
+msgstr "Rank Math"
+
+#: inc/customizer/theme-options.php:392
+msgid "Yoast SEO"
+msgstr "Yoast SEO"
+
+#: inc/customizer/theme-options.php:391 inc/customizer/theme-options.php:1034
+#: inc/hooks/hook-meta.php:80
+msgid "Default"
+msgstr "Демейки"
+
+#: inc/customizer/theme-options.php:386
+msgid "Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default"
+msgstr "Демейки тандоодон башка жолду тандаардан мурун плагиндин багыттоо тизмектерин иштеткениңизди текшериңиз"
+
+#: inc/customizer/theme-options.php:385
+msgid "Select Breadcrumbs"
+msgstr "Багыттоо тизмектерин тандоо"
+
+#: inc/customizer/theme-options.php:365
+msgid "Show breadcrumbs"
+msgstr "Багыттоо тизмектерин көрсөтүү"
+
+#: inc/customizer/theme-options.php:344
+msgid "Breadcrumb Options"
+msgstr "Багыттоо тизмегинин жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:330
+msgid "Theme Options"
+msgstr "Теманын жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:318
+msgid "URL Link"
+msgstr "URL шилтеме"
+
+#: inc/customizer/theme-options.php:294
+msgid "Header Section Advertisement"
+msgstr "Жарнама башбөлүм бөлүмүндө"
+
+#: inc/customizer/theme-options.php:233 inc/customizer/theme-options.php:267
+msgid "Header Advertisement"
+msgstr "Жарнама башбөлүмдө"
+
+#: inc/customizer/theme-options.php:136
+msgid "Show Top Header"
+msgstr "Жогорку башбөлүмдү көрсөтүү"
+
+#: inc/customizer/theme-options.php:114
+msgid "Top Header Section"
+msgstr "Жогорку башбөлүм бөлүмү"
+
+#: inc/customizer/theme-options.php:47
+msgid "Header Settings"
+msgstr "Башбөлүм жөндөөлөрү"
+
+#: inc/customizer/theme-options.php:31
+msgid "Header Options"
+msgstr "Башбөлүм опциялары"
+
+#: inc/customizer/frontpage-options.php:1595
+msgid "Only Home Content"
+msgstr "Негизги мазмуну гана"
+
+#: inc/customizer/frontpage-options.php:1594
+msgid "Home Sidebar - Home Content"
+msgstr "Негизгинин виджет аймагы- Негизгинин мазмуну"
+
+#: inc/customizer/frontpage-options.php:1593
+msgid "Home Content - Home Sidebar"
+msgstr "Негизгинин мазмуну - Негизгинин виджет аймагы"
+
+#: inc/customizer/frontpage-options.php:1589
+msgid "Select frontpage content alignment"
+msgstr "Негизги беттин мазмунун тегиздөөнү тандаңыз"
+
+#: inc/customizer/frontpage-options.php:1588
+msgid "Front-page Content Alignment"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:1541
+msgid "Front-page Layout Settings"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:1498
+msgid "Section Title"
+msgstr "Бөлүмдүн аталышы"
+
+#: inc/customizer/frontpage-options.php:1477
+msgid "Section %d"
+msgstr "Бөлүм %d"
+
+#: inc/customizer/frontpage-options.php:1452
+msgid "Enable Post List Section"
+msgstr "«Жазуулар тизмеси» бөлүмүн иштетүү"
+
+#: inc/customizer/frontpage-options.php:1432
+msgid "Posts List"
+msgstr "Жазуулардын тизмеси"
+
+#: inc/customizer/frontpage-options.php:1411
+#: inc/customizer/frontpage-options.php:1524
+msgid "Select category to be shown on featured section "
+msgstr "Сунушталган бөлүмүндө көрсөтүлө турган категорияны тандаңыз "
+
+#: inc/customizer/frontpage-options.php:1410
+msgid "Select "
+msgstr "Тандоо "
+
+#: inc/customizer/frontpage-options.php:1365
+msgid "Enable Featured Post Section"
+msgstr "Сунушталган жазуулар бөлүмүн иштетүү"
+
+#: inc/customizer/frontpage-options.php:1327
+msgid "Front-page Options"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:1304
+msgid "Select category to be shown on trending posts "
+msgstr "Тренддеги жазууларда көрсөтүлө турган категорияны тандаңыз "
+
+#: inc/customizer/frontpage-options.php:1303
+msgid "Flash Posts Category"
+msgstr "Флэш-жазуу категориясы"
+
+#: inc/customizer/frontpage-options.php:1260
+msgid "Enable Flash News"
+msgstr "Флэш-жаңылыктарды иштетүү"
+
+#: inc/customizer/frontpage-options.php:1231
+msgid "Breaking News"
+msgstr "Соңку жаңылыктар"
+
+#: inc/customizer/frontpage-options.php:1197
+msgid "Enable Trending Tags"
+msgstr "Тренддеги тегдерди иштетүү"
+
+#: inc/customizer/frontpage-options.php:847
+msgid "Popular Section"
+msgstr "Популярдуу бөлүмү"
+
+#: inc/customizer/frontpage-options.php:680
+msgid "Latest Section"
+msgstr "Жаңы бөлүмү"
+
+#: inc/customizer/frontpage-options.php:574
+#: inc/customizer/frontpage-options.php:910
+#: inc/customizer/theme-options.php:610
+msgid "Comment Count"
+msgstr "Пикирлерди эсептөө"
+
+#: inc/customizer/frontpage-options.php:511
+msgid "Trending Section"
+msgstr "Тренддер бөлүмү"
+
+#: inc/customizer/frontpage-options.php:441
+#: inc/customizer/frontpage-options.php:606
+#: inc/customizer/frontpage-options.php:774
+#: inc/customizer/frontpage-options.php:942
+#: inc/customizer/frontpage-options.php:1108
+#: inc/widgets/widgets-common-functions.php:25
+msgid "Select"
+msgstr "Тандоо"
+
+#: inc/customizer/frontpage-options.php:349
+msgid "Editor's Picks Section"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:316
+msgid "Select tag to be shown on main slider section"
+msgstr "Жүгүртмөнүн негизги бөлүмүндө көрсөтүлө турган тегин тандаңыз"
+
+#: inc/customizer/frontpage-options.php:315
+#: inc/customizer/frontpage-options.php:475
+#: inc/customizer/frontpage-options.php:641
+#: inc/customizer/frontpage-options.php:809
+#: inc/customizer/frontpage-options.php:977
+#: inc/customizer/frontpage-options.php:1142
+msgid "Select Tag"
+msgstr "Тегди тандоо"
+
+#: inc/customizer/frontpage-options.php:283
+msgid "Select category to be shown on main slider section"
+msgstr "Негизги жүгүртмөдө көрсөтүлө турган категорияны тандаңыз"
+
+#: inc/customizer/frontpage-options.php:282
+#: inc/widgets/widget-express-posts-list.php:136
+#: inc/widgets/widget-posts-grid.php:115 inc/widgets/widget-posts-list.php:118
+#: inc/widgets/widget-posts-single-column.php:118
+#: inc/widgets/widget-trending-posts.php:139
+msgid "Select Category"
+msgstr "Категорияны тандоо"
+
+#: inc/customizer/frontpage-options.php:259
+#: inc/customizer/frontpage-options.php:411
+#: inc/customizer/frontpage-options.php:573
+#: inc/customizer/frontpage-options.php:743
+#: inc/customizer/frontpage-options.php:909
+#: inc/customizer/frontpage-options.php:1076
+msgid "Tag"
+msgstr "Тег"
+
+#: inc/customizer/frontpage-options.php:258
+#: inc/customizer/frontpage-options.php:410
+#: inc/customizer/frontpage-options.php:742
+#: inc/customizer/frontpage-options.php:1075
+#: inc/customizer/frontpage-options.php:1523
+msgid "Category"
+msgstr "Категория"
+
+#: inc/customizer/frontpage-options.php:254
+#: inc/customizer/frontpage-options.php:406
+#: inc/customizer/frontpage-options.php:569
+#: inc/customizer/frontpage-options.php:738
+#: inc/customizer/frontpage-options.php:905
+#: inc/customizer/frontpage-options.php:1071
+msgid "Filter Posts By"
+msgstr "Жазууларды төмөнкү боюнча чыпкалоо"
+
+#: inc/customizer/frontpage-options.php:229
+#: inc/customizer/frontpage-options.php:375
+#: inc/customizer/frontpage-options.php:538
+#: inc/customizer/frontpage-options.php:708
+#: inc/customizer/frontpage-options.php:875
+#: inc/customizer/frontpage-options.php:1042
+#: inc/customizer/frontpage-options.php:1216
+#: inc/customizer/frontpage-options.php:1279
+#: inc/customizer/frontpage-options.php:1385
+msgid "Section Title "
+msgstr "Бөлүмдүн аталышы "
+
+#: inc/customizer/frontpage-options.php:210
+msgid "Main News Section "
+msgstr "Негизги жаңылыктар бөлүмү "
+
+#: inc/customizer/frontpage-options.php:146
+msgid "Order 3"
+msgstr "Иреттөө 3"
+
+#: inc/customizer/frontpage-options.php:145
+#: inc/customizer/frontpage-options.php:179
+msgid "Order 2"
+msgstr "Иреттөө 3"
+
+#: inc/customizer/frontpage-options.php:144
+#: inc/customizer/frontpage-options.php:178
+msgid "Order 1"
+msgstr "Иреттөө 1"
+
+#: inc/customizer/frontpage-options.php:140
+#: inc/customizer/frontpage-options.php:174
+msgid "Select Main Banner Order"
+msgstr "Негизги баннердин тартибин тандаңыз"
+
+#: inc/customizer/frontpage-options.php:116
+msgid "Slider, Editors Picks and Tabs"
+msgstr "Жүгүртмө, редактор тандоосу жана өтмөктөр"
+
+#: inc/customizer/frontpage-options.php:115
+msgid "Slider, Trending and Tabs"
+msgstr "Жүгүртмө, тренддер жана өтмөктөр"
+
+#: inc/customizer/frontpage-options.php:111
+msgid "Select Main Banner Layout"
+msgstr "Негизги баннердин макетин тандаңыз"
+
+#: inc/customizer/frontpage-options.php:85 inc/customizer/theme-options.php:295
+#: inc/customizer/theme-options.php:1547
+msgid "Recommended Size %1$s px X %2$s px"
+msgstr "Сунушталган өлчөм %1$s пикс X %2$s пикс"
+
+#: inc/customizer/frontpage-options.php:84
+msgid "Main Banner Background Image"
+msgstr "Негизги баннердин фон сүрөтү"
+
+#: inc/customizer/frontpage-options.php:59
+msgid "Enable Main Banner Section"
+msgstr "Негизги баннер бөлүмүн иштетүү"
+
+#: inc/customizer/frontpage-options.php:38 inc/hooks/patterns/block-2.php:9
+msgid "Main Banner"
+msgstr "Негизги баннер"
+
+#: inc/customizer/frontpage-options.php:23
+msgid "Main Banner Options"
+msgstr "Негизги баннер жөндөөлөрү"
+
+#: inc/customizer/font-color-options.php:259
+msgid "Secondary Font"
+msgstr "Кошумча арип"
+
+#: inc/customizer/font-color-options.php:239
+msgid "Primary Font"
+msgstr "Негизги арип"
+
+#: inc/customizer/font-color-options.php:219
+msgid "Site Title Font"
+msgstr "Сайттын аталышынын ариптери"
+
+#: inc/customizer/font-color-options.php:173
+msgid "Font Family Section"
+msgstr "Ариптер бөлүмү"
+
+#: inc/customizer/font-color-options.php:151
+msgid "Fonts & Typography"
+msgstr "Ариптер жана типографика"
+
+#: inc/customizer/font-color-options.php:136
+msgid "Secondary Color"
+msgstr "Кошумча түс"
+
+#: inc/customizer/font-color-options.php:112
+msgid "Secondary Color Section "
+msgstr "Кошумча түс бөлүмү "
+
+#: inc/customizer/font-color-options.php:89
+msgid "Body Background Color (Dark Mode)"
+msgstr "Негизги тексттин фонунун түсү (караңгы абал)"
+
+#: inc/customizer/font-color-options.php:66
+msgid "Body Background Color (Dark Mode) will be applied for this mode."
+msgstr "Негизги тексттин фон түсү үчүн бул абал (караңгы абал) колдонулат."
+
+#: inc/customizer/font-color-options.php:45
+msgid "Primary Color Section "
+msgstr "Негизги түс бөлүмү "
+
+#: inc/customizer/font-color-options.php:28
+msgid "Dark"
+msgstr "Караңгы"
+
+#: inc/customizer/font-color-options.php:27
+msgid "Light"
+msgstr "Ачык"
+
+#: inc/customizer/font-color-options.php:23
+msgid "Site Color Mode"
+msgstr "Сайттын түс абалы"
+
+#: admin-dashboard/admin_dashboard.php:196 inc/customizer/customizer.php:198
+msgid "Upgrade Now"
+msgstr "Азыр жаңыртуу"
+
+#: inc/customizer/customizer.php:197
+msgid "MoreNews Pro"
+msgstr "MoreNews Pro"
+
+#: inc/customizer/customizer.php:176
+msgid "Disable Image Tint/Overlay"
+msgstr "Сүрөттүн түсүн/катмарын өчүрүү"
+
+#: inc/customizer/customizer.php:155
+msgid "Set as Background"
+msgstr "Фон катары орнотуу"
+
+#: inc/customizer/customizer.php:150
+msgid "Image visibility may vary as per the mode"
+msgstr "Сүрөттүн көрүнүшү абалга жараша өзгөрүшү мүмкүн"
+
+#: inc/customizer/customizer.php:149
+msgid "Header Image Mode"
+msgstr "Башбөлүм сүрөтүнүн абалы"
+
+#: inc/customizer/customizer.php:127
+msgid "Site Title/Tagline Color"
+msgstr "Сайттын аталышы/сүрөттөмө түсү"
+
+#: inc/customizer/customizer.php:116
+msgid "Uppercase Site Title and Tagline"
+msgstr "Сайттын аталышы жана сүрөттөмөсү чоң тамга"
+
+#: inc/customizer/customizer.php:96
+msgid "Site Title Size"
+msgstr "Сайттын аталышынын өлчөмү"
+
+#: inc/customizer/customizer.php:68
+msgid "Body Background Color"
+msgstr "Негизги тексттин фонунун түсү"
+
+#: inc/customizer/customizer-default.php:261
+msgid "Copyright &copy; All rights reserved."
+msgstr "Copyright &copy; Бардык укуктар корголгон."
+
+#: inc/customizer/customizer-default.php:257
+msgid "You may have missed"
+msgstr "Мүмкүн, сиз өткөрүп жибергендирсиз"
+
+#: inc/widgets/widget-social-contacts.php:41
+msgid "Connect with Us"
+msgstr "Биз менен байланышыңыз"
+
+#: inc/customizer/customizer-default.php:206
+msgid "Read More"
+msgstr "Кененирээк"
+
+#: inc/customizer/customizer-default.php:183
+msgid "View More"
+msgstr "Көбүрөөк көрүү"
+
+#: inc/customizer/customizer-default.php:177
+msgid "Post list Section Title %d"
+msgstr ""
+
+#: inc/customizer/customizer-default.php:173
+msgid "Featured Categories"
+msgstr "Сунушталган категориялар"
+
+#: inc/customizer/customizer-default.php:166
+#: inc/customizer/frontpage-options.php:1342
+msgid "Featured Posts"
+msgstr "Сунушталган жазуулар"
+
+#: inc/customizer/customizer-default.php:161
+msgid "Trending Story"
+msgstr "Тренддеги окуя"
+
+#: inc/customizer/customizer-default.php:145
+#: inc/customizer/customizer-default.php:158
+msgid "Editor's Picks"
+msgstr "Редактордун тандоосу"
+
+#: inc/customizer/customizer-default.php:108
+msgid "Trending Now"
+msgstr "Азыр трендде"
+
+#: inc/customizer/customizer-default.php:105
+msgid "Trending"
+msgstr "Трендде"
+
+#: inc/customizer/customizer-default.php:104
+#: inc/customizer/customizer-default.php:114
+#: inc/widgets/widgets-common-functions.php:99
+msgid "Popular"
+msgstr "Популярдуу"
+
+#: inc/customizer/customizer-default.php:103
+#: inc/customizer/customizer-default.php:124
+msgid "Latest"
+msgstr "Соңку"
+
+#: inc/customizer/customizer-default.php:98
+msgid "Main News"
+msgstr "Башкы жаңылыктар"
+
+#: inc/customizer/customizer-default.php:80
+msgid "Posts List %d"
+msgstr "Жазуулар тизмеси %d"
+
+#: inc/customizer/customizer-default.php:246
+msgid "Related Stories"
+msgstr "Окшош окуялар"
+
+#: inc/customizer/customizer-default.php:69
+msgid "Exclusive"
+msgstr "Эксклюзив"
+
+#: inc/customizer/customizer-default.php:62
+#: inc/customizer/frontpage-options.php:1168
+msgid "Popular Tags"
+msgstr "Популярдуу Тегдер"
+
+#: inc/customizer/customizer-default.php:47
+msgid "Live"
+msgstr "Учурда"
+
+#: inc/customizer/customizer-control.php:186
+msgid "-- Select --"
+msgstr "-- Тандоо --"
+
+#: header.php:52
+msgid "Skip to content"
+msgstr "Мазмунга өтүү"
+
+#: functions.php:85
+msgid "Footer Menu"
+msgstr "Аякбөлүм менюсу"
+
+#: functions.php:84 inc/customizer/builder/options.php:266
+#: inc/customizer/builder/options.php:271
+#: inc/customizer/builder/options.php:392
+#: inc/customizer/builder/options.php:397
+msgid "Social Menu"
+msgstr "Коомдук тармактар менюсу"
+
+#: functions.php:83 inc/class-amp-compatible.php:152
+#: inc/customizer/builder/builder-structure.php:199
+#: inc/hooks/hook-header-section.php:68
+msgid "Primary Menu"
+msgstr "Негизги меню"
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:153 inc/customizer/builder/builder-structure.php:381
+msgid "%1$s by %2$s."
+msgstr "%1$s автору: %2$s."
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr "Талкуу жабык."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s пикир «%2$s»"
+
+#. translators: 1: title.
+#: comments.php:34
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "&ldquo;%1$s&rdquo; боюнча бир пикир"
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Бул даректе эч нерсе табылган жок. Төмөнкү шилтемеден бирин колдонууга аракет кылыңыз же издеңиз."
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! Барак табылган жок."
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.afthemes.com/"
+msgstr "https://www.afthemes.com/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "AF themes"
+msgstr "AF themes"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://afthemes.com/products/morenews/"
+msgstr "https://afthemes.com/products/morenews/"

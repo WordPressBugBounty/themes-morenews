@@ -145,7 +145,7 @@ if (!class_exists('AF_themes_info')) {
         //[$this,'morenews_customize_link'] // Callback function.
 
       );
-
+      
       add_submenu_page(
         'morenews', // Parent slug.
         __('Footer Builder', 'morenews'), // Page title.

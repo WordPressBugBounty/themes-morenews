@@ -65,8 +65,7 @@ if (!function_exists('morenews_setup')) :
 
     add_theme_support('post-thumbnails');
     add_theme_support('rtl');
-    // Add featured image sizes
-    add_image_size('morenews-featured', 1024, 0, false); // width, height, crop
+    // Add featured image sizes    
     add_image_size('morenews-large', 825, 575, true); // width, height, crop
     add_image_size('morenews-medium', 590, 410, true); // width, height, crop
 
@@ -157,56 +156,53 @@ function morenews_content_width()
 
 add_action('after_setup_theme', 'morenews_content_width', 0);
 /**
- * Filter font variants to include only necessary ones.
- *
- * @param string $font The font string (e.g., "Lato:400,300,400italic,900,700").
- * @return string Filtered font string with only the allowed variants.
+ * ==========================================================================
+ * FONT MANAGEMENT — Google, Local, or System
+ * Optimized & GDPR-compliant for MoreNews Theme
+ * ==========================================================================
  */
 
-function morenews_is_google_fonts_enabled()
-{
-  $global_font_type = morenews_get_option('global_font_family_type');
-  return $global_font_type === 'google';
+/**
+ * Check whether Google Fonts are enabled.
+ */
+function morenews_is_google_fonts_enabled() {
+  return morenews_get_option('global_font_family_type') === 'google';
 }
-
 
 /**
  * Filter allowed font variants.
  */
-function morenews_filter_font_variants($font)
-{
+function morenews_filter_font_variants($font) {
   if (strpos($font, ':') === false) {
     return $font;
   }
 
   list($font_name, $variants) = explode(':', $font);
-
-  $allowed_variants = array('400', '700');
-  $font_variants = explode(',', $variants);
+  $allowed_variants  = array('400', '700');
+  $font_variants     = explode(',', $variants);
   $filtered_variants = array_intersect($font_variants, $allowed_variants);
 
-  return !empty($filtered_variants) ? $font_name . ':' . implode(',', $filtered_variants) : $font_name;
+  return !empty($filtered_variants)
+    ? $font_name . ':' . implode(',', $filtered_variants)
+    : $font_name;
 }
 
 /**
- * Get Google Fonts URL based on theme settings.
+ * Build a single Google Fonts URL.
  */
-function morenews_get_fonts_url()
-{
+function morenews_get_fonts_url() {
   static $cached_url = null;
   if ($cached_url !== null) {
     return $cached_url;
   }
 
-  // 💡 Check if Google Fonts are enabled
   if (!morenews_is_google_fonts_enabled()) {
     $cached_url = '';
     return '';
   }
 
   $fonts_url = '';
-  $subsets = 'latin';
-  $theme_fonts = array();
+  $subsets   = 'latin';
 
   $site_title_font = morenews_get_option('site_title_font');
   $primary_font    = morenews_get_option('primary_font');
@@ -216,8 +212,8 @@ function morenews_get_fonts_url()
 
   $theme_fonts = array_filter(array_map(function ($font) {
     if (empty($font)) return '';
-    if (stripos($font, 'Open+Sans') !== false || stripos($font, 'Oswald') !== false) {
-      return null;
+    if (stripos($font, 'oswald') !== false || stripos($font, 'open+sans') !== false || stripos($font, 'open sans') !== false) {
+      return null; // Local fonts
     }
     return morenews_filter_font_variants($font);
   }, $all_fonts));
@@ -228,7 +224,7 @@ function morenews_get_fonts_url()
     $fonts_url = add_query_arg(array(
       'family'  => implode('|', $unique_fonts),
       'subset'  => $subsets,
-      'display' => 'swap',
+      'display' => 'swap', //  ensures smooth rendering
     ), 'https://fonts.googleapis.com/css');
   }
 
@@ -236,84 +232,187 @@ function morenews_get_fonts_url()
   return $fonts_url;
 }
 
-
 /**
- * Add preconnect for Google Fonts domains (only if used).
+ * Add preconnect for Google Fonts domains (DNS + TLS warmup).
  */
-function morenews_add_preconnect_links($urls, $relation_type)
-{
+function morenews_add_preconnect_links($urls, $relation_type) {
   if ('preconnect' === $relation_type && morenews_is_google_fonts_enabled()) {
-    $urls[] = 'https://fonts.googleapis.com';
-    $urls[] = 'https://fonts.gstatic.com';
+    $fonts_url = morenews_get_fonts_url();
+    if (!empty($fonts_url)) {
+      $urls[] = array('href' => 'https://fonts.googleapis.com', 'crossorigin' => 'anonymous');
+      $urls[] = array('href' => 'https://fonts.gstatic.com', 'crossorigin' => 'anonymous');
+    }
   }
   return $urls;
 }
-
 add_filter('wp_resource_hints', 'morenews_add_preconnect_links', 10, 2);
 
 /**
- * Preload fonts (Google or local) in <head>.
+ * Preload Google or Local font stylesheets.
  */
-function morenews_preload_google_fonts()
-{
-  if (!morenews_is_google_fonts_enabled() || morenews_is_amp()) {
-    return;
+function morenews_preload_fonts($urls, $relation_type) {
+  if ($relation_type !== 'preload' || !morenews_is_google_fonts_enabled()) {
+    return $urls;
   }
 
   $fonts_url = morenews_get_fonts_url();
+  $base_css  = get_template_directory_uri() . '/assets/fonts/css/';
   $site_title_font = morenews_get_option('site_title_font');
   $primary_font    = morenews_get_option('primary_font');
   $secondary_font  = morenews_get_option('secondary_font');
 
   $fonts_in_use = array($site_title_font, $primary_font, $secondary_font);
-
-  $load_oswald     = false;
-  $load_open_sans  = false;
+  $load_oswald = false;
+  $load_open_sans = false;
 
   foreach ($fonts_in_use as $font) {
     $font_clean = strtolower($font);
-    if (strpos($font_clean, 'oswald') !== false) {
-      $load_oswald = true;
-    }
-    if (strpos($font_clean, 'open+sans') !== false || strpos($font_clean, 'open sans') !== false) {
-      $load_open_sans = true;
-    }
+    if (strpos($font_clean, 'oswald') !== false) $load_oswald = true;
+    if (strpos($font_clean, 'open+sans') !== false || strpos($font_clean, 'open sans') !== false) $load_open_sans = true;
   }
 
-  if ($fonts_url) {
-    printf(
-      "<link rel='preload' href='%s' as='style' onload=\"this.onload=null;this.rel='stylesheet'\" type='text/css' media='all' crossorigin='anonymous'>\n",
-      esc_url($fonts_url)
+  if (!empty($fonts_url)) {
+    $urls[] = array(
+      'href'        => esc_url($fonts_url),
+      'as'          => 'style',
+      'crossorigin' => 'anonymous', //  ensures reuse of preload
     );
   }
 
-  $base = get_template_directory_uri() . '/assets/fonts/';
   if ($load_oswald) {
-    echo "<link rel='preload' href='{$base}oswald/oswald-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-    echo "<link rel='preload' href='{$base}oswald/oswald-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    $urls[] = array(
+      'href' => esc_url($base_css . 'oswald.css'),
+      'as'   => 'style',
+    );
   }
   if ($load_open_sans) {
-    echo "<link rel='preload' href='{$base}open-sans/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
-    echo "<link rel='preload' href='{$base}open-sans/open-sans-700.woff2' as='font' type='font/woff2' crossorigin='anonymous'>\n";
+    $urls[] = array(
+      'href' => esc_url($base_css . 'open-sans.css'),
+      'as'   => 'style',
+    );
   }
-}
 
-add_action('wp_head', 'morenews_preload_google_fonts', 1);
+  return $urls;
+}
+add_filter('wp_resource_hints', 'morenews_preload_fonts', 10, 2);
+
+add_action('wp_head', function() {
+  if (morenews_is_google_fonts_enabled()) {
+    $fonts_url = morenews_get_fonts_url();
+    if ($fonts_url) {
+      echo '<link rel="preload" href="' . esc_url($fonts_url) . '" as="style" crossorigin="anonymous">';
+    }
+  }
+}, 0);
+
 
 /**
- * Enqueue Google Fonts (only if needed).
+ * Enqueue Google or local fonts for frontend.
  */
-function morenews_enqueue_fonts()
-{
+function morenews_enqueue_fonts() {
   if (!morenews_is_google_fonts_enabled()) {
-    return; // Do not enqueue if system fonts
+    return; // System fonts: skip all
   }
 
-  $fonts_url = morenews_get_fonts_url();
-  if ($fonts_url) {
+  $site_title_font = strtolower(trim(morenews_get_option('site_title_font')));
+  $primary_font    = strtolower(trim(morenews_get_option('primary_font')));
+  $secondary_font  = strtolower(trim(morenews_get_option('secondary_font')));
+  $fonts_url       = morenews_get_fonts_url();
+  $base_css        = get_template_directory_uri() . '/assets/fonts/css/';
+
+  $load_oswald = false;
+  $load_open_sans = false;
+
+  foreach (array($site_title_font, $primary_font, $secondary_font) as $font) {
+    if (strpos($font, 'oswald') !== false) $load_oswald = true;
+    if (strpos($font, 'open sans') !== false || strpos($font, 'open+sans') !== false) $load_open_sans = true;
+  }
+
+  if ($load_oswald) {
+    wp_enqueue_style('morenews-font-oswald', $base_css . 'oswald.css', array(), null);
+  }
+  if ($load_open_sans) {
+    wp_enqueue_style('morenews-font-open-sans', $base_css . 'open-sans.css', array(), null);
+  }
+
+  if (!empty($fonts_url)) {
     wp_enqueue_style('morenews-google-fonts', $fonts_url, array(), null);
+    wp_style_add_data('morenews-google-fonts', 'crossorigin', 'anonymous'); //  matches preload
   }
 }
+add_action('wp_enqueue_scripts', 'morenews_enqueue_fonts', 1);
+
+
+/**
+ * Enqueue local editor fonts properly for block editor (no iframe warning)
+ */
+function morenews_enqueue_block_editor_fonts() {
+  // Only load for block editor.
+  $screen = function_exists('get_current_screen') ? get_current_screen() : null;
+  if ( ! $screen || ! method_exists( $screen, 'is_block_editor' ) || ! $screen->is_block_editor() ) {
+      return;
+  }
+
+  $global_font_type = morenews_get_option('global_font_family_type');
+  $primary_font     = strtolower( trim( morenews_get_option('primary_font') ) );
+  $font_stack       = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif";
+  $font_family      = $font_stack;
+  $css_file_url     = '';
+
+  // Detect locally available fonts.
+  if ( $global_font_type === 'google' && ! empty( $primary_font ) ) {
+      if ( strpos( $primary_font, 'oswald' ) !== false ) {
+          $font_family  = "'Oswald', {$font_stack}";
+          $css_file_url = get_template_directory_uri() . '/assets/fonts/css/oswald.css';
+      } elseif ( strpos( $primary_font, 'open sans' ) !== false || strpos( $primary_font, 'open+sans' ) !== false ) {
+          $font_family  = "'Open Sans', {$font_stack}";
+          $css_file_url = get_template_directory_uri() . '/assets/fonts/css/open-sans.css';
+      }
+  }
+
+  // Enqueue local CSS file if found.
+  if ( $css_file_url ) {
+      wp_enqueue_style( 'morenews-editor-font', $css_file_url, array(), null );
+  } else {
+      // Create an empty handle so inline CSS attaches safely.
+      wp_register_style( 'morenews-editor-font', false );
+      wp_enqueue_style( 'morenews-editor-font' );
+  }
+
+  // Add inline font-family styling.
+  $inline_css = "
+      body.editor-styles-wrapper,
+      .editor-post-title__input,
+      .wp-block {
+          font-family: {$font_family};
+          line-height: 1.7;
+      }
+
+      /* Match frontend content typography */
+    .editor-styles-wrapper {
+        font-size: 18px;
+    }
+
+    /* Match frontend link underline style */
+.editor-styles-wrapper p a,
+.editor-styles-wrapper .wp-block-table a,
+.editor-styles-wrapper .wp-block-list a,
+.editor-styles-wrapper .wp-block-quote a,
+.editor-styles-wrapper .wp-block-heading a,
+.editor-styles-wrapper .wp-block-paragraph a,
+.editor-styles-wrapper .wp-block-code a,
+.editor-styles-wrapper .wp-block-preformatted a {
+    border-bottom: 2px solid;
+    text-decoration: none;
+}
+  ";
+  wp_add_inline_style( 'morenews-editor-font', $inline_css );
+}
+add_action( 'enqueue_block_assets', 'morenews_enqueue_block_editor_fonts' );
+
+
+
+
 
 
 /**
@@ -429,6 +528,13 @@ function morenews_scripts()
   }
 
   wp_enqueue_script('morenews-script', get_template_directory_uri() . '/admin-dashboard/dist/morenews_scripts.build.js', array('jquery'), $morenews_version, true);
+
+  $top_header_time_format = morenews_get_option('top_header_time_format');
+  $localized_time_format = array();
+  if ($top_header_time_format == 'en-US' || $top_header_time_format == 'en-GB') {
+    $localized_time_format['format'] = $top_header_time_format;
+    wp_localize_script('morenews-script', 'AFlocalizedTime', $localized_time_format);
+  }
 
   if (is_singular() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');

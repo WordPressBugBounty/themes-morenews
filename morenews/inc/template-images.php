@@ -31,6 +31,19 @@ if (!function_exists('morenews_post_thumbnail')) :
 ?>
         <div class="post-thumbnail <?php echo esc_attr($morenews_post_class); ?> <?php echo esc_attr($single_featured_image_view); ?>">
           <?php echo morenews_the_post_thumbnail('full', $post->ID); ?>
+          <?php
+                                    $thumbnail_id = get_post_thumbnail_id();
+                                    if ($thumbnail_id) {
+                                        $thumbnail_post = get_post($thumbnail_id);
+                                        if ($thumbnail_post && !empty(trim($thumbnail_post->post_excerpt))) {
+                                    ?>
+                                            <span class="aft-image-caption">
+                                                <p><?php echo esc_html($thumbnail_post->post_excerpt); ?></p>
+                                            </span>
+                                    <?php
+                                        }
+                                    }
+                                    ?>
         </div>
       <?php endif; ?>
 

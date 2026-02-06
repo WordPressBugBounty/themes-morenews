@@ -143,6 +143,87 @@ $wp_customize->add_control(
 );
 
 
+// Setting - show_site_title_section.
+$wp_customize->add_setting(
+  'show_date_section',
+  array(
+    'default' => $morenews_default['show_date_section'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'morenews_sanitize_checkbox',
+  )
+);
+$wp_customize->add_control(
+  'show_date_section',
+  array(
+    'label' => esc_html__('Show Date', 'morenews'),
+    'section' => 'header_builder',
+    'type' => 'checkbox',
+    'priority' => 5,
+    'active_callback' => function ($control) {
+      return (
+        morenews_top_header_status($control)
+        &&
+        morenews_is_inactive_builder($control)
+      );
+    },
+  )
+);
+
+// Setting - show_site_title_section.
+$wp_customize->add_setting(
+  'show_time_section',
+  array(
+    'default' => $morenews_default['show_time_section'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'morenews_sanitize_checkbox',
+  )
+);
+$wp_customize->add_control(
+  'show_time_section',
+  array(
+    'label' => esc_html__('Show Time', 'morenews'),
+    'section' => 'header_builder',
+    'type' => 'checkbox',
+    'priority' => 5,
+    'active_callback' => 'morenews_top_header_status'
+  )
+);
+
+// Setting - select_main_banner_section_mode.
+$wp_customize->add_setting(
+  'top_header_time_format',
+  array(
+    'default' => $morenews_default['top_header_time_format'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'morenews_sanitize_select',
+  )
+);
+
+$wp_customize->add_control(
+  'top_header_time_format',
+  array(
+    'label' => esc_html__('Time Format', 'morenews'),
+    'section' => 'header_builder',
+    'type' => 'select',
+    'choices' => array(
+      'en-US' => esc_html__('12 hours', 'morenews'),
+      'en-GB' => esc_html__('24 hours', 'morenews'),
+      'en-WP' => esc_html__('From WordPress Settings', 'morenews'),
+    ),
+    'priority' => 5,
+    'active_callback' => function ($control) {
+      return (
+        morenews_top_header_status($control)
+        &&
+        morenews_show_time_status($control)
+
+
+      );
+    },
+
+  )
+);
+
 
 
 // Advertisement Section.
@@ -506,6 +587,32 @@ $wp_customize->add_control(
     'choices' => array(
       'right' => esc_html__('Right', 'morenews'),
       'left' => esc_html__('Left', 'morenews'),
+
+    ),
+    'priority' => 130,
+  )
+);
+
+
+// Setting - global content alignment of news.
+$wp_customize->add_setting(
+  'global_show_comment_count',
+  array(
+    'default' => $morenews_default['global_show_comment_count'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'morenews_sanitize_select',
+  )
+);
+
+$wp_customize->add_control(
+  'global_show_comment_count',
+  array(
+    'label' => esc_html__('Comment Count', 'morenews'),
+    'section' => 'site_layout_settings',
+    'type' => 'select',
+    'choices' => array(
+      'yes' => esc_html__('Show', 'morenews'),
+      'no' => esc_html__('Hide', 'morenews'),
 
     ),
     'priority' => 130,
@@ -1222,6 +1329,72 @@ $wp_customize->add_control(
   )
 );
 
+// Breadcrumb Section.
+$wp_customize->add_section(
+  'site_search_settings',
+  array(
+    'title' => esc_html__('Search Options', 'morenews'),
+    'priority' => 9,
+    'capability' => 'edit_theme_options',
+    'panel' => 'theme_option_panel',
+  )
+);
+
+//Setting - archive content view of news.
+$wp_customize->add_setting(
+  'search_archive_content_view',
+  array(
+    'default' => $morenews_default['search_archive_content_view'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'morenews_sanitize_select',
+  )
+);
+
+$wp_customize->add_control(
+  'search_archive_content_view',
+  array(
+    'label' => esc_html__('Search Results', 'morenews'),
+    'description' => esc_html__('Select search results for archive', 'morenews'),
+    'section' => 'site_search_settings',
+    'type' => 'select',
+    'choices' => array(
+      'all' => esc_html__('All (Pages, Posts, etc)', 'morenews'),
+      'posts' => esc_html__('Posts', 'morenews')
+    ),
+    'priority' => 130,
+  )
+);
+
+
+//Setting - archive content view of news.
+$wp_customize->add_setting(
+  'search_archive_enable_ajax',
+  array(
+    'default' => $morenews_default['search_archive_enable_ajax'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'absint',
+  )
+);
+
+$wp_customize->add_control(
+  'search_archive_enable_ajax',
+  array(
+    'label' => esc_html__('Ajax Results Dropdown', 'morenews'),    
+    'section' => 'site_search_settings',
+    'type' => 'checkbox',
+    'priority' => 130,
+  )
+);
+
+// Setting - number of posts
+$wp_customize->add_setting(
+  'search_archive_ajax_results',
+  array(
+    'default' => $morenews_default['search_archive_ajax_results'],
+    'capability' => 'edit_theme_options',
+    'sanitize_callback' => 'absint',
+  )
+);
 
 
 //========== sidebar blocks options ===============

@@ -43,7 +43,7 @@ if (!function_exists('morenews_loop_grid')) :
         ?>
         <div class="post-format-and-min-read-wrap">
           <?php morenews_post_format($morenews_post_id); ?>
-          <?php morenews_count_content_words($morenews_post_id); ?>
+          <?php //morenews_count_content_words($morenews_post_id); ?>
         </div>
 
         <?php if ($morenews_grid_design == 'grid-design-default'): ?>

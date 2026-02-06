@@ -38,7 +38,7 @@ if (!function_exists('morenews_loop_list')) :
             <div class="category-min-read-wrap af-cat-widget-carousel">
               <div class="post-format-and-min-read-wrap">
                 <?php morenews_post_format($morenews_post_id); ?>
-                <?php morenews_count_content_words($morenews_post_id); ?>
+                <?php //morenews_count_content_words($morenews_post_id); ?>
               </div>
               <div class="read-categories categories-inside-image">
                 <?php morenews_post_categories(); ?>
@@ -63,7 +63,7 @@ if (!function_exists('morenews_loop_list')) :
           <?php if ($show_meta != false): ?>
             <div class="post-item-metadata entry-meta author-links">
               <?php morenews_post_item_meta($morenews_post_display); ?>
-              <?php //morenews_get_comments_views_share($morenews_post_id); 
+              <?php morenews_get_comments_views_share($morenews_post_id); 
               ?>
             </div>
           <?php endif; ?>

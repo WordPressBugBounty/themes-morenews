@@ -105,6 +105,30 @@ endif;
 
 
 /*select page for morenews_show_date_on_header news*/
+if (!function_exists('morenews_show_time_status')) :
+
+  /**
+   * Check if slider section page/post is active.
+   *
+   * @since 1.0.0
+   *
+   * @param WP_Customize_Control $control WP_Customize_Control instance.
+   *
+   * @return bool Whether the control is active to the current preview.
+   */
+  function morenews_show_time_status($control)
+  {
+
+    if (true == $control->manager->get_setting('show_time_section')->value()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+endif;
+
+/*select page for morenews_show_date_on_header news*/
 if (!function_exists('global_site_layout_boxed_layout_status')) :
 
   /**
@@ -1226,28 +1250,6 @@ if (!function_exists('morenews_featured_post_list_section_status')) :
 
 endif;
 
-if (!function_exists('morenews_featured_post_carousel_section_status')) :
-
-  /**
-   * Check if ticker section page/post is active.
-   *
-   * @since 1.0.0
-   *
-   * @param WP_Customize_Control $control WP_Customize_Control instance.
-   *
-   * @return bool Whether the control is active to the current preview.
-   */
-  function morenews_featured_post_carousel_section_status($control)
-  {
-
-    if (true == $control->manager->get_setting('show_post_carousel_section')->value()) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-endif;
 
 
 /*select page for slider*/

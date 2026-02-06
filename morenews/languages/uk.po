@@ -7,14 +7,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Themes - MoreNews\n"
 
 #. Description of the theme
 #: style.css
 #, gp-priority: high
-msgid "MoreNews is a dynamic, lightweight, and multipurpose WordPress theme ideal for news, blogs, magazines, eCommerce, and business websites. Designed for high performance, it offers a wide variety of ready-to-import demo sites, including specialized 60+ starter sites for Gutenberg and Elementor, making setup fast and hassle-free. Featuring responsive design, SEO optimization, and fast loading times, MoreNews ensures your site ranks well in search engines. The theme includes over 30+ customizable widgets, Gutenberg patterns, drag-and-drop page builder features, and various banner and layout options. It also supports multilingual sites with demo content in languages like English, Chinese, Spanish, French, Japanese, and Arabic. Built with WooCommerce compatibility, you can easily integrate an online store, and the child theme feature allows for extensive customization. With light/dark reading modes, RTL support, and translation-ready functionality, MoreNews is tailored for global audiences. Explore more at https://afthemes.com/products/morenews."
+msgid "MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews."
 msgstr ""
 
 #. Theme Name of the theme
@@ -22,6 +22,457 @@ msgstr ""
 #, gp-priority: high
 msgid "MoreNews"
 msgstr "MoreNews"
+
+#: inc/template-tags.php:313
+msgid "No results found."
+msgstr ""
+
+#: inc/template-tags.php:307
+msgid "View all results for \"%s\""
+msgstr ""
+
+#: inc/template-tags.php:306
+msgid "View all search results"
+msgstr ""
+
+#: inc/template-tags.php:288
+msgid "Live search results"
+msgstr ""
+
+#: inc/template-tags.php:260
+msgid "Invalid security token."
+msgstr ""
+
+#: inc/template-tags.php:246
+msgid "Searching..."
+msgstr ""
+
+#: inc/customizer/theme-options.php:1382
+msgid "Ajax Results Dropdown"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1362
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1361
+msgid "All (Pages, Posts, etc)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1357
+msgid "Select search results for archive"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1356
+msgid "Search Results"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1336
+msgid "Search Options"
+msgstr ""
+
+#: inc/template-functions.php:719
+msgid "%s minute read"
+msgid_plural "%s minutes read"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/customizer/theme-options.php:211
+msgid "From WordPress Settings"
+msgstr ""
+
+#: inc/customizer/theme-options.php:210
+msgid "24 hours"
+msgstr ""
+
+#: inc/customizer/theme-options.php:209
+msgid "12 hours"
+msgstr ""
+
+#: inc/customizer/theme-options.php:205
+msgid "Time Format"
+msgstr ""
+
+#: inc/customizer/theme-options.php:184
+msgid "Show Time"
+msgstr ""
+
+#: inc/customizer/theme-options.php:158
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:115
+msgid "Enable %s Builder"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:86
+msgid "Footer Widget 3"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:76
+msgid "Footer Widget 2"
+msgstr ""
+
+#: inc/widgets/widgets-register-sidebars.php:65
+msgid "Footer Widget 1"
+msgstr ""
+
+#: inc/customizer/theme-options.php:96
+msgid "Sticky header works only with builder at bottom."
+msgstr ""
+
+#: inc/customizer/builder/options.php:587
+msgid "No menu assigned"
+msgstr ""
+
+#: inc/customizer/builder/options.php:488
+#: inc/customizer/builder/options.php:503
+#: inc/customizer/builder/options.php:525
+#: inc/customizer/builder/options.php:546
+#: inc/customizer/builder/options.php:567
+msgid "Beta"
+msgstr ""
+
+#: inc/customizer/builder/options.php:425
+#: inc/customizer/builder/options.php:443
+#: inc/customizer/builder/options.php:464
+msgid "Add widget to display . %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:379
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer/builder/options.php:372
+msgid "Pro"
+msgstr ""
+
+#: inc/customizer/builder/options.php:341
+msgid "Navigation"
+msgstr ""
+
+#: inc/customizer/builder/options.php:317
+#: inc/customizer/builder/options.php:453
+msgid "Widget 3"
+msgstr ""
+
+#: inc/customizer/builder/options.php:301
+#: inc/customizer/builder/options.php:432
+msgid "Widget 2"
+msgstr ""
+
+#: inc/customizer/builder/options.php:290
+#: inc/customizer/builder/options.php:306
+#: inc/customizer/builder/options.php:322
+#: inc/customizer/builder/options.php:419
+#: inc/customizer/builder/options.php:437
+#: inc/customizer/builder/options.php:458
+msgid "Select Widget"
+msgstr ""
+
+#: inc/customizer/builder/options.php:285
+#: inc/customizer/builder/options.php:414
+msgid "Widget 1"
+msgstr ""
+
+#: inc/customizer/builder/options.php:260
+msgid "live"
+msgstr ""
+
+#: inc/customizer/builder/options.php:257
+msgid "Custom link"
+msgstr ""
+
+#: inc/customizer/builder/options.php:252
+msgid "Custom Link"
+msgstr ""
+
+#: inc/customizer/builder/options.php:243
+msgid "Searc Form"
+msgstr ""
+
+#: inc/customizer/builder/options.php:238
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/builder/options.php:227
+#: inc/customizer/builder/options.php:367
+msgid "HTML Content"
+msgstr ""
+
+#: inc/customizer/builder/options.php:222
+#: inc/customizer/builder/options.php:362
+msgid "Custom HTML"
+msgstr ""
+
+#: inc/customizer/builder/options.php:208
+#: inc/customizer/builder/options.php:213
+msgid "Site Mode"
+msgstr ""
+
+#: inc/customizer/builder/options.php:202
+#: inc/customizer/builder/options.php:232
+#: inc/customizer/builder/options.php:296
+#: inc/customizer/builder/options.php:312
+#: inc/customizer/builder/options.php:328
+msgid "pro"
+msgstr ""
+
+#: inc/customizer/builder/options.php:186
+#: inc/customizer/builder/options.php:551
+msgid "Top Navigation"
+msgstr ""
+
+#: inc/customizer/builder/options.php:180
+msgid "Manage Date"
+msgstr ""
+
+#. translators: %s is a link to manage menus
+#: inc/customizer/builder/options.php:179
+msgid "You can change date from general settings (Settings > General > Date Format). %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:172
+msgid "Choose date format"
+msgstr ""
+
+#: inc/customizer/builder/options.php:167
+msgid "Date"
+msgstr ""
+
+#: inc/customizer/builder/options.php:161
+#: inc/customizer/builder/options.php:199
+#: inc/customizer/builder/options.php:279
+#: inc/customizer/builder/options.php:354
+#: inc/customizer/builder/options.php:405
+#: inc/customizer/builder/options.php:543
+#: inc/customizer/builder/options.php:564
+msgid "Manage menu"
+msgstr ""
+
+#. translators: %s is a link to manage menus
+#. translators: %s is a link to manage menu
+#. translators: %s is a link to the menu panel
+#: inc/customizer/builder/options.php:160
+#: inc/customizer/builder/options.php:198
+#: inc/customizer/builder/options.php:278
+#: inc/customizer/builder/options.php:353
+#: inc/customizer/builder/options.php:404
+#: inc/customizer/builder/options.php:542
+#: inc/customizer/builder/options.php:563
+msgid "You can change Menu from menu panel. %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:153
+#: inc/customizer/builder/options.php:191
+#: inc/customizer/builder/options.php:346
+#: inc/customizer/builder/options.php:535
+#: inc/customizer/builder/options.php:556
+#: inc/customizer/builder/options.php:582
+msgid "Select Menu"
+msgstr ""
+
+#: inc/customizer/builder/options.php:148
+#: inc/customizer/builder/options.php:530
+msgid "Primary menu"
+msgstr ""
+
+#: inc/customizer/builder/options.php:140
+#: inc/customizer/builder/options.php:426
+#: inc/customizer/builder/options.php:444
+#: inc/customizer/builder/options.php:465
+#: inc/customizer/builder/options.php:522
+msgid "Manage widgets"
+msgstr ""
+
+#: inc/customizer/builder/options.php:139
+#: inc/customizer/builder/options.php:521
+msgid "This widget area is used in the mobile off-canvas panel. %s"
+msgstr ""
+
+#: inc/customizer/builder/options.php:134
+#: inc/customizer/builder/options.php:516
+msgid "Off Canvas Widget Area"
+msgstr ""
+
+#: inc/customizer/builder/options.php:109
+#: inc/customizer/builder/options.php:114
+#: inc/customizer/builder/options.php:493
+#: inc/customizer/builder/options.php:498
+msgid "Promotion"
+msgstr ""
+
+#. translators: %s is a link to Site Identity panel
+#: inc/customizer/builder/options.php:100
+#: inc/customizer/builder/options.php:484
+msgid "You can change Site Identity from %s."
+msgstr ""
+
+#: inc/customizer/builder/options.php:95 inc/customizer/builder/options.php:101
+#: inc/customizer/builder/options.php:479
+#: inc/customizer/builder/options.php:485
+msgid "Site Identity"
+msgstr ""
+
+#: inc/customizer/builder/options.php:89 inc/customizer/builder/options.php:473
+msgid "Site & Logo"
+msgstr ""
+
+#: inc/customizer/builder/header-builder-structure.php:188
+msgid "close Off-Canvas Navigation"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:282
+msgid "Element Settings"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:281
+msgid "Desktop"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:280
+msgid "Configure Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:279
+msgid "Remove Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:278
+msgid "Add Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:98
+msgid "Create dynamic footer effortlessly with drag-and-drop builder."
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:96
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:95
+msgid "Create dynamic header effortlessly with drag-and-drop builder."
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder.php:82
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:59
+msgid "Close choose element modal"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:57
+msgid "Choose an Element"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:37
+msgid "Device view controls"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:33
+msgid "Hide Builder"
+msgstr ""
+
+#: inc/customizer/builder/class-header-footer-builder-control.php:31
+msgid "Hide builder panel"
+msgstr ""
+
+#: inc/customizer/builder/class-block-toggle.php:12
+msgid "Click the setting <span class=\"dashicons dashicons-admin-generic\"></span> on each element to customize its settings."
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:151
+#: admin-dashboard/admin_dashboard.php:152
+#: inc/customizer/builder/class-header-footer-builder.php:45
+msgid "Footer Builder"
+msgstr ""
+
+#: admin-dashboard/admin_dashboard.php:141
+#: admin-dashboard/admin_dashboard.php:142
+#: inc/customizer/builder/class-header-footer-builder.php:36
+msgid "Header Builder"
+msgstr ""
+
+#. translators: Hidden heading for the post navigation section.
+#: template-parts/content.php:53
+msgid "Post navigation"
+msgstr ""
+
+#. translators: %s: Title of the next post.
+#: template-parts/content.php:49
+msgid "Next: %s"
+msgstr ""
+
+#. translators: %s: Title of the previous post.
+#: template-parts/content.php:44
+msgid "Previous: %s"
+msgstr ""
+
+#: inc/hooks/hook-header-section.php:291
+msgid "Light/Dark Button"
+msgstr ""
+
+#: inc/customizer/theme-options.php:73
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/theme-options.php:68
+msgid "Site Mode Switch"
+msgstr ""
+
+#: inc/template-functions.php:1080
+msgid "View All Posts"
+msgstr ""
+
+#: inc/template-functions.php:1074
+msgid "Visit Website"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1086
+msgid "Show Author Bio under Content"
+msgstr ""
+
+#: inc/template-functions.php:1046
+msgid "About the Author"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1008
+msgid "Original"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1007
+msgid "Full - Default"
+msgstr ""
+
+#: inc/customizer/theme-options.php:1003
+msgid "Featured Image Width"
+msgstr ""
+
+#: inc/customizer/theme-options.php:456
+msgid "GDPR friendly & better performance"
+msgstr ""
+
+#: inc/customizer/theme-options.php:455
+msgid "Disable Emoji Script"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:201
+msgid "System Fonts"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:200
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer/font-color-options.php:196
+msgid "Global Fonts Family"
+msgstr ""
+
+#: inc/customizer/theme-options.php:92
+msgid "Disable Sticky Header"
+msgstr ""
 
 #: admin-dashboard/rest-api/class-admin-notice.php:232
 msgid "Video Tutorials"
@@ -53,11 +504,11 @@ msgstr ""
 msgid "👋 Welcome, and Thank You!"
 msgstr ""
 
-#: inc/customizer/customizer.php:143
+#: inc/customizer/customizer.php:156
 msgid "Show Full Image (Background)"
 msgstr ""
 
-#: inc/customizer/customizer.php:141
+#: inc/customizer/customizer.php:154
 msgid "Above Site Title"
 msgstr ""
 
@@ -65,12 +516,12 @@ msgstr ""
 msgid "Update Section"
 msgstr ""
 
-#: inc/class-amp-compatible.php:183 inc/class-amp-compatible.php:187
-#: inc/hooks/hook-header-section.php:72 inc/hooks/hook-header-section.php:73
+#: inc/class-amp-compatible.php:190 inc/class-amp-compatible.php:194
+#: inc/hooks/hook-header-section.php:100 inc/hooks/hook-header-section.php:101
 msgid "Open search form"
 msgstr "Відкрити форму пошуку"
 
-#: inc/hooks/blocks/block-header-layout-default.php:88
+#: inc/hooks/blocks/block-header-layout-default.php:82
 msgid "Open Off-Canvas Navigation"
 msgstr ""
 
@@ -118,11 +569,11 @@ msgstr ""
 msgid "Large Post with Background"
 msgstr ""
 
-#: inc/customizer/theme-options.php:609
+#: inc/customizer/theme-options.php:882
 msgid "Show Primary Menu Description"
 msgstr ""
 
-#: inc/customizer/theme-options.php:591
+#: inc/customizer/theme-options.php:862
 msgid "Primary Menu Section"
 msgstr "Розділ основного меню"
 
@@ -142,85 +593,85 @@ msgstr ""
 msgid "Posted on %s"
 msgstr "Опубліковано %s"
 
-#: inc/template-functions.php:529 inc/template-functions.php:531
+#: inc/template-functions.php:588 inc/template-functions.php:590
 msgid "Read more about %s"
 msgstr "Докладніше про %s"
 
-#: inc/customizer/theme-options.php:339
+#: inc/customizer/theme-options.php:556
 msgid "Set to enhance rendering speed"
 msgstr ""
 
-#: inc/customizer/theme-options.php:338
+#: inc/customizer/theme-options.php:555
 msgid "Image Async Decoding"
 msgstr ""
 
-#: inc/customizer/theme-options.php:315
+#: inc/customizer/theme-options.php:529
 msgid "Set for better performance"
 msgstr ""
 
-#: inc/customizer/theme-options.php:291
+#: inc/customizer/theme-options.php:502
 msgid "If there is no Post Featured image set"
 msgstr ""
 
-#: inc/customizer/theme-options.php:290
+#: inc/customizer/theme-options.php:501
 msgid "Also Show Content Image in Archive"
 msgstr ""
 
-#: inc/customizer/theme-options.php:772
+#: inc/customizer/theme-options.php:1107
 msgid "Show Tags under Content"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:551
+#: admin-dashboard/admin_dashboard.php:569
 #: admin-dashboard/rest-api/class-admin-notice.php:149
 msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:550
+#: admin-dashboard/admin_dashboard.php:568
 #: admin-dashboard/rest-api/class-admin-notice.php:148
 msgid "Get Started"
 msgstr "Розпочнемо"
 
-#: admin-dashboard/admin_dashboard.php:371
+#: admin-dashboard/admin_dashboard.php:389
 msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:370
+#: admin-dashboard/admin_dashboard.php:388
 msgid "Elespare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:299
+#: admin-dashboard/admin_dashboard.php:319
 msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:294
+#: admin-dashboard/admin_dashboard.php:314
 msgid "Blockspare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:225
+#: admin-dashboard/admin_dashboard.php:248
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:222
+#: admin-dashboard/admin_dashboard.php:245
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:115
-#: admin-dashboard/admin_dashboard.php:116
+#: admin-dashboard/admin_dashboard.php:118
+#: admin-dashboard/admin_dashboard.php:119
 msgid "Dashboard"
 msgstr "Майстерня"
 
-#: admin-dashboard/admin_dashboard.php:149
-#: admin-dashboard/admin_dashboard.php:150
+#: admin-dashboard/admin_dashboard.php:172
+#: admin-dashboard/admin_dashboard.php:173
 msgid "Elementor Kits"
 msgstr "Elementor Kits"
 
-#: admin-dashboard/admin_dashboard.php:159
-#: admin-dashboard/admin_dashboard.php:160
+#: admin-dashboard/admin_dashboard.php:182
+#: admin-dashboard/admin_dashboard.php:183
 msgid "Block Patterns"
 msgstr "Патерни блоків"
 
-#: admin-dashboard/admin_dashboard.php:139
-#: admin-dashboard/admin_dashboard.php:140
+#: admin-dashboard/admin_dashboard.php:162
+#: admin-dashboard/admin_dashboard.php:163
 msgid "Starter Sites"
 msgstr "Стартові сайти"
 
@@ -344,20 +795,20 @@ msgid "Ticker News"
 msgstr "Біжуча стрічка новин"
 
 #: inc/customizer/frontpage-options.php:1569
-msgid "Page Contents & Frontpage Widgets"
+msgid "Page Contents & Front-page Widgets"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:1568
-msgid "Frontpage Widgets"
-msgstr "Віджети на домашній сторінці"
+msgid "Front-page Widgets"
+msgstr ""
 
 #: inc/customizer/frontpage-options.php:1563
 msgid "Select frontpage content display"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:1562
-msgid "Frontpage Content Display"
-msgstr "Відображення вмісту на домашній сторінці"
+msgid "Front-page Content Display"
+msgstr ""
 
 #: inc/upgrade.php:212
 msgid "Have Queries?"
@@ -436,7 +887,7 @@ msgstr "Майстерня теми"
 msgid "More Details"
 msgstr "Більше деталей"
 
-#: admin-dashboard/admin_dashboard.php:545
+#: admin-dashboard/admin_dashboard.php:563
 #: admin-dashboard/rest-api/api-request.php:104
 #: admin-dashboard/rest-api/class-admin-notice.php:144
 msgid "Get Starter Sites"
@@ -446,17 +897,17 @@ msgstr "Отримати стартові сайти"
 msgid "By"
 msgstr "Від"
 
-#: admin-dashboard/admin_dashboard.php:449
+#: admin-dashboard/admin_dashboard.php:467
 #: admin-dashboard/rest-api/api-request.php:70
 msgid "Activated"
 msgstr "Активовано"
 
-#: admin-dashboard/admin_dashboard.php:447
+#: admin-dashboard/admin_dashboard.php:465
 #: admin-dashboard/rest-api/api-request.php:29
 msgid "Install Now"
 msgstr "Встановити зараз"
 
-#: admin-dashboard/admin_dashboard.php:446
+#: admin-dashboard/admin_dashboard.php:464
 msgid "Are you sure you want to install this plugin?"
 msgstr "Ви впевнені, що хочете встановити цей плагін?"
 
@@ -464,31 +915,19 @@ msgstr "Ви впевнені, що хочете встановити цей п�
 msgid "Slider and Tabs"
 msgstr "Слайдер і вкладки"
 
-#: inc/customizer/theme-options.php:296 inc/customizer/theme-options.php:320
-#: inc/customizer/theme-options.php:344
+#: inc/customizer/theme-options.php:74 inc/customizer/theme-options.php:507
+#: inc/customizer/theme-options.php:534 inc/customizer/theme-options.php:561
 msgid "Disable"
 msgstr "Вимкнути"
 
-#: inc/customizer/theme-options.php:295 inc/customizer/theme-options.php:319
-#: inc/customizer/theme-options.php:343
+#: inc/customizer/theme-options.php:506 inc/customizer/theme-options.php:533
+#: inc/customizer/theme-options.php:560
 msgid "Enable "
 msgstr "Увімкнути "
 
-#: inc/customizer/theme-options.php:314
+#: inc/customizer/theme-options.php:528
 msgid "Image Lazy Loading"
 msgstr "Відкладене завантаження зображення"
-
-#: template-parts/content.php:38
-msgid "Continue Reading"
-msgstr "Продовжити читання"
-
-#: template-parts/content.php:37
-msgid "<span class=\"em-post-navigation\">Next:</span> %title"
-msgstr "<span class=\"em-post-navigation\">Наступний:</span> %title"
-
-#: template-parts/content.php:36
-msgid "<span class=\"em-post-navigation\">Previous:</span> %title"
-msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:20
@@ -592,13 +1031,13 @@ msgstr "Жодних плагінів не обрано для оновленн�
 msgid "No plugins were selected to be installed. No action taken."
 msgstr "Жодних плагінів не обрано для встановлення. Жодних дій не виконано."
 
-#: admin-dashboard/admin_dashboard.php:448
+#: admin-dashboard/admin_dashboard.php:466
 #: admin-dashboard/rest-api/api-request.php:74
 #: lib/tgm/class-tgm-plugin-activation.php:2726
 msgid "Activate"
 msgstr "Активувати"
 
-#: inc/customizer/customizer-default.php:145
+#: inc/customizer/customizer-default.php:119
 #: inc/widgets/widgets-common-functions.php:111
 #: lib/tgm/class-tgm-plugin-activation.php:2723
 msgid "Update"
@@ -921,8 +1360,8 @@ msgstr "Встановити плагіни"
 msgid "Install Required Plugins"
 msgstr "Встановити необхідні плагіни"
 
-#: admin-dashboard/admin_dashboard.php:127
-#: admin-dashboard/admin_dashboard.php:128
+#: admin-dashboard/admin_dashboard.php:131
+#: admin-dashboard/admin_dashboard.php:132
 msgid "Customize"
 msgstr "Налаштувати"
 
@@ -934,7 +1373,7 @@ msgstr ""
 msgid "View Demos"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:172
+#: admin-dashboard/admin_dashboard.php:195
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -1050,29 +1489,22 @@ msgstr "Переглянути свій кошик"
 msgid "Displays items on footer third column."
 msgstr "Відображати елементи у третьому стовпці колонтитула."
 
-#: inc/widgets/widgets-register-sidebars.php:86
-msgid "Footer Third Section"
-msgstr "Третій розділ футера"
-
 #: inc/widgets/widgets-register-sidebars.php:78
 msgid "Displays items on footer second column."
 msgstr "Відображати елементи у другому стовпці колонтитула."
-
-#: inc/widgets/widgets-register-sidebars.php:76
-msgid "Footer Second Section"
-msgstr "Другий розділ футера"
 
 #: inc/widgets/widgets-register-sidebars.php:67
 msgid "Displays items on footer first column."
 msgstr "Відображати елементи в першому стовпці колонтитула."
 
-#: inc/widgets/widgets-register-sidebars.php:65
-msgid "Footer First Section"
-msgstr "Перший розділ футера"
-
 #: inc/widgets/widgets-register-sidebars.php:25
 msgid "Add widgets for off-canvas section."
 msgstr "Додати віджети для розділу \"поза полотном\"."
+
+#: inc/customizer/builder/options.php:129
+#: inc/customizer/builder/options.php:511
+msgid "Off Canvas"
+msgstr "Off Canvas (поза полотном)"
 
 #: inc/widgets/widgets-register-sidebars.php:13
 msgid "Add widgets for frontpage banner section advertisement."
@@ -1239,15 +1671,11 @@ msgstr "Редагувати <span class=\"screen-reader-text\">%s</span>"
 msgid "ago"
 msgstr "тому назад"
 
-#: inc/template-functions.php:602
-msgid "%s min read"
-msgstr "%s хв читання"
-
-#: inc/template-functions.php:574
+#: inc/template-functions.php:633
 msgid "Next"
 msgstr "Далі"
 
-#: inc/template-functions.php:573
+#: inc/template-functions.php:632
 msgid "Previous"
 msgstr "Попередній"
 
@@ -1276,28 +1704,28 @@ msgstr ""
 msgid "WP Post Author"
 msgstr "Автор запису WP"
 
-#: inc/hooks/hook-meta.php:198 inc/hooks/hook-meta.php:236
+#: inc/hooks/hook-meta.php:196 inc/hooks/hook-meta.php:233
 msgid "Select category color class. You can set appropriate categories color on \"Categories\" section of the theme customizer."
 msgstr "Виберіть кольоровий клас категорії. Ви можете встановити відповідний колір категорій у розділі \"Категорії\" у налаштуваннях теми."
 
-#: inc/hooks/hook-meta.php:192 inc/hooks/hook-meta.php:220
+#: inc/hooks/hook-meta.php:190 inc/hooks/hook-meta.php:217
 msgid "Color Class"
 msgstr "Кольоровий клас"
 
-#: inc/hooks/hook-meta.php:186 inc/hooks/hook-meta.php:226
+#: inc/hooks/hook-meta.php:184 inc/hooks/hook-meta.php:223
 msgid "Category Color 3"
 msgstr "Колір 3 категорії"
 
-#: inc/hooks/hook-meta.php:185 inc/hooks/hook-meta.php:225
+#: inc/hooks/hook-meta.php:183 inc/hooks/hook-meta.php:222
 msgid "Category Color 2"
 msgstr "Колір 2 категорії"
 
-#: inc/hooks/hook-meta.php:184 inc/hooks/hook-meta.php:224
+#: inc/hooks/hook-meta.php:182 inc/hooks/hook-meta.php:221
 msgid "Category Color 1"
 msgstr "Колір 1 категорії"
 
 #: inc/hooks/hook-meta.php:111
-msgid "Please go to Customize>Frontpage Options for Homepage."
+msgid "Please go to Customize>Front-page Options for Homepage."
 msgstr ""
 
 #: inc/hooks/hook-meta.php:107
@@ -1328,168 +1756,169 @@ msgstr "Встановити як глобальне компонування"
 msgid "Content Options"
 msgstr "Параметри вмісту"
 
-#: inc/hooks/hook-meta.php:23
+#: inc/hooks/hook-meta.php:24
 msgid "Layout Options"
 msgstr "Параметри компонування"
 
 #: inc/hooks/blocks/block-archive-list.php:20
-#: template-parts/content-page.php:27 template-parts/content.php:42
+#: template-parts/content-page.php:27 template-parts/content.php:58
 msgid "Pages:"
 msgstr "Сторінки:"
 
-#: inc/customizer/theme-options.php:1153
+#: inc/customizer/theme-options.php:1593
 msgid "Hide footer Menu Section"
 msgstr ""
 
-#: inc/customizer/theme-options.php:1133
+#: inc/customizer/theme-options.php:1571
 msgid "Copyright Text"
 msgstr "Текст копірайту"
 
-#: inc/customizer/theme-options.php:1110
+#: inc/customizer/theme-options.php:1546
 msgid "Footer Background Image"
 msgstr "Фонове зображення футеру"
 
-#: inc/customizer/theme-options.php:1089
+#: inc/customizer/builder/class-header-footer-builder.php:99
+#: inc/customizer/theme-options.php:1522
 msgid "Footer"
 msgstr "Підвал"
 
-#: inc/customizer/theme-options.php:1073
+#: inc/customizer/theme-options.php:1505
 msgid "Posts Section Title"
 msgstr ""
 
-#: inc/customizer/theme-options.php:1055
+#: inc/customizer/theme-options.php:1485
 msgid "Show Above Footer"
 msgstr ""
 
-#: inc/customizer/theme-options.php:1038
+#: inc/customizer/theme-options.php:1466
 msgid "You May Have Missed"
 msgstr "Ви, мабуть, пропустили"
 
-#: inc/customizer/theme-options.php:1026
+#: inc/customizer/theme-options.php:1452
 msgid "Top"
 msgstr "Верх"
 
-#: inc/customizer/theme-options.php:1022
+#: inc/customizer/theme-options.php:1448
 msgid "Sidebar Sticky Position"
 msgstr "Позиція прикріпленої бічної колонки"
 
-#: inc/customizer/theme-options.php:1003
+#: inc/customizer/theme-options.php:1427
 msgid "Make Sidebar Sticky"
 msgstr ""
 
-#: inc/customizer/theme-options.php:984
+#: inc/customizer/theme-options.php:1406
 msgid "Sidebar Settings"
 msgstr "Налаштування бічної колонки"
 
-#: inc/customizer/theme-options.php:970
+#: inc/customizer/theme-options.php:1324
 msgid "Full Content"
 msgstr "Повний вміст"
 
-#: inc/customizer/theme-options.php:969
+#: inc/customizer/theme-options.php:1323
 msgid "Post Excerpt"
 msgstr "Уривок запису"
 
-#: inc/customizer/theme-options.php:965
+#: inc/customizer/theme-options.php:1319
 msgid "Select content view for archive"
 msgstr ""
 
-#: inc/customizer/theme-options.php:964
+#: inc/customizer/theme-options.php:1318
 msgid "Content View"
 msgstr "Перегляд вмісту"
 
-#: inc/customizer/theme-options.php:946
+#: inc/customizer/theme-options.php:1297
 msgid "Before Image"
 msgstr "Перед зображенням"
 
-#: inc/customizer/theme-options.php:945
+#: inc/customizer/theme-options.php:1296
 msgid "After Image"
 msgstr "Після зображення"
 
-#: inc/customizer/theme-options.php:941
+#: inc/customizer/theme-options.php:1292
 msgid "Select full layout for archive"
 msgstr ""
 
-#: inc/customizer/theme-options.php:940
+#: inc/customizer/theme-options.php:1291
 msgid "Select Title Position"
 msgstr ""
 
-#: inc/customizer/theme-options.php:916
+#: inc/customizer/theme-options.php:1264
 msgid "Select image alignment for archive"
 msgstr ""
 
-#: inc/customizer/theme-options.php:915
+#: inc/customizer/theme-options.php:1263
 msgid "Image Alignment"
 msgstr "Вирівнювання зображення"
 
-#: inc/customizer/theme-options.php:897 inc/hooks/patterns/full.php:9
+#: inc/customizer/theme-options.php:1242 inc/hooks/patterns/full.php:9
 msgid "Full"
 msgstr "Повністю"
 
-#: inc/customizer/theme-options.php:896
+#: inc/customizer/theme-options.php:1241
 msgid "List"
 msgstr "Перелік"
 
-#: inc/customizer/theme-options.php:890
+#: inc/customizer/theme-options.php:1235
 msgid "Select layout for archive"
 msgstr ""
 
-#: inc/customizer/theme-options.php:889
+#: inc/customizer/theme-options.php:1234
 msgid "Archive layout"
 msgstr "Компонування архіву"
 
-#: inc/customizer/theme-options.php:870
+#: inc/customizer/theme-options.php:1213
 msgid "Disable Main Banner on Blog"
 msgstr ""
 
-#: inc/customizer/theme-options.php:851
+#: inc/customizer/theme-options.php:1192
 msgid "Archive Settings"
 msgstr "Налаштування архіву"
 
-#: inc/customizer/theme-options.php:813
+#: inc/customizer/theme-options.php:1151
 msgid "Enable Related Posts"
 msgstr "Увімкнути пов'язані записи"
 
-#: inc/customizer/theme-options.php:794
+#: inc/customizer/theme-options.php:1130
 msgid "Related Posts Settings"
 msgstr "Налаштування пов’язаних записів"
 
-#: inc/customizer/theme-options.php:752 inc/customizer/theme-options.php:1027
+#: inc/customizer/theme-options.php:1065 inc/customizer/theme-options.php:1453
 msgid "Bottom"
 msgstr "Низ"
 
-#: inc/customizer/theme-options.php:751
+#: inc/customizer/theme-options.php:1064
 msgid "Top - Default"
 msgstr ""
 
-#: inc/customizer/theme-options.php:747
+#: inc/customizer/theme-options.php:1060
 msgid "Social Share from Jetpack plugin"
 msgstr ""
 
-#: inc/customizer/theme-options.php:746
+#: inc/customizer/theme-options.php:1059
 msgid "Social Share Option"
 msgstr "Параметр соціального обміну"
 
-#: inc/customizer/theme-options.php:725 inc/hooks/hook-meta.php:83
+#: inc/customizer/theme-options.php:1035 inc/hooks/hook-meta.php:83
 msgid "Spacious"
 msgstr "Просторий"
 
-#: inc/customizer/theme-options.php:719
+#: inc/customizer/theme-options.php:1029
 msgid "Single Content Mode"
 msgstr "Режим окремого вмісту"
 
-#: inc/customizer/theme-options.php:699
+#: inc/customizer/theme-options.php:982
 msgid "Show Featured Image"
 msgstr "Показувати головне зображення"
 
-#: inc/customizer/theme-options.php:681
+#: inc/customizer/theme-options.php:962
 msgid "Single Post"
 msgstr "Окремий запис"
 
-#: inc/customizer/theme-options.php:666
+#: inc/customizer/theme-options.php:946
 msgid "Link"
 msgstr "Посилання"
 
-#: inc/customizer/theme-options.php:647 inc/customizer/theme-options.php:831
+#: inc/customizer/theme-options.php:925 inc/customizer/theme-options.php:1171
 #: inc/widgets/widget-author-info.php:139
 #: inc/widgets/widget-express-posts-list.php:135
 #: inc/widgets/widget-posts-double-column.php:141
@@ -1501,184 +1930,186 @@ msgstr "Посилання"
 msgid "Title"
 msgstr "Заголовок"
 
-#: inc/customizer/theme-options.php:627
+#: inc/customizer/theme-options.php:902
 msgid "Enable Custom Menu Section"
 msgstr "Увімкнути спеціальний розділ меню"
 
-#: inc/customizer/theme-options.php:569
+#: inc/customizer/theme-options.php:839
 msgid "Global Excerpt Read More"
 msgstr ""
 
-#: inc/customizer/theme-options.php:549
+#: inc/customizer/theme-options.php:817
 msgid "Excerpt Settings"
 msgstr "Налаштування уривка"
 
-#: inc/customizer/theme-options.php:514 inc/customizer/theme-options.php:533
+#: inc/customizer/theme-options.php:778 inc/customizer/theme-options.php:799
 msgid "Minutes Read Count"
 msgstr "Хвилин для читання"
 
-#: inc/customizer/theme-options.php:502
+#: inc/customizer/theme-options.php:764
 msgid "Ago Date Format"
 msgstr ""
 
-#: inc/customizer/theme-options.php:501
+#: inc/customizer/theme-options.php:763
 msgid "WordPress Default Date Format"
 msgstr "Формат дати за замовчуванням WordPress"
 
-#: inc/customizer/theme-options.php:497
+#: inc/customizer/theme-options.php:759
 msgid "Date Format"
 msgstr "Формат дати"
 
-#: inc/customizer/theme-options.php:479 inc/customizer/theme-options.php:971
+#: inc/customizer/theme-options.php:738 inc/customizer/theme-options.php:1325
 msgid "None"
 msgstr "Немає"
 
-#: inc/customizer/theme-options.php:478
+#: inc/customizer/theme-options.php:737
 msgid "Show Icon"
 msgstr "Показати іконку"
 
-#: inc/customizer/theme-options.php:477
+#: inc/customizer/theme-options.php:736
 msgid "Show Gravatar"
 msgstr "Показати Gravatar"
 
-#: inc/customizer/theme-options.php:473
+#: inc/customizer/theme-options.php:732
 msgid "Author Icon"
 msgstr "Іконка автора"
 
-#: inc/customizer/theme-options.php:454
+#: inc/customizer/theme-options.php:711
 msgid "Author and Date Settings"
 msgstr ""
 
-#: inc/customizer/theme-options.php:443
+#: inc/customizer/theme-options.php:699
 msgid "Number of Categories"
 msgstr "Кількість категорій"
 
-#: inc/customizer/theme-options.php:425
+#: inc/customizer/theme-options.php:678
 msgid "Top One Category"
 msgstr ""
 
-#: inc/customizer/theme-options.php:424
+#: inc/customizer/theme-options.php:677
 msgid "Show All"
 msgstr "Показати все"
 
-#: inc/customizer/theme-options.php:420
+#: inc/customizer/theme-options.php:673
 msgid "Categories to be displayed"
 msgstr ""
 
-#: inc/customizer/theme-options.php:402 inc/customizer/theme-options.php:538
+#: inc/customizer/theme-options.php:615 inc/customizer/theme-options.php:652
+#: inc/customizer/theme-options.php:804
 msgid "Hide"
 msgstr "Сховати"
 
-#: inc/customizer/theme-options.php:401 inc/customizer/theme-options.php:537
+#: inc/customizer/theme-options.php:614 inc/customizer/theme-options.php:651
+#: inc/customizer/theme-options.php:803
 msgid "Show"
 msgstr "Показувати"
 
-#: inc/customizer/theme-options.php:397
+#: inc/customizer/theme-options.php:647
 msgid "Post Categories"
 msgstr "Категорії запису"
 
-#: inc/customizer/theme-options.php:379
+#: inc/customizer/theme-options.php:627
 msgid "Categories Settings"
 msgstr "Налаштування категорій"
 
-#: inc/customizer/theme-options.php:369 inc/customizer/theme-options.php:920
+#: inc/customizer/theme-options.php:589 inc/customizer/theme-options.php:1268
 msgid "Left"
 msgstr "Ліворуч"
 
-#: inc/customizer/theme-options.php:368 inc/customizer/theme-options.php:921
+#: inc/customizer/theme-options.php:588 inc/customizer/theme-options.php:1269
 msgid "Right"
 msgstr "Праворуч"
 
-#: inc/customizer/theme-options.php:363
+#: inc/customizer/theme-options.php:583
 msgid "Scroll to Top Position"
 msgstr "Розташування прокрутки до верху"
 
-#: inc/customizer/theme-options.php:274
+#: inc/customizer/theme-options.php:482
 msgid "Full width content"
 msgstr "Вміст на всю ширину"
 
-#: inc/customizer/theme-options.php:273
+#: inc/customizer/theme-options.php:481
 msgid "Primary sidebar - Content"
 msgstr "Основна бічна колонка - вміст"
 
-#: inc/customizer/theme-options.php:272
+#: inc/customizer/theme-options.php:480
 msgid "Content - Primary sidebar"
 msgstr "Вміст - основна бічна колонка"
 
-#: inc/customizer/theme-options.php:268
+#: inc/customizer/theme-options.php:476
 msgid "Global Content Alignment"
 msgstr ""
 
-#: inc/customizer/theme-options.php:249
+#: inc/customizer/theme-options.php:434
 msgid "Enable Preloader"
 msgstr "Увімкнути анімацію завантаження"
 
-#: inc/customizer/theme-options.php:230
+#: inc/customizer/theme-options.php:413
 msgid "Global Settings"
 msgstr "Глобальні налаштування"
 
-#: inc/customizer/theme-options.php:213
+#: inc/customizer/theme-options.php:394
 msgid "NavXT"
 msgstr "NavXT"
 
-#: inc/customizer/theme-options.php:212
+#: inc/customizer/theme-options.php:393
 msgid "Rank Math"
 msgstr "Rank Math"
 
-#: inc/customizer/theme-options.php:211
+#: inc/customizer/theme-options.php:392
 msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
-#: inc/customizer/theme-options.php:210 inc/customizer/theme-options.php:724
+#: inc/customizer/theme-options.php:391 inc/customizer/theme-options.php:1034
 #: inc/hooks/hook-meta.php:80
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: inc/customizer/theme-options.php:205
+#: inc/customizer/theme-options.php:386
 msgid "Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default"
 msgstr ""
 
-#: inc/customizer/theme-options.php:204
+#: inc/customizer/theme-options.php:385
 msgid "Select Breadcrumbs"
 msgstr "Виберіть навігаційні стежки"
 
-#: inc/customizer/theme-options.php:186
+#: inc/customizer/theme-options.php:365
 msgid "Show breadcrumbs"
 msgstr "Показати навігаційні стежки"
 
-#: inc/customizer/theme-options.php:167
+#: inc/customizer/theme-options.php:344
 msgid "Breadcrumb Options"
 msgstr "Параметри навігаційної стежки"
 
-#: inc/customizer/theme-options.php:154
+#: inc/customizer/theme-options.php:330
 msgid "Theme Options"
 msgstr "Параметри теми"
 
-#: inc/customizer/theme-options.php:143
+#: inc/customizer/theme-options.php:318
 msgid "URL Link"
 msgstr "URL посилання"
 
-#: inc/customizer/theme-options.php:121
+#: inc/customizer/theme-options.php:294
 msgid "Header Section Advertisement"
 msgstr ""
 
-#: inc/customizer/theme-options.php:100
+#: inc/customizer/theme-options.php:233 inc/customizer/theme-options.php:267
 msgid "Header Advertisement"
 msgstr "Реклама у хедері"
 
-#: inc/customizer/theme-options.php:85
+#: inc/customizer/theme-options.php:136
 msgid "Show Top Header"
 msgstr "Показати верхній хедер"
 
-#: inc/customizer/theme-options.php:65
+#: inc/customizer/theme-options.php:114
 msgid "Top Header Section"
 msgstr "Розділ верхнього хедеру"
 
-#: inc/customizer/theme-options.php:45
+#: inc/customizer/theme-options.php:47
 msgid "Header Settings"
 msgstr "Налаштування хедеру"
 
-#: inc/customizer/theme-options.php:30
+#: inc/customizer/theme-options.php:31
 msgid "Header Options"
 msgstr "Параметри заголовку"
 
@@ -1699,12 +2130,12 @@ msgid "Select frontpage content alignment"
 msgstr "Вибрати вирівнювання вмісту передньої сторінки"
 
 #: inc/customizer/frontpage-options.php:1588
-msgid "Frontpage Content Alignment"
-msgstr "Вирівнювання вмісту на домашній сторінці"
+msgid "Front-page Content Alignment"
+msgstr ""
 
 #: inc/customizer/frontpage-options.php:1541
-msgid "Frontpage Layout Settings"
-msgstr "Налаштування компонування домашньої сторінки"
+msgid "Front-page Layout Settings"
+msgstr ""
 
 #: inc/customizer/frontpage-options.php:1498
 msgid "Section Title"
@@ -1736,8 +2167,8 @@ msgid "Enable Featured Post Section"
 msgstr "Увімкніть розділ вибраного запису"
 
 #: inc/customizer/frontpage-options.php:1327
-msgid "Frontpage Options"
-msgstr "Параметри домашньої сторінки"
+msgid "Front-page Options"
+msgstr ""
 
 #: inc/customizer/frontpage-options.php:1304
 msgid "Select category to be shown on trending posts "
@@ -1769,6 +2200,7 @@ msgstr ""
 
 #: inc/customizer/frontpage-options.php:574
 #: inc/customizer/frontpage-options.php:910
+#: inc/customizer/theme-options.php:610
 msgid "Comment Count"
 msgstr "Кількість коментарів"
 
@@ -1887,8 +2319,8 @@ msgstr ""
 msgid "Select Main Banner Layout"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:85 inc/customizer/theme-options.php:122
-#: inc/customizer/theme-options.php:1111
+#: inc/customizer/frontpage-options.php:85 inc/customizer/theme-options.php:295
+#: inc/customizer/theme-options.php:1547
 msgid "Recommended Size %1$s px X %2$s px"
 msgstr "Рекомендований розмір %1$s px X %2$s px"
 
@@ -1908,15 +2340,15 @@ msgstr "Головний банер"
 msgid "Main Banner Options"
 msgstr "Параметри головного банера"
 
-#: inc/customizer/font-color-options.php:231
+#: inc/customizer/font-color-options.php:259
 msgid "Secondary Font"
 msgstr "Вторинний шрифт"
 
-#: inc/customizer/font-color-options.php:212
+#: inc/customizer/font-color-options.php:239
 msgid "Primary Font"
 msgstr "Основний шрифт"
 
-#: inc/customizer/font-color-options.php:193
+#: inc/customizer/font-color-options.php:219
 msgid "Site Title Font"
 msgstr "Шрифт назви сайту"
 
@@ -1960,185 +2392,129 @@ msgstr "Світлий"
 msgid "Site Color Mode"
 msgstr "Режим коліру сайта"
 
-#: admin-dashboard/admin_dashboard.php:173 inc/customizer/customizer.php:182
+#: admin-dashboard/admin_dashboard.php:196 inc/customizer/customizer.php:198
 msgid "Upgrade Now"
 msgstr "Оновити зараз"
 
-#: inc/customizer/customizer.php:181
+#: inc/customizer/customizer.php:197
 msgid "MoreNews Pro"
 msgstr "MoreNews Pro"
 
-#: inc/customizer/customizer.php:160
+#: inc/customizer/customizer.php:176
 msgid "Disable Image Tint/Overlay"
 msgstr "Вимкнути Відтінок чи Накладення зображення"
 
-#: inc/customizer/customizer.php:142
+#: inc/customizer/customizer.php:155
 msgid "Set as Background"
 msgstr "Використати для фону"
 
-#: inc/customizer/customizer.php:137
+#: inc/customizer/customizer.php:150
 msgid "Image visibility may vary as per the mode"
 msgstr ""
 
-#: inc/customizer/customizer.php:136
+#: inc/customizer/customizer.php:149
 msgid "Header Image Mode"
 msgstr ""
 
-#: inc/customizer/customizer.php:120
+#: inc/customizer/customizer.php:127
 msgid "Site Title/Tagline Color"
 msgstr "Колір назви/ключової фрази сайту"
 
-#: inc/customizer/customizer.php:109
+#: inc/customizer/customizer.php:116
 msgid "Uppercase Site Title and Tagline"
 msgstr "Назва та ключова фраза сайту великими літерами"
 
-#: inc/customizer/customizer.php:91
+#: inc/customizer/customizer.php:96
 msgid "Site Title Size"
 msgstr "Розмір назви сайту"
 
-#: inc/customizer/customizer.php:65
+#: inc/customizer/customizer.php:68
 msgid "Body Background Color"
 msgstr "Колір фону тіла"
 
-#: inc/customizer/customizer-default.php:319
+#: inc/customizer/customizer-default.php:261
 msgid "Copyright &copy; All rights reserved."
 msgstr "Copyright © Усі права захищено."
 
-#: inc/customizer/customizer-default.php:315
+#: inc/customizer/customizer-default.php:257
 msgid "You may have missed"
 msgstr "Можливо, ви пропустили"
 
-#: inc/customizer/customizer-default.php:306
-msgid "Subscribe To  Our Newsletter"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:289
-msgid "Popular News"
-msgstr "Популярні новини"
-
-#: inc/customizer/customizer-default.php:283
-msgid "Instagram"
-msgstr "Instagram"
-
-#: inc/customizer/customizer-default.php:277
 #: inc/widgets/widget-social-contacts.php:41
 msgid "Connect with Us"
 msgstr "Зв'яжіться з нами"
 
-#: inc/customizer/customizer-default.php:233
+#: inc/customizer/customizer-default.php:206
 msgid "Read More"
 msgstr "Читати більше"
 
-#: inc/customizer/customizer-default.php:210
+#: inc/customizer/customizer-default.php:183
 msgid "View More"
 msgstr "Переглянути більше"
 
-#: inc/customizer/customizer-default.php:204
+#: inc/customizer/customizer-default.php:177
 msgid "Post list Section Title %d"
 msgstr ""
 
-#: inc/customizer/customizer-default.php:201
-msgid "Custom Options"
-msgstr "Власні параметри"
-
-#: inc/customizer/customizer-default.php:200
-msgid "Featured Pages"
-msgstr "Вибрані сторінки"
-
-#: inc/customizer/customizer-default.php:199
+#: inc/customizer/customizer-default.php:173
 msgid "Featured Categories"
 msgstr "Рекомендовані категорії"
 
-#: inc/customizer/customizer-default.php:192
+#: inc/customizer/customizer-default.php:166
 #: inc/customizer/frontpage-options.php:1342
 msgid "Featured Posts"
 msgstr "Вибрані записи"
 
-#: inc/customizer/customizer-default.php:187
+#: inc/customizer/customizer-default.php:161
 msgid "Trending Story"
 msgstr "Трендова історія"
 
-#: inc/customizer/customizer-default.php:171
-#: inc/customizer/customizer-default.php:184
+#: inc/customizer/customizer-default.php:145
+#: inc/customizer/customizer-default.php:158
 msgid "Editor's Picks"
 msgstr "За вибором редактора"
 
-#: inc/customizer/customizer-default.php:134
-#: inc/customizer/customizer-default.php:267
+#: inc/customizer/customizer-default.php:108
 msgid "Trending Now"
 msgstr "Зараз в тренді"
 
-#: inc/customizer/customizer-default.php:131
+#: inc/customizer/customizer-default.php:105
 msgid "Trending"
 msgstr "В тренді"
 
-#: inc/customizer/customizer-default.php:130
-#: inc/customizer/customizer-default.php:140
+#: inc/customizer/customizer-default.php:104
+#: inc/customizer/customizer-default.php:114
 #: inc/widgets/widgets-common-functions.php:99
 msgid "Popular"
 msgstr "Популярні"
 
-#: inc/customizer/customizer-default.php:129
-#: inc/customizer/customizer-default.php:150
+#: inc/customizer/customizer-default.php:103
+#: inc/customizer/customizer-default.php:124
 msgid "Latest"
 msgstr "Останні"
 
-#: inc/customizer/customizer-default.php:124
+#: inc/customizer/customizer-default.php:98
 msgid "Main News"
 msgstr "Головні новини"
 
-#: inc/customizer/customizer-default.php:108
-msgid "Posts Carousel"
-msgstr "Карусель записів"
-
-#: inc/customizer/customizer-default.php:102
+#: inc/customizer/customizer-default.php:80
 msgid "Posts List %d"
 msgstr ""
 
-#: inc/customizer/customizer-default.php:99
-msgid "Posts List Section"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:93
-msgid "Express Posts 2"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:92
-msgid "Express Posts 1"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:90
-msgid "Express Posts Section"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:83
-msgid "Featured Videos"
-msgstr "Вибране відео"
-
-#: inc/customizer/customizer-default.php:81
-msgid "Youtube video Section"
-msgstr "Розділ відео на YouTube"
-
-#: inc/customizer/customizer-default.php:74
-#: inc/customizer/customizer-default.php:297
+#: inc/customizer/customizer-default.php:246
 msgid "Related Stories"
 msgstr ""
 
-#: inc/customizer/customizer-default.php:68
-#: inc/customizer/customizer-default.php:73
-msgid "Prime News"
-msgstr ""
-
-#: inc/customizer/customizer-default.php:63
+#: inc/customizer/customizer-default.php:69
 msgid "Exclusive"
 msgstr "ЕКСЛЮЗИВ"
 
-#: inc/customizer/customizer-default.php:56
+#: inc/customizer/customizer-default.php:62
 #: inc/customizer/frontpage-options.php:1168
 msgid "Popular Tags"
 msgstr "Популярні позначки"
 
-#: inc/customizer/customizer-default.php:41
+#: inc/customizer/customizer-default.php:47
 msgid "Live"
 msgstr "Наживо"
 
@@ -2150,21 +2526,25 @@ msgstr "-- Вибрати --"
 msgid "Skip to content"
 msgstr "Перейти до вмісту"
 
-#: functions.php:86
+#: functions.php:85
 msgid "Footer Menu"
 msgstr "Нижнє меню"
 
-#: functions.php:85
+#: functions.php:84 inc/customizer/builder/options.php:266
+#: inc/customizer/builder/options.php:271
+#: inc/customizer/builder/options.php:392
+#: inc/customizer/builder/options.php:397
 msgid "Social Menu"
 msgstr "Меню соцмереж"
 
-#: functions.php:84 inc/class-amp-compatible.php:145
-#: inc/hooks/hook-header-section.php:40
+#: functions.php:83 inc/class-amp-compatible.php:152
+#: inc/customizer/builder/builder-structure.php:199
+#: inc/hooks/hook-header-section.php:68
 msgid "Primary Menu"
 msgstr "Головне меню"
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:146
+#: footer.php:153 inc/customizer/builder/builder-structure.php:381
 msgid "%1$s by %2$s."
 msgstr "%1$s автор: %2$s."
 

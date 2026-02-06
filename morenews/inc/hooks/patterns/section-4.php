@@ -46,7 +46,7 @@ return array(
     <h2 class="wp-block-heading">' . esc_html__( 'Post Grid', 'morenews' ) . '</h2>
     <!-- /wp:heading -->
     
-    <!-- wp:blockspare/blockspare-latest-posts-grid {"uniqueClass":"blockspare-187a9d93-7a33-4","displayPostAuthor":false,"postTitleFontSize":14,"linkColor":"#505050","displayPostCategory":false,"marginTop":0,"marginBottom":28,"backGroundColor":"#ffffff","enableComment":false,"titleOnHoverColor":"#404040","animation":"AFTfadeInUp","gutterSpace":15} /--></div>
+    <!-- wp:blockspare/blockspare-latest-posts-grid {"uniqueClass":"blockspare-187a9d93-7a33-4","displayPostAuthor":false,"postTitleFontSize":14,"linkColor":"#505050","displayPostCategory":false,"marginTop":0,"marginBottom":28,"backGroundColor":"#ffffff","enableComment":false,"titleOnHoverColor":"#1f1f1f","animation":"AFTfadeInUp","gutterSpace":15} /--></div>
     <!-- /wp:group -->
     
     <!-- wp:group -->

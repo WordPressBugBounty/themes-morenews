@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Implement theme metabox.
  *
@@ -29,7 +30,6 @@ if (!function_exists('morenews_add_theme_meta_box')) :
 
             );
         }
-
     }
 
 endif;
@@ -63,7 +63,7 @@ if (!function_exists('morenews_render_layout_options_metabox')) :
         }
 
 
-        ?>
+?>
         <div id="morenews-settings-metabox-container" class="morenews-settings-metabox-container">
             <div id="morenews-settings-metabox-tab-layout">
 
@@ -85,7 +85,7 @@ if (!function_exists('morenews_render_layout_options_metabox')) :
 
                         </select>
                     </p>
-                    <small><?php esc_html_e('Please go to Customize>Themes Options for Single Post/Page.', 'morenews')?></small>
+                    <small><?php esc_html_e('Please go to Customize>Themes Options for Single Post/Page.', 'morenews') ?></small>
 
                 </div><!-- .morenews-row-content -->
                 <div class="morenews-row-content">
@@ -108,14 +108,14 @@ if (!function_exists('morenews_render_layout_options_metabox')) :
                             </option>
                         </select>
                     </p>
-                    <small><?php esc_html_e('Please go to Customize>Front-page Options for Homepage.', 'morenews')?></small>
+                    <small><?php esc_html_e('Please go to Customize>Front-page Options for Homepage.', 'morenews') ?></small>
 
                 </div><!-- .morenews-row-content -->
 
             </div><!-- #morenews-settings-metabox-tab-layout -->
         </div><!-- #morenews-settings-metabox-container -->
 
-        <?php
+    <?php
     }
 
 endif;
@@ -162,8 +162,6 @@ if (!function_exists('morenews_save_layout_options_meta')) :
         $morenews_global_single_content_mode = isset($_POST['morenews-meta-content-mode']) ? $_POST['morenews-meta-content-mode'] : '';
         update_post_meta($morenews_post_id, 'morenews-meta-content-alignment', sanitize_text_field($morenews_content_layout));
         update_post_meta($morenews_post_id, 'morenews-meta-content-mode', sanitize_text_field($morenews_global_single_content_mode));
-
-
     }
 
 endif;
@@ -175,7 +173,7 @@ add_action('save_post', 'morenews_save_layout_options_meta', 10, 2);
 
 
 if (!function_exists('morenews_taxonomy_add_new_meta_field')) :
-// Add term page
+    // Add term page
     function morenews_taxonomy_add_new_meta_field()
     {
         // this will add the custom meta field to the add new term page
@@ -187,24 +185,24 @@ if (!function_exists('morenews_taxonomy_add_new_meta_field')) :
 
 
         );
-        ?>
+    ?>
         <div class="form-field">
             <label for="term_meta[color_class_term_meta]"><?php esc_html_e('Color Class', 'morenews'); ?></label>
             <select id="term_meta[color_class_term_meta]" name="term_meta[color_class_term_meta]">
-                <?php foreach ($morenews_cat_color as $key => $value): ?>
+                <?php foreach ($morenews_cat_color as $key => $value) : ?>
                     <option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
                 <?php endforeach; ?>
             </select>
             <p class="description"><?php esc_html_e('Select category color class. You can set appropriate categories color on "Categories" section of the theme customizer.', 'morenews'); ?></p>
         </div>
-        <?php
+    <?php
     }
 endif;
 add_action('category_add_form_fields', 'morenews_taxonomy_add_new_meta_field', 10, 2);
 
 
 if (!function_exists('morenews_taxonomy_edit_meta_field')) :
-// Edit term page
+    // Edit term page
     function morenews_taxonomy_edit_meta_field($term)
     {
 
@@ -214,10 +212,9 @@ if (!function_exists('morenews_taxonomy_edit_meta_field')) :
         // retrieve the existing value(s) for this meta field. This returns an array
         $morenews_term_meta = get_option("category_color_$morenews_t_id");
 
-        ?>
+    ?>
         <tr class="form-field">
-            <th scope="row" valign="top"><label
-                        for="term_meta[color_class_term_meta]"><?php esc_html_e('Color Class', 'morenews'); ?></label></th>
+            <th scope="row" valign="top"><label for="term_meta[color_class_term_meta]"><?php esc_html_e('Color Class', 'morenews'); ?></label></th>
             <td>
                 <?php
                 $morenews_cat_color = array(
@@ -229,14 +226,14 @@ if (!function_exists('morenews_taxonomy_edit_meta_field')) :
                 );
                 ?>
                 <select id="term_meta[color_class_term_meta]" name="term_meta[color_class_term_meta]">
-                    <?php foreach ($morenews_cat_color as $key => $value): ?>
-                        <option value="<?php echo esc_attr($key); ?>"<?php selected(isset($morenews_term_meta['color_class_term_meta'])?$morenews_term_meta['color_class_term_meta']:'', $key); ?>><?php echo esc_html($value); ?></option>
+                    <?php foreach ($morenews_cat_color as $key => $value) : ?>
+                        <option value="<?php echo esc_attr($key); ?>" <?php selected(isset($morenews_term_meta['color_class_term_meta']) ? $morenews_term_meta['color_class_term_meta'] : '', $key); ?>><?php echo esc_html($value); ?></option>
                     <?php endforeach; ?>
                 </select>
                 <p class="description"><?php esc_html_e('Select category color class. You can set appropriate categories color on "Categories" section of the theme customizer.', 'morenews'); ?></p>
             </td>
         </tr>
-        <?php
+<?php
     }
 endif;
 add_action('category_edit_form_fields', 'morenews_taxonomy_edit_meta_field', 10, 2);
@@ -245,7 +242,7 @@ add_action('category_edit_form_fields', 'morenews_taxonomy_edit_meta_field', 10,
 
 
 if (!function_exists('morenews_save_taxonomy_color_class_meta')) :
-// Save extra taxonomy fields callback function.
+    // Save extra taxonomy fields callback function.
     function morenews_save_taxonomy_color_class_meta($morenews_term_id)
     {
         if (isset($_POST['term_meta'])) {
@@ -253,7 +250,7 @@ if (!function_exists('morenews_save_taxonomy_color_class_meta')) :
             $morenews_term_meta = get_option("category_color_$morenews_t_id");
             $morenews_cat_keys = array_keys($_POST['term_meta']);
             foreach ($morenews_cat_keys as $key) {
-                if (isset ($_POST['term_meta'][$key])) {
+                if (isset($_POST['term_meta'][$key])) {
                     $morenews_term_meta[$key] = $_POST['term_meta'][$key];
                 }
             }
@@ -265,3 +262,43 @@ if (!function_exists('morenews_save_taxonomy_color_class_meta')) :
 endif;
 add_action('edited_category', 'morenews_save_taxonomy_color_class_meta', 10, 2);
 add_action('create_category', 'morenews_save_taxonomy_color_class_meta', 10, 2);
+
+//Category fields meta ends
+
+add_action('save_post', 'morenews_save_reading_time_meta');
+
+function morenews_save_reading_time_meta($post_id)
+{
+    
+    $morenews_show_read_mins = morenews_get_option('global_show_min_read');
+    if($morenews_show_read_mins == 'no'){
+      return;
+    }
+    // Avoid autosave & revisions
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+    if (wp_is_post_revision($post_id)) return;
+
+    // Posts only
+    if (get_post_type($post_id) !== 'post') return;
+
+    // Raw content (fastest)
+    $content = get_post_field('post_content', $post_id);
+
+    // Strip tags + shortcodes (light + safe)
+    $clean_text = wp_strip_all_tags(strip_shortcodes($content), true);
+
+    // Count words
+    $word_count = str_word_count($clean_text);
+
+    // Words per minute
+    $wpm = absint(morenews_get_option('global_show_min_read_number'));
+    if (!$wpm) {
+        $wpm = 200;
+    }
+
+    // Calculate minutes
+    $minutes = ceil($word_count / $wpm);
+
+    // Store
+    update_post_meta($post_id, '_aft_read_time', $minutes);
+}

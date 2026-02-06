@@ -251,47 +251,79 @@ function morenews_pingback_header()
 
 add_action('wp_head', 'morenews_pingback_header');
 
-
 /**
- * Returns posts.
+ * Get posts based on filter type (category, tag, view count, comment count, etc.).
  *
  * @since MoreNews 1.0.0
+ *
+ * @param int    $number_of_posts Number of posts to retrieve (max 50).
+ * @param int    $term_id         Category or tag ID depending on filter.
+ * @param string $filterby        Filter type: 'cat', 'tag', 'view', 'comment', 'recent'.
+ * @param array  $extra_args      Optional extra WP_Query args (offset, date_query etc).
+ * @return WP_Query               WP_Query object.
  */
-if (!function_exists('morenews_get_posts')) :
-  function morenews_get_posts($number_of_posts, $tax_id = '0', $filterby = 'cat')
-  {
+if ( ! function_exists( 'morenews_get_posts' ) ) {
+  function morenews_get_posts( $number_of_posts = 5, $term_id = 0, $filterby = 'cat', $extra_args = array() ) {
+      $number_of_posts = absint( $number_of_posts );
+      $number_of_posts = min( $number_of_posts, 20 );  // Cap to safe max.
 
-    $ins_args = array(
-      'post_type' => 'post',
-      'posts_per_page' => absint($number_of_posts),
-      'post_status' => 'publish',
-      'order' => 'DESC',
-      'ignore_sticky_posts' => true
-    );
+      $term_id = absint( $term_id );
+      $filterby = sanitize_key( $filterby );
 
-    $tax_id = isset($tax_id) ? $tax_id : '0';
+      $args = array(
+          'post_type'           => 'post',
+          'posts_per_page'      => $number_of_posts,
+          'post_status'         => 'publish',
+          'ignore_sticky_posts' => true,
+          'order'               => 'DESC',
+          'no_found_rows'       => true,
+      );
 
-    if ((absint($tax_id) > 0) && ($filterby == 'tag')) {
-      $ins_args['tag_id'] = absint($tax_id);
-      $ins_args['orderby'] = 'date';
-    } elseif (($filterby == 'view')) {
-      $ins_args['orderby'] = 'meta_value_num';
-      $ins_args['meta_key'] = 'af_post_views_count';
-    } elseif (($filterby == 'comment')) {
-      $ins_args['orderby'] = 'comment_count';
-    } elseif ((absint($tax_id) > 0) && ($filterby == 'cat')) {
-      $ins_args['cat'] = absint($tax_id);
-      $ins_args['orderby'] = 'date';
-    } else {
-      $ins_args['orderby'] = 'date';
-    }
+      switch ( $filterby ) {
+          case 'tag':
+              if ( $term_id > 0 ) {
+                  $args['tag_id'] = $term_id;
+              }
+              $args['orderby'] = 'date';
+              break;          
 
-    $all_posts = new WP_Query($ins_args);
+          case 'comment':
+              $args['orderby'] = 'comment_count';
+              break;
 
-    return $all_posts;
+          case 'recent':
+              // Possibly use date_query
+              $args['orderby'] = 'date';
+              break;
+
+          case 'cat':
+          default:
+              if ( $term_id > 0 ) {
+                  $args['cat'] = $term_id;
+              }
+              $args['orderby'] = 'date';
+              break;
+      }
+
+      // Merge in any extra query args
+      if ( is_array( $extra_args ) && ! empty( $extra_args ) ) {
+          $args = array_merge( $args, $extra_args );
+      }
+
+      /**
+       * Allow overriding query args.
+       *
+       * @param array $args           Final WP_Query arguments.
+       * @param int   $number_of_posts Passed number of posts.
+       * @param int   $term_id         Term ID.
+       * @param string $filterby        Filter type.
+       * @param array $extra_args      Extra args passed.
+       */
+      $args = apply_filters( 'morenews_get_posts_args', $args, $number_of_posts, $term_id, $filterby, $extra_args );
+
+      return new WP_Query( $args );
   }
-
-endif;
+}
 
 
 /**
@@ -605,38 +637,100 @@ if (!function_exists('morenews_numeric_pagination')) :
 endif;
 
 
-/* Word read count Pagination */
+// /* Word read count Pagination */
+// if (!function_exists('morenews_count_content_words')) :
+//   /**
+//    * @param $content
+//    *
+//    * @return string
+//    */
+//   function morenews_count_content_words($post_id)
+//   {
+//     $morenews_show_read_mins = morenews_get_option('global_show_min_read');
+//     if ($morenews_show_read_mins == 'yes') {
+//       $content = apply_filters('the_content', get_post_field('post_content', $post_id));
+//       $morenews_read_words = morenews_get_option('global_show_min_read_number');
+//       $morenews_decode_content = html_entity_decode($content);
+//       $morenews_filter_shortcode = do_shortcode($morenews_decode_content);
+//       $morenews_strip_tags = wp_strip_all_tags($morenews_filter_shortcode, true);
+//       $morenews_count = str_word_count($morenews_strip_tags);
+//       $morenews_word_per_min = (absint($morenews_count) / $morenews_read_words);
+//       $morenews_word_per_min = ceil($morenews_word_per_min);
+
+//       if (absint($morenews_word_per_min) > 0) {
+//         $word_count_strings = sprintf(__("%s min read", 'morenews'), number_format_i18n($morenews_word_per_min));
+//         if ('post' == get_post_type($post_id)) :
+//           echo '<span class="min-read">';
+//           echo esc_html($word_count_strings);
+//           echo '</span>';
+//         endif;
+//       }
+//     }
+//   }
+
+// endif;
+
 if (!function_exists('morenews_count_content_words')) :
-  /**
-   * @param $content
-   *
-   * @return string
-   */
+
   function morenews_count_content_words($post_id)
   {
-    $morenews_show_read_mins = morenews_get_option('global_show_min_read');
-    if ($morenews_show_read_mins == 'yes') {
-      $content = apply_filters('the_content', get_post_field('post_content', $post_id));
-      $morenews_read_words = morenews_get_option('global_show_min_read_number');
-      $morenews_decode_content = html_entity_decode($content);
-      $morenews_filter_shortcode = do_shortcode($morenews_decode_content);
-      $morenews_strip_tags = wp_strip_all_tags($morenews_filter_shortcode, true);
-      $morenews_count = str_word_count($morenews_strip_tags);
-      $morenews_word_per_min = (absint($morenews_count) / $morenews_read_words);
-      $morenews_word_per_min = ceil($morenews_word_per_min);
 
-      if (absint($morenews_word_per_min) > 0) {
-        $word_count_strings = sprintf(__("%s min read", 'morenews'), number_format_i18n($morenews_word_per_min));
-        if ('post' == get_post_type($post_id)) :
-          echo '<span class="min-read">';
-          echo esc_html($word_count_strings);
-          echo '</span>';
-        endif;
+    $morenews_show_read_mins = morenews_get_option('global_show_min_read');
+    if($morenews_show_read_mins == 'no'){
+      return;
+    }
+
+    // Posts only
+    if ('post' !== get_post_type($post_id)) {
+      return;
+    }
+
+    // Get pre-saved reading time (best performance)
+    $read_time = absint(get_post_meta($post_id, '_aft_read_time', true));
+
+    // If not available (older posts), fallback once
+    if (!$read_time) {
+
+      // Lightweight processing (DO NOT use the_content filter)
+      $content = get_post_field('post_content', $post_id);
+
+      // Fast cleanup
+      $clean_text = wp_strip_all_tags(strip_shortcodes($content), true);
+
+      // Fast word count
+      $word_count = str_word_count($clean_text);
+
+      // Words per minute
+      $wpm = absint(morenews_get_option('global_show_min_read_number'));
+      if (!$wpm) {
+        $wpm = 200;
       }
+
+      $read_time = ceil($word_count / $wpm);
+
+      // Store so it never recalculates again
+      update_post_meta($post_id, '_aft_read_time', $read_time);
+    }
+
+    if ($read_time > 0) {
+
+      // Translatable singular/plural
+      $output = sprintf(
+        _n(
+          '%s minute read',
+          '%s minutes read',
+          $read_time,
+          'morenews'
+        ),
+        number_format_i18n($read_time)
+      );
+
+      echo '<span class="min-read">' . esc_html($output) . '</span>';
     }
   }
 
 endif;
+
 
 
 /**
@@ -759,8 +853,8 @@ function morenews_get_comments_views_share($post_id)
     <?php
     $show_comment_count = morenews_get_option('global_show_comment_count');
     if ($show_comment_count == 'yes') :
-      $comment_count = get_comments_number($post_id);
-      if (absint($comment_count) > 1) :
+      // $comment_count = get_comments_number($post_id);
+      // if (absint($comment_count) > 1) :
     ?>
         <span class="aft-comment-count">
           <a href="<?php the_permalink(); ?>">
@@ -771,7 +865,7 @@ function morenews_get_comments_views_share($post_id)
           </a>
         </span>
     <?php endif;
-    endif;
+    // endif;
 
 
     ?>
@@ -937,9 +1031,11 @@ if (!function_exists('morenews_author_bio_box')) :
       $website     = get_the_author_meta('user_url');
 
       // Get author role (optional)
-      $user = get_userdata($author_id);
-      $roles = $user->roles;
-      $role_name = !empty($roles) ? ucfirst($roles[0]) : '';
+      $user      = get_userdata( $author_id );
+      $role_name = '';
+      if ( $user && ! empty( $user->roles ) ) {
+          $role_name = ucfirst( $user->roles[0] );
+      }
 
   ?>
       <section class="morenews-author-bio">
@@ -957,11 +1053,11 @@ if (!function_exists('morenews_author_bio_box')) :
                   <?php echo get_avatar($author_id, 96); ?>
               </div>
               <div class="author-info">
-                  <h4 class="author-name">
+                  <h3 class="author-name">
                       <a href="<?php echo esc_url($author_url); ?>">
                           <?php echo esc_html($author_name); ?>
                       </a>
-                  </h4>
+                  </h3>
                   <?php if ($role_name) : ?>
                       <p class="author-role">
                           <?php echo esc_html($role_name); ?>
@@ -1016,3 +1112,21 @@ function morenews_append_author_bio($content)
 
   return $content;
 }
+
+/*
+** Exclude pages from search results
+*/
+function morenews_search_results( $query ) {
+
+  $search_archive_content_view = morenews_get_option('search_archive_content_view');
+
+  if ($search_archive_content_view == 'all') {
+    return;
+  }
+
+  // Ensure this only runs on the main query in the search context
+  if ( $query->is_main_query() && $query->is_search() && ! is_admin() ) {
+      $query->set( 'post_type', 'post' ); // Include only posts
+  }
+}
+add_action( 'pre_get_posts', 'morenews_search_results' );

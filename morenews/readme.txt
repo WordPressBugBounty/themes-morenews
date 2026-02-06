@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
-Tested up to: 6.8
-Stable tag: 3.7.0
+Tested up to: 6.9
+Stable tag: 3.8.14
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,10 +57,97 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
-= 3.7.5 - September 23, 2025 =
-* Fixed - PHP warning "Array to string conversion" in admin body class
-* Update - Improved admin body class handling to ensure correct string return
-* Update - Code cleanup for better Customizer and admin compatibility
+= 3.8.14 - Feb 02, 2026 =
+* Fix - Improved author bio spacing for better readability and layout consistency.
+* Fix - Adjusted entry content gallery gap to improve visual balance.
+* Fix - Refined audio shortcode margins for cleaner content presentation.
+* Improvement - Updated comment reply link design for better usability and styling.
+* Fix - Improved spacing for lists inside entry content.
+
+= 3.8.10 - Dec 30 2025 =
+* Update - German language file
+* Update - Arabic language file
+* Update - French language file
+* Update - Italian language file
+* Update - Japanese language file
+* Update - Polish language file
+* Update - Portugese language file
+* Update - Spanish language file
+* Update - Dutch language file
+* Update - Russian language file
+* Update - Ukranian language file
+* Update - Swedish language file
+
+= 3.8.8 - Dec 16, 2025 =
+* New - Added AJAX-powered live search with customizable results dropdown.
+* New - Improved accessibility for live search, including ARIA roles, keyboard navigation (Arrow Up/Down, Enter), and screen reader support.
+* New - Added debounced search input for smoother performance and reduced AJAX requests.
+* New - Added SEO-friendly live search output with proper post titles, permalinks, and featured thumbnails.
+* New - Added “View all results” link below live search results.
+* New - Enhanced live search HTML structure for better accessibility and semantic markup.
+* New - Added Comment Count toggle option.
+* Fix - Resolved “Searching…” display issue in live search results.
+* Fix - Corrected checkbox sanitizer for the “AJAX Results Dropdown” option to ensure proper functionality.
+* Fix - Fixed Minutes Read toggle issues in the Customizer.
+
+
+
+= 3.8.7 - Dec 11, 2025 =
+* Update - Added improved Minutes Read feature using stored post meta for faster performance.
+* Update - Added singular/plural translation-ready string support for reading time (“1 minute read” / “X minutes read”).
+* Update - Added automatic reading-time calculation on post save for accurate and lightweight frontend output.
+* Update - Improved compatibility with WordPress 6.9 core reading-time features.
+* Update - Ensured full WordPress.org guideline compliance by keeping the feature purely presentational.
+* Update - Added new Customizer toggle under Customize ▸ Theme Options ▸ Minutes Read Count.
+
+
+= 3.8.6 - Dec 05, 2025 =
+* Update - Added toggle to show current date in the top bar.
+* Update - Added toggle to show current time in the top bar.
+* Update - Added current time format selector (12-hour, 24-hour, or WordPress time format).
+* Update - Implemented live-running JavaScript clock for 12-hour and 24-hour formats in the Customizer preview.
+* Update - Improved date and time color handling for light/dark modes.
+* Update - Improved date and time color compatibility with top bar background color settings.
+* Update - Added new controls under Customize ▸ Header Builder ▸ Top Header Section.
+* Update - Grouped, revised, and improved header background controls for better usability.
+
+= 3.8.5 - Nov 21, 2025 =
+* Update - Emoji scripts are enabled by default based on recent user experiences. Can be disabled from Customizing ▸ Theme Options > Global Settings.
+* Update - Added quick link to import starter sites from the dashboard.
+* Update - Added quick link to import Elementor kits from the dashboard.
+* Update - Added quick link to import Gutenberg patterns from the dashboard.
+* Update - Added embedded YouTube video documentation accessible from the dashboard.
+* Update - Improved admin dashboard code and performance.
+
+
+= 3.8.3 - Nov 06, 2025 =
+* Update - Improved banner and widget for better display.
+* Update - Improved block header color.
+* Fixed - Featured image caption alignment on single posts under different layout settings.
+* Fixed - Minor CSS inconsistencies, spacing, and visual alignment issues across various sections.
+
+= 3.8.2 - Oct 30, 2025 =
+* Update - Added a new POT language file for easier theme translation.
+* Update - Added an option to enable or disable emojis (now turned off by default for faster loading).
+* Update - Improved banner and widget queries for better speed and performance.
+* Fixed - Issue with primary and secondary fonts not loading properly.
+* Fixed - Featured image caption alignment on single posts under different layout settings.
+* Fixed - Minor CSS inconsistencies, spacing, and visual alignment issues across various sections.
+
+= 3.8.0 - Oct 25, 2025 =
+* New - Improved overall website accessibility with better color contrast and readability adjustments across multiple elements.
+* New - Optimized Block Editor layout sizing for a smoother editing experience on different screen sizes.
+* New - Enhanced Block Editor font loading and rendering for better consistency between editor and frontend.
+* Update - Refined compatibility and loading behavior for local fonts to improve performance and privacy.
+* Update - Optimized Google Fonts integration with improved compatibility, speed, and layout stability.
+* Update - Improved accessibility-related styles including focus outlines, link visibility, and keyboard navigation.
+* Update - Enhanced Post Author Box layout and styling for cleaner presentation and better alignment.
+* Update - Improved WooCommerce layouts, spacing, and style consistency for a smoother user experience.
+* Update - Strengthened compatibility between WooCommerce and BlockSpare blocks for better visual consistency.
+* Update - Improved RTL support with refined GTranslate menu alignment and smoother directional layout handling.
+* Update - Refined Header and Footer Builder elements with improved design consistency and minor UI tweaks.
+* Fixed - Minor CSS inconsistencies, spacing, and visual alignment issues across various sections.
+
 
 = 3.7.4 - September 19, 2025 = 
 * New - Integrated GTranslate support with floating option and design adjustments

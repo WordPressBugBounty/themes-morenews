@@ -31,7 +31,7 @@
 .woocommerce a.button.alt, 
 .woocommerce button.button.alt, 
 .woocommerce input.button.alt{
-	background-color: #007ACC;
+	background-color: #1665CF;
 	color: #fff;
 }
 .woocommerce #respond input#submit.alt:hover, 
@@ -93,10 +93,12 @@ body.woocommerce form > p:last-child {
 }
 .blockspare-page-section .woocommerce {
     padding: 20px;
-    background: #fff;
     width: 100%;
 	max-width: 100%;
 	box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%);
+}
+.aft-default-mode .blockspare-page-section .woocommerce {
+	background: #fff;
 }
 
 /* ------- new additional css ----- */
@@ -341,7 +343,7 @@ nav.woocommerce-MyAccount-navigation ul li.is-active {
 	margin: 0 auto;
 }
 body.aft-default-mode .woocommerce-loop-product__title{
-	color: #404040;
+	color: #1f1f1f;
 }
 body.aft-dark-mode .woocommerce-loop-product__title{
 	color: #fff;
@@ -380,7 +382,7 @@ body a.wc-block-components-button {
     color: #fff;
 }
 :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link){
-	background-color: #007ACC;
+	background-color: #1665CF;
 	color: #fff;
 }
 body .wp-block-woocommerce-checkout {
@@ -421,7 +423,7 @@ body.woocommerce-js .label {
 .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link{
 	border: none;
     border-radius: 0;
-    background: #007ACC ;
+    background: #1665CF ;
     color: #fff;
     font-size: 14px;
     line-height: normal;
@@ -525,7 +527,7 @@ a.woocommerce-button,
 .woocommerce div.product form.cart .button:hover,
 .wc-block-components-button,
 .woocommerce-account .addresses .title .edit{
-	background-color: #007ACC;
+	background-color: #1665CF;
 	color: #fff;
 }
 .wc-block-components-button {
@@ -658,7 +660,7 @@ body.home .woocommerce-products-header{
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
 	background: transparent;
-	border-color: #007ACC;
+	border-color: #1665CF;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:focus {
 	outline: none;
@@ -670,7 +672,7 @@ body.home .woocommerce-products-header{
 	padding: .875em 1.5em;
 }
 .wc-block-grid__product .wc-block-grid__product-link:focus {
-	color: #007ACC;
+	color: #1665CF;
 }
 
 .woocommerce .product span.onsale,

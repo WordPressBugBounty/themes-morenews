@@ -62,8 +62,8 @@ if (!function_exists('morenews_main_menu_nav_section')) :
     <div class="navigation-container">
       <nav class="main-navigation clearfix">
 
-        <span class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">
-          <a href="#" role="button" class="aft-void-menu" aria-expanded="false">
+        <span class="toggle-menu" >
+          <a href="#" role="button" class="aft-void-menu" aria-controls="primary-menu" aria-expanded="false">
             <span class="screen-reader-text">
               <?php esc_html_e('Primary Menu', 'morenews'); ?>
             </span>
@@ -103,6 +103,8 @@ if (!function_exists('morenews_load_search_form_section')) :
         </a>
         <div class="af-search-form">
           <?php get_search_form(); ?>
+          <!-- Live Search Results -->
+          <div id="af-live-search-results"></div>
         </div>
       </div>
     </div>
@@ -174,10 +176,27 @@ if (!function_exists('morenews_load_date_section')) :
   function morenews_load_date_section()
   {
     $morenews_show_date = morenews_get_option('show_date_section');
-    if ($morenews_show_date == true) : ?>
+    $morenews_show_time = morenews_get_option('show_time_section');
+    if ($morenews_show_date == true || $morenews_show_time == true) : ?>
       <span class="topbar-date">
         <?php
-        echo wp_kses_post(date_i18n(get_option('date_format')));
+        $datetime = '';
+        if ($morenews_show_date == true) {
+          $datetime .= date_i18n(get_option('date_format'), current_time('timestamp'));
+        }
+
+        if ($morenews_show_time == true) {
+          $morenews_top_header_time_format = morenews_get_option('top_header_time_format');
+          if ($morenews_top_header_time_format == 'en-US' || $morenews_top_header_time_format == 'en-GB') {
+            $datetime .=  ' <span id="topbar-time"></span>';
+          } else {
+            $datetime .=  ' <span id="topbar-time-wp">';
+            $datetime .=  date_i18n(get_option('time_format'), current_time('timestamp'));
+            $datetime .=  '</span>';
+          }
+        }
+
+        echo wp_kses_post($datetime);
         ?>
       </span>
     <?php endif;

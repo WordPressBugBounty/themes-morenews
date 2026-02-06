@@ -18,15 +18,15 @@ return array(
     <!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"top":"0","bottom":"0"},"blockGap":"10px"}},"layout":{"inherit":false}} -->
     <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2"} /-->
     
-    <!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"#404040"},":hover":{"color":{"text":"#007ACC"}}}},"color":{"text":"#404040"}},"fontSize":"medium"} /-->
+    <!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"#1f1f1f"},":hover":{"color":{"text":"#1665CF"}}}},"color":{"text":"#1f1f1f"}},"fontSize":"medium"} /-->
     
     <!-- wp:group {"style":{"spacing":{"blockGap":"15px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group"><!-- wp:post-author-name {"style":{"typography":{"fontSize":"12px"},"elements":{"link":{"color":{"text":"#404040"}}},"color":{"text":"#404040"}}} /-->
+    <div class="wp-block-group"><!-- wp:post-author-name {"style":{"typography":{"fontSize":"12px"},"elements":{"link":{"color":{"text":"#1f1f1f"}}},"color":{"text":"#1f1f1f"}}} /-->
     
-    <!-- wp:post-date {"style":{"typography":{"fontSize":"12px"},"elements":{"link":{"color":{"text":"#404040"}}},"color":{"text":"#404040"}}} /--></div>
+    <!-- wp:post-date {"style":{"typography":{"fontSize":"12px"},"elements":{"link":{"color":{"text":"#1f1f1f"}}},"color":{"text":"#1f1f1f"}}} /--></div>
     <!-- /wp:group -->
     
-    <!-- wp:post-excerpt {"moreText":"Read More","style":{"elements":{"link":{"color":{"text":"#404040"}}},"color":{"text":"#404040"},"typography":{"fontSize":"16px"}}} /--></div>
+    <!-- wp:post-excerpt {"moreText":"Read More","style":{"elements":{"link":{"color":{"text":"#1f1f1f"}}},"color":{"text":"#1f1f1f"},"typography":{"fontSize":"16px"}}} /--></div>
     <!-- /wp:group -->
     <!-- /wp:post-template --></div>
     <!-- /wp:group --></div>

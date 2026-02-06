@@ -49,20 +49,7 @@ get_header();
 
                         ?>
                                 <div class="read-img pos-rel">
-                                    <?php morenews_post_thumbnail(); ?>
-                                    <?php
-                                    $thumbnail_id = get_post_thumbnail_id();
-                                    if ($thumbnail_id) {
-                                        $thumbnail_post = get_post($thumbnail_id);
-                                        if ($thumbnail_post && !empty(trim($thumbnail_post->post_excerpt))) {
-                                    ?>
-                                            <span class="aft-image-caption">
-                                                <p><?php echo esc_html($thumbnail_post->post_excerpt); ?></p>
-                                            </span>
-                                    <?php
-                                        }
-                                    }
-                                    ?>
+                                    <?php morenews_post_thumbnail(); ?>                                    
                                 </div>
 
                         <?php endif;
