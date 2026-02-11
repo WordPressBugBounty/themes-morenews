@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "MeerNieuws"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -32,30 +32,29 @@ msgid ""
 "Style, Scalability, and a smooth User Experience across the globe. Explore "
 "all features at https://afthemes.com/products/morenews."
 msgstr ""
-"MoreNews is een dynamisch, ultrasnel en zeer veelzijdig WordPress-thema dat "
-"niet alleen is gebouwd voor nieuws, tijdschriften en blogs, maar ook voor "
-"bedrijven, e-commerce en elke vorm van website dankzij de nieuwe HEADER & "
-"FOOTER BUILDER die naadloos samenwerkt met de Block Editor, GUTENBERG, "
-"ELEMENTOR, Brizy, Divi en andere populaire paginabouwers, waardoor u "
-"volledige vrijheid heeft om te slepen en neer te zetten om unieke lay-outs "
-"te ontwerpen zonder code aan te raken. Met meer dan 100 kant-en-klare "
-"startersites, 30+ aangepaste widgets, geavanceerde blokpatronen, flexibele "
-"banner- en lay-outopties, AMP-ondersteuning en volledige WOOCOMMERCE-"
-"integratie, maakt MoreNews het gemakkelijk om binnen enkele minuten alles te"
-" lanceren, van een eenvoudige blog tot een professionele online winkel of "
-"een complexe inhoudshub. Het is volledig geoptimaliseerd voor SEO, CORE WEB "
-"VITALS, snelheid en responsief ontwerp, waardoor uitstekende prestaties op "
-"alle apparaten worden gegarandeerd, en is gebouwd met WCAG-toegankelijkheid,"
-" AVG-naleving en schone, lichtgewicht code voor betrouwbaarheid op de lange "
-"termijn. Meertalig en klaar voor RTL, met demo-inhoud beschikbaar in "
-"meerdere talen, waaronder Engels, Spaans, Duits, Frans, Japans, Chinees en "
-"Arabisch, is MoreNews een toekomstbestendig thema ontworpen voor makers die "
-"waarde hechten aan stijl, schaalbaarheid en een soepele gebruikerservaring "
-"over de hele wereld. Ontdek alle functies op "
+"MoreNews is een dynamisch, ultrasnel en zeer veelzijdig WordPress thema, "
+"gebouwd niet alleen voor nieuws, tijdschriften en blogs maar ook voor "
+"business, e-commerce en elke soort site dankzij de nieuwe HEADER & FOOTER "
+"BOUWER die naadloos werkt met de blok-editor, GUTENBERG, ELEMENTOR, Brizy, "
+"Divi en andere populaire pagina bouwers, waardoor je volledige versleep "
+"vrijheid krijgt om unieke lay-outs te ontwerpen zonder code aan te raken. "
+"Met 100+ klaar-om-te-importeren starter sites, 30+ aangepaste widgets, "
+"geavanceerde blokpatronen, flexibele banner en lay-out opties, AMP "
+"ondersteuning en volledige WOOCOMMERCE integratie, maakt MoreNews het "
+"eenvoudig om alles te lanceren van een simpele blog tot een professionele "
+"online store of een complex inhoud hub in minuten. Het is volledig "
+"geoptimaliseerd voor SEO, CORE WEB VITALS, snelheid en responsive design, "
+"wat uitstekende prestaties op alle apparaten garandeert, en is gebouwd met "
+"WCAG toegankelijkheid, GDPR compliance en schone, lichte code voor "
+"langdurige betrouwbaarheid. Meertalig en RTL klaar, met demo inhoud "
+"beschikbaar in meerdere talen waaronder Engels, Spaans, Duits, Frans, "
+"Japans, Chinees en Arabisch, is MoreNews een toekomstbestendig thema "
+"ontworpen voor makers die waarde hechten aan stijl, schaalbaarheid en een "
+"soepele user experience over de hele wereld. Ontdek alle functies op "
 "https://afthemes.com/products/morenews."
 
 msgid "AF themes"
-msgstr "AF-thema's"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
@@ -74,25 +73,25 @@ msgid "Dashboard"
 msgstr "Dashboard"
 
 msgid "Customize"
-msgstr "Aanpassen"
+msgstr "Customize"
 
 msgid "Header Builder"
-msgstr "Header bouwer"
+msgstr "Header-bouwerr"
 
 msgid "Footer Builder"
-msgstr "Footer bouwer"
+msgstr "Footer-bouwerr"
 
 msgid "Starter Sites"
-msgstr "Starterssites"
+msgstr "Starter Sites"
 
 msgid "Elementor Kits"
-msgstr "Elementor-kits"
+msgstr "Elementor Kits"
 
 msgid "Block Patterns"
 msgstr "Blokpatronen"
 
 msgid "Upgrade to Pro"
-msgstr "Upgrade naar Pro"
+msgstr "Upgraden naar Pro"
 
 msgid "Upgrade Now"
 msgstr "Nu upgraden"
@@ -102,7 +101,7 @@ msgstr "De Templatespare plugin moet geüpdatet worden naar de nieuwste versie"
 
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr ""
-"Importeer een starter site, personaliseer, en leef het in 3 eenvoudige "
+"Importeer een Starter site, personaliseer, en leef het in 3 eenvoudige "
 "stappen!"
 
 msgid "Blockspare plugin version should be more than %s."
@@ -138,17 +137,17 @@ msgid "Activated"
 msgstr "Geactiveerd"
 
 msgid "Get Starter Sites"
-msgstr "Verkrijg starterssites"
+msgstr "Verkrijg starter sites"
 
 msgid "Get Started"
-msgstr "Ga aan de slag"
+msgstr "Aan de slag"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
 "Blockspare plugins for Starter Sites and Templates."
 msgstr ""
 "De actie \"Aan de slag\" zal de Templatespare en Blockspare plugins "
-"installeren/activeren voor starter sites en templates."
+"installeren/activeren voor Starter sites en templates."
 
 msgid "By"
 msgstr "Door"
@@ -157,7 +156,7 @@ msgid "More Details"
 msgstr "Meer details"
 
 msgid "👋 Welcome, and Thank You!"
-msgstr "👋 Welkom, en bedankt!"
+msgstr "👋 Welkom en bedankt!"
 
 msgid ""
 "%s is now active. We're here to help you turn your ideas into a beautiful, "
@@ -192,7 +191,7 @@ msgid "Documentation"
 msgstr "Documentatie"
 
 msgid "Video Tutorials"
-msgstr "Video handleidingen"
+msgstr "Video tutorials"
 
 msgid "Support"
 msgstr "Ondersteuning"
@@ -215,7 +214,7 @@ msgstr "Eén gedachte over &ldquo;%1$s&rdquo;"
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s dacht aan &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s gedachte over &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
 
 msgid "Comments are closed."
@@ -228,10 +227,10 @@ msgid "Primary Menu"
 msgstr "Primair menu"
 
 msgid "Social Menu"
-msgstr "Sociaal menu"
+msgstr "Social Menu"
 
 msgid "Footer Menu"
-msgstr "Voettekstmenu"
+msgstr "Footer menu"
 
 msgid "Skip to content"
 msgstr "Ga naar de inhoud"
@@ -250,7 +249,7 @@ msgid "Hide builder panel"
 msgstr "Paneel van bouwer verbergen"
 
 msgid "Hide Builder"
-msgstr "Bouwer verbergen"
+msgstr "Paginabouwer verbergen"
 
 msgid "Device view controls"
 msgstr "Apparaat weergave besturingen"
@@ -262,19 +261,19 @@ msgid "Close choose element modal"
 msgstr "Sluit kies element modal"
 
 msgid "Footer Layout"
-msgstr "Voettekstindeling"
+msgstr "Footer lay-out"
 
 msgid "Create dynamic header effortlessly with drag-and-drop builder."
 msgstr "Maak moeiteloos een dynamische header met een verslepen bouwer."
 
 msgid "Header"
-msgstr "Koptekst"
+msgstr "Header"
 
 msgid "Create dynamic footer effortlessly with drag-and-drop builder."
 msgstr "Maak moeiteloos een dynamische footer met een verslepen bouwer."
 
 msgid "Footer"
-msgstr "Voettekst"
+msgstr "Footer"
 
 msgid "Enable %s Builder"
 msgstr "%s bouwer inschakelen"
@@ -289,7 +288,7 @@ msgid "Configure Element"
 msgstr "Configureer element"
 
 msgid "Desktop"
-msgstr "Bureaublad"
+msgstr "Desktop"
 
 msgid "Element Settings"
 msgstr "Element instellingen"
@@ -298,7 +297,7 @@ msgid "close Off-Canvas Navigation"
 msgstr "sluit off-canvas navigatie"
 
 msgid "Site & Logo"
-msgstr "Site en logo"
+msgstr "Site & logo"
 
 msgid "Site Identity"
 msgstr "Site identiteit"
@@ -310,7 +309,7 @@ msgid "Promotion"
 msgstr "Promotie"
 
 msgid "Off Canvas"
-msgstr "Van canvas"
+msgstr "Off Canvas"
 
 msgid "Off Canvas Widget Area"
 msgstr "Off-canvas widget gebied"
@@ -326,7 +325,7 @@ msgid "Primary menu"
 msgstr "Primair menu"
 
 msgid "Select Menu"
-msgstr "Selecteer menu"
+msgstr "Menu selecteren"
 
 msgid "You can change Menu from menu panel. %s"
 msgstr "Je kunt het menu wijzigen via het menu paneel. %s"
@@ -408,7 +407,7 @@ msgid "Beta"
 msgstr "Bèta"
 
 msgid "No menu assigned"
-msgstr "Geen menu toegekend"
+msgstr "Geen menu toegewezen"
 
 msgid "-- Select --"
 msgstr "-- Selecteer --"
@@ -423,10 +422,10 @@ msgid "Exclusive"
 msgstr "Exclusief"
 
 msgid "Posts List %d"
-msgstr "Berichtenlijst %d"
+msgstr "Lijst van berichten %d"
 
 msgid "Main News"
-msgstr "Belangrijkste nieuws"
+msgstr "Hoofdnieuws"
 
 msgid "Latest"
 msgstr "Nieuwste"
@@ -435,16 +434,16 @@ msgid "Popular"
 msgstr "Populair"
 
 msgid "Trending"
-msgstr "Populair"
+msgstr "Trending"
 
 msgid "Trending Now"
 msgstr "Nu trending"
 
 msgid "Update"
-msgstr "Update"
+msgstr "Updaten"
 
 msgid "Editor's Picks"
-msgstr "Keuze van de redactie"
+msgstr "Editor's Picks"
 
 msgid "Trending Story"
 msgstr "Trending verhaal"
@@ -471,7 +470,7 @@ msgid "You may have missed"
 msgstr "Je hebt misschien gemist"
 
 msgid "Copyright &copy; All rights reserved."
-msgstr "Copyright &copy; All rights reserved."
+msgstr "Auteursrecht &kopie; Alle rechten voorbehouden."
 
 msgid "Body Background Color"
 msgstr "Body achtergrondkleur"
@@ -480,7 +479,7 @@ msgid "Site Title Size"
 msgstr "Site titel grootte"
 
 msgid "Uppercase Site Title and Tagline"
-msgstr "Titel en slogan van de site met hoofdletters"
+msgstr "Sitetitel en slogan in hoofdletters"
 
 msgid "Site Title/Tagline Color"
 msgstr "Site titel/slogan kleur"
@@ -489,22 +488,22 @@ msgid "Header Image Mode"
 msgstr "Header afbeelding modus"
 
 msgid "Image visibility may vary as per the mode"
-msgstr "De zichtbaarheid van afbeeldingen kan variëren volgens de modus"
+msgstr "De zichtbaarheid van het afbeelding kan variëren naargelang de modus"
 
 msgid "Above Site Title"
-msgstr "Boven de sitetitel"
+msgstr "Boven site titel"
 
 msgid "Set as Background"
 msgstr "Instellen als achtergrond"
 
 msgid "Show Full Image (Background)"
-msgstr "Volledige afbeelding weergeven (achtergrond)"
+msgstr "Toon volledige afbeelding (achtergrond)"
 
 msgid "Disable Image Tint/Overlay"
-msgstr "Afbeeldingstint/overlay uitschakelen"
+msgstr "Afbeelding tint/overlay uitschakelen"
 
 msgid "MoreNews Pro"
-msgstr "MeerNieuws Pro"
+msgstr "MoreNews Pro"
 
 msgid "Site Color Mode"
 msgstr "Site kleurmodus"
@@ -516,7 +515,7 @@ msgid "Dark"
 msgstr "Donker"
 
 msgid "Primary Color Section "
-msgstr "Primaire kleursectie"
+msgstr "Primaire kleur sectie"
 
 msgid "Body Background Color (Dark Mode) will be applied for this mode."
 msgstr ""
@@ -526,7 +525,7 @@ msgid "Body Background Color (Dark Mode)"
 msgstr "Body achtergrondkleur (donkere modus)"
 
 msgid "Secondary Color Section "
-msgstr "Secundaire kleursectie"
+msgstr "Secundaire kleur sectie"
 
 msgid "Secondary Color"
 msgstr "Secundaire kleur"
@@ -535,13 +534,13 @@ msgid "Fonts & Typography"
 msgstr "Lettertypen & typografie"
 
 msgid "Font Family Section"
-msgstr "Sectie lettertypefamilie"
+msgstr "Lettertype familie sectie"
 
 msgid "Global Fonts Family"
 msgstr "Globale lettertypen familie"
 
 msgid "Google Fonts"
-msgstr "Google-lettertypen"
+msgstr "Google Fonts"
 
 msgid "System Fonts"
 msgstr "Systeem lettertypen"
@@ -550,10 +549,10 @@ msgid "Site Title Font"
 msgstr "Site titel lettertype"
 
 msgid "Primary Font"
-msgstr "Primair lettertype"
+msgstr "Primaire lettertype"
 
 msgid "Secondary Font"
-msgstr "Secundair lettertype"
+msgstr "Secundaire lettertype"
 
 msgid "Main Banner Options"
 msgstr "Hoofd banner opties"
@@ -562,28 +561,28 @@ msgid "Main Banner"
 msgstr "Hoofd banner"
 
 msgid "Enable Main Banner Section"
-msgstr "Hoofd banner sectie inschakelen"
+msgstr "Activeer hoofd banner sectie"
 
 msgid "Main Banner Background Image"
-msgstr "Hoofd banner achtergrondafbeelding"
+msgstr "Achtergrondafbeelding hoofd banner"
 
 msgid "Recommended Size %1$s px X %2$s px"
 msgstr "Aanbevolen grootte %1$s px X %2$s px"
 
 msgid "Select Main Banner Layout"
-msgstr "Selecteer de lay-out van de hoofdbanner"
+msgstr "Selecteer hoofd banner lay-out"
 
 msgid "Slider, Trending and Tabs"
-msgstr "Schuifregelaar, Trending en Tabbladen"
+msgstr "Slider, trending en tabs"
 
 msgid "Slider, Editors Picks and Tabs"
-msgstr "Schuifregelaar, Editorkeuzes en tabbladen"
+msgstr "Slider, editors picks en tabs"
 
 msgid "Slider and Editors Picks"
-msgstr "Keuze uit schuifregelaar en editors"
+msgstr "Slider en redactie keuzes"
 
 msgid "Slider and Tabs"
-msgstr "Schuifregelaar en tabbladen"
+msgstr "Slider en tabs"
 
 msgid "Select Main Banner Order"
 msgstr "Selecteer hoofd banner volgorde"
@@ -610,7 +609,7 @@ msgid "Category"
 msgstr "Categorie"
 
 msgid "Tag"
-msgstr "Label"
+msgstr "Tag"
 
 msgid "Select Category"
 msgstr "Selecteer categorie"
@@ -629,7 +628,7 @@ msgid "Editor's Picks Section"
 msgstr "Editor keuze sectie"
 
 msgid "Select"
-msgstr "Selecteren"
+msgstr "Selecteer"
 
 msgid "Trending Section"
 msgstr "Trending sectie"
@@ -638,46 +637,47 @@ msgid "Comment Count"
 msgstr "Aantal reacties"
 
 msgid "Latest Section"
-msgstr "Laatste sectie"
+msgstr "Nieuwste sectie"
 
 msgid "Popular Section"
-msgstr "Populaire sectie"
+msgstr "Populair sectie"
 
 msgid "Update Section"
-msgstr "Sectie bijwerken"
+msgstr "Sectie updaten"
 
 msgid "Enable Trending Tags"
 msgstr "Trending tags inschakelen"
 
 msgid "Breaking News"
-msgstr "Belangrijk nieuws"
+msgstr "Laatste nieuws"
 
 msgid "Enable Flash News"
 msgstr "Flash nieuws inschakelen"
 
 msgid "Flash Posts Category"
-msgstr "Flash berichten categorie"
+msgstr "Flashberichten categorie"
 
 msgid "Select category to be shown on trending posts "
-msgstr "Selecteer categorie om te worden weergegeven op trending berichten"
+msgstr "Selecteer categorie die getoond moet worden bij trending berichten"
 
 msgid "Front-page Options"
-msgstr "Opties voorpagina"
+msgstr "Voorpagina opties"
 
 msgid "Enable Featured Post Section"
-msgstr "Inschakelen uitgelichte bericht sectie"
+msgstr "Uitgelichte berichten inschakelen"
 
 msgid "Select "
 msgstr "Selecteer"
 
 msgid "Select category to be shown on featured section "
-msgstr "Selecteer categorie om te worden weergegeven in de uitgelichte sectie"
+msgstr ""
+"Selecteer de categorie die getoond moet worden in de uitgelichte sectie"
 
 msgid "Posts List"
-msgstr "Lijst met berichten"
+msgstr "Lijst van berichten"
 
 msgid "Enable Post List Section"
-msgstr "Schakel de berichtenlijstsectie in"
+msgstr "Berichtlijst sectie inschakelen"
 
 msgid "Section %d"
 msgstr "Sectie %d"
@@ -689,13 +689,13 @@ msgid "Front-page Layout Settings"
 msgstr "Voorpagina lay-out instellingen"
 
 msgid "Front-page Content Display"
-msgstr "Inhoudsweergave op de voorpagina"
+msgstr "Voorpagina inhoud weergave"
 
 msgid "Select frontpage content display"
-msgstr "Selecteer de inhoudsweergave op de voorpagina"
+msgstr "Selecteer weergave van voorpagina inhoud"
 
 msgid "Front-page Widgets"
-msgstr "Widgets op de voorpagina"
+msgstr "Voorpagina widgets"
 
 msgid "Page Contents & Front-page Widgets"
 msgstr "Pagina inhoud & voorpagina widgets"
@@ -704,7 +704,7 @@ msgid "Front-page Content Alignment"
 msgstr "Voorpagina inhoud uitlijning"
 
 msgid "Select frontpage content alignment"
-msgstr "Selecteer voorpagina inhoud uitlijning"
+msgstr "Selecteer de uitlijning van de inhoud van de voorpagina"
 
 msgid "Home Content - Home Sidebar"
 msgstr "Home inhoud - Home zijbalk"
@@ -731,25 +731,25 @@ msgid "Disable"
 msgstr "Uitschakelen"
 
 msgid "Disable Sticky Header"
-msgstr "Sticky header uitschakelen"
+msgstr "Uitschakelen sticky header"
 
 msgid "Sticky header works only with builder at bottom."
 msgstr "Sticky header werkt alleen met bouwer onderaan."
 
 msgid "Top Header Section"
-msgstr "Bovenste headersectie"
+msgstr "Bovenste header sectie"
 
 msgid "Show Top Header"
-msgstr "Toon top header"
+msgstr "Toon bovenste header"
 
 msgid "Show Date"
 msgstr "Datum weergeven"
 
 msgid "Show Time"
-msgstr "Toon de tijd"
+msgstr "Tijd weergeven"
 
 msgid "Time Format"
-msgstr "Tijd format"
+msgstr "Tijdnotatie"
 
 msgid "12 hours"
 msgstr "12 uur"
@@ -767,7 +767,7 @@ msgid "Header Section Advertisement"
 msgstr "Header sectie advertentie"
 
 msgid "URL Link"
-msgstr "URL-link"
+msgstr "URL link"
 
 msgid "Theme Options"
 msgstr "Thema opties"
@@ -786,7 +786,7 @@ msgid ""
 " other than Default"
 msgstr ""
 "Zorg ervoor dat je de kruimelpaden van de plugin hebt ingeschakeld voordat "
-"je iets anders dan standaard kiest"
+"je een andere dan de standaard keuze maakt"
 
 msgid "Default"
 msgstr "Standaard"
@@ -795,13 +795,13 @@ msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
 msgid "Rank Math"
-msgstr "Rang wiskunde"
+msgstr "Rank Math"
 
 msgid "NavXT"
 msgstr "NavXT"
 
 msgid "Global Settings"
-msgstr "Algemene instellingen"
+msgstr "Globale instellingen"
 
 msgid "Enable Preloader"
 msgstr "Preloader inschakelen"
@@ -810,7 +810,7 @@ msgid "Disable Emoji Script"
 msgstr "Emoji script uitschakelen"
 
 msgid "GDPR friendly & better performance"
-msgstr "AVG/GDPR vriendelijk & betere prestaties"
+msgstr "GDPR-vriendelijk & betere prestaties"
 
 msgid "Global Content Alignment"
 msgstr "Globale inhoud uitlijning"
@@ -822,13 +822,13 @@ msgid "Primary sidebar - Content"
 msgstr "Primaire zijbalk - Inhoud"
 
 msgid "Full width content"
-msgstr "Inhoud over de volledige breedte"
+msgstr "Inhoud over de volle breedte"
 
 msgid "Also Show Content Image in Archive"
 msgstr "Toon ook inhoud afbeelding in archief"
 
 msgid "If there is no Post Featured image set"
-msgstr "Als er geen bericht uitgelicht afbeelding is ingesteld"
+msgstr "Als er geen bericht uitgelichte afbeelding is ingesteld"
 
 msgid "Enable "
 msgstr "Inschakelen"
@@ -837,16 +837,16 @@ msgid "Image Lazy Loading"
 msgstr "Lazy-loading afbeelding"
 
 msgid "Set for better performance"
-msgstr "Instellen voor betere prestaties"
+msgstr "Instellingen voor betere prestaties"
 
 msgid "Image Async Decoding"
-msgstr "Afbeelding asynchroon decoderen"
+msgstr "Afbeelding async decoderen"
 
 msgid "Set to enhance rendering speed"
-msgstr "Instellen om de weergavesnelheid te verbeteren"
+msgstr "Instellingen om de render snelheid te verbeteren"
 
 msgid "Scroll to Top Position"
-msgstr "Scroll naar bovenpositie"
+msgstr "Scroll naar bovenste positie"
 
 msgid "Right"
 msgstr "Rechts"
@@ -861,16 +861,16 @@ msgid "Hide"
 msgstr "Verbergen"
 
 msgid "Categories Settings"
-msgstr "Categorieën instellingen"
+msgstr "Categorieën Instellingen"
 
 msgid "Post Categories"
 msgstr "Bericht categorieën"
 
 msgid "Categories to be displayed"
-msgstr "Weer te geven categorieën"
+msgstr "Te tonen categorieën"
 
 msgid "Show All"
-msgstr "Toon alles"
+msgstr "Toon alle"
 
 msgid "Top One Category"
 msgstr "Top één categorie"
@@ -885,25 +885,25 @@ msgid "Author Icon"
 msgstr "Auteur icoon"
 
 msgid "Show Gravatar"
-msgstr "Toon gravatar"
+msgstr "Toon Gravatar"
 
 msgid "Show Icon"
-msgstr "Toon icoon"
+msgstr "Toon pictogram"
 
 msgid "None"
 msgstr "Geen"
 
 msgid "Date Format"
-msgstr "Datumformaat"
+msgstr "Datumnotatie"
 
 msgid "WordPress Default Date Format"
 msgstr "WordPress standaard datum format"
 
 msgid "Ago Date Format"
-msgstr "Geleden datumformat"
+msgstr "Geleden datum format"
 
 msgid "Minutes Read Count"
-msgstr "Aantal minuten gelezen"
+msgstr "Minuten gelezen telling"
 
 msgid "Excerpt Settings"
 msgstr "Samenvatting instellingen"
@@ -912,13 +912,13 @@ msgid "Global Excerpt Read More"
 msgstr "Globaal samenvatting lees meer"
 
 msgid "Primary Menu Section"
-msgstr "Primaire menusectie"
+msgstr "Primaire menu sectie"
 
 msgid "Show Primary Menu Description"
-msgstr "Toon primaire menubeschrijving"
+msgstr "Toon primair menu beschrijving"
 
 msgid "Enable Custom Menu Section"
-msgstr "Aangepaste menu sectie Inschakelen"
+msgstr "Aangepaste menu sectie inschakelen"
 
 msgid "Title"
 msgstr "Titel"
@@ -942,31 +942,31 @@ msgid "Original"
 msgstr "Origineel"
 
 msgid "Single Content Mode"
-msgstr "Modus voor enkele inhoud"
+msgstr "Enkelvoudige inhoud modus"
 
 msgid "Spacious"
 msgstr "Ruim"
 
 msgid "Social Share Option"
-msgstr "Optie voor sociaal delen"
+msgstr "Optie sociaal delen"
 
 msgid "Social Share from Jetpack plugin"
 msgstr "Social Share van Jetpack plugin"
 
 msgid "Top - Default"
-msgstr "Boven - Standaard"
+msgstr "Top - Standaard"
 
 msgid "Bottom"
 msgstr "Onderkant"
 
 msgid "Show Author Bio under Content"
-msgstr "Toon auteursbiografie onder Inhoud"
+msgstr "Toon auteur bio onder inhoud"
 
 msgid "Show Tags under Content"
 msgstr "Toon tags onder inhoud"
 
 msgid "Related Posts Settings"
-msgstr "Instellingen voor gerelateerde berichten"
+msgstr "Gerelateerde berichten instellingen"
 
 msgid "Enable Related Posts"
 msgstr "Gerelateerde berichten inschakelen"
@@ -993,10 +993,10 @@ msgid "Image Alignment"
 msgstr "Afbeelding uitlijnen"
 
 msgid "Select image alignment for archive"
-msgstr "Selecteer afbeeldingsuitlijning voor archief"
+msgstr "Selecteer afbeelding uitlijning voor archief"
 
 msgid "Select Title Position"
-msgstr "Selecteer Titelpositie"
+msgstr "Selecteer titel positie"
 
 msgid "Select full layout for archive"
 msgstr "Selecteer volledige lay-out voor archief"
@@ -1005,10 +1005,10 @@ msgid "After Image"
 msgstr "Na afbeelding"
 
 msgid "Before Image"
-msgstr "Vóór afbeelding"
+msgstr "Voor afbeelding"
 
 msgid "Content View"
-msgstr "Inhoud bekijken"
+msgstr "Inhoud weergave"
 
 msgid "Select content view for archive"
 msgstr "Selecteer inhoudsweergave voor archief"
@@ -1020,7 +1020,7 @@ msgid "Full Content"
 msgstr "Volledige inhoud"
 
 msgid "Search Options"
-msgstr "Zoekopties"
+msgstr "Zoekopdracht opties"
 
 msgid "Search Results"
 msgstr "Zoekresultaten"
@@ -1035,7 +1035,7 @@ msgid "Posts"
 msgstr "Berichten"
 
 msgid "Ajax Results Dropdown"
-msgstr "Dropdownmenu Ajax-resultaten"
+msgstr "Ajax resultaten dropdown"
 
 msgid "Sidebar Settings"
 msgstr "Zijbalk instellingen"
@@ -1059,19 +1059,19 @@ msgid "Posts Section Title"
 msgstr "Berichten sectie titel"
 
 msgid "Footer Background Image"
-msgstr "Achtergrondafbeelding van footer"
+msgstr "Footer achtergrondafbeelding"
 
 msgid "Copyright Text"
 msgstr "Copyright tekst"
 
 msgid "Hide footer Menu Section"
-msgstr "Verberg footer menusectie"
+msgstr "Verberg footer menu sectie"
 
 msgid "Pages:"
 msgstr "Pagina's:"
 
 msgid "Open Off-Canvas Navigation"
-msgstr "Open off canvas navigatie"
+msgstr "Off-Canvas navigatie openen"
 
 msgid "Light/Dark Button"
 msgstr "Licht/donker knop"
@@ -1104,53 +1104,53 @@ msgid "Please go to Customize>Front-page Options for Homepage."
 msgstr "Ga naar Aanpassen>Voorpagina opties voor homepage."
 
 msgid "Category Color 1"
-msgstr "Categoriekleur 1"
+msgstr "Categorie kleur 1"
 
 msgid "Category Color 2"
-msgstr "Categoriekleur 2"
+msgstr "Categorie kleur 2"
 
 msgid "Category Color 3"
-msgstr "Categoriekleur 3"
+msgstr "Categorie kleur 3"
 
 msgid "Color Class"
-msgstr "Kleurklasse"
+msgstr "Kleurenklasse"
 
 msgid ""
 "Select category color class. You can set appropriate categories color on "
 "\"Categories\" section of the theme customizer."
 msgstr ""
-"Selecteer de categorie kleurklasse. Je kunt de juiste categoriekleur "
-"instellen in de \"Categories\" sectie van de thema customizer."
+"Selecteer categorie kleur klasse. Je kunt de juiste categoriekleur instellen"
+" in de sectie \"Categorieën\" van de thema customizer."
 
 msgid "Templatespare"
-msgstr "Sjablonenreserve"
+msgstr "Templatespare"
 
 msgid "Elespare"
-msgstr "Ellespare"
+msgstr "Elespare"
 
 msgid "Blockspare"
-msgstr "Blokreserve"
+msgstr "Blockspare"
 
 msgid "WP Post Author"
 msgstr "WP bericht auteur"
 
 msgid "Free Live Chat using 3CX"
-msgstr "Gratis livechat met 3CX"
+msgstr "Gratis live chat met 3CX"
 
 msgid "Large Post with Background"
-msgstr "Grote post met achtergrond"
+msgstr "Groot bericht met achtergrond"
 
 msgid "3 Columns Post Grid with Background"
-msgstr "3 kolommen postraster met achtergrond"
+msgstr "3 kolommen bericht raster met achtergrond"
 
 msgid "Post Grid with Background"
-msgstr "Postraster met achtergrond"
+msgstr "Bericht raster met achtergrond"
 
 msgid "Post List with Background"
-msgstr "Postlijst met achtergrond"
+msgstr "Bericht lijst met achtergrond"
 
 msgid "Single Post Column with Background"
-msgstr "Enkele postkolom met achtergrond"
+msgstr "Kolom voor één bericht met achtergrond"
 
 msgid "Ticker News"
 msgstr "Ticker nieuws"
@@ -1168,19 +1168,19 @@ msgid "Post Carousel"
 msgstr "Bericht carrousel"
 
 msgid "Large Post with Dark Background"
-msgstr "Grote post met donkere achtergrond"
+msgstr "Groot bericht met donkere achtergrond"
 
 msgid "3 Columns Post Grid with Dark Background"
-msgstr "3 kolommen postraster met donkere achtergrond"
+msgstr "3 kolommen bericht raster met donkere achtergrond"
 
 msgid "Post Grid with Dark Background"
-msgstr "Postraster met donkere achtergrond"
+msgstr "Bericht raster met donkere achtergrond"
 
 msgid "Post List with Dark Background"
-msgstr "Postlijst met donkere achtergrond"
+msgstr "Bericht lijst met donkere achtergrond"
 
 msgid "Single Post Column with Dark Background"
-msgstr "Enkele postkolom met donkere achtergrond"
+msgstr "Kolom voor één bericht met donkere achtergrond"
 
 msgid "Express Grid"
 msgstr "Express raster"
@@ -1206,13 +1206,13 @@ msgid "Post Grid"
 msgstr "Bericht raster"
 
 msgid "Post List"
-msgstr "Berichtlijst"
+msgstr "Bericht lijst"
 
 msgid "Connect to Us"
 msgstr "Maak verbinding met ons"
 
 msgid "Advertisement"
-msgstr "Advertentie"
+msgstr "Advertering"
 
 msgid "Express Tile"
 msgstr "Express tegel"
@@ -1236,16 +1236,16 @@ msgid "Section 4"
 msgstr "Sectie 4"
 
 msgid "3 Columns Post Grid - 2"
-msgstr "Postraster met 3 kolommen - 2"
+msgstr "3 kolommen bericht raster - 2"
 
 msgid "3 Columns Post Grid"
-msgstr "3 kolommen postraster"
+msgstr "3 kolommen bericht raster"
 
 msgid "Post Grid - 2"
 msgstr "Bericht raster - 2"
 
 msgid "Large Posts - 2"
-msgstr "Grote palen - 2"
+msgstr "Grote berichten - 2"
 
 msgid "Large Posts"
 msgstr "Grote berichten"
@@ -1254,7 +1254,7 @@ msgid "Single Column - 2"
 msgstr "Enkele kolom - 2"
 
 msgid "Post List - 2"
-msgstr "Berichtlijst - 2"
+msgstr "Bericht lijst - 2"
 
 msgid ""
 "Howdy, %1$s! We've noticed that you've been using %2$s for some time now, we"
@@ -1262,17 +1262,17 @@ msgid ""
 "%3$sreview and rating%4$s on WordPress.org! We'll continue to develop "
 "exciting new features for free in the future by sharing the love!"
 msgstr ""
-"Hallo, %1$s! We hebben gemerkt dat u %2$s al een tijdje gebruikt. We hopen "
-"dat u er veel plezier aan beleeft! We zouden het op prijs stellen als u ons "
-"een %3$sbeoordeling en beoordeling%4$s op WordPress.org kunt geven! We "
-"zullen in de toekomst gratis spannende nieuwe functies blijven ontwikkelen "
-"door onze liefde te delen!"
+"Hallo, %1$s! We hebben gemerkt dat je %2$s al een tijdje gebruikt, we hopen "
+"dat je het leuk vindt! We zouden het op prijs stellen als je %3$sons een 5 "
+"sterren waardering geeft%4$s op WordPress.org! We zullen in de toekomst "
+"spannende nieuwe functies gratis blijven ontwikkelen door de liefde te "
+"delen!"
 
 msgid "Sure thing"
 msgstr "Zeker weten"
 
 msgid "Remind me later"
-msgstr "Herinner me later"
+msgstr "Herinner mij later"
 
 msgid "I've already done."
 msgstr "Heb ik al gedaan."
@@ -1316,7 +1316,7 @@ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
 
 msgid "Searching..."
-msgstr "Zoeken…"
+msgstr "Aan het zoeken..."
 
 msgid "Invalid security token."
 msgstr "Ongeldig token voor beveiliging."
@@ -1325,10 +1325,10 @@ msgid "Live search results"
 msgstr "Live zoekresultaten"
 
 msgid "View all search results"
-msgstr "Bekijk alle zoekresultaten"
+msgstr "Alle zoekresultaten bekijken"
 
 msgid "View all results for \"%s\""
-msgstr "Bekijk alle resultaten voor '%s'"
+msgstr "Bekijk alle resultaten voor \"%s\""
 
 msgid "No results found."
 msgstr "Geen resultaten gevonden."
@@ -1354,22 +1354,22 @@ msgid "Claim Your Discount"
 msgstr "Claim je korting"
 
 msgid "Power Bundle"
-msgstr "Stroombundel"
+msgstr "Power Bundle"
 
 msgid "All Themes Plan"
 msgstr "Alle thema's abonnement"
 
 msgid "Maybe Later"
-msgstr "Misschien Later"
+msgstr "Misschien later"
 
 msgid "Have Queries?"
 msgstr "Heb je vragen?"
 
 msgid "Displays author info."
-msgstr "Toont auteursinfo."
+msgstr "Toont auteursinformatie."
 
 msgid "AFTMN Author Info"
-msgstr "AFTMN auteursinfo"
+msgstr "AFTMN auteur info"
 
 msgid "Profile image"
 msgstr "Profiel afbeelding"
@@ -1384,22 +1384,22 @@ msgid "Facebook"
 msgstr "Facebook"
 
 msgid "Twitter"
-msgstr "Twitteren"
+msgstr "Twitter"
 
 msgid "YouTube"
 msgstr "YouTube"
 
 msgid "Displays Express Posts from selected categories."
-msgstr "Toont express berichten uit geselecteerde categorieën."
+msgstr "Toont express berichten van geselecteerde categorieën."
 
 msgid "AFTMN Express Posts List"
-msgstr "AFTMN Express-berichtenlijst"
+msgstr "AFTMN express berichten lijst"
 
 msgid "Displays grid from selected categories."
-msgstr "Toont een raster weer van geselecteerde categorieën."
+msgstr "Toont het raster van de geselecteerde categorieën."
 
 msgid "AFTMN Post Double Columns"
-msgstr "AFTMN-post dubbele kolommen"
+msgstr "AFTMN bericht dubbele kolommen"
 
 msgid "Select Category 1"
 msgstr "Selecteer categorie 1"
@@ -1408,25 +1408,25 @@ msgid "Select Category 2"
 msgstr "Selecteer categorie 2"
 
 msgid "AFTMN Post Grid"
-msgstr "AFTMN-postraster"
+msgstr "AFTMN bericht raster"
 
 msgid "AFTMN Post List"
-msgstr "AFTMN-postlijst"
+msgstr "AFTMN berichtenlijst"
 
 msgid "Displays posts single column from selected categories."
-msgstr "Toont berichten in één kolom uit geselecteerde categorieën."
+msgstr "Toont berichten in één kolom uit de geselecteerde categorieën."
 
 msgid "AFTMN Post Single Column"
-msgstr "AFTMN-bericht enkele kolom"
+msgstr "AFTMN bericht enkele kolom"
 
 msgid "Displays posts slider from selected category."
-msgstr "Toont de slider voor berichten uit de geselecteerde categorie."
+msgstr "Toont berichten slider van geselecteerde categorie."
 
 msgid "AFTMN Posts Slider"
-msgstr "AFTMN-berichtenschuifregelaar"
+msgstr "AFTMN berichten slider"
 
 msgid "Select category"
-msgstr "Categorie selecteren"
+msgstr "Selecteer categorie"
 
 msgid "Displays social contacts lists from selected settings."
 msgstr "Toont lijsten met sociale contacten van geselecteerde instellingen."
@@ -1435,20 +1435,20 @@ msgid "AFTMN Social Contacts"
 msgstr "AFTMN sociale contacten"
 
 msgid "Connect with Us"
-msgstr "Verbind je met ons"
+msgstr "Maak contact met ons"
 
 msgid ""
 "Social menu is not set. You need to create menu and assign it to Social Menu"
 " on Menu Settings."
 msgstr ""
-"Sociaal menu is niet ingesteld. Je moet een menu maken en dit toewijzen aan "
+"Sociaal menu is niet ingesteld. Je moet een menu maken en het toewijzen aan "
 "sociaal menu in menu instellingen."
 
 msgid "AFTMN Trending News"
-msgstr "AFTMN trending nieuws"
+msgstr "AFTMN trending news"
 
 msgid "Upload"
-msgstr "Uploaden"
+msgstr "Upload"
 
 msgid "Select Image"
 msgstr "Afbeelding selecteren"
@@ -1467,14 +1467,13 @@ msgid "Header Banner Ad Section"
 msgstr "Header banner advertentie sectie"
 
 msgid "Add widgets for frontpage banner section advertisement."
-msgstr ""
-"Voeg widgets toe voor advertenties op de voorpagina van de bannersectie."
+msgstr "Voeg widgets toe voor reclame in de voorpagina banner sectie."
 
 msgid "Off Canvas Drawer Menu Section"
-msgstr "Off canvas drawer menu sectie"
+msgstr "Off canvas lade menu sectie"
 
 msgid "Add widgets for off-canvas section."
-msgstr "Widgets toevoegen voor off-canvas sectie."
+msgstr "Voeg widgets toe voor het off-canvas sectie."
 
 msgid "Main Sidebar"
 msgstr "Hoofd zijbalk"
@@ -1486,31 +1485,31 @@ msgid "Front-page Content Section"
 msgstr "Voorpagina inhoud sectie"
 
 msgid "Add widgets to front-page contents section."
-msgstr "Widgets toevoegen aan de inhoud sectie op de voorpagina."
+msgstr "Voeg widgets toe aan de inhoudssectie van de voorpagina."
 
 msgid "Front-page Sidebar Section"
-msgstr "Voorpagina linker zijbalk sectie"
+msgstr "Voorpagina zijbalk sectie"
 
 msgid "Add widgets to front-page sidebar section."
-msgstr "Voeg widgets toe aan de zijbalk sectie op de voorpagina."
+msgstr "Voeg widgets toe aan de zijbalk van de voorpagina."
 
 msgid "Footer Widget 1"
-msgstr "Voettekstwidget 1"
+msgstr "Footer widget 1"
 
 msgid "Displays items on footer first column."
 msgstr "Toont items in de eerste kolom van de footer."
 
 msgid "Footer Widget 2"
-msgstr "Voettekstwidget 2"
+msgstr "Footer widget 2"
 
 msgid "Displays items on footer second column."
-msgstr "Toont items in footer tweede kolom."
+msgstr "Toont items in de tweede kolom van de footer."
 
 msgid "Footer Widget 3"
-msgstr "Voettekstwidget 3"
+msgstr "Footer widget 3"
 
 msgid "Displays items on footer third column."
-msgstr "Toont items in de derde footer kolom."
+msgstr "Toont items in de derde kolom van de footer."
 
 msgid "View your shopping cart"
 msgstr "Bekijk je winkelwagen"
@@ -1528,7 +1527,7 @@ msgid "Breadcrumbs"
 msgstr "Kruimelpaden"
 
 msgid "Home"
-msgstr "Thuis"
+msgstr "Home"
 
 msgid "404 Not Found"
 msgstr "404 niet gevonden"
@@ -1557,15 +1556,15 @@ msgstr "H:i"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "l"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
-msgstr "g een"
+msgstr "g a"
 
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr "J"
+msgstr "Y"
 
 msgctxt "monthly archives date format"
 msgid "F"
@@ -1573,7 +1572,7 @@ msgstr "F"
 
 msgctxt "daily archives date format"
 msgid "j"
-msgstr "J"
+msgstr "j"
 
 msgctxt "weekly archives date format"
 msgid "W"
@@ -1586,18 +1585,18 @@ msgid "Install Plugins"
 msgstr "Installeer plugins"
 
 msgid "Installing Plugin: %s"
-msgstr "Plugin aan het installeren: %s"
+msgstr "Installeren plugin: %s"
 
 msgid "Updating Plugin: %s"
-msgstr "Plugin aan het updaten: %s"
+msgstr "Updaten plugin: %s"
 
 msgid "Something went wrong with the plugin API."
 msgstr "Er ging iets mis met de plugin API."
 
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "Voor dit thema is de volgende plug-in vereist: %1$s."
-msgstr[1] "Voor dit thema zijn de volgende plug-ins vereist: %1$s."
+msgstr[0] "Dit thema vereist de volgende plug-in: %1$s."
+msgstr[1] "Dit thema vereist de volgende plug-ins: %1$s."
 
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
@@ -1728,19 +1727,19 @@ msgid "Recommended"
 msgstr "Aanbevolen"
 
 msgid "WordPress Repository"
-msgstr "WordPress-opslagplaats"
+msgstr "WordPress repository"
 
 msgid "External Source"
 msgstr "Externe bron"
 
 msgid "Pre-Packaged"
-msgstr "Voorverpakt"
+msgstr "Pre-Packaged"
 
 msgid "Not Installed"
 msgstr "Niet geïnstalleerd"
 
 msgid "Installed But Not Activated"
-msgstr "Geïnstalleerd maar niet geactiveerd"
+msgstr "Geinstalleerd maar niet geactiveerd"
 
 msgid "Active"
 msgstr "Actief"
@@ -1793,10 +1792,10 @@ msgid "Available version:"
 msgstr "Beschikbare versie:"
 
 msgid "No plugins to install, update or activate."
-msgstr "Geen plugins om te installeren, te updaten of te activeren."
+msgstr "Geen plugins te installeren, te updaten of te activeren."
 
 msgid "Plugin"
-msgstr "Plug-in"
+msgstr "Plugin"
 
 msgid "Source"
 msgstr "Bron"
@@ -1814,7 +1813,7 @@ msgid "Install %2$s"
 msgstr "Installeer %2$s"
 
 msgid "Update %2$s"
-msgstr "%2$s bijwerken"
+msgstr "Update %2$s"
 
 msgid "Activate %2$s"
 msgstr "Activeer %2$s"
@@ -1854,7 +1853,7 @@ msgid "Plugin activation failed."
 msgstr "Activering van de plugin mislukt."
 
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "Plugin %1$s (%2$d/%3$d) aan het updaten"
+msgstr "Plugin %1$s (%2$d/%3$d) updaten"
 
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
@@ -1891,16 +1890,16 @@ msgid "All installations have been completed."
 msgstr "Alle installaties zijn afgerond."
 
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "Plugin %1$s (%2$d/%3$d) aan het installeren"
+msgstr "Plugin %1$s (%2$d/%3$d) installeren"
 
 msgid "Blank Canvas"
-msgstr "Leeg canvas"
+msgstr "Blank canvas"
 
 msgid "Page Builder Full Width"
 msgstr "Page Builder volledige breedte"
 
 msgid "Search Results for: %s"
-msgstr "Zoek resultaten voor: %s"
+msgstr "Zoekresultaten voor: %s"
 
 msgid "Nothing Found"
 msgstr "Niets gevonden"
@@ -1991,11 +1990,11 @@ msgid ""
 "customization to craft your perfect site, no matter the language."
 msgstr ""
 "Transformeer uw blog-, nieuws- of tijdschriftwebsite met meer dan 35 "
-"geavanceerde Elementor-widgets en 350+ aanpasbare sjablonen. Maak eenvoudig "
-"kop-, voetteksten, berichtrasters, schuifregelaars en carrousels met een "
-"snel ladende en SEO-geoptimaliseerde structuur. Importeer demo-inhoud met "
-"een enkele klik en geniet van codeloze aanpassingen om uw perfecte site te "
-"maken, ongeacht de taal."
+"geavanceerde Elementor-widgets en meer dan 350 aanpasbare sjablonen. Maak "
+"eenvoudig kop-, voetteksten, berichtrasters, schuifregelaars en carrousels "
+"met een snel ladende en SEO-geoptimaliseerde structuur. Importeer demo-"
+"inhoud met een enkele klik en geniet van codeloze aanpassingen om uw "
+"perfecte site te maken, ongeacht de taal."
 
 msgid ""
 "Thank you for installing [theme] — a fast, flexible, and user-friendly theme"
@@ -2008,7 +2007,7 @@ msgstr ""
 "nodig."
 
 msgid "Unlock Pro Features"
-msgstr "Ontgrendel Pro-functies"
+msgstr "Ontgrendel Pro functies"
 
 msgid "Docs"
 msgstr "Documentatie"
@@ -2017,7 +2016,7 @@ msgid "Need Help?"
 msgstr "Hulp nodig?"
 
 msgid "Rate This Theme"
-msgstr "Beoordeel dit thema"
+msgstr "Waardeer dit thema"
 
 msgid "Starter Sites Import"
 msgstr "Startersites importeren"
@@ -2070,7 +2069,7 @@ msgid "Improved Font Loading System/Google Switch + Preconnect"
 msgstr "Verbeterd lettertype-laadsysteem/Google Switch + Preconnect"
 
 msgid "Top Header Menu"
-msgstr "Bovenste kopmenu"
+msgstr "Top header menu"
 
 msgid "Multiple Header Layouts (10+ including Centered & Compressed)"
 msgstr ""
@@ -2083,7 +2082,7 @@ msgid "Sticky Header Option Advanced Behavior & Layout Support"
 msgstr "Sticky Header-optie Geavanceerd gedrag en lay-outondersteuning"
 
 msgid "Header Advertisement Widget Area"
-msgstr "Widgetgebied voor koptekstadvertenties"
+msgstr "Headeradvertentiewidgetgebied"
 
 msgid "Header & Footer Builder (Drag-and-Drop)"
 msgstr "Koptekst- en voettekstbouwer (slepen en neerzetten)"
@@ -2094,8 +2093,8 @@ msgstr "Aanpassingsopties voor Builder-elementen"
 msgid ""
 "Footer Builder Elements (Navigation, Widgets, Custom HTML, Dynamic Text)"
 msgstr ""
-"Footer Builder-elementen (navigatie, widgets, aangepaste HTML, dynamische "
-"tekst)"
+"Elementen voor het maken van voetteksten (navigatie, widgets, aangepaste "
+"HTML, dynamische tekst)"
 
 msgid "Additional Menu Locations (incl. Top Menu Element)"
 msgstr "Extra menulocaties (incl. Topmenu-element)"
@@ -2216,7 +2215,7 @@ msgid "Trending Posts Carousel (Tag, Views)"
 msgstr "Carrousel voor trending berichten (tag, weergaven)"
 
 msgid "YouTube Video Slider Widget"
-msgstr "YouTube Video Slider-widget"
+msgstr "YouTube-videoschuifwidget"
 
 msgid "Post Express / Grid / Tabbed Widgets"
 msgstr "Post Express / Raster / Widgets met tabbladen"
@@ -2343,8 +2342,8 @@ msgstr "Statische voorpagina"
 msgid ""
 "Set the Homepage as a static page to create own homepage using widgets."
 msgstr ""
-"Stel de startpagina in als een statische pagina om een ​​eigen startpagina "
-"te maken met behulp van widgets."
+"Stel de startpagina in als een statische pagina om een eigen startpagina te "
+"maken met behulp van widgets."
 
 msgid "Widgets Area"
 msgstr "Widgetsgebied"
@@ -2381,7 +2380,7 @@ msgid ""
 "create a website that truly stands out."
 msgstr ""
 "Ontvang premiumfuncties, geavanceerde aanpassingen en krachtige functies om "
-"een ​​website te maken die echt opvalt."
+"een website te maken die echt opvalt."
 
 msgid "100+ Advanced Homepage & Banner Layouts"
 msgstr "100+ geavanceerde startpagina- en bannerlay-outs"
@@ -2402,8 +2401,8 @@ msgid ""
 "Please check our full documentation for detailed information on how to setup"
 " and customize the theme."
 msgstr ""
-"Bekijk onze volledige documentatie voor gedetailleerde informatie over het "
-"instellen en aanpassen van het thema."
+"Raadpleeg onze volledige documentatie voor gedetailleerde informatie over "
+"het instellen en aanpassen van het thema."
 
 msgid "Video  Tutorials"
 msgstr "Video-tutorials"
@@ -2504,7 +2503,7 @@ msgid "Get started"
 msgstr "Aan de slag"
 
 msgid "Useful Plugins"
-msgstr "Handige plugins"
+msgstr "Nuttige plugins"
 
 msgid "Free vs Pro"
 msgstr "Gratis vs Pro"

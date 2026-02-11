@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "もっと見るニュース"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -46,7 +46,7 @@ msgstr ""
 "https://afthemes.com/products/morenews ですべての機能をご覧ください。"
 
 msgid "AF themes"
-msgstr "AFテーマ"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
@@ -81,13 +81,13 @@ msgid "Block Patterns"
 msgstr "ブロックパターン"
 
 msgid "Upgrade to Pro"
-msgstr "プロ版にアップグレード"
+msgstr "Pro にアップグレード"
 
 msgid "Upgrade Now"
 msgstr "今すぐアップグレード"
 
 msgid "The Templatespare plugin should be updated to the latest version"
-msgstr "Templatespareプラグインを最新バージョンに更新する必要があります"
+msgstr "Templatespare プラグインを最新バージョンに更新する必要があります"
 
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr "3 つの簡単なステップでスターター サイトをインポートし、カスタマイズして運用します。"
@@ -124,7 +124,7 @@ msgid "Get Starter Sites"
 msgstr "スターター サイトを入手する"
 
 msgid "Get Started"
-msgstr "はじめてみよう"
+msgstr "Get Started"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
@@ -134,7 +134,7 @@ msgstr ""
 "プラグインをインストール/アクティブ化します。"
 
 msgid "By"
-msgstr "投稿者"
+msgstr "By"
 
 msgid "More Details"
 msgstr "詳細情報"
@@ -146,7 +146,7 @@ msgid ""
 "%s is now active. We're here to help you turn your ideas into a beautiful, "
 "professional website — quickly and confidently."
 msgstr ""
-"%s がアクティブになりました。私たちは、あなたのアイデアを素早く、自信を持って、美しくプロフェッショナルな Web サイトに変えるお手伝いをします。"
+"%s は現在アクティブです。私たちは、あなたのアイデアを素早く、自信を持って、美しくプロフェッショナルな Web サイトに変えるお手伝いをします。"
 
 msgid "🚀 Start With One Click"
 msgstr "🚀 ワンクリックで開始"
@@ -155,8 +155,7 @@ msgid ""
 "Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
 "      Setup is simple — no coding required."
 msgstr ""
-"ブログ、雑誌、ビジネスなどのために設計された 100 以上のスターター サイトからお選びください。\n"
-"      セットアップは簡単で、コーディングは必要ありません。"
+"ブログ、雑誌、ビジネスなどのために設計された 100 以上のスターター サイトからお選びください。 セットアップは簡単で、コーディングは必要ありません。"
 
 msgid "View Demos"
 msgstr "デモを見る"
@@ -192,7 +191,7 @@ msgid "Sorry, you are not allowed to activate plugins on this site."
 msgstr "このサイトにプラグインをインストールする権限がありません。"
 
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "&ldquo;%1$s&rdquo; への1件のコメント"
+msgstr "「%1$s」への1件のフィードバック"
 
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -215,7 +214,7 @@ msgid "Footer Menu"
 msgstr "フッターメニュー"
 
 msgid "Skip to content"
-msgstr "コンテンツへスキップ"
+msgstr "内容をスキップ"
 
 msgid "Open search form"
 msgstr "検索フォームを開く"
@@ -291,7 +290,7 @@ msgid "Promotion"
 msgstr "プロモーション"
 
 msgid "Off Canvas"
-msgstr "オフキャンバス"
+msgstr "キャンバス外"
 
 msgid "Off Canvas Widget Area"
 msgstr "オフキャンバスウィジェットエリア"
@@ -359,16 +358,16 @@ msgid "live"
 msgstr "ライブ"
 
 msgid "Widget 1"
-msgstr "ウィジェット 1"
+msgstr "ウィジェット1"
 
 msgid "Select Widget"
 msgstr "ウィジェットの選択"
 
 msgid "Widget 2"
-msgstr "ウィジェット 2"
+msgstr "ウィジェット2"
 
 msgid "Widget 3"
-msgstr "ウィジェット 3"
+msgstr "ウィジェット3"
 
 msgid "Navigation"
 msgstr "ナビゲーション"
@@ -440,7 +439,7 @@ msgid "View More"
 msgstr "さらに表示"
 
 msgid "Read More"
-msgstr "「続きを読む」"
+msgstr "続きを読む"
 
 msgid "Related Stories"
 msgstr "関連記事"
@@ -449,7 +448,7 @@ msgid "You may have missed"
 msgstr "見逃したかもしれません"
 
 msgid "Copyright &copy; All rights reserved."
-msgstr "Copyright &copy; All rights reserved."
+msgstr "著作権&コピー;無断転載を禁じます。"
 
 msgid "Body Background Color"
 msgstr "ボディの背景色"
@@ -518,7 +517,7 @@ msgid "Global Fonts Family"
 msgstr "グローバル フォント ファミリー"
 
 msgid "Google Fonts"
-msgstr "Google フォント"
+msgstr "Google Fonts"
 
 msgid "System Fonts"
 msgstr "システムフォント"
@@ -527,10 +526,10 @@ msgid "Site Title Font"
 msgstr "サイトタイトルのフォント"
 
 msgid "Primary Font"
-msgstr "プライマリフォント"
+msgstr "メインフォント"
 
 msgid "Secondary Font"
-msgstr "セカンダリフォント"
+msgstr "サブフォント"
 
 msgid "Main Banner Options"
 msgstr "メインバナーオプション"
@@ -539,7 +538,7 @@ msgid "Main Banner"
 msgstr "メインバナー"
 
 msgid "Enable Main Banner Section"
-msgstr "メインバナーセクションを有効にする"
+msgstr "メインバナーセクションを有効化"
 
 msgid "Main Banner Background Image"
 msgstr "メインバナーの背景画像"
@@ -548,7 +547,7 @@ msgid "Recommended Size %1$s px X %2$s px"
 msgstr "%1$s px X %2$s px のサイズがおすすめです"
 
 msgid "Select Main Banner Layout"
-msgstr "メインバナーレイアウトの選択"
+msgstr "メインバナーレイアウトを選択"
 
 msgid "Slider, Trending and Tabs"
 msgstr "スライダー、トレンド、タブ"
@@ -692,7 +691,7 @@ msgid "Only Home Content"
 msgstr "ホームコンテンツのみ"
 
 msgid "Header Options"
-msgstr "ヘッダー設定"
+msgstr "ヘッダーオプション"
 
 msgid "Header Settings"
 msgstr "ヘッダー設定"
@@ -707,7 +706,7 @@ msgid "Disable"
 msgstr "無効化"
 
 msgid "Disable Sticky Header"
-msgstr "スティッキーヘッダーを無効にする"
+msgstr "固定ヘッダーを使用しない"
 
 msgid "Sticky header works only with builder at bottom."
 msgstr "スティッキーヘッダーは下部のビルダーでのみ機能します。"
@@ -716,7 +715,7 @@ msgid "Top Header Section"
 msgstr "上部ヘッダーセクション"
 
 msgid "Show Top Header"
-msgstr "上部ヘッダーを表示"
+msgstr "トップヘッダーを表示"
 
 msgid "Show Date"
 msgstr "日付を表示する"
@@ -766,10 +765,10 @@ msgid "Default"
 msgstr "デフォルト"
 
 msgid "Yoast SEO"
-msgstr "ヨーストSEO"
+msgstr "Yoast SEO"
 
 msgid "Rank Math"
-msgstr "ランク計算"
+msgstr "Rank Math"
 
 msgid "NavXT"
 msgstr "NavXT"
@@ -787,7 +786,7 @@ msgid "GDPR friendly & better performance"
 msgstr "GDPR に配慮し、パフォーマンスを向上"
 
 msgid "Global Content Alignment"
-msgstr "グローバルなコンテンツの調整"
+msgstr "全体コンテンツの配置"
 
 msgid "Content - Primary sidebar"
 msgstr "コンテンツ - メインサイドバー"
@@ -838,7 +837,7 @@ msgid "Categories Settings"
 msgstr "カテゴリ設定"
 
 msgid "Post Categories"
-msgstr "投稿カテゴリー"
+msgstr "カテゴリー"
 
 msgid "Categories to be displayed"
 msgstr "表示されるカテゴリー"
@@ -919,7 +918,7 @@ msgid "Single Content Mode"
 msgstr "シングルコンテンツモード"
 
 msgid "Spacious"
-msgstr "広めの余白"
+msgstr "余白広め"
 
 msgid "Social Share Option"
 msgstr "ソーシャルシェアオプション"
@@ -958,7 +957,7 @@ msgid "Select layout for archive"
 msgstr "アーカイブのレイアウトを選択"
 
 msgid "List"
-msgstr "リスト"
+msgstr "一覧"
 
 msgid "Full"
 msgstr "全幅"
@@ -1039,7 +1038,7 @@ msgid "Copyright Text"
 msgstr "著作権テキスト"
 
 msgid "Hide footer Menu Section"
-msgstr "フッターのメニュー セクションを非表示にする"
+msgstr "フッターメニューセクションを非表示にする"
 
 msgid "Pages:"
 msgstr "固定ページ:"
@@ -1066,10 +1065,10 @@ msgid "Sidebar Options"
 msgstr "サイドバー設定"
 
 msgid "Content - Primary Sidebar"
-msgstr "コンテンツ - メインサイドバー"
+msgstr "コンテンツ - サイドバー"
 
 msgid "Primary Sidebar - Content"
-msgstr "プライマリサイドバー - コンテンツ"
+msgstr "サイドバー - コンテンツ"
 
 msgid "No Sidebar"
 msgstr "サイドバーなし"
@@ -1168,7 +1167,7 @@ msgid ""
 msgstr ""
 "私たちは主に、優れたサポートを提供する高品質のコードとエレガントなデザインに重点を置いています。当社の WordPress "
 "テーマとプラグインを使用すると、エレガントでプロフェッショナルで、メンテナンスが簡単な Web "
-"サイトをすぐに作成できます。モバイルやタブレットの画面でも、ウェブサイトは見栄えがよくなります"
+"サイトをすぐに作成できます。モバイルやタブレットの画面上でも、ウェブサイトは見栄えがよくなります"
 
 msgid "Post Slider"
 msgstr "ポストスライダー"
@@ -1246,7 +1245,7 @@ msgid "I've already done."
 msgstr "もうやりました。"
 
 msgid "Got any support queries?"
-msgstr "サポートに関するご質問はありますか?"
+msgstr "サポートに関する質問はありますか?"
 
 msgid "Read more about %s"
 msgstr "%s についてさらに読む"
@@ -1259,7 +1258,7 @@ msgstr "次"
 
 msgid "%s minute read"
 msgid_plural "%s minutes read"
-msgstr[0] "%s 分読み取り"
+msgstr[0] "%s 分の読み取り"
 
 msgid "About the Author"
 msgstr "著者について"
@@ -1295,7 +1294,7 @@ msgid "View all search results"
 msgstr "すべての検索結果を表示する"
 
 msgid "View all results for \"%s\""
-msgstr "「%s」の結果をすべて表示"
+msgstr "「%s」のすべての結果を表示"
 
 msgid "No results found."
 msgstr "見つかりませんでした。"
@@ -1312,9 +1311,8 @@ msgid ""
 "Wishing you a season filled with joyous holidays and even happier savings! "
 "🎄✨"
 msgstr ""
-"%1$s 🎁 無料の %2$s テーマを気に入っていただければ幸いです。限定ギフト: %4$s "
-"プレミアム機能でお祭り気分を満喫しましょう!チェックアウト時にコード %3$s "
-"を使用してください。楽しい休暇と、さらに幸せな節約に満ちたシーズンになることを願っています。 🎄✨"
+"%1$s 🎁 無料の %2$s テーマを気に入っていただければ幸いです!特別なギフトでお祭り気分を満喫しましょう: %4$s "
+"のプレミアム機能!チェックアウト時にコード %3$s を使用してください。楽しい休暇と、さらに幸せな節約に満ちたシーズンになることを願っています。 🎄✨"
 
 msgid "Claim Your Discount"
 msgstr "割引を請求する"
@@ -1332,7 +1330,7 @@ msgid "Have Queries?"
 msgstr "ご質問がありますか?"
 
 msgid "Displays author info."
-msgstr "著者情報を表示します。"
+msgstr "作者情報を表示します。"
 
 msgid "AFTMN Author Info"
 msgstr "AFTMN著者情報"
@@ -1341,16 +1339,16 @@ msgid "Profile image"
 msgstr "プロフィール画像"
 
 msgid "Name"
-msgstr "名称"
+msgstr "名前"
 
 msgid "Descriptions"
 msgstr "説明"
 
 msgid "Facebook"
-msgstr "フェイスブック"
+msgstr "Facebook"
 
 msgid "Twitter"
-msgstr "ツイッター"
+msgstr "Twitter"
 
 msgid "YouTube"
 msgstr "YouTube"
@@ -1359,7 +1357,7 @@ msgid "Displays Express Posts from selected categories."
 msgstr "選択したカテゴリからのエクスプレス投稿を表示します。"
 
 msgid "AFTMN Express Posts List"
-msgstr "AFTMN エクスプレス投稿リスト"
+msgstr "AFTMN Express 投稿リスト"
 
 msgid "Displays grid from selected categories."
 msgstr "選択したカテゴリのグリッドを表示します。"
@@ -1422,7 +1420,7 @@ msgstr "画像を選ぶ"
 
 msgctxt "Remove"
 msgid "X"
-msgstr "×"
+msgstr "X"
 
 msgid "Recent"
 msgstr "最近"
@@ -1440,10 +1438,10 @@ msgid "Add widgets for off-canvas section."
 msgstr "オフキャンバスセクションにウィジェットを追加します。"
 
 msgid "Main Sidebar"
-msgstr "メインサイドバー"
+msgstr "メインスライダー"
 
 msgid "Add widgets for main sidebar."
-msgstr "メインサイドバーにウィジェットを追加します。"
+msgstr "メインサイドバー用のウィジェットを追加します。"
 
 msgid "Front-page Content Section"
 msgstr "フロントページコンテンツ上セクション"
@@ -1461,7 +1459,7 @@ msgid "Footer Widget 1"
 msgstr "フッターウィジェット1"
 
 msgid "Displays items on footer first column."
-msgstr "フッターの最初の列に項目を表示します。"
+msgstr "フッターの1列目に項目を表示します。"
 
 msgid "Footer Widget 2"
 msgstr "フッターウィジェット2"
@@ -1480,7 +1478,7 @@ msgstr "お買い物カゴを表示"
 
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "%d アイテム"
+msgstr[0] "%d 個のアイテム"
 
 msgid "Browse:"
 msgstr "続きを読む:"
@@ -1519,11 +1517,11 @@ msgstr "g:i a"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "私"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
-msgstr "が"
+msgstr "g a"
 
 msgctxt "yearly archives date format"
 msgid "Y"
@@ -1562,7 +1560,7 @@ msgstr[0] "このテーマにはプラグイン %1$s が必要です。"
 
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "このテーマでは、プラグイン %1$s を推奨します。"
+msgstr[0] "このテーマでは次のプラグインを推奨します: %1$s。"
 
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -1570,11 +1568,11 @@ msgid ""
 msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
-msgstr[0] "このテーマとの互換性を最大限に高めるには、プラグイン %1$s を最新バージョンに更新する必要があります。"
+msgstr[0] "このテーマとの互換性を最大限に確保するには、次のプラグインを最新バージョンに更新する必要があります: %1$s。"
 
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] "利用可能なアップデートがあります: %1$s。"
+msgstr[0] "%1$s に利用可能なアップデートがあります。"
 
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
@@ -1699,11 +1697,11 @@ msgstr "%1$s、%2$s"
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "すべての <span class=\"count\">(%s)</span>"
+msgstr[0] "すべての<span class=\"count\">(%s)</span>"
 
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] "<span class=\"count\">(%s)</span>をインストールするには"
+msgstr[0] "<span class=\"count\">(%s)</span> をインストールするには"
 
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
@@ -1711,7 +1709,7 @@ msgstr[0] "利用可能なアップデート <span class=\"count\">(%s)</span>"
 
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "<span class=\"count\">(%s)</span>を有効化するには"
+msgstr[0] "<span class=\"count\">(%s)</span> をアクティブにするには"
 
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
@@ -1832,7 +1830,7 @@ msgstr "最初の投稿を公開する準備はできましたか? <a href=\"%1$
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+msgstr "検索キーワードに一致するものが見つかりませんでした。別のキーワードでもう一度お試しください。"
 
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
@@ -1869,7 +1867,7 @@ msgid ""
 msgstr ""
 "ブログ、雑誌、ビジネス サイトに最適な、Gutenberg "
 "ブロックとパターンの膨大なライブラリを使用してページを簡単に構築およびカスタマイズできます。コードを 1 行も触れずに、ポスト "
-"グリッド、スライダー、カルーセルを追加します。デモ データをインポートし、完全な柔軟性を備えた多言語の視覚的に魅力的なページを簡単に作成します。"
+"グリッド、スライダー、カルーセルを追加します。デモ データをインポートし、多言語で視覚的に魅力的なページを完全な柔軟性で簡単に作成できます。"
 
 msgid "Hello "
 msgstr "こんにちは"
@@ -2006,7 +2004,7 @@ msgid "Front-page Banner Layouts Basic (5+ Layouts)"
 msgstr "フロントページ バナー レイアウト 基本 (5 つ以上のレイアウト)"
 
 msgid "Front-page Banner Layouts Advanced (30+ Layouts)"
-msgstr "フロントページ バナーの高度なレイアウト (30 以上のレイアウト)"
+msgstr "フロントページのバナーレイアウトの詳細 (30 以上のレイアウト)"
 
 msgid "Banner Post Filter: Category & Tag"
 msgstr "バナー投稿フィルター: カテゴリとタグ"
@@ -2045,7 +2043,7 @@ msgid "Author Box Basic"
 msgstr "オーサーボックスベーシック"
 
 msgid "Author Box with Donate Link, Website & Author Posts"
-msgstr "寄付リンク、ウェブサイト、著者投稿のある著者ボックス"
+msgstr "寄付リンク、ウェブサイト、著者投稿を備えた著者ボックス"
 
 msgid "Trending Posts in Single Post"
 msgstr "単一の投稿のトレンド投稿"
@@ -2065,7 +2063,7 @@ msgid "AJAX Refresh + Caching for Post Analytics"
 msgstr "ポスト分析のための AJAX リフレッシュ + キャッシュ"
 
 msgid "Centralized Site Analytics Page (Tabbed UI)"
-msgstr "一元化されたサイト分析ページ (タブ付き UI)"
+msgstr "一元的なサイト分析ページ (タブ付き UI)"
 
 msgid ""
 "Site-wide Metrics (Posts, Pages, Media, Top Posts, Categories, Tags, "
@@ -2129,7 +2127,7 @@ msgid "Centralized Ads Management Panel"
 msgstr "一元的な広告管理パネル"
 
 msgid "Widget Areas Header, Front-page, Sidebar, Footer"
-msgstr "ウィジェットエリア ヘッダー、フロントページ、サイドバー、フッター"
+msgstr "ウィジェット領域 ヘッダー、フロントページ、サイドバー、フッター"
 
 msgid "Widget Areas Banner, Featured, Inline"
 msgstr "ウィジェットエリア バナー、注目、インライン"
@@ -2166,7 +2164,7 @@ msgid "Standard Support"
 msgstr "標準サポート"
 
 msgid "Priority Support (Faster Response)"
-msgstr "優先サポート（迅速な対応）"
+msgstr "優先サポート（より迅速な対応）"
 
 msgid ""
 "Create a beautiful, professional website quickly with easy theme options."
@@ -2190,7 +2188,7 @@ msgstr "ブロックパターンをインポートする"
 
 msgid ""
 "Build pages fast with a large collection of Gutenberg blocks & patterns."
-msgstr "Gutenberg のブロックとパターンの大規模なコレクションを使用してページを高速に構築します。"
+msgstr "Gutenberg ブロックとパターンの大規模なコレクションを使用してページを高速に構築します。"
 
 msgid ""
 "Set the theme header type, set the colors, spacing, alignment and more."
@@ -2275,7 +2273,7 @@ msgstr "読者のエンゲージメント (反応、ブックマークなど)"
 msgid ""
 "Please check our full documentation for detailed information on how to setup"
 " and customize the theme."
-msgstr "テーマの設定およびカスタマイズ方法の詳細については、完全なドキュメントを参照してください。"
+msgstr "テーマのセットアップおよびカスタマイズ方法の詳細については、完全なドキュメントを参照してください。"
 
 msgid "Video  Tutorials"
 msgstr "ビデオチュートリアル"
@@ -2355,16 +2353,16 @@ msgstr ""
 msgid ""
 "Get over 1000 ready-to-import Starter Sites instantly and build modern "
 "websites in minutes, not in weeks."
-msgstr "すぐにインポートできる 1,000 を超えるスターター サイトをすぐに入手し、数週間ではなく数分で最新の Web サイトを構築します。"
+msgstr "すぐにインポートできる 1,000 を超えるスターター サイトをすぐに入手し、数週間ではなく数分で最新の Web サイトを構築できます。"
 
 msgid "Get started"
 msgstr "始めてみよう"
 
 msgid "Useful Plugins"
-msgstr "便利なプラグイン"
+msgstr "役に立つプラグイン"
 
 msgid "Free vs Pro"
-msgstr "Free 版と Pro 版を比較"
+msgstr "無料 vs プロ"
 
 msgid "Change Log"
 msgstr "変更ログ"

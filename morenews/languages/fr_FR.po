@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "PlusActualités"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -57,7 +57,7 @@ msgstr ""
 "https://afthemes.com/products/morenews."
 
 msgid "AF themes"
-msgstr "Thèmes AF"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
@@ -69,8 +69,8 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links"
 " below or a search?"
 msgstr ""
-"Il semble que rien ne soit trouvé à cet emplacement. Essayez les liens ci-"
-"dessous ou une recherche"
+"Il semble que rien ne soit trouvé ici. Essayez un des liens ci-dessous ou "
+"une recherche?"
 
 msgid "Dashboard"
 msgstr "Tableau de bord"
@@ -79,7 +79,7 @@ msgid "Customize"
 msgstr "Personnaliser"
 
 msgid "Header Builder"
-msgstr "Constructeur d’entête"
+msgstr "Constructeur d’en-tête"
 
 msgid "Footer Builder"
 msgstr "Constructeur de pied de page"
@@ -94,7 +94,7 @@ msgid "Block Patterns"
 msgstr "Compositions de blocs"
 
 msgid "Upgrade to Pro"
-msgstr "Passer à la version Pro"
+msgstr "Passer à Pro"
 
 msgid "Upgrade Now"
 msgstr "Mettre à niveau maintenant"
@@ -128,7 +128,7 @@ msgstr ""
 "multilingue! Propulsé par Elespare."
 
 msgid "Are you sure you want to install this plugin?"
-msgstr "Etes-vous sûr de vouloir installer ce plugin?"
+msgstr "Etes-vous sûr de vouloir installer ce plugin ?"
 
 msgid "Install Now"
 msgstr "Installer maintenant"
@@ -143,7 +143,7 @@ msgid "Get Starter Sites"
 msgstr "Obtenez des sites de démarrage"
 
 msgid "Get Started"
-msgstr "Premiers pas"
+msgstr "Get Started"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
@@ -159,13 +159,13 @@ msgid "More Details"
 msgstr "Plus de détails"
 
 msgid "👋 Welcome, and Thank You!"
-msgstr "👋 Bienvenue et merci!"
+msgstr "👋 Bienvenue et merci !"
 
 msgid ""
 "%s is now active. We're here to help you turn your ideas into a beautiful, "
 "professional website — quickly and confidently."
 msgstr ""
-"%s est désormais actif. Nous sommes là pour vous aider à transformer vos "
+"%s est maintenant actif. Nous sommes là pour vous aider à transformer vos "
 "idées en un site Web magnifique et professionnel, rapidement et en toute "
 "confiance."
 
@@ -176,9 +176,8 @@ msgid ""
 "Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
 "      Setup is simple — no coding required."
 msgstr ""
-"Choisissez parmi plus de 100 sites de démarrage conçus pour les blogs, les "
-"magazines, les entreprises et plus encore. La configuration est simple – "
-"aucun codage requis."
+"Choisissez parmi plus de 100 sites de démarrage conçus pour les blogs, les magazines, les entreprises et plus encore.\n"
+"      La configuration est simple – aucun codage requis."
 
 msgid "View Demos"
 msgstr "Voir les démos"
@@ -199,15 +198,14 @@ msgid "Video Tutorials"
 msgstr "Tutoriels vidéo"
 
 msgid "Support"
-msgstr "Soutien"
+msgstr "Support"
 
 msgid "⭐ Rate This Theme"
 msgstr "⭐ Notez ce thème"
 
 msgid "Sorry, you are not allowed to install plugins on this site."
 msgstr ""
-"Désolé, vous n’avez pas l’autorisation d’installer des extensions sur ce "
-"site."
+"Désolé, vous n’êtes pas autorisé à installer des extensions sur ce site."
 
 msgid "Error - unable to verify nonce, please try again."
 msgstr "Erreur: impossible de vérifier une fois, veuillez réessayer."
@@ -217,13 +215,13 @@ msgstr ""
 "Désolé, vous n’avez pas l’autorisation d’activer des extensions sur ce site."
 
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Une réflexion sur &ldquo;%1$s&rdquo;"
+msgstr "Un commentaire sur « %1$s »"
 
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s réflexion sur &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s réflexions sur &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s a réfléchi à &laquo;%2$s&raquo;"
+msgstr[1] "%1$s réflexions sur &laquo;%2$s&raquo;"
 
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
@@ -238,7 +236,7 @@ msgid "Social Menu"
 msgstr "Menu social"
 
 msgid "Footer Menu"
-msgstr "Menu du pied de page"
+msgstr "Menu de pied de page"
 
 msgid "Skip to content"
 msgstr "Aller au contenu"
@@ -269,7 +267,7 @@ msgid "Close choose element modal"
 msgstr "Fermer choisir l'élément modal"
 
 msgid "Footer Layout"
-msgstr "Mise en page du pied de page"
+msgstr "Agencement du pied de page"
 
 msgid "Create dynamic header effortlessly with drag-and-drop builder."
 msgstr ""
@@ -299,7 +297,7 @@ msgid "Configure Element"
 msgstr "Configurer l'élément"
 
 msgid "Desktop"
-msgstr "Ordinateur de bureau"
+msgstr "Ordinateur"
 
 msgid "Element Settings"
 msgstr "Paramètres des éléments"
@@ -336,7 +334,7 @@ msgid "Primary menu"
 msgstr "Menu principal"
 
 msgid "Select Menu"
-msgstr "Sélectionner un menu"
+msgstr "Sélectionner le menu"
 
 msgid "You can change Menu from menu panel. %s"
 msgstr "Vous pouvez modifier le menu à partir du panneau de menu. %s"
@@ -376,7 +374,7 @@ msgid "HTML Content"
 msgstr "Contenu HTML"
 
 msgid "Search"
-msgstr "Recherche"
+msgstr "Rechercher"
 
 msgid "Searc Form"
 msgstr "Formulaire de recherche"
@@ -409,7 +407,7 @@ msgid "Pro"
 msgstr "Pro"
 
 msgid "Copyright"
-msgstr "Droit d'auteur"
+msgstr "Copyright"
 
 msgid "Add widget to display . %s"
 msgstr "Ajouter un widget à afficher. %s"
@@ -466,7 +464,7 @@ msgid "Featured Categories"
 msgstr "Catégories en vedette"
 
 msgid "Post list Section Title %d"
-msgstr "Liste des publications Titre de la section %d"
+msgstr "Liste des messages Titre de la section %d"
 
 msgid "View More"
 msgstr "Voir la suite"
@@ -552,7 +550,7 @@ msgid "Global Fonts Family"
 msgstr "Famille de polices globale"
 
 msgid "Google Fonts"
-msgstr "Polices Google"
+msgstr "Google Fonts"
 
 msgid "System Fonts"
 msgstr "Polices système"
@@ -624,7 +622,7 @@ msgid "Tag"
 msgstr "Étiquette"
 
 msgid "Select Category"
-msgstr "Sélectionner une catégorie"
+msgstr "Sélectionnez une catégorie"
 
 msgid "Select category to be shown on main slider section"
 msgstr ""
@@ -695,7 +693,7 @@ msgid "Section %d"
 msgstr "Section %d"
 
 msgid "Section Title"
-msgstr "Titre de la section"
+msgstr "Titre de section"
 
 msgid "Front-page Layout Settings"
 msgstr "Paramètres de mise en page de la première page"
@@ -731,13 +729,13 @@ msgid "Header Options"
 msgstr "Options de l’entête"
 
 msgid "Header Settings"
-msgstr "Réglages d’entête"
+msgstr "Réglages d’en-tête"
 
 msgid "Site Mode Switch"
 msgstr "Changement de mode site"
 
 msgid "Enable"
-msgstr "Activer"
+msgstr "Activé"
 
 msgid "Disable"
 msgstr "Désactiver"
@@ -807,7 +805,7 @@ msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
 msgid "Rank Math"
-msgstr "Classement mathématique"
+msgstr "Rank Math"
 
 msgid "NavXT"
 msgstr "NavXT"
@@ -903,7 +901,7 @@ msgid "Show Icon"
 msgstr "Afficher l'icône"
 
 msgid "None"
-msgstr "Aucune"
+msgstr "Aucun(e)"
 
 msgid "Date Format"
 msgstr "Format de date"
@@ -939,7 +937,7 @@ msgid "Link"
 msgstr "Lien"
 
 msgid "Single Post"
-msgstr "Article seul"
+msgstr "Publication seule"
 
 msgid "Show Featured Image"
 msgstr "Afficher l’image mise en avant"
@@ -951,7 +949,7 @@ msgid "Full - Default"
 msgstr "Complet - Par défaut"
 
 msgid "Original"
-msgstr "Originale"
+msgstr "D’origine"
 
 msgid "Single Content Mode"
 msgstr "Mode contenu unique"
@@ -969,7 +967,7 @@ msgid "Top - Default"
 msgstr "Haut - Par défaut"
 
 msgid "Bottom"
-msgstr "Bas"
+msgstr "En bas"
 
 msgid "Show Author Bio under Content"
 msgstr "Afficher la biographie de l'auteur sous Contenu"
@@ -999,7 +997,7 @@ msgid "List"
 msgstr "Liste"
 
 msgid "Full"
-msgstr "Complet"
+msgstr "Pleine page"
 
 msgid "Image Alignment"
 msgstr "Alignement d’image"
@@ -1029,13 +1027,13 @@ msgid "Post Excerpt"
 msgstr "Extrait d’article"
 
 msgid "Full Content"
-msgstr "Contenu complet"
+msgstr "Contenu intégral"
 
 msgid "Search Options"
 msgstr "Options de recherche"
 
 msgid "Search Results"
-msgstr "Résultats de recherche:"
+msgstr "Résultats de recherche"
 
 msgid "Select search results for archive"
 msgstr "Sélectionnez les résultats de recherche pour les archives"
@@ -1044,7 +1042,7 @@ msgid "All (Pages, Posts, etc)"
 msgstr "Tous (pages, publications, etc.)"
 
 msgid "Posts"
-msgstr "Publications"
+msgstr "Articles"
 
 msgid "Ajax Results Dropdown"
 msgstr "Liste déroulante des résultats Ajax"
@@ -1059,7 +1057,7 @@ msgid "Sidebar Sticky Position"
 msgstr "Position collante de la barre latérale"
 
 msgid "Top"
-msgstr "Haut"
+msgstr "En haut"
 
 msgid "You May Have Missed"
 msgstr "Vous avez peut-être manqué"
@@ -1112,7 +1110,7 @@ msgid "Primary Sidebar - Content"
 msgstr "Barre latérale principale – Contenu"
 
 msgid "No Sidebar"
-msgstr "Aucune colonne"
+msgstr "Aucune colonne latérale"
 
 msgid "Please go to Customize>Front-page Options for Homepage."
 msgstr ""
@@ -1136,7 +1134,7 @@ msgid ""
 "\"Categories\" section of the theme customizer."
 msgstr ""
 "Sélectionnez la classe de couleur de la catégorie. Vous pouvez définir la "
-"couleur des catégories appropriées dans la section « Catégories » du "
+"couleur des catégories appropriées dans la section «Catégories» du "
 "personnalisateur de thème."
 
 msgid "Templatespare"
@@ -1282,7 +1280,7 @@ msgid ""
 msgstr ""
 "Salut, %1$s! Nous avons remarqué que vous utilisez %2$s depuis un certain "
 "temps maintenant, nous espérons que vous l'aimez! Nous vous serions "
-"reconnaissants si vous pouviez nous donner %3$sreview et rating%4$s sur "
+"reconnaissants si vous pouviez nous donner %3$savis et note%4$s sur "
 "WordPress.org! Nous continuerons à développer gratuitement de nouvelles "
 "fonctionnalités passionnantes à l’avenir en partageant notre amour!"
 
@@ -1325,7 +1323,7 @@ msgid "Posted on %s"
 msgstr "Publié le %s"
 
 msgid "Posted on %s %s"
-msgstr "Publié sur %s %s"
+msgstr "Publié le %s %s"
 
 msgid "ago"
 msgstr "il y a"
@@ -1352,10 +1350,10 @@ msgid "No results found."
 msgstr "Aucun résultat."
 
 msgid "Action failed. Please refresh the page and retry."
-msgstr "Action échouée. Actualisez la page et essayez à nouveau"
+msgstr "Action échouée. Veuillez rafraîchir la page et réessayer."
 
 msgid "Cheatin&#8217; huh?"
-msgstr "Alors, on triche?"
+msgstr "Une fausse manipulation?"
 
 msgid ""
 "%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit "
@@ -1363,10 +1361,10 @@ msgid ""
 "Wishing you a season filled with joyous holidays and even happier savings! "
 "🎄✨"
 msgstr ""
-"%1$s 🎁 J'espère que vous aimez notre thème gratuit %2$s! Plongez dans "
-"l'esprit festif avec un cadeau exclusif: les fonctionnalités premium de "
-"%4$s! Utilisez le code %3$s à la caisse. Je vous souhaite une saison remplie"
-" de joyeuses fêtes et d'économies encore plus heureuses! 🎄✨"
+"%1$s 🎁 J'espère que vous aimez notre thème %2$s gratuit! Plongez dans "
+"l'esprit festif avec un cadeau exclusif:%4$s de fonctionnalités premium! "
+"Utilisez le code %3$s à la caisse. Je vous souhaite une saison remplie de "
+"joyeuses fêtes et d'économies encore plus heureuses! 🎄✨"
 
 msgid "Claim Your Discount"
 msgstr "Réclamez votre remise"
@@ -1402,7 +1400,7 @@ msgid "Facebook"
 msgstr "Facebook"
 
 msgid "Twitter"
-msgstr "Gazouillement"
+msgstr "Twitter"
 
 msgid "YouTube"
 msgstr "YouTube"
@@ -1411,7 +1409,7 @@ msgid "Displays Express Posts from selected categories."
 msgstr "Affiche les publications express des catégories sélectionnées."
 
 msgid "AFTMN Express Posts List"
-msgstr "Liste des messages express de l'AFTMN"
+msgstr "Liste des messages express AFTMN"
 
 msgid "Displays grid from selected categories."
 msgstr "Affiche la grille des catégories sélectionnées."
@@ -1472,7 +1470,7 @@ msgid "Upload"
 msgstr "Téléverser"
 
 msgid "Select Image"
-msgstr "Sélectionner une image"
+msgstr "Sélectionner l’image"
 
 msgid "Choose Image"
 msgstr "Choisir une image"
@@ -1540,55 +1538,55 @@ msgstr "Voir votre panier"
 
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "%d article"
-msgstr[1] "%d éléments"
+msgstr[0] "%d élément"
+msgstr[1] "%d éléments"
 
 msgid "Browse:"
 msgstr "Parcourir:"
 
 msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
-msgstr "Fil d’ariane"
+msgstr "Breadcrumbs"
 
 msgid "Home"
 msgstr "Accueil"
 
 msgid "404 Not Found"
-msgstr "404 non trouvé"
+msgstr "404 - Introuvable"
 
 msgid "Archives"
 msgstr "Archives"
 
 msgid "Search results for: %s"
-msgstr "Résultats de rechercher pour: %s"
+msgstr "Résultats de recherche pour: %s"
 
 msgid "Page %s"
 msgstr "Page %s"
 
 msgid "Comment Page %s"
-msgstr "Page de commentaires %s"
+msgstr "Page de commentaire %s"
 
 msgid "Minute %s"
-msgstr "Minutes %s"
+msgstr "Minute %s"
 
 msgid "Week %s"
 msgstr "Semaine %s"
 
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
-msgstr "g: i a"
+msgstr "G\\hi"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "m"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
-msgstr "g un"
+msgstr "g a"
 
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr "Oui"
+msgstr "Y"
 
 msgctxt "monthly archives date format"
 msgid "F"
@@ -1600,7 +1598,7 @@ msgstr "j"
 
 msgctxt "weekly archives date format"
 msgid "W"
-msgstr "S"
+msgstr "W"
 
 msgid "Install Required Plugins"
 msgstr "Installation des extensions nécessaires"
@@ -1745,10 +1743,10 @@ msgid "and"
 msgstr "et"
 
 msgid "TGMPA v%s"
-msgstr "TGMPAv%s"
+msgstr "TGMPA v%s"
 
 msgid "Required"
-msgstr "Nécessaire"
+msgstr "Obligatoire"
 
 msgid "Recommended"
 msgstr "Recommandées"
@@ -1769,7 +1767,7 @@ msgid "Installed But Not Activated"
 msgstr "Installée mais non activée"
 
 msgid "Active"
-msgstr "Activée"
+msgstr "Actif"
 
 msgid "Required Update not Available"
 msgstr "Mise à jour nécessaire non disponible"
@@ -1828,7 +1826,7 @@ msgid "Source"
 msgstr "Source"
 
 msgid "Type"
-msgstr "Taper"
+msgstr "Type"
 
 msgid "Version"
 msgstr "Version"
@@ -1932,31 +1930,31 @@ msgstr "Aucun résultat"
 
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Prêt·e à publier votre premier article? <a href=\"%1$s\">Lancez-vous "
+"Prêt à publier votre première publication? <a href=\"%1$s\">Commencez "
 "ici</a>."
 
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Désolé, mais rien ne correspond à vos critères de recherche. Veuillez "
-"réessayer avec d’autres mots-clés."
+"Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
+"réessayer avec des mots clés différents."
 
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Il semble que nous ne pouvons pas trouver ce que vous cherchez. Peut-être "
-"qu’une recherche pourra vous aider."
+"Il semble que nous ne pouvons pas trouver le contenu demandé. Peut-être "
+"qu’une recherche peut vous aider."
 
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Continuer la lecture de <span class=\"screen-reader-text\">« %s »</span>"
+msgstr "Poursuivre la lecture <span class=\"screen-reader-text\"> \"%s\" </span>"
 
 msgid "Previous: %s"
-msgstr "Précédent: %s"
+msgstr "Précédent : %s"
 
 msgid "Next: %s"
-msgstr "Suivant: %s"
+msgstr "Suivant:%s"
 
 msgid "Post navigation"
 msgstr "Navigation d’article"
@@ -1997,7 +1995,7 @@ msgid "Start with Demo Sites"
 msgstr "Commencez avec les sites de démonstration"
 
 msgid "Start Customizing"
-msgstr "Commencer la personnalisation"
+msgstr "Commencez à personnaliser"
 
 msgid "Update Elespare Pro"
 msgstr "Mettre à jour Elespare Pro"
@@ -2033,13 +2031,13 @@ msgstr ""
 "avec nos plus de 100 sites de démarrage en un clic – aucun codage requis."
 
 msgid "Unlock Pro Features"
-msgstr "Débloquer les fonctions PRO"
+msgstr "Débloquer les fonctionnalités pro"
 
 msgid "Docs"
 msgstr "Documents"
 
 msgid "Need Help?"
-msgstr "Besoin d'aide?"
+msgstr "Besoin d'aide ?"
 
 msgid "Rate This Theme"
 msgstr "Notez ce thème"
@@ -2268,7 +2266,8 @@ msgid "Centralized Ads Management Panel"
 msgstr "Panneau de gestion centralisé des annonces"
 
 msgid "Widget Areas Header, Front-page, Sidebar, Footer"
-msgstr "Zones de widget En-tête, page d'accueil, barre latérale, pied de page"
+msgstr ""
+"Zones de widgets En-tête, page d'accueil, barre latérale, pied de page"
 
 msgid "Widget Areas Banner, Featured, Inline"
 msgstr "Bannière de zones de widget, en vedette, en ligne"
@@ -2372,7 +2371,7 @@ msgid ""
 "Front-page layout with Popular Tag, Breaking News, Feature News can be set."
 msgstr ""
 "La mise en page de la première page avec les balises populaires, les "
-"dernières nouvelles et les fonctionnalités d'actualité peut être définie."
+"dernières nouvelles et les actualités en vedette peut être définie."
 
 msgid "Static Front Page"
 msgstr "Page d'accueil statique"
@@ -2527,8 +2526,8 @@ msgid ""
 msgstr ""
 "Ce plugin gratuit offre une solution de chat en direct gratuite permettant "
 "aux visiteurs de votre site Web de vous contacter via un chat en direct ou "
-"un appel en direct - le tout gratuitement! Engagez-vous avec vos clients et "
-"augmentez vos ventes."
+"un appel en direct - le tout gratuitement ! Engagez-vous avec vos clients et"
+" augmentez vos ventes."
 
 msgid ""
 "TemplateSpare -   No-Code Website Builder - 1-Click Import/Export and Full "
@@ -2541,18 +2540,18 @@ msgid ""
 "Get over 1000 ready-to-import Starter Sites instantly and build modern "
 "websites in minutes, not in weeks."
 msgstr ""
-"Obtenez instantanément plus de 1 000 sites de démarrage prêts à être "
-"importés et créez des sites Web modernes en quelques minutes, et non en "
-"quelques semaines."
+"Obtenez instantanément plus de 1000 sites de démarrage prêts à être importés"
+" et créez des sites Web modernes en quelques minutes, et non en quelques "
+"semaines."
 
 msgid "Get started"
-msgstr "Premiers pas"
+msgstr "Commencer"
 
 msgid "Useful Plugins"
 msgstr "Extensions utiles"
 
 msgid "Free vs Pro"
-msgstr "Gratuit Vs Pro"
+msgstr "Gratuit vs Pro"
 
 msgid "Change Log"
 msgstr "Journal des modifications"

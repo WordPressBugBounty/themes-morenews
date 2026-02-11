@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "المزيد من الأخبار"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -52,18 +52,20 @@ msgstr ""
 "العالم. اكتشف جميع الميزات على https://afthemes.com/products/morenews."
 
 msgid "AF themes"
-msgstr "موضوعات AF"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
 
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "عفوا! &rsquo;t لا يمكن العثور على هذه الصفحة."
+msgstr "عذراً! لايمكن العثور على تلك الصفحة."
 
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links"
 " below or a search?"
-msgstr "يبدو أنه لا يوجد نتائج هنا. ربما تحاول إحدى الروابط أدناه أو البحث؟"
+msgstr ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
 
 msgid "Dashboard"
 msgstr "لوحة التحكم"
@@ -72,10 +74,10 @@ msgid "Customize"
 msgstr "تخصيص"
 
 msgid "Header Builder"
-msgstr "مُنشئ الترويسة"
+msgstr "منشئ الترويسة"
 
 msgid "Footer Builder"
-msgstr "مُنشئ التذييل"
+msgstr "منشئ التذييل"
 
 msgid "Starter Sites"
 msgstr "مواقع البداية"
@@ -87,10 +89,10 @@ msgid "Block Patterns"
 msgstr "أنماط المكوِّن"
 
 msgid "Upgrade to Pro"
-msgstr "الترقية إلى احترافي"
+msgstr "الترقية إلى برو"
 
 msgid "Upgrade Now"
-msgstr "قم بالترقية الآن"
+msgstr "الترقية الآن"
 
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr "يجب تحديث البرنامج المساعد Templatespare إلى الإصدار الأحدث"
@@ -99,7 +101,7 @@ msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr "قم باستيراد موقع مبدئي وتخصيصه وتشغيله في 3 خطوات سهلة!"
 
 msgid "Blockspare plugin version should be more than %s."
-msgstr "يجب أن يكون إصدار المكون الإضافي Blockspare أكثر من %s."
+msgstr "يجب أن يكون إصدار البرنامج الإضافي Blockspare أكثر من %s."
 
 msgid ""
 "One-click Demo Import, Block Editor Ready, No Code Required! Built with "
@@ -134,7 +136,7 @@ msgid "Get Starter Sites"
 msgstr "احصل على مواقع البداية"
 
 msgid "Get Started"
-msgstr "الشروع في..."
+msgstr "Get Started"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
@@ -157,7 +159,7 @@ msgid ""
 "professional website — quickly and confidently."
 msgstr ""
 "%s نشط الآن. نحن هنا لمساعدتك في تحويل أفكارك إلى موقع ويب جميل واحترافي - "
-"بسرعة وثقة."
+"بسرعة وبثقة."
 
 msgid "🚀 Start With One Click"
 msgstr "🚀 ابدأ بنقرة واحدة"
@@ -166,8 +168,8 @@ msgid ""
 "Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
 "      Setup is simple — no coding required."
 msgstr ""
-"اختر من بين أكثر من 100 موقع مبتدئ مصمم للمدونات والمجلات والشركات والمزيد. "
-"الإعداد بسيط - لا يتطلب أي ترميز."
+"اختر من بين أكثر من 100 موقع مبتدئ مصمم للمدونات والمجلات والشركات والمزيد.\n"
+"      الإعداد بسيط - لا يتطلب أي ترميز."
 
 msgid "View Demos"
 msgstr "شاهد العرض التوضيحي"
@@ -182,13 +184,13 @@ msgid "Whether you're just starting or customizing your site."
 msgstr "سواء كنت بدأت للتو أو قمت بتخصيص موقعك."
 
 msgid "Documentation"
-msgstr "التوثيق"
+msgstr "الوثائق"
 
 msgid "Video Tutorials"
 msgstr "دروس الفيديو"
 
 msgid "Support"
-msgstr "الدعم"
+msgstr "الدعم الفني"
 
 msgid "⭐ Rate This Theme"
 msgstr "⭐ قيم هذا الموضوع"
@@ -208,7 +210,7 @@ msgstr "تعليق واحد على &ldquo;%1$s&rdquo;"
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s فكرت في &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s فكر في &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s أفكار حول &ldquo;%2$s&rdquo;"
 msgstr[2] "%1$s أفكار حول &ldquo;%2$s&rdquo;"
 msgstr[3] "%1$s أفكار حول &ldquo;%2$s&rdquo;"
@@ -228,10 +230,10 @@ msgid "Social Menu"
 msgstr "القائمة الاجتماعية"
 
 msgid "Footer Menu"
-msgstr "قائمة التذييل"
+msgstr "قائمة شريط التذييل"
 
 msgid "Skip to content"
-msgstr "التجاوز إلى المحتوى"
+msgstr "تخطي إلى المحتوى"
 
 msgid "Open search form"
 msgstr "فتح نموذج البحث"
@@ -240,7 +242,7 @@ msgid ""
 "Click the setting <span class=\"dashicons dashicons-admin-generic\"></span> "
 "on each element to customize its settings."
 msgstr ""
-"انقر فوق الإعداد <span class=\"dashicons dashicons-admin-generic\"></span> "
+"انقر فوق الإعداد <span class=\"dashicons Dashicons-admin-generic\"></span> "
 "في كل عنصر لتخصيص إعداداته."
 
 msgid "Hide builder panel"
@@ -265,13 +267,13 @@ msgid "Create dynamic header effortlessly with drag-and-drop builder."
 msgstr "أنشئ رأسًا ديناميكيًا دون عناء باستخدام أداة السحب والإفلات."
 
 msgid "Header"
-msgstr "الترويسة"
+msgstr "الشريط العلوي"
 
 msgid "Create dynamic footer effortlessly with drag-and-drop builder."
 msgstr "قم بإنشاء تذييل ديناميكي بسهولة باستخدام أداة السحب والإفلات."
 
 msgid "Footer"
-msgstr "تذييل"
+msgstr "شريط التذييل"
 
 msgid "Enable %s Builder"
 msgstr "تمكين %s منشئ"
@@ -307,7 +309,7 @@ msgid "Promotion"
 msgstr "ترقية"
 
 msgid "Off Canvas"
-msgstr "خارج قماش"
+msgstr "Off Canvas"
 
 msgid "Off Canvas Widget Area"
 msgstr "خارج منطقة القطعة القماشية"
@@ -352,7 +354,7 @@ msgid "Top Navigation"
 msgstr "التنقل العلوي"
 
 msgid "pro"
-msgstr "الموالية"
+msgstr "pro"
 
 msgid "Site Mode"
 msgstr "وضع الموقع"
@@ -364,7 +366,7 @@ msgid "HTML Content"
 msgstr "محتوى HTML"
 
 msgid "Search"
-msgstr "بحث"
+msgstr "البحث"
 
 msgid "Searc Form"
 msgstr "نموذج البحث"
@@ -397,7 +399,7 @@ msgid "Pro"
 msgstr "احترافي"
 
 msgid "Copyright"
-msgstr "الحقوق"
+msgstr "حقوق النشر"
 
 msgid "Add widget to display . %s"
 msgstr "إضافة القطعة لعرضها. %s"
@@ -454,13 +456,13 @@ msgid "Featured Categories"
 msgstr "الفئات المميزة"
 
 msgid "Post list Section Title %d"
-msgstr "عنوان قسم قائمة المشاركات %d"
+msgstr "عنوان القسم لقائمة النشر %d"
 
 msgid "View More"
 msgstr "إعرض أكثر"
 
 msgid "Read More"
-msgstr "إقرأ المزيد"
+msgstr "قراءة المزيد"
 
 msgid "Related Stories"
 msgstr "قصص ذات صلة"
@@ -469,7 +471,7 @@ msgid "You may have missed"
 msgstr "لربما فاتك"
 
 msgid "Copyright &copy; All rights reserved."
-msgstr "Copyright &copy; All rights reserved."
+msgstr "حقوق النشر والنسخ؛ جميع الحقوق محفوظة."
 
 msgid "Body Background Color"
 msgstr "لون خلفية الجسم"
@@ -538,7 +540,7 @@ msgid "Global Fonts Family"
 msgstr "عائلة الخطوط العالمية"
 
 msgid "Google Fonts"
-msgstr "خطوط قوقل"
+msgstr "خطوط Google"
 
 msgid "System Fonts"
 msgstr "خطوط النظام"
@@ -604,13 +606,13 @@ msgid "Filter Posts By"
 msgstr "تصفية المشاركات حسب"
 
 msgid "Category"
-msgstr "الفئة"
+msgstr "تصنيف"
 
 msgid "Tag"
 msgstr "وسم"
 
 msgid "Select Category"
-msgstr "اختر التصنيف"
+msgstr "تحديد تصنيف"
 
 msgid "Select category to be shown on main slider section"
 msgstr "حدد الفئة التي سيتم عرضها في قسم شريط التمرير الرئيسي"
@@ -757,7 +759,7 @@ msgid "From WordPress Settings"
 msgstr "من إعدادات ووردبريس"
 
 msgid "Header Advertisement"
-msgstr "إعلان رأسي"
+msgstr "إعلان رأس"
 
 msgid "Header Section Advertisement"
 msgstr "إعلان القسم الرئيسي"
@@ -781,20 +783,19 @@ msgid ""
 "Please ensure that you have enabled the plugin's breadcrumbs before choosing"
 " other than Default"
 msgstr ""
-"يرجى التأكد من تمكين مسارات التنقل للمكون الإضافي قبل اختيار خيار آخر غير "
-"الافتراضي"
+"يرجى التأكد من تمكين مسارات التنقل للمكون الإضافي قبل اختيار غير الافتراضي"
 
 msgid "Default"
-msgstr "الإفتراضي"
+msgstr "افتراضي"
 
 msgid "Yoast SEO"
-msgstr "يوست سيو"
+msgstr "Yoast SEO"
 
 msgid "Rank Math"
 msgstr "إضافة Rank Math"
 
 msgid "NavXT"
-msgstr "نافكست"
+msgstr "NavXT"
 
 msgid "Global Settings"
 msgstr "إعدادات عامة"
@@ -851,7 +852,7 @@ msgid "Left"
 msgstr "يسار"
 
 msgid "Show"
-msgstr "إظهار"
+msgstr "عرض"
 
 msgid "Hide"
 msgstr "إخفاء"
@@ -980,7 +981,7 @@ msgid "Select layout for archive"
 msgstr "حدد تخطيط للأرشيف"
 
 msgid "List"
-msgstr "قائمة"
+msgstr "القائمة"
 
 msgid "Full"
 msgstr "كامل"
@@ -1064,7 +1065,7 @@ msgid "Hide footer Menu Section"
 msgstr "إخفاء قسم قائمة التذييل"
 
 msgid "Pages:"
-msgstr "صفحات:"
+msgstr "الصفحات:"
 
 msgid "Open Off-Canvas Navigation"
 msgstr "افتح التنقل خارج اللوحة"
@@ -1073,7 +1074,7 @@ msgid "Light/Dark Button"
 msgstr "زر الضوء/الظلام"
 
 msgid "Layout Options"
-msgstr "خيارات التنسيق"
+msgstr "خيارات التخطيط"
 
 msgid "Content Options"
 msgstr "خيارات المحتوى"
@@ -1085,7 +1086,7 @@ msgid "Please go to Customize>Themes Options for Single Post/Page."
 msgstr "يرجى الانتقال إلى تخصيص>خيارات السمات لمنشور/صفحة واحدة."
 
 msgid "Sidebar Options"
-msgstr "إعدادات الشريط الجانبي"
+msgstr "خيارات الشريط الجانبيّ"
 
 msgid "Content - Primary Sidebar"
 msgstr "المحتوى - الشريط الجانبي الأساسي"
@@ -1094,7 +1095,7 @@ msgid "Primary Sidebar - Content"
 msgstr "الشريط الجانبي الأساسي - المحتوى"
 
 msgid "No Sidebar"
-msgstr "لا يوجد شريط جانبي"
+msgstr "بدون شريط جانبي"
 
 msgid "Please go to Customize>Front-page Options for Homepage."
 msgstr "يرجى الانتقال إلى تخصيص>خيارات الصفحة الأمامية للصفحة الرئيسية."
@@ -1258,8 +1259,8 @@ msgid ""
 "%3$sreview and rating%4$s on WordPress.org! We'll continue to develop "
 "exciting new features for free in the future by sharing the love!"
 msgstr ""
-"مرحبًا، %1$s! لقد لاحظنا أنك تستخدم %2$s منذ بعض الوقت، ونأمل أن ينال "
-"إعجابك! سنكون ممتنين لو تفضلت بتزويدنا %3$sبالمراجعة والتقييم%4$s على "
+"مرحبًا، %1$s! لقد لاحظنا أنك تستخدم %2$s منذ بعض الوقت، ونأمل أن تنال "
+"إعجابك! سنكون ممتنين لو تفضلت بتزويدنا بمراجعة وتقييم %3$s%4$s على "
 "WordPress.org! سنستمر في تطوير ميزات جديدة ومثيرة مجانًا في المستقبل من خلال"
 " مشاركة الحب!"
 
@@ -1286,12 +1287,12 @@ msgstr "التالي"
 
 msgid "%s minute read"
 msgid_plural "%s minutes read"
-msgstr[0] "%s دقيقة قراءة"
-msgstr[1] "%s دقيقة للقراءة"
-msgstr[2] "%s دقيقة للقراءة"
-msgstr[3] "%s دقيقة للقراءة"
-msgstr[4] "%s دقيقة للقراءة"
-msgstr[5] "%s دقيقة للقراءة"
+msgstr[0] "قراءة %s دقيقة"
+msgstr[1] "تمت قراءة %s دقيقة"
+msgstr[2] "تمت قراءة %s دقيقة"
+msgstr[3] "تمت قراءة %s دقيقة"
+msgstr[4] "تمت قراءة %s دقيقة"
+msgstr[5] "تمت قراءة %s دقيقة"
 
 msgid "About the Author"
 msgstr "عن المؤلف"
@@ -1303,10 +1304,10 @@ msgid "View All Posts"
 msgstr "عرض كل المقالات"
 
 msgid "Posted on %s"
-msgstr "تم النشر على %s"
+msgstr "تم النشر في %s"
 
 msgid "Posted on %s %s"
-msgstr "تم النشر على %s %s"
+msgstr "تم النشر في %s %s"
 
 msgid "ago"
 msgstr "منذ"
@@ -1327,16 +1328,16 @@ msgid "View all search results"
 msgstr "عرض جميع نتائج البحث"
 
 msgid "View all results for \"%s\""
-msgstr "عرض جميع نتائج \"%s\""
+msgstr "عرض كافة النتائج لـ \"%s\""
 
 msgid "No results found."
 msgstr "لا توجد نتائج."
 
 msgid "Action failed. Please refresh the page and retry."
-msgstr "فشل الإجراء. يرجى تحديث الصفحة وإعادة المحاولة."
+msgstr "فشل الإجراء. يرجى تحديث الصفحة و المحاولة من جديد."
 
 msgid "Cheatin&#8217; huh?"
-msgstr "الغشاش&#8217; هاه؟"
+msgstr "تتحايل، هاه؟"
 
 msgid ""
 "%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit "
@@ -1345,8 +1346,8 @@ msgid ""
 "🎄✨"
 msgstr ""
 "%1$s 🎁 أتمنى أن ينال موضوع %2$s المجاني إعجابك! استمتع بالروح الاحتفالية مع "
-"هدية حصرية: ميزات %4$s المتميزة! استخدم الرمز %3$s عند الدفع. أتمنى لك "
-"موسمًا مليئًا بالعطلات السعيدة والتوفيرات الأكثر سعادة! 🎄✨"
+"هدية حصرية: ميزات %4$s المميزة! استخدم الكود %3$s عند الدفع. أتمنى لك موسمًا"
+" مليئًا بالعطلات السعيدة والتوفيرات الأكثر سعادة! 🎄✨"
 
 msgid "Claim Your Discount"
 msgstr "المطالبة بالخصم الخاص بك"
@@ -1373,7 +1374,7 @@ msgid "Profile image"
 msgstr "صورة الملف الشخصي"
 
 msgid "Name"
-msgstr "الاسم"
+msgstr "اسم"
 
 msgid "Descriptions"
 msgstr "أوصاف"
@@ -1459,7 +1460,7 @@ msgid "X"
 msgstr "X"
 
 msgid "Recent"
-msgstr "حُدِّث مؤخرا"
+msgstr "الأخيرة"
 
 msgid "Header Banner Ad Section"
 msgstr "قسم إعلان بانر الرأس"
@@ -1510,23 +1511,23 @@ msgid "Displays items on footer third column."
 msgstr "يعرض العناصر الموجودة في تذييل العمود الثالث."
 
 msgid "View your shopping cart"
-msgstr "عرض سلة التسوق الخاصة بك"
+msgstr "شاهد سلة مشترياتك"
 
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d عنصر"
-msgstr[1] "%d من العناصر"
-msgstr[2] "%d من العناصر"
-msgstr[3] "%d من العناصر"
-msgstr[4] "%d من العناصر"
-msgstr[5] "%d من العناصر"
+msgstr[1] "%d عنصر"
+msgstr[2] "%d عنصر"
+msgstr[3] "%d عنصر"
+msgstr[4] "%d عنصر"
+msgstr[5] "%d عنصر"
 
 msgid "Browse:"
-msgstr "تصفح:"
+msgstr "استعراض:"
 
 msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
-msgstr "مسارات التنقل"
+msgstr "Breadcrumbs"
 
 msgid "Home"
 msgstr "الرئيسية"
@@ -1535,7 +1536,7 @@ msgid "404 Not Found"
 msgstr "404 غير موجود"
 
 msgid "Archives"
-msgstr "أرشيفات"
+msgstr "الأرشيف"
 
 msgid "Search results for: %s"
 msgstr "نتائج البحث عن: %s"
@@ -1544,41 +1545,41 @@ msgid "Page %s"
 msgstr "صفحة %s"
 
 msgid "Comment Page %s"
-msgstr "تعليق الصفحة %s"
+msgstr "تعليقات صفحة %s"
 
 msgid "Minute %s"
-msgstr "دقيقة %s"
+msgstr "%s دقيقة"
 
 msgid "Week %s"
-msgstr "أسبوع %s"
+msgstr "%s أسبوع"
 
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
-msgstr "دقيقة و ساعة"
+msgstr "g:i a"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "د"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
-msgstr "ساعة"
+msgstr "g a"
 
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr "س"
+msgstr "Y"
 
 msgctxt "monthly archives date format"
 msgid "F"
-msgstr "شهر"
+msgstr "F"
 
 msgctxt "daily archives date format"
 msgid "j"
-msgstr "يوم"
+msgstr "j"
 
 msgctxt "weekly archives date format"
 msgid "W"
-msgstr "دبليو"
+msgstr "W"
 
 msgid "Install Required Plugins"
 msgstr "تثبيت الإضافات المطلوبة"
@@ -1606,12 +1607,12 @@ msgstr[5] "يتطلب هذا المظهر المكونات الإضافية ال
 
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "يوصي هذا المظهر بالمكون الإضافي التالي: %1$s."
-msgstr[1] "يوصي هذا المظهر بالمكونات الإضافية التالية: %1$s."
-msgstr[2] "يوصي هذا المظهر بالمكونات الإضافية التالية: %1$s."
-msgstr[3] "يوصي هذا المظهر بالمكونات الإضافية التالية: %1$s."
-msgstr[4] "يوصي هذا المظهر بالمكونات الإضافية التالية: %1$s."
-msgstr[5] "يوصي هذا المظهر بالمكونات الإضافية التالية: %1$s."
+msgstr[0] "يوصي هذا الموضوع بالمكون الإضافي التالي: %1$s."
+msgstr[1] "يوصي هذا الموضوع بالمكونات الإضافية التالية: %1$s."
+msgstr[2] "يوصي هذا الموضوع بالمكونات الإضافية التالية: %1$s."
+msgstr[3] "يوصي هذا الموضوع بالمكونات الإضافية التالية: %1$s."
+msgstr[4] "يوصي هذا الموضوع بالمكونات الإضافية التالية: %1$s."
+msgstr[5] "يوصي هذا الموضوع بالمكونات الإضافية التالية: %1$s."
 
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -1640,7 +1641,7 @@ msgstr[5] ""
 
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] "يتوفر تحديث لـ: %1$s."
+msgstr[0] "هناك تحديث متاح لـ: %1$s."
 msgstr[1] "هناك تحديثات متاحة للمكونات الإضافية التالية: %1$s."
 msgstr[2] "هناك تحديثات متاحة للمكونات الإضافية التالية: %1$s."
 msgstr[3] "هناك تحديثات متاحة للمكونات الإضافية التالية: %1$s."
@@ -1753,7 +1754,7 @@ msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
 msgstr ""
-"يرجى الاتصال بمطور الإضافة و طلب حزم الإضافة  الخاصة بهم وفقًا لإرشادات "
+"يرجى الاتصال بمطور الإضافة و طلب حزم الإضافة الخاصة بهم وفقًا لإرشادات "
 "WordPress."
 
 msgid ""
@@ -1867,7 +1868,7 @@ msgid "Source"
 msgstr "المصدر"
 
 msgid "Type"
-msgstr "نوع"
+msgstr "النوع"
 
 msgid "Version"
 msgstr "النسخة"
@@ -1888,7 +1889,7 @@ msgid "Upgrade message from the plugin author:"
 msgstr "رسالة التحديث من طرف مطور الإضافة:"
 
 msgid "Install"
-msgstr "تثبيت"
+msgstr "تنصيب"
 
 msgid "No plugins were selected to be installed. No action taken."
 msgstr "لم يتم اختيار إضافات ليتم تثبيتها. لم يتم اتخاذ أي إجراء."
@@ -1928,7 +1929,7 @@ msgstr ""
 "المضيفين، لذا يرجى التحلي بالصبر."
 
 msgid "%1$s done."
-msgstr "تم %1$s."
+msgstr "%1$s تم."
 
 msgid "All installations and activations have been completed."
 msgstr "تم الانتهاء من جميع التثبيتات والتفعيلات"
@@ -1959,7 +1960,7 @@ msgid "Search Results for: %s"
 msgstr "نتائج البحث عن: %s"
 
 msgid "Nothing Found"
-msgstr "لم يتم العثور على شيء"
+msgstr "لم يتم العثور على نتائج"
 
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "هل أنت مستعدّ لنشر مقالتك الأولى؟ <a href=\"%1$s\">ابدأ من هنا</a>."
@@ -1968,8 +1969,8 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"عذرا، ولكن لا شيء يطابق عبارة البحث الخاصة بك. المرجو المحاولة مرة أخرى "
-"باستخدام كلمات أخرى."
+"عذرًا، لا يوجد شيء يتطابق مع كلمات البحث التي استعملتها، الرجاء المحاولة من "
+"جديد باستعمال كلمات مفتاحية أخرى."
 
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
@@ -1977,7 +1978,7 @@ msgid ""
 msgstr "يبدو أننا لا نستطيع العثور على ما تبحث عنه. ربما قد يساعدك البحث."
 
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "تابع القراءة <span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "متابعة قراءة<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 msgid "Previous: %s"
 msgstr "السابق: %s"
@@ -1986,7 +1987,7 @@ msgid "Next: %s"
 msgstr "التالي: %s"
 
 msgid "Post navigation"
-msgstr "تنقل المقالة"
+msgstr "تصفّح المقالات"
 
 msgid "Update Blockspare Pro"
 msgstr "تحديث Blockspare برو"
@@ -2017,7 +2018,7 @@ msgid "Welcome to "
 msgstr "مرحبا بكم في"
 
 msgid "Free"
-msgstr "مجانًا"
+msgstr "مجاني"
 
 msgid "Start with Demo Sites"
 msgstr "ابدأ بالمواقع التجريبية"
@@ -2084,7 +2085,7 @@ msgid "Responsive Layout"
 msgstr "تخطيط متجاوب"
 
 msgid "Disable WordPress Emojis (GDPR Friendly)"
-msgstr "تعطيل WordPress Emojis (المتوافق مع اللائحة العامة لحماية البيانات)"
+msgstr "تعطيل رموز تعبيرية WordPress (الصديقة للقانون العام لحماية البيانات)"
 
 msgid "Basic Typography Style"
 msgstr "أسلوب الطباعة الأساسي"
@@ -2210,7 +2211,7 @@ msgstr ""
 "القراءة، الروابط، أهم المجالات)"
 
 msgid "AJAX Refresh + Caching for Post Analytics"
-msgstr "تحديث AJAX + التخزين المؤقت لتحليلات ما بعد النشر"
+msgstr "تحديث AJAX + التخزين المؤقت لتحليلات النشر"
 
 msgid "Centralized Site Analytics Page (Tabbed UI)"
 msgstr "صفحة تحليلات الموقع المركزية (واجهة المستخدم المبوبة)"
@@ -2367,7 +2368,7 @@ msgid "Change the color setting provide with the Theme."
 msgstr "تغيير إعداد اللون المقدم مع السمة."
 
 msgid "Selecting different categories can be done for different section."
-msgstr "يمكن اختيار فئات مختلفة لقسم مختلف."
+msgstr "يمكن تحديد فئات مختلفة لقسم مختلف."
 
 msgid "Front-page Option"
 msgstr "خيار الصفحة الأولى"
@@ -2546,7 +2547,7 @@ msgid "Change Log"
 msgstr "تغيير السجل"
 
 msgid "Features"
-msgstr "الميزات"
+msgstr "المميزات"
 
 msgid "Go to option"
 msgstr "انتقل إلى الخيار"

@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "Altre novità"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -54,7 +54,7 @@ msgstr ""
 "Esplora tutte le funzionalità su https://afthemes.com/products/morenews."
 
 msgid "AF themes"
-msgstr "Temi AF"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
@@ -66,8 +66,8 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links"
 " below or a search?"
 msgstr ""
-"Sembra non vi sia nulla in questa posizione. Vuoi provare qualcuno dei link "
-"qua sotto o a fare una ricerca?"
+"Sembra non vi sia nulla in questa posizione. Provare con qualcuno dei link "
+"qua sotto o una ricerca?"
 
 msgid "Dashboard"
 msgstr "Bacheca"
@@ -76,13 +76,13 @@ msgid "Customize"
 msgstr "Personalizza"
 
 msgid "Header Builder"
-msgstr "Generatore dell'header"
+msgstr "Generatore di intestazioni"
 
 msgid "Footer Builder"
-msgstr "Generatore di footer"
+msgstr "Generatore di piè di pagina"
 
 msgid "Starter Sites"
-msgstr "Siti Demo"
+msgstr "Siti iniziali"
 
 msgid "Elementor Kits"
 msgstr "Kit Elementor"
@@ -94,7 +94,7 @@ msgid "Upgrade to Pro"
 msgstr "Passa a Pro"
 
 msgid "Upgrade Now"
-msgstr "Aggiorna adesso"
+msgstr "Aggiorna ora"
 
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr ""
@@ -115,7 +115,7 @@ msgstr ""
 "richiesto! Costruito con Blockspare."
 
 msgid "Elespare plugin version should be more than %s."
-msgstr "La versione del plug-in Elespare dovrebbe essere superiore a %s."
+msgstr "La versione del plugin Elespare dovrebbe essere superiore a %s."
 
 msgid ""
 "One-click Import, Header/Footer Builder, Multilingual Support! Powered by "
@@ -125,10 +125,10 @@ msgstr ""
 "multilingue! Realizzato da Elespare."
 
 msgid "Are you sure you want to install this plugin?"
-msgstr "Sei sicuro di voler installare questo plugin?"
+msgstr "Vuoi davvero installare questo plugin?"
 
 msgid "Install Now"
-msgstr "Installa ora"
+msgstr "Installa adesso"
 
 msgid "Activate"
 msgstr "Attiva"
@@ -140,7 +140,7 @@ msgid "Get Starter Sites"
 msgstr "Ottieni siti di partenza"
 
 msgid "Get Started"
-msgstr "Come iniziare"
+msgstr "Get Started"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
@@ -172,8 +172,8 @@ msgid ""
 "Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
 "      Setup is simple — no coding required."
 msgstr ""
-"Scegli tra oltre 100 siti iniziali progettati per blog, riviste, aziende e "
-"altro ancora. La configurazione è semplice: non è richiesta alcuna codifica."
+"Scegli tra oltre 100 siti iniziali progettati per blog, riviste, aziende e altro ancora.\n"
+"      La configurazione è semplice: non è richiesta alcuna codifica."
 
 msgid "View Demos"
 msgstr "Visualizza le demo"
@@ -214,7 +214,7 @@ msgstr "Un commento su &ldquo;%1$s&rdquo;"
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s pensato su &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s ha pensato a &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s pensieri su &ldquo;%2$s&rdquo;"
 
 msgid "Comments are closed."
@@ -227,13 +227,13 @@ msgid "Primary Menu"
 msgstr "Menu principale"
 
 msgid "Social Menu"
-msgstr "Menu dei social network"
+msgstr "Menu social"
 
 msgid "Footer Menu"
 msgstr "Menu del footer"
 
 msgid "Skip to content"
-msgstr "Passa al contenuto"
+msgstr "Vai al contenuto"
 
 msgid "Open search form"
 msgstr "Apri il modulo di ricerca"
@@ -261,24 +261,24 @@ msgid "Close choose element modal"
 msgstr "Chiudi scegli l'elemento modale"
 
 msgid "Footer Layout"
-msgstr "Layout footer"
+msgstr "Layout del footer"
 
 msgid "Create dynamic header effortlessly with drag-and-drop builder."
 msgstr ""
 "Crea intestazioni dinamiche senza sforzo con il builder drag-and-drop."
 
 msgid "Header"
-msgstr "Intestazione"
+msgstr "Header"
 
 msgid "Create dynamic footer effortlessly with drag-and-drop builder."
 msgstr ""
 "Crea piè di pagina dinamico senza sforzo con il builder drag-and-drop."
 
 msgid "Footer"
-msgstr "Piè di pagina"
+msgstr "Footer"
 
 msgid "Enable %s Builder"
-msgstr "Abilita %s Builder"
+msgstr "Abilita il generatore %s"
 
 msgid "Add Element"
 msgstr "Aggiungi Elemento"
@@ -302,7 +302,7 @@ msgid "Site & Logo"
 msgstr "Sito e logo"
 
 msgid "Site Identity"
-msgstr "Identità del sito"
+msgstr "Denominazione del sito"
 
 msgid "You can change Site Identity from %s."
 msgstr "Puoi modificare l'identità del sito da %s."
@@ -383,16 +383,16 @@ msgid "live"
 msgstr "vivere"
 
 msgid "Widget 1"
-msgstr "Dispositivo 1"
+msgstr "Widget 1"
 
 msgid "Select Widget"
 msgstr "Seleziona widget"
 
 msgid "Widget 2"
-msgstr "Dispositivo 2"
+msgstr "Widget 2"
 
 msgid "Widget 3"
-msgstr "Dispositivo 3"
+msgstr "Widget 3"
 
 msgid "Navigation"
 msgstr "Navigazione"
@@ -449,16 +449,16 @@ msgid "Editor's Picks"
 msgstr "Scelte dell'editore"
 
 msgid "Trending Story"
-msgstr "Storia di tendenza"
+msgstr "Storie di tendenza"
 
 msgid "Featured Posts"
-msgstr "Articoli in evidenza"
+msgstr "Articoli in primo piano"
 
 msgid "Featured Categories"
-msgstr "Categorie in primo piano"
+msgstr "Categorie in evidenza"
 
 msgid "Post list Section Title %d"
-msgstr "Titolo della sezione dell'elenco dei post %d"
+msgstr "Elenco post Titolo sezione %d"
 
 msgid "View More"
 msgstr "Visualizza altro"
@@ -491,7 +491,7 @@ msgid "Header Image Mode"
 msgstr "Modalità immagine intestazione"
 
 msgid "Image visibility may vary as per the mode"
-msgstr "La visibilità dell'immagine può variare in base alla modalità"
+msgstr "La visibilità dell'immagine può variare a seconda della modalità"
 
 msgid "Above Site Title"
 msgstr "Sopra il titolo del sito"
@@ -509,7 +509,7 @@ msgid "MoreNews Pro"
 msgstr "Altre notizie Pro"
 
 msgid "Site Color Mode"
-msgstr "Modalità colore del sito"
+msgstr "Modalità di colore del sito"
 
 msgid "Light"
 msgstr "Chiaro"
@@ -535,10 +535,10 @@ msgid "Secondary Color"
 msgstr "Colore secondario"
 
 msgid "Fonts & Typography"
-msgstr "Caratteri e tipografia"
+msgstr "Font e tipografia"
 
 msgid "Font Family Section"
-msgstr "Sezione Famiglia di caratteri"
+msgstr "Famiglia di font della sezione"
 
 msgid "Global Fonts Family"
 msgstr "Famiglia di caratteri globali"
@@ -550,13 +550,13 @@ msgid "System Fonts"
 msgstr "Font di sistema"
 
 msgid "Site Title Font"
-msgstr "Font del titolo del sito web"
+msgstr "Font del titolo del sito"
 
 msgid "Primary Font"
-msgstr "Carattere primario"
+msgstr "Font principale"
 
 msgid "Secondary Font"
-msgstr "Carattere secondario"
+msgstr "Font secondario"
 
 msgid "Main Banner Options"
 msgstr "Opzioni banner principale"
@@ -604,7 +604,7 @@ msgid "Main News Section "
 msgstr "Sezione principale delle notizie"
 
 msgid "Section Title "
-msgstr "Titolo della sezione"
+msgstr "Titolo sezione"
 
 msgid "Filter Posts By"
 msgstr "Filtra i post per"
@@ -613,10 +613,10 @@ msgid "Category"
 msgstr "Categoria"
 
 msgid "Tag"
-msgstr "Etichetta"
+msgstr "Tag"
 
 msgid "Select Category"
-msgstr "Seleziona una categoria"
+msgstr "Seleziona la categoria"
 
 msgid "Select category to be shown on main slider section"
 msgstr ""
@@ -624,12 +624,12 @@ msgstr ""
 "scorrimento principale"
 
 msgid "Select Tag"
-msgstr "Seleziona Etichetta"
+msgstr "Seleziona tag"
 
 msgid "Select tag to be shown on main slider section"
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Seleziona il tag da mostrare nella sezione del dispositivo di scorrimento "
+"principale"
 
 msgid "Editor's Picks Section"
 msgstr "Sezione Scelti dalla redazione"
@@ -689,7 +689,7 @@ msgid "Section %d"
 msgstr "Sezione %d"
 
 msgid "Section Title"
-msgstr "Titolo della Sezione"
+msgstr "Titolo della sezione"
 
 msgid "Front-page Layout Settings"
 msgstr "Impostazioni del layout della prima pagina"
@@ -710,16 +710,16 @@ msgid "Front-page Content Alignment"
 msgstr "Allineamento dei contenuti in prima pagina"
 
 msgid "Select frontpage content alignment"
-msgstr "Seleziona l'allineamento del contenuto della prima pagina"
+msgstr "Seleziona l'allineamento del contenuto della homepage"
 
 msgid "Home Content - Home Sidebar"
-msgstr "Contenuti Home - Barra laterale Home"
+msgstr "Contenuto della home - Barra laterale della home"
 
 msgid "Home Sidebar - Home Content"
-msgstr "Barra laterale Home - Contenuti Home"
+msgstr "Barra laterale della home - Contenuto della home"
 
 msgid "Only Home Content"
-msgstr "Solo contenuto domestico"
+msgstr "Solo contenuti home"
 
 msgid "Header Options"
 msgstr "Opzioni dell'header"
@@ -734,7 +734,7 @@ msgid "Enable"
 msgstr "Abilita"
 
 msgid "Disable"
-msgstr "Disattiva"
+msgstr "Disabilita"
 
 msgid "Disable Sticky Header"
 msgstr "Disabilita intestazione fissa"
@@ -798,10 +798,10 @@ msgid "Default"
 msgstr "Predefinito"
 
 msgid "Yoast SEO"
-msgstr "Ottimo SEO"
+msgstr "Yoast SEO"
 
 msgid "Rank Math"
-msgstr "Classifica matematica"
+msgstr "Rank Math"
 
 msgid "NavXT"
 msgstr "NavXT"
@@ -897,10 +897,10 @@ msgid "Show Icon"
 msgstr "Mostra icona"
 
 msgid "None"
-msgstr "Nessuna"
+msgstr "Nessuno"
 
 msgid "Date Format"
-msgstr "Formato data"
+msgstr "Formato della data"
 
 msgid "WordPress Default Date Format"
 msgstr "Formato data predefinito di WordPress"
@@ -930,7 +930,7 @@ msgid "Title"
 msgstr "Titolo"
 
 msgid "Link"
-msgstr "Collegamento"
+msgstr "Link"
 
 msgid "Single Post"
 msgstr "Articolo singolo"
@@ -951,7 +951,7 @@ msgid "Single Content Mode"
 msgstr "Modalità contenuto singolo"
 
 msgid "Spacious"
-msgstr "Spazioso"
+msgstr "Largo"
 
 msgid "Social Share Option"
 msgstr "Opzione di condivisione sociale"
@@ -963,7 +963,7 @@ msgid "Top - Default"
 msgstr "In alto: predefinito"
 
 msgid "Bottom"
-msgstr "In basso"
+msgstr "Basso"
 
 msgid "Show Author Bio under Content"
 msgstr "Mostra la biografia dell'autore in Contenuto"
@@ -978,13 +978,13 @@ msgid "Enable Related Posts"
 msgstr "Abilita gli articoli correlati"
 
 msgid "Archive Settings"
-msgstr "Impostazioni di archivio"
+msgstr "Impostazioni archivio"
 
 msgid "Disable Main Banner on Blog"
 msgstr "Disabilita il banner principale sul blog"
 
 msgid "Archive layout"
-msgstr "Disposizione dell'archivio"
+msgstr "Layout archivio"
 
 msgid "Select layout for archive"
 msgstr "Seleziona il layout per l'archivio"
@@ -993,7 +993,7 @@ msgid "List"
 msgstr "Elenco"
 
 msgid "Full"
-msgstr "Intero"
+msgstr "Dimensione piena"
 
 msgid "Image Alignment"
 msgstr "Allineamento immagine"
@@ -1023,7 +1023,7 @@ msgid "Post Excerpt"
 msgstr "Riassunto dell'articolo"
 
 msgid "Full Content"
-msgstr "Contenuto completo"
+msgstr "Pieno Contenuto"
 
 msgid "Search Options"
 msgstr "Opzioni di ricerca"
@@ -1047,13 +1047,13 @@ msgid "Sidebar Settings"
 msgstr "Impostazioni barra laterale"
 
 msgid "Make Sidebar Sticky"
-msgstr "Rendi la barra laterale appiccicosa"
+msgstr "Rendi permanente la barra laterale"
 
 msgid "Sidebar Sticky Position"
-msgstr "Posizione fissa della barra laterale"
+msgstr "Posizione della barra laterale fissa"
 
 msgid "Top"
-msgstr "In ato"
+msgstr "Alto"
 
 msgid "You May Have Missed"
 msgstr "Potresti esserti perso"
@@ -1141,7 +1141,7 @@ msgid "WP Post Author"
 msgstr "Autore del post WP"
 
 msgid "Free Live Chat using 3CX"
-msgstr "Chat dal vivo gratuita utilizzando 3CX"
+msgstr "Live Chat gratuita con 3CX"
 
 msgid "Large Post with Background"
 msgstr "Post di grandi dimensioni con sfondo"
@@ -1165,7 +1165,7 @@ msgid "Featured News"
 msgstr "Notizie in evidenza"
 
 msgid "Three Columns Posts"
-msgstr "Post su tre colonne"
+msgstr "Post a tre colonne"
 
 msgid "Three Columns"
 msgstr "Tre colonne"
@@ -1180,7 +1180,7 @@ msgid "3 Columns Post Grid with Dark Background"
 msgstr "Griglia post a 3 colonne con sfondo scuro"
 
 msgid "Post Grid with Dark Background"
-msgstr "Griglia post con sfondo scuro"
+msgstr "Griglia di post con sfondo scuro"
 
 msgid "Post List with Dark Background"
 msgstr "Elenco dei post con sfondo scuro"
@@ -1261,7 +1261,7 @@ msgid "Single Column - 2"
 msgstr "Colonna singola - 2"
 
 msgid "Post List - 2"
-msgstr "Elenco dei post - 2"
+msgstr "Elenco dei messaggi - 2"
 
 msgid ""
 "Howdy, %1$s! We've noticed that you've been using %2$s for some time now, we"
@@ -1293,7 +1293,7 @@ msgid "Previous"
 msgstr "Precedente"
 
 msgid "Next"
-msgstr "Prossimo"
+msgstr "Successivo"
 
 msgid "%s minute read"
 msgid_plural "%s minutes read"
@@ -1340,7 +1340,8 @@ msgid "No results found."
 msgstr "Nessun risultato trovato."
 
 msgid "Action failed. Please refresh the page and retry."
-msgstr "L'azione non è andata a buon fine. Ricarica la pagina e riprova."
+msgstr ""
+"L’azione non è andata a buon fine. Ricarica la pagina e prova di nuovo."
 
 msgid "Cheatin&#8217; huh?"
 msgstr "Vuoi barare, eh?"
@@ -1352,18 +1353,18 @@ msgid ""
 "🎄✨"
 msgstr ""
 "%1$s 🎁 Spero che ti piaccia il nostro tema gratuito %2$s! Immergiti nello "
-"spirito festivo con un regalo esclusivo: funzionalità premium %4$s! Utilizza"
+"spirito festivo con un regalo esclusivo: %4$s funzionalità premium! Utilizza"
 " il codice %3$s al momento del pagamento. Ti auguro una stagione piena di "
-"gioiose vacanze e di risparmi ancora più felici! 🎄✨"
+"gioiose vacanze e risparmi ancora più felici! 🎄✨"
 
 msgid "Claim Your Discount"
-msgstr "Richiedi il tuo sconto"
+msgstr "Approfitta dello sconto"
 
 msgid "Power Bundle"
-msgstr "Pacchetto di potenza"
+msgstr "Power Bundle"
 
 msgid "All Themes Plan"
-msgstr "Piano di tutti i temi"
+msgstr "Tutti i piani del tema"
 
 msgid "Maybe Later"
 msgstr "Forse più tardi"
@@ -1408,10 +1409,10 @@ msgid "AFTMN Post Double Columns"
 msgstr "AFMN Post doppie colonne"
 
 msgid "Select Category 1"
-msgstr "Seleziona la categoria 1"
+msgstr "Seleziona categoria 1"
 
 msgid "Select Category 2"
-msgstr "Seleziona la categoria 2"
+msgstr "Seleziona categoria 2"
 
 msgid "AFTMN Post Grid"
 msgstr "Griglia di posta AFMN"
@@ -1420,7 +1421,7 @@ msgid "AFTMN Post List"
 msgstr "Elenco dei post dell'AFMN"
 
 msgid "Displays posts single column from selected categories."
-msgstr "Visualizza i post in una singola colonna dalle categorie selezionate."
+msgstr "Visualizza uno slider di articoli della categoria selezionata."
 
 msgid "AFTMN Post Single Column"
 msgstr "AFMN Post Colonna singola"
@@ -1442,7 +1443,7 @@ msgid "AFTMN Social Contacts"
 msgstr "Contatti sociali dell'AFTMN"
 
 msgid "Connect with Us"
-msgstr "Connettiti con noi"
+msgstr "Conttattaci"
 
 msgid ""
 "Social menu is not set. You need to create menu and assign it to Social Menu"
@@ -1452,16 +1453,16 @@ msgstr ""
 "menu Social nelle Impostazioni menu."
 
 msgid "AFTMN Trending News"
-msgstr "Notizie di tendenza dell'AFTMN"
+msgstr "Notizie di tendenza dell'AFMN"
 
 msgid "Upload"
 msgstr "Carica"
 
 msgid "Select Image"
-msgstr "Seleziona un'immagine"
+msgstr "Seleziona immagine"
 
 msgid "Choose Image"
-msgstr "Scegli un'immagine"
+msgstr "Scegli immagine"
 
 msgctxt "Remove"
 msgid "X"
@@ -1474,58 +1475,57 @@ msgid "Header Banner Ad Section"
 msgstr "Sezione annuncio banner di intestazione"
 
 msgid "Add widgets for frontpage banner section advertisement."
-msgstr ""
-"Aggiungi widget per la pubblicità nella sezione banner della prima pagina."
+msgstr "Aggiungi i widget pubblicitari della sezione banner della homepage."
 
 msgid "Off Canvas Drawer Menu Section"
 msgstr "Sezione del menu del cassetto della tela disattivata"
 
 msgid "Add widgets for off-canvas section."
-msgstr "Aggiungi widget per la sezione fuori dallo schermo."
+msgstr "Aggiungi i widget per la sezione off-canvas."
 
 msgid "Main Sidebar"
 msgstr "Barra laterale principale"
 
 msgid "Add widgets for main sidebar."
-msgstr "Aggiungi widget per la barra laterale principale."
+msgstr "Aggiungi i widget per la barra laterale principale."
 
 msgid "Front-page Content Section"
 msgstr "Sezione dei contenuti della prima pagina"
 
 msgid "Add widgets to front-page contents section."
-msgstr "Aggiungi widget alla sezione dei contenuti della prima pagina."
+msgstr "Aggiungi i widget alla sezione contenuti della homepage."
 
 msgid "Front-page Sidebar Section"
 msgstr "Sezione della barra laterale della prima pagina"
 
 msgid "Add widgets to front-page sidebar section."
-msgstr "Aggiungi widget alla sezione della barra laterale in prima pagina."
+msgstr "Aggiungi i widget alla barra laterale della homepage."
 
 msgid "Footer Widget 1"
-msgstr "Widget 1 del footer"
+msgstr "Footer Widget 1"
 
 msgid "Displays items on footer first column."
-msgstr "Visualizza gli elementi nella prima colonna del piè di pagina."
+msgstr "Visualizza gli elementi nella prima colonna del footer."
 
 msgid "Footer Widget 2"
-msgstr "Widget 2 del footer"
+msgstr "Footer Widget 2"
 
 msgid "Displays items on footer second column."
-msgstr "Visualizza gli elementi nella seconda colonna del piè di pagina."
+msgstr "Visualizza gli elementi nella seconda colonna del footer."
 
 msgid "Footer Widget 3"
-msgstr "Widget 3 del footer"
+msgstr "Footer Widget 3"
 
 msgid "Displays items on footer third column."
 msgstr "Visualizza gli elementi nella terza colonna del footer."
 
 msgid "View your shopping cart"
-msgstr "Visualizza il carrello"
+msgstr "Visualizza il tuo carrello"
 
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "Articolo %d"
-msgstr[1] "%d elementi"
+msgstr[0] "%d elemento"
+msgstr[1] "%d articoli"
 
 msgid "Browse:"
 msgstr "Sfoglia:"
@@ -1535,7 +1535,7 @@ msgid "Breadcrumbs"
 msgstr "Breadcrumb"
 
 msgid "Home"
-msgstr "Homepage"
+msgstr "Home"
 
 msgid "404 Not Found"
 msgstr "404: pagina non trovata"
@@ -1550,7 +1550,7 @@ msgid "Page %s"
 msgstr "Pagina %s"
 
 msgid "Comment Page %s"
-msgstr "Pagina dei commenti %s"
+msgstr "Commento Pagina %s"
 
 msgid "Minute %s"
 msgstr "Minuto %s"
@@ -1560,15 +1560,15 @@ msgstr "Settimana %s"
 
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
-msgstr "H:i"
+msgstr "g:i a"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "io"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
-msgstr "H"
+msgstr "g a"
 
 msgctxt "yearly archives date format"
 msgid "Y"
@@ -1580,7 +1580,7 @@ msgstr "F"
 
 msgctxt "daily archives date format"
 msgid "j"
-msgstr "J"
+msgstr "j"
 
 msgctxt "weekly archives date format"
 msgid "W"
@@ -1603,12 +1603,12 @@ msgstr "Qualcosa non ha funzionato con le API del plugin."
 
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "Questo tema richiede il seguente plug-in: %1$s."
+msgstr[0] "Questo tema richiede il seguente plugin: %1$s."
 msgstr[1] "Questo tema richiede i seguenti plugin: %1$s."
 
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "Questo tema consiglia il seguente plug-in: %1$s."
+msgstr[0] "Questo tema consiglia il seguente plugin: %1$s."
 msgstr[1] "Questo tema consiglia i seguenti plugin: %1$s."
 
 msgid ""
@@ -1627,16 +1627,16 @@ msgstr[1] ""
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] "È disponibile un aggiornamento per: %1$s."
-msgstr[1] "Sono disponibili aggiornamenti per i seguenti plug-in: %1$s."
+msgstr[1] "Sono disponibili aggiornamenti per i seguenti plugin: %1$s."
 
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "Il seguente plug-in richiesto è attualmente inattivo: %1$s."
-msgstr[1] "I seguenti plug-in richiesti sono attualmente inattivi: %1$s."
+msgstr[0] "Il seguente plugin richiesto è attualmente inattivo: %1$s."
+msgstr[1] "I seguenti plugin richiesti sono attualmente inattivi: %1$s."
 
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "Il seguente plug-in consigliato è attualmente inattivo: %1$s."
+msgstr[0] "Il seguente plugin consigliato è attualmente inattivo: %1$s."
 msgstr[1] "I seguenti plugin consigliati sono attualmente inattivi: %1$s."
 
 msgid "Begin installing plugin"
@@ -1666,7 +1666,7 @@ msgstr "Il plugin è stato attivato correttamente."
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] "Il seguente plugin è stato attivato con successo:"
-msgstr[1] "I seguenti plugin sono stati attivati ​​con successo:"
+msgstr[1] "I seguenti plugin sono stati attivati con successo:"
 
 msgid "No action taken. Plugin %1$s was already active."
 msgstr "Nessuna azione effettuata. Il plugin %1$s era già attivo."
@@ -1730,7 +1730,7 @@ msgid "TGMPA v%s"
 msgstr "TGMPA v%s"
 
 msgid "Required"
-msgstr "Obbligatorio"
+msgstr "Necessario"
 
 msgid "Recommended"
 msgstr "Consigliato"
@@ -1751,7 +1751,7 @@ msgid "Installed But Not Activated"
 msgstr "Installato ma non attivato"
 
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 msgid "Required Update not Available"
 msgstr "Aggiornamento richiesto non disponibile"
@@ -1769,8 +1769,8 @@ msgstr "%1$s, %2$s"
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "Tutti i <span class=\"count\">(%s)</span>"
-msgstr[1] "Tutti i <span class=\"count\">(%s)</span>"
+msgstr[0] "Tutti <span class=\"count\">(%s)</span>"
+msgstr[1] "Tutti <span class=\"count\">(%s)</span>"
 
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
@@ -1804,7 +1804,7 @@ msgid "No plugins to install, update or activate."
 msgstr "Nessun plugin da installare, aggiornare o attivare."
 
 msgid "Plugin"
-msgstr "Collegare"
+msgstr "Plugin"
 
 msgid "Source"
 msgstr "Sorgente"
@@ -1904,13 +1904,13 @@ msgid "Blank Canvas"
 msgstr "Tela bianca"
 
 msgid "Page Builder Full Width"
-msgstr "Generatore di pagine a larghezza intera"
+msgstr "Page Builder Full Width"
 
 msgid "Search Results for: %s"
 msgstr "Risultati della ricerca per: %s"
 
 msgid "Nothing Found"
-msgstr "Non abbiamo trovato nulla"
+msgstr "Nessun risultato trovato"
 
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
@@ -1928,10 +1928,11 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Sembra che quello che stai cercando non ci sia. Prova con una nuova ricerca."
+"Non riusciamo a trovare quello che cerchi. Forse eseguire una ricerca "
+"potrebbe essere di aiuto."
 
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Leggi tutto<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continua leggere<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 msgid "Previous: %s"
 msgstr "Precedente: %s"
@@ -1959,7 +1960,7 @@ msgid ""
 "pages with complete flexibility."
 msgstr ""
 "Crea e personalizza facilmente le tue pagine con una vasta libreria di "
-"blocchi e pattern Gutenberg, perfetti per blog, riviste e siti aziendali. "
+"blocchi e modelli Gutenberg, perfetti per blog, riviste e siti aziendali. "
 "Aggiungi griglie di post, dispositivi di scorrimento e caroselli senza "
 "toccare una singola riga di codice. Importa dati demo e crea facilmente "
 "pagine multilingue e visivamente accattivanti con completa flessibilità."
@@ -1971,13 +1972,13 @@ msgid "Welcome to "
 msgstr "Benvenuto a"
 
 msgid "Free"
-msgstr "Libero"
+msgstr "Gratuito"
 
 msgid "Start with Demo Sites"
 msgstr "Inizia con i siti demo"
 
 msgid "Start Customizing"
-msgstr "Inizia a personalizzare"
+msgstr "Inizia la personalizzazione"
 
 msgid "Update Elespare Pro"
 msgstr "Aggiorna Elespare Pro"
@@ -2110,7 +2111,7 @@ msgid "Front-page Banner Layouts Basic (5+ Layouts)"
 msgstr "Layout banner prima pagina Base (5+ layout)"
 
 msgid "Front-page Banner Layouts Advanced (30+ Layouts)"
-msgstr "Layout banner fronte pagina Avanzati (oltre 30 layout)"
+msgstr "Layout banner prima pagina Avanzati (oltre 30 layout)"
 
 msgid "Banner Post Filter: Category & Tag"
 msgstr "Filtro post banner: categoria e tag"
@@ -2205,7 +2206,7 @@ msgid "Category-wise Post Layout (Global Only)"
 msgstr "Layout del post per categoria (solo globale)"
 
 msgid "Category-wise Post Layout (Category Specific)"
-msgstr "Layout del post per categoria (specifico della categoria)"
+msgstr "Layout del post per categoria (specifico per categoria)"
 
 msgid "Pagination Numeric"
 msgstr "Impaginazione numerica"
@@ -2333,7 +2334,7 @@ msgstr ""
 "dell'intestazione."
 
 msgid "Color Options"
-msgstr "Opzioni del colore"
+msgstr "Opzioni dei colori"
 
 msgid "Change the color setting provide with the Theme."
 msgstr "Cambia l'impostazione del colore fornita con il tema."
@@ -2434,7 +2435,7 @@ msgid ""
 msgstr ""
 "TemplateSpare - Creazione di siti web senza codice: strumento di "
 "importazione/esportazione e migrazione completa del sito con 1 clic. Ottieni"
-" subito siti iniziali pronti all'uso e crea siti Web moderni in pochi "
+" subito siti di partenza pronti all'uso e crea siti Web moderni in pochi "
 "minuti."
 
 msgid ""
@@ -2514,19 +2515,19 @@ msgstr ""
 "crea siti Web moderni in pochi minuti, non in settimane."
 
 msgid "Get started"
-msgstr "Per iniziare"
+msgstr "Inizia"
 
 msgid "Useful Plugins"
 msgstr "Plugin utili"
 
 msgid "Free vs Pro"
-msgstr "Confronto fra le versioni Free e PRO"
+msgstr "Gratuito vs Pro"
 
 msgid "Change Log"
 msgstr "Registro delle modifiche"
 
 msgid "Features"
-msgstr "Carattestistiche"
+msgstr "Funzionalità"
 
 msgid "Go to option"
 msgstr "Vai alle opzioni"

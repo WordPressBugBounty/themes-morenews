@@ -4,10 +4,10 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Advanced Tool 2025\n"
+"X-Generator: Advanced Localization Tool 2026\n"
 
 msgid "MoreNews"
-msgstr "ЕщеНовости"
+msgstr "MoreNews"
 
 msgid "https://afthemes.com/products/morenews/"
 msgstr "https://afthemes.com/products/morenews/"
@@ -39,7 +39,7 @@ msgstr ""
 "GUTENBERG, ELEMENTOR, Brizy, Divi и другими популярными конструкторами "
 "страниц, предоставляя вам полную свободу перетаскивания для создания "
 "уникальных макетов, не касаясь кода. Благодаря более чем 100 готовым к "
-"импорту стартовым сайтам, более 30 пользовательским виджетам, расширенным "
+"импорту стартовым сайтам, более 30 настраиваемым виджетам, расширенным "
 "шаблонам блоков, гибким параметрам баннера и макета, поддержке AMP и полной "
 "интеграции WOOCOMMERCE, MoreNews позволяет за считанные минуты легко "
 "запустить что угодно, от простого блога до профессионального интернет-"
@@ -47,21 +47,21 @@ msgstr ""
 "CORE WEB VITALS, скорости и адаптивного дизайна, обеспечивая отличную "
 "производительность на всех устройствах, и создан с учетом доступности WCAG, "
 "соответствия GDPR и чистого, облегченного кода для долгосрочной надежности. "
-"MoreNews — многоязычная тема с поддержкой RTL и демонстрационным контентом, "
-"доступным на нескольких языках, включая английский, испанский, немецкий, "
-"французский, японский, китайский и арабский, — это перспективная тема, "
-"предназначенная для авторов, которые ценят стиль, масштабируемость и "
-"удобство взаимодействия с пользователем по всему миру. Ознакомьтесь со всеми"
-" функциями на https://afthemes.com/products/morenews."
+"MoreNews — многоязычная тема с поддержкой RTL и демо-контентом, доступным на"
+" нескольких языках, включая английский, испанский, немецкий, французский, "
+"японский, китайский и арабский, — это перспективная тема, предназначенная "
+"для авторов, которые ценят стиль, масштабируемость и удобство взаимодействия"
+" с пользователем по всему миру. Ознакомьтесь со всеми функциями на "
+"https://afthemes.com/products/morenews."
 
 msgid "AF themes"
-msgstr "Темы АФ"
+msgstr "AF themes"
 
 msgid "https://www.afthemes.com/"
 msgstr "https://www.afthemes.com/"
 
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Упс! Эта страница не найдена."
+msgstr "Упс! Страница не найдена."
 
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links"
@@ -71,25 +71,25 @@ msgstr ""
 "ссылок ниже или поиском?"
 
 msgid "Dashboard"
-msgstr "Консоль"
+msgstr "Панель управления"
 
 msgid "Customize"
-msgstr "Настроить"
+msgstr "Customize"
 
 msgid "Header Builder"
-msgstr "Конструктор заголовков"
+msgstr "Конструктор шапки"
 
 msgid "Footer Builder"
 msgstr "Конструктор подвала"
 
 msgid "Starter Sites"
-msgstr "Стартовые сайты"
+msgstr "Starter Sites"
 
 msgid "Elementor Kits"
-msgstr "Комплекты Элементор"
+msgstr "Elementor Kits"
 
 msgid "Block Patterns"
-msgstr "Паттерны блоков"
+msgstr "Паттерны блока"
 
 msgid "Upgrade to Pro"
 msgstr "Обновить до Pro"
@@ -106,7 +106,7 @@ msgstr ""
 "шага!"
 
 msgid "Blockspare plugin version should be more than %s."
-msgstr "Версия плагина Blockspare должна быть больше %s."
+msgstr "Версия плагина Blockspare должна быть выше %s."
 
 msgid ""
 "One-click Demo Import, Block Editor Ready, No Code Required! Built with "
@@ -129,7 +129,7 @@ msgid "Are you sure you want to install this plugin?"
 msgstr "Вы уверены, что хотите установить этот плагин?"
 
 msgid "Install Now"
-msgstr "Установить сейчас"
+msgstr "Установить"
 
 msgid "Activate"
 msgstr "Активировать"
@@ -141,7 +141,7 @@ msgid "Get Starter Sites"
 msgstr "Получить стартовые сайты"
 
 msgid "Get Started"
-msgstr "Начать работу"
+msgstr "Get Started"
 
 msgid ""
 "The \"Get Started\" action will install/activate the Templatespare and "
@@ -167,14 +167,14 @@ msgstr ""
 "красивый профессиональный веб-сайт — быстро и уверенно."
 
 msgid "🚀 Start With One Click"
-msgstr "🚀 Начните в один клик"
+msgstr "🚀 Начните с одного щелчка"
 
 msgid ""
 "Choose from 100+ starter sites designed for blogs, magazines, businesses & more.\n"
 "      Setup is simple — no coding required."
 msgstr ""
-"Выбирайте из более чем 100 стартовых сайтов, предназначенных для блогов, "
-"журналов, бизнеса и многого другого. Настройка проста — кодирование не "
+"Выбирайте из 100+ стартовых сайтов, предназначенных для блогов, журналов, "
+"компаний и многого другого. Установить сайт очень просто - кодирование не "
 "требуется."
 
 msgid "View Demos"
@@ -187,13 +187,13 @@ msgid "🤝 We're Here for You"
 msgstr "Мы всегда готовы помочь"
 
 msgid "Whether you're just starting or customizing your site."
-msgstr "Независимо от того, начинаете ли вы или настраиваете свой сайт."
+msgstr "Неважно, начинаете ли вы или занимаетесь настройкой темы."
 
 msgid "Documentation"
 msgstr "Документация"
 
 msgid "Video Tutorials"
-msgstr "Видеоуроки"
+msgstr "Видео уроки"
 
 msgid "Support"
 msgstr "Поддержка"
@@ -221,7 +221,7 @@ msgstr[1] "%1$s мысли о &ldquo;%2$s&rdquo;"
 msgstr[2] "%1$s мысли о &ldquo;%2$s&rdquo;"
 
 msgid "Comments are closed."
-msgstr "Обсуждение закрыто."
+msgstr "Комментарии закрыты."
 
 msgid "%1$s by %2$s."
 msgstr "%1$s от %2$s."
@@ -233,20 +233,20 @@ msgid "Social Menu"
 msgstr "Меню соцсетей"
 
 msgid "Footer Menu"
-msgstr "Меню подвала"
+msgstr "Нижнее меню"
 
 msgid "Skip to content"
 msgstr "Перейти к содержимому"
 
 msgid "Open search form"
-msgstr "Открыть строку поиска"
+msgstr "Открыть форму поиска"
 
 msgid ""
 "Click the setting <span class=\"dashicons dashicons-admin-generic\"></span> "
 "on each element to customize its settings."
 msgstr ""
-"Нажмите параметр <span class=\"dashicons dashicons-admin-generic\"></span> "
-"на каждом элементе, чтобы настроить его параметры."
+"Нажмите на настройку <span class=\"dashicons Dashicons-admin-"
+"generic\"></span> на каждом элементе, чтобы настроить его параметры."
 
 msgid "Hide builder panel"
 msgstr "Скрыть панель конструктора"
@@ -272,7 +272,7 @@ msgstr ""
 "перетаскивания."
 
 msgid "Header"
-msgstr "Заголовок сайта"
+msgstr "Заголовок"
 
 msgid "Create dynamic footer effortlessly with drag-and-drop builder."
 msgstr ""
@@ -280,7 +280,7 @@ msgstr ""
 "возможностью перетаскивания."
 
 msgid "Footer"
-msgstr "Нижний колонтитул"
+msgstr "Подвал"
 
 msgid "Enable %s Builder"
 msgstr "Включить %s Builder"
@@ -295,7 +295,7 @@ msgid "Configure Element"
 msgstr "Настроить элемент"
 
 msgid "Desktop"
-msgstr "Настольный ПК"
+msgstr "Компьютер"
 
 msgid "Element Settings"
 msgstr "Настройки элемента"
@@ -316,7 +316,7 @@ msgid "Promotion"
 msgstr "Акции"
 
 msgid "Off Canvas"
-msgstr "Вне экрана"
+msgstr "Вне экрана (Off Canvas)"
 
 msgid "Off Canvas Widget Area"
 msgstr "Область виджетов за пределами холста"
@@ -359,13 +359,13 @@ msgid "Top Navigation"
 msgstr "Верхняя навигация"
 
 msgid "pro"
-msgstr "про"
+msgstr "pro"
 
 msgid "Site Mode"
 msgstr "Режим сайта"
 
 msgid "Custom HTML"
-msgstr "HTML-код"
+msgstr "Произвольный HTML"
 
 msgid "HTML Content"
 msgstr "HTML-содержимое"
@@ -377,13 +377,13 @@ msgid "Searc Form"
 msgstr "Форма поиска"
 
 msgid "Custom Link"
-msgstr "Произвольная ссылка"
+msgstr "Пользовательская ссылка"
 
 msgid "Custom link"
 msgstr "Пользовательская ссылка"
 
 msgid "live"
-msgstr "в реальном времени"
+msgstr "действующий"
 
 msgid "Widget 1"
 msgstr "Виджет 1"
@@ -401,10 +401,10 @@ msgid "Navigation"
 msgstr "Навигация"
 
 msgid "Pro"
-msgstr "Про"
+msgstr "Pro"
 
 msgid "Copyright"
-msgstr "Авторские права"
+msgstr "Copyright"
 
 msgid "Add widget to display . %s"
 msgstr "Добавьте виджет для отображения. %s"
@@ -419,7 +419,7 @@ msgid "-- Select --"
 msgstr "-- Выбрать --"
 
 msgid "Live"
-msgstr "Жить"
+msgstr "В реальном времени"
 
 msgid "Popular Tags"
 msgstr "Популярные метки"
@@ -428,7 +428,7 @@ msgid "Exclusive"
 msgstr "Эксклюзивный"
 
 msgid "Posts List %d"
-msgstr "Список сообщений %d"
+msgstr "Список записей %d"
 
 msgid "Main News"
 msgstr "Главные новости"
@@ -455,7 +455,7 @@ msgid "Trending Story"
 msgstr "Трендовая история"
 
 msgid "Featured Posts"
-msgstr "Рекомендованные записи"
+msgstr "Избранные записи"
 
 msgid "Featured Categories"
 msgstr "Рекомендуемые рубрики"
@@ -467,7 +467,7 @@ msgid "View More"
 msgstr "Смотреть больше"
 
 msgid "Read More"
-msgstr "Подробнее"
+msgstr "Читать далее"
 
 msgid "Related Stories"
 msgstr "Связанные истории"
@@ -476,7 +476,7 @@ msgid "You may have missed"
 msgstr "Возможно, вы пропустили"
 
 msgid "Copyright &copy; All rights reserved."
-msgstr "Copyright &copy; All rights reserved."
+msgstr "Авторские права &копия; Все права защищены."
 
 msgid "Body Background Color"
 msgstr "Цвет фона основного текста"
@@ -509,7 +509,7 @@ msgid "Disable Image Tint/Overlay"
 msgstr "Отключить оттенок/наложение изображения"
 
 msgid "MoreNews Pro"
-msgstr "ПодробнееНовости Про"
+msgstr "MoreNews Pro"
 
 msgid "Site Color Mode"
 msgstr "Режим цвета сайта"
@@ -518,7 +518,7 @@ msgid "Light"
 msgstr "Светлая"
 
 msgid "Dark"
-msgstr "Тёмная"
+msgstr "Тёмный"
 
 msgid "Primary Color Section "
 msgstr "Раздел основного цвета"
@@ -534,7 +534,7 @@ msgid "Secondary Color Section "
 msgstr "Раздел дополнительного цвета"
 
 msgid "Secondary Color"
-msgstr "Дополнительный цвет"
+msgstr "Вторичный цвет"
 
 msgid "Fonts & Typography"
 msgstr "Шрифты и типографика"
@@ -579,10 +579,10 @@ msgid "Select Main Banner Layout"
 msgstr "Выберите макет главного баннера"
 
 msgid "Slider, Trending and Tabs"
-msgstr "Слайдер, тренды и вкладки"
+msgstr "Слайдер, Тренды и Вкладки"
 
 msgid "Slider, Editors Picks and Tabs"
-msgstr "Слайдер, выбор редактора и вкладки"
+msgstr "Слайдер, Выбор редактора и Вкладки"
 
 msgid "Slider and Editors Picks"
 msgstr "Слайдер и выбор редактора"
@@ -615,10 +615,10 @@ msgid "Category"
 msgstr "Категория"
 
 msgid "Tag"
-msgstr "Метка"
+msgstr "Тег"
 
 msgid "Select Category"
-msgstr "Выберите рубрику"
+msgstr "Выбрать рубрику"
 
 msgid "Select category to be shown on main slider section"
 msgstr "Выберите рубрику, которая будет отображаться на главной слайдере"
@@ -639,13 +639,13 @@ msgid "Trending Section"
 msgstr "Раздел трендов"
 
 msgid "Comment Count"
-msgstr "Кол-во комментариев"
+msgstr "Количество комментариев"
 
 msgid "Latest Section"
-msgstr "Последний раздел"
+msgstr "Свежий раздел"
 
 msgid "Popular Section"
-msgstr "Популярный раздел"
+msgstr "Раздел Популярный"
 
 msgid "Update Section"
 msgstr "Обновить раздел"
@@ -687,7 +687,7 @@ msgid "Section %d"
 msgstr "Раздел %d"
 
 msgid "Section Title"
-msgstr "Название раздела"
+msgstr "Заголовок раздела"
 
 msgid "Front-page Layout Settings"
 msgstr "Настройки макета главной страницы"
@@ -696,7 +696,7 @@ msgid "Front-page Content Display"
 msgstr "Раздел Содержимое главной страницы"
 
 msgid "Select frontpage content display"
-msgstr "Выбрать отображение содержимого главной страницы"
+msgstr "Выберите отображение содержимого главной страницы"
 
 msgid "Front-page Widgets"
 msgstr "Виджеты Титульной страницы"
@@ -723,7 +723,7 @@ msgid "Header Options"
 msgstr "Настройки заголовка"
 
 msgid "Header Settings"
-msgstr "Настройки заголовка"
+msgstr "Настройки шапки"
 
 msgid "Site Mode Switch"
 msgstr "Переключатель режима сайта"
@@ -774,7 +774,7 @@ msgid "URL Link"
 msgstr "URL ссылка"
 
 msgid "Theme Options"
-msgstr "Параметры темы"
+msgstr "Настройки темы"
 
 msgid "Breadcrumb Options"
 msgstr "Настройки навигационной цепочки"
@@ -796,13 +796,13 @@ msgid "Default"
 msgstr "По умолчанию"
 
 msgid "Yoast SEO"
-msgstr "Йост SEO"
+msgstr "Yoast SEO"
 
 msgid "Rank Math"
-msgstr "Ранг Математика"
+msgstr "Rank Math"
 
 msgid "NavXT"
-msgstr "НавХТ"
+msgstr "NavXT"
 
 msgid "Global Settings"
 msgstr "Глобальные настройки"
@@ -829,7 +829,7 @@ msgid "Full width content"
 msgstr "Содержимое во всю ширину"
 
 msgid "Also Show Content Image in Archive"
-msgstr "Также показывать изображение контента в архиве"
+msgstr "Также отображать изображение содержимого в архиве"
 
 msgid "If there is no Post Featured image set"
 msgstr "Если нет набора избранных изображений для публикации"
@@ -838,7 +838,7 @@ msgid "Enable "
 msgstr "Включить"
 
 msgid "Image Lazy Loading"
-msgstr "Ленивая загрузка изображений"
+msgstr "Отложенная загрузка изображения"
 
 msgid "Set for better performance"
 msgstr "Настройка для лучшей производительности"
@@ -850,7 +850,7 @@ msgid "Set to enhance rendering speed"
 msgstr "Установлено для повышения скорости рендеринга."
 
 msgid "Scroll to Top Position"
-msgstr "Позиция прокрутки вверх"
+msgstr "Позиция Прокрутки вверх"
 
 msgid "Right"
 msgstr "Справа"
@@ -868,19 +868,19 @@ msgid "Categories Settings"
 msgstr "Настройки рубрик"
 
 msgid "Post Categories"
-msgstr "Рубрики записей"
+msgstr "Рубрики записи"
 
 msgid "Categories to be displayed"
 msgstr "Рубрики, которые будут отображаться"
 
 msgid "Show All"
-msgstr "Показать всё"
+msgstr "Показать все"
 
 msgid "Top One Category"
 msgstr "Лучшая рубрика"
 
 msgid "Number of Categories"
-msgstr "Кол-во рубрик"
+msgstr "Количество рубрик"
 
 msgid "Author and Date Settings"
 msgstr "Настройки автора и даты"
@@ -931,7 +931,7 @@ msgid "Link"
 msgstr "Ссылка"
 
 msgid "Single Post"
-msgstr "Одиночная запись"
+msgstr "Отдельная запись"
 
 msgid "Show Featured Image"
 msgstr "Показать изображение записи"
@@ -943,7 +943,7 @@ msgid "Full - Default"
 msgstr "Полностью (по-умолчанию)"
 
 msgid "Original"
-msgstr "Исходные"
+msgstr "Оригинальный"
 
 msgid "Single Content Mode"
 msgstr "Режим одиночного содержимого"
@@ -958,7 +958,7 @@ msgid "Social Share from Jetpack plugin"
 msgstr "Поделиться в соцсетях с помощью плагина Jetpack"
 
 msgid "Top - Default"
-msgstr "Верх – по умолчанию"
+msgstr "Вверху - по умолчанию"
 
 msgid "Bottom"
 msgstr "Снизу"
@@ -1003,7 +1003,7 @@ msgid "Select Title Position"
 msgstr "Выберите позицию заголовка"
 
 msgid "Select full layout for archive"
-msgstr "Выбрать полный макет для архива"
+msgstr "Выберите полную разметку для архива."
 
 msgid "After Image"
 msgstr "После изображения"
@@ -1015,13 +1015,13 @@ msgid "Content View"
 msgstr "Просмотр содержимого"
 
 msgid "Select content view for archive"
-msgstr "Выбрать вид содержимого для архива"
+msgstr "Выберите вид содержимого для архива"
 
 msgid "Post Excerpt"
 msgstr "Отрывок записи"
 
 msgid "Full Content"
-msgstr "Всё содержимое"
+msgstr "Полное"
 
 msgid "Search Options"
 msgstr "Параметры поиска"
@@ -1033,13 +1033,13 @@ msgid "Select search results for archive"
 msgstr "Выберите результаты поиска для архива"
 
 msgid "All (Pages, Posts, etc)"
-msgstr "Все (страницы, публикации и т. д.)"
+msgstr "Все (страницы, записи и т. д.)"
 
 msgid "Posts"
 msgstr "Записи"
 
 msgid "Ajax Results Dropdown"
-msgstr "Раскрывающийся список результатов Ajax"
+msgstr "Выпадающий список результатов Ajax"
 
 msgid "Sidebar Settings"
 msgstr "Настройки области виджетов"
@@ -1093,7 +1093,7 @@ msgid "Please go to Customize>Themes Options for Single Post/Page."
 msgstr "Перейдите в Настройки>Настройки темы для отдельной записи/страницы."
 
 msgid "Sidebar Options"
-msgstr "Параметры боковой панели"
+msgstr "Параметры сайдбара"
 
 msgid "Content - Primary Sidebar"
 msgstr "Содержимое - основная область виджетов"
@@ -1102,7 +1102,7 @@ msgid "Primary Sidebar - Content"
 msgstr "Основная область виджетов - содержимое"
 
 msgid "No Sidebar"
-msgstr "Без боковой панели"
+msgstr "Без области виджетов"
 
 msgid "Please go to Customize>Front-page Options for Homepage."
 msgstr ""
@@ -1128,13 +1128,13 @@ msgstr ""
 "разделе «Рубрики» модуля настройки темы."
 
 msgid "Templatespare"
-msgstr "Запасной шаблон"
+msgstr "Templatespare"
 
 msgid "Elespare"
-msgstr "Элеспар"
+msgstr "Elespare"
 
 msgid "Blockspare"
-msgstr "Запасной блок"
+msgstr "Blockspare"
 
 msgid "WP Post Author"
 msgstr "Автор записи WP"
@@ -1170,7 +1170,7 @@ msgid "Three Columns"
 msgstr "Три столбца"
 
 msgid "Post Carousel"
-msgstr "Карусель записей"
+msgstr "Карусель записи"
 
 msgid "Large Post with Dark Background"
 msgstr "Большой заголовок с тёмным фоном"
@@ -1212,13 +1212,13 @@ msgid "Post Grid"
 msgstr "Сетка записи"
 
 msgid "Post List"
-msgstr "Список записей"
+msgstr "Список записи"
 
 msgid "Connect to Us"
 msgstr "Связь с нами"
 
 msgid "Advertisement"
-msgstr "Рекламное объявление"
+msgstr "Реклама"
 
 msgid "Express Tile"
 msgstr "Экспресс-плитка"
@@ -1227,7 +1227,7 @@ msgid "Single Column"
 msgstr "Одиночный столбец"
 
 msgid "Categories"
-msgstr "Рубрики"
+msgstr "Категории"
 
 msgid "Section 1"
 msgstr "Раздел 1"
@@ -1248,7 +1248,7 @@ msgid "3 Columns Post Grid"
 msgstr "Сетка из 3 столбцов"
 
 msgid "Post Grid - 2"
-msgstr "Почтовая сетка - 2"
+msgstr "Сетка записи - 2"
 
 msgid "Large Posts - 2"
 msgstr "Большие посты - 2"
@@ -1286,7 +1286,7 @@ msgid "Got any support queries?"
 msgstr "Есть вопросы в службу поддержки?"
 
 msgid "Read more about %s"
-msgstr "Прочитать больше о %s"
+msgstr "Узнайте больше о %s"
 
 msgid "Previous"
 msgstr "Назад"
@@ -1310,7 +1310,7 @@ msgid "View All Posts"
 msgstr "Просмотреть все записи"
 
 msgid "Posted on %s"
-msgstr "Опубликовано %s"
+msgstr "Опубликовано в %s"
 
 msgid "Posted on %s %s"
 msgstr "Опубликовано %s %s"
@@ -1328,7 +1328,7 @@ msgid "Invalid security token."
 msgstr "Недействительный токен безопасности."
 
 msgid "Live search results"
-msgstr "Результаты живого поиска"
+msgstr "Моментальные результаты поиска"
 
 msgid "View all search results"
 msgstr "Посмотреть все результаты поиска"
@@ -1343,7 +1343,7 @@ msgid "Action failed. Please refresh the page and retry."
 msgstr "Действие не удалось. Обновите страницу и попробуйте снова."
 
 msgid "Cheatin&#8217; huh?"
-msgstr "Эй! Жульничаем?!"
+msgstr "Эй! Жульничаем?"
 
 msgid ""
 "%1$s 🎁 Hope you're loving our free %2$s theme! Dive into the festive spirit "
@@ -1375,37 +1375,37 @@ msgid "Displays author info."
 msgstr "Отображать информацию об авторе."
 
 msgid "AFTMN Author Info"
-msgstr "Информация об авторе AFTMN"
+msgstr "AFTMN: инфо об авторе"
 
 msgid "Profile image"
 msgstr "Изображение профиля"
 
 msgid "Name"
-msgstr "Имя"
+msgstr "Название"
 
 msgid "Descriptions"
 msgstr "Описания"
 
 msgid "Facebook"
-msgstr "Фейсбук"
+msgstr "Facebook"
 
 msgid "Twitter"
-msgstr "Твиттер"
+msgstr "Twitter"
 
 msgid "YouTube"
-msgstr "Ютуб"
+msgstr "YouTube"
 
 msgid "Displays Express Posts from selected categories."
 msgstr "Отображает экспресс-записи из выбранных рубрик."
 
 msgid "AFTMN Express Posts List"
-msgstr "Список сообщений AFTMN Express"
+msgstr "AFTMN: экспресс-сетка записей"
 
 msgid "Displays grid from selected categories."
 msgstr "Отображает сетку из выбранных рубрик."
 
 msgid "AFTMN Post Double Columns"
-msgstr "Двойные столбцы сообщений AFTMN"
+msgstr "AFTMN: отдельный столбец записи"
 
 msgid "Select Category 1"
 msgstr "Выберите рубрику 1"
@@ -1414,22 +1414,22 @@ msgid "Select Category 2"
 msgstr "Выберите рубрику 2"
 
 msgid "AFTMN Post Grid"
-msgstr "Сетка сообщений AFTMN"
+msgstr "AFTMN: сетка записи"
 
 msgid "AFTMN Post List"
-msgstr "Список сообщений AFTMN"
+msgstr "AFTMN: список записи"
 
 msgid "Displays posts single column from selected categories."
-msgstr "Отображает записи в одном столбце из выбранных рубрики."
+msgstr "Отображает записи в отдельном столбце из выбранных рубрики."
 
 msgid "AFTMN Post Single Column"
-msgstr "AFTMN Публикация в один столбец"
+msgstr "AFTMN: отдельный столбец записи"
 
 msgid "Displays posts slider from selected category."
 msgstr "Отображать слайдер записи из выбранной рубрики."
 
 msgid "AFTMN Posts Slider"
-msgstr "Слайдер сообщений AFTMN"
+msgstr "AFTMN: слайдер записей"
 
 msgid "Select category"
 msgstr "Выберите рубрику"
@@ -1438,7 +1438,7 @@ msgid "Displays social contacts lists from selected settings."
 msgstr "Отображать списки социальных контактов из выбранных настроек."
 
 msgid "AFTMN Social Contacts"
-msgstr "Социальные контакты АФТМН"
+msgstr "AFTMN: Социальные контакты"
 
 msgid "Connect with Us"
 msgstr "Свяжитесь с нами"
@@ -1451,29 +1451,29 @@ msgstr ""
 "разделе меню соцсетей в настройках меню."
 
 msgid "AFTMN Trending News"
-msgstr "Актуальные новости АФТМН"
+msgstr "AFTMN: трендовые новости"
 
 msgid "Upload"
 msgstr "Загрузить"
 
 msgid "Select Image"
-msgstr "Выберите изображение"
+msgstr "Выбрать изображение"
 
 msgid "Choose Image"
 msgstr "Выбрать изображение"
 
 msgctxt "Remove"
 msgid "X"
-msgstr "Х"
+msgstr "X"
 
 msgid "Recent"
-msgstr "Недавние"
+msgstr "По свежести"
 
 msgid "Header Banner Ad Section"
 msgstr "Раздел баннерной рекламы в заголовке"
 
 msgid "Add widgets for frontpage banner section advertisement."
-msgstr "Добавить виджеты для рекламы раздела баннеров на главной странице."
+msgstr "Добавьте виджеты для рекламы раздела баннеров на главной странице."
 
 msgid "Off Canvas Drawer Menu Section"
 msgstr "Раздел меню «Выдвижной ящик холста»"
@@ -1482,7 +1482,7 @@ msgid "Add widgets for off-canvas section."
 msgstr "Добавьте виджеты для раздела, скрытого за пределами экрана."
 
 msgid "Main Sidebar"
-msgstr "Главная боковая панель"
+msgstr "Основная область виджетов"
 
 msgid "Add widgets for main sidebar."
 msgstr "Добавьте виджеты для главной области виджетов."
@@ -1500,34 +1500,34 @@ msgid "Add widgets to front-page sidebar section."
 msgstr "Добавьте виджеты в раздел области виджетов на главной странице."
 
 msgid "Footer Widget 1"
-msgstr "Виджет 1 подвала"
+msgstr "Виджет подвала 1"
 
 msgid "Displays items on footer first column."
 msgstr "Отображать элементы в 1-м столбце подвала."
 
 msgid "Footer Widget 2"
-msgstr "Виджет 2 подвала"
+msgstr "Виджет подвала 2"
 
 msgid "Displays items on footer second column."
 msgstr "Отображать элементы во 2-м столбце подвала."
 
 msgid "Footer Widget 3"
-msgstr "Виджет 3 подвала"
+msgstr "Виджет подвала 3"
 
 msgid "Displays items on footer third column."
 msgstr "Отображать элементы в 3-м столбце подвала."
 
 msgid "View your shopping cart"
-msgstr "Просмотреть свою корзину"
+msgstr "Просмотреть корзину"
 
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "%d элемент"
+msgstr[0] "%d предмет"
 msgstr[1] "%d предметов"
 msgstr[2] "%d предметов"
 
 msgid "Browse:"
-msgstr "Обзор:"
+msgstr "Просмотреть:"
 
 msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
@@ -1537,7 +1537,7 @@ msgid "Home"
 msgstr "Главная"
 
 msgid "404 Not Found"
-msgstr "Не найдено 404"
+msgstr "404 не найдено"
 
 msgid "Archives"
 msgstr "Архивы"
@@ -1563,7 +1563,7 @@ msgstr "H:i"
 
 msgctxt "minute archives time format"
 msgid "i"
-msgstr "я"
+msgstr "i"
 
 msgctxt "hour archives time format"
 msgid "g a"
@@ -1571,19 +1571,19 @@ msgstr "H"
 
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr "Да"
+msgstr "Y"
 
 msgctxt "monthly archives date format"
 msgid "F"
-msgstr "Ф"
+msgstr "F"
 
 msgctxt "daily archives date format"
 msgid "j"
-msgstr "дж"
+msgstr "j"
 
 msgctxt "weekly archives date format"
 msgid "W"
-msgstr "Ср"
+msgstr "W"
 
 msgid "Install Required Plugins"
 msgstr "Установить требуемые плагины"
@@ -1608,9 +1608,9 @@ msgstr[2] "Для этой темы требуются следующие пла
 
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "Для этой темы рекомендуется следующий плагин: %1$s."
-msgstr[1] "Для этой темы рекомендуются следующие плагины: %1$s."
-msgstr[2] "Для этой темы рекомендуются следующие плагины: %1$s."
+msgstr[0] "Эта тема рекомендует следующий плагин: %1$s."
+msgstr[1] "Эта тема рекомендует следующие плагины: %1$s."
+msgstr[2] "Эта тема рекомендует следующие плагины: %1$s."
 
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -1636,7 +1636,7 @@ msgstr[2] "Доступны обновления для следующих пл�
 
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "Следующий необходимый плагин в настоящее время неактивен: %1$s."
+msgstr[0] "Следующий обязательный плагин в настоящее время неактивен: %1$s."
 msgstr[1] "Следующие необходимые плагины в настоящее время неактивны: %1$s."
 msgstr[2] "Следующие необходимые плагины в настоящее время неактивны: %1$s."
 
@@ -1671,7 +1671,7 @@ msgid "Return to the Dashboard"
 msgstr "Вернуться в консоль"
 
 msgid "Plugin activated successfully."
-msgstr "Плагин активирован."
+msgstr "Плагин успешно активирован."
 
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
@@ -1740,7 +1740,7 @@ msgid "TGMPA v%s"
 msgstr "TGMPA v%s"
 
 msgid "Required"
-msgstr "Необходим"
+msgstr "Обязательное"
 
 msgid "Recommended"
 msgstr "Рекомендуется"
@@ -1797,13 +1797,13 @@ msgstr[2] "Доступно обновление <span class=\"count\">(%s)</spa
 
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "Для активации <span class=\"count\">(%s)</span>"
-msgstr[1] "Для активации <span class=\"count\">(%s)</span>"
-msgstr[2] "Для активации <span class=\"count\">(%s)</span>"
+msgstr[0] "Чтобы активировать <span class=\"count\">(%s)</span>"
+msgstr[1] "Чтобы активировать <span class=\"count\">(%s)</span>"
+msgstr[2] "Чтобы активировать <span class=\"count\">(%s)</span>"
 
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
-msgstr "неизвестная"
+msgstr "неизвестна"
 
 msgid "Installed version:"
 msgstr "Установленная версия:"
@@ -1812,7 +1812,7 @@ msgid "Minimum required version:"
 msgstr "Миним. необходимая версия:"
 
 msgid "Available version:"
-msgstr "Доступная версия:"
+msgstr "Доступные версии:"
 
 msgid "No plugins to install, update or activate."
 msgstr "Нет плагинов для установки, обновления или активации."
@@ -1836,7 +1836,7 @@ msgid "Install %2$s"
 msgstr "Установить %2$s"
 
 msgid "Update %2$s"
-msgstr "Обновить %2$s"
+msgstr "Обновление %2$s"
 
 msgid "Activate %2$s"
 msgstr "Активировать %2$s"
@@ -1910,7 +1910,7 @@ msgid "Blank Canvas"
 msgstr "Чистый холст"
 
 msgid "Page Builder Full Width"
-msgstr "Конструктор страниц во всю ширину"
+msgstr "Конструктор страницы - полная ширина"
 
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
@@ -1926,18 +1926,16 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Извините, по вашему запросу ничего не найдено. Попробуйте другие ключевые "
-"слова."
+"Извините, но по вашему запросу ничего не найдено. Пожалуйста, попробуйте "
+"поискать с другим запросом."
 
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"Запрошенную информацию найти не удалось. Возможно, будет полезен поиск по "
-"сайту."
+msgstr "Похоже, мы не можем найти то, что вы ищете. Возможно, поможет поиск."
 
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Читать далее<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Продолжить чтение<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 msgid "Previous: %s"
 msgstr "Предыдущий %s"
@@ -1984,7 +1982,7 @@ msgid "Start with Demo Sites"
 msgstr "Начните с демонстрационных сайтов"
 
 msgid "Start Customizing"
-msgstr "Начать настройку темы"
+msgstr "Начать настройку"
 
 msgid "Update Elespare Pro"
 msgstr "Обновите Elespare Pro"
@@ -2019,7 +2017,7 @@ msgstr ""
 "чем 100 стартовых сайтов в один клик — кодирование не требуется."
 
 msgid "Unlock Pro Features"
-msgstr "Разблокировать функции Pro"
+msgstr "Разблокируйте профессиональные функции"
 
 msgid "Docs"
 msgstr "Документация"
@@ -2125,7 +2123,7 @@ msgid "Banner Post Filter: Views & Comments"
 msgstr "Баннерный фильтр сообщений: просмотры и комментарии"
 
 msgid "Above/Below Banner Widget Areas"
-msgstr "Области виджетов над/ниже баннера"
+msgstr "Above/Below Banner Widget Areas"
 
 msgid "Featured Videos Section (Custom Field + Responsive)"
 msgstr "Раздел избранных видео (настраиваемое поле + адаптивный)"
@@ -2143,7 +2141,7 @@ msgid "Post Subtitle Field"
 msgstr "Поле субтитров публикации"
 
 msgid "Source & Sponsor Custom Field"
-msgstr "Пользовательское поле источника и спонсора"
+msgstr "Source & Sponsor Custom Field"
 
 msgid "Post Badge Taxonomy (Breaking, Premium)"
 msgstr "Таксономия почтовых значков (Breaking, Premium)"
@@ -2161,7 +2159,7 @@ msgstr ""
 "Авторский ящик со ссылкой для пожертвований, веб-сайтом и сообщениями автора"
 
 msgid "Trending Posts in Single Post"
-msgstr "Популярные сообщения в одном сообщении"
+msgstr "Популярные публикации в одном сообщении"
 
 msgid "Jetpack Share Buttons Placement"
 msgstr "Расположение кнопок общего доступа Jetpack"
@@ -2219,10 +2217,10 @@ msgid "Pagination Numeric"
 msgstr "Числовая нумерация страниц"
 
 msgid "Pagination Ajax Load More & Infinite Scroll"
-msgstr "Пагинация Ajax «Загрузить больше» и бесконечная прокрутка"
+msgstr "Пагинация Ajax Загрузить больше и бесконечная прокрутка"
 
 msgid "Basic Custom Widgets (5+ Layouts)"
-msgstr "Базовые пользовательские виджеты (более 5 макетов)"
+msgstr "Базовые пользовательские виджеты (5+ макетов)"
 
 msgid "Advanced Custom Widgets Count (15+ Layouts)"
 msgstr "Расширенное количество пользовательских виджетов (более 15 макетов)"
@@ -2300,13 +2298,12 @@ msgstr ""
 "вариантов тем."
 
 msgid "Import Demo Sites"
-msgstr "Импортировать демо-сайты"
+msgstr "Импортировать демонстрационные сайты"
 
 msgid ""
 "Launch your site instantly with 100+ ready-made demos for blogs and news."
 msgstr ""
-"Запустите свой сайт мгновенно, используя более 100 готовых демо-версий для "
-"блогов и новостей."
+"Launch your site instantly with 100+ ready-made demos for blogs and news."
 
 msgid "Import Elementor Kits"
 msgstr "Импортировать наборы Elementor"
@@ -2339,7 +2336,7 @@ msgid ""
 msgstr "Вы можете легко разместить рекламные баннеры в разделе заголовка."
 
 msgid "Color Options"
-msgstr "Параметры цвета"
+msgstr "Варианты цвета"
 
 msgid "Change the color setting provide with the Theme."
 msgstr "Измените настройку цвета, предоставляемую темой."
@@ -2419,8 +2416,8 @@ msgid ""
 "Please check our full documentation for detailed information on how to setup"
 " and customize the theme."
 msgstr ""
-"Пожалуйста, ознакомьтесь с нашей полной документацией для получения "
-"подробной информации о том, как установить и настроить тему."
+"Ознакомьтесь с нашей полной документацией для получения подробной информации"
+" о том, как установить и настроить тему."
 
 msgid "Video  Tutorials"
 msgstr "Видеоуроки"
@@ -2437,7 +2434,7 @@ msgid ""
 "modern websites in minutes."
 msgstr ""
 "TemplateSpare — конструктор веб-сайтов без кода — инструмент "
-"импорта/экспорта и полной миграции сайта в 1 клик. Мгновенно получайте "
+"импорта/экспорта и полной миграции сайта в один клик. Мгновенно получайте "
 "готовые к использованию стартовые сайты и создавайте современные веб-сайты "
 "за считанные минуты."
 
@@ -2515,16 +2512,16 @@ msgid ""
 "websites in minutes, not in weeks."
 msgstr ""
 "Мгновенно получите более 1000 готовых к импорту стартовых сайтов и "
-"создавайте современные веб-сайты за считанные минуты, а не за недели."
+"создавайте современные веб-сайты за считанные минуты, а не недели."
 
 msgid "Get started"
-msgstr "Начало работы"
+msgstr "Начать"
 
 msgid "Useful Plugins"
 msgstr "Полезные плагины"
 
 msgid "Free vs Pro"
-msgstr "Сравнение версий"
+msgstr "Бесплатная или платная"
 
 msgid "Change Log"
 msgstr "Журнал изменений"
