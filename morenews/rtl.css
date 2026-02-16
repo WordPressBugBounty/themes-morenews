@@ -334,6 +334,11 @@ body.rtl a.sidr-class-sidr-button-close {
 	left: 15px;
 }
 
+body.rtl .aft-affiliate-badge {
+	left: unset;
+	right: 30px;
+}
+
 body.rtl .read-img .af-post-format + span.min-read{
 	right: 55px;
 	left: inherit;
@@ -479,6 +484,10 @@ body.rtl .header-layout-centered .custom-menu-link {
 body.rtl .aft-small-social-menu ul li:not(:first-child) {
 	margin-left: 0;
 	margin-right: 4px;
+}
+
+body.rtl .entry-content .morenews-toc-list ul:not([class*="wp-"]):not(.awpa-contact-info)  {
+    margin: 0 20px 0 0;
 }
 
 /*media-queries*/

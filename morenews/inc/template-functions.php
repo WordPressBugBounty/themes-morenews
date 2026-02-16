@@ -852,19 +852,24 @@ function morenews_get_comments_views_share($post_id)
   <span class="aft-comment-view-share">
     <?php
     $show_comment_count = morenews_get_option('global_show_comment_count');
-    if ($show_comment_count == 'yes') :
-      // $comment_count = get_comments_number($post_id);
-      // if (absint($comment_count) > 1) :
+
+    if ('yes' === $show_comment_count) :
+
+      $comment_count = get_comments_number($post_id);
+
+      if (comments_open($post_id) || $comment_count > 0) :
     ?>
         <span class="aft-comment-count">
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php echo esc_url(get_comments_link($post_id)); ?>">
             <i class="far fa-comment"></i>
             <span class="aft-show-hover">
-              <?php echo wp_kses_post(get_comments_number($post_id)); ?>
+              <?php echo esc_html($comment_count); ?>
             </span>
           </a>
         </span>
-    <?php endif;
+      <?php
+      endif;
+    endif;
     // endif;
 
 
@@ -930,19 +935,21 @@ function morenews_single_post_commtents_view($post_id)
   <div class="aft-comment-view-share">
     <?php
     $show_comment_count = morenews_get_option('global_show_comment_count');
-    if ($show_comment_count == 'yes') :
+    if ('yes' === $show_comment_count) :
+
       $comment_count = get_comments_number($post_id);
-      if (absint($comment_count) > 1) :
+
+      if (comments_open($post_id) || $comment_count > 0) :
     ?>
         <span class="aft-comment-count">
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php echo esc_url(get_comments_link($post_id)); ?>">
             <i class="far fa-comment"></i>
             <span class="aft-show-hover">
               <?php echo esc_html(get_comments_number($post_id)); ?>
             </span>
           </a>
         </span>
-    <?php endif;
+      <?php endif;
     endif;
 
     ?>

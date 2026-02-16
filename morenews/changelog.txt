@@ -1,9 +1,22 @@
-### 3.8.14 - Feb 02, 2026
-* Fix - Improved author bio spacing for better readability and layout consistency.
-* Fix - Adjusted entry content gallery gap to improve visual balance.
-* Fix - Refined audio shortcode margins for cleaner content presentation.
-* Improvement - Updated comment reply link design for better usability and styling.
-* Fix - Improved spacing for lists inside entry content.
+### 3.9.0 - Feb 16, 2026
+* Update - Updated German language file.
+* Update - Updated Arabic language file.
+* Update - Updated French language file.
+* Update - Updated Italian language file.
+* Update - Updated Japanese language file.
+* Update - Updated Polish language file.
+* Update - Updated Portuguese language file.
+* Update - Updated Spanish language file.
+* Update - Updated Dutch language file.
+* Update - Updated Russian language file.
+* Update - Updated Ukrainian language file.
+* Update - Updated Swedish language file.
+* Improvement - Updated comment reply link styling and behavior.
+* Fix - Maintained proper alignment for Contact Form 7 checkbox inputs and labels.
+* Improvement - Updated list (ul, ol, li) styling for better content readability.
+* Improvement - Added theme.json values for buttons and titles based on theme design standards.
+* Improvement - Optimized word count display logic for better site performance.
+* Improvement - Updated various frontend styles for improved consistency.
 
 ### 3.8.8 - Dec 16, 2025
 * New - Added AJAX-powered live search with customizable results dropdown.
