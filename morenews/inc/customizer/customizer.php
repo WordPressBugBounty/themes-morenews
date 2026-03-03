@@ -93,7 +93,7 @@ function morenews_customize_register($wp_customize)
   $wp_customize->add_control(
     'site_title_font_size',
     array(
-      'label'    => esc_html__('Site Title Size', 'morenews'),
+      'label'    => __('Site Title Size', 'morenews'),
       'section'  => 'title_tagline',
       'type'     => 'number',
       'priority' => 50,
@@ -113,7 +113,7 @@ function morenews_customize_register($wp_customize)
   $wp_customize->add_control(
     'site_title_uppercase',
     array(
-      'label'    => esc_html__('Uppercase Site Title and Tagline', 'morenews'),
+      'label'    => __('Uppercase Site Title and Tagline', 'morenews'),
       'section'  => 'title_tagline',
       'type'     => 'checkbox',
       'priority' => 50,
@@ -146,14 +146,14 @@ function morenews_customize_register($wp_customize)
   $wp_customize->add_control(
     'select_header_image_mode',
     array(
-      'label'       => esc_html__('Header Image Mode', 'morenews'),
-      'description'       => esc_html__('Image visibility may vary as per the mode', 'morenews'),
+      'label'       => __('Header Image Mode', 'morenews'),
+      'description'       => __('Image visibility may vary as per the mode', 'morenews'),
       'section'     => 'header_builder',
       'type'        => 'select',
       'choices'               => array(
-        'above' => esc_html__("Above Site Title", 'morenews'),
-        'default' => esc_html__("Set as Background", 'morenews'),
-        'full' => esc_html__("Show Full Image (Background)", 'morenews'),
+        'above' => __("Above Site Title", 'morenews'),
+        'default' => __("Set as Background", 'morenews'),
+        'full' => __("Show Full Image (Background)", 'morenews'),
       ),
       'priority'    => 50
     )
@@ -173,7 +173,7 @@ function morenews_customize_register($wp_customize)
   $wp_customize->add_control(
     'disable_header_image_tint_overlay',
     array(
-      'label'    => esc_html__('Disable Image Tint/Overlay', 'morenews'),
+      'label'    => __('Disable Image Tint/Overlay', 'morenews'),
       'section'  => 'header_builder',
       'type'     => 'checkbox',
       'priority' => 50,
@@ -194,8 +194,8 @@ function morenews_customize_register($wp_customize)
       $wp_customize,
       'theme_upsell',
       array(
-        'title'    => esc_html__('MoreNews Pro', 'morenews'),
-        'pro_text' => esc_html__('Upgrade Now', 'morenews'),
+        'title'    => __('MoreNews Pro', 'morenews'),
+        'pro_text' => __('Upgrade Now', 'morenews'),
         'pro_url'  => 'https://www.afthemes.com/products/morenews-pro/',
         'priority'  => 1,
       )

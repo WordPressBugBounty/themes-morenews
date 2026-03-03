@@ -49,7 +49,7 @@ if (!function_exists('morenews_post_thumbnail')) :
 
     <?php else :
       $morenews_archive_layout = morenews_get_option('archive_layout');
-      $morenews_archive_image = ($morenews_archive_layout == 'archive-layout-list') ? 'medium' : (($morenews_archive_layout == 'archive-layout-full') ? 'morenews-medium' : 'post-thumbnail');
+      $morenews_archive_image = ($morenews_archive_layout == 'archive-layout-list') ? 'medium' : (($morenews_archive_layout == 'archive-layout-full') ? 'medium_large' : 'post-thumbnail');
       $morenews_archive_class = ($morenews_archive_layout == 'archive-layout-list') ? morenews_get_option('archive_image_alignment') : '';
 
     ?>

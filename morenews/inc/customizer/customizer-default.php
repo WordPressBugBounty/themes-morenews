@@ -77,7 +77,7 @@ function morenews_get_default_theme_options() {
     
     $defaults['show_featured_post_list_section'] = 0;
     for ($i = 1; $i <= 3; $i++) {
-        $defaults['featured_post_list_section_title_'.$i] = sprintf(esc_html__('Posts List %d','morenews'),$i);
+        $defaults['featured_post_list_section_title_'.$i] = sprintf(__('Posts List %d','morenews'),$i);
         $defaults['featured_post_list_category_section_' . $i] =0;
     }
     
@@ -174,7 +174,7 @@ function morenews_get_default_theme_options() {
     
     
     for ( $i = 1; $i < 5; $i++ ) {
-        $defaults['featured_category_section_'.$i] =  sprintf(esc_html__('Post list Section Title %d','morenews'),$i);
+        $defaults['featured_category_section_'.$i] =  sprintf(__('Post list Section Title %d','morenews'),$i);
         $defaults['featured_category_image_'.$i] = '';
         $defaults['select_featured_category_'.$i] = 0;
         $defaults['select_featured_page_'.$i] = 0;
@@ -258,7 +258,7 @@ function morenews_get_default_theme_options() {
     $defaults['frontpage_latest_posts_category'] = 0;
     $defaults['number_of_frontpage_latest_posts'] = 4;
 
-    $defaults['footer_copyright_text'] = esc_html__('Copyright &copy; All rights reserved.', 'morenews');
+    $defaults['footer_copyright_text'] = __('Copyright &copy; All rights reserved.', 'morenews');
     $defaults['hide_footer_menu_section']  = 0;
     $defaults['hide_footer_site_title_section']  = 0;
     $defaults['hide_footer_copyright_credits']  = 0;

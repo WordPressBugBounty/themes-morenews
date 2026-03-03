@@ -28,7 +28,7 @@ require get_template_directory() . '/inc/customizer/customizer-refresh.php';
 $wp_customize->add_panel(
   'site_header_option_panel',
   array(
-    'title' => esc_html__('Header Options', 'morenews'),
+    'title' => __('Header Options', 'morenews'),
     'priority' => 198,
     'capability' => 'edit_theme_options',
   )
@@ -44,7 +44,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
   'header_options_settings',
   array(
-    'title' => esc_html__('Header Settings', 'morenews'),
+    'title' => __('Header Settings', 'morenews'),
     'priority' => 49,
     'capability' => 'edit_theme_options',
     'panel' => 'site_header_option_panel',
@@ -65,13 +65,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'enable_site_mode_switch',
   array(
-    'label' => esc_html__('Site Mode Switch', 'morenews'),
+    'label' => __('Site Mode Switch', 'morenews'),
     'section' => 'header_builder',
     'settings' => 'enable_site_mode_switch',
     'type' => 'select',
     'choices' => array(
-      'aft-enable-mode-switch' => esc_html__('Enable', 'morenews'),
-      'aft-disable-mode-switch' => esc_html__('Disable', 'morenews'),
+      'aft-enable-mode-switch' => __('Enable', 'morenews'),
+      'aft-disable-mode-switch' => __('Disable', 'morenews'),
     ),
     'priority' => 5,
   )
@@ -89,11 +89,11 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'disable_sticky_header_option',
   array(
-    'label'    => esc_html__('Disable Sticky Header', 'morenews'),
+    'label'    => __('Disable Sticky Header', 'morenews'),
     'section'  => 'header_builder',
     'type'     => 'checkbox',
     'priority' => 5,
-    'description' => esc_html__('Sticky header works only with builder at bottom.', 'morenews'),
+    'description' => __('Sticky header works only with builder at bottom.', 'morenews'),
 
   )
 );
@@ -111,7 +111,7 @@ $wp_customize->add_control(
     $wp_customize,
     'show_top_header_section_title',
     array(
-      'label' => esc_html__("Top Header Section", 'morenews'),
+      'label' => __("Top Header Section", 'morenews'),
       'section' => 'header_builder',
       'priority' => 10,
 
@@ -133,7 +133,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'show_top_header_section',
   array(
-    'label' => esc_html__('Show Top Header', 'morenews'),
+    'label' => __('Show Top Header', 'morenews'),
     'section' => 'header_builder',
     'settings' => 'show_top_header_section',
     'type' => 'checkbox',
@@ -155,7 +155,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'show_date_section',
   array(
-    'label' => esc_html__('Show Date', 'morenews'),
+    'label' => __('Show Date', 'morenews'),
     'section' => 'header_builder',
     'type' => 'checkbox',
     'priority' => 5,
@@ -181,7 +181,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'show_time_section',
   array(
-    'label' => esc_html__('Show Time', 'morenews'),
+    'label' => __('Show Time', 'morenews'),
     'section' => 'header_builder',
     'type' => 'checkbox',
     'priority' => 5,
@@ -202,13 +202,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'top_header_time_format',
   array(
-    'label' => esc_html__('Time Format', 'morenews'),
+    'label' => __('Time Format', 'morenews'),
     'section' => 'header_builder',
     'type' => 'select',
     'choices' => array(
-      'en-US' => esc_html__('12 hours', 'morenews'),
-      'en-GB' => esc_html__('24 hours', 'morenews'),
-      'en-WP' => esc_html__('From WordPress Settings', 'morenews'),
+      'en-US' => __('12 hours', 'morenews'),
+      'en-GB' => __('24 hours', 'morenews'),
+      'en-WP' => __('From WordPress Settings', 'morenews'),
     ),
     'priority' => 5,
     'active_callback' => function ($control) {
@@ -230,7 +230,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'frontpage_advertisement_settings',
   array(
-    'title' => esc_html__('Header Advertisement', 'morenews'),
+    'title' => __('Header Advertisement', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'site_header_option_panel',
@@ -243,7 +243,7 @@ $wp_customize->add_section(
 // $wp_customize->add_section(
 //   'frontpage_advertisement_settings',
 //   array(
-//     'title' => esc_html__('Header Advertisement', 'morenews'),
+//     'title' => __('Header Advertisement', 'morenews'),
 //     'priority' => 50,
 //     'capability' => 'edit_theme_options',
 //     'panel' => 'site_header_option_panel',
@@ -264,7 +264,7 @@ $wp_customize->add_control(
     $wp_customize,
     'banner_advertisement_section_title',
     array(
-      'label' => esc_html__("Header Advertisement", 'morenews'),
+      'label' => __("Header Advertisement", 'morenews'),
       'section' => 'header_builder',
       'priority' => 120,
 
@@ -291,7 +291,7 @@ $wp_customize->add_control(
     $wp_customize,
     'banner_advertisement_section',
     array(
-      'label' => esc_html__('Header Section Advertisement', 'morenews'),
+      'label' => __('Header Section Advertisement', 'morenews'),
       'description' => esc_html(sprintf(__('Recommended Size %1$s px X %2$s px', 'morenews'), 930, 110)),
       'section' => 'header_builder',
       'width' => 930,
@@ -315,7 +315,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'banner_advertisement_section_url',
   array(
-    'label' => esc_html__('URL Link', 'morenews'),
+    'label' => __('URL Link', 'morenews'),
     'section' => 'header_builder',
     'type' => 'text',
     'priority' => 130,
@@ -327,7 +327,7 @@ $wp_customize->add_control(
 $wp_customize->add_panel(
   'theme_option_panel',
   array(
-    'title' => esc_html__('Theme Options', 'morenews'),
+    'title' => __('Theme Options', 'morenews'),
     'priority' => 200,
     'capability' => 'edit_theme_options',
   )
@@ -341,7 +341,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
   'site_breadcrumb_settings',
   array(
-    'title' => esc_html__('Breadcrumb Options', 'morenews'),
+    'title' => __('Breadcrumb Options', 'morenews'),
     'priority' => 49,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -362,7 +362,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'enable_breadcrumb',
   array(
-    'label' => esc_html__('Show breadcrumbs', 'morenews'),
+    'label' => __('Show breadcrumbs', 'morenews'),
     'section' => 'site_breadcrumb_settings',
     'type' => 'checkbox',
     'priority' => 10,
@@ -382,16 +382,16 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'select_breadcrumb_mode',
   array(
-    'label' => esc_html__('Select Breadcrumbs', 'morenews'),
-    'description' => esc_html__("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'morenews'),
+    'label' => __('Select Breadcrumbs', 'morenews'),
+    'description' => __("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'morenews'),
     'section' => 'site_breadcrumb_settings',
     'settings' => 'select_breadcrumb_mode',
     'type' => 'select',
     'choices' => array(
-      'default' => esc_html__('Default', 'morenews'),
-      'yoast' => esc_html__('Yoast SEO', 'morenews'),
-      'rankmath' => esc_html__('Rank Math', 'morenews'),
-      'bcn' => esc_html__('NavXT', 'morenews'),
+      'default' => __('Default', 'morenews'),
+      'yoast' => __('Yoast SEO', 'morenews'),
+      'rankmath' => __('Rank Math', 'morenews'),
+      'bcn' => __('NavXT', 'morenews'),
     ),
     'priority' => 100,
   )
@@ -410,7 +410,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_layout_settings',
   array(
-    'title' => esc_html__('Global Settings', 'morenews'),
+    'title' => __('Global Settings', 'morenews'),
     'priority' => 9,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -431,7 +431,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'enable_site_preloader',
   array(
-    'label' => esc_html__('Enable Preloader', 'morenews'),
+    'label' => __('Enable Preloader', 'morenews'),
     'section' => 'site_layout_settings',
     'type' => 'checkbox',
     'priority' => 10,
@@ -452,8 +452,8 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'disable_wp_emoji',
   array(
-    'label'    => esc_html__('Disable Emoji Script', 'morenews'),
-    'description'       => esc_html__('GDPR friendly & better performance', 'morenews'),
+    'label'    => __('Disable Emoji Script', 'morenews'),
+    'description'       => __('GDPR friendly & better performance', 'morenews'),
     'section'  => 'site_layout_settings', // Use your preferred section.
     'type'     => 'checkbox',
     'priority' => 10,
@@ -473,13 +473,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_content_alignment',
   array(
-    'label' => esc_html__('Global Content Alignment', 'morenews'),
+    'label' => __('Global Content Alignment', 'morenews'),
     'section' => 'site_layout_settings',
     'type' => 'select',
     'choices' => array(
-      'align-content-left' => esc_html__('Content - Primary sidebar', 'morenews'),
-      'align-content-right' => esc_html__('Primary sidebar - Content', 'morenews'),
-      'full-width-content' => esc_html__('Full width content', 'morenews')
+      'align-content-left' => __('Content - Primary sidebar', 'morenews'),
+      'align-content-right' => __('Primary sidebar - Content', 'morenews'),
+      'full-width-content' => __('Full width content', 'morenews')
     ),
     'priority' => 130,
   )
@@ -498,13 +498,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_fetch_content_image_setting',
   array(
-    'label'       => esc_html__('Also Show Content Image in Archive', 'morenews'),
-    'description'       => esc_html__('If there is no Post Featured image set', 'morenews'),
+    'label'       => __('Also Show Content Image in Archive', 'morenews'),
+    'description'       => __('If there is no Post Featured image set', 'morenews'),
     'section'     => 'site_layout_settings',
     'type'        => 'select',
     'choices'               => array(
-      'enable' => esc_html__('Enable ', 'morenews'),
-      'disable' => esc_html__('Disable', 'morenews'),
+      'enable' => __('Enable ', 'morenews'),
+      'disable' => __('Disable', 'morenews'),
 
     ),
     'priority'    => 130,
@@ -525,13 +525,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_toggle_image_lazy_load_setting',
   array(
-    'label'       => esc_html__('Image Lazy Loading', 'morenews'),
-    'description'       => esc_html__('Set for better performance', 'morenews'),
+    'label'       => __('Image Lazy Loading', 'morenews'),
+    'description'       => __('Set for better performance', 'morenews'),
     'section'     => 'site_layout_settings',
     'type'        => 'select',
     'choices'               => array(
-      'enable' => esc_html__('Enable ', 'morenews'),
-      'disable' => esc_html__('Disable', 'morenews'),
+      'enable' => __('Enable ', 'morenews'),
+      'disable' => __('Disable', 'morenews'),
 
     ),
     'priority'    => 130,
@@ -552,13 +552,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_decoding_image_async_setting',
   array(
-    'label'       => esc_html__('Image Async Decoding', 'morenews'),
-    'description'       => esc_html__('Set to enhance rendering speed', 'morenews'),
+    'label'       => __('Image Async Decoding', 'morenews'),
+    'description'       => __('Set to enhance rendering speed', 'morenews'),
     'section'     => 'site_layout_settings',
     'type'        => 'select',
     'choices'               => array(
-      'enable' => esc_html__('Enable ', 'morenews'),
-      'disable' => esc_html__('Disable', 'morenews'),
+      'enable' => __('Enable ', 'morenews'),
+      'disable' => __('Disable', 'morenews'),
 
     ),
     'priority'    => 130,
@@ -580,13 +580,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_scroll_to_top_position',
   array(
-    'label' => esc_html__('Scroll to Top Position', 'morenews'),
+    'label' => __('Scroll to Top Position', 'morenews'),
     'section' => 'site_layout_settings',
     'settings' => 'global_scroll_to_top_position',
     'type' => 'select',
     'choices' => array(
-      'right' => esc_html__('Right', 'morenews'),
-      'left' => esc_html__('Left', 'morenews'),
+      'right' => __('Right', 'morenews'),
+      'left' => __('Left', 'morenews'),
 
     ),
     'priority' => 130,
@@ -607,12 +607,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_show_comment_count',
   array(
-    'label' => esc_html__('Comment Count', 'morenews'),
+    'label' => __('Comment Count', 'morenews'),
     'section' => 'site_layout_settings',
     'type' => 'select',
     'choices' => array(
-      'yes' => esc_html__('Show', 'morenews'),
-      'no' => esc_html__('Hide', 'morenews'),
+      'yes' => __('Show', 'morenews'),
+      'no' => __('Hide', 'morenews'),
 
     ),
     'priority' => 130,
@@ -624,7 +624,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_categories_settings',
   array(
-    'title' => esc_html__('Categories Settings', 'morenews'),
+    'title' => __('Categories Settings', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -644,12 +644,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_show_categories',
   array(
-    'label' => esc_html__('Post Categories', 'morenews'),
+    'label' => __('Post Categories', 'morenews'),
     'section' => 'site_categories_settings',
     'type' => 'select',
     'choices' => array(
-      'yes' => esc_html__('Show', 'morenews'),
-      'no' => esc_html__('Hide', 'morenews'),
+      'yes' => __('Show', 'morenews'),
+      'no' => __('Hide', 'morenews'),
 
     ),
     'priority' => 130,
@@ -670,12 +670,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_number_of_categories',
   array(
-    'label' => esc_html__('Categories to be displayed', 'morenews'),
+    'label' => __('Categories to be displayed', 'morenews'),
     'section' => 'site_categories_settings',
     'type' => 'select',
     'choices' => array(
-      'all' => esc_html__('Show All', 'morenews'),
-      'one' => esc_html__('Top One Category', 'morenews'),
+      'all' => __('Show All', 'morenews'),
+      'one' => __('Top One Category', 'morenews'),
 
     ),
     'priority' => 130,
@@ -696,7 +696,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_custom_number_of_categories',
   array(
-    'label' => esc_html__('Number of Categories', 'morenews'),
+    'label' => __('Number of Categories', 'morenews'),
     'section' => 'site_categories_settings',
     'type' => 'number',
     'priority' => 130,
@@ -708,7 +708,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_author_and_date_settings',
   array(
-    'title' => esc_html__('Author and Date Settings', 'morenews'),
+    'title' => __('Author and Date Settings', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -729,13 +729,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_author_icon_gravatar_display_setting',
   array(
-    'label' => esc_html__('Author Icon', 'morenews'),
+    'label' => __('Author Icon', 'morenews'),
     'section' => 'site_author_and_date_settings',
     'type' => 'select',
     'choices' => array(
-      'display-gravatar' => esc_html__('Show Gravatar', 'morenews'),
-      'display-icon' => esc_html__('Show Icon', 'morenews'),
-      'display-none' => esc_html__('None', 'morenews'),
+      'display-gravatar' => __('Show Gravatar', 'morenews'),
+      'display-icon' => __('Show Icon', 'morenews'),
+      'display-none' => __('None', 'morenews'),
     ),
     'priority' => 130,
 
@@ -756,12 +756,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_date_display_setting',
   array(
-    'label' => esc_html__('Date Format', 'morenews'),
+    'label' => __('Date Format', 'morenews'),
     'section' => 'site_author_and_date_settings',
     'type' => 'select',
     'choices' => array(
-      'default-date' => esc_html__('WordPress Default Date Format', 'morenews'),
-      'theme-date' => esc_html__('Ago Date Format', 'morenews'),
+      'default-date' => __('WordPress Default Date Format', 'morenews'),
+      'theme-date' => __('Ago Date Format', 'morenews'),
     ),
     'priority' => 130,
 
@@ -775,7 +775,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_min_read_settings',
   array(
-    'title' => esc_html__('Minutes Read Count', 'morenews'),
+    'title' => __('Minutes Read Count', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -796,12 +796,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_show_min_read',
   array(
-    'label' => esc_html__('Minutes Read Count', 'morenews'),
+    'label' => __('Minutes Read Count', 'morenews'),
     'section' => 'site_min_read_settings',
     'type' => 'select',
     'choices' => array(
-      'yes' => esc_html__('Show', 'morenews'),
-      'no' => esc_html__('Hide', 'morenews'),
+      'yes' => __('Show', 'morenews'),
+      'no' => __('Hide', 'morenews'),
 
     ),
     'priority' => 130,
@@ -814,7 +814,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_excerpt_settings',
   array(
-    'title' => esc_html__('Excerpt Settings', 'morenews'),
+    'title' => __('Excerpt Settings', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -859,7 +859,7 @@ $wp_customize->add_control(
     $wp_customize,
     'show_watch_online_section_section_title',
     array(
-      'label' => esc_html__("Primary Menu Section", 'morenews'),
+      'label' => __("Primary Menu Section", 'morenews'),
       'section' => 'header_builder',
       'priority' => 100,
 
@@ -879,7 +879,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'show_primary_menu_desc',
   array(
-    'label' => esc_html__('Show Primary Menu Description', 'morenews'),
+    'label' => __('Show Primary Menu Description', 'morenews'),
     'section' => 'header_builder',
     'type' => 'checkbox',
     'priority' => 100,
@@ -899,7 +899,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'show_watch_online_section',
   array(
-    'label' => esc_html__('Enable Custom Menu Section', 'morenews'),
+    'label' => __('Enable Custom Menu Section', 'morenews'),
     'section' => 'header_builder',
     'type' => 'checkbox',
     'priority' => 100,
@@ -959,7 +959,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_single_posts_settings',
   array(
-    'title' => esc_html__('Single Post', 'morenews'),
+    'title' => __('Single Post', 'morenews'),
     'priority' => 9,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1000,12 +1000,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'single_featured_image_view',
   array(
-    'label' => esc_html__('Featured Image Width', 'morenews'),
+    'label' => __('Featured Image Width', 'morenews'),
     'section' => 'site_single_posts_settings',
     'type' => 'select',
     'choices' => array(
-      'full' => esc_html__('Full - Default', 'morenews'),
-      'original' => esc_html__('Original', 'morenews')
+      'full' => __('Full - Default', 'morenews'),
+      'original' => __('Original', 'morenews')
     ),
     'priority' => 100,
     'active_callback' => 'morenews_featured_image_status'
@@ -1026,13 +1026,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'global_single_content_mode',
   array(
-    'label'       => esc_html__('Single Content Mode', 'morenews'),
+    'label'       => __('Single Content Mode', 'morenews'),
     'section'     => 'site_single_posts_settings',
     'settings'     => 'global_single_content_mode',
     'type'        => 'select',
     'choices'               => array(
-      'single-content-mode-default' => esc_html__('Default', 'morenews'),
-      'single-content-mode-boxed' => esc_html__('Spacious', 'morenews'),
+      'single-content-mode-default' => __('Default', 'morenews'),
+      'single-content-mode-boxed' => __('Spacious', 'morenews'),
     ),
     'priority'    => 100,
   )
@@ -1056,13 +1056,13 @@ if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')):
   $wp_customize->add_control(
     'single_post_social_share_view',
     array(
-      'label' => esc_html__('Social Share Option', 'morenews'),
-      'description' => esc_html__('Social Share from Jetpack plugin', 'morenews'),
+      'label' => __('Social Share Option', 'morenews'),
+      'description' => __('Social Share from Jetpack plugin', 'morenews'),
       'section' => 'site_single_posts_settings',
       'type' => 'select',
       'choices' => array(
-        'after-title-default' => esc_html__('Top - Default', 'morenews'),
-        'after-content' => esc_html__('Bottom', 'morenews'),
+        'after-title-default' => __('Top - Default', 'morenews'),
+        'after-content' => __('Bottom', 'morenews'),
       ),
       'priority' => 100,
     )
@@ -1127,7 +1127,7 @@ $wp_customize->add_control(
     $wp_customize,
     'single_related_posts_section_title',
     array(
-      'label' => esc_html__("Related Posts Settings", 'morenews'),
+      'label' => __("Related Posts Settings", 'morenews'),
       'section' => 'site_single_posts_settings',
       'priority' => 100,
 
@@ -1189,7 +1189,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_archive_settings',
   array(
-    'title' => esc_html__('Archive Settings', 'morenews'),
+    'title' => __('Archive Settings', 'morenews'),
     'priority' => 9,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1210,7 +1210,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'disable_main_banner_on_blog_archive',
   array(
-    'label'    => esc_html__('Disable Main Banner on Blog', 'morenews'),
+    'label'    => __('Disable Main Banner on Blog', 'morenews'),
     'section'  => 'site_archive_settings',
     'type'     => 'checkbox',
     'priority' => 50,
@@ -1231,15 +1231,15 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'archive_layout',
   array(
-    'label' => esc_html__('Archive layout', 'morenews'),
-    'description' => esc_html__('Select layout for archive', 'morenews'),
+    'label' => __('Archive layout', 'morenews'),
+    'description' => __('Select layout for archive', 'morenews'),
     'section' => 'site_archive_settings',
     'settings' => 'archive_layout',
     'type' => 'select',
     'choices' => array(
 
-      'archive-layout-list' => esc_html__('List', 'morenews'),
-      'archive-layout-full' => esc_html__('Full', 'morenews'),
+      'archive-layout-list' => __('List', 'morenews'),
+      'archive-layout-full' => __('Full', 'morenews'),
 
     ),
     'priority' => 130,
@@ -1260,13 +1260,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'archive_image_alignment',
   array(
-    'label' => esc_html__('Image Alignment', 'morenews'),
-    'description' => esc_html__('Select image alignment for archive', 'morenews'),
+    'label' => __('Image Alignment', 'morenews'),
+    'description' => __('Select image alignment for archive', 'morenews'),
     'section' => 'site_archive_settings',
     'type' => 'select',
     'choices' => array(
-      'archive-image-left' => esc_html__('Left', 'morenews'),
-      'archive-image-right' => esc_html__('Right', 'morenews'),
+      'archive-image-left' => __('Left', 'morenews'),
+      'archive-image-right' => __('Right', 'morenews'),
     ),
     'priority' => 130,
     'active_callback' => 'morenews_archive_image_status'
@@ -1288,13 +1288,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'archive_layout_full',
   array(
-    'label' => esc_html__('Select Title Position', 'morenews'),
-    'description' => esc_html__('Select full layout for archive', 'morenews'),
+    'label' => __('Select Title Position', 'morenews'),
+    'description' => __('Select full layout for archive', 'morenews'),
     'section' => 'site_archive_settings',
     'type' => 'select',
     'choices' => array(
-      'full-image-first' => esc_html__('After Image', 'morenews'),
-      'full-title-first' => esc_html__('Before Image', 'morenews'),
+      'full-image-first' => __('After Image', 'morenews'),
+      'full-title-first' => __('Before Image', 'morenews'),
 
     ),
     'priority' => 130,
@@ -1315,14 +1315,14 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'archive_content_view',
   array(
-    'label' => esc_html__('Content View', 'morenews'),
-    'description' => esc_html__('Select content view for archive', 'morenews'),
+    'label' => __('Content View', 'morenews'),
+    'description' => __('Select content view for archive', 'morenews'),
     'section' => 'site_archive_settings',
     'type' => 'select',
     'choices' => array(
-      'archive-content-excerpt' => esc_html__('Post Excerpt', 'morenews'),
-      'archive-content-full' => esc_html__('Full Content', 'morenews'),
-      'archive-content-none' => esc_html__('None', 'morenews'),
+      'archive-content-excerpt' => __('Post Excerpt', 'morenews'),
+      'archive-content-full' => __('Full Content', 'morenews'),
+      'archive-content-none' => __('None', 'morenews'),
 
     ),
     'priority' => 130,
@@ -1333,7 +1333,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_search_settings',
   array(
-    'title' => esc_html__('Search Options', 'morenews'),
+    'title' => __('Search Options', 'morenews'),
     'priority' => 9,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1353,13 +1353,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'search_archive_content_view',
   array(
-    'label' => esc_html__('Search Results', 'morenews'),
-    'description' => esc_html__('Select search results for archive', 'morenews'),
+    'label' => __('Search Results', 'morenews'),
+    'description' => __('Select search results for archive', 'morenews'),
     'section' => 'site_search_settings',
     'type' => 'select',
     'choices' => array(
-      'all' => esc_html__('All (Pages, Posts, etc)', 'morenews'),
-      'posts' => esc_html__('Posts', 'morenews')
+      'all' => __('All (Pages, Posts, etc)', 'morenews'),
+      'posts' => __('Posts', 'morenews')
     ),
     'priority' => 130,
   )
@@ -1379,7 +1379,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'search_archive_enable_ajax',
   array(
-    'label' => esc_html__('Ajax Results Dropdown', 'morenews'),    
+    'label' => __('Ajax Results Dropdown', 'morenews'),    
     'section' => 'site_search_settings',
     'type' => 'checkbox',
     'priority' => 130,
@@ -1403,7 +1403,7 @@ $wp_customize->add_setting(
 $wp_customize->add_section(
   'sidebar_block_settings',
   array(
-    'title' => esc_html__('Sidebar Settings', 'morenews'),
+    'title' => __('Sidebar Settings', 'morenews'),
     'priority' => 9,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1424,7 +1424,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'frontpage_sticky_sidebar',
   array(
-    'label' => esc_html__('Make Sidebar Sticky', 'morenews'),
+    'label' => __('Make Sidebar Sticky', 'morenews'),
     'section' => 'sidebar_block_settings',
     'type' => 'checkbox',
     'priority' => 100,
@@ -1445,12 +1445,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'frontpage_sticky_sidebar_position',
   array(
-    'label' => esc_html__('Sidebar Sticky Position', 'morenews'),
+    'label' => __('Sidebar Sticky Position', 'morenews'),
     'section' => 'sidebar_block_settings',
     'type' => 'select',
     'choices' => array(
-      'sidebar-sticky-top' => esc_html__('Top', 'morenews'),
-      'sidebar-sticky-bottom' => esc_html__('Bottom', 'morenews'),
+      'sidebar-sticky-top' => __('Top', 'morenews'),
+      'sidebar-sticky-bottom' => __('Bottom', 'morenews'),
     ),
     'priority' => 100,
     'active_callback' => 'frontpage_sticky_sidebar_status'
@@ -1463,7 +1463,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'frontpage_latest_posts_settings',
   array(
-    'title' => esc_html__('You May Have Missed', 'morenews'),
+    'title' => __('You May Have Missed', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1502,7 +1502,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'frontpage_latest_posts_section_title',
   array(
-    'label' => esc_html__('Posts Section Title', 'morenews'),
+    'label' => __('Posts Section Title', 'morenews'),
     'section' => 'frontpage_latest_posts_settings',
     'settings' => 'frontpage_latest_posts_section_title',
     'type' => 'text',
@@ -1519,7 +1519,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
   'site_footer_settings',
   array(
-    'title' => esc_html__('Footer', 'morenews'),
+    'title' => __('Footer', 'morenews'),
     'priority' => 50,
     'capability' => 'edit_theme_options',
     'panel' => 'theme_option_panel',
@@ -1543,7 +1543,7 @@ $wp_customize->add_control(
     $wp_customize,
     'footer_background_image',
     array(
-      'label' => esc_html__('Footer Background Image', 'morenews'),
+      'label' => __('Footer Background Image', 'morenews'),
       'description' => esc_html(sprintf(__('Recommended Size %1$s px X %2$s px', 'morenews'), 1024, 800)),
       'section' => 'footer_builder',
       'width' => 1024,

@@ -20,12 +20,12 @@ $wp_customize->add_setting('global_site_mode_setting',
 
 $wp_customize->add_control('global_site_mode_setting',
     array(
-        'label' => esc_html__('Site Color Mode', 'morenews'),
+        'label' => __('Site Color Mode', 'morenews'),
         'section' => 'colors',
         'type' => 'select',
         'choices' => array(
-            'aft-default-mode' => esc_html__('Light', 'morenews'),
-            'aft-dark-mode' => esc_html__('Dark', 'morenews'),
+            'aft-default-mode' => __('Light', 'morenews'),
+            'aft-dark-mode' => __('Dark', 'morenews'),
         ),
         'priority' => 5,
     ));
@@ -42,7 +42,7 @@ $wp_customize->add_control(
         $wp_customize,
         'site_background_color_section_title',
         array(
-            'label' => esc_html__('Primary Color Section ', 'morenews'),
+            'label' => __('Primary Color Section ', 'morenews'),
             'section' => 'colors',
             'priority' => 5,
             //'active_callback' => 'morenews_global_site_mode_status'
@@ -63,7 +63,7 @@ $wp_customize->add_control(
         $wp_customize,
         'global_color_section_notice',
         array(
-            'description' => esc_html__('Body Background Color (Dark Mode) will be applied for this mode.', 'morenews'),
+            'description' => __('Body Background Color (Dark Mode) will be applied for this mode.', 'morenews'),
             'section' => 'colors',
             'priority' => 10,
             'active_callback' => 'morenews_global_site_mode_dark_status'
@@ -86,7 +86,7 @@ $wp_customize->add_control(
         $wp_customize,
         'dark_background_color',
         array(
-            'label' => esc_html__('Body Background Color (Dark Mode)', 'morenews'),
+            'label' => __('Body Background Color (Dark Mode)', 'morenews'),
             'section' => 'colors',
             'type' => 'color',
             'priority' => 10,
@@ -109,7 +109,7 @@ $wp_customize->add_control(
         $wp_customize,
         'secondary_color_section_title',
         array(
-            'label' => esc_html__('Secondary Color Section ', 'morenews'),
+            'label' => __('Secondary Color Section ', 'morenews'),
             'section' => 'colors',
             'priority' => 10,
             //'active_callback' => 'morenews_global_site_mode_status'
@@ -133,7 +133,7 @@ $wp_customize->add_control(
         $wp_customize,
         'secondary_color',
         array(
-            'label' => esc_html__('Secondary Color', 'morenews'),
+            'label' => __('Secondary Color', 'morenews'),
             'section' => 'colors',
             'type' => 'color',
             'priority' => 10,
@@ -148,7 +148,7 @@ $wp_customize->add_control(
 // font Section.
 $wp_customize->add_section('font_typo_section',
     array(
-        'title' => esc_html__('Fonts & Typography', 'morenews'),
+        'title' => __('Fonts & Typography', 'morenews'),
         'priority' => 5,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -170,7 +170,7 @@ $wp_customize->add_control(
         $wp_customize,
         'site_title_font_section_title',
         array(
-            'label' => esc_html__("Font Family Section", 'morenews'),
+            'label' => __("Font Family Section", 'morenews'),
             'section' => 'font_typo_section',
             'priority' => 100,
 
@@ -193,12 +193,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'global_font_family_type',
     array(
-        'label' => esc_html__('Global Fonts Family', 'morenews'),
+        'label' => __('Global Fonts Family', 'morenews'),
         'section' => 'font_typo_section',
         'type' => 'select',
         'choices' => array(
-            'google' => esc_html__('Google Fonts', 'morenews'),
-            'system' => esc_html__('System Fonts', 'morenews')
+            'google' => __('Google Fonts', 'morenews'),
+            'system' => __('System Fonts', 'morenews')
         ),
         'priority' => 100,
     )
@@ -216,7 +216,7 @@ $wp_customize->add_setting('site_title_font',
 );
 $wp_customize->add_control('site_title_font',
     array(
-        'label' => esc_html__('Site Title Font', 'morenews'),
+        'label' => __('Site Title Font', 'morenews'),
 
         'section' => 'font_typo_section',
         'type' => 'select',
@@ -236,7 +236,7 @@ $wp_customize->add_setting('primary_font',
 );
 $wp_customize->add_control('primary_font',
     array(
-        'label' => esc_html__('Primary Font', 'morenews'),
+        'label' => __('Primary Font', 'morenews'),
 
         'section' => 'font_typo_section',
         'type' => 'select',
@@ -256,7 +256,7 @@ $wp_customize->add_setting('secondary_font',
 );
 $wp_customize->add_control('secondary_font',
     array(
-        'label' => esc_html__('Secondary Font', 'morenews'),
+        'label' => __('Secondary Font', 'morenews'),
 
         'section' => 'font_typo_section',
         'type' => 'select',

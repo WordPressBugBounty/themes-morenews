@@ -81,7 +81,7 @@ if (!class_exists('MoreNews_Express_Posts_Single_Column')) :
 
                                     ?>
                                     <div class="list-style">
-                                        <?php do_action('morenews_action_loop_list', $post->ID, 'medium', 0, true, true, true, true); ?>
+                                        <?php do_action('morenews_action_loop_list', $post->ID, 'medium_large', 0, true, true, true, true); ?>
                                     </div>
                                 <?php
                                 endwhile;

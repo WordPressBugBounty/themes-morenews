@@ -20,7 +20,7 @@ $morenews_default = morenews_get_default_theme_options();
 $wp_customize->add_panel(
     'main_banner_option_panel',
     array(
-        'title' => esc_html__('Main Banner Options', 'morenews'),
+        'title' => __('Main Banner Options', 'morenews'),
         'priority' => 199,
         'capability' => 'edit_theme_options',
     )
@@ -35,7 +35,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
     'frontpage_main_banner_section_settings',
     array(
-        'title' => esc_html__('Main Banner', 'morenews'),
+        'title' => __('Main Banner', 'morenews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'main_banner_option_panel',
@@ -56,7 +56,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'show_main_news_section',
     array(
-        'label' => esc_html__('Enable Main Banner Section', 'morenews'),
+        'label' => __('Enable Main Banner Section', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -81,7 +81,7 @@ $wp_customize->add_control(
         $wp_customize,
         'main_banner_background_section',
         array(
-            'label' => esc_html__('Main Banner Background Image', 'morenews'),
+            'label' => __('Main Banner Background Image', 'morenews'),
             'description' => esc_html(sprintf(__('Recommended Size %1$s px X %2$s px', 'morenews'), 1024, 800)),
             'section' => 'frontpage_main_banner_section_settings',
             'width' => 1024,
@@ -108,14 +108,14 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_main_banner_layout_section',
     array(
-        'label' => esc_html__('Select Main Banner Layout', 'morenews'),
+        'label' => __('Select Main Banner Layout', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'layout-3' => esc_html__("Slider, Trending and Tabs", 'morenews'),
-            'layout-1' => esc_html__("Slider, Editors Picks and Tabs", 'morenews'),
-            'layout-4' => esc_html__("Slider and Editors Picks", 'morenews'),
-            'layout-5' => esc_html__("Slider and Tabs", 'morenews'),
+            'layout-3' => __("Slider, Trending and Tabs", 'morenews'),
+            'layout-1' => __("Slider, Editors Picks and Tabs", 'morenews'),
+            'layout-4' => __("Slider and Editors Picks", 'morenews'),
+            'layout-5' => __("Slider and Tabs", 'morenews'),
         ),
         'priority' => 100,
         'active_callback' => 'morenews_main_banner_section_status'
@@ -137,13 +137,13 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_main_banner_order',
     array(
-        'label' => esc_html__('Select Main Banner Order', 'morenews'),
+        'label' => __('Select Main Banner Order', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'order-1' => esc_html__("Order 1", 'morenews'),
-            'order-2' => esc_html__("Order 2", 'morenews'),
-            'order-3' => esc_html__("Order 3", 'morenews'),
+            'order-1' => __("Order 1", 'morenews'),
+            'order-2' => __("Order 2", 'morenews'),
+            'order-3' => __("Order 3", 'morenews'),
 
         ),
         'priority' => 100,
@@ -171,12 +171,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_main_banner_order_2',
     array(
-        'label' => esc_html__('Select Main Banner Order', 'morenews'),
+        'label' => __('Select Main Banner Order', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'order-1' => esc_html__("Order 1", 'morenews'),
-            'order-2' => esc_html__("Order 2", 'morenews'),
+            'order-1' => __("Order 1", 'morenews'),
+            'order-2' => __("Order 2", 'morenews'),
         ),
         'priority' => 100,
         'active_callback' => function ($control) {
@@ -207,7 +207,7 @@ $wp_customize->add_control(
         $wp_customize,
         'main_banner_panel_section_title',
         array(
-            'label' => esc_html__('Main News Section ', 'morenews'),
+            'label' => __('Main News Section ', 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => 'morenews_main_banner_section_status',
@@ -226,7 +226,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_banner_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -251,12 +251,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_main_banner_carousel_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'cat' => esc_html__("Category", 'morenews'),
-            'tag' => esc_html__("Tag", 'morenews'),
+            'cat' => __("Category", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
         ),
         'priority' => 100,
         'active_callback' => 'morenews_main_banner_section_status'
@@ -279,8 +279,8 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_slider_news_category',
     array(
-        'label' => esc_html__('Select Category', 'morenews'),
-        'description' => esc_html__('Select category to be shown on main slider section', 'morenews'),
+        'label' => __('Select Category', 'morenews'),
+        'description' => __('Select category to be shown on main slider section', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -312,8 +312,8 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_slider_news_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
-        'description' => esc_html__('Select tag to be shown on main slider section', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
+        'description' => __('Select tag to be shown on main slider section', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -346,7 +346,7 @@ $wp_customize->add_control(
         $wp_customize,
         'editors_picks_panel_section_title',
         array(
-            'label' => esc_html__("Editor's Picks Section", 'morenews'),
+            'label' => __("Editor's Picks Section", 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -372,7 +372,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_editors_picks_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'settings' => 'main_editors_picks_section_title',
         'type' => 'text',
@@ -403,12 +403,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_editors_picks_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'cat' => esc_html__("Category", 'morenews'),
-            'tag' => esc_html__("Tag", 'morenews'),
+            'cat' => __("Category", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
 
         ),
         'priority' => 100,
@@ -438,7 +438,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_editors_picks_news_category',
     array(
-        'label' => esc_html__('Select', 'morenews'),
+        'label' => __('Select', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -472,7 +472,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_editors_picks_news_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -508,7 +508,7 @@ $wp_customize->add_control(
         $wp_customize,
         'trending_post_panel_section_title',
         array(
-            'label' => esc_html__("Trending Section", 'morenews'),
+            'label' => __("Trending Section", 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -535,7 +535,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_trending_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -566,12 +566,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_trending_post_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'tag' => esc_html__("Tag", 'morenews'),
-            'comment' => esc_html__("Comment Count", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
+            'comment' => __("Comment Count", 'morenews'),
 
         ),
         'priority' => 100,
@@ -603,7 +603,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_trending_post_category',
     array(
-        'label' => esc_html__('Select', 'morenews'),
+        'label' => __('Select', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -638,7 +638,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_trending_post_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -677,7 +677,7 @@ $wp_customize->add_control(
         $wp_customize,
         'banner_latest_post_panel_section_title',
         array(
-            'label' => esc_html__("Latest Section", 'morenews'),
+            'label' => __("Latest Section", 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -705,7 +705,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_latest_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -735,12 +735,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_banner_latest_post_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'cat' => esc_html__("Category", 'morenews'),
-            'tag' => esc_html__("Tag", 'morenews'),
+            'cat' => __("Category", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
         ),
         'priority' => 100,
         'active_callback' => function ($control) {
@@ -771,7 +771,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_banner_latest_post_category',
     array(
-        'label' => esc_html__('Select', 'morenews'),
+        'label' => __('Select', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -806,7 +806,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_latest_post_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -844,7 +844,7 @@ $wp_customize->add_control(
         $wp_customize,
         'popular_post_panel_section_title',
         array(
-            'label' => esc_html__("Popular Section", 'morenews'),
+            'label' => __("Popular Section", 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -872,7 +872,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_popular_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -902,12 +902,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_popular_post_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'tag' => esc_html__("Tag", 'morenews'),
-            'comment' => esc_html__("Comment Count", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
+            'comment' => __("Comment Count", 'morenews'),
         ),
         'priority' => 100,
         'active_callback' => function ($control) {
@@ -939,7 +939,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_popular_post_category',
     array(
-        'label' => esc_html__('Select', 'morenews'),
+        'label' => __('Select', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -974,7 +974,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_popular_post_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -1012,7 +1012,7 @@ $wp_customize->add_control(
         $wp_customize,
         'update_post_panel_section_title',
         array(
-            'label' => esc_html__("Update Section", 'morenews'),
+            'label' => __("Update Section", 'morenews'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => function ($control) {
@@ -1039,7 +1039,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'main_update_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'text',
         'priority' => 100,
@@ -1068,12 +1068,12 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'select_update_post_filterby',
     array(
-        'label' => esc_html__('Filter Posts By', 'morenews'),
+        'label' => __('Filter Posts By', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'cat' => esc_html__("Category", 'morenews'),
-            'tag' => esc_html__("Tag", 'morenews'),
+            'cat' => __("Category", 'morenews'),
+            'tag' => __("Tag", 'morenews'),
 
         ),
         'priority' => 100,
@@ -1105,7 +1105,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_update_post_category',
     array(
-        'label' => esc_html__('Select', 'morenews'),
+        'label' => __('Select', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -1139,7 +1139,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_update_post_tag',
     array(
-        'label' => esc_html__('Select Tag', 'morenews'),
+        'label' => __('Select Tag', 'morenews'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'post_tag',
@@ -1165,7 +1165,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
 $wp_customize->add_section(
     'frontpage_popular_tags_settings',
     array(
-        'title' => esc_html__('Popular Tags', 'morenews'),
+        'title' => __('Popular Tags', 'morenews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'main_banner_option_panel',
@@ -1194,7 +1194,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'show_popular_tags_section',
     array(
-        'label' => esc_html__('Enable Trending Tags', 'morenews'),
+        'label' => __('Enable Trending Tags', 'morenews'),
         'section' => 'frontpage_popular_tags_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -1213,7 +1213,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'frontpage_popular_tags_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_popular_tags_settings',
         'type' => 'text',
         'priority' => 100,
@@ -1228,7 +1228,7 @@ $wp_customize->add_control(
 $wp_customize->add_section(
     'frontpage_flash_news_settings',
     array(
-        'title' => esc_html__('Breaking News', 'morenews'),
+        'title' => __('Breaking News', 'morenews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'main_banner_option_panel',
@@ -1257,7 +1257,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'show_flash_news_section',
     array(
-        'label' => esc_html__('Enable Flash News', 'morenews'),
+        'label' => __('Enable Flash News', 'morenews'),
         'section' => 'frontpage_flash_news_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -1276,7 +1276,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'flash_news_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_flash_news_settings',
         'type' => 'text',
         'priority' => 100,
@@ -1300,8 +1300,8 @@ $wp_customize->add_control(new morenews_Dropdown_Taxonomies_Control(
     $wp_customize,
     'select_flash_news_category',
     array(
-        'label'       => esc_html__('Flash Posts Category', 'morenews'),
-        'description' => esc_html__('Select category to be shown on trending posts ', 'morenews'),
+        'label'       => __('Flash Posts Category', 'morenews'),
+        'description' => __('Select category to be shown on trending posts ', 'morenews'),
         'section'     => 'frontpage_flash_news_settings',
         'type'        => 'dropdown-taxonomies',
         'taxonomy'    => 'category',
@@ -1324,7 +1324,7 @@ $wp_customize->add_control(new morenews_Dropdown_Taxonomies_Control(
 $wp_customize->add_panel(
     'frontpage_option_panel',
     array(
-        'title' => esc_html__('Front-page Options', 'morenews'),
+        'title' => __('Front-page Options', 'morenews'),
         'priority' => 199,
         'capability' => 'edit_theme_options',
     )
@@ -1339,7 +1339,7 @@ $wp_customize->add_panel(
 $wp_customize->add_section(
     'frontpage_featured_posts_settings',
     array(
-        'title' => esc_html__('Featured Posts', 'morenews'),
+        'title' => __('Featured Posts', 'morenews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -1362,7 +1362,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'show_featured_posts_section',
     array(
-        'label' => esc_html__('Enable Featured Post Section', 'morenews'),
+        'label' => __('Enable Featured Post Section', 'morenews'),
         'section' => 'frontpage_featured_posts_settings',
         'type' => 'checkbox',
         'priority' => 22,
@@ -1382,7 +1382,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'featured_news_section_title',
     array(
-        'label' => esc_html__('Section Title ', 'morenews'),
+        'label' => __('Section Title ', 'morenews'),
         'section' => 'frontpage_featured_posts_settings',
         'type' => 'text',
         'priority' => 130,
@@ -1408,7 +1408,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     'select_featured_news_category',
     array(
         'label' => sprintf(__('Select ', 'morenews')),
-        'description' => esc_html__('Select category to be shown on featured section ', 'morenews'),
+        'description' => __('Select category to be shown on featured section ', 'morenews'),
         'section' => 'frontpage_featured_posts_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -1429,7 +1429,7 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
 $wp_customize->add_section(
     'frontpage_featured_post_list_settings',
     array(
-        'title' => esc_html__('Posts List', 'morenews'),
+        'title' => __('Posts List', 'morenews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -1449,7 +1449,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'show_featured_post_list_section',
     array(
-        'label' => esc_html__('Enable Post List Section', 'morenews'),
+        'label' => __('Enable Post List Section', 'morenews'),
         'section' => 'frontpage_featured_post_list_settings',
         'settings' => 'show_featured_post_list_section',
         'type' => 'checkbox',
@@ -1474,7 +1474,7 @@ for ($morenews_i = 1; $morenews_i <= 3; $morenews_i++) {
             $wp_customize,
             'express_posts_panel_section_title_' . $morenews_i,
             array(
-                'label' => sprintf(esc_html__('Section %d', 'morenews'), $morenews_i),
+                'label' => sprintf(__('Section %d', 'morenews'), $morenews_i),
                 'section' => 'frontpage_featured_post_list_settings',
                 'priority' => 130,
                 'active_callback' => 'morenews_featured_post_list_section_status'
@@ -1495,7 +1495,7 @@ for ($morenews_i = 1; $morenews_i <= 3; $morenews_i++) {
     $wp_customize->add_control(
         'featured_post_list_section_title_' . $morenews_i,
         array(
-            'label' => esc_html__('Section Title', 'morenews'),
+            'label' => __('Section Title', 'morenews'),
             'section' => 'frontpage_featured_post_list_settings',
             'type' => 'text',
             'priority' => 130,
@@ -1520,8 +1520,8 @@ for ($morenews_i = 1; $morenews_i <= 3; $morenews_i++) {
         $wp_customize,
         'featured_post_list_category_section_' . $morenews_i,
         array(
-            'label' => esc_html__('Category', 'morenews'),
-            'description' => esc_html__('Select category to be shown on featured section ', 'morenews'),
+            'label' => __('Category', 'morenews'),
+            'description' => __('Select category to be shown on featured section ', 'morenews'),
             'section' => 'frontpage_featured_post_list_settings',
             'type' => 'dropdown-taxonomies',
             'taxonomy' => 'category',
@@ -1538,7 +1538,7 @@ for ($morenews_i = 1; $morenews_i <= 3; $morenews_i++) {
 $wp_customize->add_section(
     'frontpage_layout_settings',
     array(
-        'title' => esc_html__('Front-page Layout Settings', 'morenews'),
+        'title' => __('Front-page Layout Settings', 'morenews'),
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -1559,14 +1559,14 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'frontpage_content_type',
     array(
-        'label' => esc_html__('Front-page Content Display', 'morenews'),
-        'description' => esc_html__('Select frontpage content display', 'morenews'),
+        'label' => __('Front-page Content Display', 'morenews'),
+        'description' => __('Select frontpage content display', 'morenews'),
         'section' => 'frontpage_layout_settings',
         'settings' => 'frontpage_content_type',
         'type' => 'select',
         'choices' => array(
-            'frontpage-widgets' => esc_html__('Front-page Widgets', 'morenews'),
-            'frontpage-widgets-and-content' => esc_html__('Page Contents & Front-page Widgets', 'morenews'),
+            'frontpage-widgets' => __('Front-page Widgets', 'morenews'),
+            'frontpage-widgets-and-content' => __('Page Contents & Front-page Widgets', 'morenews'),
         ),
         'priority' => 10,
     )
@@ -1585,14 +1585,14 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
     'frontpage_content_alignment',
     array(
-        'label' => esc_html__('Front-page Content Alignment', 'morenews'),
-        'description' => esc_html__('Select frontpage content alignment', 'morenews'),
+        'label' => __('Front-page Content Alignment', 'morenews'),
+        'description' => __('Select frontpage content alignment', 'morenews'),
         'section' => 'frontpage_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'align-content-left' => esc_html__('Home Content - Home Sidebar', 'morenews'),
-            'align-content-right' => esc_html__('Home Sidebar - Home Content', 'morenews'),
-            'full-width-content' => esc_html__('Only Home Content', 'morenews')
+            'align-content-left' => __('Home Content - Home Sidebar', 'morenews'),
+            'align-content-right' => __('Home Sidebar - Home Content', 'morenews'),
+            'full-width-content' => __('Only Home Content', 'morenews')
         ),
         'priority' => 10,
     )

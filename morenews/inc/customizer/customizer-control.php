@@ -183,7 +183,7 @@ class MoreNews_Dropdown_Taxonomies_Control extends WP_Customize_Control
             <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
             <select <?php $this->link(); ?>>
                 <?php
-                printf('<option value="%s" %s>%s</option>', 0, selected($this->value(), '', false), esc_html__('-- Select --', 'morenews'));
+                printf('<option value="%s" %s>%s</option>', 0, selected($this->value(), '', false), __('-- Select --', 'morenews'));
                 ?>
                 <?php if (!empty($all_taxonomies)) : ?>
                     <?php foreach ($all_taxonomies as $key => $tax) : ?>

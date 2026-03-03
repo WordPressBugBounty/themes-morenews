@@ -1,3 +1,18 @@
+### 3.9.2 - Mar 03 2026
+* Update - Customizer optimization
+* Update - German language file
+* Update - Arabic language file
+* Update - French language file
+* Update - Italian language file
+* Update - Japanese language file
+* Update - Polish language file
+* Update - Portugese language file
+* Update - Spanish language file
+* Update - Dutch language file
+* Update - Russian language file
+* Update - Ukranian language file
+* Update - Swedish language file 
+
 ### 3.9.0 - Feb 16, 2026
 * Update - Updated German language file.
 * Update - Updated Arabic language file.

@@ -8,9 +8,9 @@ function morenews_widgets_init()
 {
    
     register_sidebar(array(
-        'name'          => esc_html__('Header Banner Ad Section', 'morenews'),
+        'name'          => __('Header Banner Ad Section', 'morenews'),
         'id'            => 'home-advertisement-widgets',
-        'description'   => esc_html__('Add widgets for frontpage banner section advertisement.', 'morenews'),
+        'description'   => __('Add widgets for frontpage banner section advertisement.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -20,9 +20,9 @@ function morenews_widgets_init()
 
 
     register_sidebar(array(
-        'name'          => esc_html__('Off Canvas Drawer Menu Section', 'morenews'),
+        'name'          => __('Off Canvas Drawer Menu Section', 'morenews'),
         'id'            => 'express-off-canvas-panel',
-        'description'   => esc_html__('Add widgets for off-canvas section.', 'morenews'),
+        'description'   => __('Add widgets for off-canvas section.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -30,9 +30,9 @@ function morenews_widgets_init()
     ));
     
     register_sidebar(array(
-        'name' => esc_html__('Main Sidebar', 'morenews'),
+        'name' => __('Main Sidebar', 'morenews'),
         'id' => 'sidebar-1',
-        'description' => esc_html__('Add widgets for main sidebar.', 'morenews'),
+        'description' => __('Add widgets for main sidebar.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -40,9 +40,9 @@ function morenews_widgets_init()
     ));
     
     register_sidebar(array(
-        'name' => esc_html__('Front-page Content Section', 'morenews'),
+        'name' => __('Front-page Content Section', 'morenews'),
         'id' => 'home-content-widgets',
-        'description' => esc_html__('Add widgets to front-page contents section.', 'morenews'),
+        'description' => __('Add widgets to front-page contents section.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -50,9 +50,9 @@ function morenews_widgets_init()
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Front-page Sidebar Section', 'morenews'),
+        'name' => __('Front-page Sidebar Section', 'morenews'),
         'id' => 'home-sidebar-widgets',
-        'description' => esc_html__('Add widgets to front-page sidebar section.', 'morenews'),
+        'description' => __('Add widgets to front-page sidebar section.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -62,9 +62,9 @@ function morenews_widgets_init()
     
     
     register_sidebar(array(
-        'name' => esc_html__('Footer Widget 1', 'morenews'),
+        'name' => __('Footer Widget 1', 'morenews'),
         'id' => 'footer-first-widgets-section',
-        'description' => esc_html__('Displays items on footer first column.', 'morenews'),
+        'description' => __('Displays items on footer first column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -73,9 +73,9 @@ function morenews_widgets_init()
 
 
     register_sidebar(array(
-        'name' => esc_html__('Footer Widget 2', 'morenews'),
+        'name' => __('Footer Widget 2', 'morenews'),
         'id' => 'footer-second-widgets-section',
-        'description' => esc_html__('Displays items on footer second column.', 'morenews'),
+        'description' => __('Displays items on footer second column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
@@ -83,9 +83,9 @@ function morenews_widgets_init()
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Footer Widget 3', 'morenews'),
+        'name' => __('Footer Widget 3', 'morenews'),
         'id' => 'footer-third-widgets-section',
-        'description' => esc_html__('Displays items on footer third column.', 'morenews'),
+        'description' => __('Displays items on footer third column.', 'morenews'),
         'before_widget' => '<div id="%1$s" class="widget morenews-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="widget-title widget-title-1"><span class="heading-line-before"></span><span class="heading-line">',
