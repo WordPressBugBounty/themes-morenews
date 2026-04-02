@@ -1,3 +1,10 @@
+### 3.9.6 - April 02 2026
+* Update - Migrated theme.json to version 3 for improved WordPress 6.6+ compatibility
+* Update - Optimized block layout settings and content width inheritance
+* Update - Enhanced button element styles for global consistency across all blocks
+* Update - Refined typography and spacing controls for the Block Editor
+* Update - Added support for root padding aware alignments
+
 ### 3.9.2 - Mar 03 2026
 * Update - Customizer optimization
 * Update - German language file
