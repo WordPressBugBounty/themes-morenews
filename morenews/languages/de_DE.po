@@ -2026,7 +2026,7 @@ msgstr ""
 "Zeitschriften. Beginnen Sie schnell mit unseren über 100 Ein-Klick-"
 "Starterseiten – keine Programmierung erforderlich."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Pro-Funktionen freischalten"
 
 msgid "Docs"

@@ -192,7 +192,7 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Upgrade to Pro', 'morenews'), // Page title.
+        __('Get Full Control', 'morenews'), // Page title.
         '<span id="aft-upgrade-menu-item">' . __('Upgrade Now', 'morenews') . '</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/morenews-pro/') // Menu slug.

@@ -2018,7 +2018,7 @@ msgstr ""
 "blogs, sitios de noticias y revistas. Comience rápidamente con nuestros más "
 "de 100 sitios de inicio con un solo clic, sin necesidad de codificación."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Desbloquear características Pro"
 
 msgid "Docs"

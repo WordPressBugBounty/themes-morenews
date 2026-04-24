@@ -2030,7 +2030,7 @@ msgstr ""
 " les blogs, les sites d'actualités et les magazines. Démarrez rapidement "
 "avec nos plus de 100 sites de démarrage en un clic – aucun codage requis."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Débloquer les fonctionnalités pro"
 
 msgid "Docs"

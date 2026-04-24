@@ -2012,7 +2012,7 @@ msgstr ""
 "usare per blog, siti di notizie e riviste. Inizia rapidamente con i nostri "
 "oltre 100 siti iniziali con un solo clic, senza bisogno di codifica."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Sblocca le funzionalità Pro"
 
 msgid "Docs"

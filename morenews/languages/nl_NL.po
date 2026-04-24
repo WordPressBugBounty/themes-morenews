@@ -2006,7 +2006,7 @@ msgstr ""
 "aan de slag met onze meer dan 100 startersites met één klik – geen codering "
 "nodig."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Ontgrendel Pro functies"
 
 msgid "Docs"

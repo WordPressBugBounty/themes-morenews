@@ -2020,7 +2020,7 @@ msgstr ""
 "Zacznij szybko dzięki naszym ponad 100 witrynom startowym obsługiwanym "
 "jednym kliknięciem — bez konieczności kodowania."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Odblokuj funkcje Pro"
 
 msgid "Docs"

@@ -2001,7 +2001,7 @@ msgstr ""
 "para blogs, sites de notícias e revistas. Comece rapidamente com nossos mais"
 " de 100 sites iniciais com um clique - sem necessidade de codificação."
 
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr "Desbloquear recursos Pro"
 
 msgid "Docs"

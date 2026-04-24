@@ -2694,7 +2694,7 @@ msgid "Thank you for installing [theme] — a fast, flexible, and user-friendly 
 msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:9
-msgid "Unlock Pro Features"
+msgid "Get Full Control"
 msgstr ""
 
 #: admin-dashboard/src/components/json/dashboard-content.js:14
