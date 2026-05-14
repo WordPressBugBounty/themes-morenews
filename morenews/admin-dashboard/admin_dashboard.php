@@ -123,7 +123,16 @@ if (!class_exists('AF_themes_info')) {
         // $get_started_order
       );
 
-
+// Our getting started page.
+add_submenu_page(
+  'morenews', // Parent slug.
+  __('Starter Sites', 'morenews'), // Page title.
+  __('Starter Sites', 'morenews'), // Menu title.
+  'manage_options', // Capability.
+  'starter-sites', // Menu slug.
+  array($this, 'morenews_render_starter_sites'), // Callback function.
+  // $starter_sites_order
+);
 
       // Our getting started page.
       add_submenu_page(
@@ -145,7 +154,7 @@ if (!class_exists('AF_themes_info')) {
         //[$this,'morenews_customize_link'] // Callback function.
 
       );
-      
+
       add_submenu_page(
         'morenews', // Parent slug.
         __('Footer Builder', 'morenews'), // Page title.
@@ -156,14 +165,13 @@ if (!class_exists('AF_themes_info')) {
 
       );
 
-      // Our getting started page.
       add_submenu_page(
         'morenews', // Parent slug.
-        __('Starter Sites', 'morenews'), // Page title.
-        __('Starter Sites', 'morenews'), // Menu title.
+        __('Block Patterns', 'morenews'), // Page title.
+        __('Block Patterns', 'morenews'), // Menu title.
         'manage_options', // Capability.
-        'starter-sites', // Menu slug.
-        array($this, 'morenews_render_starter_sites'), // Callback function.
+        $starter_template_slug, // Menu slug.
+        array($this, 'morenews_render_starter_templates'), // Callback function.
         // $starter_sites_order
       );
 
@@ -177,15 +185,7 @@ if (!class_exists('AF_themes_info')) {
         // $starter_sites_order
       );
 
-      add_submenu_page(
-        'morenews', // Parent slug.
-        __('Block Patterns', 'morenews'), // Page title.
-        __('Block Patterns', 'morenews'), // Menu title.
-        'manage_options', // Capability.
-        $starter_template_slug, // Menu slug.
-        array($this, 'morenews_render_starter_templates'), // Callback function.
-        // $starter_sites_order
-      );
+      
 
 
 
@@ -408,10 +408,11 @@ if (!class_exists('AF_themes_info')) {
       wp_enqueue_script(
         'aftheme-dashboard', // Handle.
         get_template_directory_uri() . '/admin-dashboard/dist/admin_dashboard.build.js',
-        array('react', 'react-dom', 'wp-api-fetch', 'wp-element'), // Dependencies, defined above.
+        array('wp-api-fetch', 'wp-element'), // Dependencies, defined above.
         '1.0.0',
         true
       );
+
 
       $changelog = $this->morenews_get_latest_changelog();
       $dahboard_path = get_template_directory_uri() . '/admin-dashboard/plugin-imgs';
@@ -452,6 +453,7 @@ if (!class_exists('AF_themes_info')) {
           'starter_sites' => get_template_directory_uri() . '/admin-dashboard/assets/images/starter-sites.jpg',
           'block_patterns' => get_template_directory_uri() . '/admin-dashboard/assets/images/block-patterns.jpg',
           'template_kits' => get_template_directory_uri() . '/admin-dashboard/assets/images/template-kits.jpg',
+          'af_companion' => get_template_directory_uri() . '/admin-dashboard/assets/images/af-companion.png',
 
         ]
       );
@@ -516,6 +518,7 @@ if (!class_exists('AF_themes_info')) {
       require_once  get_template_directory() . '/admin-dashboard/rest-api/api-request.php';
       require_once  get_template_directory() . '/admin-dashboard/rest-api/class-admin-notice.php';
       require_once  get_template_directory() . '/admin-dashboard/rest-api/class-ajaxcall.php';
+      require_once get_template_directory() . '/admin-dashboard/class-af-companion.php';
     }
 
     public function morenews_get_plugins_list_data()

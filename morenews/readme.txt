@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
 Tested up to: 6.9
-Stable tag: 3.9.2
+Stable tag: 4.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,6 +57,28 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 4.2.0 - May 12, 2026 =
+* New: Added sticky mobile menu support for improved navigation experience on mobile devices.
+* New: Added enhanced no-post-image archive layout styling and presentation.
+* Improvement: Improved mobile menu design and responsiveness across devices.
+* Improvement: Added custom secondary color styling enhancements for better design flexibility.
+* Improvement: Improved heading border-bottom styling for cleaner section presentation.
+* Improvement: Enhanced RTL support for single page layouts.
+* Improvement: Optimized custom CSS and Customizer-generated CSS for better frontend performance.
+* Improvement: Optimized various frontend styles and design consistency across layouts.
+* Improvement: Refined child theme CSS compatibility and styling behavior.
+* Improvement: Improved no-post-image design consistency across archive pages.
+* Improvement: Updated and refined custom color handling and color correction styles.
+* Improvement: Enhanced overall theme design consistency and free version review refinements.
+* Improvement: Added modern React compatibility improvements for admin and build processes.
+* Improvement: Added faster Webpack minification process for optimized asset generation.
+* Improvement: Added Make POT support for improved translation file generation workflow.
+* Cleanup: Removed deprecated dis-old folder from admin dashboard files.
+* Update: Refined Freemius slug naming consistency.
+* Update: Various CSS optimization and frontend performance enhancements.
+* Fix: Improved mobile menu sticky behavior and usability on smaller screens.
+* Fix: Resolved frontend style inconsistencies across archive and single page layouts.
+
 = 3.9.2 - Mar 03 2026 =
 * Update - Customizer optimization
 * Update - German language file

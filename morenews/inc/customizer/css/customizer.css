@@ -707,4 +707,37 @@ li.customize-control-color .wp-picker-container .wp-color-result.button{
 }
 /* ==========================================================================
    check box
-   ========================================================================== */   
+========================================================================== */   
+span.aft-unlock-pro-wrap {
+    background: rgb(255 215 0 / 12%);
+    display: block;
+    padding: 15px;
+}
+a.button.button-secondary.aft-button.aft-button--pro {
+    color: #ffffff;
+    border-color: #008000;
+    background: #008000;
+	margin-top: 15px;
+	padding: 3px 18px;
+	margin-left: 6px;
+}
+.aft-unlock-pro-wrap li.pro-features {
+	display: inline-flex;
+	align-items: center;
+    gap: 5px;
+}
+.aft-unlock-pro-wrap .customize-control-title {
+	display: inline-flex;
+	gap: 10px;
+	align-items: center;
+	margin: 6px;
+}
+.aft-unlock-pro-wrap li.pro-features svg{
+    color: #008000;
+    width: 22px;
+    height: 22px;
+}
+.aft-unlock-pro-wrap .customize-control-title svg path {
+    stroke: #1665cf;
+    fill: transparent;
+}

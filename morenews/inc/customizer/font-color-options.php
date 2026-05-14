@@ -10,7 +10,8 @@ $morenews_default = morenews_get_default_theme_options();
 
 
 // Setting - global content alignment of news.
-$wp_customize->add_setting('global_site_mode_setting',
+$wp_customize->add_setting(
+    'global_site_mode_setting',
     array(
         'default' => $morenews_default['global_site_mode_setting'],
         'capability' => 'edit_theme_options',
@@ -18,7 +19,8 @@ $wp_customize->add_setting('global_site_mode_setting',
     )
 );
 
-$wp_customize->add_control('global_site_mode_setting',
+$wp_customize->add_control(
+    'global_site_mode_setting',
     array(
         'label' => __('Site Color Mode', 'morenews'),
         'section' => 'colors',
@@ -28,10 +30,12 @@ $wp_customize->add_control('global_site_mode_setting',
             'aft-dark-mode' => __('Dark', 'morenews'),
         ),
         'priority' => 5,
-    ));
+    )
+);
 
 //section title
-$wp_customize->add_setting('site_background_color_section_title',
+$wp_customize->add_setting(
+    'site_background_color_section_title',
     array(
         'sanitize_callback' => 'sanitize_text_field',
     )
@@ -52,7 +56,8 @@ $wp_customize->add_control(
 
 
 //section title
-$wp_customize->add_setting('global_color_section_notice',
+$wp_customize->add_setting(
+    'global_color_section_notice',
     array(
         'sanitize_callback' => 'sanitize_text_field',
     )
@@ -74,7 +79,8 @@ $wp_customize->add_control(
 
 
 // Setting - slider_caption_bg_color.
-$wp_customize->add_setting('dark_background_color',
+$wp_customize->add_setting(
+    'dark_background_color',
     array(
         'default' => $morenews_default['dark_background_color'],
         'capability' => 'edit_theme_options',
@@ -98,7 +104,8 @@ $wp_customize->add_control(
 
 
 //section title
-$wp_customize->add_setting('secondary_color_section_title',
+$wp_customize->add_setting(
+    'secondary_color_section_title',
     array(
         'sanitize_callback' => 'sanitize_text_field',
     )
@@ -119,7 +126,8 @@ $wp_customize->add_control(
 
 
 // Setting - secondary_color.
-$wp_customize->add_setting('secondary_color',
+$wp_customize->add_setting(
+    'secondary_color',
     array(
         'default' => $morenews_default['secondary_color'],
         'capability' => 'edit_theme_options',
@@ -142,11 +150,43 @@ $wp_customize->add_control(
     )
 );
 
+// Setting - global content alignment of news.
+$wp_customize->add_setting(
+    'unlock_pro_features_colors',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+
+$wp_customize->add_control(
+    new MoreNews_Unlock_Pro_Features(
+        $wp_customize,
+        'unlock_pro_features_colors',
+        array(
+            'label' => __("Professional Color Branding", 'morenews'),
+            'section' => 'colors',
+            'priority' => 10,
+            'features' => array(
+                'category'  => __('Per-Category Color Coding', 'morenews'),
+                'dark'      => __('Dark Mode Brand Customization', 'morenews'),
+                'nav'       => __('Pro Header & Menu Styling', 'morenews'),
+                'alerts'    => __('Breaking News & Live Badges', 'morenews'),
+                'media'     => __('Watch Online & Video Accents', 'morenews'),
+                'marketing' => __('Newsletter & CTA Button Colors', 'morenews'),
+                'footer'    => __('Full Footer Branding & Credits', 'morenews'),
+                'states'    => __('Link Hover & UI Interaction', 'morenews'),
+                'surfaces'  => __('Box & Sidebar Backgrounds', 'morenews')
+            ),
+
+        )
+    )
+);
 
 
 //============= Font Options ===================
 // font Section.
-$wp_customize->add_section('font_typo_section',
+$wp_customize->add_section(
+    'font_typo_section',
     array(
         'title' => __('Fonts & Typography', 'morenews'),
         'priority' => 5,
@@ -159,7 +199,8 @@ global $morenews_google_fonts;
 
 
 // Trending Section.
-$wp_customize->add_setting('site_title_font_section_title',
+$wp_customize->add_setting(
+    'site_title_font_section_title',
     array(
         'sanitize_callback' => 'sanitize_text_field',
     )
@@ -207,14 +248,16 @@ $wp_customize->add_control(
 
 
 // Setting - secondary_font.
-$wp_customize->add_setting('site_title_font',
+$wp_customize->add_setting(
+    'site_title_font',
     array(
         'default' => $morenews_default['site_title_font'],
         'capability' => 'edit_theme_options',
         'sanitize_callback' => 'morenews_sanitize_select',
     )
 );
-$wp_customize->add_control('site_title_font',
+$wp_customize->add_control(
+    'site_title_font',
     array(
         'label' => __('Site Title Font', 'morenews'),
 
@@ -227,14 +270,16 @@ $wp_customize->add_control('site_title_font',
 );
 
 // Setting - primary_font.
-$wp_customize->add_setting('primary_font',
+$wp_customize->add_setting(
+    'primary_font',
     array(
         'default' => $morenews_default['primary_font'],
         'capability' => 'edit_theme_options',
         'sanitize_callback' => 'morenews_sanitize_select',
     )
 );
-$wp_customize->add_control('primary_font',
+$wp_customize->add_control(
+    'primary_font',
     array(
         'label' => __('Primary Font', 'morenews'),
 
@@ -247,14 +292,16 @@ $wp_customize->add_control('primary_font',
 );
 
 // Setting - secondary_font.
-$wp_customize->add_setting('secondary_font',
+$wp_customize->add_setting(
+    'secondary_font',
     array(
         'default' => $morenews_default['secondary_font'],
         'capability' => 'edit_theme_options',
         'sanitize_callback' => 'morenews_sanitize_select',
     )
 );
-$wp_customize->add_control('secondary_font',
+$wp_customize->add_control(
+    'secondary_font',
     array(
         'label' => __('Secondary Font', 'morenews'),
 
@@ -263,5 +310,35 @@ $wp_customize->add_control('secondary_font',
         'choices' => $morenews_google_fonts,
         'priority' => 110,
         'active_callback' => 'global_font_family_type_status'
+    )
+);
+
+// Setting - Unlock Pro Typography
+$wp_customize->add_setting(
+    'unlock_pro_features_typography',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+
+$wp_customize->add_control(
+    new MoreNews_Unlock_Pro_Features(
+        $wp_customize,
+        'unlock_pro_features_typography',
+        array(
+            'label' => __("Ultimate Typography Engine", 'morenews'),
+            'section' => 'font_typo_section',
+            'priority' => 110, 
+            'features' => array(
+                'fonts'     => __('150+ Premium Google Fonts', 'morenews'),
+                'weights'   => __('Full Weight Range (100-900)', 'morenews'),
+                'sizes'     => __('Individual Section Font Sizing', 'morenews'),
+                'spacing'   => __('Pro Line Height & Letter Spacing', 'morenews'),
+                'spotlight' => __('High-Impact Title Styling', 'morenews'),
+                'mobile'    => __('Responsive Text Scaling', 'morenews'),
+                'grid'      => __('Grid, List & Archive Typography', 'morenews'),
+                'clean'     => __('Advanced Readability Logic', 'morenews')
+            ),
+        )
     )
 );

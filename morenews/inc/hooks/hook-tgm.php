@@ -36,11 +36,6 @@ if ( ! function_exists( 'morenews_recommended_plugins' ) ) :
                 'required' => false,
             ),
             array(
-                'name'     => esc_html__( 'AF Companion', 'morenews' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
-            array(
                 'name'     => esc_html__( 'Free Live Chat using 3CX', 'morenews' ),
                 'slug'     => 'wp-live-chat-support',
                 'required' => false,

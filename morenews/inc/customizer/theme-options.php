@@ -322,6 +322,36 @@ $wp_customize->add_control(
   )
 );
 
+// Setting - Unlock Pro Features for Header Builder
+$wp_customize->add_setting(
+  'unlock_pro_features_header',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_features_header',
+    array(
+      'label' => __("Premium Header Builder", 'morenews'),
+      'section' => 'header_builder',
+      'priority' => 130,
+      'features' => array(
+        'layouts'  => __('Multi-Row Element Slots', 'morenews'),
+        'elements' => __('Off-Canvas & HTML Blocks', 'morenews'),
+        'widgets'  => __('Triple Header Widget Areas', 'morenews'),
+        'ads'      => __('Precision Ad Display Scopes', 'morenews'),
+        'bg_mode'  => __('Full-Width Image Backgrounds', 'morenews'),
+        'styling'  => __('Overlay & Tint Customization', 'morenews'),
+        'menu'     => __('Icon-Enhanced Custom Menus', 'morenews'),
+        'icons'    => __('Premium Icon Library Access', 'morenews')
+      ),
+    )
+  )
+);
+
 
 // Add Theme Options Panel.
 $wp_customize->add_panel(
@@ -620,6 +650,38 @@ $wp_customize->add_control(
 );
 
 
+// Setting - Unlock Pro Global & Performance Features
+$wp_customize->add_setting(
+  'unlock_pro_global_settings',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_global_settings',
+    array(
+      'label' => __("Site-Wide Performance Pack", 'morenews'),
+      'section' => 'site_layout_settings',
+      'priority' => 130,
+      'features' => array(
+        'tones'    => __('15+ One-Click Theme Tones', 'morenews'),
+        'speed'    => __('Pro Lazy Load & LCP Speed-Up', 'morenews'),
+        'toc'      => __('Auto-Generated Table of Contents', 'morenews'),
+        'views'    => __('Native Post View Counter', 'morenews'),
+        'widgets'  => __('5+ Modern Widget Title Styles', 'morenews'),
+        'marketing' => __('Global Newsletter Subscription Bar', 'morenews'),
+        'image'    => __('Advanced Image Fit & Hover Zoom', 'morenews'),
+        'seo'      => __('GDPR & SEO Core Optimization', 'morenews'),
+        'ux'       => __('Smooth Scroll & Premium UI Logic', 'morenews')
+      ),
+    )
+  )
+);
+
+
 // Global Section.
 $wp_customize->add_section(
   'site_categories_settings',
@@ -683,6 +745,10 @@ $wp_customize->add_control(
 
   )
 );
+
+
+
+
 
 // Setting - sticky_header_option.
 $wp_customize->add_setting(
@@ -768,6 +834,36 @@ $wp_customize->add_control(
   )
 );
 
+// Setting - Unlock Pro Meta & Editorial Control
+$wp_customize->add_setting(
+  'unlock_pro_author_date_settings',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_author_date_settings',
+    array(
+      'label' => __("Editorial Authority Pack", 'morenews'),
+      'section' => 'site_author_and_date_settings',
+      'priority' => 130,
+      'features' => array(
+        'seo_date'  => __('SEO-Ready "Modified" Date Logic', 'morenews'),
+        'dual_date' => __('Show Published & Updated Dates', 'morenews'),
+        'spotlight' => __('Spotlight & Feature Meta Control', 'morenews'),
+        'grid'      => __('Grid, List & Archive Meta Toggles', 'morenews'),
+        'gravatar'  => __('Author Gravatar & Profile Branding', 'morenews'),
+        'layout'    => __('Per-Section Metadata Customization', 'morenews'),
+        'format'    => __('9+ Professional Date Formats', 'morenews'),
+        'minimal'   => __('Minimalist Meta View Modes', 'morenews')
+      ),
+    )
+  )
+);
+
 
 //========== minutes read count options ===============
 
@@ -808,6 +904,34 @@ $wp_customize->add_control(
   )
 );
 
+
+// Setting - Unlock Pro Reading Time Features
+$wp_customize->add_setting(
+  'unlock_pro_read_count',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_read_count',
+    array(
+      'label' => __("Smart Reading Metrics", 'morenews'),
+      'section' => 'site_min_read_settings',
+      'priority' => 130,
+      'features' => array(
+        'accurate'  => __('Precision Read-Time Algorithm', 'morenews'),
+        'wpm'       => __('Adjustable Reading Speed Logic', 'morenews'),
+        'archive'   => __('Archive & Grid Reading Estimates', 'morenews'),
+        'single'    => __('Single Post Engagement Metrics', 'morenews'),
+        'layout'    => __('Per-Section Visibility Control', 'morenews'),
+        'retention' => __('Enhanced Reader Retention Tools', 'morenews')
+      ),
+    )
+  )
+);
 
 
 // Global Section.
@@ -1043,7 +1167,7 @@ $wp_customize->add_control(
 
 //Social share option
 
-if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')):
+if (class_exists('Jetpack') && Jetpack::is_module_active('sharedaddy')) :
   $wp_customize->add_setting(
     'single_post_social_share_view',
     array(
@@ -1174,6 +1298,41 @@ $wp_customize->add_control(
     'type' => 'text',
     'priority' => 100,
     'active_callback' => 'morenews_related_posts_status'
+  )
+);
+
+
+// Setting - The Ultimate Single Post & Revenue Hub
+$wp_customize->add_setting(
+  'unlock_pro_single_post_master',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_single_post_master',
+    array(
+      'label'    => __("Revenue & Engagement Hub", 'morenews'),
+      'section'  => 'site_single_posts_settings',
+      'priority' => 100,
+      'features' => array(
+        'ads'       => __('Smart Auto-Ad Injection', 'morenews'),
+        'sticky'    => __('High-Revenue Sticky Sidebars', 'morenews'),
+        'monetize'  => __('Sponsor & Source Attribution', 'morenews'),
+        'leads'     => __('Integrated Newsletter Sign-ups', 'morenews'),
+        'social'    => __('11+ Pro Social Share Styles', 'morenews'),
+        'retention' => __('Trending & Saved Post Lists', 'morenews'),
+        'interact'  => __('Post Reactions & Bookmarks', 'morenews'),
+        'widgets'   => __('6 Premium Post Widget Areas', 'morenews'),
+        'video'     => __('Featured Video & Subtitles', 'morenews'),
+        'progress'  => __('Reading Progress Indicator', 'morenews'),
+        'dark'      => __('Pro Dark Mode Toggle', 'morenews'),
+        'seo'       => __('LCP Optimized Page Speed', 'morenews')
+      ),
+    )
   )
 );
 
@@ -1329,6 +1488,36 @@ $wp_customize->add_control(
   )
 );
 
+
+// Setting - Unlock Pro Features for Archive/Blog
+$wp_customize->add_setting(
+  'unlock_pro_features_archives',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_features_archives',
+    array(
+      'label' => __("Global Archive Engine", 'morenews'),
+      'section' => 'site_archive_settings',
+      'priority' => 130,
+      'features' => array(
+        'masonry'   => __('Masonry & Premium Grid Styles', 'morenews'),
+        'ajax'      => __('Smart "Load More" Pagination', 'morenews'),
+        'scroll'    => __('Infinite Scroll Engagement', 'morenews'),
+        'full_post' => __('Featured First-Post Highlighting', 'morenews'),
+        'align'     => __('Alternate Multi-Image Alignment', 'morenews'),
+        'view'      => __('Advanced Content View Logic', 'morenews'),
+        'category'  => __('Per-Category Layout Overrides', 'morenews')
+      ),
+    )
+  )
+);
+
 // Breadcrumb Section.
 $wp_customize->add_section(
   'site_search_settings',
@@ -1379,7 +1568,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'search_archive_enable_ajax',
   array(
-    'label' => __('Ajax Results Dropdown', 'morenews'),    
+    'label' => __('Ajax Results Dropdown', 'morenews'),
     'section' => 'site_search_settings',
     'type' => 'checkbox',
     'priority' => 130,
@@ -1590,9 +1779,39 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
   'hide_footer_menu_section',
   array(
-    'label' => __('Hide footer Menu Section', 'morenews'),
+    'label' => __('Hide Footer Menu Section', 'morenews'),
     'section' => 'footer_builder',
     'type' => 'checkbox',
     'priority' => 100,
+  )
+);
+
+// Setting - Unlock Pro Features for Footer Builder
+$wp_customize->add_setting(
+  'unlock_pro_features_footer',
+  array(
+    'sanitize_callback' => 'sanitize_text_field',
+  )
+);
+
+$wp_customize->add_control(
+  new MoreNews_Unlock_Pro_Features(
+    $wp_customize,
+    'unlock_pro_features_footer',
+    array(
+      'label' => __("Professional Footer Builder", 'morenews'),
+      'section' => 'footer_builder',
+      'priority' => 100,
+      'features' => array(
+        'white_label' => __('Remove "Powered by" Credits', 'morenews'),
+        'copyright'   => __('Custom Branding & Copyright Editor', 'morenews'),
+        'layout'      => __('Unlimited Layout Combinations', 'morenews'),
+        'widgets'     => __('Multi-Column Footer Widget Areas', 'morenews'),
+        'bg_img'      => __('Full-Width Background Imagery', 'morenews'),
+        'html'        => __('Custom HTML & Tracking Scripts', 'morenews'),
+        'social'      => __('Integrated Social Brand Links', 'morenews'),
+        'elements'    => __('All Premium Pro Footer Blocks', 'morenews')
+      ),
+    )
   )
 );

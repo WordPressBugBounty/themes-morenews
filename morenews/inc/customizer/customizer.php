@@ -121,6 +121,8 @@ function morenews_customize_register($wp_customize)
   );
 
 
+
+
   $wp_customize->get_section('header_image')->panel = 'site_header_option_panel';
 
   // use get control

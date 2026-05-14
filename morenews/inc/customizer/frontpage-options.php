@@ -1158,6 +1158,36 @@ $wp_customize->add_control(new MoreNews_Dropdown_Taxonomies_Control(
     )
 ));
 
+// Setting - Unlock Pro Features for Main Banner
+$wp_customize->add_setting(
+    'unlock_pro_features_banner',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+
+$wp_customize->add_control(
+    new MoreNews_Unlock_Pro_Features(
+        $wp_customize,
+        'unlock_pro_features_banner',
+        array(
+            'label' => __("Pro Front-Page Engine", 'morenews'),
+            'section' => 'frontpage_main_banner_section_settings',
+            'priority' => 100,
+            'features' => array(
+                'layouts'   => __('13+ Premium Hero Layouts', 'morenews'),
+                'tiles'     => __('Professional Grid & Tile Sliders', 'morenews'),
+                'carousels' => __('Multi-Column Content Carousels', 'morenews'),
+                'filters'   => __('Sort by Most Viewed & Popular', 'morenews'),
+                'orders'    => __('6 Advanced Section Sorting Modes', 'morenews'),
+                'tabs'      => __('Dual-Tabbed Post Collections', 'morenews'),
+                'unlimited' => __('Unlimited Post Display Capacity', 'morenews'),
+                'ads'       => __('Integrated Banner Widget Areas', 'morenews')
+            ),
+        )
+    )
+);
+
 
 
 //Popular Tags
@@ -1595,5 +1625,34 @@ $wp_customize->add_control(
             'full-width-content' => __('Only Home Content', 'morenews')
         ),
         'priority' => 10,
+    )
+);
+
+// Setting - Unified Pro Front-page Features
+$wp_customize->add_setting(
+    'unlock_pro_frontend_features',
+    array(
+        'sanitize_callback' => 'sanitize_text_field',
+    )
+);
+
+$wp_customize->add_control(
+    new MoreNews_Unlock_Pro_Features(
+        $wp_customize,
+        'unlock_pro_frontend_features',
+        array(
+            'label' => __("Advanced Layout Toolkit", 'morenews'),
+            'section' => 'frontpage_layout_settings',
+            'priority' => 10,
+            'features' => array(
+                'express'   => __('Express News Grid Layouts', 'morenews'),
+                'video'     => __('Multi-URL Video Hub Support', 'morenews'),
+                'carousel'  => __('Dynamic Content Carousels', 'morenews'),
+                'curation'  => __('Advanced Category Filtering', 'morenews'),
+                'unlimited' => __('Unlimited Post Display Counts', 'morenews'),
+                'mobile'    => __('Touch-Optimized Layouts', 'morenews'),
+                'ads'       => __('In-Section Widget Areas', 'morenews')
+            ),
+        )
     )
 );
