@@ -79,6 +79,7 @@ if (!function_exists('morenews_main_menu_nav_section')) :
           'menu_id' => 'primary-menu',
           'container' => 'div',
           'container_class' => 'menu main-menu menu-desktop ' . $morenews_global_show_home_menu,
+          'fallback_cb'    => 'morenews_wp_page_menu_custom_fallback',
         ));
         ?>
       </nav>
@@ -89,6 +90,23 @@ if (!function_exists('morenews_main_menu_nav_section')) :
 endif;
 
 add_action('morenews_action_main_menu_nav', 'morenews_main_menu_nav_section', 40);
+
+function morenews_wp_page_menu_custom_fallback($args) {
+  // 1. Fetch the default pages list
+  $pages = wp_list_pages(array(
+      'title_li' => '',
+      'echo'     => 0,
+  ));
+
+  // 2. Build the exact same structure as your assigned menu
+  $output =  '<' . $args['container'] . ' class="' . $args['container_class'] . '">';
+  $output .= '<ul id="' . $args['menu_id'] . '" class="menu" >';
+  $output .= $pages;
+  $output .= '</ul>';
+  $output .= '</' . $args['container'] . '>';
+
+  echo $output;
+}
 
 //load search form
 if (!function_exists('morenews_load_search_form_section')) :
@@ -287,7 +305,7 @@ if (!function_exists('morenews_dark_and_light_mode_section')) :
       }
     ?>
       <div id="aft-dark-light-mode-wrap">
-        <a href="javascript:void(0)" class="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" data-site-mode="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" id="aft-dark-light-mode-btn">
+        <a href="#" class="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" data-site-mode="<?php echo esc_attr($morenews_global_site_mode_setting); ?>" id="aft-dark-light-mode-btn">
           <span class="aft-icon-circle"><?php esc_html_e('Light/Dark Button', 'morenews'); ?></span>
         </a>
       </div>
