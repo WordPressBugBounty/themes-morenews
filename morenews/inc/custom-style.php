@@ -217,8 +217,41 @@ if (!function_exists('morenews_custom_style')) {
         <?php endif; ?>
 
         <?php if (!empty($secondary_color)) : ?>
+            body.aft-default-mode p:not(.site-title) a,
+            body.aft-default-mode
+            :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,
+            .comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as,.author-name,.taxonomy-post_tag) a,
+            body.aft-default-mode .morenews-widget.widget_text a,
+            body.aft-default-mode .morenews-widget .textwidget a,
+            body.aft-default-mode .entry-content > :is(ul,ol,p:not(.has-link-color)) :is(a, a:visited), 
+            body.aft-default-mode #wp-calendar tbody :is(td#today,td a),
+            body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a {
+            color: <?php morenews_esc_custom_style($secondary_color) ?>;
+            }
+        <?php endif; ?>
+
+        <?php if (!empty($secondary_color)) : ?>
+            body.aft-dark-mode p:not(.site-title) a,
+            body.aft-dark-mode
+            :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,
+            .comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as) a,
+            body.aft-dark-mode .morenews-widget.widget_text a,
+            body.aft-dark-mode .morenews-widget .textwidget a,
+            body.aft-dark-mode #wp-calendar tbody :is(td#today,td a),
+            body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
+            body.aft-dark-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) :is(a, a:visited),
+            body.aft-dark-mode .taxonomy-post_tag a,
+            body.aft-dark-mode .entry-content :is(a,a:visited) {
+            color: <?php morenews_esc_custom_style($secondary_color) ?>;
+            }
+        <?php endif; ?>
+
+        <?php if (!empty($secondary_color)) : ?>
+            body.aft-default-mode p:not(.site-title) a:hover,
             .aft-default-mode .entry-content a:hover,
-            body.aft-default-mode :is(.morenews-sponsor,.morenews-source,.comment-content,.post-excerpt,.af-breadcrumbs,.author-name, .wp-block-tag-cloud,.tagcloud,.nav-links,p.awpa-more-posts,p.awpa-website) a:hover,
+            body.aft-default-mode 
+            :is(.morenews-sponsor,.morenews-source,.comment-content,.post-excerpt,.af-breadcrumbs,.author-name,
+            .wp-block-tag-cloud,.tagcloud,.nav-links,p.awpa-more-posts,p.awpa-website) a:hover,
             body.aft-default-mode .grid-design-default .read-title h3 a:hover,
             body.aft-default-mode .list-style .read-title h3 a:hover,
             body.aft-default-mode.single span.tags-links a:hover,
@@ -248,7 +281,6 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode #wp-calendar tbody td#today:hover,
             body.aft-default-mode #wp-calendar tbody td a:hover,
             body.aft-default-mode .wp-calendar-nav a:hover,
-            body.aft-default-mode .entry-content > :is(ul,ol,p:not(.has-link-color)) :is(a, a:visited), 
             body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a:hover,
             body.aft-default-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) a:hover {
             color: <?php morenews_esc_custom_style($secondary_color) ?>;
@@ -256,7 +288,10 @@ if (!function_exists('morenews_custom_style')) {
         <?php endif; ?>
 
         <?php if (!empty($secondary_color)) : ?>
-            body.aft-dark-mode :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,.wp-block-tag-cloud,.tagcloud,.nav-links,.comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as,.af-breadcrumbs,p.awpa-more-posts,p.awpa-website) a:hover,
+            body.aft-dark-mode p:not(.site-title) a:hover,
+            body.aft-dark-mode
+            :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,.wp-block-tag-cloud,.tagcloud,.nav-links,
+            .comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as,.af-breadcrumbs,p.awpa-more-posts,p.awpa-website) a:hover,
             body.aft-dark-mode .grid-design-default .read-title h3 a:hover,
             body.aft-dark-mode .list-style .read-title h3 a:hover,
             body.aft-dark-mode .taxonomy-post_tag a:hover,
@@ -284,7 +319,6 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-dark-mode .morenews-widget .textwidget a:hover,
             body.aft-dark-mode #wp-calendar tbody td#today:hover,
             body.aft-dark-mode #wp-calendar tbody td a:hover,
-            body.aft-dark-mode .entry-content > :is(ul,ol,p:not(.has-link-color)) :is(a, a:visited), 
             body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a:hover,
             body.aft-dark-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) a:is(:hover, :visited:hover) {
             color: <?php morenews_esc_custom_style($secondary_color) ?>;

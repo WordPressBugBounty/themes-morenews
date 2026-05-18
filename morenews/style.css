@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 4.2.0
+Version: 4.2.1
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 6.9
@@ -2019,7 +2019,7 @@ div#main-navigation-bar {background: #202020;}
     position: relative;
     background-color: rgba(0,0,0,.1);
 }
-.aft-dark-mode .exclusive-posts .marquee a span.circle-marq {background-color: rgba(255,255,255,.1);}
+.aft-dark-mode .exclusive-posts .marquee a span.circle-marq {background-color: rgba(255,255,255,.06);}
 .exclusive-posts .marquee a img {
     height: 40px;
     width: 40px;
@@ -2403,6 +2403,11 @@ body:not(.full-width-content) #secondary .morenews_express_posts_grid_widget .af
     bottom: 10px;
     left: 15px;
     right: 15px;
+}
+:is(.af-main-banner-featured-posts,.af-main-banner-latest-posts) .no-post-image .read-img span.min-read,
+:is(.af-main-banner-featured-posts,.af-main-banner-latest-posts) .no-post-image .read-img .af-post-format,
+:is(.af-main-banner-featured-posts,.af-main-banner-latest-posts) .grid-design-default.no-post-image .category-min-read-wrap {
+    position: static;
 }
 .af-main-banner-featured-posts.featured-posts.morenews-customizer .read-img.read-bg-img,
 .af-main-banner-latest-posts .read-img.read-bg-img,
@@ -3141,7 +3146,7 @@ body[class*="widget-title-border-"] .widget-title,
 .aft-posts-tabs-panel .nav-tabs>li>a,
 h4.af-author-display-name,
 .header-after1 ,.widget-title{
-    font-size: 18px;
+    font-size: 16px;
 }
 .aft-posts-tabs-panel .nav-tabs>li>a i {
     font-size: 14px;
@@ -3901,11 +3906,11 @@ iframe.af-hide-iframe{
     padding-left: 0;
     padding-right: 0;
 }
-body.aft-dark-mode .archive-layout-list .no-post-image .read-bg-img,
-body.aft-dark-mode .archive-layout-grid .no-post-image .read-bg-img,
-body.aft-dark-mode .featured-posts.morenews-customizer .no-post-image .read-bg-img,
-body.aft-dark-mode .grid-layout.morenews-customizer .no-post-image .read-bg-img,
-body.aft-dark-mode .latest-posts-grid .no-post-image .read-bg-img {
+.archive-layout-list .no-post-image .read-bg-img,
+.archive-layout-grid .no-post-image .read-bg-img,
+.featured-posts.morenews-customizer .no-post-image .read-bg-img,
+.grid-layout.morenews-customizer .no-post-image .read-bg-img,
+.latest-posts-grid .no-post-image .read-bg-img {
     height: unset !important;
     background: transparent;
     padding-top: 0;
@@ -3920,7 +3925,7 @@ body.aft-dark-mode .latest-posts-grid .no-post-image .read-bg-img {
     max-width: unset;
     aspect-ratio: unset;
 }
-body.aft-dark-mode .af-reated-posts.morenews-customizer .no-post-image .read-img.read-bg-img{
+body.aft-dark-mode .af-reated-posts.morenews-customizer .latest-posts-grid .no-post-image .read-img.read-bg-img{
     background: transparent;
 }
 .archive-layout-grid article.col-3 .no-post-image .read-img.read-bg-img,
@@ -6156,7 +6161,7 @@ ul.awpa-contact-info li a[href*="twitter.com"]{
 .aft-dark-mode .aft-frontpage-feature-section-wrapper section.morenews-customizer,
 :is(.aft-default-mode, .aft-dark-mode) .home-featured-widgets,
 .aft-default-mode .aft-frontpage-feature-section-wrapper section{
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none;
 }
 /*=============for dark mode===========*/
@@ -6199,7 +6204,7 @@ body.aft-dark-mode{
 }
 body.aft-dark-mode .aft-masonry-archive-posts .read-img,
 body.aft-dark-mode .read-img.read-bg-img{
-    background-color: #3a3a3a;
+    background-color: rgba(255, 255, 255, .06);
 }
 body.aft-dark-mode.single span.tags-links a,
 body.aft-dark-mode .main-navigation .menu .menu-mobile li a,
@@ -6998,6 +7003,7 @@ button.morenews-reaction-button:hover::before {
     0%, 100% {transform: scale(1);}
     50% {transform: scale(1) translateY(-10px);}
 }
+button.morenews-reaction-button,
 button.morenews-reaction-button:hover {color: inherit !important;}
 button.morenews-reaction-button img.emoji {
     position: absolute;
