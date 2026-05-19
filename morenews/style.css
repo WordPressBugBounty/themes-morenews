@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 4.2.1
+Version: 4.2.2
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 6.9
@@ -772,9 +772,10 @@ a.comment-reply-link {
 .aft-dark-mode a, .aft-dark-mode .entry-content a:visited {
     color: #fff;
 }
-.aft-dark-mode .entry-content :is(a:hover, a:focus, a:active),
-a:hover, a:focus, a:active {
+.aft-default-mode .entry-content :is(a:hover, a:focus, a:active){
     color: #1665CF ;
+}
+a:hover, a:focus, a:active {
     outline: 0;
     text-decoration: none;
 }
@@ -2237,25 +2238,20 @@ body.aft-default-mode.page-template-full-width main.site-main{
 .aft-dark-mode .morenews-widget {
     background-color: #252525;
 }
-body.aft-dark-mode .primary-footer .morenews-widget,
-body.aft-default-mode .primary-footer .morenews-widget{
+body:is(.aft-dark-mode,.aft-default-mode) .primary-footer .morenews-widget{
     background-color: rgba(255,255,255,0.05);
 }
-body.aft-dark-mode footer.site-footer.data-bg .primary-footer .morenews-widget,
-body.aft-default-mode footer.site-footer.data-bg .primary-footer .morenews-widget{
+body:is(.aft-dark-mode,.aft-default-mode) footer.site-footer.data-bg .primary-footer .morenews-widget{
     background-color: rgba(0,0,0,0.35);
 }
-.aft-default-mode.home main.site-main,
-.aft-dark-mode.home main.site-main,
-.aft-default-mode .aft-archive-wrapper.morenews-customizer ,
-.aft-dark-mode .aft-archive-wrapper.morenews-customizer {
+:is(.aft-dark-mode,.aft-default-mode).home main.site-main,
+:is(.aft-dark-mode,.aft-default-mode) .aft-archive-wrapper.morenews-customizer {
     background-color: transparent;
     padding: 0;
     box-shadow: none;
     margin-bottom: 0;
 }
-.single.aft-dark-mode main.site-main,
-.single.aft-default-mode main.site-main{
+.single:is(.aft-dark-mode,.aft-default-mode) main.site-main{
     padding: 0;
     background: transparent;
     box-shadow: none;
@@ -2265,12 +2261,10 @@ body.aft-default-mode footer.site-footer.data-bg .primary-footer .morenews-widge
     margin-bottom: 0;
 }
 .home-featured-widgets .morenews-widget:last-child {margin-bottom: 20px;}
-body.aft-default-mode .primary-footer .aft-affiliate-box,
-body.aft-dark-mode .primary-footer .aft-affiliate-box{
+body:is(.aft-dark-mode,.aft-default-mode) .primary-footer .aft-affiliate-box{
     background: rgba(255, 255, 255, 0.05);
 }
-.aft-default-mode .aft-main-banner-section.morenews-customizer,
-.aft-dark-mode .aft-main-banner-section.morenews-customizer {
+:is(.aft-dark-mode,.aft-default-mode) .aft-main-banner-section.morenews-customizer {
     background-color: transparent;
     box-shadow: none;
 }
@@ -3030,8 +3024,7 @@ a.morenews-categories.category-color-7{color: #9c27b0;}
 .aft-dark-mode .read-categories:not(.categories-inside-image) a.morenews-categories.category-color-7 {
     color: #fff;
 }
-body.aft-default-mode .site-footer .read-categories:not(.categories-inside-image) a.morenews-categories,
-body.aft-dark-mode .site-footer .read-categories:not(.categories-inside-image) a.morenews-categories{
+body:is(.aft-dark-mode,.aft-default-mode) .site-footer .read-categories:not(.categories-inside-image) a.morenews-categories{
     color: #fff;
 }
 .categories-inside-image a.morenews-categories:after{display: none;}
@@ -4739,6 +4732,7 @@ p a,
     border-bottom: 2px solid;
 }
 .site-title a, p a:hover,
+.entry-content .wp-block-heading a:hover,
 .entry-content .latest-posts-block-post-img > a,
 .entry-content .latest-posts-block-post-grid-author > a,
 .entry-content .latest-posts-block-post-grid-title > a,
@@ -5386,10 +5380,8 @@ a img.aligncenter {
 -------------------------------------------------------------- */
 .wp-block-latest-posts.wp-block-latest-posts__list li,
 .wp-block-latest-comments li.wp-block-latest-comments__comment,
-.wp-block-group ul li,
 .widget:not(.morenews_social_contacts_widget) ul.menu >li,
-.widget ul ul li,
-.widget > ul > li {
+.wp-block-group ul li, .widget ul ul li, .widget > ul > li {
     margin-bottom: 7px;
     padding-bottom: 7px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -5397,10 +5389,8 @@ a img.aligncenter {
 .widget:not(.morenews_social_contacts_widget) ul.menu >li {font-size: 16px;}
 .wp-block-latest-posts.wp-block-latest-posts__list li,
 .wp-block-latest-comments li.wp-block-latest-comments__comment,
-.wp-block-group ul li a,
-.widget ul.menu >li,
-.widget ul ul li,
-.widget > ul > li {
+.wp-block-group ul li a, .widget ul.menu >li,
+.widget ul ul li, .widget > ul > li {
     font-family: 'Oswald', 'Noto Sans', 'Noto Sans CJK SC', 'Noto Sans JP', 'Noto Sans KR', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 .widget > ul > li .comment-author-link,
@@ -5424,8 +5414,7 @@ a img.aligncenter {
 .widget .cat-links {padding: 0;margin: 0;}
 .widget .cat-links li {margin-bottom: 5px;padding-bottom: 0;}
 .widget .cat-links li:last-child {margin-bottom: 5px;}
-.widget ul.menu ul,
-.widget ul ul {
+.widget ul.menu ul, .widget ul ul {
     padding-top: 7px;
     margin-left: 10px;
     padding-left: 10px;
@@ -5537,8 +5526,7 @@ body.aft-default-mode :is(.wp-block-tag-cloud,.tagcloud) a {
 .wp-block-calendar table th {background: rgba(0,0,0,.05);}
 .aft-default-mode #wp-calendar thead th { border-color: rgba(0,0,0,.1);}
 #wp-calendar tbody {color: #1f1f1f;}
-#wp-calendar tfoot td,
-#wp-calendar tbody td {
+#wp-calendar tfoot td, #wp-calendar tbody td {
     border: 1px solid rgba(0,0,0,.1);
     text-align: center;
     padding: 8px;
@@ -5713,11 +5701,7 @@ h2.comments-title {
     margin-bottom: 20px;
     width: 50px;
 }
-.reply,
-.comment div#respond,
-.comment-content {
-    margin-left: 70px;
-}
+.reply,.comment div#respond,.comment-content {margin-left: 70px;}
 .comment-content p{margin-bottom: 5px;}
 .comment-metadata a {font-size: 12px;}
 .comment .wp-block-columns {gap: 1em;}
@@ -5733,26 +5717,10 @@ div#respond p{margin-bottom: 10px;}
 div#respond p.form-submit{margin-bottom: 0px;}
 div#respond label {font-weight: normal;}
 div#respond input {padding: 0 15px;}
-div#respond textarea {
-    width: 100%;
-    padding: 15px;
-}
-p.comment-form-url,
-p.comment-form-email,
-p.comment-form-author {
-    display: inline-block;
-    width: 100%;
-}
-p.comment-form-url label,
-p.comment-form-email label,
-p.comment-form-author label {
-    display: block;
-}
-p.comment-form-url input,
-p.comment-form-email input,
-p.comment-form-author input {
-    width: 100%;
-}
+div#respond textarea {width: 100%;padding: 15px;}
+p.comment-form-url,p.comment-form-email,p.comment-form-author {display: inline-block;width: 100%;}
+p.comment-form-url label,p.comment-form-email label,p.comment-form-author label {display: block;}
+p.comment-form-url input,p.comment-form-email input,p.comment-form-author input {width: 100%;}
 p.comment-form-cookies-consent input {
     height: auto;
     float: left;
@@ -5952,6 +5920,9 @@ footer.site-footer .primary-footer{
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.15);
+}
+body:is(.aft-default-mode,.aft-dark-mode) .site-footer p:not(.site-title) a {
+    color: #fff;
 }
 footer .secondary-footer a {color: #fff;}
 .site-footer.data-bg .secondary-footer::before {background-color: rgba(0,0,0,.35);}
@@ -6213,6 +6184,9 @@ body.aft-dark-mode .widget ul.menu >li,
 body.aft-dark-mode .widget > ul > li{
     border-color:rgba(255, 255, 255, 0.2);
 }
+body.aft-dark-mode .entry-content :is(a,a:visited):hover,
+body.aft-dark-mode .entry-content .wp-block-heading a:hover,
+body.aft-dark-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) :is(a, a:visited),
 body.aft-dark-mode .reply a,
 body.aft-dark-mode.single span.tags-links a,
 body.aft-dark-mode .aft-comment-view-share > span > a,
@@ -6626,22 +6600,22 @@ article.sticky .read-single:before,
 .aft-default-mode p.logged-in-as a,
 .site-footer .secondary-footer a:hover,
 .aft-default-mode .widget > ul > li a:hover,
-:is(.aft-default-mode, .aft-dark-mode).single span.tags-links a:hover,
+.aft-default-mode.single span.tags-links a:hover,
 .aft-default-mode .entry-content > .wp-block-heading a:not(.has-link-color),
 .entry-content > :is(ul, ol, p:not(.has-link-color)) :is(a, a:visited),
-:is(.aft-default-mode, .aft-dark-mode) ul.trail-items li a:hover,
-:is(.aft-default-mode, .aft-dark-mode) :is(.wp-block-tag-cloud,.tagcloud) a:hover,
-:is(.aft-default-mode, .aft-dark-mode) p.awpa-more-posts a:hover,
-:is(.aft-default-mode, .aft-dark-mode) p.awpa-website a:hover,
-:is(.aft-default-mode, .aft-dark-mode) .wp-post-author-meta .awpa-display-name a:hover,
-:is(.aft-default-mode, .aft-dark-mode) .widget ul.menu >li a:hover,
-:is(.aft-default-mode, .aft-dark-mode) .nav-links a:hover{
+.aft-default-mode ul.trail-items li a:hover,
+.aft-default-mode :is(.wp-block-tag-cloud,.tagcloud) a:hover,
+.aft-default-mode p.awpa-more-posts a:hover,
+.aft-default-mode p.awpa-website a:hover,
+.aft-default-mode .wp-post-author-meta .awpa-display-name a:hover,
+.aft-default-mode .widget ul.menu >li a:hover,
+.aft-default-mode .nav-links a:hover{
     color:#1665CF ;
     transition: all 0.075s linear;
 }
 .wp-calendar-nav a, #wp-calendar tbody td a,
-:is(.aft-default-mode, .aft-dark-mode) #wp-calendar tbody td#today,
-a:hover{
+.aft-default-mode #wp-calendar tbody td#today,
+.aft-default-mode a:hover{
     color: #1665CF ;
 }
 .morenews-pagination .nav-links .page-numbers.current,
@@ -6649,7 +6623,6 @@ p.awpa-more-posts a:hover,
 .single span.tags-links a:hover{
     border-color: #1665CF;
 }
-body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color):not(:hover){color: #fff;}
 :is(.aft-default-mode, .aft-dark-mode) .is-style-fill a.wp-block-button__link:not(.has-text-color){color: #fff;}
 :is(.aft-default-mode, .aft-dark-mode) .is-style-fill a.wp-block-button__link:not(.has-background){background-color: #1665CF;}
 .aft-dark-mode .wp-block-embed figcaption,
@@ -6703,7 +6676,6 @@ body:is(.aft-default-mode, .aft-dark-mode) .grid-design-texts-over-image .read-t
 .aft-default-mode .grid-design-texts-over-image .read-details{
     color: #fff;
 }
-.aft-dark-mode .widget > ul > li a:hover,
 .list-style .read-title h3 a:hover,
 .grid-design-default .read-title h3 a:hover {
     color: #1665CF;
@@ -6713,6 +6685,8 @@ body:is(.aft-default-mode, .aft-dark-mode) .grid-design-texts-over-image .read-t
 body .above-footer-widget-section .mailchimp-block:last-child {margin-bottom: -20px;}
 body .above-footer-widget-section > div:not(:first-child) {margin-top: 20px;}
 .aft-default-mode .site-info{background-color: #202020;}
+.aft-dark-mode .grid-design-default .read-title h3 a:hover,
+.aft-dark-mode .list-style .read-title h3 a:hover,
 .read-img .af-post-format i,
 .mailchimp-block, .mailchimp-block .block-title,
 .aft-default-mode .site-info .color-pad a,
@@ -6946,7 +6920,7 @@ h3.morenews-subtitle:after {
     width: 50px;
     background-color: #1665CF;
 }
-.aft-dark-mode h3.morenews-subtitle {border-color: rgba(255, 255, 255, 0.2);}
+.aft-dark-mode h3.morenews-subtitle {color: inherit;border-color: rgba(255, 255, 255, 0.2);}
 ul.badge-links {margin: 0 !important;display: inline-block !important;}
 ul.badge-links li.meta-badge{display: inline-block;}
 .morenews-post-badge {

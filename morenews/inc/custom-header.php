@@ -70,10 +70,10 @@ if (!function_exists('morenews_header_style')) :
       // If the user has set a custom color for the text use that.
       else :
       ?>
-      .site-title a,
-      .site-header .site-branding .site-title a:visited,
-      .site-header .site-branding .site-title a:hover,
-      .site-description {
+      body.aft-default-mode .site-title a,
+      body.aft-default-mode .site-header .site-branding .site-title a:visited,
+      body.aft-default-mode .site-header .site-branding .site-title a:hover,
+      body.aft-default-mode .site-description {
         color: #<?php echo esc_attr($morenews_header_text_color); ?>
       }
 

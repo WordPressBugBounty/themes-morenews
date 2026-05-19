@@ -231,22 +231,10 @@ if (!function_exists('morenews_custom_style')) {
         <?php endif; ?>
 
         <?php if (!empty($secondary_color)) : ?>
-            body.aft-dark-mode p:not(.site-title) a,
-            body.aft-dark-mode
-            :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,
-            .comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as) a,
-            body.aft-dark-mode .morenews-widget.widget_text a,
-            body.aft-dark-mode .morenews-widget .textwidget a,
-            body.aft-dark-mode #wp-calendar tbody :is(td#today,td a),
-            body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a,
-            body.aft-dark-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) :is(a, a:visited),
-            body.aft-dark-mode .taxonomy-post_tag a,
-            body.aft-dark-mode .entry-content :is(a,a:visited) {
-            color: <?php morenews_esc_custom_style($secondary_color) ?>;
-            }
-        <?php endif; ?>
-
-        <?php if (!empty($secondary_color)) : ?>
+            .aft-default-mode .wp-calendar-nav a, 
+            .aft-default-mode #wp-calendar tbody td a, 
+            .aft-default-mode #wp-calendar tbody td#today, 
+            .aft-default-mode a:hover,
             body.aft-default-mode p:not(.site-title) a:hover,
             .aft-default-mode .entry-content a:hover,
             body.aft-default-mode 
@@ -283,44 +271,6 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .wp-calendar-nav a:hover,
             body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a:hover,
             body.aft-default-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) a:hover {
-            color: <?php morenews_esc_custom_style($secondary_color) ?>;
-            }
-        <?php endif; ?>
-
-        <?php if (!empty($secondary_color)) : ?>
-            body.aft-dark-mode p:not(.site-title) a:hover,
-            body.aft-dark-mode
-            :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,.wp-block-tag-cloud,.tagcloud,.nav-links,
-            .comment-content,.post-excerpt,.wp-calendar-nav,p.logged-in-as,.af-breadcrumbs,p.awpa-more-posts,p.awpa-website) a:hover,
-            body.aft-dark-mode .grid-design-default .read-title h3 a:hover,
-            body.aft-dark-mode .list-style .read-title h3 a:hover,
-            body.aft-dark-mode .taxonomy-post_tag a:hover,
-            body.aft-dark-mode .entry-content :is(a,a:visited):hover,
-            body.aft-dark-mode.single span.tags-links a:hover,
-            body.aft-dark-mode .widget ul.menu >li a:hover,
-            body.aft-dark-mode .widget > ul > li a:hover,
-            body.aft-dark-mode ul.trail-items li a:hover,
-            body.aft-dark-mode .banner-exclusive-posts-wrapper :is(a,a:visited):hover,
-            body.aft-dark-mode #secondary .morenews-widget ul[class*="wp-block-"] a:hover,
-            body.aft-dark-mode #secondary .morenews-widget ol[class*="wp-block-"] a:hover,
-            body.aft-dark-mode .entry-content > .wp-block-tag-cloud a:not(.has-text-color):hover,
-            body.aft-dark-mode .entry-content .wp-block-archives-list.wp-block-archives a:not(.has-text-color):hover,
-            body.aft-dark-mode .entry-content .wp-block-latest-posts a:not(.has-text-color):hover,
-            body.aft-dark-mode .entry-content .wp-block-categories-list.wp-block-categories a:not(.has-text-color):hover,
-            .aft-dark-mode .wp-block-archives-list.wp-block-archives a:not(.has-text-color):hover,
-            .aft-dark-mode .wp-block-latest-posts a:not(.has-text-color):hover,
-            .aft-dark-mode .wp-block-categories-list.wp-block-categories a:not(.has-text-color):hover,
-            body.aft-dark-mode .wp-block-latest-comments li.wp-block-latest-comments__comment a:hover,
-            body.aft-dark-mode .morenews-pagination .nav-links a.page-numbers:hover,
-            body.aft-dark-mode .aft-popular-taxonomies-lists ul li a:hover,            
-            body.aft-dark-mode .woocommerce-loop-product__title:hover,
-            body.aft-dark-mode a.post-edit-link:hover,
-            body.aft-dark-mode .morenews-widget.widget_text a:hover,
-            body.aft-dark-mode .morenews-widget .textwidget a:hover,
-            body.aft-dark-mode #wp-calendar tbody td#today:hover,
-            body.aft-dark-mode #wp-calendar tbody td a:hover,
-            body.aft-dark-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a:hover,
-            body.aft-dark-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) a:is(:hover, :visited:hover) {
             color: <?php morenews_esc_custom_style($secondary_color) ?>;
             }
         <?php endif; ?>
