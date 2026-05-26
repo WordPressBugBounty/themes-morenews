@@ -21,6 +21,8 @@ if (!function_exists('morenews_custom_style')) {
         $light_background_color = '#' . $morenews_background_color;
         $dark_background_color = morenews_get_option('dark_background_color');
         $secondary_color = morenews_get_option('secondary_color');
+        $link_color = $secondary_color;
+        $link_hover_color = $secondary_color;
 
 
         $global_font_family_type = morenews_get_option('global_font_family_type');
@@ -216,7 +218,7 @@ if (!function_exists('morenews_custom_style')) {
             }
         <?php endif; ?>
 
-        <?php if (!empty($secondary_color)) : ?>
+        <?php if (!empty($link_color)) : ?>
             body.aft-default-mode p:not(.site-title) a,
             body.aft-default-mode
             :is(.morenews-sponsor,.morenews-source,.widget_text,.comment-form,
@@ -226,11 +228,11 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .entry-content > :is(ul,ol,p:not(.has-link-color)) :is(a, a:visited), 
             body.aft-default-mode #wp-calendar tbody :is(td#today,td a),
             body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a {
-            color: <?php morenews_esc_custom_style($secondary_color) ?>;
+            color: <?php morenews_esc_custom_style($link_color) ?>;
             }
         <?php endif; ?>
 
-        <?php if (!empty($secondary_color)) : ?>
+        <?php if (!empty($link_hover_color)) : ?>
             .aft-default-mode .wp-calendar-nav a, 
             .aft-default-mode #wp-calendar tbody td a, 
             .aft-default-mode #wp-calendar tbody td#today, 
@@ -271,7 +273,7 @@ if (!function_exists('morenews_custom_style')) {
             body.aft-default-mode .wp-calendar-nav a:hover,
             body.aft-default-mode .entry-content .wp-block-heading:not(.has-link-color):not(.wp-block-post-title) a:hover,
             body.aft-default-mode .entry-content > :is(ul, ol, p:not(.has-link-color)) a:hover {
-            color: <?php morenews_esc_custom_style($secondary_color) ?>;
+            color: <?php morenews_esc_custom_style($link_hover_color) ?>;
             }
         <?php endif; ?>
 
@@ -287,20 +289,15 @@ if (!function_exists('morenews_custom_style')) {
         <?php endif; ?>
 
         <?php if (!empty($secondary_font)) : ?>
-            .wp-block-tag-cloud a, .tagcloud a,
-            body span.hustle-title,div.custom-menu-link > a,
+            .wp-block-tag-cloud a, .tagcloud a, body span.hustle-title,div.custom-menu-link > a,
             .wp-block-blockspare-blockspare-tabs .bs-tabs-title-list li a.bs-tab-title,
-            .navigation.post-navigation .nav-links a,
-            .exclusive-posts .exclusive-now span,
-            .aft-popular-taxonomies-lists span,
-            .aft-posts-tabs-panel .nav-tabs>li>a,
+            .navigation.post-navigation .nav-links a, .exclusive-posts .exclusive-now span,
+            .aft-popular-taxonomies-lists span, .aft-posts-tabs-panel .nav-tabs>li>a,
             .nav-tabs>li,.widget ul ul li,.widget ul.menu >li ,.widget > ul > li,
-            .wp-block-search__label,.exclusive-posts a,
+            .wp-block-search__label, .exclusive-posts a,
             .wp-block-latest-posts.wp-block-latest-posts__list li,
             .wp-block-latest-comments li.wp-block-latest-comments__comment,
-            .wp-block-group ul li a,
-            .main-navigation ul li a,
-            h1, h2, h3, h4, h5, h6 {
+            .wp-block-group ul li a, .main-navigation ul li a, h1, h2, h3, h4, h5, h6 {
             font-family: <?php morenews_esc_custom_style($secondary_font) ?>;
             }
         <?php endif; ?>

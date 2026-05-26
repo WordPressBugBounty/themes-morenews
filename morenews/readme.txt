@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
-Tested up to: 6.9
-Stable tag: 4.2.1
+Tested up to: 7.0
+Stable tag: 4.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,6 +57,28 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 4.3.0 - May 26, 2026 =
+* Added Companion menu integration in the theme dashboard.
+* Added Useful Plugins recommendations section.
+* Added improved AF Companion integration and onboarding experience.
+* Improved primary button hover styling.
+* Improved dark mode support across homepage and single post layouts.
+* Improved subtitle color visibility in dark mode.
+* Improved footer text color consistency in dark mode.
+* Improved visited link styling within post content.
+* Improved site title markup and accessibility.
+* Improved custom color compatibility throughout the theme.
+* Improved homepage and single post design consistency.
+* Optimized code structure and overall performance.
+* Fixed dark mode color conflicts on single post pages.
+* Fixed custom color styling inconsistencies.
+* Fixed footer text color display issues.
+* Fixed subtitle color visibility issues in dark mode.
+* Fixed visited link styling in entry content.
+* Fixed various homepage and single page design review issues.
+* Fixed primary button hover color inconsistencies.
+
+
 = 4.2.0 - May 12, 2026 =
 * New: Added sticky mobile menu support for improved navigation experience on mobile devices.
 * New: Added enhanced no-post-image archive layout styling and presentation.

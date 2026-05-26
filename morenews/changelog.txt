@@ -1,3 +1,24 @@
+### 4.3.0 - May 26, 2026 =
+* Added Companion menu integration in the theme dashboard.
+* Added Useful Plugins recommendations section.
+* Added improved AF Companion integration and onboarding experience.
+* Improved primary button hover styling.
+* Improved dark mode support across homepage and single post layouts.
+* Improved subtitle color visibility in dark mode.
+* Improved footer text color consistency in dark mode.
+* Improved visited link styling within post content.
+* Improved site title markup and accessibility.
+* Improved custom color compatibility throughout the theme.
+* Improved homepage and single post design consistency.
+* Optimized code structure and overall performance.
+* Fixed dark mode color conflicts on single post pages.
+* Fixed custom color styling inconsistencies.
+* Fixed footer text color display issues.
+* Fixed subtitle color visibility issues in dark mode.
+* Fixed visited link styling in entry content.
+* Fixed various homepage and single page design review issues.
+* Fixed primary button hover color inconsistencies.
+
 ### 4.2.0 - May 12, 2026
 * New: Added sticky mobile menu support for improved navigation experience on mobile devices.
 * New: Added enhanced no-post-image archive layout styling and presentation.
