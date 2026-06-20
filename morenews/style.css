@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 4.3.1
+Version: 4.3.2
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 7.0
@@ -4601,6 +4601,12 @@ body.aft-default-mode.single-post-title-full .entry-header-details{
     background-color: #f9f9f9;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%);
 }
+body #secondary .morenews-widget ul[class*="wp-block-"]:not(.is-style-logos-only) a.wp-block-social-link-anchor:hover,
+body #secondary .morenews-widget ul[class*="wp-block-"]:not(.is-style-logos-only) a.wp-block-social-link-anchor {
+    color: #fff;
+}
+.sd-sharing .sd-content > ul > li > a.sd-button span,
+.sd-social-official .sd-content > ul > li > a.sd-button span{color:inherit;}
 .archive-description p { margin-bottom: 0;}
 body.single-post .figure-categories .cat-links {margin-top: 0px;}
 .aft-image-caption p {
@@ -6304,13 +6310,13 @@ article.latest-posts-grid .read-title h3,
     font-size: 16px;
 }
 .wp-block-latest-comments li.wp-block-latest-comments__comment,
-.wp-block-group ul li, .widget ul ul li, .widget > ul > li,
+.wp-block-group ul li, .widget ul ul li, .widget > ul > li:not(.wp-social-link),
 :is(.aft-banner-layout-9,.aft-banner-layout-8,.aft-banner-layout-1,.aft-banner-layout-2,.aft-banner-layout-3) 
 .aft-main-banner-wrapper .aft-trending-posts.list-part .af-double-column.list-style .read-title h3{
     font-size: 16px;
 }
 @media screen and (max-width: 1024px) {
-    .widget ul ul li, .widget > ul > li,
+    .widget ul ul li, .widget > ul > li:not(.wp-social-link),
     :is(.aft-banner-layout-9,.aft-banner-layout-8,.aft-banner-layout-1,.aft-banner-layout-2,.aft-banner-layout-3) 
     .aft-main-banner-wrapper .aft-trending-posts.list-part .af-double-column.list-style .read-title h3{
         font-size: 16px;
