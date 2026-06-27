@@ -1221,7 +1221,7 @@ if (!function_exists('morenews_athfb_add_custom_admin_menu')) {
         'parent' => 'morenews-menu',
         'meta'   => array(
           'title'  => $item['title'],
-          // 'target' => '_blank', // Open in new tab
+          'target' => '_blank', // Open in new tab
         ),
       ));
     }
@@ -1278,6 +1278,17 @@ if (!function_exists('morenews_athfb_add_custom_admin_menu')) {
       #wpadminbar #wp-admin-bar-morenews-menu:hover svg {
           fill: #ffcc00;
       }
+
+      #wpadminbar ul li#wp-admin-bar-upgrade-submenu{
+        background-color: #039562;
+        margin-bottom: 0;
+    }
+
+    #wpadminbar ul li#wp-admin-bar-upgrade-submenu a{
+        color:#ffffff;
+        text-transform: uppercase;
+        padding: 3px 10px;
+    }
       
         '
       );
