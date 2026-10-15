@@ -114,6 +114,7 @@ $wp_customize->add_control(
         'choices' => array(
             'layout-3' => __("Slider, Trending and Tabs", 'morenews'),
             'layout-1' => __("Slider, Editors Picks and Tabs", 'morenews'),
+            'layout-2' => __("Slider, Editors Picks and Trending", 'morenews'),
             'layout-4' => __("Slider and Editors Picks", 'morenews'),
             'layout-5' => __("Slider and Tabs", 'morenews'),
         ),

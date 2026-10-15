@@ -741,7 +741,7 @@ if (!function_exists('morenews_main_banner_layout_trending_status')) :
   function morenews_main_banner_layout_trending_status($control)
   {
 
-    if ('layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+    if ('layout-3' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-2' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
       return true;
     } else {
       return false;
@@ -943,7 +943,7 @@ if (!function_exists('morenews_main_banner_layout_editor_picks_status')) :
   function morenews_main_banner_layout_editor_picks_status($control)
   {
 
-    if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-4' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
+    if ('layout-1' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-4' == $control->manager->get_setting('select_main_banner_layout_section')->value() || 'layout-2' == $control->manager->get_setting('select_main_banner_layout_section')->value()) {
       return true;
     } else {
       return false;

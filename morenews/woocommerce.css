@@ -478,6 +478,12 @@ button.wc-block-mini-cart__button {
     font-size: 14px;
     background: #007acc;
 }
+a.button.add_to_cart_button.ajax_add_to_cart.loading::after {
+    position: relative;
+    right: 0px;
+    top: 0;
+    padding-left: 10px;
+}
 .aft-default-mode.woocommerce div.product{
     background-color: #ffffff;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%);

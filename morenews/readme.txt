@@ -1,7 +1,7 @@
 === MoreNews ===
 Contributors: AF themes
-Tested up to: 7.0
-Stable tag: 4.3.6
+Tested up to: 7.1
+Stable tag: 4.4.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
@@ -57,6 +57,23 @@ Yes, MoreNews is compatible with Elementor Page Builder.
 MoreNews includes support for WooCommerce, Elementor, Elespare, Blockspare & Jetpack.
 
 == Change log ==
+= 4.4.0 - Oct 15, 2026 =
+* Added new banner layout "Main slider, Editor's picks and Trending carusel".
+* Integrated AI translation module for Bulk AI translation, PO editor and POT generator and Language progress tracking!
+* Improved social link widget design and social icon presentation.
+* Improved compatibility between theme social sharing icons and Jetpack social sharing.
+* Improved social sharing icons and related content styling in dark mode.
+* Added Open Graph metadata for improved social sharing previews.
+* Improved WooCommerce styling and design consistency.
+* Improved block widget layouts and spacing consistency across widgets.
+* Improved block button hover colors and entry content link colors.
+* Improved menu link hover colors, including the top header menu.
+* Fixed box background color issues.
+* Improved tab focus outline styling and interaction.
+* Improved theme color tone and custom styling.
+* Updated language files and text domain.
+* Updated Freemius integration.
+
 = 4.3.0 - May 26, 2026 =
 * Added Companion menu integration in the theme dashboard.
 * Added Useful Plugins recommendations section.

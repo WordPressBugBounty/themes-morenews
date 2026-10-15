@@ -1,4 +1,21 @@
-### 4.3.0 - May 26, 2026 =
+### 4.4.0 - Oct 15, 2026
+* Added new banner layout "Main slider, Editor's picks and Trending carusel".
+* Integrated AI translation module for Bulk AI translation, PO editor and POT generator and Language progress tracking!
+* Improved social link widget design and social icon presentation.
+* Improved compatibility between theme social sharing icons and Jetpack social sharing.
+* Improved social sharing icons and related content styling in dark mode.
+* Added Open Graph metadata for improved social sharing previews.
+* Improved WooCommerce styling and design consistency.
+* Improved block widget layouts and spacing consistency across widgets.
+* Improved block button hover colors and entry content link colors.
+* Improved menu link hover colors, including the top header menu.
+* Fixed box background color issues.
+* Improved tab focus outline styling and interaction.
+* Improved theme color tone and custom styling.
+* Updated language files and text domain.
+* Updated Freemius integration.
+
+### 4.3.0 - May 26, 2026
 * Added Companion menu integration in the theme dashboard.
 * Added Useful Plugins recommendations section.
 * Added improved AF Companion integration and onboarding experience.

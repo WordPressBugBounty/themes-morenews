@@ -84,10 +84,29 @@ if (!function_exists('morenews_custom_style')) {
             .frm_style_formidable-style.with_frm_style .frm_submit input[type=button],
             .frm_style_formidable-style.with_frm_style .frm_submit button,
             .frm_style_formidable-style.with_frm_style .frm-edit-page-btn,
-            .woocommerce 
-            :is(#respond input#submit,a.button,button.button,input.button)
-            :is(.disabled,:disabled,:disabled[disabled],.alt,:not(.disabled):not(:disabled):not([disabled])),
+            .woocommerce #respond input#submit.disabled,
+            .woocommerce #respond input#submit:disabled,
+            .woocommerce #respond input#submit:disabled[disabled],
+            .woocommerce #respond input#submit.alt,
+            .woocommerce #respond input#submit:not(.disabled):not(:disabled):not([disabled]),
+            .woocommerce a.button.disabled,
+            .woocommerce a.button:disabled,
+            .woocommerce a.button:disabled[disabled],
+            .woocommerce a.button.alt,
+            .woocommerce a.button:not(.disabled):not(:disabled):not([disabled]),
+            .woocommerce button.button.disabled,
+            .woocommerce button.button:disabled,
+            .woocommerce button.button:disabled[disabled],
+            .woocommerce button.button.alt,
+            .woocommerce button.button:not(.disabled):not(:disabled):not([disabled]),
+            .woocommerce input.button.disabled,
+            .woocommerce input.button:disabled,
+            .woocommerce input.button:disabled[disabled],
+            .woocommerce input.button.alt,
+            .woocommerce input.button:not(.disabled):not(:disabled):not([disabled]),
             .woocommerce-account .addresses .title .edit,
+            .woocommerce ul.products li.product .button:hover,
+            .woocommerce div.product form.cart .button:hover,
             :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
             :root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
             hustle-button,
@@ -121,7 +140,7 @@ if (!function_exists('morenews_custom_style')) {
             .widget-title-border-bottom .heading-line::before,
             .widget-title-border-bottom .wp-post-author-wrap .header-after::before,
             .widget-title-border-bottom .aft-posts-tabs-panel .nav-tabs>li>a.active span::after,
-            :is(.aft-default-mode, .aft-dark-mode) .is-style-fill a.wp-block-button__link:not(.has-background),
+            :is(.aft-default-mode, .aft-dark-mode) .wp-block-button:not(.is-style-outline) a:not(.has-text-color),
             #reading-progress-bar,a.comment-reply-link,
             body:is(.aft-default-mode, .aft-dark-mode) .reply a,
             .aft-popular-taxonomies-lists span::before ,
@@ -289,6 +308,9 @@ if (!function_exists('morenews_custom_style')) {
         <?php endif; ?>
 
         <?php if (!empty($secondary_font)) : ?>
+            .wp-block-rss li a,
+            .wp-block-categories a, 
+            .wp-block-archives a,
             .wp-block-tag-cloud a, .tagcloud a, body span.hustle-title,div.custom-menu-link > a,
             .wp-block-blockspare-blockspare-tabs .bs-tabs-title-list li a.bs-tab-title,
             .navigation.post-navigation .nav-links a, .exclusive-posts .exclusive-now span,
@@ -308,12 +330,13 @@ if (!function_exists('morenews_custom_style')) {
         $css = ob_get_clean();
 
         // Minify CSS: remove comments, newlines, extra spaces
-        $css = preg_replace('!/\*.*?\*/!s', '', $css);        // Remove comments
-        $css = preg_replace('/\s+/', ' ', $css);             // Collapse whitespace
-        $css = str_replace([' {', '{ ', '; ', ': ', ', '], ['{', '{', ';', ':', ','], $css);
-        $css = trim($css);
+        $css = preg_replace(
+            array('!/\*.*?\*/!s', '/\s+/', '/\s*([\{\};:,])\s*/'),
+            array('', ' ', '$1'),
+            $css
+        );
 
-        return $css;
+        return trim($css);
 
         // return ob_get_clean();
     }

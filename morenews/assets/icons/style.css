@@ -7,9 +7,12 @@
     url('fonts/aft-icons.svg?e3nek0#aft-icons') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
-
+.min-read:before,
+.aft-print-page,
+.aft-copy-to-clipboard,
+.aft-bookmark-post,
 #scroll-up,
 .custom-menu-link i,
 .af-yt-video-play .fa-play,
@@ -44,6 +47,60 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.aft-icon-github-brands-solid:before {
+  content: "\e932";
+}
+.aft-icon-quora-brands-solid:before {
+  content: "\e933";
+}
+.aft-icon-medium-brands-solid:before {
+  content: "\e934";
+}
+.aft-icon-bluesky-brands-solid:before {
+  content: "\e930";
+}
+.aft-icon-linktree-brands-solid:before {
+  content: "\e931";
+}
+.min-read:before,
+.aft-icon-timelapse:before {
+  content: "\e92e";
+}
+.aft-icon-line:before {
+  content: "\e92f";
+}
+.aft-icon-thumbs-o-down:before {
+  content: "\e929";
+}
+.aft-icon-thumbs-o-up:before {
+  content: "\e92a";
+}
+.aft-icon-thumbs-down:before {
+  content: "\e92b";
+}
+.aft-icon-thumbs-up:before {
+  content: "\e92c";
+}
+.aft-print-page:before,
+.aft-icon-print:before {
+  content: "\e92d";
+}
+
+.aft-icon-buffer:before {
+  content: "\e925";
+}
+.aft-bookmark-post:before {
+  content: "\e927";
+}
+.aft-bookmark-post.bookmarked:before {
+  content: "\e928";
+}
+.aft-copy-to-clipboard:before{
+  content: "\e926";
+}
+.aft-icon-envelope:before {
+  content: "\e91e";
 }
 
 .af-tabs>li>a .fa-bolt::before {
@@ -92,7 +149,7 @@
   content: "\e909";
 }
 .aft-icon-facebook:before {
-  content: "\e90a";
+  content: "\f09a";
 }
 .aft-icon-threads:before {
   content: "\e916";
@@ -144,7 +201,7 @@
   content: "\f030";
 }
 .em-post-format .fa-film:before{
-  content: "\e90a";
+  content: "\f09a";
 }
 .aft-icon-video-camera:before {
   content: "\f03d";
@@ -232,6 +289,7 @@
 .aft-icon-vimeo:before {
   content: "\f27d";
 }
+.aft-icon-reddit:before,
 .aft-icon-reddit-alien:before {
   content: "\f281";
 }

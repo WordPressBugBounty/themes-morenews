@@ -4,7 +4,7 @@ Theme URI: https://afthemes.com/products/morenews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: MoreNews is a dynamic, ultra-fast, and highly versatile WordPress theme built not only for News, Magazines, and Blogs but also for Business, eCommerce, and any kind of Website thanks to its new HEADER & FOOTER BUILDER that works seamlessly with the Block Editor, GUTENBERG, ELEMENTOR, Brizy, Divi, and other popular Page Builders, giving you complete drag-and-drop freedom to design unique layouts without touching code. With 100+ ready-to-import Starter Sites, 30+ Custom Widgets, Advanced Block Patterns, Flexible Banner and Layout Options, AMP support, and full WOOCOMMERCE integration, MoreNews makes it easy to launch anything from a simple Blog to a professional Online Store or a complex Content Hub in minutes. It is fully optimized for SEO, CORE WEB VITALS, Speed, and Responsive Design, ensuring excellent performance on all devices, and is built with WCAG Accessibility, GDPR Compliance, and clean, Lightweight Code for long-term reliability. Multilingual and RTL Ready, with Demo Content available in multiple languages including English, Spanish, German, French, Japanese, Chinese, and Arabic, MoreNews is a future-proof theme designed for creators who value Style, Scalability, and a smooth User Experience across the globe. Explore all features at https://afthemes.com/products/morenews.
-Version: 4.3.13
+Version: 4.4.0
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 7.1
@@ -1042,8 +1042,13 @@ header .mid-header div.custom-menu-link > a{padding-right: 12px;}
 :is(.aft-small-social-menu,.social-widget-menu.af-widget-body) ul li a[href*="yahoo.com"] { background-color: #720e9e; }
 :is(.aft-small-social-menu,.social-widget-menu.af-widget-body) ul li a[href*="spotify.com"] { background-color: #1ed760; }
 :is(.aft-small-social-menu,.social-widget-menu.af-widget-body) ul li a[href*="telegram.com"] { background-color: #24a1de; }
+:is(.aft-small-social-menu,.social-widget-menu.af-widget-body) ul li a[href*="bsky.app"] {background: #0f73ff;}
+:is(.aft-small-social-menu,.social-widget-menu.af-widget-body) ul li a[href*="linktr.ee"] {background: #42E661;}
 
 .aft-small-social-menu ul a:after, .social-widget-menu ul a:before { content: "\f35d"; }
+.aft-small-social-menu ul a[href*="bsky.app"]:after, .social-widget-menu ul a[href*="bsky.app"]:before { content: "\e930"; }
+.aft-small-social-menu ul a[href*="medium.com"]:after, .social-widget-menu ul a[href*="medium.com"]:before { content: "\e934"; }
+.aft-small-social-menu ul a[href*="linktr.ee"]:after, .social-widget-menu ul a[href*="linktr.ee"]:before { content: "\e931"; }
 .aft-small-social-menu ul a[href*="buffer.com"]:after, .social-widget-menu ul a[href*="buffer.com"]:before { content: "\e925"; }
 .aft-small-social-menu ul a[href*="snapchat.com"]:after, .social-widget-menu ul a[href*="snapchat.com"]:before { content: "\f2ad"; }
 .aft-small-social-menu ul a[href*="viber.com"]:after, .social-widget-menu ul a[href*="viber.com"]:before { content: "\e90c"; }
@@ -1053,7 +1058,8 @@ header .mid-header div.custom-menu-link > a{padding-right: 12px;}
 .aft-small-social-menu ul a[href*="facebook.com"]:after, .social-widget-menu ul a[href*="facebook.com"]:before { content: "\f09a"; }
 .aft-small-social-menu ul a[href*="threads.com"]:after, .social-widget-menu ul a[href*="threads.com"]:before { content: "\e916"; }
 .aft-small-social-menu ul a[href*="vk.com"]:after, .social-widget-menu ul a[href*="vk.com"]:before { content: "\f189"; }
-.aft-small-social-menu ul a[href*="x.com"]:after, .social-widget-menu ul a[href*="x.com"]:before, .aft-small-social-menu ul a[href*="twitter.com"]:after, .social-widget-menu ul a[href*="twitter.com"]:before { content: "\f099"; }
+.aft-small-social-menu ul a[href*="x.com"]:after, .social-widget-menu ul a[href*="x.com"]:before, 
+.aft-small-social-menu ul a[href*="twitter.com"]:after, .social-widget-menu ul a[href*="twitter.com"]:before { content: "\f099"; }
 .aft-small-social-menu ul a[href*="linkedin.com"]:after, .social-widget-menu ul a[href*="linkedin.com"]:before { content: "\f0e1"; }
 .aft-small-social-menu ul a[href*="instagram.com"]:after, .social-widget-menu ul a[href*="instagram.com"]:before { content: "\f16d"; }
 .aft-small-social-menu ul a[href*="youtube.com"]:after, .social-widget-menu ul a[href*="youtube.com"]:before { content: "\f16a"; }
@@ -1061,7 +1067,8 @@ header .mid-header div.custom-menu-link > a{padding-right: 12px;}
 .aft-small-social-menu ul a[href*="plus.google.com"]:after, .social-widget-menu ul a[href*="plus.google.com"]:before { content: "\f0d5"; }
 .aft-small-social-menu ul a[href*="pinterest.com"]:after, .social-widget-menu ul a[href*="pinterest.com"]:before { content: "\f0d2"; }
 .aft-small-social-menu ul a[href*="tumblr.com"]:after, .social-widget-menu ul a[href*="tumblr.com"]:before { content: "\f173"; }
-.aft-small-social-menu ul a[href*="wordpress.org"]:after, .social-widget-menu ul a[href*="wordpress.org"]:before, .aft-small-social-menu ul a[href*="wordpress.com"]:after, .social-widget-menu ul a[href*="wordpress.com"]:before { content: "\f19a"; }
+.aft-small-social-menu ul a[href*="wordpress.org"]:after, .social-widget-menu ul a[href*="wordpress.org"]:before, 
+.aft-small-social-menu ul a[href*="wordpress.com"]:after, .social-widget-menu ul a[href*="wordpress.com"]:before { content: "\f19a"; }
 .aft-small-social-menu ul a[href*="whatsapp.com"]:after, .social-widget-menu ul a[href*="whatsapp.com"]:before { content: "\f232"; }
 .aft-small-social-menu ul a[href*="reddit.com"]:after, .social-widget-menu ul a[href*="reddit.com"]:before { content: "\f281"; }
 .aft-small-social-menu ul a[href*="t.me"]:after, .social-widget-menu ul a[href*="t.me"]:before { content: "\f2c6"; }
@@ -4833,7 +4840,7 @@ p.has-drop-cap:not(:focus):first-letter {font-weight: normal;}
     padding-top: 1.71429em;
     padding-bottom: 1.71429em;
 }
-.wp-block-image figcaption{text-align: center;}
+.wp-block-image figcaption{text-align: start;}
 .blocks-gallery-item figcaption {font-weight: 500;}
 /** === File === */
 .wp-block-file {margin-bottom: 20px;}
@@ -5047,8 +5054,8 @@ div.wp-block-categories.wp-block-categories-dropdown label {
 }
 ul.wp-block-categories-list.wp-block-categories li, 
 ul.wp-block-archives-list.wp-block-archives li{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 16px;
 }
@@ -5279,6 +5286,7 @@ a img.aligncenter {
 }
 /* =WordPress Core
 -------------------------------------------------------------- */
+.wp-block-latest-posts.wp-block-latest-posts__list li{margin-top: 0;}
 .wp-block-latest-posts.wp-block-latest-posts__list li,
 .wp-block-latest-comments li.wp-block-latest-comments__comment,
 .widget:not(.morenews_social_contacts_widget) ul.menu >li,
@@ -5996,6 +6004,16 @@ p.awpa-website a:hover {color: #1665CF ;}
     color: #fff;
 }
 .awpa-review-field .right-star .awpa-rating-button {border-radius: 0;}
+.awpa-review-field .right-star .awpa-rating-button {
+    color: #fff !important;
+    border: 0 !important;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 p.awpa-more-posts a {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 5px 15px;
