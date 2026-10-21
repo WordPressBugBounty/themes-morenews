@@ -41,7 +41,7 @@ if (!class_exists('AFtranslate')) {
         'morenews', // Parent slug.
         __('AI Translate', 'morenews'), // Page title.
         sprintf(
-          __('AI Translate %s', 'blockspare'),
+          __('AI Translate %s', 'morenews'),
           '<span class="update-plugins count-' . esc_attr($badge_count) . '"><span class="plugin-count">' . esc_html($badge_count) . '</span></span>'
         ),
         'manage_options', // Capability.
