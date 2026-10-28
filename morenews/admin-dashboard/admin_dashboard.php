@@ -299,7 +299,7 @@ add_submenu_page(
       if (($morenews_blockspare_installed && $morenews_blockspare_active) && $plugin_update == 'false') {
 
       ?>
-        <div id="bs-dashboard"></div>
+        <div id="bs-starter-sites"></div>
 
 
       <?php
