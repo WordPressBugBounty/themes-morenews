@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: MoreNews 4.3.2\n"
+"Project-Id-Version: MoreNews 4.4.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/morenews\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-21T08:01:25+00:00\n"
+"POT-Creation-Date: 2026-11-20T07:28:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: morenews\n"
@@ -48,47 +48,47 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:118
-#: admin-dashboard/admin_dashboard.php:119
+#: admin-dashboard/admin_dashboard.php:120
+#: admin-dashboard/admin_dashboard.php:121
 msgid "Dashboard"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:129
-#: admin-dashboard/admin_dashboard.php:130
+#: admin-dashboard/admin_dashboard.php:131
+#: admin-dashboard/admin_dashboard.php:132
 #: inc/template-functions.php:1180
 msgid "Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:140
-#: admin-dashboard/admin_dashboard.php:141
+#: admin-dashboard/admin_dashboard.php:142
+#: admin-dashboard/admin_dashboard.php:143
 msgid "Customize"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:150
-#: admin-dashboard/admin_dashboard.php:151
+#: admin-dashboard/admin_dashboard.php:152
+#: admin-dashboard/admin_dashboard.php:153
 #: inc/customizer/builder/class-header-footer-builder.php:36
 #: inc/template-functions.php:1185
 msgid "Header Builder"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:160
-#: admin-dashboard/admin_dashboard.php:161
+#: admin-dashboard/admin_dashboard.php:162
+#: admin-dashboard/admin_dashboard.php:163
 #: inc/customizer/builder/class-header-footer-builder.php:45
 #: inc/template-functions.php:1195
 msgid "Footer Builder"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:170
-#: admin-dashboard/admin_dashboard.php:171
+#: admin-dashboard/admin_dashboard.php:172
+#: admin-dashboard/admin_dashboard.php:173
 msgid "Block Patterns"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:180
-#: admin-dashboard/admin_dashboard.php:181
+#: admin-dashboard/admin_dashboard.php:182
+#: admin-dashboard/admin_dashboard.php:183
 msgid "Elementor Kits"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:195
+#: admin-dashboard/admin_dashboard.php:194
 #: inc/customizer/customizer-control.php:1134
 #: admin-dashboard/src/components/json/dashboard-content.js:9
 #: admin-dashboard/src/components/json/dashboard-content.js:26
@@ -97,34 +97,35 @@ msgstr ""
 msgid "Get Full Control"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:196
-#: inc/customizer/customizer.php:200
-msgid "Upgrade Now"
+#: admin-dashboard/admin_dashboard.php:195
+#: inc/template-functions.php:1210
+#: admin-dashboard/src/components/nav-content/home.js:67
+msgid "Upgrade to Pro"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:245
+#: admin-dashboard/admin_dashboard.php:244
 msgid "The Templatespare plugin should be updated to the latest version"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:248
+#: admin-dashboard/admin_dashboard.php:247
 msgid "Import a Starter Site, Personalize, and Live it in 3 Easy Steps!"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:314
+#: admin-dashboard/admin_dashboard.php:313
 #, php-format
 msgid "Blockspare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:319
+#: admin-dashboard/admin_dashboard.php:318
 msgid "One-click Demo Import, Block Editor Ready, No Code Required! Built with Blockspare."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:388
+#: admin-dashboard/admin_dashboard.php:387
 #, php-format
 msgid "Elespare plugin version should be more than %s."
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:389
+#: admin-dashboard/admin_dashboard.php:388
 msgid "One-click Import, Header/Footer Builder, Multilingual Support! Powered by Elespare."
 msgstr ""
 
@@ -148,13 +149,13 @@ msgstr ""
 msgid "Activated"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:587
+#: admin-dashboard/admin_dashboard.php:588
 #: admin-dashboard/rest-api/api-request.php:104
 #: admin-dashboard/rest-api/class-admin-notice.php:144
 msgid "Get Starter Sites"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:592
+#: admin-dashboard/admin_dashboard.php:593
 #: admin-dashboard/rest-api/class-admin-notice.php:148
 #: admin-dashboard/src/components/blockspare.demo.js:13
 #: admin-dashboard/src/components/companion-demo.js:12
@@ -163,7 +164,7 @@ msgstr ""
 msgid "Get Started"
 msgstr ""
 
-#: admin-dashboard/admin_dashboard.php:593
+#: admin-dashboard/admin_dashboard.php:594
 #: admin-dashboard/rest-api/class-admin-notice.php:149
 msgid "The \"Get Started\" action will install/activate the Templatespare and Blockspare plugins for Starter Sites and Templates."
 msgstr ""
@@ -191,6 +192,27 @@ msgstr ""
 
 #: admin-dashboard/class-af-companion.php:112
 msgid "Performance Optimization, and Publisher Growth Tools!"
+msgstr ""
+
+#: admin-dashboard/class-af-translate.php:39
+msgid "New"
+msgstr ""
+
+#: admin-dashboard/class-af-translate.php:42
+msgid "AI Translate"
+msgstr ""
+
+#: admin-dashboard/class-af-translate.php:44
+#, php-format
+msgid "AI Translate %s"
+msgstr ""
+
+#: admin-dashboard/class-af-translate.php:94
+msgid "The AF Translate plugin should be updated to the latest version"
+msgstr ""
+
+#: admin-dashboard/class-af-translate.php:98
+msgid "Bulk AI translation, PO editor and POT generator and Language progress tracking!"
 msgstr ""
 
 #: admin-dashboard/rest-api/api-request.php:99
@@ -617,7 +639,7 @@ msgid "Live"
 msgstr ""
 
 #: inc/customizer/customizer-default.php:62
-#: inc/customizer/frontpage-options.php:1198
+#: inc/customizer/frontpage-options.php:1199
 msgid "Popular Tags"
 msgstr ""
 
@@ -669,7 +691,7 @@ msgid "Trending Story"
 msgstr ""
 
 #: inc/customizer/customizer-default.php:166
-#: inc/customizer/frontpage-options.php:1372
+#: inc/customizer/frontpage-options.php:1373
 msgid "Featured Posts"
 msgstr ""
 
@@ -745,6 +767,10 @@ msgstr ""
 
 #: inc/customizer/customizer.php:199
 msgid "MoreNews Pro"
+msgstr ""
+
+#: inc/customizer/customizer.php:200
+msgid "Upgrade Now"
 msgstr ""
 
 #: inc/customizer/font-color-options.php:25
@@ -924,75 +950,79 @@ msgid "Slider, Editors Picks and Tabs"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:117
-msgid "Slider and Editors Picks"
+msgid "Slider, Editors Picks and Trending"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:118
+msgid "Slider and Editors Picks"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:119
 msgid "Slider and Tabs"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:140
-#: inc/customizer/frontpage-options.php:174
+#: inc/customizer/frontpage-options.php:141
+#: inc/customizer/frontpage-options.php:175
 msgid "Select Main Banner Order"
-msgstr ""
-
-#: inc/customizer/frontpage-options.php:144
-#: inc/customizer/frontpage-options.php:178
-msgid "Order 1"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:145
 #: inc/customizer/frontpage-options.php:179
-msgid "Order 2"
+msgid "Order 1"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:146
+#: inc/customizer/frontpage-options.php:180
+msgid "Order 2"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:147
 msgid "Order 3"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:210
+#: inc/customizer/frontpage-options.php:211
 msgid "Main News Section "
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:229
-#: inc/customizer/frontpage-options.php:375
-#: inc/customizer/frontpage-options.php:538
-#: inc/customizer/frontpage-options.php:708
-#: inc/customizer/frontpage-options.php:875
-#: inc/customizer/frontpage-options.php:1042
-#: inc/customizer/frontpage-options.php:1246
-#: inc/customizer/frontpage-options.php:1309
-#: inc/customizer/frontpage-options.php:1415
+#: inc/customizer/frontpage-options.php:230
+#: inc/customizer/frontpage-options.php:376
+#: inc/customizer/frontpage-options.php:539
+#: inc/customizer/frontpage-options.php:709
+#: inc/customizer/frontpage-options.php:876
+#: inc/customizer/frontpage-options.php:1043
+#: inc/customizer/frontpage-options.php:1247
+#: inc/customizer/frontpage-options.php:1310
+#: inc/customizer/frontpage-options.php:1416
 msgid "Section Title "
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:254
-#: inc/customizer/frontpage-options.php:406
-#: inc/customizer/frontpage-options.php:569
-#: inc/customizer/frontpage-options.php:738
-#: inc/customizer/frontpage-options.php:905
-#: inc/customizer/frontpage-options.php:1071
+#: inc/customizer/frontpage-options.php:255
+#: inc/customizer/frontpage-options.php:407
+#: inc/customizer/frontpage-options.php:570
+#: inc/customizer/frontpage-options.php:739
+#: inc/customizer/frontpage-options.php:906
+#: inc/customizer/frontpage-options.php:1072
 msgid "Filter Posts By"
-msgstr ""
-
-#: inc/customizer/frontpage-options.php:258
-#: inc/customizer/frontpage-options.php:410
-#: inc/customizer/frontpage-options.php:742
-#: inc/customizer/frontpage-options.php:1075
-#: inc/customizer/frontpage-options.php:1553
-msgid "Category"
 msgstr ""
 
 #: inc/customizer/frontpage-options.php:259
 #: inc/customizer/frontpage-options.php:411
-#: inc/customizer/frontpage-options.php:573
 #: inc/customizer/frontpage-options.php:743
-#: inc/customizer/frontpage-options.php:909
 #: inc/customizer/frontpage-options.php:1076
+#: inc/customizer/frontpage-options.php:1554
+msgid "Category"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:260
+#: inc/customizer/frontpage-options.php:412
+#: inc/customizer/frontpage-options.php:574
+#: inc/customizer/frontpage-options.php:744
+#: inc/customizer/frontpage-options.php:910
+#: inc/customizer/frontpage-options.php:1077
 msgid "Tag"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:282
+#: inc/customizer/frontpage-options.php:283
 #: inc/widgets/widget-express-posts-list.php:136
 #: inc/widgets/widget-posts-grid.php:115
 #: inc/widgets/widget-posts-list.php:118
@@ -1001,217 +1031,217 @@ msgstr ""
 msgid "Select Category"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:283
+#: inc/customizer/frontpage-options.php:284
 msgid "Select category to be shown on main slider section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:315
-#: inc/customizer/frontpage-options.php:475
-#: inc/customizer/frontpage-options.php:641
-#: inc/customizer/frontpage-options.php:809
-#: inc/customizer/frontpage-options.php:977
-#: inc/customizer/frontpage-options.php:1142
+#: inc/customizer/frontpage-options.php:316
+#: inc/customizer/frontpage-options.php:476
+#: inc/customizer/frontpage-options.php:642
+#: inc/customizer/frontpage-options.php:810
+#: inc/customizer/frontpage-options.php:978
+#: inc/customizer/frontpage-options.php:1143
 msgid "Select Tag"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:316
+#: inc/customizer/frontpage-options.php:317
 msgid "Select tag to be shown on main slider section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:349
+#: inc/customizer/frontpage-options.php:350
 msgid "Editor's Picks Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:441
-#: inc/customizer/frontpage-options.php:606
-#: inc/customizer/frontpage-options.php:774
-#: inc/customizer/frontpage-options.php:942
-#: inc/customizer/frontpage-options.php:1108
+#: inc/customizer/frontpage-options.php:442
+#: inc/customizer/frontpage-options.php:607
+#: inc/customizer/frontpage-options.php:775
+#: inc/customizer/frontpage-options.php:943
+#: inc/customizer/frontpage-options.php:1109
 #: inc/widgets/widgets-common-functions.php:25
 msgid "Select"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:511
+#: inc/customizer/frontpage-options.php:512
 msgid "Trending Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:574
-#: inc/customizer/frontpage-options.php:910
+#: inc/customizer/frontpage-options.php:575
+#: inc/customizer/frontpage-options.php:911
 #: inc/customizer/theme-options.php:640
 msgid "Comment Count"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:680
+#: inc/customizer/frontpage-options.php:681
 msgid "Latest Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:847
+#: inc/customizer/frontpage-options.php:848
 msgid "Popular Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1015
+#: inc/customizer/frontpage-options.php:1016
 msgid "Update Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1174
+#: inc/customizer/frontpage-options.php:1175
 msgid "Pro Front-Page Engine"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1178
+#: inc/customizer/frontpage-options.php:1179
 msgid "13+ Premium Hero Layouts"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1179
+#: inc/customizer/frontpage-options.php:1180
 msgid "Professional Grid & Tile Sliders"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1180
+#: inc/customizer/frontpage-options.php:1181
 msgid "Multi-Column Content Carousels"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1181
+#: inc/customizer/frontpage-options.php:1182
 msgid "Sort by Most Viewed & Popular"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1182
+#: inc/customizer/frontpage-options.php:1183
 msgid "6 Advanced Section Sorting Modes"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1183
+#: inc/customizer/frontpage-options.php:1184
 msgid "Dual-Tabbed Post Collections"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1184
+#: inc/customizer/frontpage-options.php:1185
 msgid "Unlimited Post Display Capacity"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1185
+#: inc/customizer/frontpage-options.php:1186
 msgid "Integrated Banner Widget Areas"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1227
+#: inc/customizer/frontpage-options.php:1228
 msgid "Enable Trending Tags"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1261
+#: inc/customizer/frontpage-options.php:1262
 msgid "Breaking News"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1290
+#: inc/customizer/frontpage-options.php:1291
 msgid "Enable Flash News"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1333
+#: inc/customizer/frontpage-options.php:1334
 msgid "Flash Posts Category"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1334
+#: inc/customizer/frontpage-options.php:1335
 msgid "Select category to be shown on trending posts "
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1357
+#: inc/customizer/frontpage-options.php:1358
 msgid "Front-page Options"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1395
+#: inc/customizer/frontpage-options.php:1396
 msgid "Enable Featured Post Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1440
+#: inc/customizer/frontpage-options.php:1441
 msgid "Select "
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1441
-#: inc/customizer/frontpage-options.php:1554
+#: inc/customizer/frontpage-options.php:1442
+#: inc/customizer/frontpage-options.php:1555
 msgid "Select category to be shown on featured section "
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1462
+#: inc/customizer/frontpage-options.php:1463
 msgid "Posts List"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1482
+#: inc/customizer/frontpage-options.php:1483
 msgid "Enable Post List Section"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1507
+#: inc/customizer/frontpage-options.php:1508
 #, php-format
 msgid "Section %d"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1528
+#: inc/customizer/frontpage-options.php:1529
 msgid "Section Title"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1571
+#: inc/customizer/frontpage-options.php:1572
 msgid "Front-page Layout Settings"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1592
+#: inc/customizer/frontpage-options.php:1593
 msgid "Front-page Content Display"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1593
+#: inc/customizer/frontpage-options.php:1594
 msgid "Select frontpage content display"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1598
+#: inc/customizer/frontpage-options.php:1599
 msgid "Front-page Widgets"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1599
+#: inc/customizer/frontpage-options.php:1600
 msgid "Page Contents & Front-page Widgets"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1618
+#: inc/customizer/frontpage-options.php:1619
 msgid "Front-page Content Alignment"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1619
+#: inc/customizer/frontpage-options.php:1620
 msgid "Select frontpage content alignment"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1623
+#: inc/customizer/frontpage-options.php:1624
 msgid "Home Content - Home Sidebar"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1624
+#: inc/customizer/frontpage-options.php:1625
 msgid "Home Sidebar - Home Content"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1625
+#: inc/customizer/frontpage-options.php:1626
 msgid "Only Home Content"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1644
+#: inc/customizer/frontpage-options.php:1645
 msgid "Advanced Layout Toolkit"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1648
+#: inc/customizer/frontpage-options.php:1649
 msgid "Express News Grid Layouts"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1649
+#: inc/customizer/frontpage-options.php:1650
 msgid "Multi-URL Video Hub Support"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1650
+#: inc/customizer/frontpage-options.php:1651
 msgid "Dynamic Content Carousels"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1651
+#: inc/customizer/frontpage-options.php:1652
 msgid "Advanced Category Filtering"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1652
+#: inc/customizer/frontpage-options.php:1653
 msgid "Unlimited Post Display Counts"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1653
+#: inc/customizer/frontpage-options.php:1654
 msgid "Touch-Optimized Layouts"
 msgstr ""
 
-#: inc/customizer/frontpage-options.php:1654
+#: inc/customizer/frontpage-options.php:1655
 msgid "In-Section Widget Areas"
 msgstr ""
 
@@ -2300,11 +2330,6 @@ msgstr ""
 msgid "Front-page Banner"
 msgstr ""
 
-#: inc/template-functions.php:1210
-#: admin-dashboard/src/components/nav-content/home.js:67
-msgid "Upgrade to Pro"
-msgstr ""
-
 #: inc/template-tags.php:146
 #, php-format
 msgid "Posted on %s"
@@ -3145,6 +3170,18 @@ msgstr ""
 #. translators: Hidden heading for the post navigation section.
 #: template-parts/content.php:53
 msgid "Post navigation"
+msgstr ""
+
+#: admin-dashboard/src/components/aftranslate-demo.js:12
+msgid "Start Translating with AI"
+msgstr ""
+
+#: admin-dashboard/src/components/aftranslate-demo.js:28
+msgid "Translate Your Website in Minutes with AI"
+msgstr ""
+
+#: admin-dashboard/src/components/aftranslate-demo.js:34
+msgid "Translate themes, plugins, and JavaScript with OpenAI, Claude, DeepL, or Gemini. Manage PO files, generate POT files, and track translation progress — all in one place using AF Translate plugin."
 msgstr ""
 
 #: admin-dashboard/src/components/blockspare.demo.js:18

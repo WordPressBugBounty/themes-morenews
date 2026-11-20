@@ -464,6 +464,7 @@ body.home .woocommerce-products-header{display: none;}
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
+table.wc-block-cart-items tr:last-child td{border-bottom: none;}
 body .woocommerce-notices-wrapper .button:hover,
 .aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs li a {
     color: #fff;
