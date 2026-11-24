@@ -320,6 +320,7 @@ function morenews_get_default_theme_options() {
         'Roboto:100,300,400,500,700'                => 'Roboto',        
         'Roboto+Slab:400,300,700'                   => 'Roboto Slab',
         'Source+Sans+Pro:400,400i,700,700i' => 'Source Sans Pro',
+        'Barlow:400,400i,500,500i,700,700i' => 'Barlow',
     );
 
     //font option
